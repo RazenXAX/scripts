@@ -68,30 +68,19 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio configs
-odm/etc/audio/sku_cliffs/adsp_sleep_monitor.conf
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_cliffs_mtp.xml
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_dynamic.xml
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_static.xml
-odm/etc/audio/sku_cliffs/foursemi/resourcemanager_cliffs_mtp.xml
-odm/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp.xml
-odm/etc/audio/sku_cliffs/mixer_paths_overlay_dynamic.xml
-odm/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp.xml
-odm/etc/audio_policy_engine_configuration_mi.xml:odm/etc/audio_policy_engine_configuration.xml
 odm/etc/audio_policy_engine_default_stream_volumes.xml
 odm/etc/audio_policy_engine_product_strategies.xml
 odm/etc/audio_policy_engine_stream_volumes.xml
-odm/etc/backend_conf.xml
-odm/etc/usecaseKvManager.xml
-vendor/etc/audio/sku_cliffs/audio_effects.conf
-vendor/etc/audio/sku_cliffs/audio_effects.xml
-vendor/etc/audio/sku_cliffs/mixer_paths_cliffs_cdp.xml
-vendor/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp_wcd9395.xml
-vendor/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp_wsa883x.xml
-vendor/etc/audio/sku_cliffs/mixer_paths_cliffs_qrd.xml
-vendor/etc/audio/sku_cliffs/resourcemanager_cliffs_cdp.xml
-vendor/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp_wcd9395.xml
-vendor/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp_wsa883x.xml
-vendor/etc/audio/sku_cliffs/resourcemanager_cliffs_qrd.xml
+odm/etc/audio_policy_engine_configuration_mi.xml:odm/etc/audio_policy_engine_configuration.xml
+vendor/etc/audio_policy_engine_default_stream_volumes.xml
+vendor/etc/audio_policy_engine_product_strategies.xml
+vendor/etc/audio_policy_engine_stream_volumes.xml
+vendor/etc/backend_conf.xml
+vendor/etc/audio/sku_pitti/audio_effects.conf
+vendor/etc/audio/sku_pitti/mixer_paths_pitti_idp.xml
+vendor/etc/audio/sku_pitti/mixer_paths_pitti_qrd.xml
+vendor/etc/audio/sku_pitti/resourcemanager_pitti_idp.xml
+vendor/etc/audio/sku_pitti/resourcemanager_pitti_qrd.xml
 vendor/etc/audio_diag.cfg
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/card-defs.xml
@@ -99,10 +88,7 @@ vendor/etc/default_volume_tables.xml
 vendor/etc/kvh2xml.xml
 vendor/etc/microphone_characteristics.xml
 vendor/etc/usecaseKvManager.xml
-
-# Audio firmware
-odm/firmware/aw882xx_acf.bin
-odm/firmware/fs19xx.fsm
+vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml
 
 # Audio graph manager
 vendor/bin/agmcap
@@ -117,36 +103,12 @@ vendor/lib64/libmisight.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio libraries
-odm/etc/audio/mis_head.bin
-odm/etc/audio/mis_head_spatial.bin
-odm/etc/audio/mis_spk.bin
-odm/etc/audio/mis_spk_spatial.bin
-odm/etc/audio/misound_karaoke_res.bin
-odm/etc/audio/misound_karaokemix_res.bin
-odm/etc/audio/misound_res_spk_power_game.bin
-odm/etc/audio/misound_res_spk_power_game_powersave.bin
-odm/etc/audio/misound_res_spk_power_sva.bin
-odm/etc/audio/misound_res_spk_power_sva_powersave.bin
-odm/etc/audio/misound_res_spk_power_video.bin
-odm/etc/audio/misound_res_spk_power_video_powersave.bin
-odm/etc/audio/misoundsa_spk_config.bin
-odm/etc/init/init.cirrus.rc
-odm/lib64/libaudioroute_ext.so
-odm/lib64/libawcal.so
-odm/lib64/libcrussp.so
-odm/lib64/libfsalgocal.so
-odm/lib64/libvoipspacespeech.so
-vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/models/acd/environment.eai
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.pineapple.so
-vendor/lib64/hw/gyro_fusion_interface.so
-vendor/lib64/libPeripheralStateUtils.so
+vendor/lib64/hw/audio.primary.pitti.so
 vendor/lib64/libVoiceSdk.so
-vendor/lib64/lib_bt_lhdc.so
-vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
@@ -155,31 +117,20 @@ vendor/lib64/libar-gsl.so
 vendor/lib64/libarmemlog.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudiofeaturestats.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2udk7vendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libcustomva_intf.so
-vendor/lib64/libdapparamstorage.so
 vendor/lib64/libhotword_intf.so
 vendor/lib64/libkaraokepal.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
-vendor/lib64/libmis6.so
-vendor/lib64/libmisfpsop.so
-vendor/lib64/libmisops.so
-vendor/lib64/libmisoundfx_ext.so
-vendor/lib64/libmisoundsa.so
-vendor/lib64/libmisoundsa_fx.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
-vendor/lib64/libresampler.so
-vendor/lib64/libspatializerparamstorage.so
-vendor/lib64/libswspatializer_ext.so
 vendor/lib64/libtensorflowlite_c.so
 -vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
@@ -188,21 +139,14 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libbundlewrapper.so
-vendor/lib64/soundfx/libdlbvol.so
 vendor/lib64/soundfx/libdownmix.so
 vendor/lib64/soundfx/libdynproc.so
 vendor/lib64/soundfx/libeffectproxy.so
 vendor/lib64/soundfx/libhapticgenerator.so
-vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libldnhncr.so
-vendor/lib64/soundfx/libmisoundfx_n2.so
+vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libquasar.so
 vendor/lib64/soundfx/libreverbwrapper.so
-vendor/lib64/soundfx/libspatializer.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libspatializer_fx.so
-vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/soundfx/libvisualizer.so
 
 # Bluetooth
@@ -234,20 +178,10 @@ vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
-
-# CIT Sensor
-odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
-odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
-odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
-odm/etc/cit_param_config.json
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
 
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
@@ -268,24 +202,8 @@ vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libmasc.so
-vendor/lib64/libnspdependency.so
-vendor/lib64/libnspdescriptorhandler.so
-vendor/lib64/libnspdiag.so
-vendor/lib64/libnspextensionloader.so
-vendor/lib64/libnspframework.so
-vendor/lib64/libnspframeworkcore.so
-vendor/lib64/libnspframeworkcoreutility.so
-vendor/lib64/libnspgraphing.so
-vendor/lib64/libnspipc.so
-vendor/lib64/libnsposal.so
-vendor/lib64/libnspresource.so
-vendor/lib64/libnspscheduler.so
-vendor/lib64/libnspsession.so
-vendor/lib64/libnspsuperresolutionserviceextension.so
-vendor/lib64/libnsptransaction.so
 vendor/lib64/libqms.so
 vendor/lib64/libqms_client.so
-vendor/lib64/libqms_xiaomi.so
 vendor/lib64/libshsc.so
 vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
