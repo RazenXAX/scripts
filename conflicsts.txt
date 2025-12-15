@@ -163,6 +163,7 @@ config PSTORE_RAM
 
 	  For more information, see Documentation/admin-guide/ramoops.rst.
 
+<<<<<<< HEAD
 config PSTORE_ZONE
 	tristate
 	depends on PSTORE
@@ -271,3 +272,12 @@ config PSTORE_BLK_FTRACE_SIZE
 
 	  NOTE that, both Kconfig and module parameters can configure
 	  pstore/blk, but module parameters have priority over Kconfig.
+=======
+config PSTORE_LAST_KMSG
+	bool "export /proc/last_kmsg"
+	default y if BOARD_XIAOMI
+	depends on PSTORE
+	help
+	  When the option is enabled, pstore will export a proc filesystem
+	  interface /proc/last_kmsg.
+>>>>>>> 3d9dd30ec4cd (fs: pstore: Add support to extract last_kmsg through procfs)
