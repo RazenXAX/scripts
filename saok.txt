@@ -1,862 +1,560 @@
-lineage-sdk/packages/LineageSettingsProvider/res/values/strings.xml
-7:    <string name="app_name">crDroid Settings Storage</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-hr/strings.xml
-7:    <string name="app_name">crDroid Postavke Pohrane</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-hu/strings.xml
-7:    <string name="app_name">crDroid-Beállítástároló</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-el/strings.xml
-7:    <string name="app_name">Αποθηκευτικός χώρος ρυθμίσεων crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-fi/strings.xml
-7:    <string name="app_name">crDroid asetusten tallennustila</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-en-rIN/strings.xml
-7:    <string name="app_name">crDroid Settings Storage</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-en-rAU/strings.xml
-7:    <string name="app_name">crDroid Settings Storage</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-es/strings.xml
-7:    <string name="app_name">Almacenamiento de los ajustes de crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ko/strings.xml
-7:    <string name="app_name">crDroid 설정 저장소</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-fr/strings.xml
-7:    <string name="app_name">Stockage des paramètres de crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-pl/strings.xml
-7:    <string name="app_name">Ustawienia Pamięci crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ar/strings.xml
-7:    <string name="app_name">اعدادت تخزين crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-vi/strings.xml
-7:    <string name="app_name">Lưu Trữ Cài Đặt crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-pt-rBR/strings.xml
-7:    <string name="app_name">Armazenamento de Configurações do crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ca/strings.xml
-7:    <string name="app_name">Configuració d\'emmagatzematge de crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-pt-rPT/strings.xml
-7:    <string name="app_name">Definições de Armazenamento do crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-en-rGB/strings.xml
-7:    <string name="app_name">crDroid Settings Storage</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-kab-rDZ/strings.xml
-7:    <string name="app_name">Aklas n yiɣewwaren n crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ug/strings.xml
-7:    <string name="app_name">crDroid ساقلىغۇچ تەڭشىكى</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-iw/strings.xml
-7:    <string name="app_name">הגדרות אחסון crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-kn/strings.xml
-7:    <string name="app_name">crDroid ಅಳವಡಿಕೆಗಳ ದಾಸ್ತಾನು</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ast-rES/strings.xml
-7:    <string name="app_name">Almacenamientu d\'axustes de crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-de/strings.xml
-7:    <string name="app_name">crDroid-Einstellungsspeicher</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-tr/strings.xml
-7:    <string name="app_name">crDroid Ayarları Deposu</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-zh-rTW/strings.xml
-7:    <string name="app_name">crDroid 設定儲存空間</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-fa/strings.xml
-7:    <string name="app_name">ذخیره تنظیمات crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-cy/strings.xml
-7:    <string name="app_name">Storfa Gosodiadau crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-uk/strings.xml
-7:    <string name="app_name">Сховище налаштувань crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-th/strings.xml
-7:    <string name="app_name">การตั้งค่าพื้นที่เก็บข้อมูล crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-sq/strings.xml
-7:    <string name="app_name">Memoria e Parametrave të crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-fy-rNL/strings.xml
-7:    <string name="app_name">crDroid-ynstellingenûnthâld</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-be/strings.xml
-7:    <string name="app_name">Сховішча налад crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-sl/strings.xml
-7:    <string name="app_name">Shramba nastavitev crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ka/strings.xml
-7:    <string name="app_name">crDroid-პარამეტრების საცავი</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-zh-rCN/strings.xml
-7:    <string name="app_name">crDroid 设置储存</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-en-rCA/strings.xml
-7:    <string name="app_name">crDroid Settings Storage</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-is/strings.xml
-7:    <string name="app_name">crDroid gagnageymslustillingar</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-bg/strings.xml
-7:    <string name="app_name">Настройки на хранилището на crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-az/strings.xml
-7:    <string name="app_name">crDroid Ayarlar Anbarı</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ga-rIE/strings.xml
-7:    <string name="app_name">Stóráil Socruithe crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-nb/strings.xml
-7:    <string name="app_name">crDroid Lagringsinnstillinger</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-cs/strings.xml
-7:    <string name="app_name">Úložiště nastavení systému crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-it/strings.xml
-7:    <string name="app_name">Archivio impostazioni di crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ru/strings.xml
-7:    <string name="app_name">Хранилище настроек crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-da/strings.xml
-7:    <string name="app_name">crDroid Indstillingslager</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-sk/strings.xml
-7:    <string name="app_name">Nastavenia úložiska crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-sv/strings.xml
-7:    <string name="app_name">Lagring för crDroid-inställningar</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-in/strings.xml
-7:    <string name="app_name">Setelan Penyimpanan crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-es-rUS/strings.xml
-7:    <string name="app_name">Almacenamiento de los ajustes de crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ja/strings.xml
-7:    <string name="app_name">crDroid 設定ストレージ</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-et/strings.xml
-7:    <string name="app_name">crDroid seadete salvestusruum</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-sc-rIT/strings.xml
-7:    <string name="app_name">Archìviu de impostatziones de crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-sr/strings.xml
-7:    <string name="app_name">Складиште crDroid поставки</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-fur-rIT/strings.xml
-7:    <string name="app_name">Archivi impostazions di crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-eu/strings.xml
-7:    <string name="app_name">crDroid ezarpenen biltegiratzea</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-gd/strings.xml
-7:    <string name="app_name">Stòras roghainnean crDroid</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ta/strings.xml
-7:    <string name="app_name">crDroid அமைவுகள் சேமிப்பகம்</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-nl/strings.xml
-7:    <string name="app_name">crDroid instellingenopslag</string>
-
-lineage-sdk/packages/LineageSettingsProvider/res/values-ro/strings.xml
-7:    <string name="app_name">Setări de Stocare crDroid</string>
-
-lineage-sdk/lineage/res/res/values/strings.xml
-8:    <!-- Label for the crDroid system components when they are shown to the user. -->
-9:    <string name="lineageos_system_label">crDroid System</string>
-17:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
-20:    <string name="permlab_writeSettings">modify crDroid system settings</string>
-21:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
-24:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
-25:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
-87:    <!-- About device screen, crDroid API Level -->
-88:    <string name="lineage_api_level">crDroid API level</string>
-89:    <!-- About device screen, crDroid updates -->
-90:    <string name="lineage_updates">crDroid updates</string>
-91:    <!-- About device screen, crDroid version -->
-92:    <string name="lineage_version">crDroid version</string>
-
-lineage-sdk/lineage/res/res/values-hr/strings.xml
-8:    <string name="lineageos_system_label">crDroid Sustav</string>
-12:    <string name="permdesc_useHardwareFramework">Dopušta aplikaciji pristupiti crDroid hardware framework.</string>
-13:    <string name="permlab_writeSettings">promijeni crDroid postavke sigurnosti sustava</string>
-14:    <string name="permdesc_writeSettings">Dopušta aplikaciji da izmijeni postavke sustava crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">promijeni crDroid postavke sigurnosti sustava</string>
-16:    <string name="permdesc_writeSecureSettings">Dopušta aplikaciji da promjeni crDroid postavke sigurnosti sustava. Nije za korištenje kod normalnih aplikacija.</string>
-55:    <string name="lineage_api_level">crDroid API razina</string>
-56:    <string name="lineage_updates">crDroid ažuriranja</string>
-57:    <string name="lineage_version">crDroid verzija</string>
-
-lineage-sdk/lineage/res/res/values-hu/strings.xml
-8:    <string name="lineageos_system_label">crDroid-rendszer</string>
-12:    <string name="permdesc_useHardwareFramework">Lehetővé teszi egy alkalmazás számára, hogy hozzáférjen a crDroid hardver-keretrendszeréhez.</string>
-13:    <string name="permlab_writeSettings">a crDroid rendszerbeállításainak módosítása</string>
-14:    <string name="permdesc_writeSettings">Engedélyezi egy alkalmazás számára, hogy módosítsa a crDroid rendszerbeállításait.</string>
-15:    <string name="permlab_writeSecureSettings">a crDroid rendszer biztonsági beállításainak módosítása</string>
-16:    <string name="permdesc_writeSecureSettings">Engedélyezi egy alkalmazás számára, hogy módosítsa a crDroid-rendszer biztonsági beállításait. Nem vonatkozik normál alkalmazásokra.</string>
-59:    <string name="lineage_api_level">A crDroid API-szintje</string>
-60:    <string name="lineage_updates">crDroid-frissítések</string>
-61:    <string name="lineage_version">crDroid-verzió</string>
-
-lineage-sdk/lineage/res/res/values-el/strings.xml
-8:    <string name="lineageos_system_label">Σύστημα crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Επιτρέπει σε μια εφαρμογή την πρόσβαση στο πλαίσιο υλικού του crDroid.</string>
-13:    <string name="permlab_writeSettings">τροποποίηση ρυθμίσεων συστήματος crDroid</string>
-14:    <string name="permdesc_writeSettings">Επιτρέπει σε μια εφαρμογή να τροποποιεί τις ρυθμίσεις συστήματος crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">τροποποίηση ασφαλών ρυθμίσεων συστήματος crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Επιτρέπει σε μια εφαρμογή να τροποποιεί τις ασφαλείς ρυθμίσεις συστήματος crDroid. Δεν χρησιμοποιείται από κανονικές εφαρμογές.</string>
-59:    <string name="lineage_api_level">Επίπεδο crDroid API</string>
-60:    <string name="lineage_updates">Ενημερώσεις crDroid</string>
-61:    <string name="lineage_version">Έκδοση crDroid</string>
-
-lineage-sdk/lineage/res/res/values-fi/strings.xml
-8:    <string name="lineageos_system_label">crDroid Järjestelmä</string>
-12:    <string name="permdesc_useHardwareFramework">Sallii sovelluksen pääsyn crDroid-laitteiston kehykseen.</string>
-13:    <string name="permlab_writeSettings">muokkaa crDroid-järjestelmän asetuksia</string>
-14:    <string name="permdesc_writeSettings">Sallii sovelluksen muokata crDroid-järjestelmän asetuksia.</string>
-15:    <string name="permlab_writeSecureSettings">muokkaa crDroid-turvallisuusjärjestelmän asetuksia</string>
-16:    <string name="permdesc_writeSecureSettings">Sallii sovelluksen muokata crDroid turvallisuusjärjestelmäasetuksia. Ei käytössä tavallisille sovelluksille.</string>
-55:    <string name="lineage_api_level">crDroid API-taso</string>
-56:    <string name="lineage_updates">crDroid-päivitykset</string>
-57:    <string name="lineage_version">crDroid-versio</string>
-
-lineage-sdk/lineage/res/res/values-en-rIN/strings.xml
-8:    <string name="lineageos_system_label">crDroid System</string>
-12:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
-13:    <string name="permlab_writeSettings">modify crDroid system settings</string>
-14:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
-15:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
-16:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
-59:    <string name="lineage_api_level">crDroid API level</string>
-60:    <string name="lineage_updates">crDroid updates</string>
-61:    <string name="lineage_version">crDroid version</string>
-
-lineage-sdk/lineage/res/res/values-en-rAU/strings.xml
-8:    <string name="lineageos_system_label">crDroid System</string>
-12:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
-13:    <string name="permlab_writeSettings">modify crDroid system settings</string>
-14:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
-15:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
-16:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
-59:    <string name="lineage_api_level">crDroid API level</string>
-60:    <string name="lineage_updates">crDroid updates</string>
-61:    <string name="lineage_version">crDroid version</string>
-
-lineage-sdk/lineage/res/res/values-es/strings.xml
-8:    <string name="lineageos_system_label">Sistema de crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Permite el acceso de una aplicación a la estructura de hardware de crDroid.</string>
-13:    <string name="permlab_writeSettings">modificar ajustes del sistema de crDroid</string>
-14:    <string name="permdesc_writeSettings">Permite que una aplicación modifique los ajustes del sistema de crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modificar ajustes del sistema de seguridad de crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Permitir a una aplicación modificar la configuración segura del sistema crDroid. No apto para aplicaciones normales.</string>
-59:    <string name="lineage_api_level">Nivel de la API de crDroid</string>
-60:    <string name="lineage_updates">Actualizaciones de crDroid</string>
-61:    <string name="lineage_version">Versión de crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ko/strings.xml
-8:    <string name="lineageos_system_label">crDroid 시스템</string>
-12:    <string name="permdesc_useHardwareFramework">앱이 crDroid 하드웨어 프레임워크에 접근할 수 있도록 허용합니다.</string>
-13:    <string name="permlab_writeSettings">crDroid 시스템 설정 변경</string>
-14:    <string name="permdesc_writeSettings">앱이 crDroid 시스템 설정을 변경할 수 있도록 허용합니다.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid 보안 시스템 설정 변경</string>
-16:    <string name="permdesc_writeSecureSettings">앱이 crDroid 보안 시스템 설정을 변경할 수 있도록 허용합니다. 일반 앱에서는 사용하지 않습니다.</string>
-59:    <string name="lineage_api_level">crDroid API 수준</string>
-60:    <string name="lineage_updates">crDroid 업데이트</string>
-61:    <string name="lineage_version">crDroid 버전</string>
-
-lineage-sdk/lineage/res/res/values-fr/strings.xml
-8:    <string name="lineageos_system_label">Système crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Autorise une application à accéder au framework matériel de crDroid.</string>
-13:    <string name="permlab_writeSettings">modifier les paramètres système de crDroid</string>
-14:    <string name="permdesc_writeSettings">Autorise une application à modifier les paramètres système de crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modifier les paramètres de sécurité système de crDroid</string>
-57:    <string name="lineage_api_level">Niveau de l\'API crDroid</string>
-58:    <string name="lineage_updates">Mises à jour crDroid</string>
-59:    <string name="lineage_version">Version crDroid</string>
-
-lineage-sdk/lineage/res/res/values-pl/strings.xml
-8:    <string name="lineageos_system_label">System crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Zezwala aplikacji na dostęp do frameworka sprzętowego crDroid.</string>
-13:    <string name="permlab_writeSettings">modyfikacja ustawień systemu crDroid</string>
-14:    <string name="permdesc_writeSettings">Zezwól aplikacji na modyfikację ustawień systemu crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modyfikacja ustawień bezpieczeństwa systemu crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Zezwala aplikacji na modyfikację ustawień bezpieczeństwa systemu crDroid. Nieużywane przez zwykłe aplikacje.</string>
-59:    <string name="lineage_api_level">Poziom API crDroid</string>
-60:    <string name="lineage_updates">Aktualizacje crDroid</string>
-61:    <string name="lineage_version">Wersja crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ar/strings.xml
-8:    <string name="lineageos_system_label">نظام crDroid</string>
-13:    <string name="permlab_writeSettings">تعديل اعدادات نظام crDroid</string>
-14:    <string name="permdesc_writeSettings">السماح لأي تطبيق بتعديل إعدادات نظام crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">تعديل تأمين اعدادات نظام crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">للسماح لأي تطبيق بتعديل إعدادات أمان نظام crDroid. لا تستخدم التطبيقات العادية.</string>
-55:    <string name="lineage_api_level">مستوى crDroid API</string>
-56:    <string name="lineage_updates">تحديثات crDroid</string>
-57:    <string name="lineage_version">إصدار crDroid</string>
-
-lineage-sdk/lineage/res/res/values-vi/strings.xml
-8:    <string name="lineageos_system_label">Hệ thống crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Cho phép ứng dụng truy cập khung làm việc phần cứng crDroid.</string>
-13:    <string name="permlab_writeSettings">sửa đổi cài đặt hệ thống crDroid</string>
-14:    <string name="permdesc_writeSettings">Cho phép một ứng dụng chỉnh sửa cài đặt hệ thống crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">sửa đổi cài đặt hệ thống bảo mật crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Cho phép một ứng dụng sửa đổi cài đặt hệ thống bảo mật của crDroid. Không cho các ứng dụng thông thường sử dụng.</string>
-59:    <string name="lineage_api_level">Cấp độ API crDroid</string>
-60:    <string name="lineage_updates">Cập nhật crDroid</string>
-61:    <string name="lineage_version">Phiên bản crDroid</string>
-
-lineage-sdk/lineage/res/res/values-pt-rBR/strings.xml
-8:    <string name="lineageos_system_label">Sistema crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Permite que um app acesse a estrutura de hardware do sistema crDroid.</string>
-13:    <string name="permlab_writeSettings">modificar as configurações do sistema crDroid</string>
-14:    <string name="permdesc_writeSettings">Permite que um app modifique as configurações do sistema crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modificar as configurações seguras do sistema crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Permite que um app modifique as configurações do sistema seguras do crDroid. Não é utilizado por apps normais.</string>
-59:    <string name="lineage_api_level">Nível de API do crDroid</string>
-60:    <string name="lineage_updates">Atualizações do crDroid</string>
-61:    <string name="lineage_version">Versão do crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ca/strings.xml
-8:    <string name="lineageos_system_label">Sistema de crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Permet a una aplicació accedir al marc de hardware de crDroid.</string>
-13:    <string name="permlab_writeSettings">modificar la configuració del sistema de crDroid</string>
-14:    <string name="permdesc_writeSettings">Permet a una aplicació modificar la configuració del sistema de crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modificar la configuració segura del sistema de crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Permet a una aplicació modificar la configuració segura del sistema de crDroid. No utilitzar en aplicacions normals.</string>
-59:    <string name="lineage_api_level">Nivell de l\'API de crDroid</string>
-60:    <string name="lineage_updates">Actualitzacions crDroid</string>
-61:    <string name="lineage_version">Versió de crDroid</string>
-
-lineage-sdk/lineage/res/res/values-pt-rPT/strings.xml
-8:    <string name="lineageos_system_label">Sistema crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Permite que uma aplicação aceda à framework de hardware crDroid.</string>
-13:    <string name="permlab_writeSettings">modificar as definições do sistema crDroid</string>
-14:    <string name="permdesc_writeSettings">Permite que uma aplicação modifique as definições do sistema crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modificar as definições de segurança do sistema crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Permite que uma aplicação modifique as definições de segurança do sistema crDroid. Não será usado por aplicações normais.</string>
-59:    <string name="lineage_api_level">Nível da API crDroid</string>
-60:    <string name="lineage_updates">Atualizações crDroid</string>
-61:    <string name="lineage_version">Versão crDroid</string>
-
-lineage-sdk/lineage/res/res/values-en-rGB/strings.xml
-8:    <string name="lineageos_system_label">crDroid System</string>
-12:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
-13:    <string name="permlab_writeSettings">modify crDroid system settings</string>
-14:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
-15:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
-16:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
-59:    <string name="lineage_api_level">crDroid API level</string>
-60:    <string name="lineage_updates">crDroid updates</string>
-61:    <string name="lineage_version">crDroid version</string>
-
-lineage-sdk/lineage/res/res/values-kab-rDZ/strings.xml
-8:    <string name="lineageos_system_label">Anagraw n crDroid</string>
-26:    <string name="lineage_api_level">Aswir n crDroid API</string>
-27:    <string name="lineage_updates">Lqem n crDroid</string>
-28:    <string name="lineage_version">Lqem n crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ug/strings.xml
-8:    <string name="lineageos_system_label">crDroid سىستېمىسى</string>
-12:    <string name="permdesc_useHardwareFramework">ئەپنىڭ crDroid قاتتىق دېتال قۇرۇلمىسىنى زىيارەت قىلىشقا يو قويىدۇ.</string>
-13:    <string name="permlab_writeSettings">crDroid سىستېما تەڭشىكىنى ئۆزگەرتىدۇ</string>
-14:    <string name="permdesc_writeSettings">ئەپنىڭ crDroid سىستېما تەڭشىكىنى ئۆزگەرتىشىگە يول قويىدۇ.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid بىخەتەرلىك سىستېما تەڭشىكىنى ئۆزگەرتىدۇ</string>
-16:    <string name="permdesc_writeSecureSettings">ئەپنىڭ crDroid بىخەتەرلىك سىستېما تەڭشىكىنى ئۆزگەرتىشىگە يول قويىدۇ. ئادەتتىكى ئەپلەرنىڭ بۇنداق ھوقۇقى بولمايدۇ.</string>
-59:    <string name="lineage_api_level">crDroid API دەرىجىسى</string>
-60:    <string name="lineage_updates">crDroid يېڭىلاش</string>
-61:    <string name="lineage_version">crDroid نەشرى</string>
-
-lineage-sdk/lineage/res/res/values-iw/strings.xml
-8:    <string name="lineageos_system_label">מערכת crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">אפשר ליישומים גישה לתשתית החומרה של crDroid.</string>
-14:    <string name="permdesc_writeSettings">מאפשר ליישום לשנות את הגדרות מערכת crDroid.</string>
-59:    <string name="lineage_api_level">רמת ה־API של crDroid</string>
-60:    <string name="lineage_updates">עדכוני crDroid</string>
-61:    <string name="lineage_version">גרסת crDroid</string>
-
-lineage-sdk/lineage/res/res/values-kn/strings.xml
-8:    <string name="lineageos_system_label">crDroid ವ್ಯವಸ್ಥೆ</string>
-12:    <string name="permdesc_useHardwareFramework">crDroid ಯಂತ್ರಾಂಶ ಚೌಕಟ್ಟನ್ನು ಬಳಸಲು ಅಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
-13:    <string name="permlab_writeSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
-14:    <string name="permdesc_writeSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
-16:    <string name="permdesc_writeSecureSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ. ಸಾಮಾನ್ಯ ಆಪ್ಗಳ ಬಳಕೆಗೆ ಅಲ್ಲ.</string>
-55:    <string name="lineage_api_level">crDroid API ಮಟ್ಟ</string>
-56:    <string name="lineage_updates">crDroid ನವೀಕರಣಗಳು</string>
-57:    <string name="lineage_version">crDroid ಆವೃತ್ತಿ</string>
-
-lineage-sdk/lineage/res/res/values-ast-rES/strings.xml
-8:    <string name="lineageos_system_label">Sistema crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Permite qu\'una aplicación acceda al framework del hardware de crDroid</string>
-13:    <string name="permlab_writeSettings">modificación de la configuración del sistema de crDroid</string>
-14:    <string name="permdesc_writeSettings">Permite qu\'una aplicación modifique la configuración del sistema de crDroid.</string>
-59:    <string name="lineage_api_level">Nivel de l\'API de crDroid</string>
-60:    <string name="lineage_updates">Anovamientos de crDroid</string>
-61:    <string name="lineage_version">Versión de crDroid</string>
-
-lineage-sdk/lineage/res/res/values-de/strings.xml
-8:    <string name="lineageos_system_label">crDroid-System</string>
-12:    <string name="permdesc_useHardwareFramework">Ermöglicht der App, auf das crDroid-Hardwareframework zuzugreifen.</string>
-13:    <string name="permlab_writeSettings">crDroid-Systemeinstellungen ändern</string>
-14:    <string name="permdesc_writeSettings">Ermöglicht der App, crDroid-Systemeinstellungen zu ändern.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid-Sicherheitssystemeinstellungen ändern</string>
-16:    <string name="permdesc_writeSecureSettings">Ermöglicht der App, crDroid-Sicherheitssystemeinstellungen zu ändern. Nicht für die Nutzung durch normale Apps bestimmt.</string>
-55:    <string name="lineage_api_level">crDroid API-Level</string>
-56:    <string name="lineage_updates">crDroid-Updates</string>
-57:    <string name="lineage_version">crDroid-Version</string>
-
-lineage-sdk/lineage/res/res/values-tr/strings.xml
-8:    <string name="lineageos_system_label">crDroid Sistemi</string>
-12:    <string name="permdesc_useHardwareFramework">Uygulamanın crDroid donanım altyapısına erişimine izin verir.</string>
-13:    <string name="permlab_writeSettings">crDroid sistem ayarlarını değiştir</string>
-14:    <string name="permdesc_writeSettings">Bir uygulamaya crDroid sistem ayarlarını değiştirme izni verir.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid güvenli sistem ayarlarını değiştir</string>
-16:    <string name="permdesc_writeSecureSettings">Bir uygulamaya crDroid güvenli sistem ayarlarını değiştirme izni verir. Normal uygulamalar tarafından kullanılamaz.</string>
-55:    <string name="lineage_api_level">crDroid API düzeyi</string>
-56:    <string name="lineage_updates">crDroid güncellemeleri</string>
-57:    <string name="lineage_version">crDroid sürümü</string>
-
-lineage-sdk/lineage/res/res/values-zh-rTW/strings.xml
-8:    <string name="lineageos_system_label">crDroid 系統</string>
-12:    <string name="permdesc_useHardwareFramework">允許應用程式存取 crDroid 硬體框架。</string>
-13:    <string name="permlab_writeSettings">修改 crDroid 系統設定</string>
-14:    <string name="permdesc_writeSettings">允許應用程式修改 crDroid 系統設定。</string>
-15:    <string name="permlab_writeSecureSettings">修改 crDroid 系統安全設定</string>
-16:    <string name="permdesc_writeSecureSettings">允許應用程式修改 crDroid 系統安全設定。僅供偵錯使用。</string>
-55:    <string name="lineage_api_level">crDroid API 等級</string>
-56:    <string name="lineage_updates">crDroid 更新</string>
-57:    <string name="lineage_version">crDroid 版本</string>
-
-lineage-sdk/lineage/res/res/values-fa/strings.xml
-8:    <string name="lineageos_system_label">سیستم crDroid</string>
-59:    <string name="lineage_api_level">سطح crDroid API </string>
-60:    <string name="lineage_updates">به‌روزرسانی‌های crDroid</string>
-61:    <string name="lineage_version">نگارش crDroid</string>
-
-lineage-sdk/lineage/res/res/values-cy/strings.xml
-8:    <string name="lineageos_system_label">System crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Mae\'n caniatáu i ap gyrchu fframwaith caledwedd crDroid.</string>
-13:    <string name="permlab_writeSettings">addasu gosodiadau system crDroid</string>
-14:    <string name="permdesc_writeSettings">Mae\'n caniatáu i ap addasu gosodiadau system crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">addasu gosodiadau system ddiogel crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Mae\'n caniatáu i ap addasu gosodiadau system ddiogel crDroid. Dim i\'w ddefnyddio gan apiau arferol.</string>
-55:    <string name="lineage_api_level">Lefel API crDroid</string>
-56:    <string name="lineage_updates">Diweddariadau crDroid</string>
-57:    <string name="lineage_version">Fersiwn crDroid</string>
-
-lineage-sdk/lineage/res/res/values-uk/strings.xml
-8:    <string name="lineageos_system_label">Система crDroid</string>
-50:    <string name="lineage_api_level">Рівень API crDroid</string>
-51:    <string name="lineage_updates">Оновлення crDroid</string>
-52:    <string name="lineage_version">Версія crDroid</string>
-
-lineage-sdk/lineage/res/res/values-th/strings.xml
-8:    <string name="lineageos_system_label">ระบบ crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">อนุญาตให้แอปเข้าถึง crDroid ฮาร์ดแวร์เฟรมเวิร์ค</string>
-13:    <string name="permlab_writeSettings">ปรับเปลี่ยนการตั้งค่าระบบ crDroid</string>
-14:    <string name="permdesc_writeSettings">อนุญาตให้แอปปรับการตั้งค่าระบบ crDroid</string>
-15:    <string name="permlab_writeSecureSettings">ปรับแต่งการตั้งค่าระบบความปลอดภัยของ crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">อนุญาตให้แอปปรับเปลี่ยนการตั้งค่าระบบรักษาความปลอดภัยของ crDroid ไม่ได้สำหรับการใช้แอปทั่วไป</string>
-55:    <string name="lineage_api_level">ระดับ API ของ crDroid</string>
-56:    <string name="lineage_updates">อัพเดตระบบ crDroid</string>
-57:    <string name="lineage_version">เวอร์ชั่น crDroid</string>
-
-lineage-sdk/lineage/res/res/values-sq/strings.xml
-8:    <string name="lineageos_system_label">Sistemi crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Lejon një app të hyjë në strukturën elektronike të crDroid.</string>
-13:    <string name="permlab_writeSettings">modifiko parametrat e sistemit crDroid</string>
-14:    <string name="permdesc_writeSettings">Lejon app të modifikojë parametrat e sistemit crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modifiko parametrat e sigurisë së sistemit crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Lejon një app të ndryshojë parametrat e sigurisë së sistemit crDroid. Jo për përdorim nga app normale.</string>
-58:    <string name="lineage_api_level">Niveli API i crDroid</string>
-59:    <string name="lineage_updates">Përditësimet e crDroid</string>
-60:    <string name="lineage_version">Versioni i crDroid</string>
-
-lineage-sdk/lineage/res/res/values-fy-rNL/strings.xml
-8:    <string name="lineageos_system_label">crDroid-systeem</string>
-12:    <string name="permdesc_useHardwareFramework">Hjirmei kin de app tagong krije ta it hardware-framework fan crDroid.</string>
-13:    <string name="permlab_writeSettings">crDroid-systeemynstellingen wizigje</string>
-14:    <string name="permdesc_writeSettings">Hjirmei kin de app de systeemynstellingen fan crDroid wizigje.</string>
-15:    <string name="permlab_writeSecureSettings">befeiligege crDroid-systeemynstellingen wizigje</string>
-16:    <string name="permdesc_writeSecureSettings">Hjirmei kin de app de befeilige systeemynstellingen fan crDroid wizigje. Net foar gebrûk troch normale apps.</string>
-55:    <string name="lineage_api_level">crDroid-API-Nivo</string>
-56:    <string name="lineage_updates">crDroid-fernijingen</string>
-57:    <string name="lineage_version">crDroid-ferzje</string>
-
-lineage-sdk/lineage/res/res/values-be/strings.xml
-8:    <string name="lineageos_system_label">Сістэма crDroid</string>
-11:    <string name="permlab_writeSettings">змяніць налады сістэмы crDroid</string>
-35:    <string name="lineage_updates">Абнаўленні crDroid</string>
-36:    <string name="lineage_version">Версія crDroid</string>
-
-lineage-sdk/lineage/res/res/values-sl/strings.xml
-8:    <string name="lineageos_system_label">Sistem crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Dovoli aplikaciji dostop do strojnega ogrodja crDroid.</string>
-13:    <string name="permlab_writeSettings">spreminjanje sistemskih nastavitev crDroid</string>
-14:    <string name="permdesc_writeSettings">Dovoli aplikaciji spreminjanje sistemskih nastavitev crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">spreminjanje varnih sistemskih nastavitev crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Dovoli aplikaciji spreminjanje varnih sistemskih nastavitev crDroid. Običajne aplikacije tega ne uporabljajo.</string>
-59:    <string name="lineage_api_level">Raven crDroid API-ja</string>
-60:    <string name="lineage_updates">Posodobitve crDroid</string>
-61:    <string name="lineage_version">Različica crDroid</string>
-
-lineage-sdk/lineage/res/res/values-gl/strings.xml
-8:    <string name="lineageos_system_label">Sistema crDroid</string>
-55:    <string name="lineage_api_level">Nivel da API do crDroid</string>
-56:    <string name="lineage_updates">Actualizacións de crDroid</string>
-57:    <string name="lineage_version">Versión de crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ka/strings.xml
-8:    <string name="lineageos_system_label">crDroid სისტემა</string>
-12:    <string name="permdesc_useHardwareFramework">პროგრამისთვის ნების დართვა crDroid-ის აპარატურულ გარსთან წვდომისთვის.</string>
-13:    <string name="permlab_writeSettings">crDroid-სისტემის დაცული პარამეტრების შეცვლა</string>
-14:    <string name="permdesc_writeSettings">პროგრამისთვის ნების დართვა, შეცვალოს crDroid-სისტემის პარამეტრები.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid-სისტემის დაცული სისტემური პარამეტრების შეცვლა</string>
-16:    <string name="permdesc_writeSecureSettings">ნებართვა, რომ აპი შეძლებს შეცვალოს crDroid-სისტემის დაცული პარამეტრები. არაა განკუთვნილი ჩვეულებრივი აპებისთვის.</string>
-59:    <string name="lineage_api_level">crDroid-ის API-ს დონე</string>
-60:    <string name="lineage_updates">crDroid-ის განახლებები</string>
-61:    <string name="lineage_version">crDroid-ის ვერსია</string>
-
-lineage-sdk/lineage/res/res/values-zh-rCN/strings.xml
-8:    <string name="lineageos_system_label">crDroid 系统</string>
-12:    <string name="permdesc_useHardwareFramework">允许应用访问 crDroid 硬件框架。</string>
-13:    <string name="permlab_writeSettings">修改 crDroid 系统设置</string>
-14:    <string name="permdesc_writeSettings">允许应用修改 crDroid 系统设置。</string>
-15:    <string name="permlab_writeSecureSettings">修改 crDroid 系统安全设置</string>
-16:    <string name="permdesc_writeSecureSettings">允许应用修改 crDroid 系统安全设置。不适用于一般的应用程序。</string>
-59:    <string name="lineage_api_level">crDroid API 级别</string>
-60:    <string name="lineage_updates">crDroid 更新</string>
-61:    <string name="lineage_version">crDroid 版本</string>
-
-lineage-sdk/lineage/res/res/values-en-rCA/strings.xml
-8:    <string name="lineageos_system_label">crDroid System</string>
-12:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
-13:    <string name="permlab_writeSettings">modify crDroid system settings</string>
-14:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
-15:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
-16:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
-59:    <string name="lineage_api_level">crDroid API level</string>
-60:    <string name="lineage_updates">crDroid updates</string>
-61:    <string name="lineage_version">crDroid version</string>
-
-lineage-sdk/lineage/res/res/values-is/strings.xml
-8:    <string name="lineageos_system_label">crDroid kerfi</string>
-12:    <string name="permdesc_useHardwareFramework">Gerir forriti kleift að fá aðgang að vélbúnaðarkerfum crDroid.</string>
-13:    <string name="permlab_writeSettings">breyta kerfisstillingum crDroid</string>
-14:    <string name="permdesc_writeSettings">Gerir forriti kleift að breyta kerfisstillingum crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">breyta öruggum kerfisstillingum crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Gerir forriti kleift að breyta öryggisstillingum crDroid. Notist ekki af venjulegum forritum.</string>
-55:    <string name="lineage_api_level">crDroid API-stig</string>
-56:    <string name="lineage_updates">crDroid uppfærslur</string>
-57:    <string name="lineage_version">crDroid útgáfa</string>
-
-lineage-sdk/lineage/res/res/values-bg/strings.xml
-8:    <string name="lineageos_system_label">crDroid Система</string>
-12:    <string name="permdesc_useHardwareFramework">Разрешава на едно приложение да достъпа до framework хардуера на crDroid.</string>
-13:    <string name="permlab_writeSettings">промяна на системните настройки на crDroid</string>
-14:    <string name="permdesc_writeSettings">Позволява на приложението да модифицира crDroid системни настройки.</string>
-15:    <string name="permlab_writeSecureSettings">промяна на системните настройки за сигурност на crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Разрешава на приложението да променя системните настройки на сигурността на crDroid. Това разрешение не се използва от нормални приложения.</string>
-59:    <string name="lineage_api_level">crDroid приложно-програмен интерфейс ниво</string>
-60:    <string name="lineage_updates">crDroid актуализации</string>
-61:    <string name="lineage_version">Версия на crDroid</string>
-
-lineage-sdk/lineage/res/res/values-az/strings.xml
-8:    <string name="lineageos_system_label">crDroid Sistemi</string>
-12:    <string name="permdesc_useHardwareFramework">Tətbiqin crDroid donanım çərçivəsinə erişməsinə icazə verir.</string>
-13:    <string name="permlab_writeSettings">crDroid sistem ayarlarını dəyişdir</string>
-14:    <string name="permdesc_writeSettings">Tətbiqin crDroid sistem ayarlarını dəyişdirməsinə icazə verir.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid güvənli sistem ayarlarını dəyişdir</string>
-16:    <string name="permdesc_writeSecureSettings">Tətbiqin crDroid güvənli sistem ayarlarını dəyişdirməsinə icazə verir. Normal tətbiqlər tərəfindən istifadə olunmur.</string>
-59:    <string name="lineage_api_level">crDroid API səviyyəsi</string>
-60:    <string name="lineage_updates">crDroid güncəlləmələri</string>
-61:    <string name="lineage_version">crDroid versiyası</string>
-
-lineage-sdk/lineage/res/res/values-ga-rIE/strings.xml
-8:    <string name="lineageos_system_label">Córas crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Ligeann sé d’app rochtain a fháil ar chreat crua-earraí crDroid.</string>
-13:    <string name="permlab_writeSettings">athraigh socruithe an chórais crDroid</string>
-14:    <string name="permdesc_writeSettings">Ligeann sé d’aip socruithe córais crDroid a mhodhnú.</string>
-15:    <string name="permlab_writeSecureSettings">athraigh socruithe córas slán crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Ligeann sé d’aip socruithe córais slán crDroid a mhodhnú. Ní le húsáid ag gnáth-apps.</string>
-59:    <string name="lineage_api_level">Leibhéal API crDroid</string>
-60:    <string name="lineage_updates">Nuashonruithe do crDroid</string>
-61:    <string name="lineage_version">crDroid leagan</string>
-
-lineage-sdk/lineage/res/res/values-cs/strings.xml
-8:    <string name="lineageos_system_label">Systém crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Umožní přistupovat k hardware pomocí systému crDroid.</string>
-13:    <string name="permlab_writeSettings">změnit nastavení systému crDroid</string>
-14:    <string name="permdesc_writeSettings">Umožní měnit nastavení systému crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">změnit nastavení zabezpečení systému crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Umožní změnit nastavení zabezpečení systému crDroid. Není určeno pro běžné aplikace.</string>
-59:    <string name="lineage_api_level">Verze crDroid API</string>
-60:    <string name="lineage_updates">Aktualizace crDroid</string>
-61:    <string name="lineage_version">Verze systému crDroid</string>
-
-lineage-sdk/lineage/res/res/values-it/strings.xml
-8:    <string name="lineageos_system_label">Sistema crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Consente all\'applicazione di accedere al framework hardware di crDroid.</string>
-13:    <string name="permlab_writeSettings">modifica le impostazioni di sistema di crDroid</string>
-14:    <string name="permdesc_writeSettings">Consente all\'applicazione di modificare le impostazioni di sistema di crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modifica le impostazioni sicure di sistema di crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Consente all\'applicazione di modificare le impostazioni sicure di sistema di crDroid. Non utilizzato dalle app normali.</string>
-55:    <string name="lineage_api_level">Livello API crDroid</string>
-56:    <string name="lineage_updates">Aggiornamenti crDroid</string>
-57:    <string name="lineage_version">Versione crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ru/strings.xml
-8:    <string name="lineageos_system_label">Система crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Позволяет приложению использовать аппаратный фреймворк crDroid.</string>
-13:    <string name="permlab_writeSettings">изменить настройки системы crDroid</string>
-14:    <string name="permdesc_writeSettings">Приложение сможет изменять настройки системы crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">изменение настроек системы безопасности crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы crDroid. Не используется в обычных приложениях.</string>
-59:    <string name="lineage_api_level">Версия API crDroid</string>
-60:    <string name="lineage_updates">Обновления crDroid</string>
-61:    <string name="lineage_version">Версия crDroid</string>
-
-lineage-sdk/lineage/res/res/values-da/strings.xml
-8:    <string name="lineageos_system_label">crDroid System</string>
-12:    <string name="permdesc_useHardwareFramework">Tillader en app adgang til crDroid udstyrs-programmingsplatformen.</string>
-13:    <string name="permlab_writeSettings">modificere crDroid system-indstillinger</string>
-14:    <string name="permdesc_writeSettings">Tillader en app at modificere crDroid system-indstillinger.</string>
-15:    <string name="permlab_writeSecureSettings">modificere crDroid sikre system-indstillinger</string>
-16:    <string name="permdesc_writeSecureSettings">Tillader en app at modificere crDroid sikre system-indstillinger. Ikke til brug af normale apps.</string>
-54:    <string name="lineage_api_level">crDroid API-niveau</string>
-55:    <string name="lineage_updates">crDroid-opdateringer</string>
-56:    <string name="lineage_version">crDroid-version</string>
-
-lineage-sdk/lineage/res/res/values-sk/strings.xml
-8:    <string name="lineageos_system_label">Systém crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Umožňuje aplikácii pristupovať k hardvérovému rámcu crDroid.</string>
-13:    <string name="permlab_writeSettings">zmeniť nastavenia systému crDroid</string>
-14:    <string name="permdesc_writeSettings">Umožňuje aplikácii meniť nastavenia systému crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">zmeniť nastavenia zabezpečenia systému crDroid</string>
-55:    <string name="lineage_api_level">Verzia crDroid API</string>
-56:    <string name="lineage_updates">Aktualizácie crDroid</string>
-57:    <string name="lineage_version">Verzia crDroid</string>
-
-lineage-sdk/lineage/res/res/values-sv/strings.xml
-8:    <string name="lineageos_system_label">crDroid-systemet</string>
-12:    <string name="permdesc_useHardwareFramework">Ger en app åtkomst till crDroid hårdvaruramverk.</string>
-13:    <string name="permlab_writeSettings">ändra crDroids systeminställningar</string>
-14:    <string name="permdesc_writeSettings">Tillåter en app att ändra crDroids systeminställningar.</string>
-15:    <string name="permlab_writeSecureSettings">ändra skyddade crDroid-inställningar</string>
-16:    <string name="permdesc_writeSecureSettings">Tillåter en app att ändra skyddade crDroid-inställningar. Ska inte användas av vanliga appar.</string>
-55:    <string name="lineage_api_level">API-nivå för crDroid</string>
-56:    <string name="lineage_updates">crDroid-uppdateringar</string>
-57:    <string name="lineage_version">crDroid-version</string>
-
-lineage-sdk/lineage/res/res/values-in/strings.xml
-8:    <string name="lineageos_system_label">Sistem crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Izinkan aplikasi untuk mengakses susunan perangkat keras crDroid.</string>
-13:    <string name="permlab_writeSettings">mengubah setelah sistem crDroid</string>
-14:    <string name="permdesc_writeSettings">Izinkan aplikasi untuk memodifikasi setelan sistem crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">memodifikasi setelan sistem keamanan crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Izinkan aplikasi untuk memodifikasi setelan sistem keamanan crDroid. Tidak untuk digunakan oleh aplikasi yang normal.</string>
-55:    <string name="lineage_api_level">Tingkat API crDroid</string>
-56:    <string name="lineage_updates">Pembaruan crDroid</string>
-57:    <string name="lineage_version">Versi crDroid</string>
-
-lineage-sdk/lineage/res/res/values-es-rUS/strings.xml
-8:    <string name="lineageos_system_label">Sistema de crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Permite el acceso de una aplicación a la estructura de hardware de crDroid.</string>
-13:    <string name="permlab_writeSettings">modificar ajustes del sistema de crDroid</string>
-14:    <string name="permdesc_writeSettings">Permite que una aplicación modifique los ajustes del sistema de crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modificar ajustes del sistema de seguridad de crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Permite que una aplicación modifique los ajustes del sistema de seguridad de crDroid. No apto para aplicaciones normales.</string>
-55:    <string name="lineage_api_level">Nivel de API de crDroid</string>
-56:    <string name="lineage_updates">Actualizaciones de crDroid</string>
-57:    <string name="lineage_version">Versión de crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ja/strings.xml
-8:    <string name="lineageos_system_label">crDroid システム</string>
-12:    <string name="permdesc_useHardwareFramework">crDroid ハードウェアフレームワークへのアクセスをアプリに許可します。</string>
-14:    <string name="permdesc_writeSettings">crDroid システム設定の変更をアプリに許可します。</string>
-16:    <string name="permdesc_writeSecureSettings">crDroid セキュアシステム設定の変更をアプリに許可します。通常のアプリ用ではありません。</string>
-59:    <string name="lineage_api_level">crDroid API レベル</string>
-60:    <string name="lineage_updates">crDroid アップデート</string>
-61:    <string name="lineage_version">crDroid バージョン</string>
-
-lineage-sdk/lineage/res/res/values-et/strings.xml
-8:    <string name="lineageos_system_label">crDroid\'i süsteem</string>
-12:    <string name="permdesc_useHardwareFramework">Annab rakendusele ligipääsu crDroid riistvara raamistikule.</string>
-13:    <string name="permlab_writeSettings">crDroid\'i süsteemiseadete muutmine</string>
-14:    <string name="permdesc_writeSettings">Lubab rakendusel muuta crDroid\'i süsteemiseadeid.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid\'i turvaliste süsteemiseadete muutmine</string>
-16:    <string name="permdesc_writeSecureSettings">Lubab rakendusel muuta crDroid\'i turvalisi süsteemiseadeid. Ei ole mõeldud kasutamiseks tavarakendusetel.</string>
-55:    <string name="lineage_api_level">crDroid\'i API tase</string>
-56:    <string name="lineage_updates">crDroid\'i uuendused</string>
-57:    <string name="lineage_version">crDroid\'i versioon</string>
-
-lineage-sdk/lineage/res/res/values-sc-rIT/strings.xml
-8:    <string name="lineageos_system_label">Sistema crDroid</string>
-11:    <string name="permlab_writeSettings">modìfica sas impostatziones de sistema de crDroid</string>
-12:    <string name="permdesc_writeSettings">Permitit a un\'aplicatzione de modificare sas impostatziones de sistema de crDroid.</string>
-43:    <string name="lineage_api_level">Livellu de s\'API de crDroid</string>
-
-lineage-sdk/lineage/res/res/values-sr/strings.xml
-8:    <string name="lineageos_system_label">crDroid Систем</string>
-12:    <string name="permdesc_useHardwareFramework">Апликација може да приступа хардверском оквиру crDroid-а.</string>
-13:    <string name="permlab_writeSettings">измени crDroid системске поставке</string>
-14:    <string name="permdesc_writeSettings">Дозвољава апликацији да мења crDroid системске поставке.</string>
-15:    <string name="permlab_writeSecureSettings">измените crDroid сигурносне поставке система</string>
-16:    <string name="permdesc_writeSecureSettings">Омогућава апликацији да мења crDroid сигурносне поставке система. Није за употребу од стране нормалних апликација.</string>
-55:    <string name="lineage_api_level">Ниво API-ја crDroid-а</string>
-56:    <string name="lineage_updates">crDroid ажурирања</string>
-57:    <string name="lineage_version">Верзија crDroid-а</string>
-
-lineage-sdk/lineage/res/res/values-fur-rIT/strings.xml
-8:    <string name="lineageos_system_label">Sisteme crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Al permet a une aplicazion di acedi ae suaze di lavôr hardware di crDroid.</string>
-13:    <string name="permlab_writeSettings">modifiche lis impostazions di sisteme di crDroid</string>
-14:    <string name="permdesc_writeSettings">Al permet a une aplicazion di modificâ lis impostazions di sisteme di crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modifiche lis impostazions siguris dal sisteme di crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Al permet a une aplicazion di modificâ lis impostazions siguris dal sisteme di crDroid. No doprât da lis aplicazions normâls.</string>
-55:    <string name="lineage_api_level">Nivel API crDroid</string>
-56:    <string name="lineage_updates">Inzornaments di crDroid</string>
-57:    <string name="lineage_version">Version di crDroid</string>
-
-lineage-sdk/lineage/res/res/values-eu/strings.xml
-8:    <string name="lineageos_system_label">crDroid sistema</string>
-12:    <string name="permdesc_useHardwareFramework">Aplikazioari crDroid hardware markorako sarbidea gaitzen dio.</string>
-13:    <string name="permlab_writeSettings">aldatu crDroid sistemaren ezarpenak</string>
-14:    <string name="permdesc_writeSettings">crDroid sistemaren ezarpenak aldatzea ahalbidetzen dio aplikazioari.</string>
-15:    <string name="permlab_writeSecureSettings">aldatu crDroid sistemaren ezarpen seguruak</string>
-16:    <string name="permdesc_writeSecureSettings">crDroid sistemaren ezarpen seguruak aldatzea ahalbidetzen dio aplikazioari. Aplikazio arruntek ez dute behar.</string>
-55:    <string name="lineage_api_level">crDroid API maila</string>
-56:    <string name="lineage_updates">crDroid eguneraketak</string>
-57:    <string name="lineage_version">crDroid bertsioa</string>
-
-lineage-sdk/lineage/res/res/values-gd/strings.xml
-8:    <string name="lineageos_system_label">Siostam crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Leigidh seo le aplacaid frèam-obrach bathair-chruaidh crDroid a chleachdadh.</string>
-13:    <string name="permlab_writeSettings">roghainnean siostam crDroid atharrachadh</string>
-14:    <string name="permdesc_writeSettings">Leigidh seo le aplacaid roghainnean siostam crDroid atharrachadh.</string>
-15:    <string name="permlab_writeSecureSettings">roghainnean siostam crDroid tèarainte atharrachadh</string>
-16:    <string name="permdesc_writeSecureSettings">Leigidh seo le aplacaid roghainnean siostam crDroid tèarainte atharrachadh. Na cleachd seo le aplacaidean àbhaisteach.</string>
-55:    <string name="lineage_api_level">Leibheil API crDroid</string>
-56:    <string name="lineage_updates">Ùrachaidhean air crDroid</string>
-57:    <string name="lineage_version">An tionndadh de crDroid</string>
-
-lineage-sdk/lineage/res/res/values-ta/strings.xml
-8:    <string name="lineageos_system_label">crDroid அமைப்பு</string>
-12:    <string name="permdesc_useHardwareFramework">crDroid வன்பொருள் கட்டமைப்பை அணுக பயன்பாட்டை அனுமதிக்கிறது.</string>
-13:    <string name="permlab_writeSettings">crDroid முறைமை அமைப்புகளை மாற்றுக</string>
-14:    <string name="permdesc_writeSettings">crDroid முறைமை அமைப்புகளை மாற்ற ஒரு செயலியை அனுமதிக்கிறது.</string>
-15:    <string name="permlab_writeSecureSettings">crDroid பாதுகாப்பு முறைமை அமைப்புகளை மாற்றுக</string>
-16:    <string name="permdesc_writeSecureSettings">crDroid பாதுகாப்பு முறைமை அமைப்புகளை மாற்ற ஒரு செயலியை அனுமதிக்கிறது. வழக்கமான செயலிகளால் பயன்படுத்த முடியாது.</string>
-59:    <string name="lineage_api_level">crDroid API நிலை</string>
-60:    <string name="lineage_updates">crDroid புதுப்பிப்புகள்</string>
-61:    <string name="lineage_version">crDroid பதிப்பு</string>
-
-lineage-sdk/lineage/res/res/values-nl/strings.xml
-8:    <string name="lineageos_system_label">crDroid-systeem</string>
-12:    <string name="permdesc_useHardwareFramework">Hiermee kan de app toegang krijgen tot het hardware-framework van crDroid.</string>
-13:    <string name="permlab_writeSettings">crDroid-systeeminstellingen wijzigen</string>
-14:    <string name="permdesc_writeSettings">Staat een app toe de systeeminstellingen van crDroid te wijzigen.</string>
-15:    <string name="permlab_writeSecureSettings">beveiligde crDroid-systeeminstellingen wijzigen</string>
-16:    <string name="permdesc_writeSecureSettings">Hiermee kan de app de beveiligde systeeminstellingen van crDroid wijzigen. Niet voor gebruik door normale apps.</string>
-55:    <string name="lineage_api_level">Niveau van crDroid-API</string>
-56:    <string name="lineage_updates">crDroid-updates</string>
-57:    <string name="lineage_version">crDroid-versie</string>
-
-lineage-sdk/lineage/res/res/values-ro/strings.xml
-8:    <string name="lineageos_system_label">Sistem crDroid</string>
-12:    <string name="permdesc_useHardwareFramework">Permite unei aplicații să acceseze framework-ul crDroid hardware.</string>
-13:    <string name="permlab_writeSettings">modifică setările de sistem crDroid</string>
-14:    <string name="permdesc_writeSettings">Permite unei aplicații să modifice setările de sistem crDroid.</string>
-15:    <string name="permlab_writeSecureSettings">modifică setările de siguranță de sistem crDroid</string>
-16:    <string name="permdesc_writeSecureSettings">Permite unei aplicații să modifice setările de siguranță de sistem crDroid. Nu este utilizabilă de către aplicațiile normale.</string>
-59:    <string name="lineage_api_level">Nivel API crDroid</string>
-60:    <string name="lineage_updates">Actualizări crDroid</string>
-61:    <string name="lineage_version">Versiune crDroid</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-packages/apps/Settings/ZienthOSSettings/src/com/zienth/settings/fragments/About.java
-42:    private String KEY_CRDROID_SOURCE = "zienth_source";
-43:    private String KEY_CRDROID_TELEGRAM = "zienth_telegram";
-44:    private String KEY_CRDROID_SHARE = "zienth_share";
-45:    private String KEY_CRDROID_TRANSLATE = "zienth_translate";
-46:    private String KEY_CRDROID_WEBSITE = "zienth_website";
-47:    private String KEY_CRDROID_TELEGRAM_CHANNEL = "zienth_telegram_channel";
-48:    private String KEY_CRDROID_SPONSOR = "zienth_sponsor";
-49:    private String KEY_CRDROID_BUILDSERVERSPONSOR = "zienth_buildserversponsor";
-65:        mSourceUrl = findPreference(KEY_CRDROID_SOURCE);
-66:        mTelegramUrl = findPreference(KEY_CRDROID_TELEGRAM);
-67:        mShare = findPreference(KEY_CRDROID_SHARE);
-68:        mTranslate = findPreference(KEY_CRDROID_TRANSLATE);
-69:        mWebsite = findPreference(KEY_CRDROID_WEBSITE);
-70:        mTelegramChannelUrl = findPreference(KEY_CRDROID_TELEGRAM_CHANNEL);
-71:        mSponsor = findPreference(KEY_CRDROID_SPONSOR);
-72:        mBuildServerSponsor = findPreference(KEY_CRDROID_BUILDSERVERSPONSOR);
-
-packages/apps/Settings/ZienthOSSettings/res/values-bn-rBD/cr_strings.xml
-65:    <string name="about_zienth">CrDroid সম্পর্কে</string>
-68:    <string name="share_zienth_title">CrDroid শেয়ার করুন</string>
-69:    <string name="share_zienth_summary">CrDroid সম্পর্কে অন্যদের জানান</string>
-71:    <string name="share_chooser_title">CrDroid শেয়ার করুন</string>
-
-packages/apps/Settings/ZienthOSSettings/res/values-ar-rSA/cr_strings.xml
-88:    <string name="zienth_donate_title">CrDroid يحتاج إلى مساعدتك!</string>
-923:    <string name="show_clipboard_overlay_title">إعدادات CrDroid</string>
-
-packages/apps/Settings/ZienthOSSettings/res/values-it-rIT/cr_strings.xml
-75:    <string name="zienth_telegram_title">Comunità CrDroid</string>
-
-packages/apps/Settings/ZienthOSSettings/res/values-es-rES/cr_strings.xml
-88:    <string name="zienth_donate_title">¡CrDroid necesita tu ayuda!</string>
-
-packages/apps/Settings/ZienthOSSettings/res/values-es-rVE/cr_strings.xml
-88:    <string name="zienth_donate_title">¡CrDroid necesita tu ayuda!</string>
-
-packages/apps/Settings/ZienthOSSettings/res/values-et-rEE/cr_strings.xml
-22:    <string name="reset_settings_message">See lähtestab valitud kasutaja jaoks enamus CrDroidi seaded vaikeväärtustele. Kas soovid jätkata?</string>
-
-packages/modules/Virtualization/tests/helper/src/java/com/android/microdroid/test/preparer/DisableMicrodroidDebugPolicyPreparer.java
-58:            CLog.d("Bypassing micrdroid debug policy");
+lineage/res/res/values-ar/strings.xml:    <string name="lineageos_system_label">نظام crDroid</string>
+lineage/res/res/values-ar/strings.xml:    <string name="permlab_writeSettings">تعديل اعدادات نظام crDroid</string>
+lineage/res/res/values-ar/strings.xml:    <string name="permdesc_writeSettings">السماح لأي تطبيق بتعديل إعدادات نظام crDroid.</string>
+lineage/res/res/values-ar/strings.xml:    <string name="permlab_writeSecureSettings">تعديل تأمين اعدادات نظام crDroid</string>
+lineage/res/res/values-ar/strings.xml:    <string name="permdesc_writeSecureSettings">للسماح لأي تطبيق بتعديل إعدادات أمان نظام crDroid. لا تستخدم التطبيقات العادية.</string>
+lineage/res/res/values-ar/strings.xml:    <string name="lineage_api_level">مستوى crDroid API</string>
+lineage/res/res/values-ar/strings.xml:    <string name="lineage_updates">تحديثات crDroid</string>
+lineage/res/res/values-ar/strings.xml:    <string name="lineage_version">إصدار crDroid</string>
+lineage/res/res/values-ast-rES/strings.xml:    <string name="lineageos_system_label">Sistema crDroid</string>
+lineage/res/res/values-ast-rES/strings.xml:    <string name="permdesc_useHardwareFramework">Permite qu\'una aplicación acceda al framework del hardware de crDroid</string>
+lineage/res/res/values-ast-rES/strings.xml:    <string name="permlab_writeSettings">modificación de la configuración del sistema de crDroid</string>
+lineage/res/res/values-ast-rES/strings.xml:    <string name="permdesc_writeSettings">Permite qu\'una aplicación modifique la configuración del sistema de crDroid.</string>
+lineage/res/res/values-ast-rES/strings.xml:    <string name="lineage_api_level">Nivel de l\'API de crDroid</string>
+lineage/res/res/values-ast-rES/strings.xml:    <string name="lineage_updates">Anovamientos de crDroid</string>
+lineage/res/res/values-ast-rES/strings.xml:    <string name="lineage_version">Versión de crDroid</string>
+lineage/res/res/values-az/strings.xml:    <string name="lineageos_system_label">crDroid Sistemi</string>
+lineage/res/res/values-az/strings.xml:    <string name="permdesc_useHardwareFramework">Tətbiqin crDroid donanım çərçivəsinə erişməsinə icazə verir.</string>
+lineage/res/res/values-az/strings.xml:    <string name="permlab_writeSettings">crDroid sistem ayarlarını dəyişdir</string>
+lineage/res/res/values-az/strings.xml:    <string name="permdesc_writeSettings">Tətbiqin crDroid sistem ayarlarını dəyişdirməsinə icazə verir.</string>
+lineage/res/res/values-az/strings.xml:    <string name="permlab_writeSecureSettings">crDroid güvənli sistem ayarlarını dəyişdir</string>
+lineage/res/res/values-az/strings.xml:    <string name="permdesc_writeSecureSettings">Tətbiqin crDroid güvənli sistem ayarlarını dəyişdirməsinə icazə verir. Normal tətbiqlər tərəfindən istifadə olunmur.</string>
+lineage/res/res/values-az/strings.xml:    <string name="lineage_api_level">crDroid API səviyyəsi</string>
+lineage/res/res/values-az/strings.xml:    <string name="lineage_updates">crDroid güncəlləmələri</string>
+lineage/res/res/values-az/strings.xml:    <string name="lineage_version">crDroid versiyası</string>
+lineage/res/res/values-be/strings.xml:    <string name="lineageos_system_label">Сістэма crDroid</string>
+lineage/res/res/values-be/strings.xml:    <string name="permlab_writeSettings">змяніць налады сістэмы crDroid</string>
+lineage/res/res/values-be/strings.xml:    <string name="lineage_updates">Абнаўленні crDroid</string>
+lineage/res/res/values-be/strings.xml:    <string name="lineage_version">Версія crDroid</string>
+lineage/res/res/values-bg/strings.xml:    <string name="lineageos_system_label">crDroid Система</string>
+lineage/res/res/values-bg/strings.xml:    <string name="permdesc_useHardwareFramework">Разрешава на едно приложение да достъпа до framework хардуера на crDroid.</string>
+lineage/res/res/values-bg/strings.xml:    <string name="permlab_writeSettings">промяна на системните настройки на crDroid</string>
+lineage/res/res/values-bg/strings.xml:    <string name="permdesc_writeSettings">Позволява на приложението да модифицира crDroid системни настройки.</string>
+lineage/res/res/values-bg/strings.xml:    <string name="permlab_writeSecureSettings">промяна на системните настройки за сигурност на crDroid</string>
+lineage/res/res/values-bg/strings.xml:    <string name="permdesc_writeSecureSettings">Разрешава на приложението да променя системните настройки на сигурността на crDroid. Това разрешение не се използва от нормални приложения.</string>
+lineage/res/res/values-bg/strings.xml:    <string name="lineage_api_level">crDroid приложно-програмен интерфейс ниво</string>
+lineage/res/res/values-bg/strings.xml:    <string name="lineage_updates">crDroid актуализации</string>
+lineage/res/res/values-bg/strings.xml:    <string name="lineage_version">Версия на crDroid</string>
+lineage/res/res/values-ca/strings.xml:    <string name="lineageos_system_label">Sistema de crDroid</string>
+lineage/res/res/values-ca/strings.xml:    <string name="permdesc_useHardwareFramework">Permet a una aplicació accedir al marc de hardware de crDroid.</string>
+lineage/res/res/values-ca/strings.xml:    <string name="permlab_writeSettings">modificar la configuració del sistema de crDroid</string>
+lineage/res/res/values-ca/strings.xml:    <string name="permdesc_writeSettings">Permet a una aplicació modificar la configuració del sistema de crDroid.</string>
+lineage/res/res/values-ca/strings.xml:    <string name="permlab_writeSecureSettings">modificar la configuració segura del sistema de crDroid</string>
+lineage/res/res/values-ca/strings.xml:    <string name="permdesc_writeSecureSettings">Permet a una aplicació modificar la configuració segura del sistema de crDroid. No utilitzar en aplicacions normals.</string>
+lineage/res/res/values-ca/strings.xml:    <string name="lineage_api_level">Nivell de l\'API de crDroid</string>
+lineage/res/res/values-ca/strings.xml:    <string name="lineage_updates">Actualitzacions crDroid</string>
+lineage/res/res/values-ca/strings.xml:    <string name="lineage_version">Versió de crDroid</string>
+lineage/res/res/values-cs/strings.xml:    <string name="lineageos_system_label">Systém crDroid</string>
+lineage/res/res/values-cs/strings.xml:    <string name="permdesc_useHardwareFramework">Umožní přistupovat k hardware pomocí systému crDroid.</string>
+lineage/res/res/values-cs/strings.xml:    <string name="permlab_writeSettings">změnit nastavení systému crDroid</string>
+lineage/res/res/values-cs/strings.xml:    <string name="permdesc_writeSettings">Umožní měnit nastavení systému crDroid.</string>
+lineage/res/res/values-cs/strings.xml:    <string name="permlab_writeSecureSettings">změnit nastavení zabezpečení systému crDroid</string>
+lineage/res/res/values-cs/strings.xml:    <string name="permdesc_writeSecureSettings">Umožní změnit nastavení zabezpečení systému crDroid. Není určeno pro běžné aplikace.</string>
+lineage/res/res/values-cs/strings.xml:    <string name="lineage_api_level">Verze crDroid API</string>
+lineage/res/res/values-cs/strings.xml:    <string name="lineage_updates">Aktualizace crDroid</string>
+lineage/res/res/values-cs/strings.xml:    <string name="lineage_version">Verze systému crDroid</string>
+lineage/res/res/values-cy/strings.xml:    <string name="lineageos_system_label">System crDroid</string>
+lineage/res/res/values-cy/strings.xml:    <string name="permdesc_useHardwareFramework">Mae\'n caniatáu i ap gyrchu fframwaith caledwedd crDroid.</string>
+lineage/res/res/values-cy/strings.xml:    <string name="permlab_writeSettings">addasu gosodiadau system crDroid</string>
+lineage/res/res/values-cy/strings.xml:    <string name="permdesc_writeSettings">Mae\'n caniatáu i ap addasu gosodiadau system crDroid.</string>
+lineage/res/res/values-cy/strings.xml:    <string name="permlab_writeSecureSettings">addasu gosodiadau system ddiogel crDroid</string>
+lineage/res/res/values-cy/strings.xml:    <string name="permdesc_writeSecureSettings">Mae\'n caniatáu i ap addasu gosodiadau system ddiogel crDroid. Dim i\'w ddefnyddio gan apiau arferol.</string>
+lineage/res/res/values-cy/strings.xml:    <string name="lineage_api_level">Lefel API crDroid</string>
+lineage/res/res/values-cy/strings.xml:    <string name="lineage_updates">Diweddariadau crDroid</string>
+lineage/res/res/values-cy/strings.xml:    <string name="lineage_version">Fersiwn crDroid</string>
+lineage/res/res/values-da/strings.xml:    <string name="lineageos_system_label">crDroid System</string>
+lineage/res/res/values-da/strings.xml:    <string name="permdesc_useHardwareFramework">Tillader en app adgang til crDroid udstyrs-programmingsplatformen.</string>
+lineage/res/res/values-da/strings.xml:    <string name="permlab_writeSettings">modificere crDroid system-indstillinger</string>
+lineage/res/res/values-da/strings.xml:    <string name="permdesc_writeSettings">Tillader en app at modificere crDroid system-indstillinger.</string>
+lineage/res/res/values-da/strings.xml:    <string name="permlab_writeSecureSettings">modificere crDroid sikre system-indstillinger</string>
+lineage/res/res/values-da/strings.xml:    <string name="permdesc_writeSecureSettings">Tillader en app at modificere crDroid sikre system-indstillinger. Ikke til brug af normale apps.</string>
+lineage/res/res/values-da/strings.xml:    <string name="lineage_api_level">crDroid API-niveau</string>
+lineage/res/res/values-da/strings.xml:    <string name="lineage_updates">crDroid-opdateringer</string>
+lineage/res/res/values-da/strings.xml:    <string name="lineage_version">crDroid-version</string>
+lineage/res/res/values-de/strings.xml:    <string name="lineageos_system_label">crDroid-System</string>
+lineage/res/res/values-de/strings.xml:    <string name="permdesc_useHardwareFramework">Ermöglicht der App, auf das crDroid-Hardwareframework zuzugreifen.</string>
+lineage/res/res/values-de/strings.xml:    <string name="permlab_writeSettings">crDroid-Systemeinstellungen ändern</string>
+lineage/res/res/values-de/strings.xml:    <string name="permdesc_writeSettings">Ermöglicht der App, crDroid-Systemeinstellungen zu ändern.</string>
+lineage/res/res/values-de/strings.xml:    <string name="permlab_writeSecureSettings">crDroid-Sicherheitssystemeinstellungen ändern</string>
+lineage/res/res/values-de/strings.xml:    <string name="permdesc_writeSecureSettings">Ermöglicht der App, crDroid-Sicherheitssystemeinstellungen zu ändern. Nicht für die Nutzung durch normale Apps bestimmt.</string>
+lineage/res/res/values-de/strings.xml:    <string name="lineage_api_level">crDroid API-Level</string>
+lineage/res/res/values-de/strings.xml:    <string name="lineage_updates">crDroid-Updates</string>
+lineage/res/res/values-de/strings.xml:    <string name="lineage_version">crDroid-Version</string>
+lineage/res/res/values-el/strings.xml:    <string name="lineageos_system_label">Σύστημα crDroid</string>
+lineage/res/res/values-el/strings.xml:    <string name="permdesc_useHardwareFramework">Επιτρέπει σε μια εφαρμογή την πρόσβαση στο πλαίσιο υλικού του crDroid.</string>
+lineage/res/res/values-el/strings.xml:    <string name="permlab_writeSettings">τροποποίηση ρυθμίσεων συστήματος crDroid</string>
+lineage/res/res/values-el/strings.xml:    <string name="permdesc_writeSettings">Επιτρέπει σε μια εφαρμογή να τροποποιεί τις ρυθμίσεις συστήματος crDroid.</string>
+lineage/res/res/values-el/strings.xml:    <string name="permlab_writeSecureSettings">τροποποίηση ασφαλών ρυθμίσεων συστήματος crDroid</string>
+lineage/res/res/values-el/strings.xml:    <string name="permdesc_writeSecureSettings">Επιτρέπει σε μια εφαρμογή να τροποποιεί τις ασφαλείς ρυθμίσεις συστήματος crDroid. Δεν χρησιμοποιείται από κανονικές εφαρμογές.</string>
+lineage/res/res/values-el/strings.xml:    <string name="lineage_api_level">Επίπεδο crDroid API</string>
+lineage/res/res/values-el/strings.xml:    <string name="lineage_updates">Ενημερώσεις crDroid</string>
+lineage/res/res/values-el/strings.xml:    <string name="lineage_version">Έκδοση crDroid</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="lineageos_system_label">crDroid System</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="permlab_writeSettings">modify crDroid system settings</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="lineage_api_level">crDroid API level</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="lineage_updates">crDroid updates</string>
+lineage/res/res/values-en-rAU/strings.xml:    <string name="lineage_version">crDroid version</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="lineageos_system_label">crDroid System</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="permlab_writeSettings">modify crDroid system settings</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="lineage_api_level">crDroid API level</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="lineage_updates">crDroid updates</string>
+lineage/res/res/values-en-rCA/strings.xml:    <string name="lineage_version">crDroid version</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="lineageos_system_label">crDroid System</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="permlab_writeSettings">modify crDroid system settings</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="lineage_api_level">crDroid API level</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="lineage_updates">crDroid updates</string>
+lineage/res/res/values-en-rGB/strings.xml:    <string name="lineage_version">crDroid version</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="lineageos_system_label">crDroid System</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="permlab_writeSettings">modify crDroid system settings</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="lineage_api_level">crDroid API level</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="lineage_updates">crDroid updates</string>
+lineage/res/res/values-en-rIN/strings.xml:    <string name="lineage_version">crDroid version</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="lineageos_system_label">Sistema de crDroid</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="permdesc_useHardwareFramework">Permite el acceso de una aplicación a la estructura de hardware de crDroid.</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="permlab_writeSettings">modificar ajustes del sistema de crDroid</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="permdesc_writeSettings">Permite que una aplicación modifique los ajustes del sistema de crDroid.</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="permlab_writeSecureSettings">modificar ajustes del sistema de seguridad de crDroid</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="permdesc_writeSecureSettings">Permite que una aplicación modifique los ajustes del sistema de seguridad de crDroid. No apto para aplicaciones normales.</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="lineage_api_level">Nivel de API de crDroid</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="lineage_updates">Actualizaciones de crDroid</string>
+lineage/res/res/values-es-rUS/strings.xml:    <string name="lineage_version">Versión de crDroid</string>
+lineage/res/res/values-es/strings.xml:    <string name="lineageos_system_label">Sistema de crDroid</string>
+lineage/res/res/values-es/strings.xml:    <string name="permdesc_useHardwareFramework">Permite el acceso de una aplicación a la estructura de hardware de crDroid.</string>
+lineage/res/res/values-es/strings.xml:    <string name="permlab_writeSettings">modificar ajustes del sistema de crDroid</string>
+lineage/res/res/values-es/strings.xml:    <string name="permdesc_writeSettings">Permite que una aplicación modifique los ajustes del sistema de crDroid.</string>
+lineage/res/res/values-es/strings.xml:    <string name="permlab_writeSecureSettings">modificar ajustes del sistema de seguridad de crDroid</string>
+lineage/res/res/values-es/strings.xml:    <string name="permdesc_writeSecureSettings">Permitir a una aplicación modificar la configuración segura del sistema crDroid. No apto para aplicaciones normales.</string>
+lineage/res/res/values-es/strings.xml:    <string name="lineage_api_level">Nivel de la API de crDroid</string>
+lineage/res/res/values-es/strings.xml:    <string name="lineage_updates">Actualizaciones de crDroid</string>
+lineage/res/res/values-es/strings.xml:    <string name="lineage_version">Versión de crDroid</string>
+lineage/res/res/values-et/strings.xml:    <string name="lineageos_system_label">crDroid\'i süsteem</string>
+lineage/res/res/values-et/strings.xml:    <string name="permdesc_useHardwareFramework">Annab rakendusele ligipääsu crDroid riistvara raamistikule.</string>
+lineage/res/res/values-et/strings.xml:    <string name="permlab_writeSettings">crDroid\'i süsteemiseadete muutmine</string>
+lineage/res/res/values-et/strings.xml:    <string name="permdesc_writeSettings">Lubab rakendusel muuta crDroid\'i süsteemiseadeid.</string>
+lineage/res/res/values-et/strings.xml:    <string name="permlab_writeSecureSettings">crDroid\'i turvaliste süsteemiseadete muutmine</string>
+lineage/res/res/values-et/strings.xml:    <string name="permdesc_writeSecureSettings">Lubab rakendusel muuta crDroid\'i turvalisi süsteemiseadeid. Ei ole mõeldud kasutamiseks tavarakendusetel.</string>
+lineage/res/res/values-et/strings.xml:    <string name="lineage_api_level">crDroid\'i API tase</string>
+lineage/res/res/values-et/strings.xml:    <string name="lineage_updates">crDroid\'i uuendused</string>
+lineage/res/res/values-et/strings.xml:    <string name="lineage_version">crDroid\'i versioon</string>
+lineage/res/res/values-eu/strings.xml:    <string name="lineageos_system_label">crDroid sistema</string>
+lineage/res/res/values-eu/strings.xml:    <string name="permdesc_useHardwareFramework">Aplikazioari crDroid hardware markorako sarbidea gaitzen dio.</string>
+lineage/res/res/values-eu/strings.xml:    <string name="permlab_writeSettings">aldatu crDroid sistemaren ezarpenak</string>
+lineage/res/res/values-eu/strings.xml:    <string name="permdesc_writeSettings">crDroid sistemaren ezarpenak aldatzea ahalbidetzen dio aplikazioari.</string>
+lineage/res/res/values-eu/strings.xml:    <string name="permlab_writeSecureSettings">aldatu crDroid sistemaren ezarpen seguruak</string>
+lineage/res/res/values-eu/strings.xml:    <string name="permdesc_writeSecureSettings">crDroid sistemaren ezarpen seguruak aldatzea ahalbidetzen dio aplikazioari. Aplikazio arruntek ez dute behar.</string>
+lineage/res/res/values-eu/strings.xml:    <string name="lineage_api_level">crDroid API maila</string>
+lineage/res/res/values-eu/strings.xml:    <string name="lineage_updates">crDroid eguneraketak</string>
+lineage/res/res/values-eu/strings.xml:    <string name="lineage_version">crDroid bertsioa</string>
+lineage/res/res/values-fa/strings.xml:    <string name="lineageos_system_label">سیستم crDroid</string>
+lineage/res/res/values-fa/strings.xml:    <string name="lineage_api_level">سطح crDroid API </string>
+lineage/res/res/values-fa/strings.xml:    <string name="lineage_updates">به‌روزرسانی‌های crDroid</string>
+lineage/res/res/values-fa/strings.xml:    <string name="lineage_version">نگارش crDroid</string>
+lineage/res/res/values-fi/strings.xml:    <string name="lineageos_system_label">crDroid Järjestelmä</string>
+lineage/res/res/values-fi/strings.xml:    <string name="permdesc_useHardwareFramework">Sallii sovelluksen pääsyn crDroid-laitteiston kehykseen.</string>
+lineage/res/res/values-fi/strings.xml:    <string name="permlab_writeSettings">muokkaa crDroid-järjestelmän asetuksia</string>
+lineage/res/res/values-fi/strings.xml:    <string name="permdesc_writeSettings">Sallii sovelluksen muokata crDroid-järjestelmän asetuksia.</string>
+lineage/res/res/values-fi/strings.xml:    <string name="permlab_writeSecureSettings">muokkaa crDroid-turvallisuusjärjestelmän asetuksia</string>
+lineage/res/res/values-fi/strings.xml:    <string name="permdesc_writeSecureSettings">Sallii sovelluksen muokata crDroid turvallisuusjärjestelmäasetuksia. Ei käytössä tavallisille sovelluksille.</string>
+lineage/res/res/values-fi/strings.xml:    <string name="lineage_api_level">crDroid API-taso</string>
+lineage/res/res/values-fi/strings.xml:    <string name="lineage_updates">crDroid-päivitykset</string>
+lineage/res/res/values-fi/strings.xml:    <string name="lineage_version">crDroid-versio</string>
+lineage/res/res/values-fr/strings.xml:    <string name="lineageos_system_label">Système crDroid</string>
+lineage/res/res/values-fr/strings.xml:    <string name="permdesc_useHardwareFramework">Autorise une application à accéder au framework matériel de crDroid.</string>
+lineage/res/res/values-fr/strings.xml:    <string name="permlab_writeSettings">modifier les paramètres système de crDroid</string>
+lineage/res/res/values-fr/strings.xml:    <string name="permdesc_writeSettings">Autorise une application à modifier les paramètres système de crDroid.</string>
+lineage/res/res/values-fr/strings.xml:    <string name="permlab_writeSecureSettings">modifier les paramètres de sécurité système de crDroid</string>
+lineage/res/res/values-fr/strings.xml:    <string name="lineage_api_level">Niveau de l\'API crDroid</string>
+lineage/res/res/values-fr/strings.xml:    <string name="lineage_updates">Mises à jour crDroid</string>
+lineage/res/res/values-fr/strings.xml:    <string name="lineage_version">Version crDroid</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="lineageos_system_label">Sisteme crDroid</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="permdesc_useHardwareFramework">Al permet a une aplicazion di acedi ae suaze di lavôr hardware di crDroid.</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="permlab_writeSettings">modifiche lis impostazions di sisteme di crDroid</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="permdesc_writeSettings">Al permet a une aplicazion di modificâ lis impostazions di sisteme di crDroid.</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="permlab_writeSecureSettings">modifiche lis impostazions siguris dal sisteme di crDroid</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="permdesc_writeSecureSettings">Al permet a une aplicazion di modificâ lis impostazions siguris dal sisteme di crDroid. No doprât da lis aplicazions normâls.</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="lineage_api_level">Nivel API crDroid</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="lineage_updates">Inzornaments di crDroid</string>
+lineage/res/res/values-fur-rIT/strings.xml:    <string name="lineage_version">Version di crDroid</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="lineageos_system_label">crDroid-systeem</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="permdesc_useHardwareFramework">Hjirmei kin de app tagong krije ta it hardware-framework fan crDroid.</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="permlab_writeSettings">crDroid-systeemynstellingen wizigje</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="permdesc_writeSettings">Hjirmei kin de app de systeemynstellingen fan crDroid wizigje.</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="permlab_writeSecureSettings">befeiligege crDroid-systeemynstellingen wizigje</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="permdesc_writeSecureSettings">Hjirmei kin de app de befeilige systeemynstellingen fan crDroid wizigje. Net foar gebrûk troch normale apps.</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="lineage_api_level">crDroid-API-Nivo</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="lineage_updates">crDroid-fernijingen</string>
+lineage/res/res/values-fy-rNL/strings.xml:    <string name="lineage_version">crDroid-ferzje</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="lineageos_system_label">Córas crDroid</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="permdesc_useHardwareFramework">Ligeann sé d’app rochtain a fháil ar chreat crua-earraí crDroid.</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="permlab_writeSettings">athraigh socruithe an chórais crDroid</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="permdesc_writeSettings">Ligeann sé d’aip socruithe córais crDroid a mhodhnú.</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="permlab_writeSecureSettings">athraigh socruithe córas slán crDroid</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="permdesc_writeSecureSettings">Ligeann sé d’aip socruithe córais slán crDroid a mhodhnú. Ní le húsáid ag gnáth-apps.</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="lineage_api_level">Leibhéal API crDroid</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="lineage_updates">Nuashonruithe do crDroid</string>
+lineage/res/res/values-ga-rIE/strings.xml:    <string name="lineage_version">crDroid leagan</string>
+lineage/res/res/values-gd/strings.xml:    <string name="lineageos_system_label">Siostam crDroid</string>
+lineage/res/res/values-gd/strings.xml:    <string name="permdesc_useHardwareFramework">Leigidh seo le aplacaid frèam-obrach bathair-chruaidh crDroid a chleachdadh.</string>
+lineage/res/res/values-gd/strings.xml:    <string name="permlab_writeSettings">roghainnean siostam crDroid atharrachadh</string>
+lineage/res/res/values-gd/strings.xml:    <string name="permdesc_writeSettings">Leigidh seo le aplacaid roghainnean siostam crDroid atharrachadh.</string>
+lineage/res/res/values-gd/strings.xml:    <string name="permlab_writeSecureSettings">roghainnean siostam crDroid tèarainte atharrachadh</string>
+lineage/res/res/values-gd/strings.xml:    <string name="permdesc_writeSecureSettings">Leigidh seo le aplacaid roghainnean siostam crDroid tèarainte atharrachadh. Na cleachd seo le aplacaidean àbhaisteach.</string>
+lineage/res/res/values-gd/strings.xml:    <string name="lineage_api_level">Leibheil API crDroid</string>
+lineage/res/res/values-gd/strings.xml:    <string name="lineage_updates">Ùrachaidhean air crDroid</string>
+lineage/res/res/values-gd/strings.xml:    <string name="lineage_version">An tionndadh de crDroid</string>
+lineage/res/res/values-gl/strings.xml:    <string name="lineageos_system_label">Sistema crDroid</string>
+lineage/res/res/values-gl/strings.xml:    <string name="lineage_api_level">Nivel da API do crDroid</string>
+lineage/res/res/values-gl/strings.xml:    <string name="lineage_updates">Actualizacións de crDroid</string>
+lineage/res/res/values-gl/strings.xml:    <string name="lineage_version">Versión de crDroid</string>
+lineage/res/res/values-hr/strings.xml:    <string name="lineageos_system_label">crDroid Sustav</string>
+lineage/res/res/values-hr/strings.xml:    <string name="permdesc_useHardwareFramework">Dopušta aplikaciji pristupiti crDroid hardware framework.</string>
+lineage/res/res/values-hr/strings.xml:    <string name="permlab_writeSettings">promijeni crDroid postavke sigurnosti sustava</string>
+lineage/res/res/values-hr/strings.xml:    <string name="permdesc_writeSettings">Dopušta aplikaciji da izmijeni postavke sustava crDroid.</string>
+lineage/res/res/values-hr/strings.xml:    <string name="permlab_writeSecureSettings">promijeni crDroid postavke sigurnosti sustava</string>
+lineage/res/res/values-hr/strings.xml:    <string name="permdesc_writeSecureSettings">Dopušta aplikaciji da promjeni crDroid postavke sigurnosti sustava. Nije za korištenje kod normalnih aplikacija.</string>
+lineage/res/res/values-hr/strings.xml:    <string name="lineage_api_level">crDroid API razina</string>
+lineage/res/res/values-hr/strings.xml:    <string name="lineage_updates">crDroid ažuriranja</string>
+lineage/res/res/values-hr/strings.xml:    <string name="lineage_version">crDroid verzija</string>
+lineage/res/res/values-hu/strings.xml:    <string name="lineageos_system_label">crDroid-rendszer</string>
+lineage/res/res/values-hu/strings.xml:    <string name="permdesc_useHardwareFramework">Lehetővé teszi egy alkalmazás számára, hogy hozzáférjen a crDroid hardver-keretrendszeréhez.</string>
+lineage/res/res/values-hu/strings.xml:    <string name="permlab_writeSettings">a crDroid rendszerbeállításainak módosítása</string>
+lineage/res/res/values-hu/strings.xml:    <string name="permdesc_writeSettings">Engedélyezi egy alkalmazás számára, hogy módosítsa a crDroid rendszerbeállításait.</string>
+lineage/res/res/values-hu/strings.xml:    <string name="permlab_writeSecureSettings">a crDroid rendszer biztonsági beállításainak módosítása</string>
+lineage/res/res/values-hu/strings.xml:    <string name="permdesc_writeSecureSettings">Engedélyezi egy alkalmazás számára, hogy módosítsa a crDroid-rendszer biztonsági beállításait. Nem vonatkozik normál alkalmazásokra.</string>
+lineage/res/res/values-hu/strings.xml:    <string name="lineage_api_level">A crDroid API-szintje</string>
+lineage/res/res/values-hu/strings.xml:    <string name="lineage_updates">crDroid-frissítések</string>
+lineage/res/res/values-hu/strings.xml:    <string name="lineage_version">crDroid-verzió</string>
+lineage/res/res/values-in/strings.xml:    <string name="lineageos_system_label">Sistem crDroid</string>
+lineage/res/res/values-in/strings.xml:    <string name="permdesc_useHardwareFramework">Izinkan aplikasi untuk mengakses susunan perangkat keras crDroid.</string>
+lineage/res/res/values-in/strings.xml:    <string name="permlab_writeSettings">mengubah setelah sistem crDroid</string>
+lineage/res/res/values-in/strings.xml:    <string name="permdesc_writeSettings">Izinkan aplikasi untuk memodifikasi setelan sistem crDroid.</string>
+lineage/res/res/values-in/strings.xml:    <string name="permlab_writeSecureSettings">memodifikasi setelan sistem keamanan crDroid</string>
+lineage/res/res/values-in/strings.xml:    <string name="permdesc_writeSecureSettings">Izinkan aplikasi untuk memodifikasi setelan sistem keamanan crDroid. Tidak untuk digunakan oleh aplikasi yang normal.</string>
+lineage/res/res/values-in/strings.xml:    <string name="lineage_api_level">Tingkat API crDroid</string>
+lineage/res/res/values-in/strings.xml:    <string name="lineage_updates">Pembaruan crDroid</string>
+lineage/res/res/values-in/strings.xml:    <string name="lineage_version">Versi crDroid</string>
+lineage/res/res/values-is/strings.xml:    <string name="lineageos_system_label">crDroid kerfi</string>
+lineage/res/res/values-is/strings.xml:    <string name="permdesc_useHardwareFramework">Gerir forriti kleift að fá aðgang að vélbúnaðarkerfum crDroid.</string>
+lineage/res/res/values-is/strings.xml:    <string name="permlab_writeSettings">breyta kerfisstillingum crDroid</string>
+lineage/res/res/values-is/strings.xml:    <string name="permdesc_writeSettings">Gerir forriti kleift að breyta kerfisstillingum crDroid.</string>
+lineage/res/res/values-is/strings.xml:    <string name="permlab_writeSecureSettings">breyta öruggum kerfisstillingum crDroid</string>
+lineage/res/res/values-is/strings.xml:    <string name="permdesc_writeSecureSettings">Gerir forriti kleift að breyta öryggisstillingum crDroid. Notist ekki af venjulegum forritum.</string>
+lineage/res/res/values-is/strings.xml:    <string name="lineage_api_level">crDroid API-stig</string>
+lineage/res/res/values-is/strings.xml:    <string name="lineage_updates">crDroid uppfærslur</string>
+lineage/res/res/values-is/strings.xml:    <string name="lineage_version">crDroid útgáfa</string>
+lineage/res/res/values-it/strings.xml:    <string name="lineageos_system_label">Sistema crDroid</string>
+lineage/res/res/values-it/strings.xml:    <string name="permdesc_useHardwareFramework">Consente all\'applicazione di accedere al framework hardware di crDroid.</string>
+lineage/res/res/values-it/strings.xml:    <string name="permlab_writeSettings">modifica le impostazioni di sistema di crDroid</string>
+lineage/res/res/values-it/strings.xml:    <string name="permdesc_writeSettings">Consente all\'applicazione di modificare le impostazioni di sistema di crDroid.</string>
+lineage/res/res/values-it/strings.xml:    <string name="permlab_writeSecureSettings">modifica le impostazioni sicure di sistema di crDroid</string>
+lineage/res/res/values-it/strings.xml:    <string name="permdesc_writeSecureSettings">Consente all\'applicazione di modificare le impostazioni sicure di sistema di crDroid. Non utilizzato dalle app normali.</string>
+lineage/res/res/values-it/strings.xml:    <string name="lineage_api_level">Livello API crDroid</string>
+lineage/res/res/values-it/strings.xml:    <string name="lineage_updates">Aggiornamenti crDroid</string>
+lineage/res/res/values-it/strings.xml:    <string name="lineage_version">Versione crDroid</string>
+lineage/res/res/values-iw/strings.xml:    <string name="lineageos_system_label">מערכת crDroid</string>
+lineage/res/res/values-iw/strings.xml:    <string name="permdesc_useHardwareFramework">אפשר ליישומים גישה לתשתית החומרה של crDroid.</string>
+lineage/res/res/values-iw/strings.xml:    <string name="permdesc_writeSettings">מאפשר ליישום לשנות את הגדרות מערכת crDroid.</string>
+lineage/res/res/values-iw/strings.xml:    <string name="lineage_api_level">רמת ה־API של crDroid</string>
+lineage/res/res/values-iw/strings.xml:    <string name="lineage_updates">עדכוני crDroid</string>
+lineage/res/res/values-iw/strings.xml:    <string name="lineage_version">גרסת crDroid</string>
+lineage/res/res/values-ja/strings.xml:    <string name="lineageos_system_label">crDroid システム</string>
+lineage/res/res/values-ja/strings.xml:    <string name="permdesc_useHardwareFramework">crDroid ハードウェアフレームワー
+クへのアクセスをアプリに許可します。</string>
+lineage/res/res/values-ja/strings.xml:    <string name="permdesc_writeSettings">crDroid システム設定の変更をアプリに許可します。</string>
+lineage/res/res/values-ja/strings.xml:    <string name="permdesc_writeSecureSettings">crDroid セキュアシステム設定の変更をアプリに許可します。通常のアプリ用ではありません。</string>
+lineage/res/res/values-ja/strings.xml:    <string name="lineage_api_level">crDroid API レベル</string>
+lineage/res/res/values-ja/strings.xml:    <string name="lineage_updates">crDroid アップデート</string>
+lineage/res/res/values-ja/strings.xml:    <string name="lineage_version">crDroid バージョン</string>
+lineage/res/res/values-ka/strings.xml:    <string name="lineageos_system_label">crDroid სისტემა</string>
+lineage/res/res/values-ka/strings.xml:    <string name="permdesc_useHardwareFramework">პროგრამისთვის ნების დართვა crDroid-ის აპარატურულ გარსთან წვდომისთვის.</string>
+lineage/res/res/values-ka/strings.xml:    <string name="permlab_writeSettings">crDroid-სისტემის დაცული პარამეტრების შეცვლა</string>
+lineage/res/res/values-ka/strings.xml:    <string name="permdesc_writeSettings">პროგრამისთვის ნების დართვა, შეცვალოს crDroid-სისტემის პარამეტრები.</string>
+lineage/res/res/values-ka/strings.xml:    <string name="permlab_writeSecureSettings">crDroid-სისტემის დაცული სისტემური პარამეტრების შეცვლა</string>
+lineage/res/res/values-ka/strings.xml:    <string name="permdesc_writeSecureSettings">ნებართვა, რომ აპი შეძლებს შეცვალოს crDroid-სისტემის დაცული პარამეტრები. არაა განკუთვნილი ჩვეულებრივი აპებისთვის.</string>
+lineage/res/res/values-ka/strings.xml:    <string name="lineage_api_level">crDroid-ის API-ს დონე</string>
+lineage/res/res/values-ka/strings.xml:    <string name="lineage_updates">crDroid-ის განახლებები</string>
+lineage/res/res/values-ka/strings.xml:    <string name="lineage_version">crDroid-ის ვერსია</string>
+lineage/res/res/values-kab-rDZ/strings.xml:    <string name="lineageos_system_label">Anagraw n crDroid</string>
+lineage/res/res/values-kab-rDZ/strings.xml:    <string name="lineage_api_level">Aswir n crDroid API</string>
+lineage/res/res/values-kab-rDZ/strings.xml:    <string name="lineage_updates">Lqem n crDroid</string>
+lineage/res/res/values-kab-rDZ/strings.xml:    <string name="lineage_version">Lqem n crDroid</string>
+lineage/res/res/values-kn/strings.xml:    <string name="lineageos_system_label">crDroid ವ್ಯವಸ್ಥೆ</string>
+ ಅನುಮತಿಸುತ್ತದೆ.</string>
+lineage/res/res/values-kn/strings.xml:    <string name="permlab_writeSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
+lineage/res/res/values-kn/strings.xml:    <string name="permdesc_writeSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
+lineage/res/res/values-kn/strings.xml:    <string name="permlab_writeSecureSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
+lineage/res/res/values-kn/strings.xml:    <string name="permdesc_writeSecureSettings">crDroid ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ. ಸಾಮಾನ್ಯ ಆಪ್ಗಳ ಬಳಕೆಗೆ ಅಲ್ಲ.</string>
+lineage/res/res/values-kn/strings.xml:    <string name="lineage_api_level">crDroid API ಮಟ್ಟ</string>
+lineage/res/res/values-kn/strings.xml:    <string name="lineage_updates">crDroid ನವೀಕರಣಗಳು</string>
+lineage/res/res/values-kn/strings.xml:    <string name="lineage_version">crDroid ಆವೃತ್ತಿ</string>
+lineage/res/res/values-ko/strings.xml:    <string name="lineageos_system_label">crDroid 시스템</string>
+lineage/res/res/values-ko/strings.xml:    <string name="permdesc_useHardwareFramework">앱이 crDroid 하드웨어 프레임워크
+에 접근할 수 있도록 허용합니다.</string>
+lineage/res/res/values-ko/strings.xml:    <string name="permlab_writeSettings">crDroid 시스템 설정 변경</string>
+lineage/res/res/values-ko/strings.xml:    <string name="permdesc_writeSettings">앱이 crDroid 시스템 설정을 변경할 수 있
+도록 허용합니다.</string>
+lineage/res/res/values-ko/strings.xml:    <string name="permlab_writeSecureSettings">crDroid 보안 시스템 설정 변경</string>
+lineage/res/res/values-ko/strings.xml:    <string name="permdesc_writeSecureSettings">앱이 crDroid 보안 시스템 설정을 변경할 수 있도록 허용합니다. 일반 앱에서는 사용하지 않습니다.</string>
+lineage/res/res/values-ko/strings.xml:    <string name="lineage_api_level">crDroid API 수준</string>
+lineage/res/res/values-ko/strings.xml:    <string name="lineage_updates">crDroid 업데이트</string>
+lineage/res/res/values-ko/strings.xml:    <string name="lineage_version">crDroid 버전</string>
+lineage/res/res/values-nl/strings.xml:    <string name="lineageos_system_label">crDroid-systeem</string>
+lineage/res/res/values-nl/strings.xml:    <string name="permdesc_useHardwareFramework">Hiermee kan de app toegang krijgen tot het hardware-framework van crDroid.</string>
+lineage/res/res/values-nl/strings.xml:    <string name="permlab_writeSettings">crDroid-systeeminstellingen wijzigen</string>
+lineage/res/res/values-nl/strings.xml:    <string name="permdesc_writeSettings">Staat een app toe de systeeminstellingen van crDroid te wijzigen.</string>
+lineage/res/res/values-nl/strings.xml:    <string name="permlab_writeSecureSettings">beveiligde crDroid-systeeminstellingen wijzigen</string>
+lineage/res/res/values-nl/strings.xml:    <string name="permdesc_writeSecureSettings">Hiermee kan de app de beveiligde systeeminstellingen van crDroid wijzigen. Niet voor gebruik door normale apps.</string>
+lineage/res/res/values-nl/strings.xml:    <string name="lineage_api_level">Niveau van crDroid-API</string>
+lineage/res/res/values-nl/strings.xml:    <string name="lineage_updates">crDroid-updates</string>
+lineage/res/res/values-nl/strings.xml:    <string name="lineage_version">crDroid-versie</string>
+lineage/res/res/values-pl/strings.xml:    <string name="lineageos_system_label">System crDroid</string>
+lineage/res/res/values-pl/strings.xml:    <string name="permdesc_useHardwareFramework">Zezwala aplikacji na dostęp do frameworka sprzętowego crDroid.</string>
+lineage/res/res/values-pl/strings.xml:    <string name="permlab_writeSettings">modyfikacja ustawień systemu crDroid</string>
+lineage/res/res/values-pl/strings.xml:    <string name="permdesc_writeSettings">Zezwól aplikacji na modyfikację ustawień systemu crDroid.</string>
+lineage/res/res/values-pl/strings.xml:    <string name="permlab_writeSecureSettings">modyfikacja ustawień bezpieczeństwa systemu crDroid</string>
+lineage/res/res/values-pl/strings.xml:    <string name="permdesc_writeSecureSettings">Zezwala aplikacji na modyfikację ustawień bezpieczeństwa systemu crDroid. Nieużywane przez zwykłe aplikacje.</string>
+lineage/res/res/values-pl/strings.xml:    <string name="lineage_api_level">Poziom API crDroid</string>
+lineage/res/res/values-pl/strings.xml:    <string name="lineage_updates">Aktualizacje crDroid</string>
+lineage/res/res/values-pl/strings.xml:    <string name="lineage_version">Wersja crDroid</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="lineageos_system_label">Sistema crDroid</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="permdesc_useHardwareFramework">Permite que um app acesse a estrutura de hardware do sistema crDroid.</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="permlab_writeSettings">modificar as configurações do sistema crDroid</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="permdesc_writeSettings">Permite que um app modifique as configurações do sistema crDroid.</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="permlab_writeSecureSettings">modificar as configurações seguras do sistema crDroid</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="permdesc_writeSecureSettings">Permite que um app modifique as configurações do sistema seguras do crDroid. Não é utilizado por apps normais.</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="lineage_api_level">Nível de API do crDroid</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="lineage_updates">Atualizações do crDroid</string>
+lineage/res/res/values-pt-rBR/strings.xml:    <string name="lineage_version">Versão do crDroid</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="lineageos_system_label">Sistema crDroid</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="permdesc_useHardwareFramework">Permite que uma aplicação aceda à framework de hardware crDroid.</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="permlab_writeSettings">modificar as definições do sistema crDroid</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="permdesc_writeSettings">Permite que uma aplicação modifique as definições do sistema crDroid.</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="permlab_writeSecureSettings">modificar as definições de segurança do sistema crDroid</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="permdesc_writeSecureSettings">Permite que uma aplicação modifique as definições de segurança do sistema crDroid. Não será usado por aplicações normais.</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="lineage_api_level">Nível da API crDroid</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="lineage_updates">Atualizações crDroid</string>
+lineage/res/res/values-pt-rPT/strings.xml:    <string name="lineage_version">Versão crDroid</string>
+lineage/res/res/values-ro/strings.xml:    <string name="lineageos_system_label">Sistem crDroid</string>
+lineage/res/res/values-ro/strings.xml:    <string name="permdesc_useHardwareFramework">Permite unei aplicații să acceseze framework-ul crDroid hardware.</string>
+lineage/res/res/values-ro/strings.xml:    <string name="permlab_writeSettings">modifică setările de sistem crDroid</string>
+lineage/res/res/values-ro/strings.xml:    <string name="permdesc_writeSettings">Permite unei aplicații să modifice setările de sistem crDroid.</string>
+lineage/res/res/values-ro/strings.xml:    <string name="permlab_writeSecureSettings">modifică setările de siguranță de sistem crDroid</string>
+lineage/res/res/values-ro/strings.xml:    <string name="permdesc_writeSecureSettings">Permite unei aplicații să modifice setările de siguranță de sistem crDroid. Nu este utilizabilă de către aplicațiile normale.</string>
+lineage/res/res/values-ro/strings.xml:    <string name="lineage_api_level">Nivel API crDroid</string>
+lineage/res/res/values-ro/strings.xml:    <string name="lineage_updates">Actualizări crDroid</string>
+lineage/res/res/values-ro/strings.xml:    <string name="lineage_version">Versiune crDroid</string>
+lineage/res/res/values-ru/strings.xml:    <string name="lineageos_system_label">Система crDroid</string>
+lineage/res/res/values-ru/strings.xml:    <string name="permdesc_useHardwareFramework">Позволяет приложению использовать аппаратный фреймворк crDroid.</string>
+lineage/res/res/values-ru/strings.xml:    <string name="permlab_writeSettings">изменить настройки системы crDroid</string>
+lineage/res/res/values-ru/strings.xml:    <string name="permdesc_writeSettings">Приложение сможет изменять настройки системы crDroid.</string>
+lineage/res/res/values-ru/strings.xml:    <string name="permlab_writeSecureSettings">изменение настроек системы безопасности crDroid</string>
+lineage/res/res/values-ru/strings.xml:    <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы crDroid. Не используется в обычных приложениях.</string>
+lineage/res/res/values-ru/strings.xml:    <string name="lineage_api_level">Версия API crDroid</string>
+lineage/res/res/values-ru/strings.xml:    <string name="lineage_updates">Обновления crDroid</string>
+lineage/res/res/values-ru/strings.xml:    <string name="lineage_version">Версия crDroid</string>
+lineage/res/res/values-sc-rIT/strings.xml:    <string name="lineageos_system_label">Sistema crDroid</string>
+lineage/res/res/values-sc-rIT/strings.xml:    <string name="permlab_writeSettings">modìfica sas impostatziones de sistema de crDroid</string>
+lineage/res/res/values-sc-rIT/strings.xml:    <string name="permdesc_writeSettings">Permitit a un\'aplicatzione de modificare sas impostatziones de sistema de crDroid.</string>
+lineage/res/res/values-sc-rIT/strings.xml:    <string name="lineage_api_level">Livellu de s\'API de crDroid</string>
+lineage/res/res/values-sk/strings.xml:    <string name="lineageos_system_label">Systém crDroid</string>
+lineage/res/res/values-sk/strings.xml:    <string name="permdesc_useHardwareFramework">Umožňuje aplikácii pristupovať k hardvérovému rámcu crDroid.</string>
+lineage/res/res/values-sk/strings.xml:    <string name="permlab_writeSettings">zmeniť nastavenia systému crDroid</string>
+lineage/res/res/values-sk/strings.xml:    <string name="permdesc_writeSettings">Umožňuje aplikácii meniť nastavenia systému crDroid.</string>
+lineage/res/res/values-sk/strings.xml:    <string name="permlab_writeSecureSettings">zmeniť nastavenia zabezpečenia systému crDroid</string>
+lineage/res/res/values-sk/strings.xml:    <string name="lineage_api_level">Verzia crDroid API</string>
+lineage/res/res/values-sk/strings.xml:    <string name="lineage_updates">Aktualizácie crDroid</string>
+lineage/res/res/values-sk/strings.xml:    <string name="lineage_version">Verzia crDroid</string>
+lineage/res/res/values-sl/strings.xml:    <string name="lineageos_system_label">Sistem crDroid</string>
+lineage/res/res/values-sl/strings.xml:    <string name="permdesc_useHardwareFramework">Dovoli aplikaciji dostop do strojnega ogrodja crDroid.</string>
+lineage/res/res/values-sl/strings.xml:    <string name="permlab_writeSettings">spreminjanje sistemskih nastavitev crDroid</string>
+lineage/res/res/values-sl/strings.xml:    <string name="permdesc_writeSettings">Dovoli aplikaciji spreminjanje sistemskih nastavitev crDroid.</string>
+lineage/res/res/values-sl/strings.xml:    <string name="permlab_writeSecureSettings">spreminjanje varnih sistemskih nastavitev crDroid</string>
+lineage/res/res/values-sl/strings.xml:    <string name="permdesc_writeSecureSettings">Dovoli aplikaciji spreminjanje varnih sistemskih nastavitev crDroid. Običajne aplikacije tega ne uporabljajo.</string>
+lineage/res/res/values-sl/strings.xml:    <string name="lineage_api_level">Raven crDroid API-ja</string>
+lineage/res/res/values-sl/strings.xml:    <string name="lineage_updates">Posodobitve crDroid</string>
+lineage/res/res/values-sl/strings.xml:    <string name="lineage_version">Različica crDroid</string>
+lineage/res/res/values-sq/strings.xml:    <string name="lineageos_system_label">Sistemi crDroid</string>
+lineage/res/res/values-sq/strings.xml:    <string name="permdesc_useHardwareFramework">Lejon një app të hyjë në strukturën elektronike të crDroid.</string>
+lineage/res/res/values-sq/strings.xml:    <string name="permlab_writeSettings">modifiko parametrat e sistemit crDroid</string>
+lineage/res/res/values-sq/strings.xml:    <string name="permdesc_writeSettings">Lejon app të modifikojë parametrat e sistemit crDroid.</string>
+lineage/res/res/values-sq/strings.xml:    <string name="permlab_writeSecureSettings">modifiko parametrat e sigurisë së sistemit crDroid</string>
+lineage/res/res/values-sq/strings.xml:    <string name="permdesc_writeSecureSettings">Lejon një app të ndryshojë parametrat e sigurisë së sistemit crDroid. Jo për përdorim nga app normale.</string>
+lineage/res/res/values-sq/strings.xml:    <string name="lineage_api_level">Niveli API i crDroid</string>
+lineage/res/res/values-sq/strings.xml:    <string name="lineage_updates">Përditësimet e crDroid</string>
+lineage/res/res/values-sq/strings.xml:    <string name="lineage_version">Versioni i crDroid</string>
+lineage/res/res/values-sr/strings.xml:    <string name="lineageos_system_label">crDroid Систем</string>
+lineage/res/res/values-sr/strings.xml:    <string name="permdesc_useHardwareFramework">Апликација може да приступа хардверском оквиру crDroid-а.</string>
+lineage/res/res/values-sr/strings.xml:    <string name="permlab_writeSettings">измени crDroid системске поставке</string>
+lineage/res/res/values-sr/strings.xml:    <string name="permdesc_writeSettings">Дозвољава апликацији да мења crDroid системске поставке.</string>
+lineage/res/res/values-sr/strings.xml:    <string name="permlab_writeSecureSettings">измените crDroid сигурносне поставке система</string>
+lineage/res/res/values-sr/strings.xml:    <string name="permdesc_writeSecureSettings">Омогућава апликацији да мења crDroid сигурносне поставке система. Није за употребу од стране нормалних апликација.</string>
+lineage/res/res/values-sr/strings.xml:    <string name="lineage_api_level">Ниво API-ја crDroid-а</string>
+lineage/res/res/values-sr/strings.xml:    <string name="lineage_updates">crDroid ажурирања</string>
+lineage/res/res/values-sr/strings.xml:    <string name="lineage_version">Верзија crDroid-а</string>
+lineage/res/res/values-sv/strings.xml:    <string name="lineageos_system_label">crDroid-systemet</string>
+lineage/res/res/values-sv/strings.xml:    <string name="permdesc_useHardwareFramework">Ger en app åtkomst till crDroid hårdvaruramverk.</string>
+lineage/res/res/values-sv/strings.xml:    <string name="permlab_writeSettings">ändra crDroids systeminställningar</string>
+lineage/res/res/values-sv/strings.xml:    <string name="permdesc_writeSettings">Tillåter en app att ändra crDroids systeminställningar.</string>
+lineage/res/res/values-sv/strings.xml:    <string name="permlab_writeSecureSettings">ändra skyddade crDroid-inställningar</string>
+lineage/res/res/values-sv/strings.xml:    <string name="permdesc_writeSecureSettings">Tillåter en app att ändra skyddade crDroid-inställningar. Ska inte användas av vanliga appar.</string>
+lineage/res/res/values-sv/strings.xml:    <string name="lineage_api_level">API-nivå för crDroid</string>
+lineage/res/res/values-sv/strings.xml:    <string name="lineage_updates">crDroid-uppdateringar</string>
+lineage/res/res/values-sv/strings.xml:    <string name="lineage_version">crDroid-version</string>
+lineage/res/res/values-ta/strings.xml:    <string name="lineageos_system_label">crDroid அமைப்பு</string>
+lineage/res/res/values-ta/strings.xml:    <string name="permdesc_useHardwareFramework">crDroid வன்பொருள் கட்டமைப்பை அணுக பயன்பாட்டை அனுமதிக்கிறது.</string>
+lineage/res/res/values-ta/strings.xml:    <string name="permlab_writeSettings">crDroid முறைமை அமைப்புகளை மாற்றுக</string>
+lineage/res/res/values-ta/strings.xml:    <string name="permdesc_writeSettings">crDroid முறைமை அமைப்புகளை மாற்ற ஒரு செயலியை அனுமதிக்கிறது.</string>
+lineage/res/res/values-ta/strings.xml:    <string name="permlab_writeSecureSettings">crDroid பாதுகாப்பு முறைமை அமைப்புகளை மாற்றுக</string>
+lineage/res/res/values-ta/strings.xml:    <string name="permdesc_writeSecureSettings">crDroid பாதுகாப்பு முறைமை அமைப்புகளை மாற்ற ஒரு செயலியை அனுமதிக்கிறது. வழக்கமான செயலிகளால் பயன்படுத்த முடியாது.</string>
+lineage/res/res/values-ta/strings.xml:    <string name="lineage_api_level">crDroid API நிலை</string>
+lineage/res/res/values-ta/strings.xml:    <string name="lineage_updates">crDroid புதுப்பிப்புகள்</string>
+lineage/res/res/values-ta/strings.xml:    <string name="lineage_version">crDroid பதிப்பு</string>
+lineage/res/res/values-th/strings.xml:    <string name="lineageos_system_label">ระบบ crDroid</string>
+lineage/res/res/values-th/strings.xml:    <string name="permdesc_useHardwareFramework">อนุญาตให้แอปเข้าถึง crDroid ฮาร์ดแวร์เฟรมเวิร์ค</string>
+lineage/res/res/values-th/strings.xml:    <string name="permlab_writeSettings">ปรับเปลี่ยนการตั้งค่าระบบ crDroid</string>
+lineage/res/res/values-th/strings.xml:    <string name="permdesc_writeSettings">อนุญาตให้แอปปรับการตั้งค่าระบบ crDroid</string>
+lineage/res/res/values-th/strings.xml:    <string name="permlab_writeSecureSettings">ปรับแต่งการตั้งค่าระบบความปลอดภัยของ crDroid</string>
+lineage/res/res/values-th/strings.xml:    <string name="permdesc_writeSecureSettings">อนุญาตให้แอปปรับเปลี่ยนการตั้งค่าระบบรักษาความปลอดภัยของ crDroid ไม่ได้สำหรับการใช้แอปทั่วไป</string>
+lineage/res/res/values-th/strings.xml:    <string name="lineage_api_level">ระดับ API ของ crDroid</string>
+lineage/res/res/values-th/strings.xml:    <string name="lineage_updates">อัพเดตระบบ crDroid</string>
+lineage/res/res/values-th/strings.xml:    <string name="lineage_version">เวอร์ชั่น crDroid</string>
+lineage/res/res/values-tr/strings.xml:    <string name="lineageos_system_label">crDroid Sistemi</string>
+lineage/res/res/values-tr/strings.xml:    <string name="permdesc_useHardwareFramework">Uygulamanın crDroid donanım altyapısına erişimine izin verir.</string>
+lineage/res/res/values-tr/strings.xml:    <string name="permlab_writeSettings">crDroid sistem ayarlarını değiştir</string>
+lineage/res/res/values-tr/strings.xml:    <string name="permdesc_writeSettings">Bir uygulamaya crDroid sistem ayarlarını değiştirme izni verir.</string>
+lineage/res/res/values-tr/strings.xml:    <string name="permlab_writeSecureSettings">crDroid güvenli sistem ayarlarını değiştir</string>
+lineage/res/res/values-tr/strings.xml:    <string name="permdesc_writeSecureSettings">Bir uygulamaya crDroid güvenli sistem ayarlarını değiştirme izni verir. Normal uygulamalar tarafından kullanılamaz.</string>
+lineage/res/res/values-tr/strings.xml:    <string name="lineage_api_level">crDroid API düzeyi</string>
+lineage/res/res/values-tr/strings.xml:    <string name="lineage_updates">crDroid güncellemeleri</string>
+lineage/res/res/values-tr/strings.xml:    <string name="lineage_version">crDroid sürümü</string>
+lineage/res/res/values-ug/strings.xml:    <string name="lineageos_system_label">crDroid سىستېمىسى</string>
+lineage/res/res/values-ug/strings.xml:    <string name="permdesc_useHardwareFramework">ئەپنىڭ crDroid قاتتىق دېتال قۇرۇلمىسىنى زىيارەت قىلىشقا يو قويىدۇ.</string>
+lineage/res/res/values-ug/strings.xml:    <string name="permlab_writeSettings">crDroid سىستېما تەڭشىكىنى ئۆزگەرتىدۇ</string>
+lineage/res/res/values-ug/strings.xml:    <string name="permdesc_writeSettings">ئەپنىڭ crDroid سىستېما تەڭشىكىنى ئۆزگەرتىشىگە يول قويىدۇ.</string>
+lineage/res/res/values-ug/strings.xml:    <string name="permlab_writeSecureSettings">crDroid بىخەتەرلىك سىستېما تەڭشىكىنى ئۆزگەرتىدۇ</string>
+lineage/res/res/values-ug/strings.xml:    <string name="permdesc_writeSecureSettings">ئەپنىڭ crDroid بىخەتەرلىك سىستېما تەڭشىكىنى ئۆزگەرتىشىگە يول قويىدۇ. ئادەتتىكى ئەپلەرنىڭ بۇنداق ھوقۇقى بولمايدۇ.</string>
+lineage/res/res/values-ug/strings.xml:    <string name="lineage_api_level">crDroid API دەرىجىسى</string>
+lineage/res/res/values-ug/strings.xml:    <string name="lineage_updates">crDroid يېڭىلاش</string>
+lineage/res/res/values-ug/strings.xml:    <string name="lineage_version">crDroid نەشرى</string>
+lineage/res/res/values-uk/strings.xml:    <string name="lineageos_system_label">Система crDroid</string>
+lineage/res/res/values-uk/strings.xml:    <string name="lineage_api_level">Рівень API crDroid</string>
+lineage/res/res/values-uk/strings.xml:    <string name="lineage_updates">Оновлення crDroid</string>
+lineage/res/res/values-uk/strings.xml:    <string name="lineage_version">Версія crDroid</string>
+lineage/res/res/values-vi/strings.xml:    <string name="lineageos_system_label">Hệ thống crDroid</string>
+lineage/res/res/values-vi/strings.xml:    <string name="permdesc_useHardwareFramework">Cho phép ứng dụng truy cập khung làm việc phần cứng crDroid.</string>
+lineage/res/res/values-vi/strings.xml:    <string name="permlab_writeSettings">sửa đổi cài đặt hệ thống crDroid</string>
+lineage/res/res/values-vi/strings.xml:    <string name="permdesc_writeSettings">Cho phép một ứng dụng chỉnh sửa cài đặt hệ thống crDroid.</string>
+lineage/res/res/values-vi/strings.xml:    <string name="permlab_writeSecureSettings">sửa đổi cài đặt hệ thống bảo mật crDroid</string>
+lineage/res/res/values-vi/strings.xml:    <string name="permdesc_writeSecureSettings">Cho phép một ứng dụng sửa đổi cài đặt hệ thống bảo mật của crDroid. Không cho các ứng dụng thông thường sử dụng.</string>
+lineage/res/res/values-vi/strings.xml:    <string name="lineage_api_level">Cấp độ API crDroid</string>
+lineage/res/res/values-vi/strings.xml:    <string name="lineage_updates">Cập nhật crDroid</string>
+lineage/res/res/values-vi/strings.xml:    <string name="lineage_version">Phiên bản crDroid</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="lineageos_system_label">crDroid 系统</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="permdesc_useHardwareFramework">允许应用访问 crDroid 硬件框架。</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="permlab_writeSettings">修改 crDroid 系统设置</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="permdesc_writeSettings">允许应用修改 crDroid 系统设置。</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="permlab_writeSecureSettings">修改 crDroid 系统安全设置</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="permdesc_writeSecureSettings">允许应用修改 crDroid 系统安全
+设置。不适用于一般的应用程序。</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="lineage_api_level">crDroid API 级别</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="lineage_updates">crDroid 更新</string>
+lineage/res/res/values-zh-rCN/strings.xml:    <string name="lineage_version">crDroid 版本</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="lineageos_system_label">crDroid 系統</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="permdesc_useHardwareFramework">允許應用程式存取 crDroid 硬體框架。</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="permlab_writeSettings">修改 crDroid 系統設定</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="permdesc_writeSettings">允許應用程式修改 crDroid 系統設定。</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="permlab_writeSecureSettings">修改 crDroid 系統安全設定</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="permdesc_writeSecureSettings">允許應用程式修改 crDroid 系統
+安全設定。僅供偵錯使用。</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="lineage_api_level">crDroid API 等級</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="lineage_updates">crDroid 更新</string>
+lineage/res/res/values-zh-rTW/strings.xml:    <string name="lineage_version">crDroid 版本</string>
+lineage/res/res/values/strings.xml:    <!-- Label for the crDroid system components when they are shown to the user. -->
+lineage/res/res/values/strings.xml:    <string name="lineageos_system_label">crDroid System</string>
+lineage/res/res/values/strings.xml:    <string name="permdesc_useHardwareFramework">Allows an app access to the crDroid hardware framework.</string>
+lineage/res/res/values/strings.xml:    <string name="permlab_writeSettings">modify crDroid system settings</string>
+lineage/res/res/values/strings.xml:    <string name="permdesc_writeSettings">Allows an app to modify crDroid system settings.</string>
+lineage/res/res/values/strings.xml:    <string name="permlab_writeSecureSettings">modify crDroid secure system settings</string>
+lineage/res/res/values/strings.xml:    <string name="permdesc_writeSecureSettings">Allows an app to modify crDroid secure system settings. Not for use by normal apps.</string>
+lineage/res/res/values/strings.xml:    <!-- About device screen, crDroid API Level -->
+lineage/res/res/values/strings.xml:    <string name="lineage_api_level">crDroid API level</string>
+lineage/res/res/values/strings.xml:    <!-- About device screen, crDroid updates -->
+lineage/res/res/values/strings.xml:    <string name="lineage_updates">crDroid updates</string>
+lineage/res/res/values/strings.xml:    <!-- About device screen, crDroid version -->
+lineage/res/res/values/strings.xml:    <string name="lineage_version">crDroid version</string>
+packages/LineageSettingsProvider/res/values-ar/strings.xml:    <string name="app_name">اعدادت تخزين crDroid</string>
+packages/LineageSettingsProvider/res/values-ast-rES/strings.xml:    <string name="app_name">Almacenamientu d\'axustes de crDroid</string>
+packages/LineageSettingsProvider/res/values-az/strings.xml:    <string name="app_name">crDroid Ayarlar Anbarı</string>
+packages/LineageSettingsProvider/res/values-be/strings.xml:    <string name="app_name">Сховішча налад crDroid</string>
+packages/LineageSettingsProvider/res/values-bg/strings.xml:    <string name="app_name">Настройки на хранилището на crDroid</string>
+packages/LineageSettingsProvider/res/values-ca/strings.xml:    <string name="app_name">Configuració d\'emmagatzematge de crDroid</string>
+packages/LineageSettingsProvider/res/values-cs/strings.xml:    <string name="app_name">Úložiště nastavení systému crDroid</string>
+packages/LineageSettingsProvider/res/values-cy/strings.xml:    <string name="app_name">Storfa Gosodiadau crDroid</string>
+packages/LineageSettingsProvider/res/values-da/strings.xml:    <string name="app_name">crDroid Indstillingslager</string>
+packages/LineageSettingsProvider/res/values-de/strings.xml:    <string name="app_name">crDroid-Einstellungsspeicher</string>
+packages/LineageSettingsProvider/res/values-el/strings.xml:    <string name="app_name">Αποθηκευτικός χώρος ρυθμίσεων crDroid</string>
+packages/LineageSettingsProvider/res/values-en-rAU/strings.xml:    <string name="app_name">crDroid Settings Storage</string>
+packages/LineageSettingsProvider/res/values-en-rCA/strings.xml:    <string name="app_name">crDroid Settings Storage</string>
+packages/LineageSettingsProvider/res/values-en-rGB/strings.xml:    <string name="app_name">crDroid Settings Storage</string>
+packages/LineageSettingsProvider/res/values-en-rIN/strings.xml:    <string name="app_name">crDroid Settings Storage</string>
+packages/LineageSettingsProvider/res/values-es-rUS/strings.xml:    <string name="app_name">Almacenamiento de los ajustes de crDroid</string>
+packages/LineageSettingsProvider/res/values-es/strings.xml:    <string name="app_name">Almacenamiento de los ajustes de crDroid</string>
+packages/LineageSettingsProvider/res/values-et/strings.xml:    <string name="app_name">crDroid seadete salvestusruum</string>
+packages/LineageSettingsProvider/res/values-eu/strings.xml:    <string name="app_name">crDroid ezarpenen biltegiratzea</string>
+packages/LineageSettingsProvider/res/values-fa/strings.xml:    <string name="app_name">ذخیره تنظیمات crDroid</string>
+packages/LineageSettingsProvider/res/values-fi/strings.xml:    <string name="app_name">crDroid asetusten tallennustila</string>
+packages/LineageSettingsProvider/res/values-fr/strings.xml:    <string name="app_name">Stockage des paramètres de crDroid</string>
+packages/LineageSettingsProvider/res/values-fur-rIT/strings.xml:    <string name="app_name">Archivi impostazions di crDroid</string>
+packages/LineageSettingsProvider/res/values-fy-rNL/strings.xml:    <string name="app_name">crDroid-ynstellingenûnthâld</string>
+packages/LineageSettingsProvider/res/values-ga-rIE/strings.xml:    <string name="app_name">Stóráil Socruithe crDroid</string>
+packages/LineageSettingsProvider/res/values-gd/strings.xml:    <string name="app_name">Stòras roghainnean crDroid</string>
+packages/LineageSettingsProvider/res/values-hr/strings.xml:    <string name="app_name">crDroid Postavke Pohrane</string>
+packages/LineageSettingsProvider/res/values-hu/strings.xml:    <string name="app_name">crDroid-Beállítástároló</string>
+packages/LineageSettingsProvider/res/values-in/strings.xml:    <string name="app_name">Setelan Penyimpanan crDroid</string>
+packages/LineageSettingsProvider/res/values-is/strings.xml:    <string name="app_name">crDroid gagnageymslustillingar</string>
+packages/LineageSettingsProvider/res/values-it/strings.xml:    <string name="app_name">Archivio impostazioni di crDroid</string>
+packages/LineageSettingsProvider/res/values-iw/strings.xml:    <string name="app_name">הגדרות אחסון crDroid</string>
+packages/LineageSettingsProvider/res/values-ja/strings.xml:    <string name="app_name">crDroid 設定ストレージ</string>
+packages/LineageSettingsProvider/res/values-ka/strings.xml:    <string name="app_name">crDroid-პარამეტრების საცავი</string>
+packages/LineageSettingsProvider/res/values-kab-rDZ/strings.xml:    <string name="app_name">Aklas n yiɣewwaren n crDroid</string>
+packages/LineageSettingsProvider/res/values-kn/strings.xml:    <string name="app_name">crDroid ಅಳವಡಿಕೆಗಳ ದಾಸ್ತಾನು</string>
+packages/LineageSettingsProvider/res/values-ko/strings.xml:    <string name="app_name">crDroid 설정 저장소</string>
+packages/LineageSettingsProvider/res/values-nb/strings.xml:    <string name="app_name">crDroid Lagringsinnstillinger</string>
+packages/LineageSettingsProvider/res/values-nl/strings.xml:    <string name="app_name">crDroid instellingenopslag</string>
+packages/LineageSettingsProvider/res/values-pl/strings.xml:    <string name="app_name">Ustawienia Pamięci crDroid</string>
+packages/LineageSettingsProvider/res/values-pt-rBR/strings.xml:    <string name="app_name">Armazenamento de Configurações do crDroid</string>
+packages/LineageSettingsProvider/res/values-pt-rPT/strings.xml:    <string name="app_name">Definições de Armazenamento do crDroid</string>
+packages/LineageSettingsProvider/res/values-ro/strings.xml:    <string name="app_name">Setări de Stocare crDroid</string>
+packages/LineageSettingsProvider/res/values-ru/strings.xml:    <string name="app_name">Хранилище настроек crDroid</string>
+packages/LineageSettingsProvider/res/values-sc-rIT/strings.xml:    <string name="app_name">Archìviu de impostatziones de crDroid</string>
+packages/LineageSettingsProvider/res/values-sk/strings.xml:    <string name="app_name">Nastavenia úložiska crDroid</string>
+packages/LineageSettingsProvider/res/values-sl/strings.xml:    <string name="app_name">Shramba nastavitev crDroid</string>
+packages/LineageSettingsProvider/res/values-sq/strings.xml:    <string name="app_name">Memoria e Parametrave të crDroid</string>
+packages/LineageSettingsProvider/res/values-sr/strings.xml:    <string name="app_name">Складиште crDroid поставки</string>
+packages/LineageSettingsProvider/res/values-sv/strings.xml:    <string name="app_name">Lagring för crDroid-inställningar</string>
+packages/LineageSettingsProvider/res/values-ta/strings.xml:    <string name="app_name">crDroid அமைவுகள் சேமிப்பகம்</string>
+packages/LineageSettingsProvider/res/values-th/strings.xml:    <string name="app_name">การตั้งค่าพื้นที่เก็บข้อมูล crDroid</string>
+packages/LineageSettingsProvider/res/values-tr/strings.xml:    <string name="app_name">crDroid Ayarları Deposu</string>
+packages/LineageSettingsProvider/res/values-ug/strings.xml:    <string name="app_name">crDroid ساقلىغۇچ تەڭشىكى</string>
+packages/LineageSettingsProvider/res/values-uk/strings.xml:    <string name="app_name">Сховище налаштувань crDroid</string>
+packages/LineageSettingsProvider/res/values-vi/strings.xml:    <string name="app_name">Lưu Trữ Cài Đặt crDroid</string>
+packages/LineageSettingsProvider/res/values-zh-rCN/strings.xml:    <string name="app_name">crDroid 设置储存</string>
+packages/LineageSettingsProvider/res/values-zh-rTW/strings.xml:    <string name="app_name">crDroid 設定儲存空間</string>
+packages/LineageSettingsProvider/res/values/strings.xml:    <string name="app_name">crDroid Settings Storage</string>
+(END)
