@@ -1,5 +1,4 @@
 zarakinyu@DESKTOP-E35KJB8:~/packages_apps_Evolver$ git grep -i evo
-crowdin.yml:  - source: /**/values/evolution_strings.xml
 res/drawable/ic_about_discord.xml:     Copyright (C) 2019-2025 The Evolution X Project
 res/drawable/ic_about_discord_expressive.xml:     Copyright (C) 2019-2025 The Evolution X Project
 res/drawable/ic_about_expressive.xml:     Copyright (C) 2019-2025 The Evolution X Project
@@ -22,593 +21,119 @@ res/drawable/ic_power_menu_expressive.xml:     Copyright (C) 2019-2025 The Evolu
 res/drawable/ic_quick_settings_expressive.xml:     Copyright (C) 2019-2025 The Evolution X Project
 res/drawable/ic_status_bar_expressive.xml:     Copyright (C) 2019-2025 The Evolution X Project
 res/drawable/ic_themes_expressive.xml:     Copyright (C) 2019-2025 The Evolution X Project
-res/layout/dialog_color_picker.xml:    <org.evolution.settings.preferences.colorpicker.ColorPickerView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/dialog_color_picker.xml:        <org.evolution.settings.preferences.colorpicker.ColorPickerPanelView
-res/layout/lockscreen_font_picker_preview.xml:                    <org.evolution.settings.utils.WallpaperView
 res/values-de-rDE/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-de-rDE/evolution_strings.xml:    <!-- Evolver -->
-res/values-de-rDE/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolver</string>
-res/values-de-rDE/evolution_strings.xml:    <string name="evolver_dashboard_summary">Entwickelnd, wie nie zuvor</string>
 res/values-de-rDE/evolution_strings.xml:    <string name="about_summary">Über Evolution X</string>
-res/values-de-rDE/evolution_strings.xml:    <string name="lock_screen_charging_stats_summary">Maximalen Stromstärke und Spannung des Ladegeräts sowie der Akkutemperatur auf dem Sperrbildschirm während des Ladevorgangs anzeigen</string>
-res/values-de-rDE/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
-res/values-de-rDE/evolution_strings.xml:    <string name="status_bar_clock_auto_hide_sdur_summary">Anzahl der Sekunden bevor Uhr ausgeblendet wird</string>
+res/values-de-rDE/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-de-rDE/evolution_strings.xml:    <string name="about_info">Evolution X setzt sich, um die Benutzer das Pixel Gefühl und viele zusätzliche Funktionen für die Anwendung anzubieten</string>
 res/values-de-rDE/evolution_strings.xml:    <string name="about_contributors_title">Evolution X Team</string>
 res/values-es-rES/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-es-rES/evolution_strings.xml:    <!-- Evolver -->
-res/values-es-rES/evolution_strings.xml:    <string name="evolver_dashboard_title">El Evolucionador</string>
-res/values-es-rES/evolution_strings.xml:    <string name="evolver_dashboard_summary">Evoluciona tu dispositivo, a tu manera</string>
+res/values-es-rES/evolution_strings.xml:    <string name="zienthlver_dashboard_title">El Evolucionador</string>
+res/values-es-rES/evolution_strings.xml:    <string name="zienthlver_dashboard_summary">Evoluciona tu dispositivo, a tu manera</string>
 res/values-es-rES/evolution_strings.xml:    <string name="about_title">Evolution X</string>
-res/values-es-rES/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-es-rES/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-es-rES/evolution_strings.xml:    <string name="about_info">Evolution X es una ROM de Android personalizada cuyo objetivo es replicar la experiencia de Google Pixel, con personalización añadida. Basado en el proyecto LineageOS.</string>
-res/values-es-rES/evolution_strings.xml:    <string name="qs_split_shade_enabled_summary">Habilitar nuevos ajustes rápidos de sombra dividida experimental,\nrompe notificaciones de encabezado horizontal</string>
 res/values-fr-rFR/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-fr-rFR/evolution_strings.xml:    <!-- Evolver -->
-res/values-fr-rFR/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolver</string>
-res/values-fr-rFR/evolution_strings.xml:    <string name="evolver_dashboard_summary">Évoluer comme jamais auparavant</string>
 res/values-fr-rFR/evolution_strings.xml:    <string name="about_summary">À propos d’Evolution X</string>
-res/values-fr-rFR/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-fr-rFR/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-fr-rFR/evolution_strings.xml:    <string name="about_info">Evolution X vise à offrir aux utilisateurs une sensation de pixel à première vue, avec des fonctionnalités supplémentaires à votre disposition</string>
 res/values-hu-rHU/evolution_strings.xml:     Copyright (C) 2019-2025 Evolution X
-res/values-hu-rHU/evolution_strings.xml:    <!-- Evolver -->
-res/values-hu-rHU/evolution_strings.xml:    <string name="evolver_dashboard_title">Az Evolver</string>
-res/values-hu-rHU/evolution_strings.xml:    <string name="evolver_dashboard_summary">Az Ön útja, a telefonja fejlesztése</string>
 res/values-hu-rHU/evolution_strings.xml:    <string name="about_title">Evolution X</string>
-res/values-hu-rHU/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-hu-rHU/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-hu-rHU/evolution_strings.xml:    <string name="about_info">Az Evolution X egy egyedi Android ROM, amelynek célja a Google Pixel élményének reprodukálása, csak sokkal több testreszabási lehetőséggel. A Lineage OS Project-re támaszkodva.</string>
 res/values-in-rID/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-in-rID/evolution_strings.xml:    <!-- Evolver -->
-res/values-in-rID/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolver</string>
-res/values-in-rID/evolution_strings.xml:    <string name="evolver_dashboard_summary">Evolving like never before</string>
+res/values-in-rID/evolution_strings.xml:    <string name="zienthlver_dashboard_summary">Evolving like never before</string>
 res/values-in-rID/evolution_strings.xml:    <string name="about_summary">Tentang Evolution X</string>
-res/values-in-rID/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-in-rID/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-in-rID/evolution_strings.xml:    <string name="about_info">Evolution X bertujuan untuk memberikan pengguna kesan seperti Pixel pada pandangan pertama, dengan fitur tambahan yang dapat anda gunakan</string>
 res/values-in-rID/evolution_strings.xml:    <string name="about_contributors_title">Tim Evolution X</string>
 res/values-it-rIT/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-it-rIT/evolution_strings.xml:    <!-- Evolver -->
-res/values-it-rIT/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolver</string>
-res/values-it-rIT/evolution_strings.xml:    <string name="evolver_dashboard_summary">Evoluzione come mai prima</string>
+res/values-it-rIT/evolution_strings.xml:    <string name="zienthlver_dashboard_summary">Evoluzione come mai prima</string>
 res/values-it-rIT/evolution_strings.xml:    <string name="about_summary">Informazioni su Evolution X</string>
-res/values-it-rIT/evolution_strings.xml:    <string name="monet_engine_custom_color_title">Colore in rilievo</string>
-res/values-it-rIT/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-it-rIT/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-it-rIT/evolution_strings.xml:    <string name="about_info">Evolution X mira a fornire agli utenti una sensazione simile a Pixel a prima vista, con funzionalità aggiuntive a vostra disposizione</string>
 res/values-night/evolution_colors.xml:     Copyright (C) 2019-2024 The Evolution X Project
 res/values-pl-rPL/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-pl-rPL/evolution_strings.xml:    <!-- Evolver -->
-res/values-pl-rPL/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolver</string>
-res/values-pl-rPL/evolution_strings.xml:    <string name="evolver_dashboard_summary">Ewoluuj jak nigdy wcześniej</string>
 res/values-pl-rPL/evolution_strings.xml:    <string name="about_summary">O Evolution X</string>
-res/values-pl-rPL/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-pl-rPL/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-pl-rPL/evolution_strings.xml:    <string name="about_info">Evolution X ma na celu zapewnienie użytkownikom poczucia podobnego do modelu Pixel na pierwszy rzut oka z dodatkowymi funkcjami, którymi dysponujesz</string>
 res/values-pl-rPL/evolution_strings.xml:    <string name="about_contributors_title">Zespół Evolution X</string>
 res/values-pt-rBR/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-pt-rBR/evolution_strings.xml:    <!-- Evolver -->
-res/values-pt-rBR/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolução</string>
-res/values-pt-rBR/evolution_strings.xml:    <string name="evolver_dashboard_summary">Evoluindo como nunca antes</string>
+res/values-pt-rBR/evolution_strings.xml:    <string name="zienthlver_dashboard_title">Evolução</string>
+res/values-pt-rBR/evolution_strings.xml:    <string name="zienthlver_dashboard_summary">Evoluindo como nunca antes</string>
 res/values-pt-rBR/evolution_strings.xml:    <string name="about_title">Evolution X</string>
 res/values-pt-rBR/evolution_strings.xml:    <string name="about_summary">Sobre Evolution X</string>
-res/values-pt-rBR/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-pt-rBR/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-pt-rBR/evolution_strings.xml:    <string name="about_info">Evolução X visa fornecer aos usuários uma sensação de Pixel à primeira vista, com recursos adicionais à sua disposição</string>
 res/values-ru-rRU/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-ru-rRU/evolution_strings.xml:    <!-- Evolver -->
-res/values-ru-rRU/evolution_strings.xml:    <string name="evolver_dashboard_title">The Evolver</string>
-res/values-ru-rRU/evolution_strings.xml:    <string name="evolver_dashboard_summary">Развиваемся, как никогда прежде</string>
 res/values-ru-rRU/evolution_strings.xml:    <string name="about_title">Evolution X</string>
-res/values-ru-rRU/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-ru-rRU/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-ru-rRU/evolution_strings.xml:    <string name="about_info">Evolution X — это кастомная прошивка Android ROM, призванная воссоздать функционал Google Pixel с расширенными возможностями настройки. Основана на проекте LineageOS.</string>
 res/values-sk-rSK/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-sk-rSK/evolution_strings.xml:    <!-- Evolver -->
-res/values-sk-rSK/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolver</string>
-res/values-sk-rSK/evolution_strings.xml:    <string name="evolver_dashboard_summary">Evolving like never before</string>
+res/values-sk-rSK/evolution_strings.xml:    <string name="zienthlver_dashboard_summary">Evolving like never before</string>
 res/values-sk-rSK/evolution_strings.xml:    <string name="about_summary">O Evolution X</string>
-res/values-sk-rSK/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-sk-rSK/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-sk-rSK/evolution_strings.xml:    <string name="about_info">Cieľom Evolution X je poskytnúť používateľom, na prvý pohľad, pocit podobný Pixelom, pričom máte k dispozícii ďalšie funkcie</string>
 res/values-tr-rTR/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-tr-rTR/evolution_strings.xml:    <!-- Evolver -->
-res/values-tr-rTR/evolution_strings.xml:    <string name="evolver_dashboard_title">The Evolver</string>
-res/values-tr-rTR/evolution_strings.xml:    <string name="evolver_dashboard_summary">Cihazınızı kendi yönteminizle geliştirin</string>
 res/values-tr-rTR/evolution_strings.xml:    <string name="about_title">Evolution X</string>
-res/values-tr-rTR/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-tr-rTR/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-tr-rTR/evolution_strings.xml:    <string name="about_info">Evolution X, Google Pixel deneyimini ek özelleştirme ile çoğaltmayı amaçlayan özel bir Android ROM\'dur. LineageOS Projesine dayanmaktadır.</string>
 res/values-uk-rUA/evolution_strings.xml:     Copyright (C) 2019-2025 Evolution X
-res/values-uk-rUA/evolution_strings.xml:    <!-- Evolver -->
-res/values-uk-rUA/evolution_strings.xml:    <string name="evolver_dashboard_title">Кастомізація Evolver</string>
-res/values-uk-rUA/evolution_strings.xml:    <string name="evolver_dashboard_summary">Розвиток вашого пристрою, твій шлях</string>
 res/values-uk-rUA/evolution_strings.xml:    <string name="about_title">Логотип Evolution X</string>
-res/values-uk-rUA/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Логотип Evolution X</string>
+res/values-uk-rUA/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Логотип Evolution X</string>
 res/values-uk-rUA/evolution_strings.xml:    <string name="about_info">Evolution X - це користувацька Android ROM, яка спрямована на повторення досвіду Google Pixel із доданими налаштуваннями, на основі проекту LineageOS.</string>
 res/values-vi-rVN/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-vi-rVN/evolution_strings.xml:    <!-- Evolver -->
-res/values-vi-rVN/evolution_strings.xml:    <string name="evolver_dashboard_title">The Evolver</string>
-res/values-vi-rVN/evolution_strings.xml:    <string name="evolver_dashboard_summary">Đổi mới thiết bị của bạn theo cách của bạn</string>
 res/values-vi-rVN/evolution_strings.xml:    <string name="about_title">Evolution X</string>
-res/values-vi-rVN/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-vi-rVN/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-vi-rVN/evolution_strings.xml:    <string name="about_info">Evolution X hướng tới trải nghiệm Pixel với nhiều tính năng bổ sung</string>
 res/values-zh-rCN/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-zh-rCN/evolution_strings.xml:    <!-- Evolver -->
-res/values-zh-rCN/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolution 自定义</string>
-res/values-zh-rCN/evolution_strings.xml:    <string name="evolver_dashboard_summary">进化你的设备，你的道路</string>
-res/values-zh-rCN/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">进化 X</string>
+res/values-zh-rCN/evolution_strings.xml:    <string name="zienthlver_dashboard_title">Evolution 自定义</string>
 res/values-zh-rCN/evolution_strings.xml:    <string name="about_info">Evolution X 是一款致力于复刻 Google Pixel 体验的定制化 Android 项目，拥有诸多自定义项目。本项目基于 LineageOS 项目。</string>
 res/values-zh-rTW/evolution_strings.xml:     Copyright (C) 2019-2024 Evolution X
-res/values-zh-rTW/evolution_strings.xml:    <!-- Evolver -->
-res/values-zh-rTW/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolution X 自定義</string>
-res/values-zh-rTW/evolution_strings.xml:    <string name="evolver_dashboard_summary">前所未有的進化</string>
+res/values-zh-rTW/evolution_strings.xml:    <string name="zienthlver_dashboard_title">Evolution X 自定義</string>
 res/values-zh-rTW/evolution_strings.xml:    <string name="about_title">Evolution X</string>
 res/values-zh-rTW/evolution_strings.xml:    <string name="about_summary">關於 Evolution X</string>
-res/values-zh-rTW/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values-zh-rTW/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values-zh-rTW/evolution_strings.xml:    <string name="about_info">Evolution X 是一款致力於復刻 Google Pixel 體驗的客製化 Android 項目，擁有許多自訂項目。本項目基於 LineageOS 項目。</string>
 res/values/evolution_arrays.xml:        <item>Evolution X</item>
 res/values/evolution_arrays.xml:        <item>Evolution X (Reveal)</item>
-res/values/evolution_arrays.xml:        <item>@string/status_bar_logo_style_evolution</item>
 res/values/evolution_colors.xml:     Copyright (C) 2019-2025 Evolution X
 res/values/evolution_dimens.xml:     Copyright (C) 2019-2025 Evolution X
 res/values/evolution_strings.xml:     Copyright (C) 2019-2025 Evolution X
-res/values/evolution_strings.xml:    <!-- Evolver -->
-res/values/evolution_strings.xml:    <string name="evolver_dashboard_title">The Evolver</string>
-res/values/evolution_strings.xml:    <string name="evolver_dashboard_summary">Evolving your device, your way</string>
+res/values/evolution_strings.xml:    <string name="zienthlver_dashboard_summary">Evolving your device, your way</string>
 res/values/evolution_strings.xml:    <string name="about_title">Evolution X</string>
-res/values/evolution_strings.xml:    <string name="status_bar_logo_style_evolution">Evolution X</string>
+res/values/evolution_strings.xml:    <string name="status_bar_logo_style_zienthlution">Evolution X</string>
 res/values/evolution_strings.xml:    <string name="about_info">Evolution X is a custom Android ROM that aims to replicate the Google Pixel experience, with added customization. Based on the LineageOS Project.</string>
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.colorpicker.SystemSettingColorPickerPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.colorpicker.SystemSettingColorPickerPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.colorpicker.SystemSettingColorPickerPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.colorpicker.SystemSettingColorPickerPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.colorpicker.SystemSettingColorPickerPreference
-res/xml/battery_bar.xml:    <org.evolution.settings.preferences.colorpicker.SystemSettingColorPickerPreference
-res/xml/boot_animation.xml:    <org.evolution.settings.preferences.BootAnimationPreviewPreference
-res/xml/boot_animation.xml:    <org.evolution.settings.preferences.SystemPropertyListPreference
-res/xml/edge_light_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/edge_light_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/edge_light_settings.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/edge_light_settings.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/edge_light_settings.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/edge_light_settings.xml:    <org.evolution.settings.preferences.colorpicker.SystemSettingColorPickerPreference
 res/xml/evolution_settings.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings.xml:    android:title="@string/evolver_dashboard_title">
-res/xml/evolution_settings.xml:            android:icon="@drawable/ic_evolver_about"
-res/xml/evolution_settings.xml:            android:fragment="org.evolution.settings.fragments.about.About" />
-res/xml/evolution_settings.xml:        android:icon="@drawable/ic_evolver_themes"
-res/xml/evolution_settings.xml:        android:fragment="org.evolution.settings.fragments.themes.Themes" />
-res/xml/evolution_settings.xml:        android:icon="@drawable/ic_evolver_lock_screen"
-res/xml/evolution_settings.xml:        android:fragment="org.evolution.settings.fragments.lockscreen.LockScreen" />
-res/xml/evolution_settings.xml:        android:icon="@drawable/ic_evolver_status_bar"
-res/xml/evolution_settings.xml:        android:fragment="org.evolution.settings.fragments.statusbar.StatusBar" />
-res/xml/evolution_settings.xml:        android:icon="@drawable/ic_evolver_quick_settings"
-res/xml/evolution_settings.xml:        android:fragment="org.evolution.settings.fragments.quicksettings.QuickSettings" />
-res/xml/evolution_settings.xml:        android:icon="@drawable/ic_evolver_notifications"
-res/xml/evolution_settings.xml:        android:fragment="org.evolution.settings.fragments.notifications.Notifications" />
-res/xml/evolution_settings.xml:        android:icon="@drawable/ic_evolver_power_menu"
-res/xml/evolution_settings.xml:        android:fragment="org.evolution.settings.fragments.powermenu.PowerMenu" />
-res/xml/evolution_settings.xml:        android:icon="@drawable/ic_evolver_miscellaneous"
-res/xml/evolution_settings.xml:        android:fragment="org.evolution.settings.fragments.miscellaneous.Miscellaneous" />
 res/xml/evolution_settings_about.xml:     Copyright (C) 2019-2025 Evolution X
 res/xml/evolution_settings_about.xml:    <!-- Evolution X logo -->
-res/xml/evolution_settings_about.xml:        android:key="evolution_logo"
-res/xml/evolution_settings_about.xml:        android:layout="@layout/evolution_logo"
 res/xml/evolution_settings_about.xml:        settings:controller="com.android.settings.deviceinfo.firmwareversion.EvolutionXLogoPreferenceController"/>
-res/xml/evolution_settings_about.xml:        android:icon="@drawable/ic_evolver_about">
-res/xml/evolution_settings_about.xml:            android:data="https://evolution-x.org" />
-res/xml/evolution_settings_about.xml:            android:data="https://github.com/Evolution-X" />
 res/xml/evolution_settings_about.xml:            android:data="https://x.com/EvolutionXROM" />
 res/xml/evolution_settings_lock_screen.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:            android:fragment="org.evolution.settings.fragments.lockscreen.LockClockFontsPickerPreview" />
-res/xml/evolution_settings_lock_screen.xml:            android:fragment="org.evolution.settings.fragments.lockscreen.LockScreenWidgets" />
-res/xml/evolution_settings_lock_screen.xml:            android:fragment="org.evolution.settings.fragments.lockscreen.WallpaperDepth" />
-res/xml/evolution_settings_lock_screen.xml:            android:fragment="org.evolution.settings.fragments.lockscreen.PeekDisplay" />
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/evolution_settings_lock_screen.xml:            android:fragment="org.evolution.settings.fragments.lockscreen.MediaArtSettings" />
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:        <!--<org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:            android:fragment="org.evolution.settings.fragments.lockscreen.PulseSettings" />
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:            android:fragment="org.evolution.settings.fragments.lockscreen.LockScreenWeather" />
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_lock_screen.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_lock_screen_weather.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen_weather.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_lock_screen_weather.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
 res/xml/evolution_settings_miscellaneous.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings_miscellaneous.xml:            android:fragment="org.evolution.settings.fragments.miscellaneous.Spoofing" />
-res/xml/evolution_settings_miscellaneous.xml:            android:fragment="org.evolution.settings.fragments.miscellaneous.HideAppListSettings" />
-res/xml/evolution_settings_miscellaneous.xml:        <org.evolution.settings.preferences.GlobalSettingSwitchPreference
-res/xml/evolution_settings_miscellaneous.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_miscellaneous.xml:            android:fragment="org.evolution.settings.fragments.miscellaneous.SmartPixels" />
-res/xml/evolution_settings_miscellaneous.xml:        <org.evolution.settings.preferences.GlobalSettingSwitchPreference
-res/xml/evolution_settings_miscellaneous.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_miscellaneous.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_miscellaneous.xml:        <org.evolution.settings.preferences.GlobalSettingSwitchPreference
-res/xml/evolution_settings_miscellaneous.xml:        <org.evolution.settings.preferences.GlobalSettingSwitchPreference
 res/xml/evolution_settings_notifications.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_notifications.xml:        <!--<org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_notifications.xml:            android:fragment="org.evolution.settings.fragments.notifications.EdgeLightSettings" />
-res/xml/evolution_settings_notifications.xml:        <!--<org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_notifications.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
 res/xml/evolution_settings_power_menu.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings_power_menu.xml:            android:fragment="org.evolution.settings.fragments.powermenu.PowerMenuActions" />
-res/xml/evolution_settings_power_menu.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
 res/xml/evolution_settings_quick_settings.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings_quick_settings.xml:        <!--<org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:            android:fragment="org.evolution.settings.fragments.quicksettings.QsHeaderImageSettings" />
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <!--<org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_quick_settings.xml:        <!--<org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_quick_settings.xml:        <!--<org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:            android:fragment="org.evolution.settings.fragments.quicksettings.LayoutSettings" />
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <!--<org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_quick_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
 res/xml/evolution_settings_status_bar.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:            android:fragment="org.evolution.settings.fragments.statusbar.Clock" />
-res/xml/evolution_settings_status_bar.xml:            android:fragment="org.evolution.settings.fragments.statusbar.StatusbarLyricSettings" />-->
-res/xml/evolution_settings_status_bar.xml:            android:fragment="org.evolution.settings.fragments.statusbar.NetworkTrafficSettings" />
-res/xml/evolution_settings_status_bar.xml:            android:fragment="org.evolution.settings.fragments.statusbar.OngoingProgressBar" />
-res/xml/evolution_settings_status_bar.xml:            android:fragment="org.evolution.settings.fragments.statusbar.BatteryBar" />
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <!--<org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <!--<org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <!--<org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:         <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/evolution_settings_status_bar.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
 res/xml/evolution_settings_themes.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.MonetSettings" />
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.Wallpaper" />
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.BrightnessSlider" />-->
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_themes.xml:        <!--<org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.GlobalSettingListPreference
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.GlobalSettingListPreference
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.fonts.FontPickerPreview"/>
-res/xml/evolution_settings_themes.xml:        <!--<org.evolution.settings.preferences.OverlaySwitchPreference
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.OverlaySwitchPreference
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.SystemIcons"/>
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.IconShapes"/>
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.SignalIcons"/>
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.WifiIcons"/>
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.NavigationBarIcons"/>
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.UdfpsIcons" />
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.BootAnimation" />
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/evolution_settings_themes.xml:        <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/evolution_settings_themes.xml:            android:fragment="org.evolution.settings.fragments.themes.UdfpsAnimations" />
-res/xml/evolution_settings_wallpaper.xml:        <org.evolution.settings.preferences.SystemPropertyListPreference
-res/xml/evolution_settings_wallpaper.xml:        <org.evolution.settings.preferences.SystemPropertyListPreference
-res/xml/evolution_settings_wallpaper.xml:        <org.evolution.settings.preferences.SystemPropertyListPreference
-res/xml/evolution_settings_wallpaper.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/haptics_settings.xml:    <org.evolution.settings.preferences.CustomSeekBarPreference
-res/xml/haptics_settings.xml:    <org.evolution.settings.preferences.CustomSeekBarPreference
-res/xml/haptics_settings.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/media_art_settings.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/media_art_settings.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/media_art_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/media_art_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/monet_engine.xml:    <org.evolution.settings.preferences.colorpicker.ColorPickerPreference
-res/xml/monet_engine.xml:    <org.evolution.settings.preferences.colorpicker.ColorPickerPreference
-res/xml/monet_engine.xml:    <org.evolution.settings.preferences.CustomSeekBarPreference
-res/xml/monet_engine.xml:    <org.evolution.settings.preferences.CustomSeekBarPreference
-res/xml/network_traffic_settings.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/network_traffic_settings.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/network_traffic_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/network_traffic_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/network_traffic_settings.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/network_traffic_settings.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/ongoing_progress_settings.xml:        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/pulse_settings.xml:    <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/pulse_settings.xml:    <org.evolution.settings.preferences.SecureSettingListPreference
-res/xml/pulse_settings.xml:    <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/pulse_settings.xml:    <org.evolution.settings.preferences.SecureSettingListPreference
-res/xml/pulse_settings.xml:    <org.evolution.settings.preferences.SecureSettingSeekBarPreference
-res/xml/qs_header_image_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/qs_header_image_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/qs_layout_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/qs_layout_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/qs_layout_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/qs_layout_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/qs_layout_settings.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/qs_layout_settings.xml:    <!--<org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/smart_pixels.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/smart_pixels.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/smart_pixels.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
 res/xml/spoofing.xml:     Copyright (C) 2019-2025 Evolution X
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.KeyboxDataPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SecureSettingSwitchPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/spoofing.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingSeekBarPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingSwitchPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/status_bar_clock.xml:    <org.evolution.settings.preferences.SystemSettingListPreference
-res/xml/status_bar_lyric_settings.xml:        <org.evolution.settings.preferences.SystemPropertySwitchPreference
 src/org/evolution/settings/EvolutionSettings.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/EvolutionSettings.java:package org.evolution.settings;
 src/org/evolution/settings/EvolutionSettings.java:public class EvolutionSettings extends DashboardFragment {
 src/org/evolution/settings/EvolutionSettings.java:    private static final String TAG = "EvolutionSettings";
-src/org/evolution/settings/EvolutionSettings.java:        return R.xml.evolution_settings;
-src/org/evolution/settings/EvolutionSettings.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/EvolutionSettings.java:            new BaseSearchIndexProvider(R.xml.evolution_settings);
 src/org/evolution/settings/TopLevelEvolutionSettingsPreferenceController.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/TopLevelEvolutionSettingsPreferenceController.java:package org.evolution.settings;
 src/org/evolution/settings/TopLevelEvolutionSettingsPreferenceController.java:public class TopLevelEvolutionSettingsPreferenceController extends BasePreferenceController {
 src/org/evolution/settings/TopLevelEvolutionSettingsPreferenceController.java:    public TopLevelEvolutionSettingsPreferenceController(Context context,
-src/org/evolution/settings/fragments/OptimizedSettingsFragment.kt:package org.evolution.settings.fragments
 src/org/evolution/settings/fragments/about/About.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/about/About.java:package org.evolution.settings.fragments.about;
-src/org/evolution/settings/fragments/about/About.java:        addPreferencesFromResource(R.xml.evolution_settings_about);
-src/org/evolution/settings/fragments/about/About.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/about/About.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_about) {
-src/org/evolution/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:import org.evolution.settings.fragments.themes.fonts.FontArrayAdapter;
-src/org/evolution/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:import org.evolution.settings.fragments.themes.fonts.FontManager;
 src/org/evolution/settings/fragments/lockscreen/LockScreen.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:import org.evolution.settings.preferences.SecureSettingSwitchPreference;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:// import org.evolution.settings.utils.ImageUtils;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:        addPreferencesFromResource(R.xml.evolution_settings_lock_screen);
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_lock_screen) {
 src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java:        addPreferencesFromResource(R.xml.evolution_settings_lock_screen_weather);
-src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_lock_screen_weather) {
-src/org/evolution/settings/fragments/lockscreen/MediaArtSettings.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/MediaArtSettings.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/lockscreen/PulseSettings.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/PulseSettings.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/miscellaneous/HideAppListStatusSettings.kt:package org.evolution.settings.fragments.miscellaneous
-src/org/evolution/settings/fragments/miscellaneous/HideAppListStatusSettings.kt:import com.android.internal.util.evolution.HideAppListUtils
 src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:package org.evolution.settings.fragments.miscellaneous;
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:import org.evolution.settings.fragments.miscellaneous.SmartPixels;
 src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:    private PreferenceCategory mDevOptionsCategory;
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:        addPreferencesFromResource(R.xml.evolution_settings_miscellaneous);
 src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:        mDevOptionsCategory = (PreferenceCategory) findPreference(KEY_DEV_CATEGORY);
 src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:            mDevOptionsCategory.removePreference(mSmartPixels);
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_miscellaneous) {
-src/org/evolution/settings/fragments/miscellaneous/SmartPixels.java:package org.evolution.settings.fragments.miscellaneous;
-src/org/evolution/settings/fragments/miscellaneous/SmartPixels.java:        return MetricsProto.MetricsEvent.EVOLVER;
 src/org/evolution/settings/fragments/miscellaneous/Spoofing.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:package org.evolution.settings.fragments.miscellaneous;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import com.android.internal.util.evolution.SystemRestartUtils;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.KeyboxDataPreference;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.SecureSettingSwitchPreference;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.SystemPropertySwitchPreference;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:            updatePropertiesFromUrl("https://raw.githubusercontent.com/Evolution-X/.github/refs/heads/main/profile/pif.json");
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/notifications/EdgeLightSettings.java:package org.evolution.settings.fragments.notifications;
-src/org/evolution/settings/fragments/notifications/EdgeLightSettings.java:        return MetricsProto.MetricsEvent.EVOLVER;
 src/org/evolution/settings/fragments/notifications/Notifications.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/notifications/Notifications.java:package org.evolution.settings.fragments.notifications;
-src/org/evolution/settings/fragments/notifications/Notifications.java:import org.evolution.settings.preferences.SystemPropertySwitchPreference;
-src/org/evolution/settings/fragments/notifications/Notifications.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/notifications/Notifications.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/notifications/Notifications.java:        addPreferencesFromResource(R.xml.evolution_settings_notifications);
-src/org/evolution/settings/fragments/notifications/Notifications.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/notifications/Notifications.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_notifications) {
 src/org/evolution/settings/fragments/powermenu/PowerMenu.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/powermenu/PowerMenu.java:package org.evolution.settings.fragments.powermenu;
-src/org/evolution/settings/fragments/powermenu/PowerMenu.java:        addPreferencesFromResource(R.xml.evolution_settings_power_menu);
-src/org/evolution/settings/fragments/powermenu/PowerMenu.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/powermenu/PowerMenu.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_power_menu) {
-src/org/evolution/settings/fragments/powermenu/PowerMenuActions.java:package org.evolution.settings.fragments.powermenu;
-src/org/evolution/settings/fragments/powermenu/PowerMenuActions.java:import org.evolution.settings.utils.TelephonyUtils;
-src/org/evolution/settings/fragments/powermenu/PowerMenuActions.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/quicksettings/LayoutSettings.java:package org.evolution.settings.fragments.quicksettings;
-src/org/evolution/settings/fragments/quicksettings/LayoutSettings.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/quicksettings/QsHeaderImageSettings.java:package org.evolution.settings.fragments.quicksettings;
-src/org/evolution/settings/fragments/quicksettings/QsHeaderImageSettings.java:        return MetricsProto.MetricsEvent.EVOLVER;
 src/org/evolution/settings/fragments/quicksettings/QuickSettings.java: * Copyright (C) 2019-2025 The Evolution X Project
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:package org.evolution.settings.fragments.quicksettings;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:// import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingSeekBarPreference;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:        addPreferencesFromResource(R.xml.evolution_settings_quick_settings);
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_quick_settings) {
-src/org/evolution/settings/fragments/statusbar/BatteryBar.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/BatteryBar.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/statusbar/BatteryBar.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/statusbar/Clock.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/Clock.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
-src/org/evolution/settings/fragments/statusbar/Clock.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/statusbar/Clock.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/statusbar/Clock.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/statusbar/NetworkTrafficSettings.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/NetworkTrafficSettings.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/statusbar/OngoingProgressBar.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/OngoingProgressBar.java:        return MetricsProto.MetricsEvent.EVOLVER;
 src/org/evolution/settings/fragments/statusbar/StatusBar.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:        addPreferencesFromResource(R.xml.evolution_settings_status_bar);
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_status_bar) {
-src/org/evolution/settings/fragments/themes/BootAnimation.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/BootAnimation.java:import org.evolution.settings.preferences.BootAnimationPreviewPreference;
-src/org/evolution/settings/fragments/themes/BootAnimation.java:        "/product/media/bootanimation_evo_reveal.zip",
-src/org/evolution/settings/fragments/themes/BootAnimation.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/Fonts.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/Fonts.java:import static com.android.internal.util.evolution.ThemeUtils.FONT_KEY;
-src/org/evolution/settings/fragments/themes/Fonts.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/Fonts.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/IconShapes.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/IconShapes.java:import static com.android.internal.util.evolution.ThemeUtils.ICON_SHAPE_KEY;
-src/org/evolution/settings/fragments/themes/IconShapes.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/IconShapes.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/MonetSettings.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/MonetSettings.java:import org.evolution.settings.preferences.colorpicker.ColorPickerPreference;
-src/org/evolution/settings/fragments/themes/MonetSettings.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
-src/org/evolution/settings/fragments/themes/MonetSettings.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/NavigationBarIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/NavigationBarIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/NavigationBarIcons.java:import com.android.internal.util.evolution.Utils;
-src/org/evolution/settings/fragments/themes/NavigationBarIcons.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/SignalIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/SignalIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/SignalIcons.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/SystemIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/SystemIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/SystemIcons.java:        return MetricsEvent.EVOLVER;
 src/org/evolution/settings/fragments/themes/Themes.java: * Copyright (C) 2019-2025 Evolution X
-src/org/evolution/settings/fragments/themes/Themes.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/Themes.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/Themes.java:import com.android.internal.util.evolution.Utils;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.preferences.GlobalSettingListPreference;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/themes/Themes.java:        addPreferencesFromResource(R.xml.evolution_settings_themes);
-src/org/evolution/settings/fragments/themes/Themes.java:            if (!Utils.isPackageInstalled(context, "org.evolution.udfps.icons")) {
-src/org/evolution/settings/fragments/themes/Themes.java:            if (!Utils.isPackageInstalled(context, "org.evolution.udfps.animations")) {
-src/org/evolution/settings/fragments/themes/Themes.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/Themes.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_themes) {
-src/org/evolution/settings/fragments/themes/Themes.java:                    if (!Utils.isPackageInstalled(context, "org.evolution.udfps.icons")) {
-src/org/evolution/settings/fragments/themes/Themes.java:                    if (!Utils.isPackageInstalled(context, "org.evolution.udfps.animations")) {
-src/org/evolution/settings/fragments/themes/UdfpsAnimations.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/UdfpsAnimations.java:    private String mPkg = "org.evolution.udfps.animations";
-src/org/evolution/settings/fragments/themes/UdfpsAnimations.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/UdfpsIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/UdfpsIcons.java:    private String mPkg = "org.evolution.udfps.icons";
-src/org/evolution/settings/fragments/themes/UdfpsIcons.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:        addPreferencesFromResource(R.xml.evolution_settings_wallpaper);
-src/org/evolution/settings/fragments/themes/Wallpaper.java:        return MetricsProto.MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_wallpaper) {
-src/org/evolution/settings/fragments/themes/WifiIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/WifiIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/WifiIcons.java:        return MetricsEvent.EVOLVER;
-src/org/evolution/settings/fragments/themes/fonts/ExternalFontInstaller.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/fonts/FontArrayAdapter.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/fonts/FontManager.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/fonts/FontPickerPreview.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/fonts/FontPickerPreview.kt:import org.evolution.settings.fragments.OptimizedSettingsFragment
-src/org/evolution/settings/preferences/BacklightTimeoutSeekBar.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/BootAnimationPreviewPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/BootAnimationPreviewPreference.java:import org.evolution.settings.utils.BootAnimationUtils;
-src/org/evolution/settings/preferences/ClockStyle.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/CustomDialogPref.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/CustomSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingSwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/KeyboxDataPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/LineageSecureSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/LineageSecureSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/LineageSystemSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/LineageSystemSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/OverlaySwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/PackageListAdapter.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SecureSettingListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SecureSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SecureSettingSwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SecureSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemPropertyListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemPropertySwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingSwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/colorpicker/AlphaPatternDrawable.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerDialog.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerPanelView.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerView.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/SecureSettingColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/SecureSettingColorPickerPreference.java:import org.evolution.settings.preferences.SecureSettingsStore;
-src/org/evolution/settings/preferences/colorpicker/SystemSettingColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/SystemSettingColorPickerPreference.java:import org.evolution.settings.preferences.SystemSettingsStore;
-src/org/evolution/settings/utils/BootAnimationUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/BootAnimationUtils.java:        "/product/media/bootanimation_evo_reveal.zip",
-src/org/evolution/settings/utils/DeviceUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/ImageUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/ImageUtils.java:            File directory = new File("/sdcard/Evolution-X/" + featurePath);
-src/org/evolution/settings/utils/SystemRestartUtils.java:package org.evolution.settings.utils;
 src/org/evolution/settings/utils/SystemUtils.java: * SPDX-FileCopyrightText: 2025 Evolution X
-src/org/evolution/settings/utils/SystemUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/TelephonyUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/WallpaperView.kt:package org.evolution.settings.utils
 (END)
