@@ -1,172 +1,171 @@
 zarakinyu@DESKTOP-E35KJB8:~/packages_apps_Evolver$ grep -r "evo"
-grep: .git/objects/pack/pack-391ca2b9d3a5dd1357aa9b8e6f9fcbf7fe9304cd.pack: binary file matches
+grep: .git/objects/pack/pack-0730faf6d94b1776e5add32336246f4844a24ed5.pack: binary file matches
 grep: .git/index: binary file matches
-src/org/evolution/settings/EvolutionSettings.java:package org.evolution.settings;
-src/org/evolution/settings/EvolutionSettings.java:        return R.xml.evolution_settings;
-src/org/evolution/settings/EvolutionSettings.java:            new BaseSearchIndexProvider(R.xml.evolution_settings);
-src/org/evolution/settings/fragments/quicksettings/LayoutSettings.java:package org.evolution.settings.fragments.quicksettings;
-src/org/evolution/settings/fragments/quicksettings/QsHeaderImageSettings.java:package org.evolution.settings.fragments.quicksettings;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:package org.evolution.settings.fragments.quicksettings;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:// import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingSeekBarPreference;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:        addPreferencesFromResource(R.xml.evolution_settings_quick_settings);
-src/org/evolution/settings/fragments/quicksettings/QuickSettings.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_quick_settings) {
-src/org/evolution/settings/fragments/miscellaneous/SmartPixels.java:package org.evolution.settings.fragments.miscellaneous;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:package org.evolution.settings.fragments.miscellaneous;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import com.android.internal.util.evolution.SystemRestartUtils;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.KeyboxDataPreference;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.SecureSettingSwitchPreference;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.SystemPropertySwitchPreference;
-src/org/evolution/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:package org.evolution.settings.fragments.miscellaneous;
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:import org.evolution.settings.fragments.miscellaneous.SmartPixels;
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:        addPreferencesFromResource(R.xml.evolution_settings_miscellaneous);
-src/org/evolution/settings/fragments/miscellaneous/Miscellaneous.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_miscellaneous) {
-src/org/evolution/settings/fragments/miscellaneous/HideAppListStatusSettings.kt:package org.evolution.settings.fragments.miscellaneous
-src/org/evolution/settings/fragments/miscellaneous/HideAppListStatusSettings.kt:import com.android.internal.util.evolution.HideAppListUtils
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:        addPreferencesFromResource(R.xml.evolution_settings_status_bar);
-src/org/evolution/settings/fragments/statusbar/StatusBar.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_status_bar) {
-src/org/evolution/settings/fragments/statusbar/BatteryBar.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/BatteryBar.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/statusbar/OngoingProgressBar.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/NetworkTrafficSettings.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/Clock.java:package org.evolution.settings.fragments.statusbar;
-src/org/evolution/settings/fragments/statusbar/Clock.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
-src/org/evolution/settings/fragments/statusbar/Clock.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/statusbar/Clock.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/about/About.java:package org.evolution.settings.fragments.about;
-src/org/evolution/settings/fragments/about/About.java:        addPreferencesFromResource(R.xml.evolution_settings_about);
-src/org/evolution/settings/fragments/about/About.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_about) {
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:import org.evolution.settings.preferences.SecureSettingSwitchPreference;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:// import org.evolution.settings.utils.ImageUtils;
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:        addPreferencesFromResource(R.xml.evolution_settings_lock_screen);
-src/org/evolution/settings/fragments/lockscreen/LockScreen.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_lock_screen) {
-src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java:        addPreferencesFromResource(R.xml.evolution_settings_lock_screen_weather);
-src/org/evolution/settings/fragments/lockscreen/LockScreenWeather.java:            new BaseSearchIndexProvider(R.xml.evlution_settings_lock_screen_weather) {
-src/org/evolution/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:import org.evolution.settings.fragments.themes.fonts.FontArrayAdapter;
-src/org/evolution/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:import org.evolution.settings.fragments.themes.fonts.FontManager;
-src/org/evolution/settings/fragments/lockscreen/PulseSettings.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/lockscreen/MediaArtSettings.java:package org.evolution.settings.fragments.lockscreen;
-src/org/evolution/settings/fragments/notifications/Notifications.java:package org.evolution.settings.fragments.notifications;
-src/org/evolution/settings/fragments/notifications/Notifications.java:import org.evolution.settings.preferences.SystemPropertySwitchPreference;
-src/org/evolution/settings/fragments/notifications/Notifications.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
-src/org/evolution/settings/fragments/notifications/Notifications.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/notifications/Notifications.java:        addPreferencesFromResource(R.xml.evolution_settings_notifications);
-src/org/evolution/settings/fragments/notifications/Notifications.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_notifications) {
-src/org/evolution/settings/fragments/notifications/EdgeLightSettings.java:package org.evolution.settings.fragments.notifications;
-src/org/evolution/settings/fragments/OptimizedSettingsFragment.kt:package org.evolution.settings.fragments
-src/org/evolution/settings/fragments/themes/fonts/FontPickerPreview.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/fonts/FontPickerPreview.kt:import org.evolution.settings.fragments.OptimizedSettingsFragment
-src/org/evolution/settings/fragments/themes/fonts/FontArrayAdapter.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/fonts/FontManager.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/fonts/ExternalFontInstaller.kt:package org.evolution.settings.fragments.themes.fonts
-src/org/evolution/settings/fragments/themes/MonetSettings.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/MonetSettings.java:import org.evolution.settings.preferences.colorpicker.ColorPickerPreference;
-src/org/evolution/settings/fragments/themes/MonetSettings.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
-src/org/evolution/settings/fragments/themes/Themes.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/Themes.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/Themes.java:import com.android.internal.util.evolution.Utils;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.preferences.GlobalSettingListPreference;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.preferences.SystemSettingListPreference;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.utils.DeviceUtils;
-src/org/evolution/settings/fragments/themes/Themes.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/themes/Themes.java:        addPreferencesFromResource(R.xml.evolution_settings_themes);
-src/org/evolution/settings/fragments/themes/Themes.java:            if (!Utils.isPackageInstalled(context, "org.evolution.udfps.icons")) {
-src/org/evolution/settings/fragments/themes/Themes.java:            if (!Utils.isPackageInstalled(context, "org.evolution.udfps.animations")) {
-src/org/evolution/settings/fragments/themes/Themes.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_themes) {
-src/org/evolution/settings/fragments/themes/Themes.java:                    if (!Utils.isPackageInstalled(context, "orgevolution.udfps.icons")) {
-src/org/evolution/settings/fragments/themes/Themes.java:                    if (!Utils.isPackageInstalled(context, "orgevolution.udfps.animations")) {
-src/org/evolution/settings/fragments/themes/BootAnimation.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/BootAnimation.java:import org.evolution.settings.preferences.BootAnimationPreviewPreference;
-src/org/evolution/settings/fragments/themes/BootAnimation.java:        "/product/media/bootanimation_evo_reveal.zip",
-src/org/evolution/settings/fragments/themes/Fonts.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/Fonts.java:import static com.android.internal.util.evolution.ThemeUtils.FONT_KEY;
-src/org/evolution/settings/fragments/themes/Fonts.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:import org.evolution.settings.utils.SystemUtils;
-src/org/evolution/settings/fragments/themes/Wallpaper.java:        addPreferencesFromResource(R.xml.evolution_settings_wallpaper);
-src/org/evolution/settings/fragments/themes/Wallpaper.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_wallpaper) {
-src/org/evolution/settings/fragments/themes/WifiIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/WifiIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/SystemIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/SystemIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/UdfpsAnimations.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/UdfpsAnimations.java:    private String mPkg = "org.evolution.udfps.animations";
-src/org/evolution/settings/fragments/themes/SignalIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/SignalIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/NavigationBarIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/NavigationBarIcons.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/NavigationBarIcons.java:import com.android.internal.util.evolution.Utils;
-src/org/evolution/settings/fragments/themes/IconShapes.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/IconShapes.java:import static com.android.internal.util.evolution.ThemeUtils.ICON_SHAPE_KEY;
-src/org/evolution/settings/fragments/themes/IconShapes.java:import com.android.internal.util.evolution.ThemeUtils;
-src/org/evolution/settings/fragments/themes/UdfpsIcons.java:package org.evolution.settings.fragments.themes;
-src/org/evolution/settings/fragments/themes/UdfpsIcons.java:    private String mPkg = "org.evolution.udfps.icons";
-src/org/evolution/settings/fragments/powermenu/PowerMenu.java:package org.evolution.settings.fragments.powermenu;
-src/org/evolution/settings/fragments/powermenu/PowerMenu.java:        addPreferencesFromResource(R.xml.evolution_settings_power_menu);
-src/org/evolution/settings/fragments/powermenu/PowerMenu.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_power_menu) {
-src/org/evolution/settings/fragments/powermenu/PowerMenuActions.java:package org.evolution.settings.fragments.powermenu;
-src/org/evolution/settings/fragments/powermenu/PowerMenuActions.java:import org.evolution.settings.utils.TelephonyUtils;
-src/org/evolution/settings/preferences/LineageSecureSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/CustomDialogPref.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/OverlaySwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/LineageSystemSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/PackageListAdapter.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerDialog.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/SecureSettingColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/SecureSettingColorPickerPreference.java:import org.evolution.settings.preferences.SecureSettingsStore;
-src/org/evolution/settings/preferences/colorpicker/AlphaPatternDrawable.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerView.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerPanelView.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/ColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/SystemSettingColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
-src/org/evolution/settings/preferences/colorpicker/SystemSettingColorPickerPreference.java:import org.evolution.settings.preferences.SystemSettingsStore;
-src/org/evolution/settings/preferences/SecureSettingSwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemPropertyListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/BacklightTimeoutSeekBar.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SecureSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/KeyboxDataPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingSwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/CustomSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SecureSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/LineageSystemSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/LineageSecureSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/BootAnimationPreviewPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/BootAnimationPreviewPreference.java:import org.evolution.settings.utils.BootAnimationUtils;
-src/org/evolution/settings/preferences/ClockStyle.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SecureSettingListPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingsStore.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemSettingSwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/SystemPropertySwitchPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/preferences/GlobalSettingSeekBarPreference.java:package org.evolution.settings.preferences;
-src/org/evolution/settings/TopLevelEvolutionSettingsPreferenceController.java:package org.evolution.settings;
-src/org/evolution/settings/utils/BootAnimationUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/BootAnimationUtils.java:        "/product/media/bootanimation_evo_reveal.zip",
-src/org/evolution/settings/utils/SystemUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/ImageUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/TelephonyUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/WallpaperView.kt:package org.evolution.settings.utils
-src/org/evolution/settings/utils/DeviceUtils.java:package org.evolution.settings.utils;
-src/org/evolution/settings/utils/SystemRestartUtils.java:package org.evolution.settings.utils;
-crowdin.yml:  - source: /**/values/evolution_strings.xml
+src/org/zienth/settings/EvolutionSettings.java:package org.evolution.settings;
+src/org/zienth/settings/EvolutionSettings.java:        return R.xml.evolution_settings;
+src/org/zienth/settings/EvolutionSettings.java:            new BaseSearchIndexProvider(R.xml.evolution_settings);
+src/org/zienth/settings/fragments/quicksettings/LayoutSettings.java:package org.evolution.settings.fragments.quicksettings;
+src/org/zienth/settings/fragments/quicksettings/QsHeaderImageSettings.java:package org.evolution.settings.fragments.quicksettings;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:package org.evolution.settings.fragments.quicksettings;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:// import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingListPreference;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingSeekBarPreference;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.utils.DeviceUtils;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:import org.evolution.settings.utils.SystemUtils;
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:        addPreferencesFromResource(R.xml.evolution_settings_quick_settings);
+src/org/zienth/settings/fragments/quicksettings/QuickSettings.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_quick_settings) {
+src/org/zienth/settings/fragments/miscellaneous/SmartPixels.java:package org.evolution.settings.fragments.miscellaneous;
+src/org/zienth/settings/fragments/miscellaneous/Spoofing.java:package org.evolution.settings.fragments.miscellaneous;
+src/org/zienth/settings/fragments/miscellaneous/Spoofing.java:import com.android.internal.util.evolution.SystemRestartUtils;
+src/org/zienth/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.KeyboxDataPreference;
+src/org/zienth/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.SecureSettingSwitchPreference;
+src/org/zienth/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.preferences.SystemPropertySwitchPreference;
+src/org/zienth/settings/fragments/miscellaneous/Spoofing.java:import org.evolution.settings.utils.DeviceUtils;
+src/org/zienth/settings/fragments/miscellaneous/Miscellaneous.java:package org.evolution.settings.fragments.miscellaneous;
+src/org/zienth/settings/fragments/miscellaneous/Miscellaneous.java:import org.evolution.settings.fragments.miscellaneous.SmartPixels;
+src/org/zienth/settings/fragments/miscellaneous/Miscellaneous.java:        addPreferencesFromResource(R.xml.evolution_settings_miscellaneous);
+src/org/zienth/settings/fragments/miscellaneous/Miscellaneous.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_miscellaneous) {
+src/org/zienth/settings/fragments/miscellaneous/HideAppListStatusSettings.kt:package org.evolution.settings.fragments.miscellaneous
+src/org/zienth/settings/fragments/miscellaneous/HideAppListStatusSettings.kt:import com.android.internal.util.evolution.HideAppListUtils
+src/org/zienth/settings/fragments/statusbar/StatusBar.java:package org.evolution.settings.fragments.statusbar;
+src/org/zienth/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.preferences.SystemSettingListPreference;
+src/org/zienth/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
+src/org/zienth/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.utils.DeviceUtils;
+src/org/zienth/settings/fragments/statusbar/StatusBar.java:import org.evolution.settings.utils.SystemUtils;
+src/org/zienth/settings/fragments/statusbar/StatusBar.java:        addPreferencesFromResource(R.xml.evolution_settings_status_bar);
+src/org/zienth/settings/fragments/statusbar/StatusBar.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_status_bar) {
+src/org/zienth/settings/fragments/statusbar/BatteryBar.java:package org.evolution.settings.fragments.statusbar;
+src/org/zienth/settings/fragments/statusbar/BatteryBar.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
+src/org/zienth/settings/fragments/statusbar/OngoingProgressBar.java:package org.evolution.settings.fragments.statusbar;
+src/org/zienth/settings/fragments/statusbar/NetworkTrafficSettings.java:package org.evolution.settings.fragments.statusbar;
+src/org/zienth/settings/fragments/statusbar/Clock.java:package org.evolution.settings.fragments.statusbar;
+src/org/zienth/settings/fragments/statusbar/Clock.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
+src/org/zienth/settings/fragments/statusbar/Clock.java:import org.evolution.settings.preferences.SystemSettingListPreference;
+src/org/zienth/settings/fragments/statusbar/Clock.java:import org.evolution.settings.utils.DeviceUtils;
+src/org/zienth/settings/fragments/about/About.java:package org.evolution.settings.fragments.about;
+src/org/zienth/settings/fragments/about/About.java:        addPreferencesFromResource(R.xml.evolution_settings_about);
+src/org/zienth/settings/fragments/about/About.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_about) {
+src/org/zienth/settings/fragments/lockscreen/LockScreen.java:package org.evolution.settings.fragments.lockscreen;
+src/org/zienth/settings/fragments/lockscreen/LockScreen.java:import org.evolution.settings.preferences.SecureSettingSwitchPreference;
+src/org/zienth/settings/fragments/lockscreen/LockScreen.java:import org.evolution.settings.utils.DeviceUtils;
+src/org/zienth/settings/fragments/lockscreen/LockScreen.java:// import org.evolution.settings.utils.ImageUtils;
+src/org/zienth/settings/fragments/lockscreen/LockScreen.java:        addPreferencesFromResource(R.xml.evolution_settings_lock_screen);
+src/org/zienth/settings/fragments/lockscreen/LockScreen.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_lock_screen) {
+src/org/zienth/settings/fragments/lockscreen/LockScreenWeather.java:package org.evolution.settings.fragments.lockscreen;
+src/org/zienth/settings/fragments/lockscreen/LockScreenWeather.java:        addPreferencesFromResource(R.xml.evolution_settings_lock_screen_weather);
+src/org/zienth/settings/fragments/lockscreen/LockScreenWeather.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_lock_screen_weather) {
+src/org/zienth/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:package org.evolution.settings.fragments.lockscreen;
+src/org/zienth/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:import org.evolution.settings.fragments.themes.fonts.FontArrayAdapter;
+src/org/zienth/settings/fragments/lockscreen/LockClockFontsPickerPreview.java:import org.evolution.settings.fragments.themes.fonts.FontManager;
+src/org/zienth/settings/fragments/lockscreen/PulseSettings.java:package org.evolution.settings.fragments.lockscreen;
+src/org/zienth/settings/fragments/lockscreen/MediaArtSettings.java:package org.evolution.settings.fragments.lockscreen;
+src/org/zienth/settings/fragments/notifications/Notifications.java:package org.evolution.settings.fragments.notifications;
+src/org/zienth/settings/fragments/notifications/Notifications.java:import org.evolution.settings.preferences.SystemPropertySwitchPreference;
+src/org/zienth/settings/fragments/notifications/Notifications.java:import org.evolution.settings.preferences.SystemSettingSwitchPreference;
+src/org/zienth/settings/fragments/notifications/Notifications.java:import org.evolution.settings.utils.SystemUtils;
+src/org/zienth/settings/fragments/notifications/Notifications.java:        addPreferencesFromResource(R.xml.evolution_settings_notifications);
+src/org/zienth/settings/fragments/notifications/Notifications.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_notifications) {
+src/org/zienth/settings/fragments/notifications/EdgeLightSettings.java:package org.evolution.settings.fragments.notifications;
+src/org/zienth/settings/fragments/OptimizedSettingsFragment.kt:package org.evolution.settings.fragments
+src/org/zienth/settings/fragments/themes/fonts/FontPickerPreview.kt:package org.evolution.settings.fragments.themes.fonts
+src/org/zienth/settings/fragments/themes/fonts/FontPickerPreview.kt:import org.evolution.settings.fragments.OptimizedSettingsFragment
+src/org/zienth/settings/fragments/themes/fonts/FontArrayAdapter.kt:package org.evolution.settings.fragments.themes.fonts
+src/org/zienth/settings/fragments/themes/fonts/FontManager.kt:package org.evolution.settings.fragments.themes.fonts
+src/org/zienth/settings/fragments/themes/fonts/ExternalFontInstaller.kt:package org.evolution.settings.fragments.themes.fonts
+src/org/zienth/settings/fragments/themes/MonetSettings.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/MonetSettings.java:import org.evolution.settings.preferences.colorpicker.ColorPickerPreference;
+src/org/zienth/settings/fragments/themes/MonetSettings.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
+src/org/zienth/settings/fragments/themes/Themes.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/Themes.java:import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/themes/Themes.java:import com.android.internal.util.evolution.Utils;
+src/org/zienth/settings/fragments/themes/Themes.java:import org.evolution.settings.preferences.GlobalSettingListPreference;
+src/org/zienth/settings/fragments/themes/Themes.java:import org.evolution.settings.preferences.SystemSettingListPreference;
+src/org/zienth/settings/fragments/themes/Themes.java:import org.evolution.settings.utils.DeviceUtils;
+src/org/zienth/settings/fragments/themes/Themes.java:import org.evolution.settings.utils.SystemUtils;
+src/org/zienth/settings/fragments/themes/Themes.java:        addPreferencesFromResource(R.xml.evolution_settings_themes);
+src/org/zienth/settings/fragments/themes/Themes.java:            if (!Utils.isPackageInstalled(context, "org.evolution.udfps.icons")) {
+src/org/zienth/settings/fragments/themes/Themes.java:            if (!Utils.isPackageInstalled(context, "org.evolution.udfps.animations")) {
+src/org/zienth/settings/fragments/themes/Themes.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_themes) {
+src/org/zienth/settings/fragments/themes/Themes.java:                    if (!Utils.isPackageInstalled(context, "org.evlution.udfps.icons")) {
+src/org/zienth/settings/fragments/themes/Themes.java:                    if (!Utils.isPackageInstalled(context, "org.evlution.udfps.animations")) {
+src/org/zienth/settings/fragments/themes/BootAnimation.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/BootAnimation.java:import org.evolution.settings.preferences.BootAnimationPreviewPreference;
+src/org/zienth/settings/fragments/themes/BootAnimation.java:        "/product/media/bootanimation_evo_reveal.zip",
+src/org/zienth/settings/fragments/themes/Fonts.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/Fonts.java:import static com.android.internal.util.evolution.ThemeUtils.FONT_KEY;
+src/org/zienth/settings/fragments/themes/Fonts.java:import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/themes/Wallpaper.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/Wallpaper.java:import org.evolution.settings.preferences.CustomSeekBarPreference;
+src/org/zienth/settings/fragments/themes/Wallpaper.java:import org.evolution.settings.utils.SystemUtils;
+src/org/zienth/settings/fragments/themes/Wallpaper.java:        addPreferencesFromResource(R.xml.evolution_settings_wallpaper);
+src/org/zienth/settings/fragments/themes/Wallpaper.java:            new BaseSearchIndexProvider(R.xml.evolution_settings_wallpaper) {
+src/org/zienth/settings/fragments/themes/WifiIcons.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/WifiIcons.java:import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/themes/SystemIcons.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/SystemIcons.java:import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/themes/UdfpsAnimations.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/UdfpsAnimations.java:    private String mPkg = "org.evolution.udfps.animations";
+src/org/zienth/settings/fragments/themes/SignalIcons.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/SignalIcons.java:import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/themes/NavigationBarIcons.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/NavigationBarIcons.java:import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/themes/NavigationBarIcons.java:import com.android.internal.util.evolution.Utils;
+src/org/zienth/settings/fragments/themes/IconShapes.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/IconShapes.java:import static com.android.internal.util.evolution.ThemeUtils.ICON_SHAPE_KEY;
+src/org/zienth/settings/fragments/themes/IconShapes.java:import com.android.internal.util.evolution.ThemeUtils;
+src/org/zienth/settings/fragments/themes/UdfpsIcons.java:package org.evolution.settings.fragments.themes;
+src/org/zienth/settings/fragments/themes/UdfpsIcons.java:    private String mPkg = "org.evolution.udfps.icons";
+src/org/zienth/settings/fragments/powermenu/PowerMenu.java:package org.evolution.settings.fragments.powermenu;
+src/org/zienth/settings/fragments/powermenu/PowerMenu.java:        addPreferencesFromResource(R.xml.evolution_settings_power_menu);
+src/org/zienth/settings/fragments/powermenu/PowerMenu.java:        new BaseSearchIndexProvider(R.xml.evolution_settings_power_menu) {
+src/org/zienth/settings/fragments/powermenu/PowerMenuActions.java:package org.evolution.settings.fragments.powermenu;
+src/org/zienth/settings/fragments/powermenu/PowerMenuActions.java:import org.evolution.settings.utils.TelephonyUtils;
+src/org/zienth/settings/preferences/LineageSecureSettingSeekBarPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/CustomDialogPref.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/OverlaySwitchPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/GlobalSettingsStore.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/LineageSystemSettingSeekBarPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/PackageListAdapter.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/colorpicker/ColorPickerDialog.java:package org.evolution.settings.preferences.colorpicker;
+src/org/zienth/settings/preferences/colorpicker/SecureSettingColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
+src/org/zienth/settings/preferences/colorpicker/SecureSettingColorPickerPreference.java:import org.evolution.settings.preferences.SecureSettingsStore;
+src/org/zienth/settings/preferences/colorpicker/AlphaPatternDrawable.java:package org.evolution.settings.preferences.colorpicker;
+src/org/zienth/settings/preferences/colorpicker/ColorPickerView.java:package org.evolution.settings.preferences.colorpicker;
+src/org/zienth/settings/preferences/colorpicker/ColorPickerPanelView.java:package org.evolution.settings.preferences.colorpicker;
+src/org/zienth/settings/preferences/colorpicker/ColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
+src/org/zienth/settings/preferences/colorpicker/SystemSettingColorPickerPreference.java:package org.evolution.settings.preferences.colorpicker;
+src/org/zienth/settings/preferences/colorpicker/SystemSettingColorPickerPreference.java:import org.evolution.settings.preferences.SystemSettingsStore;
+src/org/zienth/settings/preferences/SecureSettingSwitchPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SystemPropertyListPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/BacklightTimeoutSeekBar.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SecureSettingsStore.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/KeyboxDataPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/GlobalSettingSwitchPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SystemSettingListPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/CustomSeekBarPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SecureSettingSeekBarPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SystemSettingSeekBarPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/GlobalSettingListPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/LineageSystemSettingsStore.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/LineageSecureSettingsStore.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/BootAnimationPreviewPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/BootAnimationPreviewPreference.java:import org.evolution.settings.utils.BootAnimationUtils;
+src/org/zienth/settings/preferences/ClockStyle.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SecureSettingListPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SystemSettingsStore.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SystemSettingSwitchPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/SystemPropertySwitchPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/preferences/GlobalSettingSeekBarPreference.java:package org.evolution.settings.preferences;
+src/org/zienth/settings/TopLevelEvolutionSettingsPreferenceController.java:package org.evolution.settings;
+src/org/zienth/settings/utils/BootAnimationUtils.java:package org.evolution.settings.utils;
+src/org/zienth/settings/utils/BootAnimationUtils.java:        "/product/media/bootanimation_evo_reveal.zip",
+src/org/zienth/settings/utils/SystemUtils.java:package org.evolution.settings.utils;
+src/org/zienth/settings/utils/ImageUtils.java:package org.evolution.settings.utils;
+src/org/zienth/settings/utils/TelephonyUtils.java:package org.evolution.settings.utils;
+src/org/zienth/settings/utils/WallpaperView.kt:package org.evolution.settings.utils
+src/org/zienth/settings/utils/DeviceUtils.java:package org.evolution.settings.utils;
+src/org/zienth/settings/utils/SystemRestartUtils.java:package org.evolution.settings.utils;
 res/values-de-rDE/evolution_strings.xml:    <string name="evolver_dashboard_title">Evolver</string>
 res/values-de-rDE/evolution_strings.xml:    <string name="evolver_dashboard_summary">Entwickelnd, wie nie zuvor</string>
 res/values-de-rDE/evolution_strings.xml:    <string name="lock_screen_charging_stats_summary">Maximalen Stromstärke und Spannung des Ladegeräts sowie der Akkutemperatur auf dem Sperrbildschirm während des Ladevorgangs anzeigen</string>
