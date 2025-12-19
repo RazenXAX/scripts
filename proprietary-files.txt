@@ -675,29 +675,18 @@ vendor/lib64/libvideoutils.so
 system_ext/lib64/libcameraopt.so
 
 # CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
 vendor/etc/charger_diag.cfg
 vendor/etc/charger_fw_fstab.qti
 
-# CIT Sensor
-odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl;DISABLE_CHECKELF
-odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
-odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
-
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
-vendor/etc/cne/mwqem.conf
-vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -705,17 +694,17 @@ vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile7.xml
+vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml
+vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml
+vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml
@@ -727,6 +716,8 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml
+vendor/etc/cne/mwqem.conf
+vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.data.iwlandata.xml
@@ -762,39 +753,6 @@ vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
 vendor/lib64/vendor.qti.latency@2.2.so
 vendor/lib64/vendor.qti.latencyaidlservice-V1-ndk.so
-
-# Computer vision
-vendor/etc/eva/facedetection/bias.dat
-vendor/etc/eva/facedetection/weight.dat
-vendor/etc/eva/facelandmark/bias_1_1.dat
-vendor/etc/eva/facelandmark/bias_1_2.dat
-vendor/etc/eva/facelandmark/bias_2.dat
-vendor/etc/eva/facelandmark/bias_3_1.dat
-vendor/etc/eva/facelandmark/bias_3_2.dat
-vendor/etc/eva/facelandmark/weight_1_1.dat
-vendor/etc/eva/facelandmark/weight_1_2.dat
-vendor/etc/eva/facelandmark/weight_2.dat
-vendor/etc/eva/facelandmark/weight_3_1.dat
-vendor/etc/eva/facelandmark/weight_3_2.dat
-vendor/etc/eva/itof/tuning_params_sensor_type_1.json
-vendor/lib64/libFace3DTA.so
-vendor/lib64/libFace3D_hlos.so
-vendor/lib64/libQ6MSFR_manager_stub.so
-vendor/lib64/libcv_common.so
-vendor/lib64/libeva.so
-vendor/lib64/libeva_util.so
-vendor/lib64/libface3d_dev.so
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libos.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
-vendor/lib64/libsynx.so
-vendor/lib64/libthreadutils.so
-vendor/lib64/libvideoutils.so
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -835,73 +793,207 @@ vendor/lib64/libnicm_netlink.so
 vendor/lib64/libnicm_recovery.so
 vendor/lib64/libnicm_utils.so
 vendor/lib64/libnicm_vh.so
-vendor/lib64/libnspdependency.so
-vendor/lib64/libnspdescriptorhandler.so
-vendor/lib64/libnspdiag.so
-vendor/lib64/libnspextensionloader.so
-vendor/lib64/libnspframework.so
-vendor/lib64/libnspframeworkcoreutility.so
-vendor/lib64/libnspgraphing.so
-vendor/lib64/libnspipc.so
-vendor/lib64/libnsposal.so
-vendor/lib64/libnspresource.so
-vendor/lib64/libnspscheduler.so
-vendor/lib64/libnspsession.so
-vendor/lib64/libnsptransaction.so
 
 # Diag
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
-vendor/etc/init/vendor.qti.diag_userdebug.rc
+vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/libdiag.so
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=-vendor
 
 # Display Config
-vendor/etc/displayconfig/display_id_4630946416293825923.xml
-vendor/etc/displayconfig/display_id_4630946545580055171.xml
 vendor/etc/displayconfig/display_id_4630947039571902850.xml
 vendor/etc/displayconfig/display_id_4630947039571902851.xml
-vendor/etc/displayconfig/display_id_4630947082089526659.xml
-vendor/etc/displayconfig/display_id_4630947256895775107.xml
 
 # Displayfeature (configs)
 odm/etc/df_default.xml
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/mi_gc_3.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_0.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_10.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_11.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_12.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_13.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_14.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_15.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_16.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_17.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_18.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_19.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_1.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_20.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_2.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_3.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_4.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_5.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_6.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_7.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_8.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLut_9.txt
-odm/etc/disp0/mdss_dsi_n3_42_0d_0a_dsc_cmd/miLutInfo.txt
-odm/etc/display/qdcm_calib_data_xiaomi_n3_42_0d_0a_cmd_mode_dsc_dsi_panel.json
-odm/etc/mdss_dsi_n3_42_0d_0a_dsc_cmd_mi.xml
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/PicHDRLchIn.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/clstc_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/clstc_igc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/cct_pcc.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_10.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_11.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_12.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_13.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_14.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_15.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_16.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_17.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_18.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_19.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_20.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_8.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_9.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/PicHDRLchIn.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/clstc_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/clstc_igc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/cct_pcc.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_10.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_11.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_12.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_13.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_14.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_15.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_16.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_17.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_18.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_19.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_20.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_8.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_9.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/PicHDRLchIn.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/clstc_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/clstc_igc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/cct_pcc.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_10.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_11.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_12.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_13.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_14.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_15.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_16.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_17.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_18.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_19.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_20.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_8.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_9.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/PicHDRLchIn.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/clstc_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/clstc_igc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/cct_pcc.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLutInfo.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_10.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_11.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_12.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_13.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_14.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_15.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_16.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_17.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_18.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_19.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_20.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_3.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_4.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_5.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_6.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_7.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_8.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_9.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_0.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_1.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_2.txt
+odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_3.txt
+odm/etc/display/qdcm_calib_data_c3f2_35_02_0d_video_mode_hd_dsi_panel.json
+odm/etc/display/qdcm_calib_data_c3f2_37_02_0b_video_mode_hd_dsi_panel.json
+odm/etc/display/qdcm_calib_data_c3f2_43_02_0a_video_mode_hd_dsi_panel.json
+odm/etc/display/qdcm_calib_data_c3f2_46_03_0c_video_mode_hd_dsi_panel.json
+odm/etc/mdss_dsi_panel_c3f2_35_02_0d_hd_video_mi.xml
+odm/etc/mdss_dsi_panel_c3f2_37_02_0b_hd_video_mi.xml
+odm/etc/mdss_dsi_panel_c3f2_43_02_0a_hd_video_mi.xml
+odm/etc/mdss_dsi_panel_c3f2_46_03_0c_hd_video_mi.xml
+vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
 
 # Displayfeature (libs)
 odm/lib64/hw/displayfeature.default.so
@@ -964,7 +1056,7 @@ vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
+system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
 
 # Display postprocessing
 vendor/bin/hw/vendor.qti.hardware.display.color-service
@@ -1039,12 +1131,6 @@ vendor/etc/init/dumpstate-xiaomi.rc
 vendor/etc/vintf/manifest/dumpstate-xiaomi.xml
 vendor/lib64/vendor.xiaomi.hardware.blackbox-V1-ndk.so
 
-# EID
-vendor/bin/hw/vendor.rongcard.eid@1.0-service
-vendor/etc/init/vendor.rongcard.eid@1.0-service.rc
-vendor/etc/vintf/manifest/eid-default.xml
-vendor/lib64/vendor.rongcard.eid-V1-ndk_platform.so
-
 # EMBMS
 vendor/bin/embmsslServer
 vendor/etc/init/init.embmssl_server.rc
@@ -1057,15 +1143,9 @@ vendor/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
 # ESE powermanager
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
-# Euicc - from shiba-user-15-BP1A.250405.005.B1-13151136-release-keys
-product/priv-app/EuiccGoogle/EuiccGoogle.apk|c792c42ba4cd171752d7ce5516a56ecb9858dc69
-
 # Fingerprint
-odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
-odm/lib64/libgf_hal.so
-vendor/etc/permissions/qti_fingerprint_interface.xml
+vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
-odm/etc/vintf/manifest/fod-aidl.xml
 
 # FM
 vendor/etc/init.qti.fm.sh
@@ -1079,13 +1159,12 @@ vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
 vendor/lib64/hw/libqtigatekeeper.so
 
 # GNSS
-odm/bin/hw/android.hardware.gnss-aidl-service-qti
-odm/etc/init/android.hardware.gnss-aidl-service-qti.rc
-odm/etc/izat_device.conf
-odm/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
-odm/etc/vintf/manifest/vendor.qti.gnss-service.xml
-odm/lib64/android.hardware.gnss-aidl-impl-qti.so
-odm/lib64/vendor.qti.gnss-service.so
+vendor/bin/hw/android.hardware.gnss-aidl-service-qti
+vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
+vendor/etc/izat.conf
+vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
+vendor/lib64/vendor.qti.gnss-service.so
 vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
@@ -1106,7 +1185,6 @@ vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/xtwifi.conf
-vendor/lib64/libMiVDR.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcdfw.so
@@ -1131,13 +1209,12 @@ vendor/lib64/libloc_mq_client.so
 vendor/lib64/libloc_qwes_iface.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/libloc_util.so
-vendor/lib64/liblocation_api_msg.so
 vendor/lib64/liblocation_api.so
+vendor/lib64/liblocation_api_msg.so
 vendor/lib64/liblocation_client_api.so
 vendor/lib64/liblocation_integration_api.so
-vendor/lib64/liblocation_qesdk.so
-vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocationservice.so
+vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_common.so
@@ -1150,10 +1227,6 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss-V6-ndk.so
 
 # HDCP
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
