@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2009 The Android Open Source Project
  *
@@ -1267,6 +1266,7 @@ Value* EnableRebootFn(const char* name, State* state, const std::vector<std::uni
 }
 
 Value* Tune2FsFn(const char* name, State* state, const std::vector<std::unique_ptr<Expr>>& argv) {
+#ifdef HAVE_LIBTUNE2FS
   if (argv.empty()) {
     return ErrorAbort(state, kArgsParsingFailure, "%s() expects args, got %zu", name, argv.size());
   }
@@ -1283,6 +1283,9 @@ Value* Tune2FsFn(const char* name, State* state, const std::vector<std::unique_p
     return ErrorAbort(state, kTune2FsFailure, "%s() returned error code %d", name, result);
   }
   return StringValue("t");
+#else
+  return ErrorAbort(state, kTune2FsFailure, "%s() support not present, no libtune2fs", name);
+#endif // HAVE_LIBTUNE2FS
 }
 
 Value* AddSlotSuffixFn(const char* name, State* state,
