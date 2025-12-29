@@ -163,7 +163,6 @@ static void get_panel_info(void)
 		return;
 
 	of_property_read_u32(panel_node, "get_panel_info", &panel_info);
-}
 static void msm_hsphy_modeled_domain_detach(struct msm_hsphy *hsphy)
 {
 	int i;
@@ -1186,7 +1185,6 @@ static int msm_hsphy_probe(struct platform_device *pdev)
 	phy->phy_reset = devm_reset_control_get(dev, "phy_reset");
 	if (IS_ERR(phy->phy_reset))
 		return PTR_ERR(phy->phy_reset);
-	}
 	
 	if (panel_info == 1)
 		phy->param_override_seq_cnt = of_property_count_elems_of_size(
