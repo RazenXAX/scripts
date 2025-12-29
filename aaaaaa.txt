@@ -34,20 +34,6 @@ struct poweroff_reason {
 };
 
 static struct poweroff_reason reasons[] = {
-	{ "recovery",			0x01 },
-	{ "bootloader",			0x02 },
-	{ "rtc",			0x03 },
-	{ "dm-verity device corrupted",	0x04 },
-	{ "dm-verity enforcing",	0x05 },
-	{ "keys clear",			0x06 },
-	{ "panic",			0x21 },
-	{ NULL,				0x20 },
-	{}
-};
-
-#define RESTART_REASON_PANIC  6
-#define RESTART_REASON_NORMAL 7
-static struct poweroff_reason pon_reasons[] = {
 	{ "recovery",			0x01, 0x1 },
 	{ "bootloader",			0x02, 0x1 },
 	{ "rtc",			0x03, 0x1 },
@@ -55,9 +41,13 @@ static struct poweroff_reason pon_reasons[] = {
 	{ "dm-verity enforcing",	0x05, 0x1 },
 	{ "keys clear",			0x06, 0x1 },
 	{ "shipmode",			0x20, 0x2 },
+	{ "panic",			0x21 },
+	{ NULL,				0x20 },
 	{}
 };
 
+#define RESTART_REASON_PANIC  6
+#define RESTART_REASON_NORMAL 7
 static  struct poweroff_reason imem_pon_reasons[] = {
 	{ "recovery",                   0x77665502, 0x4 },
 	{ "bootloader",                 0x77665500, 0x4 },
@@ -89,20 +79,14 @@ static int qcom_reboot_reason_reboot(struct notifier_block *this,
 				 &reasons[RESTART_REASON_NORMAL].pon_reason,
 				 sizeof(reasons[RESTART_REASON_NORMAL].pon_reason));
 		return NOTIFY_OK;
-
-	if (of_device_is_compatible(reboot->dev->of_node, "qcom,imem-reboot-reason"))
-		reboot_mode = REBOOT_WARM;
+	}
 
 	for (reason = reboot->reasons; reason->cmd; reason++) {
 		if (!strcmp(cmd, reason->cmd)) {
 			rc = nvmem_cell_write(reboot->nvmem_cell,
 					 &reason->pon_reason,
-					 sizeof(reason->pon_reason));
-			return NOTIFY_OK;
 					 reason->size);
-			if (rc < 0)
-				pr_err("PON reason store failed, rc=%d\n", rc);
-			break;
+			return NOTIFY_OK;
 		}
 
 	}
