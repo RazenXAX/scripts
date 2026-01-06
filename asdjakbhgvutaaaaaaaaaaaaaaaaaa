@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Vendor
-$(call inherit-product, vendor/xiaomi/warm/warm-vendor.mk)
-
 # Generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
@@ -23,6 +20,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
 # Qualcomm
+$(call soong_config_set,rfs,mpss_firmware_symlink_target)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # A/B
@@ -120,6 +118,36 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
+# Display
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.composer3-V1-ndk.vendor \
+    vendor.qti.hardware.display.config-V11-ndk.vendor
+
+PRODUCT_PACKAGES += \
+    init.qti.display_boot.rc \
+    init.qti.display_boot.sh
+
+$(foreach display_id, 4630946383195604353 4630946949772992129 4630947205983955585 4630947217459655297, \
+    $(eval PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_$(display_id).xml \
+    ))
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
+# Fingerprint
+$(call soong_config_set,XIAOMI_BIOMETRICS_FINGERPRINT,USE_NEW_IMPL,true)
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.xiaomi \
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer3-V2-ndk.vendor
@@ -134,32 +162,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2023-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml
-
-# Display
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.composer3-V1-ndk.vendor \
-    vendor.qti.hardware.display.config-V11-ndk.vendor
-
-PRODUCT_PACKAGES += \
-    init.qti.display_boot.rc \
-    init.qti.display_boot.sh
-
-$(foreach display_id, 4630947217459655297 4630947205983955585 4630946949772992129 4630946383195604353, \
-    $(eval PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_$(display_id).xml \
-    ))
-
-# DRM
-PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey
-
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
-# Fingerprint
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # GNSS
 PRODUCT_COPY_FILES += \
@@ -179,8 +181,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
-    fstab.default \
-    fstab.emmc
+    fstab.default
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -189,7 +190,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-pitti_4_0.sh \
     init.kernel.post_boot-pitti_4_1.sh \
     init.kernel.post_boot-pitti_default_6_2.sh \
-    init.kernel.post_boot.sh \
+    init.kernel.post_boot.sh
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh
@@ -205,16 +206,12 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default \
-    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.emmc
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
 # Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml
-
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
-    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -246,28 +243,25 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureOverlayWarm \
-    CarrierConfigOverlayWarm \
-    FrameworkOverlayWarm \
-    LineageDialerOverlayWarm \
-    LineageSDKOverlayWarm \
-    LineageSettingsOverlayWarm \
-    SecureElementOverlayWarm \
-    SettingsOverlayWarm \
-    SettingsProviderOverlayWarmPOCO \
-    SettingsProviderOverlayWarmRedmi \
-    SystemUIOverlayWarm \
-    TelephonyOverlayWarm \
-    WifiOverlayWarm \
-    WifiOverlayWarmPOCO \
-    WifiOverlayWarmRedmi
+    ApertureOverlayPeridot \
+    CarrierConfigOverlayPeridot \
+    FrameworkOverlayPeridot \
+    LineageDialerOverlayPeridot \
+    LineageSDKOverlayPeridot \
+    LineageSettingsOverlayPeridot \
+    NfcOverlayPeridot \
+    SecureElementOverlayPeridot \
+    SettingsOverlayPeridot \
+    SettingsProviderOverlayPeridotPOCO \
+    SettingsProviderOverlayPeridotRedmi \
+    SystemUIOverlayPeridot \
+    TelephonyOverlayPeridot \
+    WifiOverlayPeridot \
+    WifiOverlayPeridotPOCO \
+    WifiOverlayPeridotRedmi
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
-
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Parts
 PRODUCT_PACKAGES += \
@@ -339,6 +333,9 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qti_telephony_utils_prd.xml \
     telephony-ext
+
+PRODUCT_PACKAGES += \
+    qcrilNrDb_vendor
 
 PRODUCT_PACKAGES += \
     xiaomi-telephony-stub
@@ -426,8 +423,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
-    frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
+    frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+    frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libwfdaac_vendor
+# Vendor
+$(call inherit-product, vendor/xiaomi/warm/warm-vendor.mk)
