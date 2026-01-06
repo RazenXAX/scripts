@@ -204,7 +204,10 @@ ro.vendor.radio.build_region=global
 # Sensors
 ro.vendor.sensors.xiaomi.double_tap=true
 ro.vendor.sensors.xiaomi.single_tap=true
-ro.vendor.sensors.xiaomi.udfps=false
+ro.vendor.sensors.xiaomi.dfps=true
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # SKU
 ro.boot.product.vendor.sku=pitti
