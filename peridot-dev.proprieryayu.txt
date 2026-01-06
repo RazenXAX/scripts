@@ -116,6 +116,7 @@ vendor/lib64/libmcs.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
+vendor/lib64/libvui_intf.so
 vendor/lib64/libtensorflowlite_c.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
@@ -879,7 +880,7 @@ vendor/etc/init/vendor.qti.hardware.display.demura-service.rc
 vendor/etc/snapdragon_color_libs_config.xml
 vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml:vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service_peridot.xml
+vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml:vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service_warm.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.display.demura-service.xml
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/libbacklight-calib.so
@@ -1175,6 +1176,7 @@ vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
 vendor/etc/izat.conf
 vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib64/vendor.qti.gnss-service.so
 vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
@@ -1296,7 +1298,6 @@ vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
 vendor/lib64/libqtikeymint.so
-
 # Listen
 vendor/lib64/hw/sound_trigger.primary.pineapple.so
 vendor/lib64/libeai_fixed.so
