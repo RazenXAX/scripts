@@ -613,6 +613,8 @@ vendor/lib64/camera/com.qti.tuned.c3f2_shine_imx852_main_ii.bin
 vendor/lib64/camera/com.qti.tuned.c3f2_truly_s5kjns_main_i.bin
 vendor/lib64/camera/com.qti.tuned.c3f2_truly_sc520cs_front_i.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/libseclog.so
+vendor/lib64/libtflite_fd.so
 vendor/lib64/camx.device-impl.so
 vendor/lib64/camx.provider-impl.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -700,6 +702,8 @@ vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
+vendor/lib64/libipebpsstriping.so
+vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmfec.so
@@ -1168,6 +1172,7 @@ odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_3.txt
 
 # Fingerprint
 vendor/lib64/libgf_hal.so
+vendor/lib64/libgf_ca.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
 
 # GNSS
@@ -1393,6 +1398,8 @@ vendor/lib64/libqti-utils.so
 vendor/lib64/libskewknob.so
 vendor/lib64/libspl.so
 vendor/lib64/vendor.qti.hardware.perf2-V1-ndk.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so
 
 # Peripheral manager
