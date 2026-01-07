@@ -2,7 +2,7 @@
 
 # Repo Init
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.0 --git-lfs
-/opt/crave/resync.sh
+repo sync
 
 # Removing used directories
 rm -rf device/xiaomi/warm
@@ -19,7 +19,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.0 h
 
 # Building
 source build/envsetup.sh
-lunch lineage_warm-bp2a-eng
+lunch lineage_warm-bp2a-userdebug
 mka bacon
 
 # Upload to GAYFILE lol
