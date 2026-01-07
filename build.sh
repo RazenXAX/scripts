@@ -25,3 +25,4 @@ mka bacon
 # Upload to GAYFILE lol
 curl -F "file=@out/target/product/warm/lineage-23.0*UNOFFICIAL*.zip" https://store2.gofile.io/uploadFile
 echo "DONE UPLOADING TO GOFILE"
+echo "JOGINDAR BHAI GOFILE LINK DEDOM, ya fir BOT se post CAPY PASTE krdo DM me🥀🥀🥀🥀🥀🥀🥀"
