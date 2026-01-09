@@ -11,10 +11,10 @@ rm -rf vendor/xiaomi/warm
 rm -rf hardware/qcom-caf/common
 rm -rf hardware/xiaomi
 
-git clone https://github.com/zaraknyu/android_device_xiaomi_warm -b lineage-23.1 device/xiaomi/warm
-git clone https://github.com/zaraknyu/android_vendor_xiaomi_warm -b lineage-23.1 vendor/xiaomi/warm
-git clone https://github.com/zaraknyu/android_device_xiaomi_warm-kernel -b lineage-23.1 device/xiaomi/warm-kernel
-git clone https://github.com/zaraknyu/android_hardware_qcom-caf_common -b lineage-23.1 hardware/qcom-caf/common
+git clone https://github.com/ZaraKnYu/android_device_xiaomi_warm -b lineage-23.1 device/xiaomi/warm
+git clone https://github.com/ZaraKnYu/android_vendor_xiaomi_warm -b lineage-23.1 vendor/xiaomi/warm
+git clone https://github.com/ZaraKnYu/android_device_xiaomi_warm-kernel -b lineage-23.1 device/xiaomi/warm-kernel
+git clone https://github.com/ZaraKnYu/android_hardware_qcom-caf_common -b lineage-23.1 hardware/qcom-caf/common
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.1 hardware/xiaomi
 
 # Building
