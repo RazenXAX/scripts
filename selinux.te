@@ -1,0 +1,7 @@
+avc: denied { read write } for pid=29059 comm="i.tetherservice" name="ipa" dev="tmpfs" ino=11991 scontext=u:r:system_app:s0 tcontext=u:object_r:ipa_dev:s0 tclass=chr_file permissive=0
+
+allow system_app ipa_dev:chr_file {read write};
+
+denied  { add } for pid=1417 uid=1000 name=display.mistcservice scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_android_vndservice:s0 tclass=service_manager permissive=0
+
+allow hal_graphics_composer_default default_android_vndservice:service_manager add;
