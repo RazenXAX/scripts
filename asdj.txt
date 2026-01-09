@@ -1,28 +1,35 @@
 C:\Users\delac>adb -P 5058 logcat -d all | findstr /i avc
 04-07 12:01:12.695  1523  1523 I msm_vidc: err : e9814fc0:  avcE_0: msm_vidc_query_ctrl: get_ctrl failed for id 10029696
-04-07 12:01:14.759  1498  1498 W binder:1498_2: type=1400 audit(0.0:30): avc:  denied  { write } for  name="rear_qvga" dev="sysfs" ino=97104 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
-04-07 12:01:15.047  2379  2379 W mkdir   : type=1400 audit(0.0:31): avc:  denied  { write } for  name="stp-policy" dev="configfs" ino=22435 scontext=u:r:vendor_qti_init_shell:s0 tcontext=u:object_r:configfs:s0 tclass=dir permissive=0
-04-07 12:01:15.123  1905  1905 W init.qcom.sh: type=1400 audit(0.0:32): avc:  denied  { write } for  name="traceid" dev="sysfs" ino=87265 scontext=u:r:vendor_qti_init_shell:s0 tcontext=u:object_r:vendor_sysfs_qdss_dev:s0 tclass=file permissive=0
-04-07 12:01:15.931     1     1 W /system/bin/init: type=1107 audit(0.0:33): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.vendor.oem.wifimac pid=1798 uid=1001 gid=1001 scontext=u:r:rild:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0'
-04-07 12:01:16.275     1     1 W /system/bin/init: type=1107 audit(0.0:34): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.vendor.oem.btmac pid=1798 uid=1001 gid=1001 scontext=u:r:rild:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0'
-04-07 12:01:16.275  1798  1798 W DispatcherModul: type=1400 audit(0.0:35): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.275  1798  1798 W DispatcherModul: type=1400 audit(0.0:36): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.275  1798  1798 W DispatcherModul: type=1400 audit(0.0:37): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.275  1798  1798 W DispatcherModul: type=1400 audit(0.0:38): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.279  1792  1792 W DispatcherModul: type=1400 audit(0.0:39): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.279  1792  1792 W DispatcherModul: type=1400 audit(0.0:40): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.279  1792  1792 W DispatcherModul: type=1400 audit(0.0:41): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.283  1792  1792 W DispatcherModul: type=1400 audit(0.0:42): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.767  1792  1792 W main    : type=1400 audit(0.0:43): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:16.767  1792  1792 W main    : type=1400 audit(0.0:44): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:18.579  1792  1792 W UimModule-Loope: type=1400 audit(0.0:45): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:18.579  1792  1792 W UimModule-Loope: type=1400 audit(0.0:46): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:18.579  1792  1792 W UimModule-Loope: type=1400 audit(0.0:47): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:20.071  1792  1792 W DispatcherModul: type=1400 audit(0.0:48): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:20.071  1792  1792 W DispatcherModul: type=1400 audit(0.0:49): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:20.071  1792  1792 W DispatcherModul: type=1400 audit(0.0:50): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:21.235  1792  1792 W DispatcherModul: type=1400 audit(0.0:51): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:21.235  1792  1792 W DispatcherModul: type=1400 audit(0.0:52): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-04-07 12:01:21.235  1792  1792 W DispatcherModul: type=1400 audit(0.0:53): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-07 12:01:25.639  1526  1526 W vendor.qti.medi: type=1400 audit(0.0:54): avc:  denied  { read } for  name="u:object_r:custom_version_prop:s0" dev="tmpfs" ino=199 scontext=u:r:mediacodec:s0 tcontext=u:object_r:custom_version_prop:s0 tclass=file permissive=0
+04-07 12:01:26.037  1523  1523 I QC2CompStore: Created interface(c2.qti.avc.decoder) id(0)
+04-07 12:01:26.037  1808  2186 I Codec2InfoBuilder: adding type 'video/avc'
+04-07 12:01:26.042  1523  1731 I QC2CompStore: Created interface(c2.qti.avc.decoder.low_latency) id(1)
+04-07 12:01:26.042  1808  2186 I Codec2InfoBuilder: adding type 'video/avc'
+04-07 12:01:26.045  1523  1730 I QC2CompStore: Created interface(c2.qti.avc.decoder.secure) id(2)
+04-07 12:01:26.046  1808  2186 I Codec2InfoBuilder: adding type 'video/avc'
+04-07 12:01:26.063  1523  1731 I QC2CompStore: Created interface(c2.qti.avc.encoder) id(9)
+04-07 12:01:26.063  1808  2186 I Codec2InfoBuilder: adding type 'video/avc'
+04-07 12:01:26.136  1523  1523 E QC2CompStore: Failed to locate interface with name c2.android.avc.decoder
+04-07 12:01:26.136  2862  2870 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.decoder
+04-07 12:01:26.139  1808  2186 I Codec2InfoBuilder: adding type 'video/avc'
+04-07 12:01:26.142  1523  1523 E QC2CompStore: Failed to locate interface with name c2.android.avc.encoder
+04-07 12:01:26.142  2862  2870 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.encoder
+04-07 12:01:26.146  1808  2186 I Codec2InfoBuilder: adding type 'video/avc'
+04-07 12:01:26.146  1882  2138 D C2SoftAvcEnc: Given level 0 does not cover current configuration: adjusting to 5000
+01-09 20:53:48.246  1523  1523 I QC2CompStore: Created interface(c2.qti.avc.decoder) id(13)
+01-09 20:53:48.247  3197  3223 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:53:48.253  1523  1730 I QC2CompStore: Created interface(c2.qti.avc.decoder.low_latency) id(14)
+01-09 20:53:48.253  3197  3223 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:53:48.256  1523  1731 I QC2CompStore: Created interface(c2.qti.avc.decoder.secure) id(15)
+01-09 20:53:48.256  3197  3223 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:53:48.275  1523  2880 I QC2CompStore: Created interface(c2.qti.avc.encoder) id(22)
+01-09 20:53:48.275  3197  3223 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:53:48.351  1523  1730 E QC2CompStore: Failed to locate interface with name c2.android.avc.decoder
+01-09 20:53:48.351  2862  2870 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.decoder
+01-09 20:53:48.354  3197  3223 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:53:48.356  1523  1730 E QC2CompStore: Failed to locate interface with name c2.android.avc.encoder
+01-09 20:53:48.356  2862  2870 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.encoder
+01-09 20:53:48.360  3197  3223 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:53:48.360  1882  2137 D C2SoftAvcEnc: Given level 0 does not cover current configuration: adjusting to 5000
 
 C:\Users\delac>
