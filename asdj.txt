@@ -54,22 +54,23 @@ C:\Users\delac>adb -P 5058 logcat -d -b all | findstr /i avc
 04-07 10:57:43.068  1786  1786 I auditd  : type=1400 audit(0.0:55): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
 04-07 10:58:01.420  1449  1449 I auditd  : type=1400 audit(0.0:56): avc:  denied  { read write } for  comm="android.hardwar" name="xiaomi-touch" dev="tmpfs" ino=1862 scontext=u:r:hal_power_default:s0 tcontext=u:object_r:touchfeature_device:s0 tclass=chr_file permissive=0
 01-09 20:54:13.503  1449  1449 I auditd  : type=1400 audit(0.0:57): avc:  denied  { read write } for  comm="android.hardwar" name="xiaomi-touch" dev="tmpfs" ino=1862 scontext=u:r:hal_power_default:s0 tcontext=u:object_r:touchfeature_device:s0 tclass=chr_file permissive=0
-01-09 20:54:23.973  1535  1757 I QC2CompStore: Created interface(c2.qti.avc.decoder) id(26)
-01-09 20:54:23.974  3590  3617 I Codec2InfoBuilder: adding type 'video/avc'
-01-09 20:54:23.980  1535  1535 I QC2CompStore: Created interface(c2.qti.avc.decoder.low_latency) id(27)
-01-09 20:54:23.981  3590  3617 I Codec2InfoBuilder: adding type 'video/avc'
-01-09 20:54:23.986  1535  1535 I QC2CompStore: Created interface(c2.qti.avc.decoder.secure) id(28)
-01-09 20:54:23.987  3590  3617 I Codec2InfoBuilder: adding type 'video/avc'
-01-09 20:54:24.023  1535  2872 I QC2CompStore: Created interface(c2.qti.avc.encoder) id(35)
-01-09 20:54:24.024  3590  3617 I Codec2InfoBuilder: adding type 'video/avc'
-01-09 20:54:24.153  1535  1757 E QC2CompStore: Failed to locate interface with name c2.android.avc.decoder
-01-09 20:54:24.153  1536  2873 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.decoder
-01-09 20:54:24.156  3590  3617 I Codec2InfoBuilder: adding type 'video/avc'
-01-09 20:54:24.159  1535  1757 E QC2CompStore: Failed to locate interface with name c2.android.avc.encoder
-01-09 20:54:24.160  1536  2873 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.encoder
-01-09 20:54:24.164  3590  3617 I Codec2InfoBuilder: adding type 'video/avc'
-01-09 20:54:24.165  1910  2876 D C2SoftAvcEnc: Given level 0 does not cover current configuration: adjusting to 5000
 01-09 20:54:48.883  1449  1449 I auditd  : type=1400 audit(0.0:58): avc:  denied  { read write } for  comm="android.hardwar" name="xiaomi-touch" dev="tmpfs" ino=1862 scontext=u:r:hal_power_default:s0 tcontext=u:object_r:touchfeature_device:s0 tclass=chr_file permissive=0
-01-09 20:54:48.883  1449  1449 W android.hardwar: type=1400 audit(0.0:58): avc:  denied  { read write } for  name="xiaomi-touch" dev="tmpfs" ino=1862 scontext=u:r:hal_power_default:s0 tcontext=u:object_r:touchfeature_device:s0 tclass=chr_file permissive=0
+01-09 20:55:24.723  1449  1449 I auditd  : type=1400 audit(0.0:59): avc:  denied  { read write } for  comm="android.hardwar" name="xiaomi-touch" dev="tmpfs" ino=1862 scontext=u:r:hal_power_default:s0 tcontext=u:object_r:touchfeature_device:s0 tclass=chr_file permissive=0
+01-09 20:55:24.723  1449  1449 W android.hardwar: type=1400 audit(0.0:59): avc:  denied  { read write } for  name="xiaomi-touch" dev="tmpfs" ino=1862 scontext=u:r:hal_power_default:s0 tcontext=u:object_r:touchfeature_device:s0 tclass=chr_file permissive=0
+01-09 20:55:35.091  1535  2872 I QC2CompStore: Created interface(c2.qti.avc.decoder) id(52)
+01-09 20:55:35.092  4290  4303 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:55:35.100  1535  2871 I QC2CompStore: Created interface(c2.qti.avc.decoder.low_latency) id(53)
+01-09 20:55:35.101  4290  4303 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:55:35.108  1535  1757 I QC2CompStore: Created interface(c2.qti.avc.decoder.secure) id(54)
+01-09 20:55:35.109  4290  4303 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:55:35.154  1535  2871 I QC2CompStore: Created interface(c2.qti.avc.encoder) id(61)
+01-09 20:55:35.154  4290  4303 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:55:35.292  1535  1757 E QC2CompStore: Failed to locate interface with name c2.android.avc.decoder
+01-09 20:55:35.292  1536  1536 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.decoder
+01-09 20:55:35.295  4290  4303 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:55:35.299  1535  1757 E QC2CompStore: Failed to locate interface with name c2.android.avc.encoder
+01-09 20:55:35.300  1536  1536 E QC2AudioCompStore: Failed to locate interface with name c2.android.avc.encoder
+01-09 20:55:35.303  4290  4303 I Codec2InfoBuilder: adding type 'video/avc'
+01-09 20:55:35.304  1910  2878 D C2SoftAvcEnc: Given level 0 does not cover current configuration: adjusting to 5000
 
 C:\Users\delac>
