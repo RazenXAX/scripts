@@ -782,6 +782,13 @@ vendor/etc/camera/156_ColdWhite.png
 vendor/etc/camera/157_Native.png
 vendor/etc/camera/158_BWClassical.png
 vendor/etc/camera/159_Flowers.png
+vendor/etc/camera/160_Vivid_1.png
+vendor/etc/camera/161_Monsoon.png
+vendor/etc/camera/162_Nature.png
+vendor/etc/camera/163_Relaxation.png
+vendor/etc/camera/164_Kyoto.png
+vendor/etc/camera/165_Oldalley.png
+vendor/etc/camera/166_Reverse.png
 vendor/etc/camera/anc_night_algo_cache
 vendor/etc/camera/anc_night_binary_cache
 vendor/etc/camera/anc_night_model
@@ -1089,6 +1096,7 @@ vendor/etc/permissions/android.software.opengles.deqp.level.xml
 vendor/etc/permissions/android.software.sip.voip.xml
 vendor/etc/permissions/android.software.verified_boot.xml
 vendor/etc/permissions/android.software.vulkan.deqp.level.xml
+vendor/etc/permissions/com.xiaomi.sensor.xml
 vendor/etc/permissions/handheld_core_hardware.xml
 vendor/etc/permissions/privapp-permissions-qti-vendor.xml
 vendor/etc/permissions/vendor.qti.hardware.factory.xml
@@ -1354,7 +1362,6 @@ vendor/etc/fstab.default
 vendor/etc/fstab.emmc
 vendor/etc/ftm_test_config
 vendor/etc/ftm_test_config_pitti-qrd-snd-card
-vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gps.conf
 vendor/etc/gps_diag.cfg
@@ -1673,11 +1680,10 @@ vendor/lib64/android.hardware.audio@7.1.so
 vendor/lib64/android.hardware.authsecret@1.0.so
 vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so
 vendor/lib64/android.hardware.automotive.vehicle@2.0.so
-vendor/lib64/android.hardware.biometrics.common-V2-ndk.so
 vendor/lib64/android.hardware.biometrics.common-V3-ndk.so
 vendor/lib64/android.hardware.biometrics.common.thread.so
 vendor/lib64/android.hardware.biometrics.common.util.so
-vendor/lib64/android.hardware.biometrics.face-V2-ndk.so
+vendor/lib64/android.hardware.biometrics.face-V3-ndk.so
 vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so
 vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so
 vendor/lib64/android.hardware.bluetooth.audio@2.0.so
@@ -2674,6 +2680,9 @@ vendor/lib64/vendor.xiaomi.hardware.misys.common-V2-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay-V1-ndk_platform.so
 vendor/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
+vendor/lib64/vendor.xiaomi.hardware.wifi.hostapd-V1-ndk.so
+vendor/lib64/vendor.xiaomi.hardware.wifi.supplicant-V1-ndk.so
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
 vendor/lib64/xiaomi.system.hypsys.common-V1-ndk.so
 vendor/odm_dlkm/etc/build.prop
 vendor/overlay/FrameworksResTarget_Vendor.apk
