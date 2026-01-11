@@ -1354,6 +1354,7 @@ vendor/etc/fstab.default
 vendor/etc/fstab.emmc
 vendor/etc/ftm_test_config
 vendor/etc/ftm_test_config_pitti-qrd-snd-card
+vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gps.conf
 vendor/etc/gps_diag.cfg
@@ -1672,10 +1673,11 @@ vendor/lib64/android.hardware.audio@7.1.so
 vendor/lib64/android.hardware.authsecret@1.0.so
 vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so
 vendor/lib64/android.hardware.automotive.vehicle@2.0.so
+vendor/lib64/android.hardware.biometrics.common-V2-ndk.so
 vendor/lib64/android.hardware.biometrics.common-V3-ndk.so
 vendor/lib64/android.hardware.biometrics.common.thread.so
 vendor/lib64/android.hardware.biometrics.common.util.so
-vendor/lib64/android.hardware.biometrics.face-V3-ndk.so
+vendor/lib64/android.hardware.biometrics.face-V2-ndk.so
 vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so
 vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so
 vendor/lib64/android.hardware.bluetooth.audio@2.0.so
