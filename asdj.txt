@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2024 The LineageOS Project
 #
@@ -45,7 +46,7 @@ BOARD_SHIPPING_API_LEVEL := 34
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
 # Audio
-$(call soong_config_set_bool, android_hardware_audio, skip_speaker_layout_channel_mask_field, true)
+$(call soong_config_set, android_hardware_audio, skip_speaker_layout_channel_mask_field, true)
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service
@@ -82,8 +83,8 @@ PRODUCT_PACKAGES += \
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_effects.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_policy_configuration.xml
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_effects.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
@@ -118,10 +119,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1640
-TARGET_SCREEN_WIDTH := 720
-
 # Display
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer3-V1-ndk.vendor \
@@ -133,7 +130,7 @@ PRODUCT_PACKAGES += \
 
 $(foreach display_id, 4630946383195604353 4630946949772992129 4630947205983955585 4630947217459655297, \
     $(eval PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_$(display_id).xml \
+        $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_$(display_id).xml \
     ))
 
 # DRM
@@ -145,6 +142,10 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
+$(call soong_config_set,XIAOMI_BIOMETRICS_FINGERPRINT,USE_NEW_IMPL,true)
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.xiaomi
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
@@ -167,21 +168,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
-
-# Hypsys
-PRODUCT_PACKAGES += \
-    xiaomi.system.hypsys.common-service
-
-# Hotword Enrollement
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/hotword/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -191,7 +181,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.default
+    fstab.qcom
 
 PRODUCT_PACKAGES += \
     init.warm.rc \
@@ -200,13 +190,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
-# Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_warm)
-
 # Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -215,7 +199,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 $(call soong_config_set,lineage_health,fast_charge_node,/sys/class/qcom-battery/fastcharge_enable)
 $(call soong_config_set,lineage_health,fast_charge_value_none,0)
 $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,1)
@@ -226,10 +210,10 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/codec2/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs_pitti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_pitti.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_pitti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_pitti.xml \
-    $(LOCAL_PATH)/media/media_profiles_pitti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pitti.xml \
-    $(LOCAL_PATH)/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_pitti/video_system_specs.json \
+    $(LOCAL_PATH)/configs/media/media_codecs_pitti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_pitti.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_performance_pitti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_pitti.xml \
+    $(LOCAL_PATH)/configs/media/media_profiles_pitti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pitti.xml \
+    $(LOCAL_PATH)/configs/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_pitti/video_system_specs.json
 
 # Memtrack
 PRODUCT_PACKAGES += \
@@ -247,6 +231,8 @@ PRODUCT_PACKAGES += \
     LineageDialerOverlayWarm \
     LineageSDKOverlayWarm \
     LineageSettingsOverlayWarm \
+    NfcOverlayWarm \
+    SecureElementOverlayWarm \
     SettingsOverlayWarm \
     SettingsProviderOverlayWarmPOCO \
     SettingsProviderOverlayWarmRedmi \
@@ -263,13 +249,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
-    $(LOCAL_PATH)/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-goodix.idc \
-    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
-
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -284,9 +263,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/pitti/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
-# Power
-$(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-xiaomi)
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -304,15 +280,14 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.xiaomi-multihal \
-    android.frameworks.sensorservice@1.0
+    android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal \
     sensors.xiaomi.v2
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -354,10 +329,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.telephony.mbms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.mbms.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
-
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.qti
 
 # Touchscreen
 PRODUCT_PACKAGES += \
@@ -424,18 +395,14 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/adrastea/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/adrastea/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libwfdaac_vendor
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/warm/warm-vendor.mk)
