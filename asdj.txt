@@ -4,9 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/peridot
+DEVICE_PATH := device/xiaomi/warm
+KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -54,11 +56,11 @@ TARGET_PROVIDES_LIBAGM := true
 TARGET_PROVIDES_LIBAR_PAL := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := peridot
+TARGET_BOOTLOADER_BOARD_NAME := warm
 TARGET_NO_BOOTLOADER := true
 
 # Display
-TARGET_SCREEN_DENSITY := 480
+TARGET_SCREEN_DENSITY := 320
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
@@ -78,89 +80,58 @@ DEVICE_MANIFEST_FILE := \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
-ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_odm.xml
-
-# Kernel
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_NEEDS_DTBOIMAGE := true
-
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_RAMDISK_USE_LZ4 := true
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
-
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_PAGESIZE := 4096
-
+# Boot
 BOARD_BOOT_HEADER_VERSION := 4
-BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+# Dtb/o
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
+
+# Init Boot
 BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
-BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
-
-TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=$(PRODUCT_DEVICE)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8635
-TARGET_KERNEL_CONFIG := \
-    gki_defconfig \
-    vendor/pineapple_GKI.config \
-    vendor/peridot_GKI.config
+# Kernel
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_BASE := 0x00000000
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+PRODUCT_COPY_FILES += \
+	$(KERNEL_PATH)/kernel:kernel
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
-    swinfo.fingerprint=peridot:$(LINEAGE_VERSION) \
-    mtdoops.fingerprint=peridot:$(LINEAGE_VERSION)
+    disable_dma32=on \
+    swinfo.fingerprint=$(LINEAGE_VERSION) \
+    mtdoops.fingerprint=$(LINEAGE_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
-    androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
+    androidboot.hypervisor.protected_vm.supported=0 \
     androidboot.load_modules_parallel=true \
+    androidboot.memcg=1 \
+    androidboot.selinux=permissive \
+    androidboot.usbcontroller=4e00000.dwc3 \
     androidboot.vendor.qspa=true \
-    androidboot.hypervisor.protected_vm.supported=false
+    androidboot.console=0
+
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 # Kernel modules
-BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.system_dlkm))
-SYSTEM_KERNEL_MODULES := $(BOARD_SYSTEM_KERNEL_MODULES_LOAD)
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules/modules.blocklist.vendor_dlkm
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor_dlkm))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules/modules.blocklist.vendor_boot
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor_boot))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.recovery))
-BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_ramdisk/modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_PATH)/vendor_ramdisk/modules.blocklist
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_ramdisk/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dlkm/modules.load))
 
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8635-modules
-TARGET_KERNEL_EXT_MODULES := \
-    qcom/opensource/mmrm-driver \
-    qcom/opensource/mm-drivers/hw_fence \
-    qcom/opensource/mm-drivers/msm_ext_display \
-    qcom/opensource/mm-drivers/sync_fence \
-    qcom/opensource/securemsm-kernel \
-    qcom/opensource/audio-kernel \
-    qcom/opensource/synx-kernel \
-    qcom/opensource/camera-kernel \
-    qcom/opensource/datarmnet-ext/mem \
-    qcom/opensource/dataipa/drivers/platform/msm \
-    qcom/opensource/datarmnet/core \
-    qcom/opensource/datarmnet-ext/aps \
-    qcom/opensource/datarmnet-ext/offload \
-    qcom/opensource/datarmnet-ext/shs \
-    qcom/opensource/datarmnet-ext/perf \
-    qcom/opensource/datarmnet-ext/perf_tether \
-    qcom/opensource/datarmnet-ext/sch \
-    qcom/opensource/datarmnet-ext/wlan \
-    qcom/opensource/display-drivers/msm \
-    qcom/opensource/dsp-kernel \
-    qcom/opensource/eva-kernel \
-    qcom/opensource/video-driver \
-    qcom/opensource/graphics-kernel \
-    qcom/opensource/wlan/platform \
-    qcom/opensource/wlan/qcacld-3.0/.qca6750 \
-    qcom/opensource/bt-kernel \
-    qcom/opensource/spu-kernel \
-    qcom/opensource/mm-sys-kernel/ubwcp \
-    qcom/opensource/touch-drivers \
-    nxp/opensource/driver
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_dlkm/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm_flatten/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/flatten/lib/modules) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.1.118-android14-11-ga3b9c44908dd-ab13320413)
 
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
@@ -197,7 +168,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Platform
-TARGET_BOARD_PLATFORM := pineapple
+TARGET_BOARD_PLATFORM := pitti
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
@@ -208,7 +179,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 # Recovery
 $(call soong_config_set, ufsbsg, ufsframework, bsg)
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -217,11 +188,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Vendor security patch
-VENDOR_SECURITY_PATCH := 2025-08-01
+VENDOR_SECURITY_PATCH := 2025-11-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -267,4 +236,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
-include vendor/xiaomi/peridot/BoardConfigVendor.mk
+include vendor/xiaomi/warm/BoardConfigVendor.mk
