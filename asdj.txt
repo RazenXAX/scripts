@@ -1,65 +1,244 @@
-C:\Users\delac>adb -P 5058 shell dmesg | findstr "avc: denied"
-[    2.040516] audit: type=1107 audit(8341322.843:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.backup.ntpServer pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
-[    2.042348] audit: type=1107 audit(8341322.843:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.product.vendor_dlkm.cert pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
-[    2.042409] audit: type=1107 audit(8341322.843:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.product.vendor_dlkm.marketname pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
-[    2.082627] audit: type=1107 audit(8341322.883:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { read } for property=persist.dbg.keep_debugfs_mounted pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0'
-[    2.962617] audit: type=1400 audit(8341323.763:8): avc:  denied  { net_bind_service } for  pid=455 comm="krfcommd" capability=10  scontext=u:r:kernel:s0 tcontext=u:r:kernel:s0 tclass=capability permissive=0
-[    3.025934] init: Command 'write /dev/blkio/blkio.weight 1000' action=init (/system/etc/init/hw/init.rc:257) took 0ms and failed: Unable to write to file '/dev/blkio/blkio.weight': open() failed: Permission denied
-[    3.026174] init: Command 'write /dev/blkio/background/blkio.weight 200' action=init (/system/etc/init/hw/init.rc:258) took 0ms and failed: Unable to write to file '/dev/blkio/background/blkio.weight': open() failed: Permission denied
-[    3.026649] init: Command 'write /dev/blkio/blkio.group_idle 0' action=init (/system/etc/init/hw/init.rc:260) took 0ms and failed: Unable to write to file '/dev/blkio/blkio.group_idle': open() failed: Permission denied
-[    3.026913] init: Command 'write /dev/blkio/background/blkio.group_idle 0' action=init (/system/etc/init/hw/init.rc:261) took 0ms and failed: Unable to write to file '/dev/blkio/background/blkio.group_idle': open() failed: Permission denied
-[    3.788374] type=1400 audit(8341324.587:9): avc:  denied  { search } for  comm="modprobe" name="block" dev="tmpfs" ino=11 scontext=u:r:vendor_modprobe:s0 tcontext=u:object_r:block_device:s0 tclass=dir permissive=0
-[    4.225296] init: Command 'mount vfat /dev/block/bootdevice/by-name/logfs /dev/logfs noatime umask=006,uid=1000,gid=1000' action=fs (/vendor/etc/init/init.warm.rc:129) took 0ms and failed: mount() failed: Permission denied
-[    4.225582] type=1400 audit(8341325.027:10): avc:  denied  { mounton } for  comm="init" path="/dev/logfs" dev="sde54" ino=1 scontext=u:r:init:s0 tcontext=u:object_r:vfat:s0 tclass=dir permissive=0
-[    4.540050] init: Command 'write /dev/cpuctl/foreground/cpu.uclamp.sched_boost_no_override 1' action=post-fs (/vendor/etc/init/hw/init.qti.kernel.rc:73) took 0ms and failed: Unable to write to file '/dev/cpuctl/foreground/cpu.uclamp.sched_boost_no_override': open() failed: Permission denied
-[    4.540494] init: Command 'write /dev/cpuctl/top-app/cpu.uclamp.sched_boost_no_override 1' action=post-fs (/vendor/etc/init/hw/init.qti.kernel.rc:74) took 0ms and failed: Unable to write to file '/dev/cpuctl/top-app/cpu.uclamp.sched_boost_no_override': open() failed: Permission denied
-[    4.540914] init: Command 'write /dev/cpuctl/background/cpu.uclamp.colocate 0' action=post-fs (/vendor/etc/init/hw/init.qti.kernel.rc:75) took 0ms and failed: Unable to write to file '/dev/cpuctl/background/cpu.uclamp.colocate': open() failed: Permission denied
-[    4.541310] init: Command 'write /dev/cpuctl/foreground/cpu.uclamp.colocate 0' action=post-fs (/vendor/etc/init/hw/init.qti.kernel.rc:76) took 0ms and failed: Unable to write to file '/dev/cpuctl/foreground/cpu.uclamp.colocate': open() failed: Permission denied
-[    4.541742] init: Command 'write /dev/cpuctl/top-app/cpu.uclamp.colocate 1' action=post-fs (/vendor/etc/init/hw/init.qti.kernel.rc:77) took 0ms and failed: Unable to write to file '/dev/cpuctl/top-app/cpu.uclamp.colocate': open() failed: Permission denied
-[    4.641892] type=1400 audit(8341325.443:11): avc:  denied  { read write } for  comm="qseecomd" name="0:0:0:0" dev="tmpfs" ino=1610 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[    4.642008] type=1400 audit(8341325.443:12): avc:  denied  { read } for  comm="qseecomd" name="sda" dev="tmpfs" ino=1573 scontext=u:r:tee:s0 tcontext=u:object_r:vendor_gpt_block_device:s0 tclass=blk_file permissive=0
-[    4.642088] type=1400 audit(8341325.443:13): avc:  denied  { read write } for  comm="qseecomd" name="0:0:0:2" dev="tmpfs" ino=1564 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[    4.642162] type=1400 audit(8341325.443:14): avc:  denied  { read } for  comm="qseecomd" name="sdc" dev="tmpfs" ino=1540 scontext=u:r:tee:s0 tcontext=u:object_r:vendor_xbl_block_device:s0 tclass=blk_file permissive=0
-[    4.644525] type=1400 audit(8341325.447:15): avc:  denied  { read write } for  comm="qseecomd" name="0:0:0:1" dev="tmpfs" ino=1200 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[    4.644683] type=1400 audit(8341325.447:16): avc:  denied  { read } for  comm="qseecomd" name="sdb" dev="tmpfs" ino=1322 scontext=u:r:tee:s0 tcontext=u:object_r:vendor_xbl_block_device:s0 tclass=blk_file permissive=0
-[    4.644805] type=1400 audit(8341325.447:17): avc:  denied  { read write } for  comm="qseecomd" name="0:0:0:3" dev="tmpfs" ino=1205 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[    4.644918] type=1400 audit(8341325.447:18): avc:  denied  { read } for  comm="qseecomd" name="sdd" dev="tmpfs" ino=1291 scontext=u:r:tee:s0 tcontext=u:object_r:vendor_gpt_block_device:s0 tclass=blk_file permissive=0
-[    4.645015] type=1400 audit(8341325.447:19): avc:  denied  { read write } for  comm="qseecomd" name="0:0:0:5" dev="tmpfs" ino=1199 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[    4.645096] type=1400 audit(8341325.447:20): avc:  denied  { read } for  comm="qseecomd" name="sdf" dev="tmpfs" ino=1193 scontext=u:r:tee:s0 tcontext=u:object_r:boot_block_device:s0 tclass=blk_file permissive=0
-[    5.543766] type=1400 audit(8341326.347:21): avc:  denied  { write } for  comm="sh" name="read_ahead_kb" dev="sysfs" ino=62805 scontext=u:r:vendor_qti_init_shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
-[   13.108479] init: Command 'write /dev/sys/block/by-name/rootdisk/queue/discard_max_bytes 134217728' action=boot (/system/etc/init/hw/init.rc:1206) took 0ms and failed: Unable to write to file '/dev/sys/block/by-name/rootdisk/queue/discard_max_bytes': open() failed: Permission denied
-[   13.108707] type=1400 audit(8341332.963:22): avc:  denied  { write } for  comm="init" name="discard_max_bytes" dev="sysfs" ino=57194 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
-[   13.730915] type=1400 audit(8341333.583:23): avc:  denied  { read } for  comm="vendor.qti.hard" name="display" dev="sysfs" ino=45645 scontext=u:r:vendor_hal_perf_default:s0 tcontext=u:object_r:vendor_sys_nonsp_comp:s0 tclass=file permissive=0
-[   13.737848] init: Command 'write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 0' action=boot (/vendor/etc/init/hw/init.qti.kernel.rc:93) took 0ms and failed: Unable to write to file '/sys/devices/platform/soc/4804000.ufshc/clkscale_enable': open() failed: Permission denied
-[   13.785983] type=1400 audit(8341333.639:24): avc:  denied  { read write } for  comm="binder:1544_2" name="disp_feature" dev="tmpfs" ino=1901 scontext=u:r:vendor_hal_displayfeature_xiaomi_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[   13.794293] type=1400 audit(8341333.647:25): avc:  denied  { read } for  comm="vendor.qti.hard" name="gpu" dev="sysfs" ino=45642 scontext=u:r:vendor_hal_perf_default:s0 tcontext=u:object_r:vendor_sys_sp_comp:s0 tclass=file permissive=0
-[   13.836048] type=1400 audit(8341333.691:26): avc:  denied  { read write } for  comm="binder:1544_2" name="disp_feature" dev="tmpfs" ino=1901 scontext=u:r:vendor_hal_displayfeature_xiaomi_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[   13.838024] type=1400 audit(8341333.691:27): avc:  denied  { read } for  comm="binder:1544_2" name="disp_feature" dev="tmpfs" ino=1901 scontext=u:r:vendor_hal_displayfeature_xiaomi_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[   13.841576] type=1400 audit(8341333.695:28): avc:  denied  { read } for  comm="binder:1544_2" name="disp_feature" dev="tmpfs" ino=1901 scontext=u:r:vendor_hal_displayfeature_xiaomi_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=0
-[   13.997360] type=1400 audit(8341333.851:29): avc:  denied  { read } for  comm="vendor.qti.hard" name="u:object_r:system_prop:s0" dev="tmpfs" ino=409 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0
-[   16.482790] type=1400 audit(8341336.335:30): avc:  denied  { write } for  comm="binder:1499_2" name="rear_qvga" dev="sysfs" ino=97741 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
-[   17.157622] type=1400 audit(8341337.011:31): avc:  denied  { write } for  comm="mkdir" name="stp-policy" dev="configfs" ino=23309 scontext=u:r:vendor_qti_init_shell:s0 tcontext=u:object_r:configfs:s0 tclass=dir permissive=0
-[   17.256154] type=1400 audit(8341337.111:32): avc:  denied  { write } for  comm="init.qcom.sh" name="traceid" dev="sysfs" ino=90034 scontext=u:r:vendor_qti_init_shell:s0 tcontext=u:object_r:vendor_sysfs_qdss_dev:s0 tclass=file permissive=0
-[   18.551716] type=1107 audit(8341338.407:33): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.vendor.oem.wifimac pid=1769 uid=1001 gid=1001 scontext=u:r:rild:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0'
-[   18.884523] type=1107 audit(8341338.739:34): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.vendor.oem.btmac pid=1769 uid=1001 gid=1001 scontext=u:r:rild:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0'
-[   18.885247] type=1400 audit(8341338.739:35): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   18.885581] type=1400 audit(8341338.739:36): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   18.885766] type=1400 audit(8341338.739:37): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   18.885886] type=1400 audit(8341338.739:38): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   18.890475] type=1400 audit(8341338.743:39): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   18.890699] type=1400 audit(8341338.743:40): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   18.890935] type=1400 audit(8341338.743:41): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   18.891170] type=1400 audit(8341338.743:42): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   19.364286] type=1400 audit(8341339.219:43): avc:  denied  { read } for  comm="main" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   19.365628] type=1400 audit(8341339.219:44): avc:  denied  { read } for  comm="main" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   20.647961] type=1400 audit(8341340.503:45): avc:  denied  { read } for  comm="UimModule-Loope" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   20.648311] type=1400 audit(8341340.503:46): avc:  denied  { read } for  comm="UimModule-Loope" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   20.649027] type=1400 audit(8341340.503:47): avc:  denied  { read } for  comm="UimModule-Loope" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   21.031982] type=1400 audit(8341340.883:48): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   21.032165] type=1400 audit(8341340.883:49): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   21.032282] type=1400 audit(8341340.883:50): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   22.212856] type=1400 audit(8341342.067:51): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   22.213425] type=1400 audit(8341342.067:52): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
-[   22.213548] type=1400 audit(8341342.067:53): avc:  denied  { read } for  comm="DispatcherModul" name="u:object_r:default_prop:s0" dev="tmpfs" ino=209 scontext=u:r:rild:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-C:\Users\delac>
+DEVICE_PATH := device/xiaomi/warm
+KERNEL_PATH := $(DEVICE_PATH)-kernel
+
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    init_boot \
+    odm \
+    product \
+    recovery \
+    system \
+    system_dlkm \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
+
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a-branchprot
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := kryo300
+
+# Audio
+$(call soong_config_set, android_hardware_audio, run_64bit, true)
+
+AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
+AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
+AUDIO_FEATURE_ENABLED_PAL_HIDL := true
+AUDIO_FEATURE_ENABLED_AGM_HIDL := true
+AUDIO_FEATURE_ENABLED_HW_ACCELERATED_EFFECTS := false
+AUDIO_FEATURE_ENABLED_DLKM := true
+AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
+AUDIO_FEATURE_ENABLED_KEEP_ALIVE := true
+AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
+AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
+BOARD_SUPPORTS_SOUND_TRIGGER := true
+TARGET_USES_QCOM_MM_AUDIO := true
+TARGET_PROVIDES_AUDIO_HAL := true
+TARGET_PROVIDES_LIBAGM := true
+TARGET_PROVIDES_LIBAR_PAL := true
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := warm
+TARGET_NO_BOOTLOADER := true
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
+# Display
+TARGET_SCREEN_DENSITY := 320
+
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
+# Hardware
+BOARD_USES_QCOM_HARDWARE := true
+
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/hidl/compatibility_matrix.device.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/hidl/framework_manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/hidl/manifest_vendor.xml \
+    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
+    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
+
+# Boot
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+# Dtb/o
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
+
+# Init Boot
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+
+# Init
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_warm
+
+# Kernel
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_BASE := 0x00000000
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+PRODUCT_COPY_FILES += \
+	$(KERNEL_PATH)/kernel:kernel
+
+BOARD_KERNEL_CMDLINE := \
+    video=vfb:640x400,bpp=32,memsize=3072000 \
+    disable_dma32=on \
+    swinfo.fingerprint=$(LINEAGE_VERSION) \
+    mtdoops.fingerprint=$(LINEAGE_VERSION)
+
+BOARD_BOOTCONFIG := \
+    androidboot.hardware=qcom \
+    androidboot.hypervisor.protected_vm.supported=0 \
+    androidboot.load_modules_parallel=true \
+    androidboot.memcg=1 \
+    androidboot.selinux=permissive \
+    androidboot.usbcontroller=4e00000.dwc3 \
+    androidboot.vendor.qspa=true \
+    androidboot.console=0
+
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+
+# Kernel modules
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_ramdisk/modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_PATH)/vendor_ramdisk/modules.blocklist
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_ramdisk/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dlkm/modules.load))
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_dlkm/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm_flatten/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/flatten/lib/modules) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347)
+
+# Partitions
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
+BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
+BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 8388608
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
+BOARD_SUPER_PARTITION_SIZE := 9126805504
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
+
+BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+
+BOARD_USES_METADATA_PARTITION := true
+
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_dlkm system_ext vendor vendor_dlkm
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # (BOARD_SUPER_PARTITION_SIZE - 4 MiB)
+BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
+
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
+
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM := system
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
+# Platform
+TARGET_BOARD_PLATFORM := pitti
+
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+
+# Recovery
+$(call soong_config_set, ufsbsg, ufsframework, bsg)
+BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_USERIMAGES_USE_F2FS := true
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
+# Sepolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
+# Vendor security patch
+VENDOR_SECURITY_PATCH := 2025-07-01
+
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+BOARD_AVB_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+
+BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_BOOT_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
+
+BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
+
+BOARD_AVB_VBMETA_SYSTEM := system system_dlkm system_ext product
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
+
+BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_SYSTEM_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+
+# WiFi
+BOARD_WLAN_DEVICE := qcwcn
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+# (1 STA + 1 AP) or (1 STA + 1 of (P2P or NAN)) or (2 AP) or (2 STA)
+WIFI_HAL_INTERFACE_COMBINATIONS := {{{STA}, 1}, {{AP}, 1}}, {{{STA}, 1}, {{P2P, NAN}, 1}}, {{{AP}, 2}}, {{{STA}, 2}}
+WIFI_DRIVER_DEFAULT := qca_cld3
+WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
+WIFI_DRIVER_STATE_OFF := "OFF"
+WIFI_DRIVER_STATE_ON := "ON"
+WIFI_FEATURE_HOSTAPD_11AX := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+# Vendor
+include vendor/xiaomi/warm/BoardConfigVendor.mk
