@@ -36,6 +36,8 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'sqlite3',
+        'libqshcamera',
     ): lib_fixup_odm_suffix,
     (
         'vendor.qti.diaghal@1.0',
@@ -53,17 +55,9 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml': blob_fixup()
         .regex_replace(r'(?s)^.*?(?=<manifest)', ''),
-    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libbinder_shim.so')
-        .add_needed('libinput_shim.so')
-        .remove_needed('android.hidl.base@1.0.so'),
     (
         'vendor/lib64/hw/camera.qcom.so',
         'vendor/lib64/hw/com.qti.chi.override.so',
-        'vendor/lib64/libcamxfdengine.so',
-        'vendor/lib64/libcamxexternalformatutils.so',
     ): blob_fixup()
         .add_needed('libprocessgroup_shim.so')
         .replace_needed(
@@ -112,12 +106,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libbinder_shim.so')
         .add_needed('libhidlbase_shim.so'),
-    'vendor/etc/ueventd.rc': blob_fixup()
-        .add_line_if_missing(
-        '\n# Battery\n'
-        '/sys/class/qcom-battery     input_suspend            0660    system  system\n'
-        '/sys/class/qcom-battery     fastcharge_enable        0660    system  system'
-    ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
