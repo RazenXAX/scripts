@@ -6,8 +6,17 @@ aaudio.mmap_policy=2
 audio.deep_buffer.media=true
 audio.offload.video=true
 debug.c2.use_dmabufheaps=1
+persist.vendor.audio.auto.scenario=true
+persist.vendor.audio.induce_crash=false
+persist.vendor.audio.misound.disable=true
+persist.vendor.audio.misoundasc=true
 ro.audio.flinger_standbytime_ms=2000
-ro.audio.monitorRotation=false
+ro.audio.monitorRotation=true
+ro.audio.spatializer_enabled=true
+ro.vendor.audio.btsamplerate.adaptive=true
+ro.vendor.audio.dualadc.support=true
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.support.sound.id=true
 vendor.audio.adm.buffering.ms=2
 vendor.audio.compress_capture.aac.cut_off_freq=-1
 vendor.audio.compress_capture.aac=true
@@ -30,7 +39,18 @@ vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_size=192
 vendor.qc2audio.per_frame.flac.dec.enabled=true
 vendor.qc2audio.suspend.enabled=true
-vendor.audio.compress_capture.aac.cut_off_freq=-1
+audio.spatializer.pose_predictor_type=2
+audio.spatializer.prediction_duration_ms=50
+persist.vendor.audio.effectimplenter=dolby
+persist.vendor.audio.spatializer.enable=false
+persist.vendor.audio.spf_restart=true
+ro.vendor.audio.aw.monitor=true
+ro.vendor.audio.camera.loopback.support=false
+ro.vendor.audio.dolby.spatial.profile=dynamic
+ro.vendor.audio.elus.enable=true
+ro.vendor.audio.record.customized.support=true
+ro.vendor.soundtrigger.dfs.support=1
+vendor.audio.compress_capture.aac.cut_off_freq=24000
 vendor.audio.cpu.sched.cpus=8
 vendor.audio.cpu.sched.cpuset.af=248
 vendor.audio.cpu.sched.cpuset.at=248
@@ -39,8 +59,11 @@ vendor.audio.cpu.sched.cpuset.he=248
 vendor.audio.cpu.sched.cpuset.hso=248
 vendor.audio.cpu.sched.onlyfast=false
 vendor.audio.cpu.sched=31
+vendor.audio.mic.status=off
 vendor.audio.rt.mode.onlyfast=false
-vendor.audio.rt.mode=23
+vendor.audio.rt.mode=19
+vendor.audio.ultrasound.stoplatency=60
+vendor.audio.ultrasound.usync=100
 
 # Bluetooth
 bluetooth.profile.a2dp.source.enabled=true
@@ -67,20 +90,29 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=false
 bluetooth.profile.vcp.controller.enabled=false
 persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
-camera.disable_zsl_mode=1
+camera.disable_zsl_mode=true
+ro.camera.enableCamera1MaxZsl=1
+ro.camerax.extensions.enabled=false
 
 # DPM
-persist.vendor.dpm.vndr.feature=11
+persist.vendor.dpm.vndr.feature=1
 persist.vendor.dpm.vndr.halservice.enable=1
+persist.vendor.dpm.vndr.idletimer.mode=default
 
 # DRM
 drm.service.enabled=true
+vendor.wv.oemcrypto.debug.enable_prov40=true
+vendor.wv.oemcrypto.debug.enable_hlos_data_path=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -114,26 +146,24 @@ persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
-ro.surface_flinger.has_wide_color_display=false
-ro.surface_flinger.has_HDR_display=false
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.wcg_composition_dataspace=143261696
-ro.surface_flinger.protected_contents=true
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
-ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.clear_slots_with_set_layer_buffer=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_HDR_display=false
+ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
-ro.surface_flinger.clear_slots_with_set_layer_buffer=false
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.supports_background_blur=0
-
-# Display Feature
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.displayfeature.dump=true
 vendor.display.comp_mask=2
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
-vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_get_screen_decorator_support=1
+vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
 vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=0
@@ -173,7 +203,7 @@ debug.stagefright.c2inputsurface=-1
 ro.media.xml_variant.profiles=_pitti
 vendor.mm.target.enable.qcom_parser=524304
 vendor.media.target_variant=_pitti
-vendor.netflix.bsp_rev=Q4635-38577-1
+vendor.netflix.bsp_rev=Q4635-39508-1
 
 # Power
 ro.vendor.extension_library=libqti-perfd-client.so
@@ -204,10 +234,6 @@ ro.vendor.radio.build_region=global
 # Sensors
 ro.vendor.sensors.xiaomi.double_tap=true
 ro.vendor.sensors.xiaomi.single_tap=true
-ro.vendor.sensors.xiaomi.dfps=true
-
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # SKU
 ro.boot.product.vendor.sku=pitti
