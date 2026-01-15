@@ -1,4 +1,4 @@
-# Media (KEEP)
+# Media
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
 vendor/etc/init/init.qti.media.rc
@@ -26,19 +26,16 @@ vendor/lib64/libqc2audio_hwaudiocodec.so
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
-vendor/lib64/libqc2vppfilter.so
+vendor/lib64/libqc2colorconvertfilter.so
+vendor/lib64/libqc2filter.so
 vendor/lib64/libqcodec2_base.so
 vendor/lib64/libqcodec2_basecodec.so
 vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_cvpfilter.so
 vendor/lib64/libqcodec2_filterbase.so
 vendor/lib64/libqcodec2_hooks.so
-vendor/lib64/libqcodec2_imgtxrfilter.so
 vendor/lib64/libqcodec2_mockfilter.so
-vendor/lib64/libqcodec2_mocklutfilter.so
+vendor/lib64/libqcodec2_mockqc2filter.so
 vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_srfilter.so
-vendor/lib64/libqcodec2_streaminteg_filter.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libvideotxr.so
