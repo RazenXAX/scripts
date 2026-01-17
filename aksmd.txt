@@ -1,46 +1,140 @@
-# Media (KEEP)
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
-vendor/etc/init/init.qti.media.rc
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
-vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libEvrcSwCodec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libQcelp13SwCodec.so
-vendor/lib64/libdsd2pcm.so
-vendor/lib64/libqc2audio_base.so
-vendor/lib64/libmilut.so
-vendor/lib64/libqc2audio_basecodec.so
-vendor/lib64/libqc2audio_core.so
-vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
-vendor/lib64/libqc2audio_platform.so
-vendor/lib64/libqc2audio_swaudiocodec.so
-vendor/lib64/libqc2audio_utils.so
-vendor/lib64/libqc2vppfilter.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_cvpfilter.so
-vendor/lib64/libqcodec2_filterbase.so
-vendor/lib64/libqcodec2_hooks.so
-vendor/lib64/libqcodec2_imgtxrfilter.so
-vendor/lib64/libqcodec2_mockfilter.so
-vendor/lib64/libqcodec2_mocklutfilter.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_srfilter.so
-vendor/lib64/libqcodec2_streaminteg_filter.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_v4l2codec.so
-vendor/lib64/libvideotxr.so
-vendor/lib64/qti.video.utils.videobufferlayout.so
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Generic ramdisk allow list
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+# Virtual A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+
+# Dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+# pKVM
+$(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
+
+# Qualcomm
+$(call soong_config_set,rfs,mpss_firmware_symlink_target)
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
+# A/B
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
+PRODUCT_PACKAGES += \
+    checkpoint_gc \
+    otapreopt_script
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1640
+TARGET_SCREEN_WIDTH := 720
+
+# API
+BOARD_SHIPPING_API_LEVEL := 34
+PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
+
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.qti.recovery
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti_recovery
+
+# Init
+PRODUCT_PACKAGES += \
+    fstab.default
+
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
+
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_warm)
+
+# Overlays
+PRODUCT_PACKAGES += \
+    ApertureOverlayWarm \
+    CarrierConfigOverlayWarm \
+    FrameworkOverlayWarm \
+    LineageDialerOverlayWarm \
+    LineageSDKOverlayWarm \
+    LineageSettingsOverlayWarm \
+    SettingsOverlayWarm \
+    SettingsProviderOverlayWarmPOCO \
+    SettingsProviderOverlayWarmRedmi \
+    SystemUIOverlayWarm \
+    TelephonyOverlayWarm \
+    WifiOverlayWarm \
+    WifiOverlayWarmPOCO \
+    WifiOverlayWarmRedmi
+
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
+# Input
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
+    $(LOCAL_PATH)/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-goodix.idc \
+    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
+
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/xiaomi
+
+# Telephony
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper.xml \
+    qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-utils \
+    qti-telephony-utils-prd \
+    qti_telephony_utils.xml \
+    qti_telephony_utils_prd.xml \
+    telephony-ext
+
+PRODUCT_PACKAGES += \
+    xiaomi-telephony-stub
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext \
+    xiaomi-telephony-stub
+
+# Update engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
