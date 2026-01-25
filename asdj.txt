@@ -6,7 +6,7 @@
 │   ├── android.hardware.health-service.qti.rc
 │   ├── android.hardware.security.keymint-service-qti.rc
 │   ├── qseecomd.rc
-│   ├── ssgtzd.rc
+│   └── ssgtzd.rc
 ├── ssg
 │   ├── ta_config.json
 │   └── tz_whitelist.json
@@ -16,5 +16,5 @@
     │   ├── android.hardware.boot.xml
     │   ├── android.hardware.health-service.qti.xml
     │   ├── android.hardware.security.keymint-service-qti-rkp.xml
-    │   ├── vendor.qti.hardware.qseecom@1.0-service.xml
+    │   └── vendor.qti.hardware.qseecom@1.0-service.xml
     └── manifest.xml
