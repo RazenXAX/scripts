@@ -68,27 +68,18 @@ blob_fixups: blob_fixups_user_type = {
             'android.hardware.security.sharedsecret-V1-ndk.so',
         )
         .add_needed('android.hardware.security.rkp-V1-ndk.so'),
-    'vendor/bin/qcc-trd': blob_fixup()
-        .replace_needed(
-            'libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'
-        ),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed(
             'vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'
         ),
-    'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
-        .replace_needed(
-            'libvendor.goodix.hardware.biometrics.fingerprint@2.1.so',
-            'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'
-        ),
-    'vendor/etc/media_codecs_ravelin.xml': blob_fixup()
+    'vendor/etc/media_codecs_pitti.xml': blob_fixup()
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'flame',
+    'warm',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
