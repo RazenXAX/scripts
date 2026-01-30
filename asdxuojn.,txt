@@ -254,35 +254,18 @@ vendor/lib64/libnicm_netlink.so
 vendor/lib64/libnicm_recovery.so
 vendor/lib64/libnicm_utils.so
 vendor/lib64/libnicm_vh.so
-vendor/lib64/libnspdependency.so
-vendor/lib64/libnspdescriptorhandler.so
-vendor/lib64/libnspdiag.so
-vendor/lib64/libnspextensionloader.so
-vendor/lib64/libnspframework.so
-vendor/lib64/libnspframeworkcoreutility.so
-vendor/lib64/libnspgraphing.so
-vendor/lib64/libnspipc.so
-vendor/lib64/libnsposal.so
-vendor/lib64/libnspresource.so
-vendor/lib64/libnspscheduler.so
-vendor/lib64/libnspsession.so
-vendor/lib64/libnsptransaction.so
 
 # Diag
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
-vendor/etc/init/vendor.qti.diag_userdebug.rc
+vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/libdiag.so
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=-vendor
 
 # Display Config
-vendor/etc/displayconfig/display_id_4630946416293825923.xml
-vendor/etc/displayconfig/display_id_4630946545580055171.xml
 vendor/etc/displayconfig/display_id_4630947039571902850.xml
 vendor/etc/displayconfig/display_id_4630947039571902851.xml
-vendor/etc/displayconfig/display_id_4630947082089526659.xml
-vendor/etc/displayconfig/display_id_4630947256895775107.xml
 
 # Displayfeature (configs)
 odm/etc/df_default.xml
@@ -290,16 +273,13 @@ odm/etc/df_default.xml
 # Displayfeature (libs)
 odm/lib64/hw/displayfeature.default.so
 odm/lib64/libadaptivehdr.so
-odm/lib64/libbarrage.so
 odm/lib64/libcolortempmode.so
 odm/lib64/libdisplaycount.so
 odm/lib64/libdisplaylog.so
 odm/lib64/libdither.so
 odm/lib64/libeyecare.so
-odm/lib64/libfcmintf.so
 odm/lib64/libflatmode.so
 odm/lib64/libfpsmonitor.so
-odm/lib64/libframecapturemanager.so
 odm/lib64/libhistprocess.so
 odm/lib64/libmi_dspp.so
 odm/lib64/libmi-stc-HW-modulate.so
@@ -315,7 +295,6 @@ odm/lib64/libsdr2hdr.so
 odm/lib64/libsre.so
 odm/lib64/libtruetone.so
 odm/lib64/libvideomode.so
-odm/lib64/vendor.xiaomi.hardware.framecapturemanager-V1-ndk.so
 vendor/bin/displayfeature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature_aidl-service
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc
@@ -352,7 +331,7 @@ vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
+system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
 
 # Display postprocessing
 vendor/bin/hw/vendor.qti.hardware.display.color-service
@@ -427,12 +406,6 @@ vendor/etc/init/dumpstate-xiaomi.rc
 vendor/etc/vintf/manifest/dumpstate-xiaomi.xml
 vendor/lib64/vendor.xiaomi.hardware.blackbox-V1-ndk.so
 
-# EID
-vendor/bin/hw/vendor.rongcard.eid@1.0-service
-vendor/etc/init/vendor.rongcard.eid@1.0-service.rc
-vendor/etc/vintf/manifest/eid-default.xml
-vendor/lib64/vendor.rongcard.eid-V1-ndk_platform.so
-
 # EMBMS
 vendor/bin/embmsslServer
 vendor/etc/init/init.embmssl_server.rc
@@ -444,11 +417,6 @@ vendor/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
 
 # ESE powermanager
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
-
-# Fingerprint
-vendor/etc/permissions/qti_fingerprint_interface.xml
-vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
-odm/etc/vintf/manifest/fod-aidl.xml
 
 # FM
 vendor/etc/init.qti.fm.sh
@@ -462,12 +430,12 @@ vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
 vendor/lib64/hw/libqtigatekeeper.so
 
 # GNSS
-odm/bin/hw/android.hardware.gnss-aidl-service-qti
-odm/etc/init/android.hardware.gnss-aidl-service-qti.rc
-odm/etc/izat_device.conf
-odm/etc/vintf/manifest/vendor.qti.gnss-service.xml
-odm/lib64/android.hardware.gnss-aidl-impl-qti.so
-odm/lib64/vendor.qti.gnss-service.so
+vendor/bin/hw/android.hardware.gnss-aidl-service-qti
+vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
+vendor/etc/izat.conf
+vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
+vendor/lib64/vendor.qti.gnss-service.so
 vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
@@ -488,7 +456,6 @@ vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/xtwifi.conf
-vendor/lib64/libMiVDR.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcdfw.so
@@ -517,7 +484,6 @@ vendor/lib64/liblocation_api_msg.so
 vendor/lib64/liblocation_api.so
 vendor/lib64/liblocation_client_api.so
 vendor/lib64/liblocation_integration_api.so
-vendor/lib64/liblocation_qesdk.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/liblocdiagiface.so
@@ -532,25 +498,16 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss-V6-ndk.so
 
 # HDCP
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
 # Hotword - from houji OS2.0.9.0.VNCMIXM
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|194bbcc27ebad3952294fc3617b2a23db92e767a
-product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk|8eb57dcd535082ed41136383656d0c8b514b2213
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|01b74943dc0ae9353883298d36fba94128536c9e
-system_ext/framework/com.android.hotwordenrollment.common.util.jar|375acb133095c92d7a411f1c46fae46637f4c5c6
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Graphics
-vendor/app/com.qualcomm.qti.gpudrivers.pineapple.api34/com.qualcomm.qti.gpudrivers.pineapple.api34.apk
-vendor/gpu/kbc/sequence_manifest.bin
-vendor/gpu/kbc/unified_kbcs_32.bin
-vendor/gpu/kbc/unified_kbcs_64.bin
-vendor/gpu/kbc/unified_ksqs.bin
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -565,7 +522,6 @@ vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
-vendor/lib64/libkcl.so
 vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
@@ -573,7 +529,6 @@ vendor/lib64/libllvm-qgl.so
 
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
-
 # Graphics (Adreno)
 odm/firmware/gen70900_zap.mbn
 odm/firmware/gen71100_zap.mbn
