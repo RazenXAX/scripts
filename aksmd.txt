@@ -20,7 +20,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/sm8650-common',
+    'device/xiaomi/sm4635-common',
     'hardware/qcom-caf/wlan',
     'hardware/qcom-caf/sm8650',
     'hardware/xiaomi',
@@ -53,13 +53,12 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     (
         'vendor/bin/hw/vendor.qti.media.c2@1.0-service',
-        'vendor/bin/hw/vendor.dolby.media.c2@1.0-service',
         'vendor/bin/hw/vendor.qti.media.c2audio@1.0-service'
     ): blob_fixup()
         .add_needed('libshim.so'),
     (
-        'vendor/etc/media_codecs_pinaepple.xml', 
-        'vendor/etc/media_codecs_pinaepple_vendor.xml'
+        'vendor/etc/media_codecs_pitti.xml', 
+        'vendor/etc/media_codecs_pitti_vendor.xml'
     ): blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
@@ -67,7 +66,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbinder_shim.so'),
     (
         'vendor/lib64/libqcc_sdk.so', 
-        'vendor/lib64/libqms_xiaomi.so',
         'vendor/lib64/libqms_client.so',
         'vendor/bin/qcc-vendor',
         'vendor/bin/xtra-daemon',
@@ -76,18 +74,12 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libbinder_shim.so'),
     (
-        'vendor/lib64/libdlbdsservice.so',
-        'vendor/lib64/libdlbpreg.so',
-        'vendor/lib64/soundfx/libdlbvol.so',
-        'vendor/lib64/soundfx/libhwdap.so',
-    ): blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8650-common',
+    'sm4635-common',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
