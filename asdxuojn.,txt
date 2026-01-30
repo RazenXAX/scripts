@@ -2,62 +2,61 @@
 ## are from POCO C75 5G/REDMI A4 5G (OS1.0.10.0.UGVINXM). 
 
 # ACDB
-vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
-vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd
-vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd
-vendor/etc/acdbdata/ffv_models/ffv__7.0.1_0.1__eai_3.4_enpu_v4.pmd
-vendor/etc/acdbdata/haptics_data/click.pcm
-vendor/etc/acdbdata/haptics_data/double_click.pcm
-vendor/etc/acdbdata/haptics_data/heavy_click.pcm
-vendor/etc/acdbdata/haptics_data/pop.pcm
-vendor/etc/acdbdata/haptics_data/reserved_1.pcm
-vendor/etc/acdbdata/haptics_data/reserved_2.pcm
-vendor/etc/acdbdata/haptics_data/reserved_3.pcm
-vendor/etc/acdbdata/haptics_data/reserved_4.pcm
-vendor/etc/acdbdata/haptics_data/reserved_5.pcm
-vendor/etc/acdbdata/haptics_data/reserved_6.pcm
-vendor/etc/acdbdata/haptics_data/reserved_7.pcm
-vendor/etc/acdbdata/haptics_data/reserved_8.pcm
-vendor/etc/acdbdata/haptics_data/texture_tick.pcm
-vendor/etc/acdbdata/haptics_data/thud.pcm
-vendor/etc/acdbdata/haptics_data/tick.pcm
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
-vendor/etc/acdbdata/nn_ns_models/fai__11.0.1.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
+vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd
+vendor/etc/acdbdata/ffv_models/ffv__5.0.2_0.1__3.0.0_0.0__eai_3.5_adsp.pmd
+vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd
+vendor/etc/acdbdata/ffv_models/ffv__7.0.1_0.1__eai_3.4_enpu_v4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.6_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.7_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.0.1.4_1.0__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.6.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.6.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.12_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.12_0.0__3.0.0_0.0__eai_1.43_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_1.43_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/pitti_idp/IDP_acdb_cal.acdb
+vendor/etc/acdbdata/pitti_idp/IDP_workspaceFileXml.qwsp
+vendor/etc/acdbdata/pitti_qrd/QRD_acdb_cal.acdb
+vendor/etc/acdbdata/pitti_qrd/QRD_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
-vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libvmmem.so
 
-# ANT+
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so
-
 # Audio
-odm/etc/audio/silent-3sec.wav
-vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/mem_logger_config.xml
 vendor/etc/models/acd/environment.eai
 vendor/etc/models/acd/event.eai
@@ -68,71 +67,37 @@ vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2udk7vendor.so
 vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libdlbpreg.so
-vendor/lib64/libmis6.so
 vendor/lib64/libmisight.so
-vendor/lib64/libmisfpsop.so
-vendor/lib64/libmisops.so
-vendor/lib64/libmisoundfx_ext.so;SYMLINK=vendor/lib64/soundfx/libmisoundfx.so
-vendor/lib64/libmisoundsa.so
-vendor/lib64/libmisoundsa_fx.so
-vendor/lib64/libmispowerop.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libqtigefar.so
-vendor/lib64/libresampler.so
-vendor/lib64/libswspatializer_ext.so
 vendor/lib64/libtensorflowlite_c.so
-vendor/lib64/libultrasound_notify.so
-vendor/lib64/libxlog.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Audio (Config)
-odm/etc/audio/sku_pineapple/adsp_sleep_monitor.conf
-odm/etc/audio/sku_pineapple/audio_effects.xml
-odm/etc/audio/sku_pineapple/mixer_paths_overlay_dynamic.xml
-vendor/etc/audio/sku_pineapple/adsp_sleep_monitor.conf
-vendor/etc/audio/sku_pineapple/audio_effects.conf
-vendor/etc/audio/sku_pineapple/audio_effects.xml
-vendor/etc/audio/sku_pineapple/audio_policy_configuration.xml
+vendor/etc/audio/sku_pitti/audio_effects.conf
+vendor/etc/audio/sku_pitti/audio_effects.xml
+vendor/etc/audio/sku_pitti/mixer_paths_pitti_idp.xml
+vendor/etc/audio/sku_pitti/mixer_paths_pitti_qrd.xml
+vendor/etc/audio/sku_pitti/resourcemanager_pitti_idp.xml
+vendor/etc/audio/sku_pitti/resourcemanager_pitti_qrd.xml
 vendor/etc/batching.conf
 vendor/etc/card-defs.xml
 vendor/etc/kvh2xml.xml
 vendor/etc/microphone_characteristics.xml
 
-# Audio (Dolby)
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libspatializerparamstorage.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-
 # Audio FX modules
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libbundlewrapper.so
-vendor/lib64/soundfx/libdlbvol.so
 vendor/lib64/soundfx/libdownmix.so
 vendor/lib64/soundfx/libdynproc.so
 vendor/lib64/soundfx/libeffectproxy.so
-vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libldnhncr.so
-vendor/lib64/soundfx/libmisoundfx_n2.so
+vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libquasar.so
 vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libspatializer_fx.so
-vendor/lib64/soundfx/libspatializer.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/soundfx/libvisualizer.so
-
-# Batterysecret
-vendor/bin/batterysecret
-vendor/etc/init/hw/init.batterysecret.rc
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
@@ -149,7 +114,6 @@ vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
 vendor/lib64/btaudio_offload_if.so
-vendor/lib64/lib_bt_lhdc.so
 vendor/lib64/libbluetooth_audio_session_aidl_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbluetooth_audio_session_qti.so
@@ -160,16 +124,9 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
 
 # Camera
-odm/etc/init/misensor_camera.rc
-odm/etc/init/vendor.qti.camera.provider-service_64.rc
-odm/etc/vintf/manifest/misensor_camera.xml
-odm/etc/vintf/manifest/vendor.qti.camera.offlinecamera-impl.xml
-odm/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
-odm/etc/vintf/manifest/vendor.qti.camera.provider.xml
-odm/etc/vintf/manifest/vendor.xiaomi.camera.aon-impl.xml
-odm/etc/vintf/manifest/vendor.xiaomi.hardware.aidlbgservice-service.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera.xml
-vendor/framework/androidx.camera.extensions.impl.jar
+vendor/etc/init/vendor.qti.camera.provider-service_64.rc
+vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
+vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml
 
 # Camera Firmware
 odm/firmware/CAMERA_ICP_170.elf
