@@ -529,15 +529,6 @@ vendor/lib64/libllvm-qgl.so
 
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
-# Graphics (Adreno)
-odm/firmware/gen70900_zap.mbn
-odm/firmware/gen71100_zap.mbn
-vendor/firmware/gen70900_aqe.fw
-vendor/firmware/gen70900_sqe.fw
-vendor/firmware/gen71100_gmu.bin
-vendor/firmware/gen71100_sqe.fw
-vendor/firmware/gmu_gen70900.bin
-vendor/firmware/qps615_fw.bin
 
 # Identity service
 vendor/etc/init/android.hardware.identity-service-qti.rc
@@ -545,7 +536,6 @@ vendor/etc/vintf/manifest/manifest_identity_credential.xml
 vendor/lib64/libqtiidentitycredential.so
 
 # IMS
-system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
@@ -570,7 +560,6 @@ system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/l
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
-system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk;REQUIRED=QtiTelephonyCompat
@@ -633,9 +622,6 @@ vendor/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=-vendor
 vendor/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE_SUFFIX=-vendor
 
-# IR
-odm/lib64/hw/consumerir.qcom.so
-
 # Init
 vendor/bin/init.class_main.sh
 vendor/bin/init.qcom.class_core.sh
@@ -645,10 +631,11 @@ vendor/bin/init.qcom.sh
 vendor/etc/init/hw/init.qcom.rc
 
 # Kernel
-vendor/bin/init.kernel.post_boot-pineapple_2_3_1_1.sh
-vendor/bin/init.kernel.post_boot-pineapple_2_3_2_0.sh
-vendor/bin/init.kernel.post_boot-pineapple_default_2_3_2_1.sh
-vendor/bin/init.kernel.post_boot-pineapple.sh
+vendor/bin/init.kernel.post_boot-memory.sh
+vendor/bin/init.kernel.post_boot-pitti.sh
+vendor/bin/init.kernel.post_boot-pitti_4_0.sh
+vendor/bin/init.kernel.post_boot-pitti_4_1.sh
+vendor/bin/init.kernel.post_boot-pitti_default_6_2.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/system_dlkm_modprobe.sh
@@ -665,7 +652,7 @@ vendor/lib64/libqtikeymaster4.so
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
 vendor/lib64/libqtikeymint.so
 
 # Limits
@@ -686,24 +673,22 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 # Media
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
-odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so
 vendor/bin/init.qti.media.sh
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/media_codecs_performance_pineapple_vendor_without_dvenc.xml
-vendor/etc/media_codecs_performance_pineapple_vendor.xml
-vendor/etc/media_codecs_performance_pineapple.xml
-vendor/etc/media_codecs_pineapple_vendor_without_dvenc.xml
-vendor/etc/media_codecs_pineapple_vendor.xml
-vendor/etc/media_codecs_pineapple.xml
+vendor/etc/media_codecs_performance_pitti.xml
+vendor/etc/media_codecs_performance_pitti_32go.xml
+vendor/etc/media_codecs_pitti.xml
+vendor/etc/media_codecs_pitti_32go.xml
+vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_codecs.xml
-vendor/etc/media_pineapple/video_system_specs.json
+vendor/etc/media_pitti/video_system_specs.json
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_pineapple.xml
+vendor/etc/media_profiles_pitti.xml
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
@@ -714,59 +699,21 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
+vendor/lib64/libqc2audio_hwaudiocodec.so
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
-vendor/lib64/libqc2vppfilter.so
-vendor/lib64/libqcodec2_basecodec.so
 vendor/lib64/libqcodec2_base.so
+vendor/lib64/libqcodec2_basecodec.so
 vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_cvpfilter.so
-vendor/lib64/libqcodec2_dolbydecoderfilter.so
-vendor/lib64/libqcodec2_dolbyencoderfilter.so
 vendor/lib64/libqcodec2_filterbase.so
 vendor/lib64/libqcodec2_hooks.so
-vendor/lib64/libqcodec2_imgtxrfilter.so
 vendor/lib64/libqcodec2_mockfilter.so
-vendor/lib64/libqcodec2_mocklutfilter.so;DISABLE_CHECKELF
+vendor/lib64/libqcodec2_mockqc2filter.so
 vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_psfilter.so;DISABLE_CHECKELF
-vendor/lib64/libqcodec2_srfilter.so;DISABLE_CHECKELF
-vendor/lib64/libqcodec2_streaminteg_filter.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
-
-# Media (Dolby Vision)
-odm/etc/dolby/dax-default.xml
-odm/etc/dolby/dax-default-spatializer.xml
-odm/etc/surfaceflinger/dolby_vision.cfg
-odm/vendor/etc/dolby_vision.cfg
-odm/vendor/persist/display/dolby_vision.cfg
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service
-vendor/etc/dolby/dax-default-spatializer.xml
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/lib64/libcodec2_soft_ac4dec.so
-vendor/lib64/libcodec2_soft_ddpdec.so
-vendor/lib64/libcodec2_store_dolby.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdolbyclstc.so
-vendor/lib64/libdolbydecoderprocessor.so
-vendor/lib64/libdolbyeglcore.so
-vendor/lib64/libdolbyencoderprocessor.so
-vendor/lib64/libdolbyottcameracontrol.so
-
-# Media (Xiaomi)
-vendor/bin/hw/android.hardware.media.c2-mi-service
-vendor/etc/init/android.hardware.media.c2-mi-service.rc
-vendor/etc/media_codecs_mi_c2_audio.xml
-vendor/etc/vintf/manifest/media_c2_mi.xml
-vendor/lib64/libcodec2_soft_mihc_dec.so
-vendor/lib64/libcodec2_soft_mihc_enc.so
-vendor/lib64/libcodec2_store_mi.so
 
 # Memtrack
 vendor/bin/hw/vendor.qti.hardware.memtrack-service
@@ -784,91 +731,26 @@ vendor/lib64/vendor.qti.hardware.factory-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
-# ML
-odm/lib64/MLPD_0.pickle
-odm/lib64/MLPD_1.pickle
-odm/lib64/MLPD_2.pickle
-odm/lib64/MLPD_3.pickle
-odm/lib64/MLPD_4.pickle
-odm/lib64/MLPD_5.pickle
-
 # Mlipay
 odm/bin/fidoca
 odm/bin/mlipayd
 odm/bin/mtd
-odm/bin/tidad
 odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc
 odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc
 odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc
-odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc
 odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
 odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.aidl.tidaservice.xml
 odm/lib64/libmfido.so
 odm/lib64/libmlipay.so
 odm/lib64/libmt.so
-odm/lib64/libtida.so
 odm/lib64/libwvkeybox.so
 vendor/lib64/vendor.xiaomi.hardware.mfidoca-V1-ndk_platform.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay-V1-ndk_platform.so
 vendor/lib64/vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform.so
-vendor/lib64/vendor.xiaomi.hardware.aidl.tidaservice-V1-ndk_platform.so
 
 # Native public libraries
 vendor/etc/public.libraries.txt
-
-# Neural networks
-odm/lib64/libQnnChrometraceProfilingReader.so
-odm/lib64/libQnnCpu.so
-odm/lib64/libQnnDspNetRunExtensions.so
-odm/lib64/libQnnDsp.so
-odm/lib64/libQnnDspV66CalculatorStub.so
-odm/lib64/libQnnDspV66Stub.so
-odm/lib64/libQnnGpuNetRunExtensions.so
-odm/lib64/libQnnGpuProfilingReader.so
-odm/lib64/libQnnGpu.so
-odm/lib64/libQnnHtpNetRunExtensions.so
-odm/lib64/libQnnHtpPrepare.so
-odm/lib64/libQnnHtpProfilingReader.so
-odm/lib64/libQnnHtp.so
-odm/lib64/libQnnHtpV68CalculatorStub.so
-odm/lib64/libQnnHtpV68Stub.so
-odm/lib64/libQnnHtpV69CalculatorStub.so
-odm/lib64/libQnnHtpV69Stub.so
-odm/lib64/libQnnHtpV73CalculatorStub.so
-odm/lib64/libQnnHtpV73Stub.so
-odm/lib64/libQnnHtpV75CalculatorStub.so
-odm/lib64/libQnnHtpV75Stub.so
-odm/lib64/libQnnJsonProfilingReader.so
-odm/lib64/libQnnSaver.so
-odm/lib64/libQnnSystem.so
-
-# NFC
-system_ext/etc/permissions/com.nxp.nfc.nq.xml
-odm/etc/libnfc-nci.conf
-odm/etc/libnfc-nxp_RF.conf
-odm/etc/libnfc-nxp.conf
-odm/bin/hw/android.hardware.nqnfc-service.nxp
-odm/etc/init/nfc-service-nxp.rc
-odm/lib64/nfc_nci.nqx.default.hw.so
-odm/lib64/nfc_nci.st21nfc.st.so
-vendor/bin/nqnfcinfo
-vendor/etc/1-SN1X0_SPC.txt
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-nxp-pnscr.conf
-vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
-vendor/etc/libnfc-qrd-SN100.conf
-vendor/etc/libnfc-SN220_19_2MHZ.conf
-vendor/etc/libnfc-SN220_38_4MHZ.conf
-vendor/lib64/libsn100u_fw.so
-vendor/lib64/libsn220u_fw.so
-vendor/lib64/libstnfc-auth.so
-vendor/lib64/libstnfc-streset.so
-vendor/lib64/libvui_dmgr.so
-vendor/lib64/libvui_intf.so;DISABLE_CHECKELF
-vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 
 # OMX
 vendor/lib64/libAlacSwDec.so
@@ -883,27 +765,23 @@ vendor/bin/hw/vendor.qti.memory.pasrmanager-service
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
 vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc
 vendor/etc/init/vendor.qti.memory.pasrmanager-service.rc
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/LightningLaunchesFeature.xml
-vendor/etc/lm/PrefAppsFeature.xml
 vendor/etc/lm/prekill/prekill_2GB.data
 vendor/etc/lm/prekill/prekill_4GB.data
 vendor/etc/lm/prekill/prekill_6GB.data
+vendor/etc/lm/AdaptLaunchFeature.xml
+vendor/etc/lm/AppClassifierFeature.xml
+vendor/etc/lm/LightningLaunchesFeature.xml
 vendor/etc/lm/PreKillFeature.xml
+vendor/etc/lm/PrefAppsFeature.xml
 vendor/etc/lm/ProCompFeature.xml
 vendor/etc/lm/QAPE.xml
 vendor/etc/lm/QGPE.xml
 vendor/etc/lm/QGPEActionMap.xml
-vendor/etc/lm/SagtFeature.xml
 vendor/etc/lm/SilkyScrollsFeature.xml
-vendor/etc/lm/sPLHFeature.xml
 vendor/etc/perf/avcsysnodesconfigs.xml
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/exceptionrecoveryconfig.xml
 vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfboostselection.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetavcsysnodesconfigs.xml
 vendor/etc/perf/targetconfig.xml
@@ -911,15 +789,11 @@ vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/perf/targetsysnodesconfigs.xml
 vendor/etc/perf/testcommonresourceconfigs.xml
 vendor/etc/perf/testtargetresourceconfigs.xml
-vendor/etc/perf/thermal-boost.conf
-vendor/etc/perf/thermalbreakboostconfig.xml
-vendor/etc/pwr/AODPowerOptFeature.xml
+vendor/etc/perf/thermalboost.conf
 vendor/etc/pwr/GamePowerOptFeature.xml
 vendor/etc/pwr/OffScreenPowerOptFeature.xml
-vendor/etc/pwr/PowerFeatureConfig.xml
 vendor/etc/pwr/PSMPowerOptFeature.xml
-vendor/etc/pwr/StandbyFeature.xml
-vendor/etc/pwr/VendorScenarioPowerOptFeature.xml
+vendor/etc/pwr/PowerFeatureConfig.xml
 vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf2.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
@@ -953,9 +827,7 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
-vendor/lib64/libsagt.so
 vendor/lib64/libskewknob.so
-vendor/lib64/libsplh.so
 vendor/lib64/libsrc_jni_getPasrService.so
 vendor/lib64/libstandbyfeature.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
@@ -968,12 +840,10 @@ vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Peripheral manager
+vendor/bin/pmap
 vendor/bin/pm-proxy
 vendor/bin/pm-service
-vendor/bin/pm_ioctl_app
-vendor/lib64/libPeripheralStateUtils.so
 vendor/lib64/libperipheral_client.so
-vendor/lib64/libspcom.so
 
 # Power-off alarm
 vendor/bin/hw/vendor.qti.hardware.alarm-service
@@ -1014,12 +884,6 @@ vendor/lib64/libsubsystem_control.so
 # QCV
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
-
-# QEGAHAL
-vendor/bin/vendor.qti.qegahal-service
-vendor/etc/init/vendor.qti.qegahal-service.rc
-vendor/etc/vintf/manifest/vendor.qti.qegahal-service.xml
-vendor/lib64/vendor.qti.qegahal-impl.so
 
 # QESDK
 vendor/bin/qesdk-manager
