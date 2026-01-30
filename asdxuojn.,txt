@@ -128,57 +128,19 @@ vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml
 
-# Camera Firmware
-odm/firmware/CAMERA_ICP_170.elf
-odm/firmware/CAMERA_ICP.b00
-odm/firmware/CAMERA_ICP.b01
-odm/firmware/CAMERA_ICP.b02
-odm/firmware/CAMERA_ICP.b03
-odm/firmware/CAMERA_ICP.b04
-odm/firmware/CAMERA_ICP.b05
-odm/firmware/CAMERA_ICP.b06
-odm/firmware/CAMERA_ICP.b07
-odm/firmware/CAMERA_ICP.b08
-odm/firmware/CAMERA_ICP.b09
-odm/firmware/CAMERA_ICP.b10
-odm/firmware/CAMERA_ICP.b11
-odm/firmware/CAMERA_ICP.b12
-odm/firmware/CAMERA_ICP.b13
-odm/firmware/CAMERA_ICP.b14
-odm/firmware/CAMERA_ICP.b15
-odm/firmware/CAMERA_ICP.b16
-odm/firmware/CAMERA_ICP.b17
-odm/firmware/CAMERA_ICP.b18
-odm/firmware/CAMERA_ICP.b19
-odm/firmware/CAMERA_ICP.b20
-odm/firmware/CAMERA_ICP.elf
-odm/firmware/CAMERA_ICP.mbn
-odm/firmware/CAMERA_ICP.mdt
-
 # CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
+vendor/lib64/libcdsp_default_listener.so
 
 # Charger
 vendor/etc/charger_diag.cfg
 vendor/etc/charger_fw_fstab.qti
 
-# CIT Sensor
-odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl;DISABLE_CHECKELF
-odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
-odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
-
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
-vendor/etc/cne/mwqem.conf
-vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -186,17 +148,17 @@ vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile7.xml
+vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml
+vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml
+vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml
@@ -208,6 +170,8 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml
+vendor/etc/cne/mwqem.conf
+vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.data.iwlandata.xml
@@ -245,84 +209,11 @@ vendor/lib64/vendor.qti.latency@2.2.so
 vendor/lib64/vendor.qti.latencyaidlservice-V1-ndk.so
 
 # Computer vision
-vendor/etc/eva/facedetection/bias.dat
-vendor/etc/eva/facedetection/weight.dat
-vendor/etc/eva/facelandmark/bias_1_1.dat
-vendor/etc/eva/facelandmark/bias_1_2.dat
-vendor/etc/eva/facelandmark/bias_2.dat
-vendor/etc/eva/facelandmark/bias_3_1.dat
-vendor/etc/eva/facelandmark/bias_3_2.dat
-vendor/etc/eva/facelandmark/weight_1_1.dat
-vendor/etc/eva/facelandmark/weight_1_2.dat
-vendor/etc/eva/facelandmark/weight_2.dat
-vendor/etc/eva/facelandmark/weight_3_1.dat
-vendor/etc/eva/facelandmark/weight_3_2.dat
-vendor/etc/eva/itof/tuning_params_sensor_type_1.json
-vendor/lib64/libFace3DTA.so
-vendor/lib64/libFace3D_hlos.so
-vendor/lib64/libQ6MSFR_manager_stub.so
-vendor/lib64/libcv_common.so
-vendor/lib64/libeva.so
-vendor/lib64/libeva_util.so
-vendor/lib64/libface3d_dev.so
-vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libos.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/libvideoutils.so
-
-# Computer vision firmware
-odm/firmware/evass.b00
-odm/firmware/evass.b01
-odm/firmware/evass.b02
-odm/firmware/evass.b03
-odm/firmware/evass.b04
-odm/firmware/evass.b05
-odm/firmware/evass.b06
-odm/firmware/evass.b07
-odm/firmware/evass.b08
-odm/firmware/evass.b09
-odm/firmware/evass.b10
-odm/firmware/evass.b11
-odm/firmware/evass.b12
-odm/firmware/evass.b13
-odm/firmware/evass.b14
-odm/firmware/evass.b15
-odm/firmware/evass.b16
-odm/firmware/evass.b17
-odm/firmware/evass.b18
-odm/firmware/evass.b19
-odm/firmware/evass-lt.b00
-odm/firmware/evass-lt.b01
-odm/firmware/evass-lt.b02
-odm/firmware/evass-lt.b03
-odm/firmware/evass-lt.b04
-odm/firmware/evass-lt.b05
-odm/firmware/evass-lt.b06
-odm/firmware/evass-lt.b07
-odm/firmware/evass-lt.b08
-odm/firmware/evass-lt.b09
-odm/firmware/evass-lt.b10
-odm/firmware/evass-lt.b11
-odm/firmware/evass-lt.b12
-odm/firmware/evass-lt.b13
-odm/firmware/evass-lt.b14
-odm/firmware/evass-lt.b15
-odm/firmware/evass-lt.b16
-odm/firmware/evass-lt.b17
-odm/firmware/evass-lt.b18
-odm/firmware/evass-lt.b19
-odm/firmware/evass-lt.mbn
-odm/firmware/evass-lt.mdt
-odm/firmware/evass.mbn
-odm/firmware/evass.mdt
-odm/firmware/evass-product.mk
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -335,10 +226,6 @@ vendor/bin/ssgqmigd64
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
 vendor/etc/ssg/tz_whitelist.json
-
-# Context Hub
-vendor/bin/hw/android.hardware.contexthub-service.qmi
-vendor/etc/chre/preloaded_nanoapps.json
 
 # Data
 vendor/bin/ATFWD-daemon
