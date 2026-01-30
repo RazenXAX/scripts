@@ -1,858 +1,100 @@
-## All proprietary files from this list, unless pinned and noted otherwise,
-## are from POCO C75 5G/REDMI A4 5G (OS1.0.10.0.UGVINXM)
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
 
-# ADSP modules
-vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
-vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
-vendor/lib/rfsa/adsp/libcalculator_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
-vendor/lib/rfsa/adsp/misound_karaoke_res.bin
-vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
-vendor/lib/rfsa/adsp/misound_res_headphone.bin
-vendor/lib/rfsa/adsp/misound_res_spk.bin
+import extract_utils.tools
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
 
-# Vendor firmware
-vendor/firmware/a610_zap.b00
-vendor/firmware/a610_zap.b01
-vendor/firmware/a610_zap.b02
-vendor/firmware/a610_zap.mbn
-vendor/firmware/a610_zap.mdt
-vendor/firmware/a630_sqe.fw
-vendor/firmware/gen70900_aqe.fw
-vendor/firmware/gen70900_sqe.fw
-vendor/firmware/gen70900_zap.mbn
-vendor/firmware/gen71100_gmu.bin
-vendor/firmware/gen71100_sqe.fw
-vendor/firmware/gen71100_zap.mbn
-vendor/firmware/gmu_gen70900.bin
-vendor/firmware/sipa.bin
-vendor/firmware/venus.mbn
-vendor/firmware/venus_4mb.mbn
-vendor/firmware/venus_4mb_ecdsa.mbn
-vendor/firmware/venus_4mb_unsigned.mbn
-vendor/firmware/venus_4mb_v6.mbn
-vendor/firmware/venus_4mb_v6_rsa.mbn
-vendor/firmware/venus_4mb_v7.mbn
-vendor/firmware/venus_5mb.mbn
-vendor/firmware/venus_5mb_ecdsa.mbn
-vendor/firmware/venus_5mb_unsigned.mbn
-vendor/firmware/venus_5mb_v6.mbn
-vendor/firmware/venus_5mb_v6_rsa.mbn
-vendor/firmware/venus_5mb_v7.mbn
-vendor/firmware/venus_ecdsa.mbn
-vendor/firmware/venus_unsigned.mbn
-vendor/firmware/venus_v6.mbn
-vendor/firmware/venus_v6_rsa.mbn
-vendor/firmware/venus_v7.mbn
-vendor/firmware/vpu20_1v.mbn
-vendor/firmware/vpu20_1v_unsigned.mbn
-vendor/firmware/vpu20_4v.mbn
-vendor/firmware/vpu20_4v_unsigned.mbn
+namespace_imports = [
+    'device/xiaomi/sm8650-common',
+    'hardware/qcom-caf/wlan',
+    'hardware/qcom-caf/sm8650',
+    'hardware/xiaomi',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/dataservices',
+]
 
-# Camera
-vendor/bin/hw/vendor.qti.camera.provider-service_64
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-system_ext/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}-{partition}' if partition == 'vendor' else None
 
-# Camera Resources
-odm/etc/camera/cameraopt.json
-system_ext/etc/camera_perfetto.cfg
-system_ext/etc/cameracustomize.json
-system_ext/etc/cameraopt.json
-system_ext/etc/camerascene.json
-vendor/etc/camera/model/preview/back/sg_pre_model
-vendor/etc/camera/model/preview/front/model_m/sg_pre_model
-vendor/etc/camera/model/snapshot/back/capture_cache
-vendor/etc/camera/model/snapshot/back/capture_model
-vendor/etc/camera/model/snapshot/back/capture_policy
-vendor/etc/camera/model/snapshot/front/sg_cap_cache
-vendor/etc/camera/model/snapshot/front/sg_cap_model
-vendor/etc/camera/model/snapshot/front/sg_cap_policy
-vendor/etc/camera/resources/model/2722133617
-vendor/etc/camera/resources/render/BuildIn/Material/1166466556_252005700
-vendor/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293
-vendor/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BASE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BRIGHT_EYE_PROCESS.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_FUSE_OFFSET.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_BILATERAL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_FIX_KERNEL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_LUMA_TO_ALPHA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BLUR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BOX_2x2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MERGE_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_VARIANCE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_GUIDE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SINGLE_LABEL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_AFFINE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_P010ToRGB10A2Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToP010Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToRGB10A2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUVP010ToYUVP010.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_BILATERAL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_LUMA_TO_ALPHA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BLUR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BOX_2x2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MERGE_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SINGLE_LABEL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_AFFINE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_P010ToRGB10A2Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToP010Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToRGB10A2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin
-vendor/etc/camera/resources/render/Config/config_mode_all.json
-vendor/etc/camera/resources/render/Config/config_mode_front.json
-vendor/etc/camera/resources/render/Config/config_mode_front_video.json
-vendor/etc/camera/resources/render/Config/config_mode_rear.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/BeautyMap.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/FaceMask.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_capture.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_preview.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_capture.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_preview.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_front.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear.json
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/LeftEye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/RightEye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect.json
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/effect.json
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eye_pupil.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/left_eye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/right_eye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base.json
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_capture.json
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_preview.json
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/xr.bin
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/mode_front.json
-vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/effect.json
-vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/filter.bin
-vendor/etc/camera/resources/render/Effect/50_SkinTone/mode_front.json
-vendor/etc/camera/resources/render/Effect/5_DLRetouch/mode_front.json
-vendor/etc/camera/resources/render/Effect/5_DLRetouch/mode_rear.json
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/Eyebrow.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_capture.json
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_preview.json
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/sh.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyy.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyz.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/zc.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/mode_front.json
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_capture.json
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_preview.json
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/eye_refine.bin
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/facelift.bin
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/mode_front.json
-vendor/etc/camera/resources/render/Effect/effect_list.json
-vendor/etc/camera/resources/render/Effect/effect_mode_clear.json
-vendor/etc/camera/resources/render/Effect/effect_mode_front.json
-vendor/etc/camera/resources/render/Effect/effect_mode_front_video.json
-vendor/etc/camera/resources/render/Effect/effect_mode_rear.json
-vendor/etc/camera/resources/render/GlobalConfig.json
-vendor/etc/camera/resources/TStools_default_param.json
-vendor/etc/camera/resources/Version.txt
-vendor/etc/camera/resources/default_param.json
-vendor/etc/camera/resources/truesight_config_front.json
-vendor/etc/camera/resources/truesight_config_front_video.json
-vendor/etc/camera/resources/truesight_config_rear.json
-vendor/etc/camera/resources/truesight_param.json
-vendor/etc/camera/resources/truesight_param_debug.json
-vendor/etc/camera/xiaomi/dualbokehsnapshot.json
-vendor/etc/camera/xiaomi/frontbokehsnapshot.json
-vendor/etc/camera/xiaomi/frontsinglesnapshot.json
-vendor/etc/camera/xiaomi/frontsupernightsnapshot.json
-vendor/etc/camera/xiaomi/manualsnapshot.json
-vendor/etc/camera/xiaomi/normalpreview.json
-vendor/etc/camera/xiaomi/normalsnapshot.json
-vendor/etc/camera/xiaomi/realsinglebokehsnapshot.json
-vendor/etc/camera/xiaomi/satsnapshot.json
-vendor/etc/camera/xiaomi/superhdsnapshot.json
-vendor/etc/camera/xiaomi/superlowlightsnapshot.json
-vendor/etc/camera/xiaomi/thirdpartysnapshot.json
-vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
-vendor/etc/camera/102_SummerDay.png
-vendor/etc/camera/103_Fantasy.png
-vendor/etc/camera/104_Meet.png
-vendor/etc/camera/105_WindSing.png
-vendor/etc/camera/106_Lost.png
-vendor/etc/camera/107_Central.png
-vendor/etc/camera/108_NorthernEurope.png
-vendor/etc/camera/109_Rome.png
-vendor/etc/camera/110_BlackGold.png
-vendor/etc/camera/111_GreenOrange.png
-vendor/etc/camera/112_CyberPunk.png
-vendor/etc/camera/113_BlackIce.png
-vendor/etc/camera/121_Bleach.png
-vendor/etc/camera/122_Thriller.png
-vendor/etc/camera/123_TealOrange.png
-vendor/etc/camera/124_JapaneseStyle.png
-vendor/etc/camera/125_Latin.png
-vendor/etc/camera/126_Fantasy2.png
-vendor/etc/camera/127_Creamy.png
-vendor/etc/camera/128_Sepia.png
-vendor/etc/camera/129_Vivid.png
-vendor/etc/camera/130_Natural.png
-vendor/etc/camera/131_Monochrome.png
-vendor/etc/camera/132_MonochromeHighContrast.png
-vendor/etc/camera/133_MonochromeBrown.png
-vendor/etc/camera/134_MonochromeBlue.png
-vendor/etc/camera/135_Classical.png
-vendor/etc/camera/136_Filene.png
-vendor/etc/camera/137_GreenNight.png
-vendor/etc/camera/138_LiteratureAndArt.png
-vendor/etc/camera/139_OrangeHoney.png
-vendor/etc/camera/140_Romance.png
-vendor/etc/camera/141_FR500.png
-vendor/etc/camera/142_FE250.png
-vendor/etc/camera/143_RedLantern.png
-vendor/etc/camera/144_RedHero.png
-vendor/etc/camera/145_TactileBlackWhite.png
-vendor/etc/camera/146_TactileGreen.png
-vendor/etc/camera/147_Neutral.png
-vendor/etc/camera/148_Mild.png
-vendor/etc/camera/149_LilyWhite.png
-vendor/etc/camera/150_Bright.png
-vendor/etc/camera/151_Fresh.png
-vendor/etc/camera/152_Limpid.png
-vendor/etc/camera/153_KC64.png
-vendor/etc/camera/154_V250.png
-vendor/etc/camera/155_H400.png
-vendor/etc/camera/156_ColdWhite.png
-vendor/etc/camera/157_Native.png
-vendor/etc/camera/158_BWClassical.png
-vendor/etc/camera/159_Flowers.png
-vendor/etc/camera/anc_night_algo_cache
-vendor/etc/camera/anc_night_binary_cache
-vendor/etc/camera/anc_night_model
-vendor/etc/camera/anc_night_params.json
-vendor/etc/camera/beauty_config_cn.json
-vendor/etc/camera/beauty_config_gl.json
-vendor/etc/camera/camxoverridesettings.txt
-vendor/etc/camera/model_ai_dxo.dlc
-vendor/etc/camera/model_back.dlc
-vendor/etc/camera/model_front.dlc
-vendor/etc/camera/model_glass.dlc
-vendor/etc/camera/model_indoor.dlc
-vendor/etc/camera/morpho_image_refiner_tuning_params_king_hi556w_front_global_llhdr.xml
-vendor/etc/camera/morpho_image_refiner_tuning_params_shine_imx852_main_global_llhdr.xml
-vendor/etc/camera/morpho_image_refiner_tuning_params_truly_s5kjns_main_global_llhdr.xml
-vendor/etc/camera/morpho_image_refiner_tuning_params_truly_sc520cs_front_global_llhdr.xml
-vendor/etc/camera/morpho_mfnr_king_hi556w_front_global.xml
-vendor/etc/camera/morpho_mfnr_king_hi556w_front_global_third.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_2X.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_4X.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_50M.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_6X.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_third.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_2X.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_4X.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_50M.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_6X.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_third.xml
-vendor/etc/camera/morpho_mfnr_truly_sc520cs_front_global.xml
-vendor/etc/camera/morpho_mfnr_truly_sc520cs_front_global_third.xml
-vendor/etc/camera/sceneDetection.xml
-vendor/etc/camera/singlebokeh_mecp.bin
-vendor/etc/camera/xiaomiSceneDetection.xml
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'vendor.qti.diaghal@1.0',
+        'vendor.qti.imsrtpservice@3.0',
+        'vendor.qti.imsrtpservice@3.1',
+        'vendor.qti.ImsRtpService-V1-ndk'
+    ): lib_fixup_vendor_suffix,
+    (
+        'android.hardware.graphics.allocator-V1-ndk',
+        'android.hardware.graphics.composer3-V2-ndk',
+        'libmilut',
+        'libmips',
+        'libmisr',
+        'libwpa_client',
+        'vendor.qti.hardware.display.composer3-V1-ndk',
+    ): lib_fixup_remove,
+}
 
-# Camera Components
-vendor/lib64/camera/components/com.mi.node.tsskinbeautifier.so
-vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib64/camera/components/com.qti.eisv2.so
-vendor/lib64/camera/components/com.qti.eisv3.so
-vendor/lib64/camera/components/com.qti.hvx.addconstant.so
-vendor/lib64/camera/components/com.qti.hvx.binning.so
-vendor/lib64/camera/components/com.qti.node.MiFlip.so
-vendor/lib64/camera/components/com.qti.node.customhwnode.so
-vendor/lib64/camera/components/com.qti.node.depth.so
-vendor/lib64/camera/components/com.qti.node.dewarp.so
-vendor/lib64/camera/components/com.qti.node.dummyrtb.so
-vendor/lib64/camera/components/com.qti.node.dummysat.so
-vendor/lib64/camera/components/com.qti.node.eisv2.so
-vendor/lib64/camera/components/com.qti.node.eisv3.so
-vendor/lib64/camera/components/com.qti.node.fcv.so
-vendor/lib64/camera/components/com.qti.node.formatconversion.so
-vendor/lib64/camera/components/com.qti.node.gpu.so
-vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so
-vendor/lib64/camera/components/com.qti.node.mimovie.so
-vendor/lib64/camera/components/com.qti.node.ml.so
-vendor/lib64/camera/components/com.qti.node.photosolid.so
-vendor/lib64/camera/components/com.qti.node.remosaic.so
-vendor/lib64/camera/components/com.qti.node.stich.so
-vendor/lib64/camera/components/com.qti.node.swaidenoiser.so
-vendor/lib64/camera/components/com.qti.node.swbestats.so
-vendor/lib64/camera/components/com.qti.node.swcac.so
-vendor/lib64/camera/components/com.qti.node.swec.so
-vendor/lib64/camera/components/com.qti.node.swfusion.so
-vendor/lib64/camera/components/com.qti.node.swlsc.so
-vendor/lib64/camera/components/com.qti.node.swmctf.so
-vendor/lib64/camera/components/com.qti.node.swmfnr.so
-vendor/lib64/camera/components/com.qti.node.swpdpc.so
-vendor/lib64/camera/components/com.qti.node.swpreprocess.so
-vendor/lib64/camera/components/com.qti.node.swregistration.so
-vendor/lib64/camera/components/com.qti.stats.aec.so
-vendor/lib64/camera/components/com.qti.stats.aecwrapper.so
-vendor/lib64/camera/components/com.qti.stats.aecxcore.so
-vendor/lib64/camera/components/com.qti.stats.af.so
-vendor/lib64/camera/components/com.qti.stats.afd.so
-vendor/lib64/camera/components/com.qti.stats.afwrapper.so
-vendor/lib64/camera/components/com.qti.stats.asd.so
-vendor/lib64/camera/components/com.qti.stats.awb.so
-vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
-vendor/lib64/camera/components/com.qti.stats.cnndriver.so
-vendor/lib64/camera/components/com.qti.stats.haf.so
-vendor/lib64/camera/components/com.qti.stats.hafoverride.so
-vendor/lib64/camera/components/com.qti.stats.pdlib.so
-vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
-vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
-vendor/lib64/camera/components/com.qtistatic.stats.aec.so
-vendor/lib64/camera/components/com.qtistatic.stats.af.so
-vendor/lib64/camera/components/com.qtistatic.stats.awb.so
-vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib64/camera/components/libdepthmapwrapper_secure.so
+blob_fixups: blob_fixups_user_type = {
+    (
+        'vendor/bin/hw/vendor.qti.media.c2@1.0-service',
+        'vendor/bin/hw/vendor.dolby.media.c2@1.0-service',
+        'vendor/bin/hw/vendor.qti.media.c2audio@1.0-service'
+    ): blob_fixup()
+        .add_needed('libshim.so'),
+    (
+        'vendor/etc/media_codecs_pinaepple.xml', 
+        'vendor/etc/media_codecs_pinaepple_vendor.xml'
+    ): blob_fixup()
+        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
+    'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
+        .add_needed('libhidlbase_shim.so')
+        .add_needed('libbinder_shim.so'),
+    (
+        'vendor/lib64/libqcc_sdk.so', 
+        'vendor/lib64/libqms_xiaomi.so',
+        'vendor/lib64/libqms_client.so',
+        'vendor/bin/qcc-vendor',
+        'vendor/bin/xtra-daemon',
+        'vendor/bin/qms',
+        'vendor/bin/cnd',
+    ): blob_fixup()
+        .add_needed('libbinder_shim.so'),
+    (
+        'vendor/lib64/libdlbdsservice.so',
+        'vendor/lib64/libdlbpreg.so',
+        'vendor/lib64/soundfx/libdlbvol.so',
+        'vendor/lib64/soundfx/libhwdap.so',
+    ): blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .add_needed('libcodec2_shim.so'),
+}  # fmt: skip
 
-# Camera Sensormodules
-vendor/lib64/camera/camx_buildbins
-vendor/lib64/camera/com.qti.sensor.c3f2_king_hi556w_front_ii.so
-vendor/lib64/camera/com.qti.sensor.c3f2_shine_imx852_main_ii.so
-vendor/lib64/camera/com.qti.sensor.c3f2_truly_s5kjns_main_i.so
-vendor/lib64/camera/com.qti.sensor.c3f2_truly_sc520cs_front_i.so
-vendor/lib64/camera/com.qti.sensormodule.c3f2_king_hi556w_front_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.c3f2_shine_imx852_main_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.c3f2_truly_s5kjns_main_i.bin
-vendor/lib64/camera/com.qti.sensormodule.c3f2_truly_sc520cs_front_i.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_king_hi556w_front_ii.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_shine_imx852_main_ii.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_truly_s5kjns_main_i.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_truly_sc520cs_front_i.bin
-vendor/lib64/camera/com.qti.tuned.default.bin
+module = ExtractUtilsModule(
+    'sm8650-common',
+    'xiaomi',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+    check_elf=True,
+)
 
-# Camera
-vendor/lib64/camx.device-impl.so
-vendor/lib64/camx.provider-impl.so
-vendor/lib64/com.qti.chiusecaseselector.so
-vendor/lib64/com.qti.feature2.anchorsync.so
-vendor/lib64/com.qti.feature2.demux.so
-vendor/lib64/com.qti.feature2.derivedoffline.so
-vendor/lib64/com.qti.feature2.frameselect.so
-vendor/lib64/com.qti.feature2.fusion.so
-vendor/lib64/com.qti.feature2.generic.so
-vendor/lib64/com.qti.feature2.gs.cedros.so
-vendor/lib64/com.qti.feature2.gs.kamorta.so
-vendor/lib64/com.qti.feature2.gs.kodiak.so
-vendor/lib64/com.qti.feature2.gs.mannar.so
-vendor/lib64/com.qti.feature2.gs.sdm865.so
-vendor/lib64/com.qti.feature2.gs.sm8350.so
-vendor/lib64/com.qti.feature2.hdr.so
-vendor/lib64/com.qti.feature2.mcreprocrt.so
-vendor/lib64/com.qti.feature2.memcpy.so
-vendor/lib64/com.qti.feature2.mfsr.so
-vendor/lib64/com.qti.feature2.ml.so
-vendor/lib64/com.qti.feature2.mux.so
-vendor/lib64/com.qti.feature2.photosolid.so
-vendor/lib64/com.qti.feature2.qcfa.so
-vendor/lib64/com.qti.feature2.rawhdr.so
-vendor/lib64/com.qti.feature2.realtimeserializer.so
-vendor/lib64/com.qti.feature2.rt.so
-vendor/lib64/com.qti.feature2.rtmcx.so
-vendor/lib64/com.qti.feature2.serializer.so
-vendor/lib64/com.qti.feature2.statsregeneration.so
-vendor/lib64/com.qti.feature2.stub.so
-vendor/lib64/com.qti.feature2.swmf.so
-vendor/lib64/com.qti.settings.kalpeni.so
-vendor/lib64/com.qti.settings.kamorta.so
-vendor/lib64/com.qti.settings.kodiak.so
-vendor/lib64/com.qti.settings.mannar.so
-vendor/lib64/com.qti.settings.sdm865.so
-vendor/lib64/com.qti.settings.sm8350.so
-vendor/lib64/com.qti.stats.common.so
-vendor/lib64/com.qualcomm.mcx.distortionmapper.so
-vendor/lib64/com.qualcomm.mcx.linearmapper.so
-vendor/lib64/com.qualcomm.mcx.policy.mfl.so
-vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
-vendor/lib64/com.xiaomi.plugin.memcpy.so
-vendor/lib64/com.xiaomi.plugin.mfnr.so
-vendor/lib64/com.xiaomi.plugin.mibokeh.so
-vendor/lib64/com.xiaomi.plugin.morphohdr.so
-vendor/lib64/com.xiaomi.plugin.skinbeautifier.so
-vendor/lib64/com.xiaomi.plugin.superlowlight.so
-vendor/lib64/com.xiaomi.plugin.swflip.so
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/libaidenoiser.so
-vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libanc_night.so
-vendor/lib64/libanc_single_bokeh.so
-vendor/lib64/libanc_single_bokeh_rear.so
-vendor/lib64/libanc_single_rt_bokeh.so
-product/lib64/libarcsoft_calibverify_TriCamera.so
-product/lib64/libarcsoft_single_chart_calibration.so
-product/lib64/libarcsoft_tricam_calibration.so
-product/lib64/libarcsoft_tricam_calibration2D.so
-product/lib64/libarcsoft_tricam_verification.so
-vendor/lib64/libbitmlengine.so
-vendor/lib64/libbitmlenginev2.so
-vendor/lib64/libc++_shared.so
-vendor/lib64/libcalculator_htp.so
-vendor/lib64/libcalculator.so
-vendor/lib64/libofflinedump.so
-vendor/lib64/libofflinelog.so
-vendor/lib64/libcamera_scene.so
-vendor/lib64/libcamerapostproc.so
-vendor/lib64/libcamxexternalformatutils.so
-vendor/lib64/libcamxfacialfeatures.so
-vendor/lib64/libcamxfdalgo.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
-vendor/lib64/libcamxqsatalgo.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswispiqmodule.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libchilog.so
-vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcom.xiaomi.metadatautils.so
-vendor/lib64/libcom.xiaomi.pluginutils.so
-vendor/lib64/libfastcrc.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libhdr_stub.so
-vendor/lib64/libhta.so
-vendor/lib64/libipebpsstriping.so
-vendor/lib64/libipebpsstriping170.so
-vendor/lib64/libjpege.so
-vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libmfec.so
-vendor/lib64/libmiracast.so
-vendor/lib64/libmiface.so
-vendor/lib64/libmifpext.so
-vendor/lib64/libMiVideoFilter.so
-vendor/lib64/libmmcamera_bestats.so
-vendor/lib64/libmmcamera_cac3.so
-vendor/lib64/libmmcamera_lscv35.so
-vendor/lib64/libmmcamera_mfnr.so
-vendor/lib64/libmmcamera_mfnr_t4.so
-vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libmorpho_HdrChecker.so
-vendor/lib64/libmorpho_ImageRefiner.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libopencv.so
-vendor/lib64/libopestriping.so
-vendor/lib64/libPlatformValidatorShared.so
-vendor/lib64/libqll10.so
-vendor/lib64/libqllengine.so
-vendor/lib64/libSNPE.so
-vendor/lib64/libSnpeHtpPrepare.so
-vendor/lib64/libSnpeHtpV68Stub.so
-vendor/lib64/libSnpeHtpV69Stub.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libtfestriping.so
-vendor/lib64/libTrueSight.so
-system_ext/lib64/libcameraopt.so
-vendor/lib64/liboemaids_vendor.so
-vendor/lib64/libpolygon.so
-vendor/lib64/libmialgo_ai_vision.so
-vendor/lib64/libmialgo_sd.so
-vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgoengine.so
-vendor/lib64/libmialgoengine2.so
-vendor/lib64/libreffeature.so
-vendor/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
-
-# Displayfeature (configs)
-odm/etc/df_default.xml
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_3.txt
-odm/etc/display/qdcm_calib_data_c3f2_35_02_0d_video_mode_hd_dsi_panel.json
-odm/etc/display/qdcm_calib_data_c3f2_37_02_0b_video_mode_hd_dsi_panel.json
-odm/etc/display/qdcm_calib_data_c3f2_43_02_0a_video_mode_hd_dsi_panel.json
-odm/etc/display/qdcm_calib_data_c3f2_46_03_0c_video_mode_hd_dsi_panel.json
-odm/etc/mdss_dsi_panel_c3f2_35_02_0d_hd_video_mi.xml
-odm/etc/mdss_dsi_panel_c3f2_37_02_0b_hd_video_mi.xml
-odm/etc/mdss_dsi_panel_c3f2_43_02_0a_hd_video_mi.xml
-odm/etc/mdss_dsi_panel_c3f2_46_03_0c_hd_video_mi.xml
-vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/perf_hint_threshold.xml
-vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json
-
-# RIL
-system_ext/framework/mirilhook.jar
-odm/etc/me_config.xml
-
-# Sensors
-vendor/etc/sensors/config/json.lst
-vendor/etc/sensors/config/kalpeni_bu52053nvx_0.json
-vendor/etc/sensors/config/kalpeni_default_sensors.json
-vendor/etc/sensors/config/kalpeni_dynamic_sensors.json
-vendor/etc/sensors/config/kalpeni_dynamic_sensors_template.json
-vendor/etc/sensors/config/kalpeni_fcal_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_irq.json
-vendor/etc/sensors/config/kalpeni_lps22df_0.json
-vendor/etc/sensors/config/kalpeni_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_mtp_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_mtp_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_power_0.json
-vendor/etc/sensors/config/kalpeni_qrd_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_qrd_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_qrd_tmd2725_0.json
-vendor/etc/sensors/config/kalpeni_sx932x_0.json
-vendor/etc/sensors/config/kalpeni_tmd2725_0.json
-vendor/etc/sensors/config/kalpeni_vertigo_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_vertigo_mmc56x3x_0.json
-vendor/etc/sensors/config/sc7a20_0.json
-vendor/etc/sensors/config/sns_amd.json
-vendor/etc/sensors/config/sns_amd_sw_enabled.json
-vendor/etc/sensors/config/sns_aont.json
-vendor/etc/sensors/config/sns_basic_gestures.json
-vendor/etc/sensors/config/sns_bring_to_ear.json
-vendor/etc/sensors/config/sns_ccd_v1_0_amd.json
-vendor/etc/sensors/config/sns_ccd_v1_0_ttw.json
-vendor/etc/sensors/config/sns_ccd_v2_0_walk.json
-vendor/etc/sensors/config/sns_ccd_v3_0_walk.json
-vendor/etc/sensors/config/sns_ccd_v3_1_walk.json
-vendor/etc/sensors/config/sns_ccd_v4_0_sensors.json
-vendor/etc/sensors/config/sns_ccd_v4_0_te_cd_regs.json
-vendor/etc/sensors/config/sns_ccd_v5.json
-vendor/etc/sensors/config/sns_ccd_v5_0_te_cd_regs.json
-vendor/etc/sensors/config/sns_ccd_v5_1_te_cd_regs.json
-vendor/etc/sensors/config/sns_cm.json
-vendor/etc/sensors/config/sns_dae.json
-vendor/etc/sensors/config/sns_device_orient.json
-vendor/etc/sensors/config/sns_diag_filter.json
-vendor/etc/sensors/config/sns_direct_channel.json
-vendor/etc/sensors/config/sns_distance_bound.json
-vendor/etc/sensors/config/sns_dpc.json
-vendor/etc/sensors/config/sns_facing.json
-vendor/etc/sensors/config/sns_flight_md.json
-vendor/etc/sensors/config/sns_fmv.json
-vendor/etc/sensors/config/sns_fmv_legacy.json
-vendor/etc/sensors/config/sns_gyro_cal.json
-vendor/etc/sensors/config/sns_heart_rate.json
-vendor/etc/sensors/config/sns_mag_cal.json
-vendor/etc/sensors/config/sns_mag_cal_legacy.json
-vendor/etc/sensors/config/sns_multishake.json
-vendor/etc/sensors/config/sns_offbody_detect_phone.json
-vendor/etc/sensors/config/sns_pedometer.json
-vendor/etc/sensors/config/sns_psd_disable.json
-vendor/etc/sensors/config/sns_psd_enable.json
-vendor/etc/sensors/config/sns_rmd.json
-vendor/etc/sensors/config/sns_rotv.json
-vendor/etc/sensors/config/sns_smd.json
-vendor/etc/sensors/config/sns_tilt.json
-vendor/etc/sensors/config/sns_tilt_sw_enabled.json
-vendor/etc/sensors/config/sns_tilt_to_wake.json
-vendor/etc/sensors/config/sns_transport_ppe.json
-vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/etc/sensors/config/warm_mir3da_0.json
-vendor/etc/sensors/config/warm_och191x_0.json
-vendor/etc/sensors/config/warm_qmc630x_0.json
-vendor/etc/sensors/config/warm_sc7a20_0.json
-vendor/etc/sensors/config/warm_stk3a8x_0.json
-vendor/etc/sensors/config/warm_stk83xx_0.json
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sns_reg_config
-
-# Touchscreen
-odm/firmware/Conf_MultipleTest.ini
-odm/firmware/focaltech_ts_fw_hkc.bin
-odm/firmware/novatek_ts_fw_boe.bin
-odm/firmware/novatek_ts_fw_txd.bin
-odm/firmware/novatek_ts_fw_xinli.bin
-odm/firmware/novatek_ts_mp_boe.bin
-odm/firmware/novatek_ts_mp_txd.bin
-odm/firmware/novatek_ts_mp_xinli.bin
-
-# Thermal config
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-cclassvideo.conf
-vendor/etc/thermal-cgame.conf
-vendor/etc/thermal-chg-only.conf
-vendor/etc/thermal-class0.conf
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-hp-mgame.conf
-vendor/etc/thermal-hp-normal.conf
-vendor/etc/thermal-huanji.conf
-vendor/etc/thermal-livestream.conf
-vendor/etc/thermal-map.conf
-vendor/etc/thermal-mgame.conf
-vendor/etc/thermal-navigation.conf
-vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-phone.conf
-vendor/etc/thermal-tgame.conf
-vendor/etc/thermal-video.conf
-vendor/etc/thermal-videochat.conf
-vendor/etc/thermald-devices.conf
+if __name__ == '__main__':
+    utils = ExtractUtils.device(module)
+    utils.run()
