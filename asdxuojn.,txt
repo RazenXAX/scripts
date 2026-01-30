@@ -5,7 +5,7 @@
 #
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/sm8650-common/sm8650-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sm4635-common/sm4635-common-vendor.mk)
 
 # Enable virtual AB with vendor ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
@@ -69,10 +69,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audio.primary.pineapple \
+    audio.primary.pitti \
     audio.r_submix.default \
     audio.usb.default \
-    sound_trigger.primary.pineapple
+    sound_trigger.primary.pitti
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
@@ -95,8 +95,8 @@ PRODUCT_PACKAGES += \
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple_qssi/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti_qssi/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
 PRODUCT_COPY_FILES += \
@@ -121,27 +121,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
 # Camera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
-
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2670
-TARGET_SCREEN_WIDTH := 1200
+TARGET_SCREEN_HEIGHT := 1640
+TARGET_SCREEN_WIDTH := 720
 
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
-
-# ContextHub
-PRODUCT_PACKAGES += \
-    com.android.hardware.contexthub
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -152,15 +145,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
     fastbootd
-
-# Fingerprint
-$(call soong_config_set,XIAOMI_BIOMETRICS_FINGERPRINT,USE_NEW_IMPL,true)
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.xiaomi \
-    libudfpshandler
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -208,13 +192,6 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     IPACM_Filter_cfg.xml
 
-# IR Blaster
-PRODUCT_PACKAGES += \
-    android.hardware.ir-service.example
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.consumerir.xml
-
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml
@@ -222,9 +199,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
-
-# Libinit
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_xiaomi_8650)
 
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
@@ -244,16 +218,6 @@ PRODUCT_COPY_FILES += \
 # Network
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
-
-# NFC
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.ese.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.hcef.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.uicc.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.nxp.mifare.xml
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -280,9 +244,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
 PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/power/config/pineapple/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+    vendor/qcom/opensource/power/config/pitti/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
-ifneq ($(filter ruyi manet,$(TARGET_DEVICE)),)
+ifneq ($(filter cold,$(TARGET_DEVICE)),)
 # PowerShare
 $(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/reverse_chg_mode)
 
@@ -296,39 +260,34 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.qcom \
+    fstab.default \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.sensor.accelerometer.xml \
-    frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.sensor.compass.xml \
-    frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.barometer.xml \
-    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.sensor.gyroscope.xml \
-    frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.hifi_sensors.xml \
-    frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.sensor.light.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.sensor.proximity.xml \
-    frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.sensor.stepcounter.xml \
-    frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.sensor.stepdetector.xml
+    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pitti/android.hardware.sensor.accelerometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pitti/android.hardware.sensor.compass.xml \
+    frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pitti/android.hardware.sensor.light.xml \
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pitti/android.hardware.sensor.proximity.xml \
+    frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pitti/android.hardware.sensor.stepcounter.xml \
+    frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pitti/android.hardware.sensor.stepdetector.xml
 
 # Symlink
-$(call soong_config_set,rfs,mpss_firmware_symlink_target,modem_firmware)
+$(call soong_config_set,rfs,mpss_firmware_symlink_target)
 
 PRODUCT_PACKAGES += \
-    rfs_msm_mpss_readonly_mbnconfig_symlink \
     vendor_bt_firmware_mountpoint \
     vendor_dsp_mountpoint \
     vendor_firmware_mnt_mountpoint \
-    vendor_modem_firmware_mountpoint \
     vendor_vm-system_mountpoint
 
 # Vndservice manager
@@ -365,7 +324,6 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
-    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.telephony.mbms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.mbms.xml \
@@ -429,7 +387,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
