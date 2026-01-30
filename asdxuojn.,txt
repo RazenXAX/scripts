@@ -1183,52 +1183,38 @@ vendor/etc/ssg/ta_config.json
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libnative-api.so
+
 # Secure element
-vendor/bin/hw/android.hardware.secure_element-service.qti
-vendor/etc/init/android.hardware.secure_element-service.qti.rc
-vendor/etc/permissions/com.android.se.xml
-vendor/etc/vintf/manifest/android.hardware.secure_element.xml
-vendor/etc/vintf/manifest/secure_element-service.xml
 vendor/lib64/hw/libEseUtils.so
 vendor/lib64/libesesbprovision.so
 vendor/lib64/libtaautoload.so
-vendor/lib64/libGPQeSE.so
-vendor/lib64/libvui_dmgr_client.so
 
 # Secure Processor
 vendor/bin/hw/vendor.qti.hardware.secureprocessor
-vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
 vendor/etc/init/vendor.qti.hardware.secureprocessor.rc
-vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.secureprocessor.xml
 vendor/lib64/vendor.qti.hardware.secureprocessor.common-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common-helper.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
+system/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
+system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.config-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
+system_ext/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.device-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
+system_ext/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
 
 # Sensors
-odm/lib64/libclient2slpi.notifier.so
-odm/lib64/sensors.touch.detect.so
+vendor/lib64/sensors.touch.detect.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
-vendor/etc/init/init.vendor.ins.rc
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.sensorscalibrate.xml
-vendor/etc/sensors/config/chre_dynamic_sensors.json
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sns_reg_config
 vendor/lib64/hw/sensors.dynamic_sensor_hal.so
 vendor/lib64/libqsh.so
-vendor/lib64/libsensor_calibration.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
@@ -1244,17 +1230,7 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.qsh.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate-V1-ndk.so
 
-# SLA
-vendor/bin/slad
-vendor/bin/hw/vendor.qti.sla.service@1.0-service
-vendor/etc/init/slad.rc
-vendor/etc/init/vendor.qti.sla.service@1.0-service.rc
-vendor/etc/sla/slad.conf
-vendor/lib64/vendor.qti.sla.service@1.0-impl.so
-vendor/lib64/vendor.qti.sla.service@1.0.so
-
 # Soter
-mi_ext/product/app/SoterService/SoterService.apk:product/app/SoterService/SoterService.apk
 vendor/bin/vendor.qti.hardware.soter-provision
 vendor/bin/hw/vendor.qti.hardware.soter-service
 vendor/etc/init/vendor.qti.hardware.soter-service.rc
@@ -1267,11 +1243,6 @@ vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 
-# SXR
-vendor/bin/hw/sxrservice
-vendor/etc/seccomp_policy/sxr@2.0.policy
-vendor/lib64/libsxrservice.so
-
 # Thermal
 vendor/lib64/liblmthermallistner.so
 vendor/lib64/libthermalclient.so
@@ -1279,7 +1250,7 @@ vendor/lib64/libthermalclient.so
 # Thermal engine
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine-v2
-vendor/etc/init/hw/init.mi_thermald.rc
+vendor/etc/init/init.mi_thermald.rc
 vendor/etc/init/init_thermal-engine-v2.rc
 
 # Time services
@@ -1295,76 +1266,43 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.trustedui-aidl-service-qti
-vendor/bin/trusteduilistener
-vendor/etc/init/trusteduilistener.rc
 vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.trustedui-aidl-service.xml
 vendor/lib64/libTrustedInputAIDL.so
-vendor/lib64/libTrustedInputUtils.so
 vendor/lib64/libTrustedUIAIDL.so
 vendor/lib64/libcpion.so
 vendor/lib64/libsi.so
 vendor/lib64/libsilkyscrolls.so
 vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so
 
-# Trustzone
-vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
-
-# Uevent
-odm/etc/ueventd.rc;MODULE=ueventd-odm.rc
-
 # Video
 vendor/lib64/libstreamparser.so
-vendor/lib64/libubwcp.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvideotxr.so
 
-# VM mgr
-vendor/bin/vmmgr
-vendor/etc/init/vmmgr.rc
-vendor/etc/vmmgr.conf
-
 # VPP
 vendor/bin/hw/qconfigservice
-vendor/bin/vppservice
-vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/qconfig.rc
-vendor/etc/init/vppservice.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.vpp-service.xml
 vendor/lib64/libqconfigclient.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvppcommon.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvppimmotion.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/libvideodiedobserver_vendor.so
 vendor/lib64/vendor.qti.hardware.qconfig-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.qconfig-V3-ndk.so
-vendor/lib64/vendor.qti.hardware.qconfig-V5-ndk.so
-vendor/lib64/vendor.qti.hardware.vpp-V1-ndk.so
+system_ext/lib64/vendor.qti.hardware.qconfig-V3-ndk.so
+system_ext/lib64/vendor.qti.hardware.qconfig-V4-ndk.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
-
-# VPU firmware
-odm/firmware/vpu33_4v.mbn
-odm/firmware/vpu33_4v_unsigned.mbn
 
 # Widevine DRM
 vendor/apex/com.google.android.widevine.nonupdatable.apex
-vendor/etc/vintf/manifest/android.hardware.drm-service.xml
+vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 
 # WiFi
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
-vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/passpointProfile.conf
-vendor/etc/wifi/vendor_cmd.xml
+vendor/etc/wifi/icm.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/lib64/libWlanServiceJni.so
 
@@ -1378,7 +1316,6 @@ vendor/etc/init/wfdvndservice.rc
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
 vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
-vendor/etc/vintf/manifest/vendor.qti.hardware.wifidisplaysession-service.xml
 vendor/etc/wfdconfig.xml
 vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so
 vendor/lib64/libFileMux_proprietary.so
@@ -1408,6 +1345,3 @@ vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-
-# Xiaomi MAC address
-vendor/bin/nv_mac
