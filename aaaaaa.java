@@ -1,105 +1,505 @@
-zarakinyu@DESKTOP-E35KJB8:~/android_device_xiaomi_warm$ git grep -i DEVICE_PATH
-BoardConfig.mk:DEVICE_PATH := device/xiaomi/warm
-BoardConfig.mk:KERNEL_PATH := $(DEVICE_PATH)-kernel
-BoardConfig.mk:BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-BoardConfig.mk:TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
-BoardConfig.mk:    $(DEVICE_PATH)/hidl/compatibility_matrix.device.xml \
-BoardConfig.mk:DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/hidl/framework_manifest.xml
-BoardConfig.mk:DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
-BoardConfig.mk:    $(DEVICE_PATH)/hidl/manifest_vendor.xml \
-BoardConfig.mk:TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
-BoardConfig.mk:TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
-BoardConfig.mk:TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
-BoardConfig.mk:TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
-BoardConfig.mk:TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
-zarakinyu@DESKTOP-E35KJB8:~/android_device_xiaomi_warm$ git grep -i warm
-AndroidProducts.mk:    $(LOCAL_DIR)/lineage_warm.mk
-BoardConfig.mk:DEVICE_PATH := device/xiaomi/warm
-BoardConfig.mk:TARGET_BOOTLOADER_BOARD_NAME := warm
-BoardConfig.mk:TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_warm
-BoardConfig.mk:include vendor/xiaomi/warm/BoardConfigVendor.mk
-board-info.txt:require board=pitti|warm
-device.mk:    init.warm.rc \
-device.mk:$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_warm)
-device.mk:    ApertureOverlayWarm \
-device.mk:    CarrierConfigOverlayWarm \
-device.mk:    FrameworkOverlayWarm \
-device.mk:    LineageDialerOverlayWarm \
-device.mk:    LineageSDKOverlayWarm \
-device.mk:    LineageSettingsOverlayWarm \
-device.mk:    SettingsOverlayWarm \
-device.mk:    SettingsProviderOverlayWarmPOCO \
-device.mk:    SettingsProviderOverlayWarmRedmi \
-device.mk:    SystemUIOverlayWarm \
-device.mk:    TelephonyOverlayWarm \
-device.mk:    WifiOverlayWarm \
-device.mk:    WifiOverlayWarmPOCO \
-device.mk:    WifiOverlayWarmRedmi
-device.mk:$(call inherit-product, vendor/xiaomi/warm/warm-vendor.mk)
-extract-files.py:    'warm',
-libinit/Android.bp:    name: "libinit_xiaomi_warm",
-libinit/Android.bp:    name: "init_xiaomi_warm",
-libinit/Android.bp:    srcs: ["init_xiaomi_warm.cpp"],
-libinit/Android.bp:    whole_static_libs: ["libinit_xiaomi_warm"],
-libinit/init_xiaomi_warm.cpp:static const variant_info_t warm_info = {
-libinit/init_xiaomi_warm.cpp:    .sku_value = "warm",
-libinit/init_xiaomi_warm.cpp:    .device = "warm",
-libinit/init_xiaomi_warm.cpp:    .build_fingerprint = "Redmi/warm_global/warm:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys"
-libinit/init_xiaomi_warm.cpp:static const variant_info_t warm_p_info = {
-libinit/init_xiaomi_warm.cpp:    .sku_value = "warm_p",
-libinit/init_xiaomi_warm.cpp:    .device = "warm",
-libinit/init_xiaomi_warm.cpp:    .build_fingerprint = "POCO/warm_p_global/warm:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys"
-libinit/init_xiaomi_warm.cpp:    warm_info,
-libinit/init_xiaomi_warm.cpp:    warm_p_info,
-lineage_warm.mk:# Inherit from warm device
-lineage_warm.mk:$(call inherit-product, device/xiaomi/warm/device.mk)
-lineage_warm.mk:PRODUCT_NAME := lineage_warm
-lineage_warm.mk:PRODUCT_DEVICE := warm
-lineage_warm.mk:PRODUCT_SYSTEM_NAME := warm_global
-lineage_warm.mk:PRODUCT_SYSTEM_DEVICE := warm
-lineage_warm.mk:    BuildDesc="warm_global-user 15 AQ3A.241213.002 OS2.0.203.0.VGVINXM release-keys" \
-lineage_warm.mk:    BuildFingerprint=POCO/warm_global/warm:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys \
-overlay/ApertureOverlayWarm/Android.bp:    name: "ApertureOverlayWarm",
-overlay/ApertureOverlayWarm/AndroidManifest.xml:    package="org.lineageos.aperture.warm">
-overlay/CarrierConfigOverlayWarm/Android.bp:    name: "CarrierConfigOverlayWarm",
-overlay/CarrierConfigOverlayWarm/AndroidManifest.xml:    package="com.android.carrierconfig.overlay.warm">
-overlay/FrameworkOverlayWarm/Android.bp:    name: "FrameworkOverlayWarm",
-overlay/FrameworkOverlayWarm/AndroidManifest.xml:    package="android.overlay.warm">
-overlay/LineageDialerOverlayWarm/Android.bp:    name: "LineageDialerOverlayWarm",
-overlay/LineageDialerOverlayWarm/AndroidManifest.xml:    package="com.android.dialer.overlay.warm">
-overlay/LineageSDKOverlayWarm/Android.bp:    name: "LineageSDKOverlayWarm",
-overlay/LineageSDKOverlayWarm/AndroidManifest.xml:    package="lineageos.platform.warm">
-overlay/LineageSettingsOverlayWarm/Android.bp:    name: "LineageSettingsOverlayWarm",
-overlay/LineageSettingsOverlayWarm/AndroidManifest.xml:    package="com.android.settings.lineage.overlay.warm">
-overlay/SettingsOverlayWarm/Android.bp:    name: "SettingsOverlayWarm",
-overlay/SettingsOverlayWarm/AndroidManifest.xml:    package="com.android.settings.overlay.warm">
-overlay/SettingsProviderOverlayWarm/Android.bp:    name: "SettingsProviderOverlayWarmPOCO",
-overlay/SettingsProviderOverlayWarm/Android.bp:    name: "SettingsProviderOverlayWarmRedmi",
-overlay/SettingsProviderOverlayWarm/AndroidManifest-POCO.xml:    package="com.android.settingsproviders.warm.poco">
-overlay/SettingsProviderOverlayWarm/AndroidManifest-Redmi.xml:    package="com.android.settingsproviders.warm.redmi">
-overlay/SystemUIOverlayWarm/Android.bp:    name: "SystemUIOverlayWarm",
-overlay/SystemUIOverlayWarm/AndroidManifest.xml:    package="com.android.systemui.overlay.warm">
-overlay/TelephonyOverlayWarm/Android.bp:    name: "TelephonyOverlayWarm",
-overlay/TelephonyOverlayWarm/AndroidManifest.xml:    package="com.android.phone.overlay.warm">
-overlay/WifiOverlayWarm/Android.bp:    name: "WifiOverlayWarm",
-overlay/WifiOverlayWarm/Android.bp:    name: "WifiOverlayWarmPOCO",
-overlay/WifiOverlayWarm/Android.bp:    name: "WifiOverlayWarmRedmi",
-overlay/WifiOverlayWarm/AndroidManifest-POCO.xml:    package="com.android.wifi.resources.overlay.warm.poco">
-overlay/WifiOverlayWarm/AndroidManifest-Redmi.xml:    package="com.android.wifi.resources.overlay.warm.redmi">
-overlay/WifiOverlayWarm/AndroidManifest.xml:    package="com.android.wifi.resources.overlay.warm">
-proprietary-files.txt:# All unpinned blobs below are extracted from warm OS2.0.203.0.VGVINXM - warm_in_global-ota_full-OS2.0.203.0.VGVINXM
-proprietary-files.txt:vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml:vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service_warm.xml
-proprietary-files.txt:vendor/etc/sensors/config/warm_mir3da_0.json
-proprietary-files.txt:vendor/etc/sensors/config/warm_och191x_0.json
-proprietary-files.txt:vendor/etc/sensors/config/warm_qmc630x_0.json
-proprietary-files.txt:vendor/etc/sensors/config/warm_sc7a20_0.json
-proprietary-files.txt:vendor/etc/sensors/config/warm_stk3a8x_0.json
-proprietary-files.txt:vendor/etc/sensors/config/warm_stk83xx_0.json
-props/odm.prop:ro.product.odm.name=warm_global
-props/system.prop:ro.product.mod_device=warm_global
-rootdir/Android.bp:    name: "init.warm.rc",
-rootdir/Android.bp:    src: "etc/init.warm.rc",
-vendorsetup.sh:git clone https://github.com/POCO-warm/android_vendor_xiaomi_warm -b lineage-23.0 || fatal "Vendor tree clone failed!"
-vendorsetup.sh:git clone https://github.com/POCO-warm/android_device_xiaomi_warm-kernel -b lineage-23.0 device/xiaomi/warm-kernel || fatal "Prebuilt Kernel source clone failed!"
-vendorsetup.sh:git clone https://github.com/POCO-warm/android_hardware_qcom-caf_common -b lineage-23.0 hardware/qcom-caf/common || fatal "Qcom Caf Tree clone failed!"
-(END)
+# Audio
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.video=true
+audio.spatializer.pose_predictor_type=2
+audio.spatializer.prediction_duration_ms=50
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicecomm=true
+persist.audio.fluence.voicerec=false
+persist.vendor.audio.ambisonic.auto.profile=false
+persist.vendor.audio.ambisonic.capture=false
+persist.vendor.audio.apptype.multirec.enabled=false
+persist.vendor.audio.auto.scenario=true
+persist.vendor.audio.avs.afe_api_version=2
+persist.vendor.audio.dolby.disable=false
+persist.vendor.audio.effectimplenter=dolby
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.tmic.enabled=false
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.ha_proxy.enabled=true
+persist.vendor.audio.induce_crash=false
+persist.vendor.audio.ras.enabled=false
+persist.vendor.audio.scheme.acdb=false
+persist.vendor.audio.spatializer.enable=false
+persist.vendor.audio.spv3.enable=true
+persist.vendor.audio.voicecall.speaker.stereo=true
+ro.af.client_heap_size_kbyte=7168
+ro.audio.flinger_standbytime_ms=2000
+ro.audio.monitorRotation=true
+ro.audio.spatializer_enabled=true
+ro.qc.sdk.audio.fluencetype=none
+ro.vendor.audio.aac.para.modify.support=true
+ro.vendor.audio.lowpower.pa.para.support=true
+ro.vendor.audio.product.sleepmonitor.config=true
+ro.qc.sdk.audio.ssr=false
+ro.vendor.audio.karaoke.suppot.lowlatency=true
+ro.vendor.audio.aiasst.support=true
+ro.vendor.audio.btsamplerate.adaptive=true
+ro.vendor.audio.camera.loopback.support=true
+ro.vendor.audio.karaoke.enable=true
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.dax.version=DAX3_3.8.5.20_r1
+ro.vendor.audio.dolby.spatial.profile=dynamic
+ro.vendor.audio.dolby.surround.enable=true
+ro.vendor.audio.dolby.vision.support=true
+ro.vendor.audio.dualadc.support=true
+ro.vendor.audio.feature.fade=true
+ro.vendor.audio.feature.spatial=7
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.game.mode=true
+ro.vendor.audio.multi.channel=true
+ro.vendor.audio.multichannel.5point1=false
+ro.vendor.audio.multichannel.5point1.headset=false
+ro.vendor.audio.multiroute=true
+ro.vendor.audio.record.customized.support=true
+ro.vendor.audio.ring.filter=true
+ro.vendor.audio.sdk.fluencetype=none
+ro.vendor.audio.sdk.ssr=false
+ro.vendor.audio.sfx.earadj=true
+ro.vendor.audio.sfx.scenario=true
+ro.vendor.audio.sos=true
+ro.vendor.audio.soundfx.type=mi
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=77
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=65
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=55
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.lowpower=true
+ro.vendor.audio.soundtrigger.permian=1
+ro.vendor.audio.soundtrigger.snr=-100
+ro.vendor.audio.soundtrigger.sva-7.0=1
+ro.vendor.audio.soundtrigger.wakeupword=3
+ro.vendor.audio.soundtrigger.training.level=50
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=158
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=80
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=80
+ro.vendor.audio.soundtrigger.xanzn.vop.level=41
+ro.vendor.audio.soundtrigger.xatx.cnn.level=79
+ro.vendor.audio.soundtrigger.xatx.gmm.level=60
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=60
+ro.vendor.audio.soundtrigger.xatx.vop.level=37
+ro.vendor.audio.soundtrigger.xiaomievent=1
+ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.spatializer.support.speaker=true
+ro.vendor.audio.support.sound.id=true
+ro.vendor.audio.surround.headphone.only=true
+ro.vendor.audio.videobox.switch=false
+ro.vendor.audio.voice.change.support=true
+ro.vendor.audio.voice.change.version=2
+ro.vendor.audio.voice.voip.holder.support=true
+ro.vendor.audio.triplemic.support=true
+ro.vendor.audio.usb.safe.volume.index.support=true
+ro.vendor.audio.zoom.support=true
+ro.vendor.audio.zoom.type=2
+ro.vendor.audio.voice.change.youme.support=true
+vendor.audio.adm.buffering.ms=2
+vendor.audio.c2.preferred=true
+vendor.audio.compress_capture.aac=true
+vendor.audio.compress_capture.aac.cut_off_freq=24000
+vendor.audio.compress_capture.enabled=true
+vendor.audio.cpu.sched=31
+vendor.audio.cpu.sched.cpus=8
+vendor.audio.cpu.sched.cpuset.af=248
+vendor.audio.cpu.sched.cpuset.at=248
+vendor.audio.cpu.sched.cpuset.hb=254
+vendor.audio.cpu.sched.cpuset.he=248
+vendor.audio.cpu.sched.cpuset.hso=248
+vendor.audio.cpu.sched.onlyfast=false
+vendor.audio.dolby.control.support=true
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+vendor.audio.enable.mirrorlink=false
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.afe_proxy.enable=true
+vendor.audio.feature.anc_headset.enable=false
+vendor.audio.feature.audiozoom.enable=false
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.compr_cap.enable=false
+vendor.audio.feature.compr_voip.enable=false
+vendor.audio.feature.compress_in.enable=true
+vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.concurrent_capture.enable=true
+vendor.audio.feature.custom_stereo.enable=true
+vendor.audio.feature.deepbuffer_as_primary.enable=false
+vendor.audio.feature.display_port.enable=true
+vendor.audio.feature.dmabuf.cma.memory.enable=false
+vendor.audio.feature.dsm_feedback.enable=false
+vendor.audio.feature.dynamic_ecns.enable=true
+vendor.audio.feature.ext_hw_plugin.enable=false
+vendor.audio.feature.external_dsp.enable=false
+vendor.audio.feature.external_speaker_tfa.enable=false
+vendor.audio.feature.external_speaker.enable=false
+vendor.audio.feature.fluence.enable=true
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.hdmi_edid.enable=true
+vendor.audio.feature.hdmi_passthrough.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.hifi_audio.enable=false
+vendor.audio.feature.hwdep_cal.enable=false
+vendor.audio.feature.incall_music.enable=true
+vendor.audio.feature.keep_alive.enable=true
+vendor.audio.feature.kpi_optimize.enable=true
+vendor.audio.feature.maxx_audio.enable=false
+vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.ras.enable=true
+vendor.audio.feature.record_play_concurency.enable=false
+vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.src_trkn.enable=true
+vendor.audio.feature.ssrec.enable=true
+vendor.audio.feature.usb_offload.enable=true
+vendor.audio.feature.usb_offload_burst_mode.enable=true
+vendor.audio.feature.usb_offload_sidetone_volume.enable=false
+vendor.audio.feature.vbat.enable=true
+vendor.audio.feature.wsa.enable=false
+vendor.audio.flac.sw.decoder.24bit=true
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.hal.output.suspend.supported=true
+vendor.audio.hdr.record.enable=false
+vendor.audio.hw.aac.encoder=false
+vendor.audio.mic.status=off
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.offload.multiaac.enable=true
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.offload.passthrough=false
+vendor.audio.offload.playspeed=true
+vendor.audio.offload.track.enable=true
+vendor.audio.parser.ip.buffer.size=262144
+vendor.audio.rt.mode=19
+vendor.audio.rt.mode.onlyfast=false
+vendor.audio.safx.pbe.enabled=false
+vendor.audio.spkcal.copy.inhal=true
+vendor.audio.tunnel.encode=false
+vendor.audio.ull_record_period_multiplier=2
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.in_period_size=144
+vendor.audio_hal.period_multiplier=3
+vendor.audio_hal.period_size=192
+vendor.qc2audio.per_frame.flac.dec.enabled=true
+vendor.qc2audio.suspend.enabled=true
+vendor.voice.path.for.pcm.voip=true
+
+# Battery
+persist.vendor.battery.health=true
+
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+bluetooth.hardware.power.idle_cur_ma=4
+bluetooth.hardware.power.operating_voltage_mv=4000
+bluetooth.hardware.power.rx_cur_ma=18
+bluetooth.hardware.power.tx_cur_ma=33
+bluetooth.hfp.codec_aptx_voice.enabled=true
+bluetooth.profile.bap.broadcast.assist.enabled=true
+bluetooth.profile.bap.broadcast.source.enabled=true
+bluetooth.profile.bap.unicast.client.enabled=true
+bluetooth.profile.vcp.controller.enabled=true
+bluetooth.profile.csip.set_coordinator.enabled=true
+bluetooth.profile.mcp.server.enabled=true
+bluetooth.profile.ccp.server.enabled=true
+bluetooth.profile.hap.client.enabled=true
+bluetooth.profile.bap.broadcast.assist.enabled=true
+bluetooth.profile.bap.broadcast.source.enabled=true
+bluetooth.profile.bap.unicast.client.enabled=true
+bluetooth.profile.vcp.controller.enabled=true
+bluetooth.profile.csip.set_coordinator.enabled=true
+bluetooth.profile.mcp.server.enabled=true
+bluetooth.profile.ccp.server.enabled=true
+bluetooth.profile.hap.client.enabled=true
+persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-lhdc
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-lhdc
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.vendor.qcom.bluetooth.lossless_aptx_adaptive_le.enabled=true
+persist.vendor.qcom.bluetooth.dualmode_transport_support=true
+ro.bluetooth.a2dp_offload.supported=true
+
+# Camera
+camera.disable_zsl_mode=true
+ro.camera.enableCamera1MaxZsl=1
+ro.camerax.extensions.enabled=true
+debug.config.video.p3.encode.support=true
+debug.config.video.p3.decode.support=true
+
+# Chipset
+ro.soc.manufacturer=QTI
+
+# Displayfeature
+persist.sys.sf.native_mode=258
+vendor.mi_sf.enable_second_refresh_rate_overlay=1
+sys.rhythmic_mode_default_level=50
+sys.displayfeature.entry.enable=true
+sys.displayfeature_hidl=false
+ro.vendor.xiaomi.bl.poll=true
+ro.vendor.video_box.version=2
+ro.vendor.thermal.dimming.enable=true
+ro.vendor.standard.video.enable=true
+ro.vendor.sre.enable=true
+ro.vendor.soft_backlight.enable=true
+ro.vendor.mi_sf.support_gradient_idleframerate=true
+ro.vendor.mi_sf.support_barrage_recogn_althm=true
+ro.vendor.mi_sf.support_aidl_display_config=true
+ro.vendor.mi_sf.set_gradient_idle_timer_ms=50000
+ro.vendor.mi_sf.ltpo.support=true
+ro.vendor.mi_sf.enable_automode_for_maxfps_setting=true
+ro.vendor.mi_sf.aod_mode_ddic_refresh_rate=10
+ro.vendor.localhbm.enable=true
+ro.vendor.histogram.enable=true
+ro.vendor.hbm_backlight.enable=true
+ro.vendor.gcp.enable=1
+ro.vendor.fps.switch.thermal=true
+ro.vendor.fps.switch.default=true
+ro.vendor.display.video_or_camera_fps.support=true
+ro.vendor.display.update_dbi_by_temperature=true
+ro.vendor.display.type=oled
+ro.vendor.display.touch.idle.enable=true
+ro.vendor.display.set_fps_stat_timer_ms=250
+ro.vendor.display.nature_mode.enable=true
+ro.vendor.display.mi_calib.enable=true
+ro.vendor.display.kernel_recoder_enable=false
+ro.vendor.display.idle_default_fps=60
+ro.vendor.display.fod_monitor_default_fps=120
+ro.vendor.display.dynamic_refresh_rate=120,90,60,30:100,60,5
+ro.vendor.display.dolbyvision.support=true
+ro.vendor.display.default_fps=60
+ro.vendor.display.ai_disp.enable=true
+ro.vendor.colorpick_adjust=true
+ro.vendor.cabc.enable=false
+ro.vendor.beluga.t=0x240
+ro.vendor.beluga.s=0x900
+ro.vendor.beluga.p=0x3
+ro.vendor.beluga.c=0x4800
+ro.vendor.bcbc.enable=true
+ro.vendor.all_modes.colorpick_adjust=true
+persist.vendor.dc_backlight.threshold=0
+persist.vendor.dc_backlight.enable=false
+debug.sf.set_idle_timer_ms=110
+
+# Display
+ro.vendor.displayfeature.dump=true
+ro.vendor.display.standard_d75_enable=true
+vendor.display.boost_cpu_layer_number_threshold=10
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_excl_rect=0
+vendor.display.disable_get_screen_decorator_support=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.disable_sdr_dimming=1
+vendor.display.disable_sdr_histogram=1
+vendor.display.disable_stc_dimming=1
+vendor.display.enable_async_powermode=0
+vendor.display.enable_async_vds_creation=1
+vendor.display.enable_display_extensions=1
+vendor.display.enable_dpps_dynamic_fps=1
+vendor.display.enable_early_wakeup=1
+vendor.display.enable_hdr10_gpu_target=1
+vendor.display.enable_optimize_refresh=0
+vendor.display.enable_rc_support=1
+vendor.display.scaling_dest_opt_mode=4
+vendor.display.scaling_source_opt_mode=4
+vendor.display.use_smooth_motion=0
+vendor.display.vds_allow_hwc=1
+
+# Dolby
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.dax.version=DAX3_3.8.5.20_r1
+ro.vendor.audio.dolby.surround.enable=true
+ro.vendor.audio.dolby.vision.support=true
+ro.vendor.audio.feature.spatial=7
+
+# DPM
+persist.vendor.dpm.vndr.idletimer.mode=default
+persist.vendor.dpm.vndr.halservice.enable=1
+persist.vendor.dpm.vndr.feature=1
+
+# DRM
+drm.service.enabled=true
+vendor.wv.oemcrypto.debug.enable_prov40=true
+
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+vendor.gatekeeper.is_security_level_spu=0
+
+# GNSS
+persist.backup.ntpServer=0.pool.ntp.org
+
+# Graphics
+debug.graphics.game_default_frame_rate.disabled=true
+debug.egl.hw=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.enable_gl_backpressure=1
+debug.sf.late.app.duration=13666666
+debug.sf.early.app.duration=13666666
+debug.sf.earlyGl.app.duration=13666666
+debug.sf.early.sf.duration=10500000
+debug.sf.earlyGl.sf.duration=10500000
+debug.sf.late.sf.duration=10500000
+debug.sf.hw=0
+debug.sf.predict_hwc_composition_strategy=0
+debug.sf.treat_170m_as_sRGB=1
+graphics.gpu.profiler.support=true
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.pineapple.api34
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.supports_background_blur=1
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.vendor.all_modes.colorpick_adjust=true
+vendor.gralloc.disable_ubwc=0
+
+# Haptics
+sys.haptic.alert=8,2
+sys.haptic.boundary_spatial=0,2
+sys.haptic.boundary_time=1,2
+sys.haptic.button_large=2,2
+sys.haptic.button_middle=3,2
+sys.haptic.button_small=4,2
+sys.haptic.down.normal=2
+sys.haptic.down.strong=5
+sys.haptic.down.weak=0
+sys.haptic.down=5,2
+sys.haptic.dynamiceffect.richtap.version=2.0
+sys.haptic.dynamiceffect.richtap=true
+sys.haptic.dynamiceffect=true
+sys.haptic.flick.light=7,2
+sys.haptic.flick=5,2
+sys.haptic.gear_heavy=6,2
+sys.haptic.gear_light=5,2
+sys.haptic.hold=4,0
+sys.haptic.infinitelevel=true
+sys.haptic.intensityforkeyboard=true
+sys.haptic.keyboard=7,2
+sys.haptic.long.press=0,1
+sys.haptic.mesh.heavy=8,2
+sys.haptic.mesh.light=5,1
+sys.haptic.mesh.normal=5,2
+sys.haptic.motor=linear
+sys.haptic.pickup=2,2
+sys.haptic.popup.light=6,1
+sys.haptic.popup.normal=6,2
+sys.haptic.runin=13
+sys.haptic.scroll.edge=7,0
+sys.haptic.switch=9,2
+sys.haptic.tap.light=5,2
+sys.haptic.tap.normal=3,2
+sys.haptic.trigger.drawer=2,0
+sys.haptic.version=2.0
+sys.haptic.zaxis_switch=9,2
+sys.rhythmic_mode_default_level=50
+
+# Incremental
+ro.incremental.enable=yes
+
+# Keystore
+ro.hardware.keystore_desede=true
+ro.crypto.metadata_init_delete_all_keys.enabled=true
+
+# Media
+debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=0
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.mediaserver.64b.enable=true
+vendor.mm.enable.qcom_parser=16777215
+
+# Partition
+ro.product.property_source_order=odm,vendor,product,system_ext,system
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf-hal.ver=3.0
+ro.vendor.perf.scroll_opt=1
+
+# QCOM
+persist.vendor.qcomsysd.enabled=1
+
+# QFP
+persist.vendor.qfp=true
+
+# QSPM
+ro.vendor.qspm.enable=true
+
+# Radio
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.multisim.config=dsds
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.dynamic_sar=1
+persist.vendor.radio.ecc_cloud=true
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.sib16_support=1
+ro.telephony.default_network=33,33
+
+# RCS
+persist.vendor.rcs.singlereg.feature=1
+
+# USB
+sys.usb.mtp.batchcancel=1
+vendor.usb.rndis.func.name=gsi
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.controller=a600000.dwc3
+vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.diag.func.name=ffs
+vendor.usb.use_ffs_mtp=1
+vendor.usb.use_gadget_hal=1
+
+# VCB
+persist.vendor.vcb.ability=true
+persist.vendor.vcb.enable=false
+
+# WiFi
+ro.vendor.net.enable_dual_wifi=1
+ro.vendor.net.enable_passpoint_r1=1
+wifi.aware.interface=wifi-aware0
