@@ -794,9 +794,7 @@ system_ext/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
 
 # Charger
-vendor/bin/batterysecret
 vendor/etc/charger_fw_fstab.qti
-vendor/etc/init/hw/init.batterysecret.rc
 
 # Init
 vendor/etc/init/hw/init.qcom.factory.rc
@@ -804,77 +802,9 @@ vendor/etc/init/hw/init.qcom.rc
 vendor/etc/init/hw/init.target.rc
 
 # Computer vision
-vendor/etc/eva/facedetection/bias.dat
-vendor/etc/eva/facedetection/weight.dat
-vendor/etc/eva/facelandmark/bias_1_1.dat
-vendor/etc/eva/facelandmark/bias_1_2.dat
-vendor/etc/eva/facelandmark/bias_2.dat
-vendor/etc/eva/facelandmark/bias_3_1.dat
-vendor/etc/eva/facelandmark/bias_3_2.dat
-vendor/etc/eva/facelandmark/weight_1_1.dat
-vendor/etc/eva/facelandmark/weight_1_2.dat
-vendor/etc/eva/facelandmark/weight_2.dat
-vendor/etc/eva/facelandmark/weight_3_1.dat
-vendor/etc/eva/facelandmark/weight_3_2.dat
-vendor/etc/eva/itof/tuning_params_sensor_type_1.json
-vendor/lib64/libcv_common.so
-vendor/lib64/libeva.so
-vendor/lib64/libeva_util.so
-vendor/lib64/libfastcrc.so
-vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
+vendor/lib64/libfastcrc.so
 vendor/lib64/libvideoutils.so
-
-# Computer vision firmware
-odm/firmware/evass-lt.b00
-odm/firmware/evass-lt.b01
-odm/firmware/evass-lt.b02
-odm/firmware/evass-lt.b03
-odm/firmware/evass-lt.b04
-odm/firmware/evass-lt.b05
-odm/firmware/evass-lt.b06
-odm/firmware/evass-lt.b07
-odm/firmware/evass-lt.b08
-odm/firmware/evass-lt.b09
-odm/firmware/evass-lt.b10
-odm/firmware/evass-lt.b11
-odm/firmware/evass-lt.b12
-odm/firmware/evass-lt.b13
-odm/firmware/evass-lt.b14
-odm/firmware/evass-lt.b15
-odm/firmware/evass-lt.b16
-odm/firmware/evass-lt.b17
-odm/firmware/evass-lt.b18
-odm/firmware/evass-lt.b19
-odm/firmware/evass-lt.mbn
-odm/firmware/evass-lt.mdt
-odm/firmware/evass.b00
-odm/firmware/evass.b01
-odm/firmware/evass.b02
-odm/firmware/evass.b03
-odm/firmware/evass.b04
-odm/firmware/evass.b05
-odm/firmware/evass.b06
-odm/firmware/evass.b07
-odm/firmware/evass.b08
-odm/firmware/evass.b09
-odm/firmware/evass.b10
-odm/firmware/evass.b11
-odm/firmware/evass.b12
-odm/firmware/evass.b13
-odm/firmware/evass.b14
-odm/firmware/evass.b15
-odm/firmware/evass.b16
-odm/firmware/evass.b17
-odm/firmware/evass.b18
-odm/firmware/evass.b19
-odm/firmware/evass.mbn
-odm/firmware/evass.mdt
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
