@@ -242,19 +242,6 @@ vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libmasc.so
-vendor/lib64/libnspdependency.so
-vendor/lib64/libnspdescriptorhandler.so
-vendor/lib64/libnspdiag.so
-vendor/lib64/libnspextensionloader.so
-vendor/lib64/libnspframework.so
-vendor/lib64/libnspframeworkcoreutility.so
-vendor/lib64/libnspgraphing.so
-vendor/lib64/libnspipc.so
-vendor/lib64/libnsposal.so
-vendor/lib64/libnspresource.so
-vendor/lib64/libnspscheduler.so
-vendor/lib64/libnspsession.so
-vendor/lib64/libnsptransaction.so
 vendor/lib64/libqms.so
 vendor/lib64/libqms_client.so
 vendor/lib64/libshsc.so
@@ -288,8 +275,6 @@ vendor/lib64/vendor.qti.latency@2.2.so
 vendor/lib64/vendor.qti.latencyaidlservice-V1-ndk.so
 
 # CNE Configs
-vendor/etc/cne/mwqem.conf
-vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -319,6 +304,8 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml
+vendor/etc/cne/mwqem.conf
+vendor/etc/cne/profileMwqem.xml
 
 # Camera
 odm/bin/hw/vendor.qti.camera.provider-service_64
