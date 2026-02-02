@@ -90,33 +90,20 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=false
 bluetooth.profile.vcp.controller.enabled=false
 persist.bluetooth.a2dp_offload.disabled=false
-persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
-persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
-persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
-persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
 camera.disable_zsl_mode=true
-ro.camera.enableCamera1MaxZsl=1
-ro.camerax.extensions.enabled=false
 
 # DPM
-persist.vendor.dpm.vndr.feature=1
+persist.vendor.dpm.vndr.feature=11
 persist.vendor.dpm.vndr.halservice.enable=1
-persist.vendor.dpm.vndr.idletimer.mode=default
 
 # DRM
 drm.service.enabled=true
-vendor.wv.oemcrypto.debug.enable_hlos_data_path=true
-vendor.wv.oemcrypto.debug.enable_prov40=true
-
-# Fingerprint
-persist.vendor.fingerprint.type=udfps_optical
-persist.vendor.fingerprint.sensor_location=610|2437|105
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -128,7 +115,6 @@ persist.sys.fuse.passthrough.enable=true
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
-debug.angle.feature_overrides_enabled=preferLinearFilterForYUV:mapUnspecifiedColorSpaceToPassThrough
 debug.egl.hw=0
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=0
@@ -146,15 +132,15 @@ debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_phase_offsets_as_durations=1
 graphics.gpu.profiler.support=true
-persist.sys.sf.color_mode=0
+persist.sys.sf.color_mode=7
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 ro.surface_flinger.clear_slots_with_set_layer_buffer=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=false
+ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
@@ -164,7 +150,7 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.displayfeature.dump=true
-vendor.display.comp_mask=0
+vendor.display.comp_mask=2
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_get_screen_decorator_support=1
@@ -172,57 +158,34 @@ vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_idle_scaling_layers=1
 vendor.display.disable_offline_rotator=1
 vendor.display.disable_scaler=0
-vendor.display.disable_sdr_dimming=1
+vendor.display.disable_sdr_dimming=0
 vendor.display.disable_sdr_histogram=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
 vendor.display.enable_dpps_dynamic_fps=1
 vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=0
-vendor.display.force_lm_to_fb_config=1
-vendor.display.reserved_writeback_config=1
-vendor.display.scaling_dest_opt_mode=4
-vendor.display.scaling_source_opt_mode=4
 vendor.display.vds_allow_hwc=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.enable_logs=0
 debug.sf.set_idle_timer_ms=1100
-persist.vendor.dc_backlight.enable=false
-ro.vendor.display.adaptive_hdr.enable=true
-ro.vendor.display.ai_disp.enable=false
-ro.vendor.display.bl_lut_calib.enable=false
-ro.vendor.display.darkmode_dither.enable=true
-ro.vendor.display.dobly_dpu.enable=true
-ro.vendor.display.kernel_recoder_enable=false
-ro.vendor.display.mi_calib.enable=true
-ro.vendor.display.nature_mode.enable=false
-ro.vendor.display.standard_d75_enable=true
-ro.vendor.display.update_dbi_by_temperature=true
 ro.vendor.histogram.enable=true
-ro.vendor.localhbm.enable=true
-ro.vendor.sre.enable=true
+ro.vendor.localhbm.enable=false
+ro.vendor.sre.enable=false
 sys.displayfeature.entry.enable=true
-vendor.display.boost_cpu_layer_number_threshold=10
 vendor.display.disable_3d_adaptive_tm=1
 vendor.display.disable_cwb_idle_fallback=1
-vendor.display.disable_llcc_during_aod=1
 vendor.display.disable_sdr_dimming=0
 vendor.display.disable_stc_dimming=1
 vendor.display.force_tonemapping=1
-vendor.display.idle_time=80
-vendor.display.multi_display_boost_cpu=1
-vendor.display.support_function_timer=0
-
-# Thermal
-persist.vendor.tracking.dfs=true
+vendor.display.idle_time=0
 
 # Incremental
 ro.incremental.enable=yes
 
 # Keymaster
-ro.crypto.metadata_init_delete_all_keys.enabled=true
+ro.crypto.metadata_init_delete_all_keys.enabled=false
 ro.hardware.keystore_desede=true
-vendor.gatekeeper.disable_spu=true
 vendor.gatekeeper.is_security_level_spu=0
 
 # SSR
@@ -230,14 +193,12 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Media
 debug.stagefright.c2inputsurface=-1
-ro.odm.build.media_performance_class=0
-ro.vendor.media_performance_class=0
 
 # Media configs
-ro.media.xml_variant.profiles=_cliffs_v0
+ro.media.xml_variant.profiles=_pitti
 vendor.mm.target.enable.qcom_parser=524304
-vendor.media.target_variant=_cliffs_v0
-vendor.netflix.bsp_rev=Q8635-38577-1
+vendor.media.target_variant=_pitti
+vendor.netflix.bsp_rev=Q4635-39508-1
 
 # Power
 ro.vendor.extension_library=libqti-perfd-client.so
@@ -246,7 +207,7 @@ ro.vendor.perf.scroll_opt=1
 
 # QCOM
 ro.soc.manufacturer=QTI
-ro.soc.model=SM8635
+ro.soc.model=SM4635
 
 # QCOMsysD
 persist.vendor.qcomsysd.enabled=1
@@ -259,7 +220,7 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.sib16_support=1
-persist.vendor.rcs.singlereg.feature=1
+persist.vendor.rcs.singlereg.feature=0
 ro.com.android.dataroaming=true
 ro.vendor.radio.build_profile=miui
 ro.vendor.radio.build_region=global
@@ -268,19 +229,16 @@ ro.telephony.default_network=33,33
 # Sensors
 ro.vendor.sensors.xiaomi.double_tap=true
 ro.vendor.sensors.xiaomi.single_tap=true
-ro.vendor.sensors.xiaomi.udfps=true
-persist.vendor.sensor.mischeck=true
-persist.vendor.debug.collision.dfx=true
 
 # SKU
-ro.boot.product.vendor.sku=cliffs
+ro.boot.product.vendor.sku=pitti
 
 # USB
 ro.recovery.usb.adb.pid=D001
 ro.recovery.usb.fastboot.pid=4EE0
 ro.recovery.usb.vid=18D1
 sys.usb.mtp.batchcancel=1
-vendor.usb.controller=a600000.dwc3
+vendor.usb.controller=4e00000.dwc3
 vendor.usb.diag.func.name=ffs
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss_sw
@@ -291,10 +249,6 @@ vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=1
 
 # Volume
-ro.config.alarm_vol_steps=15
-ro.config.media_vol_default=10
-ro.config.media_vol_steps=15
-ro.config.system_vol_steps=15
 ro.config.vc_call_vol_steps=11
 
 # WLAN
