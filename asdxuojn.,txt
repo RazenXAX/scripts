@@ -828,12 +828,9 @@ vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so
 vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
 
 # DRM
-odm/lib64/com.qti.qseeaon.so
-odm/lib64/com.qti.qseeutils.so
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecom_sample_client
 vendor/bin/qseecomd
-vendor/bin/qwes_cli
 vendor/bin/ssgqmigd64
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
@@ -851,7 +848,6 @@ vendor/lib64/libdrmutils.so
 vendor/lib64/libgpt.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
-vendor/lib64/libqwes.so
 vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
@@ -869,38 +865,11 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# DSP modules
-odm/lib64/rfs/dsp/libapn_dsp_skel.so
-odm/lib64/rfs/dsp/libbitml_nsp_75na_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libbitml_nsp_75na_skel.so
-odm/lib64/rfs/dsp/libhdr_skel.so
-odm/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so
-vendor/lib64/rfs/dsp/libQ6MSFR_manager_skel.so
-vendor/lib64/rfs/dsp/libVppAisQnnHtp.so
-vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so
-vendor/lib64/rfs/dsp/libdpp_engine_skel.so
-vendor/lib64/rfs/dsp/libdspCV_skel.so
-vendor/lib64/rfs/dsp/libevadsp.so
-vendor/lib64/rfs/dsp/libfastcvadsp.so
-vendor/lib64/rfs/dsp/libfastcvdsp_skel.so
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
-vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so
-vendor/lib64/rfs/dsp/libscveT2T_skel.so
-vendor/lib64/rfs/dsp/libvpp_ais.so
-vendor/lib64/rfs/dsp/libvpp_ais_networks.so
-vendor/lib64/rfs/dsp/libvpp_frc.so
-vendor/lib64/rfs/dsp/libvpp_svc_skel.so
-vendor/lib64/rfs/dsp/libvpp_vqa_networks.so
-vendor/lib64/rfs/dsp/libvpt_action_recognition.so
-vendor/lib64/rfs/dsp/libworker_pool.so
-
 # Diag
-system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
-vendor/bin/vendor.qti.diag.sh
-vendor/etc/init/vendor.qti.diag_userdebug.rc
+vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/libdiagjni.so
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
@@ -912,15 +881,10 @@ vendor/etc/display/DPU870.xml
 vendor/etc/display/DPU9__.xml
 
 # Display (HDR)
-odm/lib64/libhdr_stub.so
+vendor/lib64/libhdr_stub.so
 vendor/lib64/libgame_enhance.so
 vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdr_tm.so
-
-# Display (HDR dynamic)
-vendor/lib64/libhdrdynamic.so
-vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libhdrvivid.so
 
 # Display (HWC)
 vendor/bin/hw/vendor.qti.hardware.display.allocator-service
@@ -934,7 +898,7 @@ vendor/etc/init/vendor.qti.hardware.display.demura-service.rc
 vendor/etc/snapdragon_color_libs_config.xml
 vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml:vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service_peridot.xml
+vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml:vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service_warm.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.display.demura-service.xml
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/libbacklight-calib.so
@@ -963,7 +927,7 @@ vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
+system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
 
 # Display (SDM)
 vendor/etc/clstc_config_library.xml
@@ -988,10 +952,8 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libvmfilexfer.so
 
 # Display (Postprocessing)
-vendor/bin/feature_enabler_client
 vendor/bin/hw/vendor.qti.hardware.display.color-service
 vendor/bin/ppd
-vendor/etc/init/feature_enabler_client.rc
 vendor/etc/init/vendor.qti.hardware.display.color-service.rc
 vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0.so
