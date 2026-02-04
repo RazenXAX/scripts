@@ -1,20 +1,20 @@
-.
-├── charger_fw_fstab.qti
-├── gpfspath_oem_config.xml
-├── init
-│   ├── android.hardware.gatekeeper@1.0-service-qti.rc
-│   ├── android.hardware.health-service.qti.rc
-│   ├── android.hardware.security.keymint-service-qti.rc
-│   ├── qseecomd.rc
-│   └── ssgtzd.rc
-├── ssg
-│   ├── ta_config.json
-│   └── tz_whitelist.json
-├── ueventd.rc
-└── vintf
-    ├── manifest
-    │   ├── android.hardware.boot.xml
-    │   ├── android.hardware.health-service.qti.xml
-    │   ├── android.hardware.security.keymint-service-qti-rkp.xml
-    │   └── vendor.qti.hardware.qseecom@1.0-service.xml
-    └── manifest.xml
+# DRM
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+vendor/bin/qseecom_sample_client
+vendor/bin/qseecomd
+vendor/etc/init/qseecomd.rc
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
+vendor/etc/gpfspath_oem_config.xml
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libcpion.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libseclog.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libops.so
+vendor/lib64/libqisl.so
+vendor/lib64/librpmb.so
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
