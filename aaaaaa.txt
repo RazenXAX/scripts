@@ -1,21 +1,52 @@
 # All unpinned blobs below are extracted from peridot OS2.0.204.0.VNPMIXM - peridot_global-ota_full-OS2.0.204.0.VNPMIXM
 
 # ACDB
-odm/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb
-odm/etc/acdbdata/Fluence/foursemi/Fluence_acdb_cal_fs.acdb
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
+vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd
+vendor/etc/acdbdata/ffv_models/ffv__5.0.2_0.1__3.0.0_0.0__eai_3.5_adsp.pmd
+vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd
+vendor/etc/acdbdata/ffv_models/ffv__7.0.1_0.1__eai_3.4_enpu_v4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.6_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.7_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.6.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.6.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.12_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.12_0.0__3.0.0_0.0__eai_1.43_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_1.43_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
+vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd
-
-# ACDB - PERIDOTGlobal_OS1.0.5.0.UNPMIXM
-vendor/etc/acdbdata/nn_ns_models/fai__11.0.1.6_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd|49656664a15a6b4203a21bdb45820d3b2cb32207
+vendor/etc/acdbdata/pitti_idp/IDP_acdb_cal.acdb
+vendor/etc/acdbdata/pitti_idp/IDP_workspaceFileXml.qwsp
+vendor/etc/acdbdata/pitti_qrd/QRD_acdb_cal.acdb
+vendor/etc/acdbdata/pitti_qrd/QRD_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
@@ -24,70 +55,29 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libvmmem.so
 
 # ADSP modules
-odm/lib/rfsa/adsp/capi_elus_rx.so
-odm/lib/rfsa/adsp/capi_elus_tx.so
-odm/lib/rfsa/adsp/libCalculator_skel.so;SYMLINK=vendor/lib/rfsa/adsp/libCalculator_skel.so
-odm/lib/rfsa/adsp/libQnnHtpV73.so
-odm/lib/rfsa/adsp/libQnnHtpV73QemuDriver.so
-odm/lib/rfsa/adsp/libQnnHtpV73Skel.so
-odm/lib/rfsa/adsp/libQnnHtpV75.so
-odm/lib/rfsa/adsp/libQnnHtpV75Skel.so
-odm/lib/rfsa/adsp/libQnnSaver.so
-odm/lib/rfsa/adsp/libQnnSystem.so
-odm/lib/rfsa/adsp/libSnpeHtpV75Skel.so;SYMLINK=vendor/lib/rfsa/adsp/libSnpeHtpV75Skel.so
-odm/lib/rfsa/adsp/libadsp_jpege_skel.so
-odm/lib/rfsa/adsp/libarc_htp_driver_skel.so
-odm/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so
-odm/lib/rfsa/adsp/libbitml_nsp_skel.so
-odm/lib/rfsa/adsp/libdsp_streamer_binning.so
-odm/lib/rfsa/adsp/libhme_dsp_skel.so
-odm/lib/rfsa/adsp/libmctfengine_skel.so
-odm/lib/rfsa/adsp/libmialgo_ai_process_cdsp_skel.so
-odm/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so
-odm/lib/rfsa/adsp/libmialgo_bokeh_depth_cdsp_skel.so
-odm/lib/rfsa/adsp/libmialgo_bokeh_effect_cdsp_skel.so
-odm/lib/rfsa/adsp/libmialgo_ell_cdsp_skel.so
-odm/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so
-odm/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
-odm/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so
-odm/mount/camera/lib/rfsa/adsp/libSnpeHtpV73Skel.so:vendor/lib/rfsa/adsp/libSnpeHtpV73Skel.so
-odm/mount/camera/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so:vendor/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so
-vendor/lib/rfsa/adsp/chre_qsh_shim.so
-vendor/lib/rfsa/adsp/libDspIOProxy_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so
-vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so
-vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so
-vendor/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so
-vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so
-vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so
-vendor/lib/rfsa/adsp/libtracker_6dof_skel_8450.so
-vendor/lib/rfsa/adsp/nearby.napp_header;MODULE_SUFFIX=.napp_header
-vendor/lib/rfsa/adsp/nearby.so
-
-# ANT+
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so
+vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
+vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
+vendor/lib/rfsa/adsp/libcalculator_skel.so
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
+vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
+vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
+vendor/lib/rfsa/adsp/misound_res_headphone.bin
+vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio configs
-odm/etc/audio/sku_cliffs/adsp_sleep_monitor.conf
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_cliffs_mtp.xml
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_dynamic.xml
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_static.xml
-odm/etc/audio/sku_cliffs/foursemi/resourcemanager_cliffs_mtp.xml
-odm/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp.xml
-odm/etc/audio/sku_cliffs/mixer_paths_overlay_dynamic.xml
-odm/etc/audio/sku_cliffs/mixer_paths_overlay_static.xml
-odm/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp.xml
-odm/etc/backend_conf.xml
-odm/etc/backend_conf_fs.xml
-odm/etc/usecaseKvManager.xml
+vendor/etc/audio/sku_pitti/audio_effects.conf
+vendor/etc/audio/sku_pitti/mixer_paths_pitti_idp.xml
+vendor/etc/audio/sku_pitti/mixer_paths_pitti_qrd.xml
+vendor/etc/audio/sku_pitti/resourcemanager_pitti_idp.xml
+vendor/etc/audio/sku_pitti/resourcemanager_pitti_qrd.xml
+vendor/etc/backend_conf.xml
+vendor/etc/usecaseKvManager.xml
 vendor/etc/audio_diag.cfg
 vendor/etc/card-defs.xml
 vendor/etc/kvh2xml.xml
 vendor/etc/microphone_characteristics.xml
-
-# Audio firmware
-odm/firmware/aw882xx_acf.bin
-odm/firmware/fs19xx.fsm
 
 # Audio graph manager
 vendor/lib64/libagm.so
