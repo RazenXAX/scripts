@@ -10,31 +10,31 @@
 
 #include "vendor_init.h"
 
-static const variant_info_t earth_info = {
+static const variant_info_t warm_info = {
     .hwc_value = "",
-    .sku_value = "earth",
+    .sku_value = "warm",
 
     .brand = "Redmi",
-    .device = "earth",
-    .marketname = "Redmi 12C",
-    .model = "22120RN86G",
-    .build_fingerprint = "Redmi/earth_global/earth:14/UP1A.231005.007/V816.0.12.0.UCVMIXM:user/release-keys"
+    .device = "warm",
+    .marketname = "Redmi A4 5G",
+    .model = "24116RNC1I",
+    .build_fingerprint = "Redmi/warm_global/warm:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys"
 };
 
-static const variant_info_t earth_p_info = {
+static const variant_info_t warm_p_info = {
     .hwc_value = "",
-    .sku_value = "earth_p",
+    .sku_value = "warm_p",
 
     .brand = "Poco",
-    .device = "earth",
-    .marketname = "POCO C55",
-    .model = "22127PC95G",
-    .build_fingerprint = "POCO/earth_p_global/earth:14/UP1A.231005.007/V816.0.12.0.UCVMIXM:user/release-keys"
+    .device = "warm",
+    .marketname = "POCO C75 5G",
+    .model = "24116PCC1I",
+    .build_fingerprint = "POCO/warm_p_global/warm:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys"
 };
 
 static const std::vector<variant_info_t> variants = {
-    earth_info,
-    earth_p_info,
+    warm_info,
+    warm_p_info,
 };
 
 void vendor_process_bootenv() {
