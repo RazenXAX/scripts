@@ -1436,7 +1436,7 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
-# Gen firmware
+# GPU firmware
 vendor/firmware/gen70900_aqe.fw
 vendor/firmware/gen70900_sqe.fw
 vendor/firmware/gen70900_zap.mbn
