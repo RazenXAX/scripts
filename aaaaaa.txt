@@ -6,7 +6,7 @@
 
     Not a Contribution.
 
-    Copyright (C) 2012-2017 The Linux Foundation. All rights reserved.
+    Copyright (C) 2012-2018 The Linux Foundation. All rights reserved.
     Copyright (C) 2012-2013 The Android Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,145 +22,319 @@
     limitations under the License.
 -->
 
+<!--
+"performance-point"
+    Vendor-guaranteed performance advertised to the applications
+        <Limit name="performance-point-widthxheight" value="fps" />
+
+    -For each of the resolutions, the advertised fps is the max supported,
+    with HW-friendly color format and considering video-only.
+    -Performance for any intermediate resolution will be that of the
+    next-higher-advertised-resolution.
+
+    standard sizes: 480p/576p (SD), 720p (HD), 1080p (FHD)
+    standard frame rates: 24, 25, 30, 48+, 50, 60 fps
+        * HD+ only
+        + SD only
+    - All supported standard performance points are listed (unless they are
+    covered by another listed standard performance point)
+    - Non-standard performance points are listed along with all the standard
+    performance points covered by them.
+-->
+
+<!--
+ pitti Non-Secure decoder capabilities
+ (MB is defined as 16x16)
+ _____________________________________________________________________
+ | Codec       | W       H       fps     Mbps    MB/s        Max MB/s|
+ |_____________|_____________________________________________________|
+ | h264        | 1280     720    120     120     432000      489600  |
+ |             | 1920    1088    60      120     489600              |
+ | hevc        | 1280     720    120     120     432000      489600  |
+ |             | 1920    1088    60      120     489600              |
+ | vp9         | 1280     720    120     60     432000      489600   |
+ |             | 1920    1088    60      60     489600               |
+ |_____________|_____________________________________________________|
+
+ pitti Secure decoder capabilities
+ (MB is defined as 16x16)
+ _________________________________________________________________
+ | Codec    | W        H       fps     Mbps    MB/s       Max MB/s|
+ |__________|_____________________________________________________|
+ | h264     | 1280     720     60      35      216000      489600 |
+ |          | 1920    1088     60      35      489600             |
+ | hevc     | 1280     720     60      35      216000      489600 |
+ |          | 1920    1088     60      35      489600             |
+ | vp9      | 1280     720     60      35      216000      489600 |
+ |          | 1920    1088     60      35      489600             |
+ |__________|_____________________________________________________|
+
+ pitti Non-Secure encoder capabilities (Secure not supported)
+ (MB is defined as 16x16)
+ __________________________________________________________________
+ | Codec    | W       H       fps     Mbps    MB/s        Max MB/s|
+ |__________|_____________________________________________________|
+ | h264     | 1920    1088    60      100     489600       489600 |
+ | hevc     | 1920    1088    60      100     489600       489600 |
+ |__________|_____________________________________________________|
+-->
+
 <MediaCodecs>
-    <Encoders>
-        <MediaCodec name="c2.qti.avc.encoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="238-238" />
-            <Limit name="measured-frame-rate-720x480" range="123-123" />
-            <Limit name="measured-frame-rate-1280x720" range="50-50" />
-            <Limit name="measured-frame-rate-1920x1080" range="55-65" />
-        </MediaCodec>
-        <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="226-226" />
-            <Limit name="measured-frame-rate-720x480" range="121-121" />
-            <Limit name="measured-frame-rate-1280x720" range="49-49" />
-            <Limit name="measured-frame-rate-1920x1080" range="55-65" />
-        </MediaCodec>
-        <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="226-226" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.avc.encoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="124-176" />
-            <Limit name="measured-frame-rate-720x480" range="133-187" />
-            <Limit name="measured-frame-rate-1280x720" range="35-50" />
-            <Limit name="measured-frame-rate-1920x1080" range="19-28" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="55-65" />
-            <Limit name="measured-frame-rate-720x480" range="7-10" />
-            <Limit name="measured-frame-rate-1280x720" range="3-6" />
-            <Limit name="measured-frame-rate-1920x1080" range="2-3" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true">
-            <Limit name="measured-frame-rate-320x240" range="121-286" />
-            <Limit name="measured-frame-rate-720x480" range="49-110" />
-            <Limit name="measured-frame-rate-1280x720" range="19-41" />
-            <Limit name="measured-frame-rate-1920x1080" range="20-30" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.h263.encoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="252-329" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.mpeg4.encoder" type="video/mp4v-es" update="true">
-            <Limit name="measured-frame-rate-176x144" range="242-326" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.vp8.encoder" type="video/x-vnd.on2.vp8" update="true">
-            <Limit name="measured-frame-rate-320x180" range="85-119" />
-            <Limit name="measured-frame-rate-640x360" range="97-138" />
-            <Limit name="measured-frame-rate-1280x720" range="21-30" />
-            <Limit name="measured-frame-rate-1920x1080" range="10-15" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
-            <!-- measured 93%:99-156 med:109/109 N=24 -->
-            <Limit name="measured-frame-rate-320x180" range="116-260" /> <!-- v93%=1.3 -->
-            <!-- measured 95%:54-67 med:61/61 N=36 -->
-            <Limit name="measured-frame-rate-640x360" range="35-75" /> <!-- v95%=1.1 -->
-            <!-- measured 95%:16-26 med:20/20 N=32 -->
-            <Limit name="measured-frame-rate-1280x720" range="20-20" /> <!-- v95%=1.3 -->
-        </MediaCodec>
-    </Encoders>
+    <Include href="media_codecs_google_audio.xml" />
+    <Include href="media_codecs_vendor_audio.xml" />
+    <Include href="media_codecs_google_telephony.xml" />
+    <Include href="media_codecs_c2_audio.xml" />
+    <Settings>
+        <Setting name="max-video-encoder-input-buffers" value="11" />
+    </Settings>
+    <Settings>
+        <Variant name="slow-cpu" enabled="true" />
+    </Settings>
     <Decoders>
-        <MediaCodec name="c2.qti.avc.decoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="480-510" />
-            <Limit name="measured-frame-rate-720x480" range="460-490" />
-            <Limit name="measured-frame-rate-1280x720" range="350-400" />
-            <Limit name="measured-frame-rate-1920x1088" range="180-190" />
+        <!-- C2 decoders -->
+        <MediaCodec name="c2.qti.avc.decoder" type="video/avc" >
+            <Alias name="OMX.qcom.video.decoder.avc"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="36-489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.avc.decoder.low_latency" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="300-650" />
-            <Limit name="measured-frame-rate-720x480" range="280-630" />
-            <Limit name="measured-frame-rate-1280x720" range="210-460" />
-            <Limit name="measured-frame-rate-1920x1080" range="100-220" />
+        <MediaCodec name="c2.qti.avc.decoder.low_latency" type="video/avc">
+            <Alias name="OMX.qcom.video.decoder.avc.low_latency"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="36-489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.hevc.decoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="510-530" />
-            <Limit name="measured-frame-rate-720x480" range="465-620" />
-            <Limit name="measured-frame-rate-1280x720" range="200-390" />
-            <Limit name="measured-frame-rate-1920x1080" range="210-230" />
+        <MediaCodec name="c2.qti.avc.decoder.secure" type="video/avc" >
+            <Alias name="OMX.qcom.video.decoder.avc.secure"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-35000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Feature name="secure-playback" required="true" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="performance-point-1920x1080" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.hevc.decoder.low_latency" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="320-690" />
-            <Limit name="measured-frame-rate-640x360" range="323-323" />
-            <Limit name="measured-frame-rate-720x480" range="290-660" />
-            <Limit name="measured-frame-rate-1280x720" range="270-590" />
-            <Limit name="measured-frame-rate-1920x1080" range="220-480" />
+        <MediaCodec name="c2.qti.hevc.decoder" type="video/hevc" >
+            <Alias name="OMX.qcom.video.decoder.hevc"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.vp9.decoder" type="video/x-vnd.on2.vp9" update="true">
-            <Limit name="measured-frame-rate-320x240" range="377-377" />
-            <Limit name="measured-frame-rate-640x360" range="323-323" />
-            <Limit name="measured-frame-rate-1280x720" range="262-262" />
-            <Limit name="measured-frame-rate-1920x1080" range="220-220" />
+        <MediaCodec name="c2.qti.hevc.decoder.low_latency" type="video/hevc" >
+            <Alias name="OMX.qcom.video.decoder.hevc.low_latency"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.vp9.decoder.low_latency" type="video/x-vnd.on2.vp9" update="true">
-            <Limit name="measured-frame-rate-320x240" range="377-377" />
-            <Limit name="measured-frame-rate-640x360" range="323-323" />
-            <Limit name="measured-frame-rate-1280x720" range="262-262" />
-            <Limit name="measured-frame-rate-1920x1080" range="220-220" />
+        <MediaCodec name="c2.qti.hevc.decoder.secure" type="video/hevc" >
+            <Alias name="OMX.qcom.video.decoder.hevc.secure"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-35000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Feature name="secure-playback" required="true" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="performance-point-1920x1080" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="143-307" />
-            <Limit name="measured-frame-rate-720x480" range="84-128" />
-            <Limit name="measured-frame-rate-1280x720" range="41-90" />
-            <Limit name="measured-frame-rate-1920x1080" range="17-25" />
+        <MediaCodec name="c2.qti.vp9.decoder" type="video/x-vnd.on2.vp9" >
+            <Alias name="OMX.qcom.video.decoder.vp9"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-60000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Limit name="concurrent-instances" max="6" />
+            <Limit name="performance-point-1920x1080" value="60" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.vp9.decoder.low_latency" type="video/x-vnd.on2.vp9" >
+            <Alias name="OMX.qcom.video.decoder.vp9.low_latency"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-60000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="6" />
+            <Limit name="performance-point-1920x1080" value="60" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >
+            <Alias name="OMX.qcom.video.decoder.vp9.secure"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-35000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="secure-playback" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="performance-point-1920x1080" value="30" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true" variant="slow-cpu">
+            <Limit name="size" min="96x96" max="1920x1080" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="24" max="2073600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="188-425" />
-            <Limit name="measured-frame-rate-640x360" range="104-162" />
-            <Limit name="measured-frame-rate-720x480" range="135-188" />
-            <Limit name="measured-frame-rate-1280x720" range="65-93" />
-            <Limit name="measured-frame-rate-1920x1080" range="20-29" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true">
-            <Limit name="measured-frame-rate-352x288" range="186-426" />
-            <Limit name="measured-frame-rate-720x480" range="102-228" />
-            <Limit name="measured-frame-rate-1280x720" range="52-116" />
-            <Limit name="measured-frame-rate-1920x1080" range="20-30" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true">
-            <Limit name="measured-frame-rate-352x288" range="480-490" />
-            <Limit name="measured-frame-rate-640x360" range="380-390" />
-            <Limit name="measured-frame-rate-720x480" range="320-330" />
-            <Limit name="measured-frame-rate-1280x720" range="200-220" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="455-461" />
-            <Limit name="measured-frame-rate-352x288" range="411-823" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
-            <Limit name="measured-frame-rate-176x144" range="406-543" />
-            <Limit name="measured-frame-rate-480x360" range="417-834" />
-            <Limit name="measured-frame-rate-1280x720" range="239-326" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
-            <Limit name="measured-frame-rate-320x180" range="441-885" />
-            <Limit name="measured-frame-rate-640x360" range="250-408" />
-            <Limit name="measured-frame-rate-1280x720" range="84-120" />
-            <Limit name="measured-frame-rate-1920x1080" range="33-47" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.vp9.decoder" type="video/x-vnd.on2.vp9" update="true">
-            <Limit name="measured-frame-rate-320x180" range="335-922" />
-            <Limit name="measured-frame-rate-640x360" range="85-200" />
-            <Limit name="measured-frame-rate-1280x720" range="97-143" />
-            <Limit name="measured-frame-rate-1920x1080" range="23-33" />
-        </MediaCodec>
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-3600" />
+            <Limit name="blocks-per-second" range="1-108000" />
+            <Limit name="bitrate" range="1-2000000" />
+       </MediaCodec>
+       <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
+            <!-- profiles and levels:  ProfileHigh : Level51 -->
+            <Limit name="size" min="2x2" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-3600" />
+            <Limit name="blocks-per-second" range="1-108000" />
+            <Limit name="bitrate" range="1-20000000" />
+            <Feature name="adaptive-playback" />
+       </MediaCodec>
     </Decoders>
+    <Encoders>
+        <!-- C2 Encoders -->
+        <MediaCodec name="c2.qti.avc.encoder" type="video/avc">
+            <Alias name="OMX.qcom.video.encoder.avc"/>
+            <Limit name="size" min="128x128" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="489600" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Feature name="intra-refresh" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="bitrate-modes" value="VBR,CBR" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc">
+            <Alias name="OMX.qcom.video.encoder.hevc"/>
+            <Limit name="size" min="128x128" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="489600" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Feature name="bitrate-modes" value="VBR,CBR" />
+            <Feature name="intra-refresh" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc">
+            <Alias name="OMX.qcom.video.encoder.hevc.cq"/>
+            <Limit name="size" min="128x128" max="512x512" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="786432" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="quality" range="0-100" default="80" />
+            <Feature name="bitrate-modes" value="CQ" />
+            <Limit name="performance-point-512x512" value="2025" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.heic.encoder" type="image/vnd.android.heic">
+            <Alias name="OMX.qcom.video.encoder.heic"/>
+            <Limit name="size" min="512x512" max="8192x8192" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="786432" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-20" />
+            <Limit name="concurrent-instances" max="6" />
+            <Limit name="quality" range="0-100" default="80" />
+            <Feature name="bitrate-modes" value="CQ" />
+            <Limit name="performance-point-8192x4320" value="3" />
+            <Limit name="performance-point-1920x1080" value="6" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="512x512" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-4096" /> <!-- max 512x512 -->
+            <Limit name="blocks-per-second" range="1-122880" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="bitrate" range="1-10000000" />
+            <Limit name="complexity" range="0-10"  default="0" />
+            <Limit name="quality" range="0-100"  default="80" />
+            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : Level_Version0-3 -->
+            <Limit name="size" min="2x2" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <!-- 2016 devices can encode at about 8fps at this block count -->
+            <Limit name="block-count" range="1-3600" /> <!-- max 1280x720 -->
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="bitrate-modes" value="VBR,CBR" />
+        </MediaCodec>
+    </Encoders>
+    <Include href="media_codecs_google_c2.xml" />
 </MediaCodecs>
