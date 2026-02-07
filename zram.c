@@ -1,2471 +1,1383 @@
+// SPDX-License-Identifier: GPL-2.0-only
 /*
- * Compressed RAM block device
- *
- * Copyright (C) 2008, 2009, 2010  Nitin Gupta
- *               2012, 2013 Minchan Kim
- *
- * This code is released using a dual license strategy: BSD/GPL
- * You can choose the licence that better fits your requirements.
- *
- * Released under the terms of 3-clause BSD License
- * Released under the terms of GNU General Public License Version 2.0
- *
+ * Copyright (c) 2017-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022-2025, Qualcomm Innovation Center, Inc. All rights reserved.
  */
-
-#define KMSG_COMPONENT "zram"
-#define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
 #include <linux/module.h>
 #include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
 #include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/sysfs.h>
+#include <linux/slab.h>
+#include <linux/clk.h>
+#include <linux/delay.h>
+#include <linux/io.h>
+#include <linux/mutex.h>
+#include <linux/of.h>
+#include <linux/of_platform.h>
+#include <linux/platform_device.h>
+#include <linux/pm_domain.h>
+#include <linux/power_supply.h>
+#include <linux/regulator/consumer.h>
+#include <linux/regulator/driver.h>
+#include <linux/regulator/machine.h>
+#include <linux/usb/phy.h>
+#include <linux/usb/dwc3-msm.h>
+#include <linux/reset.h>
 #include <linux/debugfs.h>
-#include <linux/cpuhotplug.h>
-#include <linux/part_stat.h>
-<<<<<<< HEAD
+#include <linux/qcom_scm.h>
+#include <linux/types.h>
+
+#define USB2_PHY_USB_PHY_UTMI_CTRL0		(0x3c)
+#define OPMODE_MASK				(0x3 << 3)
+#define OPMODE_NONDRIVING			(0x1 << 3)
+#define SLEEPM					BIT(0)
+
+#define USB2_PHY_USB_PHY_UTMI_CTRL5		(0x50)
+#define POR					BIT(1)
+
+#define USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON0	(0x54)
+#define SIDDQ					BIT(2)
+#define RETENABLEN				BIT(3)
+#define FSEL_MASK				(0x7 << 4)
+#define FSEL_DEFAULT				(0x3 << 4)
+
+#define USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON1	(0x58)
+#define VBUSVLDEXTSEL0				BIT(4)
+#define PLLBTUNE				BIT(5)
+
+#define USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON2	(0x5c)
+#define VREGBYPASS				BIT(0)
+
+#define USB2_PHY_USB_PHY_HS_PHY_CTRL1		(0x60)
+#define VBUSVLDEXT0				BIT(0)
+
+#define USB2_PHY_USB_PHY_HS_PHY_CTRL2		(0x64)
+#define USB2_AUTO_RESUME			BIT(0)
+#define USB2_SUSPEND_N				BIT(2)
+#define USB2_SUSPEND_N_SEL			BIT(3)
+
+#define USB2_PHY_USB_PHY_CFG0			(0x94)
+#define UTMI_PHY_DATAPATH_CTRL_OVERRIDE_EN	BIT(0)
+#define UTMI_PHY_CMN_CTRL_OVERRIDE_EN		BIT(1)
+
+#define USB2_PHY_USB_PHY_REFCLK_CTRL		(0xa0)
+#define REFCLK_SEL_MASK				(0x3 << 0)
+#define REFCLK_SEL_DEFAULT			(0x2 << 0)
+
+#define USB2_PHY_USB_PHY_PWRDOWN_CTRL		(0xa4)
+#define PWRDOWN_B				BIT(0)
+
+#define USB2PHY_USB_PHY_RTUNE_SEL		(0xb4)
+#define RTUNE_SEL				BIT(0)
+
+#define TXPREEMPAMPTUNE0(x)			(x << 6)
+#define TXPREEMPAMPTUNE0_MASK			(BIT(7) | BIT(6))
+#define USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X0	0x6c
+#define USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X1	0x70
+#define USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X2	0x74
+#define USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X3	0x78
+#define TXVREFTUNE0_MASK			0xF
+#define PARAM_OVRD_MASK			0xFF
+
+#define USB_HSPHY_3P3_VOL_MIN			3050000 /* uV */
+#define USB_HSPHY_3P3_VOL_MAX			3300000 /* uV */
+#define USB_HSPHY_3P3_HPM_LOAD			16000	/* uA */
+#define USB_HSPHY_3P3_VOL_FSHOST		3150000 /* uV */
+
+#define USB_HSPHY_1P8_VOL_MIN			1704000 /* uV */
+#define USB_HSPHY_1P8_VOL_MAX			1800000 /* uV */
+#define USB_HSPHY_1P8_HPM_LOAD			19000	/* uA */
+
+#define USB2PHY_REFGEN_HPM_LOAD			1200000  /* uA */
+#define USB_HSPHY_VDD_HPM_LOAD			30000	/* uA */
+
+<<<<<<< ours
+u32 panel_info = 1;
 =======
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
-#include <linux/hugetlb.h>
-#include <linux/mmzone.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/numa.h>
->>>>>>> KERNEL.PLATFORM.3.0.r9-03000-kernel.0
+#define MIN_PD					2
 
-#include "zram_drv.h"
+>>>>>>> theirs
+/* struct hs_phy_priv_data - target specific private data */
+struct hs_phy_priv_data {
+	bool limit_control_vdd;
+	bool limit_control_vdda_18;
+	bool limit_control_vdda33;
+};
 
-static DEFINE_IDR(zram_index_idr);
-/* idr index must be protected */
-static DEFINE_MUTEX(zram_index_mutex);
+struct msm_hsphy {
+	struct usb_phy		phy;
+	void __iomem		*base;
+	phys_addr_t		eud_reg;
+	void __iomem		*eud_enable_reg;
+	bool			re_enable_eud;
 
-static int zram_major;
-static const char *default_compressor = CONFIG_ZRAM_DEF_COMP;
+	struct clk		*ref_clk_src;
+	struct clk		*cfg_ahb_clk;
+	struct clk		*ref_clk;
+	struct reset_control	*phy_reset;
 
-/* Module params (documentation at end) */
-static unsigned int num_devices = 1;
-/*
- * Pages that compress to sizes equals or greater than this are stored
- * uncompressed in memory.
- */
-static size_t huge_class_size;
+	struct regulator	*vdd;
+	struct regulator	*vdda33;
+	struct regulator	*vdda18;
+	struct regulator        *refgen;
+	int			vdd_levels[3]; /* none, low, high */
+	int			refgen_levels[3]; /* 0, REFGEN_VOL_MIN, REFGEN_VOL_MAX */
 
-static const struct block_device_operations zram_devops;
+	bool			clocks_enabled;
+	bool			power_enabled;
+	bool			suspended;
+	bool			cable_connected;
+	bool			dpdm_enable;
 
-static void zram_free_page(struct zram *zram, size_t index);
-static int zram_bvec_read(struct zram *zram, struct bio_vec *bvec,
-				u32 index, int offset, struct bio *bio);
+	int			*param_override_seq;
+	int			param_override_seq_cnt;
 
+	void __iomem		*phy_rcal_reg;
+	u32			rcal_mask;
 
-static int zram_slot_trylock(struct zram *zram, u32 index)
+	struct mutex		phy_lock;
+	struct regulator_desc	dpdm_rdesc;
+	struct regulator_dev	*dpdm_rdev;
+
+	struct power_supply	*usb_psy;
+	unsigned int		vbus_draw;
+	struct work_struct	vbus_draw_work;
+
+	/* debugfs entries */
+	struct dentry		*root;
+	u8			txvref_tune0;
+	u8			pre_emphasis;
+	u8			param_ovrd0;
+	u8			param_ovrd1;
+	u8			param_ovrd2;
+	u8			param_ovrd3;
+	const struct hs_phy_priv_data	*phy_priv_data;
+
+	bool			fw_managed_pwr;
+	struct device		**pd_devs;
+	int			pd_count;
+};
+
+<<<<<<< ours
+static void get_panel_info(void)
 {
-	return bit_spin_trylock(ZRAM_LOCK, &zram->table[index].flags);
-}
-
-static void zram_slot_lock(struct zram *zram, u32 index)
-{
-	bit_spin_lock(ZRAM_LOCK, &zram->table[index].flags);
-}
-
-static void zram_slot_unlock(struct zram *zram, u32 index)
-{
-	bit_spin_unlock(ZRAM_LOCK, &zram->table[index].flags);
-}
-
-static inline bool init_done(struct zram *zram)
-{
-	return zram->disksize;
-}
-
-static inline struct zram *dev_to_zram(struct device *dev)
-{
-	return (struct zram *)dev_to_disk(dev)->private_data;
-}
-
-static unsigned long zram_get_handle(struct zram *zram, u32 index)
-{
-	return zram->table[index].handle;
-}
-
-static void zram_set_handle(struct zram *zram, u32 index, unsigned long handle)
-{
-	zram->table[index].handle = handle;
-}
-
-/* flag operations require table entry bit_spin_lock() being held */
-static bool zram_test_flag(struct zram *zram, u32 index,
-			enum zram_pageflags flag)
-{
-	return zram->table[index].flags & BIT(flag);
-}
-
-static void zram_set_flag(struct zram *zram, u32 index,
-			enum zram_pageflags flag)
-{
-	zram->table[index].flags |= BIT(flag);
-}
-
-static void zram_clear_flag(struct zram *zram, u32 index,
-			enum zram_pageflags flag)
-{
-	zram->table[index].flags &= ~BIT(flag);
-}
-
-static inline void zram_set_element(struct zram *zram, u32 index,
-			unsigned long element)
-{
-	zram->table[index].element = element;
-}
-
-static unsigned long zram_get_element(struct zram *zram, u32 index)
-{
-	return zram->table[index].element;
-}
-
-static size_t zram_get_obj_size(struct zram *zram, u32 index)
-{
-	return zram->table[index].flags & (BIT(ZRAM_FLAG_SHIFT) - 1);
-}
-
-static void zram_set_obj_size(struct zram *zram,
-					u32 index, size_t size)
-{
-	unsigned long flags = zram->table[index].flags >> ZRAM_FLAG_SHIFT;
-
-	zram->table[index].flags = (flags << ZRAM_FLAG_SHIFT) | size;
-}
-
-static inline bool zram_allocated(struct zram *zram, u32 index)
-{
-	return zram_get_obj_size(zram, index) ||
-			zram_test_flag(zram, index, ZRAM_SAME) ||
-			zram_test_flag(zram, index, ZRAM_WB);
-}
-
-#if PAGE_SIZE != 4096
-static inline bool is_partial_io(struct bio_vec *bvec)
-{
-	return bvec->bv_len != PAGE_SIZE;
-}
-#else
-static inline bool is_partial_io(struct bio_vec *bvec)
-{
-	return false;
-}
-#endif
-
-/*
- * Check if request is within bounds and aligned on zram logical blocks.
- */
-static inline bool valid_io_request(struct zram *zram,
-		sector_t start, unsigned int size)
-{
-	u64 end, bound;
-
-	/* unaligned request */
-	if (unlikely(start & (ZRAM_SECTOR_PER_LOGICAL_BLOCK - 1)))
-		return false;
-	if (unlikely(size & (ZRAM_LOGICAL_BLOCK_SIZE - 1)))
-		return false;
-
-	end = start + (size >> SECTOR_SHIFT);
-	bound = zram->disksize >> SECTOR_SHIFT;
-	/* out of range range */
-	if (unlikely(start >= bound || end > bound || start > end))
-		return false;
-
-	/* I/O request is valid */
-	return true;
-}
-
-static void update_position(u32 *index, int *offset, struct bio_vec *bvec)
-{
-	*index  += (*offset + bvec->bv_len) / PAGE_SIZE;
-	*offset = (*offset + bvec->bv_len) % PAGE_SIZE;
-}
-
-static inline void update_used_max(struct zram *zram,
-					const unsigned long pages)
-{
-	unsigned long old_max, cur_max;
-
-	old_max = atomic_long_read(&zram->stats.max_used_pages);
-
-	do {
-		cur_max = old_max;
-		if (pages > cur_max)
-			old_max = atomic_long_cmpxchg(
-				&zram->stats.max_used_pages, cur_max, pages);
-	} while (old_max != cur_max);
-}
-
-static inline void zram_fill_page(void *ptr, unsigned long len,
-					unsigned long value)
-{
-	WARN_ON_ONCE(!IS_ALIGNED(len, sizeof(unsigned long)));
-	memset_l(ptr, value, len / sizeof(unsigned long));
-}
-
-static bool page_same_filled(void *ptr, unsigned long *element)
-{
-	unsigned long *page;
-	unsigned long val;
-	unsigned int pos, last_pos = PAGE_SIZE / sizeof(*page) - 1;
-
-	page = (unsigned long *)ptr;
-	val = page[0];
-
-	if (val != page[last_pos])
-		return false;
-
-	for (pos = 1; pos < last_pos; pos++) {
-		if (val != page[pos])
-			return false;
-	}
-
-	*element = val;
-
-	return true;
-}
-
-static ssize_t initstate_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	u32 val;
-	struct zram *zram = dev_to_zram(dev);
-
-	down_read(&zram->init_lock);
-	val = init_done(zram);
-	up_read(&zram->init_lock);
-
-	return scnprintf(buf, PAGE_SIZE, "%u\n", val);
-}
-
-static ssize_t disksize_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	struct zram *zram = dev_to_zram(dev);
-
-	return scnprintf(buf, PAGE_SIZE, "%llu\n", zram->disksize);
-}
-
-static ssize_t mem_limit_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	u64 limit;
-	char *tmp;
-	struct zram *zram = dev_to_zram(dev);
-
-	limit = memparse(buf, &tmp);
-	if (buf == tmp) /* no chars parsed, invalid input */
-		return -EINVAL;
-
-	down_write(&zram->init_lock);
-	zram->limit_pages = PAGE_ALIGN(limit) >> PAGE_SHIFT;
-	up_write(&zram->init_lock);
-
-	return len;
-}
-
-static ssize_t mem_used_max_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	int err;
-	unsigned long val;
-	struct zram *zram = dev_to_zram(dev);
-
-	err = kstrtoul(buf, 10, &val);
-	if (err || val != 0)
-		return -EINVAL;
-
-	down_read(&zram->init_lock);
-	if (init_done(zram)) {
-		atomic_long_set(&zram->stats.max_used_pages,
-				zs_get_total_pages(zram->mem_pool));
-	}
-	up_read(&zram->init_lock);
-
-	return len;
-}
-
-/*
- * Mark all pages which are older than or equal to cutoff as IDLE.
- * Callers should hold the zram init lock in read mode
- */
-static void mark_idle(struct zram *zram, ktime_t cutoff)
-{
-	int is_idle = 1;
-	unsigned long nr_pages = zram->disksize >> PAGE_SHIFT;
-	int index;
-
-	for (index = 0; index < nr_pages; index++) {
-		/*
-		 * Do not mark ZRAM_UNDER_WB slot as ZRAM_IDLE to close race.
-		 * See the comment in writeback_store.
-		 */
-		zram_slot_lock(zram, index);
-		if (zram_allocated(zram, index) &&
-				!zram_test_flag(zram, index, ZRAM_UNDER_WB)) {
-#ifdef CONFIG_ZRAM_MEMORY_TRACKING
-			is_idle = !cutoff || ktime_after(cutoff, zram->table[index].ac_time);
-#endif
-			if (is_idle)
-				zram_set_flag(zram, index, ZRAM_IDLE);
-		}
-		zram_slot_unlock(zram, index);
-	}
-}
-
-static ssize_t idle_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	struct zram *zram = dev_to_zram(dev);
-	ktime_t cutoff_time = 0;
-	ssize_t rv = -EINVAL;
-
-	if (!sysfs_streq(buf, "all")) {
-		/*
-		 * If it did not parse as 'all' try to treat it as an integer
-		 * when we have memory tracking enabled.
-		 */
-		u64 age_sec;
-
-		if (IS_ENABLED(CONFIG_ZRAM_MEMORY_TRACKING) && !kstrtoull(buf, 0, &age_sec))
-			cutoff_time = ktime_sub(ktime_get_boottime(),
-					ns_to_ktime(age_sec * NSEC_PER_SEC));
-		else
-			goto out;
-	}
-
-	down_read(&zram->init_lock);
-	if (!init_done(zram))
-		goto out_unlock;
-
-	/*
-	 * A cutoff_time of 0 marks everything as idle, this is the
-	 * "all" behavior.
-	 */
-	mark_idle(zram, cutoff_time);
-	rv = len;
-
-out_unlock:
-	up_read(&zram->init_lock);
-out:
-	return rv;
-}
-
-#ifdef CONFIG_ZRAM_WRITEBACK
-static ssize_t writeback_limit_enable_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	struct zram *zram = dev_to_zram(dev);
-	u64 val;
-	ssize_t ret = -EINVAL;
-
-	if (kstrtoull(buf, 10, &val))
-		return ret;
-
-	down_read(&zram->init_lock);
-	spin_lock(&zram->wb_limit_lock);
-	zram->wb_limit_enable = val;
-	spin_unlock(&zram->wb_limit_lock);
-	up_read(&zram->init_lock);
-	ret = len;
-
-	return ret;
-}
-
-static ssize_t writeback_limit_enable_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	bool val;
-	struct zram *zram = dev_to_zram(dev);
-
-	down_read(&zram->init_lock);
-	spin_lock(&zram->wb_limit_lock);
-	val = zram->wb_limit_enable;
-	spin_unlock(&zram->wb_limit_lock);
-	up_read(&zram->init_lock);
-
-	return scnprintf(buf, PAGE_SIZE, "%d\n", val);
-}
-
-static ssize_t writeback_limit_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	struct zram *zram = dev_to_zram(dev);
-	u64 val;
-	ssize_t ret = -EINVAL;
-
-	if (kstrtoull(buf, 10, &val))
-		return ret;
-
-	down_read(&zram->init_lock);
-	spin_lock(&zram->wb_limit_lock);
-	zram->bd_wb_limit = val;
-	spin_unlock(&zram->wb_limit_lock);
-	up_read(&zram->init_lock);
-	ret = len;
-
-	return ret;
-}
-
-static ssize_t writeback_limit_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	u64 val;
-	struct zram *zram = dev_to_zram(dev);
-
-	down_read(&zram->init_lock);
-	spin_lock(&zram->wb_limit_lock);
-	val = zram->bd_wb_limit;
-	spin_unlock(&zram->wb_limit_lock);
-	up_read(&zram->init_lock);
-
-	return scnprintf(buf, PAGE_SIZE, "%llu\n", val);
-}
-
-static void reset_bdev(struct zram *zram)
-{
-	struct block_device *bdev;
-
-	if (!zram->backing_dev)
+	struct device_node *panel_node;
+	panel_node = of_find_node_by_path("/soc/xiaomi_touch");
+	if (!panel_node)
 		return;
 
-	bdev = zram->bdev;
-	blkdev_put(bdev, FMODE_READ|FMODE_WRITE|FMODE_EXCL);
-	/* hope filp_close flush all of IO */
-	filp_close(zram->backing_dev, NULL);
-	zram->backing_dev = NULL;
-	zram->bdev = NULL;
-	zram->disk->fops = &zram_devops;
-	kvfree(zram->bitmap);
-	zram->bitmap = NULL;
-}
-
-static ssize_t backing_dev_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
+	of_property_read_u32(panel_node, "get_panel_info", &panel_info);
+=======
+static void msm_hsphy_modeled_domain_detach(struct msm_hsphy *hsphy)
 {
-	struct file *file;
-	struct zram *zram = dev_to_zram(dev);
-	char *p;
-	ssize_t ret;
+	int i;
 
-	down_read(&zram->init_lock);
-	file = zram->backing_dev;
-	if (!file) {
-		memcpy(buf, "none\n", 5);
-		up_read(&zram->init_lock);
-		return 5;
+	if (!hsphy->fw_managed_pwr)
+		return;
+
+	if (hsphy->pd_count < MIN_PD) {
+		dev_err(hsphy->phy.dev, "%s: PD count invalid\n", __func__);
+		return;
 	}
 
-	p = file_path(file, buf, PAGE_SIZE - 1);
-	if (IS_ERR(p)) {
-		ret = PTR_ERR(p);
-		goto out;
+	for (i = hsphy->pd_count - 1; i >= 0; i--) {
+		if (!IS_ERR_OR_NULL(hsphy->pd_devs[i]))
+			dev_pm_domain_detach(hsphy->pd_devs[i], true);
 	}
-
-	ret = strlen(p);
-	memmove(buf, p, ret);
-	buf[ret++] = '\n';
-out:
-	up_read(&zram->init_lock);
-	return ret;
 }
 
-static ssize_t backing_dev_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
+static int msm_hsphy_modeled_domain_attach(struct msm_hsphy *hsphy)
 {
-	char *file_name;
-	size_t sz;
-	struct file *backing_dev = NULL;
-	struct inode *inode;
-	struct address_space *mapping;
-	unsigned int bitmap_sz;
-	unsigned long nr_pages, *bitmap = NULL;
-	struct block_device *bdev = NULL;
-	int err;
-	struct zram *zram = dev_to_zram(dev);
+	struct device *dev = hsphy->phy.dev;
+	int i;
 
-	file_name = kmalloc(PATH_MAX, GFP_KERNEL);
-	if (!file_name)
+	hsphy->pd_count = of_count_phandle_with_args(
+		dev->of_node, "power-domains", NULL);
+
+	if (hsphy->pd_count < MIN_PD)
+		return -EINVAL;
+
+	hsphy->pd_devs = devm_kcalloc(dev, hsphy->pd_count,
+					  sizeof(*hsphy->pd_devs),
+					  GFP_KERNEL);
+
+	if (!hsphy->pd_devs)
 		return -ENOMEM;
 
-	down_write(&zram->init_lock);
-	if (init_done(zram)) {
-		pr_info("Can't setup backing device for initialized device\n");
-		err = -EBUSY;
-		goto out;
+	for (i = 0; i < hsphy->pd_count; i++) {
+		hsphy->pd_devs[i] = dev_pm_domain_attach_by_id(dev, i);
+		if (IS_ERR(hsphy->pd_devs[i]))
+			return PTR_ERR(hsphy->pd_devs[i]);
 	}
 
-	strscpy(file_name, buf, PATH_MAX);
-	/* ignore trailing newline */
-	sz = strlen(file_name);
-	if (sz > 0 && file_name[sz - 1] == '\n')
-		file_name[sz - 1] = 0x00;
-
-	backing_dev = filp_open_block(file_name, O_RDWR|O_LARGEFILE, 0);
-	if (IS_ERR(backing_dev)) {
-		err = PTR_ERR(backing_dev);
-		backing_dev = NULL;
-		goto out;
-	}
-
-	mapping = backing_dev->f_mapping;
-	inode = mapping->host;
-
-	/* Support only block device in this moment */
-	if (!S_ISBLK(inode->i_mode)) {
-		err = -ENOTBLK;
-		goto out;
-	}
-
-	bdev = blkdev_get_by_dev(inode->i_rdev,
-			FMODE_READ | FMODE_WRITE | FMODE_EXCL, zram);
-	if (IS_ERR(bdev)) {
-		err = PTR_ERR(bdev);
-		bdev = NULL;
-		goto out;
-	}
-
-	nr_pages = i_size_read(inode) >> PAGE_SHIFT;
-	/* Refuse to use zero sized device (also prevents self reference) */
-	if (!nr_pages) {
-		err = -EINVAL;
-		goto out;
-	}
-
-	bitmap_sz = BITS_TO_LONGS(nr_pages) * sizeof(long);
-	bitmap = kvzalloc(bitmap_sz, GFP_KERNEL);
-	if (!bitmap) {
-		err = -ENOMEM;
-		goto out;
-	}
-
-	reset_bdev(zram);
-
-	zram->bdev = bdev;
-	zram->backing_dev = backing_dev;
-	zram->bitmap = bitmap;
-	zram->nr_pages = nr_pages;
-	up_write(&zram->init_lock);
-
-	pr_info("setup backing device %s\n", file_name);
-	kfree(file_name);
-
-	return len;
-out:
-	kvfree(bitmap);
-
-	if (bdev)
-		blkdev_put(bdev, FMODE_READ | FMODE_WRITE | FMODE_EXCL);
-
-	if (backing_dev)
-		filp_close(backing_dev, NULL);
-
-	up_write(&zram->init_lock);
-
-	kfree(file_name);
-
-	return err;
+	return 0;
 }
 
-static unsigned long alloc_block_bdev(struct zram *zram)
+/* d3_to_d0 transition by turning on all the suppliers */
+static int msm_hsphy_modeled_d3_to_d0(struct msm_hsphy *hsphy)
 {
-	unsigned long blk_idx = 1;
-retry:
-	/* skip 0 bit to confuse zram.handle = 0 */
-	blk_idx = find_next_zero_bit(zram->bitmap, zram->nr_pages, blk_idx);
-	if (blk_idx == zram->nr_pages)
+	int ret;
+
+	if (!hsphy->fw_managed_pwr)
 		return 0;
 
-	if (test_and_set_bit(blk_idx, zram->bitmap))
-		goto retry;
+	ret = pm_runtime_resume_and_get(hsphy->pd_devs[1]);
+	if (ret)
+		return ret;
 
-	atomic64_inc(&zram->stats.bd_count);
-	return blk_idx;
-}
-
-static void free_block_bdev(struct zram *zram, unsigned long blk_idx)
-{
-	int was_set;
-
-	was_set = test_and_clear_bit(blk_idx, zram->bitmap);
-	WARN_ON_ONCE(!was_set);
-	atomic64_dec(&zram->stats.bd_count);
-}
-
-static void zram_page_end_io(struct bio *bio)
-{
-	struct page *page = bio_first_page_all(bio);
-
-	page_endio(page, op_is_write(bio_op(bio)),
-			blk_status_to_errno(bio->bi_status));
-	bio_put(bio);
-}
-
-/*
- * Returns 1 if the submission is successful.
- */
-static int read_from_bdev_async(struct zram *zram, struct bio_vec *bvec,
-			unsigned long entry, struct bio *parent)
-{
-	struct bio *bio;
-
-	bio = bio_alloc(zram->bdev, 1, parent ? parent->bi_opf : REQ_OP_READ,
-			GFP_NOIO);
-	if (!bio)
-		return -ENOMEM;
-
-	bio->bi_iter.bi_sector = entry * (PAGE_SIZE >> 9);
-	if (!bio_add_page(bio, bvec->bv_page, bvec->bv_len, bvec->bv_offset)) {
-		bio_put(bio);
-		return -EIO;
-	}
-
-	if (!parent)
-		bio->bi_end_io = zram_page_end_io;
-	else
-		bio_chain(bio, parent);
-
-	submit_bio(bio);
-	return 1;
-}
-
-#define PAGE_WB_SIG "page_index="
-
-#define PAGE_WRITEBACK 0
-#define HUGE_WRITEBACK (1<<0)
-#define IDLE_WRITEBACK (1<<1)
-
-
-<<<<<<< HEAD
-static ssize_t writeback_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-=======
-#define INIT_ZRAM_WRITEBACK_STORE(name, zram)			\
-	struct zram_wb_store_walk name = {			\
-			.zram = zram,				\
-	}
-
-static bool is_eligible_swp_to_disk_entry(swp_entry_t swp_entry)
-{
-	void *shadow = NULL;
-	unsigned long min_seq;
-	struct lruvec *lruvec;
-	struct lru_gen_folio *lrugen;
-	int memcg_id;
-	bool workingset;
-	unsigned long token;
-	struct pglist_data *pgdat;
-
-	if (!lru_gen_enabled())
-		return true;
-
-	shadow = get_shadow_from_swap_cache(swp_entry);
-	unpack_shadow(shadow, &memcg_id, &pgdat, &token, &workingset);
-
-	rcu_read_lock();
-	/*
-	 * TODO: mem_cgroup_from_id can be used to get the 'memcg' from
-	 * its 'id'. Once it is whitelisted, replace the default memcg.
-	 * The below works because we don't enable the multiple memcg.
-	 */
-	if (memcg_id != mem_cgroup_id(root_mem_cgroup)) {
-		rcu_read_unlock();
-		return true;
-	}
-
-	lruvec = mem_cgroup_lruvec(root_mem_cgroup, pgdat);
-	lrugen = &lruvec->lrugen;
-	rcu_read_unlock();
-
-	min_seq = READ_ONCE(lrugen->min_seq[LRU_GEN_ANON]);
-	if ((token >> LRU_REFS_WIDTH) == (min_seq & (EVICTION_MASK >> LRU_REFS_WIDTH)))
-		return false;
-
-	return true;
-}
-
-static ssize_t writeback_store_apply(struct zram *zram, unsigned long index,
-					unsigned long nr_pages, int mode)
->>>>>>> KERNEL.PLATFORM.3.0.r9-03000-kernel.0
-{
-	struct zram *zram = dev_to_zram(dev);
-	unsigned long nr_pages = zram->disksize >> PAGE_SHIFT;
-	unsigned long index = 0;
-	struct bio bio;
-	struct bio_vec bio_vec;
-	struct page *page;
-	ssize_t ret = len;
-	int mode, err;
-	unsigned long blk_idx = 0;
-
-	if (sysfs_streq(buf, "idle"))
-		mode = IDLE_WRITEBACK;
-	else if (sysfs_streq(buf, "huge"))
-		mode = HUGE_WRITEBACK;
-	else if (sysfs_streq(buf, "huge_idle"))
-		mode = IDLE_WRITEBACK | HUGE_WRITEBACK;
-	else {
-		if (strncmp(buf, PAGE_WB_SIG, sizeof(PAGE_WB_SIG) - 1))
-			return -EINVAL;
-
-		if (kstrtol(buf + sizeof(PAGE_WB_SIG) - 1, 10, &index) ||
-				index >= nr_pages)
-			return -EINVAL;
-
-		nr_pages = 1;
-		mode = PAGE_WRITEBACK;
-	}
-
-	down_read(&zram->init_lock);
-	if (!init_done(zram)) {
-		ret = -EINVAL;
-		goto release_init_lock;
-	}
-
-	if (!zram->backing_dev) {
-		ret = -ENODEV;
-		goto release_init_lock;
-	}
-
-	page = alloc_page(GFP_KERNEL);
-	if (!page) {
-		ret = -ENOMEM;
-		goto release_init_lock;
-	}
-
-	for (; nr_pages != 0; index++, nr_pages--) {
-		struct bio_vec bvec;
-
-		bvec.bv_page = page;
-		bvec.bv_len = PAGE_SIZE;
-		bvec.bv_offset = 0;
-
-		spin_lock(&zram->wb_limit_lock);
-		if (zram->wb_limit_enable && !zram->bd_wb_limit) {
-			spin_unlock(&zram->wb_limit_lock);
-			ret = -EIO;
-			break;
-		}
-		spin_unlock(&zram->wb_limit_lock);
-
-		if (!blk_idx) {
-			blk_idx = alloc_block_bdev(zram);
-			if (!blk_idx) {
-				ret = -ENOSPC;
-				break;
-			}
-		}
-
-		zram_slot_lock(zram, index);
-		if (!zram_allocated(zram, index))
-			goto next;
-
-		if (zram_test_flag(zram, index, ZRAM_WB) ||
-				zram_test_flag(zram, index, ZRAM_SAME) ||
-				zram_test_flag(zram, index, ZRAM_UNDER_WB))
-			goto next;
-
-		if (mode & IDLE_WRITEBACK &&
-			  !zram_test_flag(zram, index, ZRAM_IDLE))
-			goto next;
-		if (mode & HUGE_WRITEBACK &&
-			  !zram_test_flag(zram, index, ZRAM_HUGE))
-			goto next;
-		/*
-		 * Clearing ZRAM_UNDER_WB is duty of caller.
-		 * IOW, zram_free_page never clear it.
-		 */
-		zram_set_flag(zram, index, ZRAM_UNDER_WB);
-		/* Need for hugepage writeback racing */
-		zram_set_flag(zram, index, ZRAM_IDLE);
-		zram_slot_unlock(zram, index);
-		if (zram_bvec_read(zram, &bvec, index, 0, NULL)) {
-			zram_slot_lock(zram, index);
-			zram_clear_flag(zram, index, ZRAM_UNDER_WB);
-			zram_clear_flag(zram, index, ZRAM_IDLE);
-			zram_slot_unlock(zram, index);
-			continue;
-		}
-
-		bio_init(&bio, zram->bdev, &bio_vec, 1,
-			 REQ_OP_WRITE | REQ_SYNC);
-		bio.bi_iter.bi_sector = blk_idx * (PAGE_SIZE >> 9);
-
-		bio_add_page(&bio, bvec.bv_page, bvec.bv_len,
-				bvec.bv_offset);
-		/*
-		 * XXX: A single page IO would be inefficient for write
-		 * but it would be not bad as starter.
-		 */
-		err = submit_bio_wait(&bio);
-		if (err) {
-			zram_slot_lock(zram, index);
-			zram_clear_flag(zram, index, ZRAM_UNDER_WB);
-			zram_clear_flag(zram, index, ZRAM_IDLE);
-			zram_slot_unlock(zram, index);
-			/*
-			 * Return last IO error unless every IO were
-			 * not suceeded.
-			 */
-			ret = err;
-			continue;
-		}
-
-		atomic64_inc(&zram->stats.bd_writes);
-		/*
-		 * We released zram_slot_lock so need to check if the slot was
-		 * changed. If there is freeing for the slot, we can catch it
-		 * easily by zram_allocated.
-		 * A subtle case is the slot is freed/reallocated/marked as
-		 * ZRAM_IDLE again. To close the race, idle_store doesn't
-		 * mark ZRAM_IDLE once it found the slot was ZRAM_UNDER_WB.
-		 * Thus, we could close the race by checking ZRAM_IDLE bit.
-		 */
-		zram_slot_lock(zram, index);
-		if (!zram_allocated(zram, index) ||
-			  !zram_test_flag(zram, index, ZRAM_IDLE)) {
-			zram_clear_flag(zram, index, ZRAM_UNDER_WB);
-			zram_clear_flag(zram, index, ZRAM_IDLE);
-			goto next;
-		}
-
-		zram_free_page(zram, index);
-		zram_clear_flag(zram, index, ZRAM_UNDER_WB);
-		zram_set_flag(zram, index, ZRAM_WB);
-		zram_set_element(zram, index, blk_idx);
-		blk_idx = 0;
-		atomic64_inc(&zram->stats.pages_stored);
-		spin_lock(&zram->wb_limit_lock);
-		if (zram->wb_limit_enable && zram->bd_wb_limit > 0)
-			zram->bd_wb_limit -=  1UL << (PAGE_SHIFT - 12);
-		spin_unlock(&zram->wb_limit_lock);
-next:
-		zram_slot_unlock(zram, index);
-	}
-
-	if (blk_idx)
-		free_block_bdev(zram, blk_idx);
-	__free_page(page);
-release_init_lock:
-	up_read(&zram->init_lock);
+	ret = pm_runtime_resume_and_get(hsphy->pd_devs[0]);
 
 	return ret;
 }
 
-<<<<<<< HEAD
-=======
-static void walk_pte_range(pmd_t *pmd, unsigned long addr, unsigned long end,
-		struct zram_wb_store_walk *walk)
+/* d0_to_d3 transition by turning off all the suppliers */
+static void msm_hsphy_modeled_d0_to_d3(struct msm_hsphy *hsphy)
 {
-	pte_t *pte;
-	spinlock_t *ptl;
-	swp_entry_t *entries = walk->entries;
-	int i, index = 0;
+	if (!hsphy->fw_managed_pwr)
+		return;
 
-	pte = pte_offset_map_lock(walk->mm, pmd, addr, &ptl);
-	for (; addr < end; pte++, addr += PAGE_SIZE) {
-		swp_entry_t entry;
+	pm_runtime_put_sync(hsphy->pd_devs[0]);
+	pm_runtime_put_sync(hsphy->pd_devs[1]);
+}
 
-		if (!walk->limit)
-			break;
-		if (pte_none(*pte))
-			continue;
-		if (is_swap_pte(*pte)) {
-			entry = pte_to_swp_entry(*pte);
-			if (is_pfn_swap_entry(entry))
-				continue;
-			if (!is_eligible_swp_to_disk_entry(entry))
-				continue;
-			entries[index++] = entry;
-			--walk->limit;
-		}
+/* d0_to_d1 transition by turning off all the suppliers */
+static void msm_hsphy_modeled_d0_to_d1(struct msm_hsphy *hsphy)
+{
+	if (!hsphy->fw_managed_pwr)
+		return;
+
+	pm_runtime_put_sync(hsphy->pd_devs[0]);
+>>>>>>> theirs
+}
+
+static void msm_hsphy_enable_clocks(struct msm_hsphy *phy, bool on)
+{
+	if (phy->fw_managed_pwr)
+		return;
+
+	dev_dbg(phy->phy.dev, "%s(): clocks_enabled:%d on:%d\n",
+			__func__, phy->clocks_enabled, on);
+
+	if (!phy->clocks_enabled && on) {
+		clk_prepare_enable(phy->ref_clk_src);
+
+		if (phy->ref_clk)
+			clk_prepare_enable(phy->ref_clk);
+
+		if (phy->cfg_ahb_clk)
+			clk_prepare_enable(phy->cfg_ahb_clk);
+
+		phy->clocks_enabled = true;
 	}
-	pte_unmap_unlock(pte, ptl);
 
-	for (i = 0; i < index; ++i)
-		writeback_store_apply(walk->zram, swp_offset(entries[i]), 1, PAGE_WRITEBACK);
+	if (phy->clocks_enabled && !on) {
+
+		if (phy->ref_clk)
+			clk_disable_unprepare(phy->ref_clk);
+
+		if (phy->cfg_ahb_clk)
+			clk_disable_unprepare(phy->cfg_ahb_clk);
+
+		clk_disable_unprepare(phy->ref_clk_src);
+		phy->clocks_enabled = false;
+	}
+
 }
 
-static void walk_pmd_range(pud_t *pud, unsigned long addr, unsigned long end,
-		struct zram_wb_store_walk *walk)
+static int vdd_phy_enable_disable(struct msm_hsphy *phy, bool on)
 {
-	pmd_t *pmd;
-	unsigned long next;
-
-	pmd = pmd_offset(pud, addr);
-	do {
-		next = pmd_addr_end(addr, end);
-		if (pmd_none(*pmd))
-			continue;
-		if (pmd_leaf(*pmd) || !pmd_present(*pmd))
-			continue;
-		if (pmd_trans_unstable(pmd))
-			continue;
-		if (is_hugepd(__hugepd(pmd_val(*pmd))))
-			continue;
-
-		walk_pte_range(pmd, addr, next, walk);
-	} while (pmd++, addr = next, addr != end);
-}
-
-static void walk_pud_range(p4d_t *p4d, unsigned long addr, unsigned long end,
-		struct zram_wb_store_walk *walk)
-{
-	pud_t *pud;
-	unsigned long next;
-
-	pud = pud_offset(p4d, addr);
-	do {
-		next = pud_addr_end(addr, end);
-		if (pud_none(*pud))
-			continue;
-		if (pud_leaf(*pud) || !pud_present(*pud))
-			continue;
-		if (is_hugepd(__hugepd(pud_val(*pud))))
-			continue;
-
-		walk_pmd_range(pud, addr, next, walk);
-	} while (pud++, addr = next, addr != end);
-}
-
-static void walk_p4d_range(pgd_t *pgd, unsigned long addr, unsigned long end,
-		struct zram_wb_store_walk *walk)
-{
-	p4d_t *p4d;
-	unsigned long next;
-
-	p4d = p4d_offset(pgd, addr);
-	do {
-		next = p4d_addr_end(addr, end);
-		if (p4d_none_or_clear_bad(p4d))
-			continue;
-		if (is_hugepd(__hugepd(p4d_val(*p4d))))
-			continue;
-
-		walk_pud_range(p4d, addr, next, walk);
-	} while (p4d++, addr = next, addr != end);
-}
-
-static void zram_wbstore(struct vm_area_struct *vma, struct zram_wb_store_walk *walk)
-{
-	pgd_t *pgd;
-	unsigned long start = vma->vm_start;
-	unsigned long end = vma->vm_end;
-	unsigned long next;
-
-	mmap_assert_locked(walk->mm);// take read lock.
-
-	pgd = pgd_offset(walk->mm, start);
-	do {
-		next = pgd_addr_end(start, end);
-		if (pgd_none_or_clear_bad(pgd))
-			continue;
-		walk_p4d_range(pgd, start, next, walk);
-	} while (pgd++, start = next, start != end);
-}
-
-static int parse_wb_store(const char *buf, size_t len,
-				pid_t *pid, unsigned long *limit)
-{
-	int ret;
-	char *space;
-
-	space = strnchr(buf, len, ' ');
-	if (!space)
-		return -EINVAL;
-	*space = '\0';
-
-	if (strncmp(buf, PID_WB_SIG, sizeof(PID_WB_SIG) - 1))
-		return -EINVAL;
-	buf += sizeof(PID_WB_SIG) - 1;
-	ret = kstrtoint(buf, 10, pid);
-	if (ret)
-		return ret;
-
-	while (*buf++ != '\0')
-		;
-	if (strncmp(buf, LIMIT_WB_SIG, sizeof(LIMIT_WB_SIG) - 1))
-		return -EINVAL;
-	buf += sizeof(LIMIT_WB_SIG) - 1;
-	ret = kstrtoul(buf, 10, limit);
-	if (ret)
-		return ret;
-
-	return 0;
-}
-
-static ssize_t writeback_pid_store(struct zram *zram, pid_t pid, unsigned long limit)
-{
-	struct task_struct *task;
-	struct mm_struct *mm;
-	struct vm_area_struct *vma;
-	struct vma_iterator vmi;
 	int ret = 0;
 
-	INIT_ZRAM_WRITEBACK_STORE(walk, zram);
-
-	rcu_read_lock();
-	task = find_task_by_vpid(pid);
-	if (task)
-		get_task_struct(task);
-	rcu_read_unlock();
-	if (!task)
-		return -ESRCH;
-
-	mm = get_task_mm(task);
-	if (!mm) {
-		ret = -EINVAL;
-		goto put_task;
-	}
-
-	walk.entries = kmalloc(PTRS_PER_PTE * sizeof(swp_entry_t), GFP_KERNEL);
-	if (!walk.entries) {
-		ret = -ENOMEM;
-		goto put_mm;
-	}
-	walk.mm = mm;
-	walk.limit = limit >> PAGE_SHIFT;
-	vma_iter_init(&vmi, mm, 0);
-	mmap_read_lock(mm);
-	for_each_vma(vmi, vma) {
-		if (!walk.limit)
-			break;
-		if (!vma_is_anonymous(vma))
-			continue;
-
-		zram_wbstore(vma, &walk);
-	}
-	mmap_read_unlock(mm);
-	kfree(walk.entries);
-
-put_mm:
-	mmput(mm);
-put_task:
-	put_task_struct(task);
-
-	return ret;
-}
-
-
-static ssize_t writeback_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	struct zram *zram = dev_to_zram(dev);
-	unsigned long nr_pages = zram->disksize >> PAGE_SHIFT;
-	unsigned long index = 0;
-	ssize_t ret = len;
-	pid_t pid;
-	unsigned long limit;
-	int mode;
-
-	if (sysfs_streq(buf, "idle"))
-		mode = IDLE_WRITEBACK;
-	else if (sysfs_streq(buf, "huge"))
-		mode = HUGE_WRITEBACK;
-	else if (sysfs_streq(buf, "huge_idle"))
-		mode = IDLE_WRITEBACK | HUGE_WRITEBACK;
-	else {
-		if (!strncmp(buf, PAGE_WB_SIG, sizeof(PAGE_WB_SIG) - 1)) {
-			if (kstrtol(buf + sizeof(PAGE_WB_SIG) - 1, 10, &index) ||
-					index >= nr_pages)
-				return -EINVAL;
-
-			nr_pages = 1;
-			mode = PAGE_WRITEBACK;
-		} else if (!parse_wb_store(buf, len, &pid, &limit)) {
-			mode = PID_WRITEBACK;
-		} else
-			return -EINVAL;
-	}
-
-	if (mode == PID_WRITEBACK)
-		ret = writeback_pid_store(zram, pid, limit);
-	else
-		ret = writeback_store_apply(zram, index, nr_pages, mode);
-
-	return ret ? : len;
-}
-
->>>>>>> KERNEL.PLATFORM.3.0.r9-03000-kernel.0
-struct zram_work {
-	struct work_struct work;
-	struct zram *zram;
-	unsigned long entry;
-	struct bio *bio;
-	struct bio_vec bvec;
-};
-
-#if PAGE_SIZE != 4096
-static void zram_sync_read(struct work_struct *work)
-{
-	struct zram_work *zw = container_of(work, struct zram_work, work);
-	struct zram *zram = zw->zram;
-	unsigned long entry = zw->entry;
-	struct bio *bio = zw->bio;
-
-	read_from_bdev_async(zram, &zw->bvec, entry, bio);
-}
-
-/*
- * Block layer want one ->submit_bio to be active at a time, so if we use
- * chained IO with parent IO in same context, it's a deadlock. To avoid that,
- * use a worker thread context.
- */
-static int read_from_bdev_sync(struct zram *zram, struct bio_vec *bvec,
-				unsigned long entry, struct bio *bio)
-{
-	struct zram_work work;
-
-	work.bvec = *bvec;
-	work.zram = zram;
-	work.entry = entry;
-	work.bio = bio;
-
-	INIT_WORK_ONSTACK(&work.work, zram_sync_read);
-	queue_work(system_unbound_wq, &work.work);
-	flush_work(&work.work);
-	destroy_work_on_stack(&work.work);
-
-	return 1;
-}
-#else
-static int read_from_bdev_sync(struct zram *zram, struct bio_vec *bvec,
-				unsigned long entry, struct bio *bio)
-{
-	WARN_ON(1);
-	return -EIO;
-}
-#endif
-
-static int read_from_bdev(struct zram *zram, struct bio_vec *bvec,
-			unsigned long entry, struct bio *parent, bool sync)
-{
-	atomic64_inc(&zram->stats.bd_reads);
-	if (sync)
-		return read_from_bdev_sync(zram, bvec, entry, parent);
-	else
-		return read_from_bdev_async(zram, bvec, entry, parent);
-}
-#else
-static inline void reset_bdev(struct zram *zram) {};
-static int read_from_bdev(struct zram *zram, struct bio_vec *bvec,
-			unsigned long entry, struct bio *parent, bool sync)
-{
-	return -EIO;
-}
-
-static void free_block_bdev(struct zram *zram, unsigned long blk_idx) {};
-#endif
-
-#ifdef CONFIG_ZRAM_MEMORY_TRACKING
-
-static struct dentry *zram_debugfs_root;
-
-static void zram_debugfs_create(void)
-{
-	zram_debugfs_root = debugfs_create_dir("zram", NULL);
-}
-
-static void zram_debugfs_destroy(void)
-{
-	debugfs_remove_recursive(zram_debugfs_root);
-}
-
-static void zram_accessed(struct zram *zram, u32 index)
-{
-	zram_clear_flag(zram, index, ZRAM_IDLE);
-	zram->table[index].ac_time = ktime_get_boottime();
-}
-
-static ssize_t read_block_state(struct file *file, char __user *buf,
-				size_t count, loff_t *ppos)
-{
-	char *kbuf;
-	ssize_t index, written = 0;
-	struct zram *zram = file->private_data;
-	unsigned long nr_pages = zram->disksize >> PAGE_SHIFT;
-	struct timespec64 ts;
-
-	kbuf = kvmalloc(count, GFP_KERNEL);
-	if (!kbuf)
-		return -ENOMEM;
-
-	down_read(&zram->init_lock);
-	if (!init_done(zram)) {
-		up_read(&zram->init_lock);
-		kvfree(kbuf);
-		return -EINVAL;
-	}
-
-	for (index = *ppos; index < nr_pages; index++) {
-		int copied;
-
-		zram_slot_lock(zram, index);
-		if (!zram_allocated(zram, index))
-			goto next;
-
-		ts = ktime_to_timespec64(zram->table[index].ac_time);
-		copied = snprintf(kbuf + written, count,
-			"%12zd %12lld.%06lu %c%c%c%c\n",
-			index, (s64)ts.tv_sec,
-			ts.tv_nsec / NSEC_PER_USEC,
-			zram_test_flag(zram, index, ZRAM_SAME) ? 's' : '.',
-			zram_test_flag(zram, index, ZRAM_WB) ? 'w' : '.',
-			zram_test_flag(zram, index, ZRAM_HUGE) ? 'h' : '.',
-			zram_test_flag(zram, index, ZRAM_IDLE) ? 'i' : '.');
-
-		if (count <= copied) {
-			zram_slot_unlock(zram, index);
-			break;
-		}
-		written += copied;
-		count -= copied;
-next:
-		zram_slot_unlock(zram, index);
-		*ppos += 1;
-	}
-
-	up_read(&zram->init_lock);
-	if (copy_to_user(buf, kbuf, written))
-		written = -EFAULT;
-	kvfree(kbuf);
-
-	return written;
-}
-
-static const struct file_operations proc_zram_block_state_op = {
-	.open = simple_open,
-	.read = read_block_state,
-	.llseek = default_llseek,
-};
-
-static void zram_debugfs_register(struct zram *zram)
-{
-	if (!zram_debugfs_root)
-		return;
-
-	zram->debugfs_dir = debugfs_create_dir(zram->disk->disk_name,
-						zram_debugfs_root);
-	debugfs_create_file("block_state", 0400, zram->debugfs_dir,
-				zram, &proc_zram_block_state_op);
-}
-
-static void zram_debugfs_unregister(struct zram *zram)
-{
-	debugfs_remove_recursive(zram->debugfs_dir);
-}
-#else
-static void zram_debugfs_create(void) {};
-static void zram_debugfs_destroy(void) {};
-static void zram_accessed(struct zram *zram, u32 index)
-{
-	zram_clear_flag(zram, index, ZRAM_IDLE);
-};
-static void zram_debugfs_register(struct zram *zram) {};
-static void zram_debugfs_unregister(struct zram *zram) {};
-#endif
-
-/*
- * We switched to per-cpu streams and this attr is not needed anymore.
- * However, we will keep it around for some time, because:
- * a) we may revert per-cpu streams in the future
- * b) it's visible to user space and we need to follow our 2 years
- *    retirement rule; but we already have a number of 'soon to be
- *    altered' attrs, so max_comp_streams need to wait for the next
- *    layoff cycle.
- */
-static ssize_t max_comp_streams_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	return scnprintf(buf, PAGE_SIZE, "%d\n", num_online_cpus());
-}
-
-static ssize_t max_comp_streams_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	return len;
-}
-
-static ssize_t comp_algorithm_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	size_t sz;
-	struct zram *zram = dev_to_zram(dev);
-
-	down_read(&zram->init_lock);
-	sz = zcomp_available_show(zram->compressor, buf);
-	up_read(&zram->init_lock);
-
-	return sz;
-}
-
-static ssize_t comp_algorithm_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	struct zram *zram = dev_to_zram(dev);
-	char compressor[ARRAY_SIZE(zram->compressor)];
-	size_t sz;
-
-	strscpy(compressor, buf, sizeof(compressor));
-	/* ignore trailing newline */
-	sz = strlen(compressor);
-	if (sz > 0 && compressor[sz - 1] == '\n')
-		compressor[sz - 1] = 0x00;
-
-	if (!zcomp_available_algorithm(compressor))
-		return -EINVAL;
-
-	down_write(&zram->init_lock);
-	if (init_done(zram)) {
-		up_write(&zram->init_lock);
-		pr_info("Can't change algorithm for initialized device\n");
-		return -EBUSY;
-	}
-
-	strcpy(zram->compressor, compressor);
-	up_write(&zram->init_lock);
-	return len;
-}
-
-static ssize_t compact_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	struct zram *zram = dev_to_zram(dev);
-
-	down_read(&zram->init_lock);
-	if (!init_done(zram)) {
-		up_read(&zram->init_lock);
-		return -EINVAL;
-	}
-
-	zs_compact(zram->mem_pool);
-	up_read(&zram->init_lock);
-
-	return len;
-}
-
-static ssize_t io_stat_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	struct zram *zram = dev_to_zram(dev);
-	ssize_t ret;
-
-	down_read(&zram->init_lock);
-	ret = scnprintf(buf, PAGE_SIZE,
-			"%8llu %8llu %8llu %8llu\n",
-			(u64)atomic64_read(&zram->stats.failed_reads),
-			(u64)atomic64_read(&zram->stats.failed_writes),
-			(u64)atomic64_read(&zram->stats.invalid_io),
-			(u64)atomic64_read(&zram->stats.notify_free));
-	up_read(&zram->init_lock);
-
-	return ret;
-}
-
-static ssize_t mm_stat_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	struct zram *zram = dev_to_zram(dev);
-	struct zs_pool_stats pool_stats;
-	u64 orig_size, mem_used = 0;
-	long max_used;
-	ssize_t ret;
-
-	memset(&pool_stats, 0x00, sizeof(struct zs_pool_stats));
-
-	down_read(&zram->init_lock);
-	if (init_done(zram)) {
-		mem_used = zs_get_total_pages(zram->mem_pool);
-		zs_pool_stats(zram->mem_pool, &pool_stats);
-	}
-
-	orig_size = atomic64_read(&zram->stats.pages_stored);
-	max_used = atomic_long_read(&zram->stats.max_used_pages);
-
-	ret = scnprintf(buf, PAGE_SIZE,
-			"%8llu %8llu %8llu %8lu %8ld %8llu %8lu %8llu %8llu\n",
-			orig_size << PAGE_SHIFT,
-			(u64)atomic64_read(&zram->stats.compr_data_size),
-			mem_used << PAGE_SHIFT,
-			zram->limit_pages << PAGE_SHIFT,
-			max_used << PAGE_SHIFT,
-			(u64)atomic64_read(&zram->stats.same_pages),
-			atomic_long_read(&pool_stats.pages_compacted),
-			(u64)atomic64_read(&zram->stats.huge_pages),
-			(u64)atomic64_read(&zram->stats.huge_pages_since));
-	up_read(&zram->init_lock);
-
-	return ret;
-}
-
-#ifdef CONFIG_ZRAM_WRITEBACK
-#define FOUR_K(x) ((x) * (1 << (PAGE_SHIFT - 12)))
-static ssize_t bd_stat_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	struct zram *zram = dev_to_zram(dev);
-	ssize_t ret;
-
-	down_read(&zram->init_lock);
-	ret = scnprintf(buf, PAGE_SIZE,
-		"%8llu %8llu %8llu\n",
-			FOUR_K((u64)atomic64_read(&zram->stats.bd_count)),
-			FOUR_K((u64)atomic64_read(&zram->stats.bd_reads)),
-			FOUR_K((u64)atomic64_read(&zram->stats.bd_writes)));
-	up_read(&zram->init_lock);
-
-	return ret;
-}
-#endif
-
-static ssize_t debug_stat_show(struct device *dev,
-		struct device_attribute *attr, char *buf)
-{
-	int version = 1;
-	struct zram *zram = dev_to_zram(dev);
-	ssize_t ret;
-
-	down_read(&zram->init_lock);
-	ret = scnprintf(buf, PAGE_SIZE,
-			"version: %d\n%8llu %8llu\n",
-			version,
-			(u64)atomic64_read(&zram->stats.writestall),
-			(u64)atomic64_read(&zram->stats.miss_free));
-	up_read(&zram->init_lock);
-
-	return ret;
-}
-
-static DEVICE_ATTR_RO(io_stat);
-static DEVICE_ATTR_RO(mm_stat);
-#ifdef CONFIG_ZRAM_WRITEBACK
-static DEVICE_ATTR_RO(bd_stat);
-#endif
-static DEVICE_ATTR_RO(debug_stat);
-
-static void zram_meta_free(struct zram *zram, u64 disksize)
-{
-	size_t num_pages = disksize >> PAGE_SHIFT;
-	size_t index;
-
-	if (!zram->table)
-		return;
-
-	/* Free all pages that are still in this zram device */
-	for (index = 0; index < num_pages; index++)
-		zram_free_page(zram, index);
-
-	zs_destroy_pool(zram->mem_pool);
-	vfree(zram->table);
-	zram->table = NULL;
-}
-
-static bool zram_meta_alloc(struct zram *zram, u64 disksize)
-{
-	size_t num_pages;
-
-	num_pages = disksize >> PAGE_SHIFT;
-	zram->table = vzalloc(array_size(num_pages, sizeof(*zram->table)));
-	if (!zram->table)
-		return false;
-
-	zram->mem_pool = zs_create_pool(zram->disk->disk_name);
-	if (!zram->mem_pool) {
-		vfree(zram->table);
-		zram->table = NULL;
-		return false;
-	}
-
-	if (!huge_class_size)
-		huge_class_size = zs_huge_class_size(zram->mem_pool);
-	return true;
-}
-
-/*
- * To protect concurrent access to the same index entry,
- * caller should hold this table index entry's bit_spinlock to
- * indicate this index entry is accessing.
- */
-static void zram_free_page(struct zram *zram, size_t index)
-{
-	unsigned long handle;
-
-#ifdef CONFIG_ZRAM_MEMORY_TRACKING
-	zram->table[index].ac_time = 0;
-#endif
-	if (zram_test_flag(zram, index, ZRAM_IDLE))
-		zram_clear_flag(zram, index, ZRAM_IDLE);
-
-	if (zram_test_flag(zram, index, ZRAM_HUGE)) {
-		zram_clear_flag(zram, index, ZRAM_HUGE);
-		atomic64_dec(&zram->stats.huge_pages);
-	}
-
-	if (zram_test_flag(zram, index, ZRAM_WB)) {
-		zram_clear_flag(zram, index, ZRAM_WB);
-		free_block_bdev(zram, zram_get_element(zram, index));
-		goto out;
-	}
-
-	/*
-	 * No memory is allocated for same element filled pages.
-	 * Simply clear same page flag.
-	 */
-	if (zram_test_flag(zram, index, ZRAM_SAME)) {
-		zram_clear_flag(zram, index, ZRAM_SAME);
-		atomic64_dec(&zram->stats.same_pages);
-		goto out;
-	}
-
-	handle = zram_get_handle(zram, index);
-	if (!handle)
-		return;
-
-	zs_free(zram->mem_pool, handle);
-
-	atomic64_sub(zram_get_obj_size(zram, index),
-			&zram->stats.compr_data_size);
-out:
-	atomic64_dec(&zram->stats.pages_stored);
-	zram_set_handle(zram, index, 0);
-	zram_set_obj_size(zram, index, 0);
-	WARN_ON_ONCE(zram->table[index].flags &
-		~(1UL << ZRAM_LOCK | 1UL << ZRAM_UNDER_WB));
-}
-
-static int __zram_bvec_read(struct zram *zram, struct page *page, u32 index,
-				struct bio *bio, bool partial_io)
-{
-	struct zcomp_strm *zstrm;
-	unsigned long handle;
-	unsigned int size;
-	void *src, *dst;
-	int ret;
-
-	zram_slot_lock(zram, index);
-	if (zram_test_flag(zram, index, ZRAM_WB)) {
-		struct bio_vec bvec;
-
-		zram_slot_unlock(zram, index);
-		/* A null bio means rw_page was used, we must fallback to bio */
-		if (!bio)
-			return -EOPNOTSUPP;
-
-		bvec.bv_page = page;
-		bvec.bv_len = PAGE_SIZE;
-		bvec.bv_offset = 0;
-		return read_from_bdev(zram, &bvec,
-				zram_get_element(zram, index),
-				bio, partial_io);
-	}
-
-	handle = zram_get_handle(zram, index);
-	if (!handle || zram_test_flag(zram, index, ZRAM_SAME)) {
-		unsigned long value;
-		void *mem;
-
-		value = handle ? zram_get_element(zram, index) : 0;
-		mem = kmap_atomic(page);
-		zram_fill_page(mem, PAGE_SIZE, value);
-		kunmap_atomic(mem);
-		zram_slot_unlock(zram, index);
+	if (phy->fw_managed_pwr)
 		return 0;
+
+	if (!on)
+		goto disable_vdd;
+
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdd) {
+		ret = regulator_set_load(phy->vdd, USB_HSPHY_VDD_HPM_LOAD);
+		if (ret < 0) {
+			dev_err(phy->phy.dev, "Unable to set HPM of vdd:%d\n", ret);
+			goto err_vdd;
+		}
+
+		ret = regulator_set_voltage(phy->vdd, phy->vdd_levels[1],
+					    phy->vdd_levels[2]);
+		if (ret) {
+			dev_err(phy->phy.dev, "unable to set voltage for hsusb vdd\n");
+			goto put_vdd_lpm;
+		}
 	}
 
-	size = zram_get_obj_size(zram, index);
-
-	if (size != PAGE_SIZE)
-		zstrm = zcomp_stream_get(zram->comp);
-
-	src = zs_map_object(zram->mem_pool, handle, ZS_MM_RO);
-	if (size == PAGE_SIZE) {
-		dst = kmap_atomic(page);
-		memcpy(dst, src, PAGE_SIZE);
-		kunmap_atomic(dst);
-		ret = 0;
-	} else {
-		dst = kmap_atomic(page);
-		ret = zcomp_decompress(zstrm, src, size, dst);
-		kunmap_atomic(dst);
-		zcomp_stream_put(zram->comp);
-	}
-	zs_unmap_object(zram->mem_pool, handle);
-	zram_slot_unlock(zram, index);
-
-	/* Should NEVER happen. Return bio error if it does. */
-	if (WARN_ON(ret))
-		pr_err("Decompression failed! err=%d, page=%u\n", ret, index);
-
-	return ret;
-}
-
-static int zram_bvec_read(struct zram *zram, struct bio_vec *bvec,
-				u32 index, int offset, struct bio *bio)
-{
-	int ret;
-	struct page *page;
-
-	page = bvec->bv_page;
-	if (is_partial_io(bvec)) {
-		/* Use a temporary buffer to decompress the page */
-		page = alloc_page(GFP_NOIO|__GFP_HIGHMEM);
-		if (!page)
-			return -ENOMEM;
-	}
-
-	ret = __zram_bvec_read(zram, page, index, bio, is_partial_io(bvec));
-	if (unlikely(ret))
-		goto out;
-
-	if (is_partial_io(bvec)) {
-		void *src = kmap_atomic(page);
-
-		memcpy_to_bvec(bvec, src + offset);
-		kunmap_atomic(src);
-	}
-out:
-	if (is_partial_io(bvec))
-		__free_page(page);
-
-	return ret;
-}
-
-static int __zram_bvec_write(struct zram *zram, struct bio_vec *bvec,
-				u32 index, struct bio *bio)
-{
-	int ret = 0;
-	unsigned long alloced_pages;
-	unsigned long handle = -ENOMEM;
-	unsigned int comp_len = 0;
-	void *src, *dst, *mem;
-	struct zcomp_strm *zstrm;
-	struct page *page = bvec->bv_page;
-	unsigned long element = 0;
-	enum zram_pageflags flags = 0;
-
-	mem = kmap_atomic(page);
-	if (page_same_filled(mem, &element)) {
-		kunmap_atomic(mem);
-		/* Free memory associated with this sector now. */
-		flags = ZRAM_SAME;
-		atomic64_inc(&zram->stats.same_pages);
-		goto out;
-	}
-	kunmap_atomic(mem);
-
-compress_again:
-	zstrm = zcomp_stream_get(zram->comp);
-	src = kmap_atomic(page);
-	ret = zcomp_compress(zstrm, src, &comp_len);
-	kunmap_atomic(src);
-
-	if (unlikely(ret)) {
-		zcomp_stream_put(zram->comp);
-		pr_err("Compression failed! err=%d\n", ret);
-		zs_free(zram->mem_pool, handle);
-		return ret;
-	}
-
-	if (comp_len >= huge_class_size)
-		comp_len = PAGE_SIZE;
-	/*
-	 * handle allocation has 2 paths:
-	 * a) fast path is executed with preemption disabled (for
-	 *  per-cpu streams) and has __GFP_DIRECT_RECLAIM bit clear,
-	 *  since we can't sleep;
-	 * b) slow path enables preemption and attempts to allocate
-	 *  the page with __GFP_DIRECT_RECLAIM bit set. we have to
-	 *  put per-cpu compression stream and, thus, to re-do
-	 *  the compression once handle is allocated.
-	 *
-	 * if we have a 'non-null' handle here then we are coming
-	 * from the slow path and handle has already been allocated.
-	 */
-	if (IS_ERR((void *)handle))
-		handle = zs_malloc(zram->mem_pool, comp_len,
-				__GFP_KSWAPD_RECLAIM |
-				__GFP_NOWARN |
-				__GFP_HIGHMEM |
-				__GFP_MOVABLE |
-				__GFP_CMA);
-	if (IS_ERR((void *)handle)) {
-		zcomp_stream_put(zram->comp);
-		atomic64_inc(&zram->stats.writestall);
-		handle = zs_malloc(zram->mem_pool, comp_len,
-				GFP_NOIO | __GFP_HIGHMEM |
-				__GFP_MOVABLE | __GFP_CMA);
-		if (IS_ERR((void *)handle))
-			return PTR_ERR((void *)handle);
-
-		if (comp_len != PAGE_SIZE)
-			goto compress_again;
-		/*
-		 * If the page is not compressible, you need to acquire the
-		 * lock and execute the code below. The zcomp_stream_get()
-		 * call is needed to disable the cpu hotplug and grab the
-		 * zstrm buffer back. It is necessary that the dereferencing
-		 * of the zstrm variable below occurs correctly.
-		 */
-		zstrm = zcomp_stream_get(zram->comp);
-	}
-
-	alloced_pages = zs_get_total_pages(zram->mem_pool);
-	update_used_max(zram, alloced_pages);
-
-	if (zram->limit_pages && alloced_pages > zram->limit_pages) {
-		zcomp_stream_put(zram->comp);
-		zs_free(zram->mem_pool, handle);
-		return -ENOMEM;
-	}
-
-	dst = zs_map_object(zram->mem_pool, handle, ZS_MM_WO);
-
-	src = zstrm->buffer;
-	if (comp_len == PAGE_SIZE)
-		src = kmap_atomic(page);
-	memcpy(dst, src, comp_len);
-	if (comp_len == PAGE_SIZE)
-		kunmap_atomic(src);
-
-	zcomp_stream_put(zram->comp);
-	zs_unmap_object(zram->mem_pool, handle);
-	atomic64_add(comp_len, &zram->stats.compr_data_size);
-out:
-	/*
-	 * Free memory associated with this sector
-	 * before overwriting unused sectors.
-	 */
-	zram_slot_lock(zram, index);
-	zram_free_page(zram, index);
-
-	if (comp_len == PAGE_SIZE) {
-		zram_set_flag(zram, index, ZRAM_HUGE);
-		atomic64_inc(&zram->stats.huge_pages);
-		atomic64_inc(&zram->stats.huge_pages_since);
-	}
-
-	if (flags) {
-		zram_set_flag(zram, index, flags);
-		zram_set_element(zram, index, element);
-	}  else {
-		zram_set_handle(zram, index, handle);
-		zram_set_obj_size(zram, index, comp_len);
-	}
-	zram_slot_unlock(zram, index);
-
-	/* Update stats */
-	atomic64_inc(&zram->stats.pages_stored);
-	return ret;
-}
-
-static int zram_bvec_write(struct zram *zram, struct bio_vec *bvec,
-				u32 index, int offset, struct bio *bio)
-{
-	int ret;
-	struct page *page = NULL;
-	struct bio_vec vec;
-
-	vec = *bvec;
-	if (is_partial_io(bvec)) {
-		void *dst;
-		/*
-		 * This is a partial IO. We need to read the full page
-		 * before to write the changes.
-		 */
-		page = alloc_page(GFP_NOIO|__GFP_HIGHMEM);
-		if (!page)
-			return -ENOMEM;
-
-		ret = __zram_bvec_read(zram, page, index, bio, true);
-		if (ret)
-			goto out;
-
-		dst = kmap_atomic(page);
-		memcpy_from_bvec(dst + offset, bvec);
-		kunmap_atomic(dst);
-
-		vec.bv_page = page;
-		vec.bv_len = PAGE_SIZE;
-		vec.bv_offset = 0;
-	}
-
-	ret = __zram_bvec_write(zram, &vec, index, bio);
-out:
-	if (is_partial_io(bvec))
-		__free_page(page);
-	return ret;
-}
-
-/*
- * zram_bio_discard - handler on discard request
- * @index: physical block index in PAGE_SIZE units
- * @offset: byte offset within physical block
- */
-static void zram_bio_discard(struct zram *zram, u32 index,
-			     int offset, struct bio *bio)
-{
-	size_t n = bio->bi_iter.bi_size;
-
-	/*
-	 * zram manages data in physical block size units. Because logical block
-	 * size isn't identical with physical block size on some arch, we
-	 * could get a discard request pointing to a specific offset within a
-	 * certain physical block.  Although we can handle this request by
-	 * reading that physiclal block and decompressing and partially zeroing
-	 * and re-compressing and then re-storing it, this isn't reasonable
-	 * because our intent with a discard request is to save memory.  So
-	 * skipping this logical block is appropriate here.
-	 */
-	if (offset) {
-		if (n <= (PAGE_SIZE - offset))
-			return;
-
-		n -= (PAGE_SIZE - offset);
-		index++;
-	}
-
-	while (n >= PAGE_SIZE) {
-		zram_slot_lock(zram, index);
-		zram_free_page(zram, index);
-		zram_slot_unlock(zram, index);
-		atomic64_inc(&zram->stats.notify_free);
-		index++;
-		n -= PAGE_SIZE;
-	}
-}
-
-/*
- * Returns errno if it has some problem. Otherwise return 0 or 1.
- * Returns 0 if IO request was done synchronously
- * Returns 1 if IO request was successfully submitted.
- */
-static int zram_bvec_rw(struct zram *zram, struct bio_vec *bvec, u32 index,
-			int offset, enum req_op op, struct bio *bio)
-{
-	int ret;
-
-	if (!op_is_write(op)) {
-		atomic64_inc(&zram->stats.num_reads);
-		ret = zram_bvec_read(zram, bvec, index, offset, bio);
-		flush_dcache_page(bvec->bv_page);
-	} else {
-		atomic64_inc(&zram->stats.num_writes);
-		ret = zram_bvec_write(zram, bvec, index, offset, bio);
-	}
-
-	zram_slot_lock(zram, index);
-	zram_accessed(zram, index);
-	zram_slot_unlock(zram, index);
-
-	if (unlikely(ret < 0)) {
-		if (!op_is_write(op))
-			atomic64_inc(&zram->stats.failed_reads);
-		else
-			atomic64_inc(&zram->stats.failed_writes);
-	}
-
-	return ret;
-}
-
-static void __zram_make_request(struct zram *zram, struct bio *bio)
-{
-	int offset;
-	u32 index;
-	struct bio_vec bvec;
-	struct bvec_iter iter;
-	unsigned long start_time;
-
-	index = bio->bi_iter.bi_sector >> SECTORS_PER_PAGE_SHIFT;
-	offset = (bio->bi_iter.bi_sector &
-		  (SECTORS_PER_PAGE - 1)) << SECTOR_SHIFT;
-
-	switch (bio_op(bio)) {
-	case REQ_OP_DISCARD:
-	case REQ_OP_WRITE_ZEROES:
-		zram_bio_discard(zram, index, offset, bio);
-		bio_endio(bio);
-		return;
-	default:
-		break;
-	}
-
-	start_time = bio_start_io_acct(bio);
-	bio_for_each_segment(bvec, bio, iter) {
-		struct bio_vec bv = bvec;
-		unsigned int unwritten = bvec.bv_len;
-
-		do {
-			bv.bv_len = min_t(unsigned int, PAGE_SIZE - offset,
-							unwritten);
-			if (zram_bvec_rw(zram, &bv, index, offset,
-					 bio_op(bio), bio) < 0) {
-				bio->bi_status = BLK_STS_IOERR;
-				break;
-			}
-
-			bv.bv_offset += bv.bv_len;
-			unwritten -= bv.bv_len;
-
-			update_position(&index, &offset, &bv);
-		} while (unwritten);
-	}
-	bio_end_io_acct(bio, start_time);
-	bio_endio(bio);
-}
-
-/*
- * Handler function for all zram I/O requests.
- */
-static void zram_submit_bio(struct bio *bio)
-{
-	struct zram *zram = bio->bi_bdev->bd_disk->private_data;
-
-	if (!valid_io_request(zram, bio->bi_iter.bi_sector,
-					bio->bi_iter.bi_size)) {
-		atomic64_inc(&zram->stats.invalid_io);
-		bio_io_error(bio);
-		return;
-	}
-
-	__zram_make_request(zram, bio);
-}
-
-static void zram_slot_free_notify(struct block_device *bdev,
-				unsigned long index)
-{
-	struct zram *zram;
-
-	zram = bdev->bd_disk->private_data;
-
-	atomic64_inc(&zram->stats.notify_free);
-	if (!zram_slot_trylock(zram, index)) {
-		atomic64_inc(&zram->stats.miss_free);
-		return;
-	}
-
-	zram_free_page(zram, index);
-	zram_slot_unlock(zram, index);
-}
-
-static int zram_rw_page(struct block_device *bdev, sector_t sector,
-		       struct page *page, enum req_op op)
-{
-	int offset, ret;
-	u32 index;
-	struct zram *zram;
-	struct bio_vec bv;
-	unsigned long start_time;
-
-	if (PageTransHuge(page))
-		return -ENOTSUPP;
-	zram = bdev->bd_disk->private_data;
-
-	if (!valid_io_request(zram, sector, PAGE_SIZE)) {
-		atomic64_inc(&zram->stats.invalid_io);
-		ret = -EINVAL;
-		goto out;
-	}
-
-	index = sector >> SECTORS_PER_PAGE_SHIFT;
-	offset = (sector & (SECTORS_PER_PAGE - 1)) << SECTOR_SHIFT;
-
-	bv.bv_page = page;
-	bv.bv_len = PAGE_SIZE;
-	bv.bv_offset = 0;
-
-	start_time = bdev_start_io_acct(bdev->bd_disk->part0,
-			SECTORS_PER_PAGE, op, jiffies);
-	ret = zram_bvec_rw(zram, &bv, index, offset, op, NULL);
-	bdev_end_io_acct(bdev->bd_disk->part0, op, start_time);
-out:
-	/*
-	 * If I/O fails, just return error(ie, non-zero) without
-	 * calling page_endio.
-	 * It causes resubmit the I/O with bio request by upper functions
-	 * of rw_page(e.g., swap_readpage, __swap_writepage) and
-	 * bio->bi_end_io does things to handle the error
-	 * (e.g., SetPageError, set_page_dirty and extra works).
-	 */
-	if (unlikely(ret < 0))
-		return ret;
-
-	switch (ret) {
-	case 0:
-		page_endio(page, op_is_write(op), 0);
-		break;
-	case 1:
-		ret = 0;
-		break;
-	default:
-		WARN_ON(1);
-	}
-	return ret;
-}
-
-static void zram_reset_device(struct zram *zram)
-{
-	down_write(&zram->init_lock);
-
-	zram->limit_pages = 0;
-
-	set_capacity_and_notify(zram->disk, 0);
-	part_stat_set_all(zram->disk->part0, 0);
-
-	/* I/O operation under all of CPU are done so let's free */
-	zram_meta_free(zram, zram->disksize);
-	zram->disksize = 0;
-	memset(&zram->stats, 0, sizeof(zram->stats));
-	if (zram->comp)
-		zcomp_destroy(zram->comp);
-	zram->comp = NULL;
-	reset_bdev(zram);
-
-	up_write(&zram->init_lock);
-}
-
-static ssize_t disksize_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	u64 disksize;
-	struct zcomp *comp;
-	struct zram *zram = dev_to_zram(dev);
-	int err;
-
-	disksize = memparse(buf, NULL);
-	if (!disksize)
-		return -EINVAL;
-
-	down_write(&zram->init_lock);
-	if (init_done(zram)) {
-		pr_info("Cannot change disksize for initialized device\n");
-		err = -EBUSY;
-		goto out_unlock;
-	}
-
-	disksize = PAGE_ALIGN(disksize);
-	if (!zram_meta_alloc(zram, disksize)) {
-		err = -ENOMEM;
-		goto out_unlock;
-	}
-
-	comp = zcomp_create(zram->compressor);
-	if (IS_ERR(comp)) {
-		pr_err("Cannot initialise %s compressing backend\n",
-				zram->compressor);
-		err = PTR_ERR(comp);
-		goto out_free_meta;
-	}
-
-	zram->comp = comp;
-	zram->disksize = disksize;
-	set_capacity_and_notify(zram->disk, zram->disksize >> SECTOR_SHIFT);
-	up_write(&zram->init_lock);
-
-	return len;
-
-out_free_meta:
-	zram_meta_free(zram, disksize);
-out_unlock:
-	up_write(&zram->init_lock);
-	return err;
-}
-
-static ssize_t reset_store(struct device *dev,
-		struct device_attribute *attr, const char *buf, size_t len)
-{
-	int ret;
-	unsigned short do_reset;
-	struct zram *zram;
-	struct gendisk *disk;
-
-	ret = kstrtou16(buf, 10, &do_reset);
-	if (ret)
-		return ret;
-
-	if (!do_reset)
-		return -EINVAL;
-
-	zram = dev_to_zram(dev);
-	disk = zram->disk;
-
-	mutex_lock(&disk->open_mutex);
-	/* Do not reset an active device or claimed device */
-	if (disk_openers(disk) || zram->claim) {
-		mutex_unlock(&disk->open_mutex);
-		return -EBUSY;
-	}
-
-	/* From now on, anyone can't open /dev/zram[0-9] */
-	zram->claim = true;
-	mutex_unlock(&disk->open_mutex);
-
-	/* Make sure all the pending I/O are finished */
-	sync_blockdev(disk->part0);
-	zram_reset_device(zram);
-
-	mutex_lock(&disk->open_mutex);
-	zram->claim = false;
-	mutex_unlock(&disk->open_mutex);
-
-	return len;
-}
-
-static int zram_open(struct block_device *bdev, fmode_t mode)
-{
-	int ret = 0;
-	struct zram *zram;
-
-	WARN_ON(!mutex_is_locked(&bdev->bd_disk->open_mutex));
-
-	zram = bdev->bd_disk->private_data;
-	/* zram was claimed to reset so open request fails */
-	if (zram->claim)
-		ret = -EBUSY;
-
-	return ret;
-}
-
-static const struct block_device_operations zram_devops = {
-	.open = zram_open,
-	.submit_bio = zram_submit_bio,
-	.swap_slot_free_notify = zram_slot_free_notify,
-	.rw_page = zram_rw_page,
-	.owner = THIS_MODULE
-};
-
-static DEVICE_ATTR_WO(compact);
-static DEVICE_ATTR_RW(disksize);
-static DEVICE_ATTR_RO(initstate);
-static DEVICE_ATTR_WO(reset);
-static DEVICE_ATTR_WO(mem_limit);
-static DEVICE_ATTR_WO(mem_used_max);
-static DEVICE_ATTR_WO(idle);
-static DEVICE_ATTR_RW(max_comp_streams);
-static DEVICE_ATTR_RW(comp_algorithm);
-#ifdef CONFIG_ZRAM_WRITEBACK
-static DEVICE_ATTR_RW(backing_dev);
-static DEVICE_ATTR_WO(writeback);
-static DEVICE_ATTR_RW(writeback_limit);
-static DEVICE_ATTR_RW(writeback_limit_enable);
-#endif
-
-static struct attribute *zram_disk_attrs[] = {
-	&dev_attr_disksize.attr,
-	&dev_attr_initstate.attr,
-	&dev_attr_reset.attr,
-	&dev_attr_compact.attr,
-	&dev_attr_mem_limit.attr,
-	&dev_attr_mem_used_max.attr,
-	&dev_attr_idle.attr,
-	&dev_attr_max_comp_streams.attr,
-	&dev_attr_comp_algorithm.attr,
-#ifdef CONFIG_ZRAM_WRITEBACK
-	&dev_attr_backing_dev.attr,
-	&dev_attr_writeback.attr,
-	&dev_attr_writeback_limit.attr,
-	&dev_attr_writeback_limit_enable.attr,
-#endif
-	&dev_attr_io_stat.attr,
-	&dev_attr_mm_stat.attr,
-#ifdef CONFIG_ZRAM_WRITEBACK
-	&dev_attr_bd_stat.attr,
-#endif
-	&dev_attr_debug_stat.attr,
-	NULL,
-};
-
-ATTRIBUTE_GROUPS(zram_disk);
-
-/*
- * Allocate and initialize new zram device. the function returns
- * '>= 0' device_id upon success, and negative value otherwise.
- */
-static int zram_add(void)
-{
-	struct zram *zram;
-	int ret, device_id;
-
-	zram = kzalloc(sizeof(struct zram), GFP_KERNEL);
-	if (!zram)
-		return -ENOMEM;
-
-	ret = idr_alloc(&zram_index_idr, zram, 0, 0, GFP_KERNEL);
-	if (ret < 0)
-		goto out_free_dev;
-	device_id = ret;
-
-	init_rwsem(&zram->init_lock);
-#ifdef CONFIG_ZRAM_WRITEBACK
-	spin_lock_init(&zram->wb_limit_lock);
-#endif
-
-	/* gendisk structure */
-	zram->disk = blk_alloc_disk(NUMA_NO_NODE);
-	if (!zram->disk) {
-		pr_err("Error allocating disk structure for device %d\n",
-			device_id);
-		ret = -ENOMEM;
-		goto out_free_idr;
-	}
-
-	zram->disk->major = zram_major;
-	zram->disk->first_minor = device_id;
-	zram->disk->minors = 1;
-	zram->disk->flags |= GENHD_FL_NO_PART;
-	zram->disk->fops = &zram_devops;
-	zram->disk->private_data = zram;
-	snprintf(zram->disk->disk_name, 16, "zram%d", device_id);
-
-	/* Actual capacity set using syfs (/sys/block/zram<id>/disksize */
-	set_capacity(zram->disk, 0);
-	/* zram devices sort of resembles non-rotational disks */
-	blk_queue_flag_set(QUEUE_FLAG_NONROT, zram->disk->queue);
-	blk_queue_flag_clear(QUEUE_FLAG_ADD_RANDOM, zram->disk->queue);
-
-	/*
-	 * To ensure that we always get PAGE_SIZE aligned
-	 * and n*PAGE_SIZED sized I/O requests.
-	 */
-	blk_queue_physical_block_size(zram->disk->queue, PAGE_SIZE);
-	blk_queue_logical_block_size(zram->disk->queue,
-					ZRAM_LOGICAL_BLOCK_SIZE);
-	blk_queue_io_min(zram->disk->queue, PAGE_SIZE);
-	blk_queue_io_opt(zram->disk->queue, PAGE_SIZE);
-	zram->disk->queue->limits.discard_granularity = PAGE_SIZE;
-	blk_queue_max_discard_sectors(zram->disk->queue, UINT_MAX);
-
-	/*
-	 * zram_bio_discard() will clear all logical blocks if logical block
-	 * size is identical with physical block size(PAGE_SIZE). But if it is
-	 * different, we will skip discarding some parts of logical blocks in
-	 * the part of the request range which isn't aligned to physical block
-	 * size.  So we can't ensure that all discarded logical blocks are
-	 * zeroed.
-	 */
-	if (ZRAM_LOGICAL_BLOCK_SIZE == PAGE_SIZE)
-		blk_queue_max_write_zeroes_sectors(zram->disk->queue, UINT_MAX);
-
-	blk_queue_flag_set(QUEUE_FLAG_STABLE_WRITES, zram->disk->queue);
-	ret = device_add_disk(NULL, zram->disk, zram_disk_groups);
-	if (ret)
-		goto out_cleanup_disk;
-
-	strscpy(zram->compressor, default_compressor, sizeof(zram->compressor));
-
-	zram_debugfs_register(zram);
-	pr_info("Added device: %s\n", zram->disk->disk_name);
-	return device_id;
-
-out_cleanup_disk:
-	put_disk(zram->disk);
-out_free_idr:
-	idr_remove(&zram_index_idr, device_id);
-out_free_dev:
-	kfree(zram);
-	return ret;
-}
-
-static int zram_remove(struct zram *zram)
-{
-	bool claimed;
-
-	mutex_lock(&zram->disk->open_mutex);
-	if (disk_openers(zram->disk)) {
-		mutex_unlock(&zram->disk->open_mutex);
-		return -EBUSY;
-	}
-
-	claimed = zram->claim;
-	if (!claimed)
-		zram->claim = true;
-	mutex_unlock(&zram->disk->open_mutex);
-
-	zram_debugfs_unregister(zram);
-
-	if (claimed) {
-		/*
-		 * If we were claimed by reset_store(), del_gendisk() will
-		 * wait until reset_store() is done, so nothing need to do.
-		 */
-		;
-	} else {
-		/* Make sure all the pending I/O are finished */
-		sync_blockdev(zram->disk->part0);
-		zram_reset_device(zram);
-	}
-
-	pr_info("Removed device: %s\n", zram->disk->disk_name);
-
-	del_gendisk(zram->disk);
-
-	/* del_gendisk drains pending reset_store */
-	WARN_ON_ONCE(claimed && zram->claim);
-
-	/*
-	 * disksize_store() may be called in between zram_reset_device()
-	 * and del_gendisk(), so run the last reset to avoid leaking
-	 * anything allocated with disksize_store()
-	 */
-	zram_reset_device(zram);
-
-	put_disk(zram->disk);
-	kfree(zram);
-	return 0;
-}
-
-/* zram-control sysfs attributes */
-
-/*
- * NOTE: hot_add attribute is not the usual read-only sysfs attribute. In a
- * sense that reading from this file does alter the state of your system -- it
- * creates a new un-initialized zram device and returns back this device's
- * device_id (or an error code if it fails to create a new device).
- */
-static ssize_t hot_add_show(struct class *class,
-			struct class_attribute *attr,
-			char *buf)
-{
-	int ret;
-
-	mutex_lock(&zram_index_mutex);
-	ret = zram_add();
-	mutex_unlock(&zram_index_mutex);
-
-	if (ret < 0)
-		return ret;
-	return scnprintf(buf, PAGE_SIZE, "%d\n", ret);
-}
-static struct class_attribute class_attr_hot_add =
-	__ATTR(hot_add, 0400, hot_add_show, NULL);
-
-static ssize_t hot_remove_store(struct class *class,
-			struct class_attribute *attr,
-			const char *buf,
-			size_t count)
-{
-	struct zram *zram;
-	int ret, dev_id;
-
-	/* dev_id is gendisk->first_minor, which is `int' */
-	ret = kstrtoint(buf, 10, &dev_id);
-	if (ret)
-		return ret;
-	if (dev_id < 0)
-		return -EINVAL;
-
-	mutex_lock(&zram_index_mutex);
-
-	zram = idr_find(&zram_index_idr, dev_id);
-	if (zram) {
-		ret = zram_remove(zram);
-		if (!ret)
-			idr_remove(&zram_index_idr, dev_id);
-	} else {
-		ret = -ENODEV;
-	}
-
-	mutex_unlock(&zram_index_mutex);
-	return ret ? ret : count;
-}
-static CLASS_ATTR_WO(hot_remove);
-
-static struct attribute *zram_control_class_attrs[] = {
-	&class_attr_hot_add.attr,
-	&class_attr_hot_remove.attr,
-	NULL,
-};
-ATTRIBUTE_GROUPS(zram_control_class);
-
-static struct class zram_control_class = {
-	.name		= "zram-control",
-	.owner		= THIS_MODULE,
-	.class_groups	= zram_control_class_groups,
-};
-
-static int zram_remove_cb(int id, void *ptr, void *data)
-{
-	WARN_ON_ONCE(zram_remove(ptr));
-	return 0;
-}
-
-static void destroy_devices(void)
-{
-	class_unregister(&zram_control_class);
-	idr_for_each(&zram_index_idr, &zram_remove_cb, NULL);
-	zram_debugfs_destroy();
-	idr_destroy(&zram_index_idr);
-	unregister_blkdev(zram_major, "zram");
-	cpuhp_remove_multi_state(CPUHP_ZCOMP_PREPARE);
-}
-
-static int __init zram_init(void)
-{
-	int ret;
-
-	BUILD_BUG_ON(__NR_ZRAM_PAGEFLAGS > BITS_PER_LONG);
-
-	ret = cpuhp_setup_state_multi(CPUHP_ZCOMP_PREPARE, "block/zram:prepare",
-				      zcomp_cpu_up_prepare, zcomp_cpu_dead);
-	if (ret < 0)
-		return ret;
-
-	ret = class_register(&zram_control_class);
+	ret = regulator_enable(phy->vdd);
 	if (ret) {
-		pr_err("Unable to register zram-control class\n");
-		cpuhp_remove_multi_state(CPUHP_ZCOMP_PREPARE);
-		return ret;
+		dev_err(phy->phy.dev, "Unable to enable VDD\n");
+		goto unconfig_vdd;
 	}
 
-	zram_debugfs_create();
-	zram_major = register_blkdev(0, "zram");
-	if (zram_major <= 0) {
-		pr_err("Unable to get major number\n");
-		class_unregister(&zram_control_class);
-		cpuhp_remove_multi_state(CPUHP_ZCOMP_PREPARE);
-		return -EBUSY;
+	dev_dbg(phy->phy.dev, "%s(): HSUSB PHY's vdd turned ON.\n", __func__);
+
+	return ret;
+
+disable_vdd:
+	ret = regulator_disable(phy->vdd);
+	if (ret)
+		dev_err(phy->phy.dev, "Unable to disable vdd:%d\n", ret);
+
+unconfig_vdd:
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdd) {
+		ret = regulator_set_voltage(phy->vdd, phy->vdd_levels[0],
+					    phy->vdd_levels[2]);
+		if (ret)
+			dev_err(phy->phy.dev, "unable to set voltage for hsusb vdd\n");
 	}
 
-	while (num_devices != 0) {
-		mutex_lock(&zram_index_mutex);
-		ret = zram_add();
-		mutex_unlock(&zram_index_mutex);
+put_vdd_lpm:
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdd) {
+		ret = regulator_set_load(phy->vdd, 0);
 		if (ret < 0)
-			goto out_error;
-		num_devices--;
+			dev_err(phy->phy.dev, "Unable to set LPM of vdd\n");
 	}
 
-	return 0;
-
-out_error:
-	destroy_devices();
+err_vdd:
 	return ret;
 }
 
-static void __exit zram_exit(void)
+static int vdda18_phy_enable_disable(struct msm_hsphy *phy, bool on)
 {
-	destroy_devices();
+	int ret = 0;
+
+	if (phy->fw_managed_pwr)
+		return 0;
+
+	if (!on)
+		goto disable_vdda18;
+
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdda_18) {
+		ret = regulator_set_load(phy->vdda18, USB_HSPHY_1P8_HPM_LOAD);
+		if (ret < 0) {
+			dev_err(phy->phy.dev, "Unable to set HPM of vdda18:%d\n", ret);
+			goto err_vdda18;
+		}
+
+		ret = regulator_set_voltage(phy->vdda18, USB_HSPHY_1P8_VOL_MIN,
+							USB_HSPHY_1P8_VOL_MAX);
+		if (ret) {
+			dev_err(phy->phy.dev,
+					"Unable to set voltage for vdda18:%d\n", ret);
+			goto put_vdda18_lpm;
+		}
+	}
+
+	ret = regulator_enable(phy->vdda18);
+	if (ret) {
+		dev_err(phy->phy.dev, "Unable to enable vdda18:%d\n", ret);
+		goto unset_vdda18;
+	}
+
+	dev_dbg(phy->phy.dev, "%s(): HSUSB PHY's vdda18 turned ON.\n", __func__);
+
+	return ret;
+
+disable_vdda18:
+	ret = regulator_disable(phy->vdda18);
+	if (ret)
+		dev_err(phy->phy.dev, "Unable to disable vdda18:%d\n", ret);
+
+unset_vdda18:
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdda_18) {
+		ret = regulator_set_voltage(phy->vdda18, 0, USB_HSPHY_1P8_VOL_MAX);
+		if (ret)
+			dev_err(phy->phy.dev,
+				"Unable to set (0) voltage for vdda18:%d\n", ret);
+	}
+
+put_vdda18_lpm:
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdda_18) {
+		ret = regulator_set_load(phy->vdda18, 0);
+		if (ret < 0)
+			dev_err(phy->phy.dev, "Unable to set LPM of vdda18\n");
+	}
+
+err_vdda18:
+	return ret;
 }
 
-module_init(zram_init);
-module_exit(zram_exit);
+static int vdda33_phy_enable_disable(struct msm_hsphy *phy, bool on)
+{
+	int ret = 0;
 
-module_param(num_devices, uint, 0);
-MODULE_PARM_DESC(num_devices, "Number of pre-created zram devices");
+	if (phy->fw_managed_pwr)
+		return 0;
 
-MODULE_LICENSE("Dual BSD/GPL");
-MODULE_AUTHOR("Nitin Gupta <ngupta@vflare.org>");
-MODULE_DESCRIPTION("Compressed RAM Block Device");
+	if (!on) {
+		if (phy->refgen)
+			goto disable_refgen;
+		else
+			goto disable_vdda33;
+	}
+
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdda33) {
+		ret = regulator_set_load(phy->vdda33, USB_HSPHY_3P3_HPM_LOAD);
+		if (ret < 0) {
+			dev_err(phy->phy.dev, "Unable to set HPM of vdda33:%d\n", ret);
+			goto err_vdda33;
+		}
+
+		ret = regulator_set_voltage(phy->vdda33, USB_HSPHY_3P3_VOL_MIN,
+							USB_HSPHY_3P3_VOL_MAX);
+		if (ret) {
+			dev_err(phy->phy.dev,
+					"Unable to set voltage for vdda33:%d\n", ret);
+			goto put_vdda33_lpm;
+		}
+	}
+
+	ret = regulator_enable(phy->vdda33);
+	if (ret) {
+		dev_err(phy->phy.dev, "Unable to enable vdda33:%d\n", ret);
+		goto unset_vdd33;
+	}
+
+	if (phy->refgen) {
+		ret = regulator_set_load(phy->refgen, USB2PHY_REFGEN_HPM_LOAD);
+		if (ret < 0) {
+			dev_err(phy->phy.dev, "Unable to set HPM of refgen:%d\n", ret);
+			goto disable_vdda33;
+		}
+
+		ret = regulator_set_voltage(phy->refgen, phy->refgen_levels[1],
+						phy->refgen_levels[2]);
+		if (ret) {
+			dev_err(phy->phy.dev,
+					"Unable to set voltage for refgen:%d\n", ret);
+			goto put_refgen_lpm;
+		}
+
+		ret = regulator_enable(phy->refgen);
+		if (ret) {
+			dev_err(phy->phy.dev, "Unable to enable refgen:%d\n", ret);
+			goto unset_refgen;
+		}
+	}
+
+	dev_dbg(phy->phy.dev, "%s(): HSUSB PHY's vdda33 turned ON.\n", __func__);
+
+	return ret;
+
+disable_refgen:
+	ret = regulator_disable(phy->refgen);
+	if (ret)
+		dev_err(phy->phy.dev, "Unable to disable refgen:%d\n", ret);
+
+unset_refgen:
+	ret = regulator_set_voltage(phy->refgen, phy->refgen_levels[0], phy->refgen_levels[2]);
+	if (ret)
+		dev_err(phy->phy.dev,
+				"Unable to set (0) voltage for refgen:%d\n", ret);
+
+put_refgen_lpm:
+	ret = regulator_set_load(phy->refgen, 0);
+	if (ret < 0)
+		dev_err(phy->phy.dev, "Unable to set (0) HPM of refgen\n");
+
+disable_vdda33:
+	ret = regulator_disable(phy->vdda33);
+	if (ret)
+		dev_err(phy->phy.dev, "Unable to disable vdda33:%d\n", ret);
+
+unset_vdd33:
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdda33) {
+		ret = regulator_set_voltage(phy->vdda33, 0, USB_HSPHY_3P3_VOL_MAX);
+		if (ret)
+			dev_err(phy->phy.dev,
+				"Unable to set (0) voltage for vdda33:%d\n", ret);
+	}
+
+put_vdda33_lpm:
+	if (phy->phy_priv_data == NULL || !phy->phy_priv_data->limit_control_vdda33) {
+		ret = regulator_set_load(phy->vdda33, 0);
+		if (ret < 0)
+			dev_err(phy->phy.dev, "Unable to set (0) HPM of vdda33\n");
+	}
+
+err_vdda33:
+	return ret;
+}
+
+static int msm_hsphy_enable_power(struct msm_hsphy *phy, bool on)
+{
+	int ret = 0;
+
+	if (phy->fw_managed_pwr)
+		return 0;
+
+	dev_dbg(phy->phy.dev, "%s turn %s regulators. power_enabled:%d\n",
+			__func__, on ? "on" : "off", phy->power_enabled);
+
+	if (phy->power_enabled == on) {
+		dev_dbg(phy->phy.dev, "PHYs' regulators are already ON.\n");
+		return 0;
+	}
+
+	ret = vdd_phy_enable_disable(phy, on);
+	if (ret < 0)
+		goto err_hs_reg;
+
+	ret = vdda18_phy_enable_disable(phy, on);
+	if (ret < 0)
+		goto err_hs_reg;
+
+	ret = vdda33_phy_enable_disable(phy, on);
+	if (ret < 0)
+		goto err_hs_reg;
+
+	if (on)
+		phy->power_enabled = true;
+	else
+		phy->power_enabled = false;
+
+	return ret;
+
+err_hs_reg:
+	dev_err(phy->phy.dev, "HSUSB PHY's regulators set/unset failed\n");
+	dev_err(phy->phy.dev, "Some or all HSUSB PHY's regulators are turned OFF\n");
+	return ret;
+}
+
+static void msm_usb_write_readback(void __iomem *base, u32 offset,
+					const u32 mask, u32 val)
+{
+	u32 write_val, tmp = readl_relaxed(base + offset);
+
+	tmp &= ~mask;		/* retain other bits */
+	write_val = tmp | val;
+
+	writel_relaxed(write_val, base + offset);
+
+	/* Read back to see if val was written */
+	tmp = readl_relaxed(base + offset);
+	tmp &= mask;		/* clear other bits */
+
+	if (tmp != val)
+		pr_err("%s: write: %x to QSCRATCH: %x FAILED\n",
+			__func__, val, offset);
+}
+
+static void msm_hsphy_reset(struct msm_hsphy *phy)
+{
+	int ret;
+
+	if (phy->fw_managed_pwr)
+		return;
+
+	ret = reset_control_assert(phy->phy_reset);
+	if (ret)
+		dev_err(phy->phy.dev, "%s: phy_reset assert failed\n",
+								__func__);
+	usleep_range(100, 150);
+
+	ret = reset_control_deassert(phy->phy_reset);
+	if (ret)
+		dev_err(phy->phy.dev, "%s: phy_reset deassert failed\n",
+							__func__);
+}
+
+static void hsusb_phy_write_seq(void __iomem *base, u32 *seq, int cnt,
+		unsigned long delay)
+{
+	int i;
+
+	pr_debug("Seq count:%d\n", cnt);
+	for (i = 0; i < cnt; i = i+2) {
+		pr_debug("write 0x%02x to 0x%02x\n", seq[i], seq[i+1]);
+		writel_relaxed(seq[i], base + seq[i+1]);
+		if (delay)
+			usleep_range(delay, (delay + 2000));
+	}
+}
+
+#define EUD_EN2 BIT(0)
+static int msm_hsphy_init(struct usb_phy *uphy)
+{
+	struct msm_hsphy *phy = container_of(uphy, struct msm_hsphy, phy);
+	int ret;
+	u32 rcal_code = 0, eud_csr_reg = 0;
+
+	dev_dbg(uphy->dev, "%s phy_flags:0x%x\n", __func__, phy->phy.flags);
+	if (phy->eud_enable_reg) {
+		eud_csr_reg = readl_relaxed(phy->eud_enable_reg);
+		if (eud_csr_reg & EUD_EN2) {
+			dev_dbg(phy->phy.dev, "csr:0x%x eud is enabled\n",
+							eud_csr_reg);
+			/* if in host mode, disable EUD */
+			if (phy->phy.flags & PHY_HOST_MODE) {
+				qcom_scm_io_writel(phy->eud_reg, 0x0);
+				phy->re_enable_eud = true;
+			} else {
+				ret = msm_hsphy_modeled_d3_to_d0(phy);
+				if (ret) {
+					dev_err(uphy->dev,
+						"hsphy init failed = %d\n",
+						ret);
+					return ret;
+				}
+				msm_hsphy_enable_power(phy, true);
+				msm_hsphy_enable_clocks(phy, true);
+				return 0;
+			}
+		}
+	}
+
+	ret = msm_hsphy_modeled_d3_to_d0(phy);
+	if (ret) {
+		dev_err(uphy->dev, "hsphy resource init failed = %d\n", ret);
+		return ret;
+	}
+
+	ret = msm_hsphy_enable_power(phy, true);
+	if (ret)
+		return ret;
+
+	msm_hsphy_enable_clocks(phy, true);
+
+	msm_hsphy_reset(phy);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_CFG0,
+				UTMI_PHY_CMN_CTRL_OVERRIDE_EN,
+				UTMI_PHY_CMN_CTRL_OVERRIDE_EN);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_UTMI_CTRL5,
+				POR, POR);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON0,
+				FSEL_MASK, 0);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON1,
+				PLLBTUNE, PLLBTUNE);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_REFCLK_CTRL,
+				REFCLK_SEL_MASK, REFCLK_SEL_DEFAULT);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON1,
+				VBUSVLDEXTSEL0, VBUSVLDEXTSEL0);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL1,
+				VBUSVLDEXT0, VBUSVLDEXT0);
+
+	/* set parameter ovrride  if needed */
+	if (phy->param_override_seq)
+		hsusb_phy_write_seq(phy->base, phy->param_override_seq,
+				phy->param_override_seq_cnt, 0);
+
+	if (phy->pre_emphasis) {
+		u8 val = TXPREEMPAMPTUNE0(phy->pre_emphasis) &
+				TXPREEMPAMPTUNE0_MASK;
+		if (val)
+			msm_usb_write_readback(phy->base,
+				USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X1,
+				TXPREEMPAMPTUNE0_MASK, val);
+	}
+
+	if (phy->txvref_tune0) {
+		u8 val = phy->txvref_tune0 & TXVREFTUNE0_MASK;
+
+		msm_usb_write_readback(phy->base,
+			USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X1,
+			TXVREFTUNE0_MASK, val);
+	}
+
+	if (phy->param_ovrd0) {
+		msm_usb_write_readback(phy->base,
+			USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X0,
+			PARAM_OVRD_MASK, phy->param_ovrd0);
+	}
+
+	if (phy->param_ovrd1) {
+		msm_usb_write_readback(phy->base,
+			USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X1,
+			PARAM_OVRD_MASK, phy->param_ovrd1);
+	}
+
+	if (phy->param_ovrd2) {
+		msm_usb_write_readback(phy->base,
+			USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X2,
+			PARAM_OVRD_MASK, phy->param_ovrd2);
+	}
+
+	if (phy->param_ovrd3) {
+		msm_usb_write_readback(phy->base,
+			USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X3,
+			PARAM_OVRD_MASK, phy->param_ovrd3);
+	}
+
+	dev_dbg(uphy->dev, "x0:%08x x1:%08x x2:%08x x3:%08x\n",
+	readl_relaxed(phy->base + USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X0),
+	readl_relaxed(phy->base + USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X1),
+	readl_relaxed(phy->base + USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X2),
+	readl_relaxed(phy->base + USB2PHY_USB_PHY_PARAMETER_OVERRIDE_X3));
+
+	if (phy->phy_rcal_reg) {
+		rcal_code = readl_relaxed(phy->phy_rcal_reg) & phy->rcal_mask;
+
+		dev_dbg(uphy->dev, "rcal_mask:%08x reg:%pK code:%08x\n",
+				phy->rcal_mask, phy->phy_rcal_reg, rcal_code);
+	}
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON2,
+				VREGBYPASS, VREGBYPASS);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL2,
+				USB2_SUSPEND_N_SEL | USB2_SUSPEND_N,
+				USB2_SUSPEND_N_SEL | USB2_SUSPEND_N);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_UTMI_CTRL0,
+				SLEEPM, SLEEPM);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL_COMMON0,
+				SIDDQ, 0);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_UTMI_CTRL5,
+				POR, 0);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL2,
+				USB2_SUSPEND_N_SEL, 0);
+
+	msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_CFG0,
+				UTMI_PHY_CMN_CTRL_OVERRIDE_EN, 0);
+
+	if (phy->fw_managed_pwr)
+		msm_usb_write_readback(phy->base,
+				       USB2_PHY_USB_PHY_PWRDOWN_CTRL,
+				       PWRDOWN_B, 1);
+
+	return 0;
+}
+
+static int msm_hsphy_set_suspend(struct usb_phy *uphy, int suspend)
+{
+	struct msm_hsphy *phy = container_of(uphy, struct msm_hsphy, phy);
+	bool eud_active = false;
+
+	if (phy->suspended && suspend) {
+		if (phy->phy.flags & PHY_SUS_OVERRIDE)
+			goto suspend;
+
+		dev_dbg(uphy->dev, "%s: USB PHY is already suspended\n",
+								__func__);
+		return 0;
+	}
+
+	if (phy->eud_enable_reg && readl_relaxed(phy->eud_enable_reg))
+		eud_active = true;
+
+suspend:
+	if (suspend) { /* Bus suspend */
+	       /*
+		* The HUB class drivers calls usb_phy_notify_disconnect() upon a device
+		* disconnect. Consider a scenario where a USB device is disconnected without
+		* detaching the OTG cable. phy->cable_connected is marked false due to above
+		* mentioned call path. Now, while entering low power mode (host bus suspend),
+		* we come here and turn off regulators thinking no cable is connected. Prevent
+		* this by not turning off regulators while in host mode.
+		*/
+		if (phy->cable_connected || (phy->phy.flags & PHY_HOST_MODE)) {
+			/* Enable auto-resume functionality during host mode
+			 * bus suspend with some FS/HS peripheral connected.
+			 */
+			if ((phy->phy.flags & PHY_HOST_MODE) &&
+				(phy->phy.flags & PHY_HSFS_MODE)) {
+				/* Enable auto-resume functionality by pulsing
+				 * signal
+				 */
+				msm_usb_write_readback(phy->base,
+					USB2_PHY_USB_PHY_HS_PHY_CTRL2,
+					USB2_AUTO_RESUME, USB2_AUTO_RESUME);
+				usleep_range(500, 1000);
+				msm_usb_write_readback(phy->base,
+					USB2_PHY_USB_PHY_HS_PHY_CTRL2,
+					USB2_AUTO_RESUME, 0);
+			}
+			msm_hsphy_modeled_d0_to_d1(phy);
+			msm_hsphy_enable_clocks(phy, false);
+		} else {/* Cable disconnect */
+			mutex_lock(&phy->phy_lock);
+			dev_dbg(uphy->dev, "phy->flags:0x%x\n", phy->phy.flags);
+			if (phy->re_enable_eud) {
+				dev_dbg(uphy->dev, "re-enabling EUD\n");
+				qcom_scm_io_writel(phy->eud_reg, 0x1);
+				phy->re_enable_eud = false;
+			}
+
+			if (!phy->dpdm_enable && !eud_active) {
+				if (!(phy->phy.flags & EUD_SPOOF_DISCONNECT)) {
+					dev_dbg(uphy->dev, "turning off clocks/ldo\n");
+					/*
+					 * For fw managed devices, if the genpd virtual devices
+					 * are put, then the control goes to firmware which
+					 * manages the resources. With no EUD SPOOF DISCONNECT,
+					 * the control is passed down to firmware, which is not
+					 * aware of the INIT or suspend states, or the role of
+					 * USB.
+					 *
+					 * Hence, do not powerdown the PHY and let it be managed
+					 * via resources only. This way, we do not have to rely
+					 * on the role of DUT. and we can skip INIT for cable
+					 * disconnect and connect.
+					 */
+					if (!(phy->phy.flags & PHY_HOST_MODE)
+						&& !phy->fw_managed_pwr) {
+						msm_usb_write_readback(phy->base,
+							USB2_PHY_USB_PHY_PWRDOWN_CTRL,
+							PWRDOWN_B, 0);
+					}
+					msm_hsphy_modeled_d0_to_d3(phy);
+					msm_hsphy_enable_clocks(phy, false);
+					msm_hsphy_enable_power(phy, false);
+				}
+			} else {
+				dev_dbg(uphy->dev, "dpdm reg still active.  Keep clocks/ldo ON\n");
+			}
+			mutex_unlock(&phy->phy_lock);
+		}
+		phy->suspended = true;
+	} else { /* Bus resume and cable connect */
+		msm_hsphy_modeled_d3_to_d0(phy);
+		msm_hsphy_enable_power(phy, true);
+		msm_hsphy_enable_clocks(phy, true);
+		phy->suspended = false;
+	}
+
+	return 0;
+}
+
+static int msm_hsphy_notify_connect(struct usb_phy *uphy,
+				    enum usb_device_speed speed)
+{
+	struct msm_hsphy *phy = container_of(uphy, struct msm_hsphy, phy);
+
+	phy->cable_connected = true;
+
+	return 0;
+}
+
+static int msm_hsphy_notify_disconnect(struct usb_phy *uphy,
+				       enum usb_device_speed speed)
+{
+	struct msm_hsphy *phy = container_of(uphy, struct msm_hsphy, phy);
+
+	phy->cable_connected = false;
+
+	return 0;
+}
+
+static void msm_hsphy_vbus_draw_work(struct work_struct *w)
+{
+	struct msm_hsphy *phy = container_of(w, struct msm_hsphy,
+			vbus_draw_work);
+	union power_supply_propval val = {0};
+	int ret;
+
+	if (!phy->usb_psy) {
+		phy->usb_psy = power_supply_get_by_name("usb");
+		if (!phy->usb_psy) {
+			dev_err(phy->phy.dev, "Could not get usb psy\n");
+			return;
+		}
+	}
+
+	dev_info(phy->phy.dev, "Avail curr from USB = %u\n", phy->vbus_draw);
+
+	/* Set max current limit in uA */
+	val.intval = 1000 * phy->vbus_draw;
+	ret = power_supply_set_property(phy->usb_psy, POWER_SUPPLY_PROP_INPUT_CURRENT_LIMIT, &val);
+	if (ret) {
+		dev_dbg(phy->phy.dev, "Error (%d) setting input current limit\n", ret);
+		return;
+	}
+}
+
+static int msm_hsphy_set_power(struct usb_phy *uphy, unsigned int mA)
+{
+	struct msm_hsphy *phy = container_of(uphy, struct msm_hsphy, phy);
+
+	if (phy->cable_connected && (mA == 0))
+		return 0;
+
+	phy->vbus_draw = mA;
+	schedule_work(&phy->vbus_draw_work);
+
+	return 0;
+}
+
+static int msm_hsphy_dpdm_regulator_enable(struct regulator_dev *rdev)
+{
+	int ret = 0;
+	struct msm_hsphy *phy = rdev_get_drvdata(rdev);
+
+	dev_dbg(phy->phy.dev, "%s dpdm_enable:%d\n",
+				__func__, phy->dpdm_enable);
+
+	if (phy->eud_enable_reg && readl_relaxed(phy->eud_enable_reg)) {
+		dev_err(phy->phy.dev, "eud is enabled\n");
+		return 0;
+	}
+
+	mutex_lock(&phy->phy_lock);
+	if (!phy->dpdm_enable) {
+		ret = msm_hsphy_modeled_d3_to_d0(phy);
+		if (ret) {
+			mutex_unlock(&phy->phy_lock);
+			return ret;
+		}
+
+		ret = msm_hsphy_enable_power(phy, true);
+		if (ret) {
+			mutex_unlock(&phy->phy_lock);
+			return ret;
+		}
+
+		msm_hsphy_enable_clocks(phy, true);
+
+		msm_hsphy_reset(phy);
+
+		/*
+		 * For PMIC charger detection, place PHY in UTMI non-driving
+		 * mode which leaves Dp and Dm lines in high-Z state.
+		 */
+		msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_HS_PHY_CTRL2,
+					USB2_SUSPEND_N_SEL | USB2_SUSPEND_N,
+					USB2_SUSPEND_N_SEL | USB2_SUSPEND_N);
+		msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_UTMI_CTRL0,
+					OPMODE_MASK, OPMODE_NONDRIVING);
+		msm_usb_write_readback(phy->base, USB2_PHY_USB_PHY_CFG0,
+					UTMI_PHY_DATAPATH_CTRL_OVERRIDE_EN,
+					UTMI_PHY_DATAPATH_CTRL_OVERRIDE_EN);
+
+		phy->dpdm_enable = true;
+	}
+	mutex_unlock(&phy->phy_lock);
+
+	return ret;
+}
+
+static int msm_hsphy_dpdm_regulator_disable(struct regulator_dev *rdev)
+{
+	int ret = 0;
+	struct msm_hsphy *phy = rdev_get_drvdata(rdev);
+
+	dev_dbg(phy->phy.dev, "%s dpdm_enable:%d\n",
+				__func__, phy->dpdm_enable);
+
+	mutex_lock(&phy->phy_lock);
+	if (phy->dpdm_enable) {
+		if (!phy->cable_connected) {
+			msm_hsphy_modeled_d0_to_d3(phy);
+			msm_hsphy_enable_clocks(phy, false);
+			ret = msm_hsphy_enable_power(phy, false);
+			if (ret < 0) {
+				mutex_unlock(&phy->phy_lock);
+				return ret;
+			}
+		}
+		phy->dpdm_enable = false;
+	}
+	mutex_unlock(&phy->phy_lock);
+
+	return ret;
+}
+
+static int msm_hsphy_dpdm_regulator_is_enabled(struct regulator_dev *rdev)
+{
+	struct msm_hsphy *phy = rdev_get_drvdata(rdev);
+
+	dev_dbg(phy->phy.dev, "%s dpdm_enable:%d\n",
+			__func__, phy->dpdm_enable);
+
+	return phy->dpdm_enable;
+}
+
+static const struct regulator_ops msm_hsphy_dpdm_regulator_ops = {
+	.enable		= msm_hsphy_dpdm_regulator_enable,
+	.disable	= msm_hsphy_dpdm_regulator_disable,
+	.is_enabled	= msm_hsphy_dpdm_regulator_is_enabled,
+};
+
+static int msm_hsphy_regulator_init(struct msm_hsphy *phy)
+{
+	struct device *dev = phy->phy.dev;
+	struct regulator_config cfg = {};
+	struct regulator_init_data *init_data;
+
+	init_data = devm_kzalloc(dev, sizeof(*init_data), GFP_KERNEL);
+	if (!init_data)
+		return -ENOMEM;
+
+	init_data->constraints.valid_ops_mask |= REGULATOR_CHANGE_STATUS;
+	phy->dpdm_rdesc.owner = THIS_MODULE;
+	phy->dpdm_rdesc.type = REGULATOR_VOLTAGE;
+	phy->dpdm_rdesc.ops = &msm_hsphy_dpdm_regulator_ops;
+	phy->dpdm_rdesc.name = kbasename(dev->of_node->full_name);
+
+	cfg.dev = dev;
+	cfg.init_data = init_data;
+	cfg.driver_data = phy;
+	cfg.of_node = dev->of_node;
+
+	phy->dpdm_rdev = devm_regulator_register(dev, &phy->dpdm_rdesc, &cfg);
+	return PTR_ERR_OR_ZERO(phy->dpdm_rdev);
+}
+
+static void msm_hsphy_create_debugfs(struct msm_hsphy *phy)
+{
+	phy->root = debugfs_create_dir(dev_name(phy->phy.dev), NULL);
+	debugfs_create_x8("pre_emphasis", 0644, phy->root, &phy->pre_emphasis);
+	debugfs_create_x8("txvref_tune0", 0644, phy->root, &phy->txvref_tune0);
+	debugfs_create_x8("param_ovrd0", 0644, phy->root, &phy->param_ovrd0);
+	debugfs_create_x8("param_ovrd1", 0644, phy->root, &phy->param_ovrd1);
+	debugfs_create_x8("param_ovrd2", 0644, phy->root, &phy->param_ovrd2);
+	debugfs_create_x8("param_ovrd3", 0644, phy->root, &phy->param_ovrd3);
+}
+
+static int usb2_get_regulators(struct msm_hsphy *phy)
+{
+	struct device *dev = phy->phy.dev;
+	int ret = 0;
+
+	phy->refgen = NULL;
+
+	phy->vdd = devm_regulator_get(dev, "vdd");
+	if (IS_ERR(phy->vdd)) {
+		ret = PTR_ERR(phy->vdd);
+		if (ret != -EPROBE_DEFER)
+			dev_err(dev, "unable to get vdd supply\n");
+		return ret;
+	}
+
+	phy->vdda33 = devm_regulator_get(dev, "vdda33");
+	if (IS_ERR(phy->vdda33)) {
+		ret = PTR_ERR(phy->vdda33);
+		if (ret != -EPROBE_DEFER)
+			dev_err(dev, "unable to get vdda33 supply\n");
+		return ret;
+	}
+
+	phy->vdda18 = devm_regulator_get(dev, "vdda18");
+	if (IS_ERR(phy->vdda18)) {
+		ret = PTR_ERR(phy->vdda18);
+		if (ret != -EPROBE_DEFER)
+			dev_err(dev, "unable to get vdda18 supply\n");
+		return ret;
+	}
+
+	if (of_property_read_bool(dev->of_node, "refgen-supply")) {
+		phy->refgen = devm_regulator_get_optional(dev, "refgen");
+		if (IS_ERR(phy->refgen))
+			dev_err(dev, "unable to get refgen supply\n");
+	}
+
+	return 0;
+}
+
+static int msm_hsphy_pm_prepare(struct device *dev)
+{
+	struct msm_hsphy *phy = dev_get_drvdata(dev);
+
+	if (!phy->fw_managed_pwr)
+		return 0;
+
+	pm_runtime_force_suspend(phy->pd_devs[0]);
+	pm_runtime_force_suspend(phy->pd_devs[1]);
+
+	return 0;
+}
+
+static void msm_hsphy_pm_complete(struct device *dev)
+{
+	struct msm_hsphy *phy = dev_get_drvdata(dev);
+
+	if (!phy->fw_managed_pwr)
+		return;
+
+	pm_runtime_force_resume(phy->pd_devs[0]);
+	pm_runtime_force_resume(phy->pd_devs[1]);
+}
+
+static const struct dev_pm_ops msm_hsphy_pm_ops = {
+	.prepare = pm_sleep_ptr(msm_hsphy_pm_prepare),
+	.complete = pm_sleep_ptr(msm_hsphy_pm_complete),
+};
+
+static int msm_hsphy_probe(struct platform_device *pdev)
+{
+	struct device *dev = &pdev->dev;
+	const struct hs_phy_priv_data *driver_data;
+	struct msm_hsphy *phy;
+	struct resource *res;
+	int ret = 0;
+
+	phy = devm_kzalloc(dev, sizeof(*phy), GFP_KERNEL);
+	if (!phy) {
+		ret = -ENOMEM;
+		goto err_ret;
+	}
+
+	driver_data = of_device_get_match_data(dev);
+	phy->phy_priv_data = driver_data;
+	phy->phy.dev = dev;
+	res = platform_get_resource_byname(pdev, IORESOURCE_MEM,
+						"hsusb_phy_base");
+	if (!res) {
+		dev_err(dev, "missing memory base resource\n");
+		ret = -ENODEV;
+		goto err_ret;
+	}
+
+	phy->base = devm_ioremap_resource(dev, res);
+	if (IS_ERR(phy->base)) {
+		dev_err(dev, "ioremap failed\n");
+		ret = -ENODEV;
+		goto err_ret;
+	}
+
+	res = platform_get_resource_byname(pdev, IORESOURCE_MEM,
+							"phy_rcal_reg");
+	if (res) {
+		phy->phy_rcal_reg = devm_ioremap(dev,
+					res->start, resource_size(res));
+		if (IS_ERR(phy->phy_rcal_reg)) {
+			dev_err(dev, "couldn't ioremap phy_rcal_reg\n");
+			phy->phy_rcal_reg = NULL;
+		}
+		if (of_property_read_u32(dev->of_node,
+					"qcom,rcal-mask", &phy->rcal_mask)) {
+			dev_err(dev, "unable to read phy rcal mask\n");
+			phy->phy_rcal_reg = NULL;
+		}
+		dev_dbg(dev, "rcal_mask:%08x reg:%pK\n", phy->rcal_mask,
+				phy->phy_rcal_reg);
+	}
+
+	res = platform_get_resource_byname(pdev, IORESOURCE_MEM,
+			"eud_enable_reg");
+	if (res) {
+		phy->eud_enable_reg = devm_ioremap_resource(dev, res);
+		if (IS_ERR(phy->eud_enable_reg)) {
+			dev_err(dev, "err getting eud_enable_reg address\n");
+			return PTR_ERR(phy->eud_enable_reg);
+		}
+		phy->eud_reg = res->start;
+	}
+
+	if (of_device_is_compatible(dev->of_node,
+			"qcom,usb-hsphy-snps-femto-fw-managed")) {
+		phy->fw_managed_pwr = true;
+		ret =  msm_hsphy_modeled_domain_attach(phy);
+		if (ret) {
+			dev_err(dev, "Failed to attach modeled domains.\n");
+			goto err_ret;
+		}
+	} else {
+		/* ref_clk_src is needed irrespective of SE_CLK or DIFF_CLK usage */
+		phy->ref_clk_src = devm_clk_get(dev, "ref_clk_src");
+		if (IS_ERR(phy->ref_clk_src)) {
+			dev_dbg(dev, "clk get failed for ref_clk_src\n");
+			ret = PTR_ERR(phy->ref_clk_src);
+			return ret;
+		}
+
+		phy->ref_clk = devm_clk_get_optional(dev, "ref_clk");
+		if (IS_ERR(phy->ref_clk)) {
+			dev_dbg(dev, "clk get failed for ref_clk\n");
+			ret = PTR_ERR(phy->ref_clk);
+			return ret;
+		}
+
+<<<<<<< ours
+	get_panel_info(); //get_panel_info
+	pr_err("panel_info=%d\n", panel_info);
+	phy->phy_reset = devm_reset_control_get(dev, "phy_reset");
+	if (IS_ERR(phy->phy_reset))
+		return PTR_ERR(phy->phy_reset);
+	
+	if (panel_info == 1)
+		phy->param_override_seq_cnt = of_property_count_elems_of_size(
+=======
+		if (of_property_match_string(pdev->dev.of_node,
+					"clock-names", "cfg_ahb_clk") >= 0) {
+			phy->cfg_ahb_clk = devm_clk_get(dev, "cfg_ahb_clk");
+			if (IS_ERR(phy->cfg_ahb_clk)) {
+				ret = PTR_ERR(phy->cfg_ahb_clk);
+				if (ret != -EPROBE_DEFER)
+					dev_err(dev,
+					"clk get failed for cfg_ahb_clk ret %d\n", ret);
+				return ret;
+			}
+		}
+
+		phy->phy_reset = devm_reset_control_get(dev, "phy_reset");
+		if (IS_ERR(phy->phy_reset))
+			return PTR_ERR(phy->phy_reset);
+	}
+
+	phy->param_override_seq_cnt = of_property_count_elems_of_size(
+>>>>>>> theirs
+					dev->of_node,
+					"qcom,param-override-seq",
+					sizeof(*phy->param_override_seq));
+
+	if (panel_info == 0)
+		phy->param_override_seq_cnt = of_property_count_elems_of_size(
+                                          dev->of_node,
+                                          "qcom,param-override-seq-no-panel",
+                                          sizeof(*phy->param_override_seq));
+
+	if (phy->param_override_seq_cnt > 0) {
+		phy->param_override_seq = devm_kcalloc(dev,
+					phy->param_override_seq_cnt,
+					sizeof(*phy->param_override_seq),
+					GFP_KERNEL);
+		if (!phy->param_override_seq)
+			return -ENOMEM;
+
+		if (phy->param_override_seq_cnt % 2) {
+			dev_err(dev, "invalid param_override_seq_len\n");
+			return -EINVAL;
+		}
+
+		if (panel_info == 1)
+			ret = of_property_read_u32_array(dev->of_node,
+				"qcom,param-override-seq",
+				phy->param_override_seq,
+				phy->param_override_seq_cnt);
+		if (panel_info == 0)
+			ret = of_property_read_u32_array(dev->of_node,
+				"qcom,param-override-seq-no-panel",
+				phy->param_override_seq,
+				phy->param_override_seq_cnt);
+		if (ret) {
+			dev_err(dev, "qcom,param-override-seq read failed %d\n",
+				ret);
+			return ret;
+		}
+	}
+
+
+	if (!phy->fw_managed_pwr) {
+		ret = of_property_read_u32_array(dev->of_node, "qcom,vdd-voltage-level",
+						 (u32 *) phy->vdd_levels,
+						 ARRAY_SIZE(phy->vdd_levels));
+		if (ret) {
+			dev_err(dev, "error reading qcom,vdd-voltage-level property\n");
+			goto err_ret;
+		}
+
+		ret = of_property_read_u32_array(dev->of_node, "qcom,refgen-voltage-level",
+						(u32 *) phy->refgen_levels,
+						ARRAY_SIZE(phy->refgen_levels));
+		if (ret)
+			dev_err(dev, "error reading qcom,refgen-voltage-level property\n");
+
+		ret = usb2_get_regulators(phy);
+		if (ret)
+			return ret;
+	}
+
+	mutex_init(&phy->phy_lock);
+	platform_set_drvdata(pdev, phy);
+
+	phy->phy.init			= msm_hsphy_init;
+	phy->phy.set_suspend		= msm_hsphy_set_suspend;
+	phy->phy.notify_connect		= msm_hsphy_notify_connect;
+	phy->phy.notify_disconnect	= msm_hsphy_notify_disconnect;
+	phy->phy.set_power		= msm_hsphy_set_power;
+	phy->phy.type			= USB_PHY_TYPE_USB2;
+
+	if (!phy->fw_managed_pwr) {
+		ret = msm_hsphy_regulator_init(phy);
+		if (ret)
+			goto err_ret;
+	}
+
+	INIT_WORK(&phy->vbus_draw_work, msm_hsphy_vbus_draw_work);
+	msm_hsphy_create_debugfs(phy);
+
+	/*
+	 * EUD may be enable in boot loader and to keep EUD session alive across
+	 * kernel boot till USB phy driver is initialized based on cable status,
+	 * keep LDOs on here.
+	 */
+	if (phy->eud_enable_reg && readl_relaxed(phy->eud_enable_reg)) {
+		msm_hsphy_modeled_d3_to_d0(phy);
+		msm_hsphy_enable_power(phy, true);
+		msm_hsphy_enable_clocks(phy, true);
+	}
+
+	/* Placed at the end to ensure the probe is complete */
+	ret = usb_add_phy_dev(&phy->phy);
+	if (ret < 0)
+		goto err_ret;
+
+	return 0;
+
+err_ret:
+	msm_hsphy_modeled_domain_detach(phy);
+	return ret;
+}
+
+static int msm_hsphy_remove(struct platform_device *pdev)
+{
+	struct msm_hsphy *phy = platform_get_drvdata(pdev);
+
+	if (!phy)
+		return 0;
+
+	if (phy->usb_psy)
+		power_supply_put(phy->usb_psy);
+
+	debugfs_remove_recursive(phy->root);
+
+	usb_remove_phy(&phy->phy);
+	clk_disable_unprepare(phy->ref_clk_src);
+
+	msm_hsphy_modeled_d0_to_d3(phy);
+	msm_hsphy_enable_clocks(phy, false);
+	msm_hsphy_enable_power(phy, false);
+	msm_hsphy_modeled_domain_detach(phy);
+	return 0;
+}
+
+static const struct hs_phy_priv_data priv_data_lemans = {
+	.limit_control_vdda_18 = true,
+};
+
+static const struct of_device_id msm_usb_id_table[] = {
+	{
+		.compatible = "qcom,usb-hsphy-snps-femto",
+	},
+	{
+		.compatible = "qcom,usb-hsphy-snps-femto-lemans",
+		.data = &priv_data_lemans,
+	},
+	{
+		.compatible = "qcom,usb-hsphy-snps-femto-fw-managed",
+	},
+	{ },
+};
+
+MODULE_DEVICE_TABLE(of, msm_usb_id_table);
+
+static struct platform_driver msm_hsphy_driver = {
+	.probe		= msm_hsphy_probe,
+	.remove		= msm_hsphy_remove,
+	.driver = {
+		.name	= "msm-usb-hsphy",
+		.pm = &msm_hsphy_pm_ops,
+		.of_match_table = of_match_ptr(msm_usb_id_table),
+	},
+};
+
+module_platform_driver(msm_hsphy_driver);
+
+MODULE_DESCRIPTION("MSM USB HS PHY driver");
+MODULE_LICENSE("GPL v2");
