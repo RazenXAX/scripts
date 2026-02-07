@@ -33,20 +33,6 @@ struct poweroff_reason {
 	unsigned int size;
 };
 
-static struct poweroff_reason reasons[] = {
-	{ "recovery",			0x01 },
-	{ "bootloader",			0x02 },
-	{ "rtc",			0x03 },
-	{ "dm-verity device corrupted",	0x04 },
-	{ "dm-verity enforcing",	0x05 },
-	{ "keys clear",			0x06 },
-	{ "panic",			0x21 },
-	{ NULL,				0x20 },
-	{}
-};
-
-#define RESTART_REASON_PANIC  6
-#define RESTART_REASON_NORMAL 7
 static struct poweroff_reason pon_reasons[] = {
 	{ "recovery",			0x01, 0x1 },
 	{ "bootloader",			0x02, 0x1 },
@@ -80,33 +66,27 @@ static int qcom_reboot_reason_reboot(struct notifier_block *this,
 {
 	int rc;
 	char *cmd = ptr;
-	struct qcom_reboot_reason *reboot = container_of(this,
-		struct qcom_reboot_reason, reboot_nb);
+	struct qcom_reboot_reason *reboot =
+		container_of(this, struct qcom_reboot_reason, reboot_nb);
 	struct poweroff_reason *reason;
 
-	if (!cmd){
-		nvmem_cell_write(reboot->nvmem_cell,
-				 &reasons[RESTART_REASON_NORMAL].pon_reason,
-				 sizeof(reasons[RESTART_REASON_NORMAL].pon_reason));
+	if (!cmd)
 		return NOTIFY_OK;
 
-	if (of_device_is_compatible(reboot->dev->of_node, "qcom,imem-reboot-reason"))
+	if (of_device_is_compatible(reboot->dev->of_node,
+				    "qcom,imem-reboot-reason"))
 		reboot_mode = REBOOT_WARM;
 
 	for (reason = reboot->reasons; reason->cmd; reason++) {
 		if (!strcmp(cmd, reason->cmd)) {
 			rc = nvmem_cell_write(reboot->nvmem_cell,
-					 &reason->pon_reason,
-					 reason->size);
+					      &reason->pon_reason,
+					      reason->size);
 			if (rc < 0)
 				pr_err("PON reason store failed, rc=%d\n", rc);
 			break;
 		}
-
 	}
-	nvmem_cell_write(reboot->nvmem_cell,
-			&reason->pon_reason,
-			sizeof(reason->pon_reason));
 
 	return NOTIFY_OK;
 }
@@ -114,11 +94,14 @@ static int qcom_reboot_reason_reboot(struct notifier_block *this,
 static int panic_prep_restart(struct notifier_block *this,
 			      unsigned long event, void *ptr)
 {
-	struct qcom_reboot_reason *reboot = container_of(this,
-		struct qcom_reboot_reason, panic_nb);
+	struct qcom_reboot_reason *reboot =
+		container_of(this, struct qcom_reboot_reason, panic_nb);
+	u32 panic_reason = 0x77665521;
+
 	nvmem_cell_write(reboot->nvmem_cell,
-			&reasons[RESTART_REASON_PANIC].pon_reason,
-			sizeof(reasons[RESTART_REASON_PANIC].pon_reason));
+			 &panic_reason,
+			 sizeof(panic_reason));
+
 	return NOTIFY_DONE;
 }
 
