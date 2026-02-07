@@ -141,12 +141,6 @@ static int qcom_reboot_reason_remove(struct platform_device *pdev)
 	return 0;
 }
 
-static const struct of_device_id of_qcom_reboot_reason_match[] = {
-	{ .compatible = "qcom,reboot-reason", },
-	{},
-};
-MODULE_DEVICE_TABLE(of, of_qcom_reboot_reason_match);
-
 static struct platform_driver qcom_reboot_reason_driver = {
 	.probe = qcom_reboot_reason_probe,
 	.remove = qcom_reboot_reason_remove,
