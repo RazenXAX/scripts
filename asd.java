@@ -480,6 +480,8 @@ gChannelBondingMode24GHz=0
 gReportMaxLinkSpeed=2
 
 #APF: Android Packet Filter
+gBpfFilterEnable=1
+gActiveUcBpfMode=2
 gActiveMcBcBpfMode=1
 
 # add xiaomi feature params
