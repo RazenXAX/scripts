@@ -15,12 +15,9 @@
 #include <linux/pm.h>
 #include <linux/of_address.h>
 #include <linux/nvmem-consumer.h>
-<<<<<<< HEAD
 #include <linux/panic_notifier.h>
-=======
 #include <linux/of_device.h>
 #include <linux/of_platform.h>
->>>>>>> KERNEL.PLATFORM.3.0.r9-03000-kernel.0
 
 struct qcom_reboot_reason {
 	struct device *dev;
@@ -36,7 +33,6 @@ struct poweroff_reason {
 	unsigned int size;
 };
 
-<<<<<<< HEAD
 static struct poweroff_reason reasons[] = {
 	{ "recovery",			0x01 },
 	{ "bootloader",			0x02 },
@@ -51,7 +47,6 @@ static struct poweroff_reason reasons[] = {
 
 #define RESTART_REASON_PANIC  6
 #define RESTART_REASON_NORMAL 7
-=======
 static struct poweroff_reason pon_reasons[] = {
 	{ "recovery",			0x01, 0x1 },
 	{ "bootloader",			0x02, 0x1 },
@@ -79,7 +74,6 @@ static const struct of_device_id of_qcom_reboot_reason_match[] = {
 	{},
 };
 MODULE_DEVICE_TABLE(of, of_qcom_reboot_reason_match);
->>>>>>> KERNEL.PLATFORM.3.0.r9-03000-kernel.0
 
 static int qcom_reboot_reason_reboot(struct notifier_block *this,
 				     unsigned long event, void *ptr)
@@ -95,29 +89,18 @@ static int qcom_reboot_reason_reboot(struct notifier_block *this,
 				 &reasons[RESTART_REASON_NORMAL].pon_reason,
 				 sizeof(reasons[RESTART_REASON_NORMAL].pon_reason));
 		return NOTIFY_OK;
-<<<<<<< HEAD
-	}
-
-	for (reason = reasons; reason->cmd; reason++) {
-=======
 
 	if (of_device_is_compatible(reboot->dev->of_node, "qcom,imem-reboot-reason"))
 		reboot_mode = REBOOT_WARM;
 
 	for (reason = reboot->reasons; reason->cmd; reason++) {
->>>>>>> KERNEL.PLATFORM.3.0.r9-03000-kernel.0
 		if (!strcmp(cmd, reason->cmd)) {
 			rc = nvmem_cell_write(reboot->nvmem_cell,
 					 &reason->pon_reason,
-<<<<<<< HEAD
-					 sizeof(reason->pon_reason));
-			return NOTIFY_OK;
-=======
 					 reason->size);
 			if (rc < 0)
 				pr_err("PON reason store failed, rc=%d\n", rc);
 			break;
->>>>>>> KERNEL.PLATFORM.3.0.r9-03000-kernel.0
 		}
 
 	}
