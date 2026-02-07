@@ -108,11 +108,6 @@ static int qcom_reboot_reason_probe(struct platform_device *pdev)
 	 * Hence used of_match_device().
 	 */
 
-	match = of_match_device(of_match_ptr(of_qcom_reboot_reason_match), &pdev->dev);
-	if (!match)
-		return -ENODEV;
-	reboot->reasons = (struct poweroff_reason *)match->data;
-
 	reboot->nvmem_cell = devm_nvmem_cell_get(reboot->dev, "restart_reason");
 
 	if (IS_ERR(reboot->nvmem_cell))
@@ -146,7 +141,6 @@ static struct platform_driver qcom_reboot_reason_driver = {
 	.remove = qcom_reboot_reason_remove,
 	.driver = {
 		.name = "qcom-reboot-reason",
-		.of_match_table = of_match_ptr(of_qcom_reboot_reason_match),
 	},
 };
 
