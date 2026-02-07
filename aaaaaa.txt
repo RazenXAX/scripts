@@ -1,5 +1,8 @@
 ODMPROP
 
+
+
+
 ####################################
 # from generate-common-build-props
 # These properties identify this partition image.
@@ -16,17 +19,17 @@ ro.product.brand_for_attestation=Xiaomi
 ro.product.name_for_attestation=miodm_warm_global
 ro.product.manufacturer_for_attestation=Xiaomi
 ro.product.device_for_attestation=warm
-ro.vendor.build.fingerprint=Xiaomi/warm_global/warm:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys
+ro.vendor.build.fingerprint=Xiaomi/warm_global/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys
 ro.odm.product.cpu.abilist=arm64-v8a
 ro.odm.product.cpu.abilist32=
 ro.odm.product.cpu.abilist64=arm64-v8a
-ro.odm.build.date=Tue Oct 21 21:54:22 CST 2025
-ro.odm.build.date.utc=1761054862
-ro.odm.build.fingerprint=Xiaomi/warm_global/warm:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys
+ro.odm.build.date=Tue Jul 15 10:31:55 CST 2025
+ro.odm.build.date.utc=1752546715
+ro.odm.build.fingerprint=Xiaomi/warm_global/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys
 ro.odm.build.id=UKQ1.240624.001
 ro.odm.build.tags=release-keys
 ro.odm.build.type=user
-ro.odm.build.version.incremental=OS2.0.203.0.VGVINXM
+ro.odm.build.version.incremental=V816.0.10.0.UGVINXM
 ro.odm.build.version.release=14
 ro.odm.build.version.release_or_codename=14
 ro.odm.build.version.sdk=34
@@ -44,78 +47,106 @@ ro.vendor.audio.karaoke.enable=true
 ro.miui.audio.karaoke.suppot.lowlatency=true
 ro.vendor.audio.camera.loopback.support=false
 ro.vendor.audio.identify_devicelevel=0
-vendor.audio.timecheck_timeoutMs=6000
 persist.vendor.radio.dynamic_sar=1
 import /odm/etc/${ro.boot.product.hardware.sku}_build.prop
 import /odm/etc/${ro.boot.product.hardware.sku}_${ro.boot.ptcountrycode}_build.prop
 # end of file
 
+
+
+
+
 PRODUCTPROP
+
 
 ####################################
 # from generate-common-build-props
 # These properties identify this partition image.
 ####################################
 ro.product.product.brand=Xiaomi
-ro.product.product.device=missi
+ro.product.product.device=miproduct
 ro.product.product.manufacturer=QUALCOMM
 ro.product.product.model=miproduct
+ro.product.product.name=warm_global
 ro.product.product.cert=
 ro.product.product.marketname=
-ro.product.product.name=warm
-ro.product.build.date=Tue Oct 21 21:42:20 CST 2025
-ro.product.build.date.utc=1761054140
-ro.product.build.fingerprint=Xiaomi/warm/missi:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys
-ro.product.build.id=AQ3A.241213.002
+ro.product.build.date=Tue Jul 15 02:26:37 UTC 2025
+ro.product.build.date.utc=1752546397
+ro.product.build.fingerprint=Xiaomi/warm_global/miproduct:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys
+ro.product.build.id=UKQ1.240624.001
 ro.product.build.tags=release-keys
 ro.product.build.type=user
-ro.product.build.version.incremental=OS2.0.203.0.VGVINXM
-ro.product.build.version.release=15
-ro.product.build.version.release_or_codename=15
-ro.product.build.version.sdk=35
+ro.product.build.version.incremental=V816.0.10.0.UGVINXM
+ro.product.build.version.release=14
+ro.product.build.version.release_or_codename=14
+ro.product.build.version.sdk=34
 ####################################
 # from variable ADDITIONAL_PRODUCT_PROPERTIES
 ####################################
-ro.product.build.16k_page.enabled=false
+ro.product.vndk.version=34
 ro.build.characteristics=nosdcard
 ro.product.ab_ota_partitions=product
-ro.product.cpu.pagesize.max=16384
-ro.product.build.no_bionic_page_size_macro=true
-# Value overridden by post_process_props.py. Original value: default
+ro.product.cpu.pagesize.max=4096
 ro.dalvik.vm.enable_uffd_gc=true
 ####################################
 # from variable PRODUCT_PRODUCT_PROPERTIES
 ####################################
+ro.miui.cust_erofs=1
+ro.config.safe_media_volume_index=10
+ro.miui.preinstall_to_data=1
+ro.miui.cust_img_path=/data/preinstall/cust.img
+ro.miui.notch=1
+ro.hardware.fp.sideCap=true
+persist.sys.powmillet.enable=true
+persist.sys.brightmillet.enable=true
+persist.sys.millet.handshake=true
+persist.sys.millet.newversion=true
+ro.millet.netlink=31
+persist.vendor.ims.no_stapa=1
+ro.config.low_ram.threshold_gb=99
+ro.config.low_ram.version=2
+dalvik.vm.heapsize=512m
+dalvik.vm.heapgrowthlimit=256m
+persist.recenttasks.limit_maximum_number=true
+persist.sys.mmms.switch=true
+persist.sys.mms.compact_enable=true
+persist.sys.mmms.throttled.thread=11520
+persist.sys.spc.enabled=true
+persist.sys.use_mi_new_strategy=true
+persist.sys.spc.protect.critical.count=2
+persist.sys.reduce_died_count_delay=360000
+persist.sys.disable_restart_threshold=1
+persist.sys.full_scene_intercept_restart=true
+persist.sys.spc.proc_restart_enable=true
+persist.sys.usap_pool_enabled=false
+ro.lmk.psi_complete_stall_ms=20
+ro.lmk.swap_free_low_percentage=30
+ro.lmk.psi_partial_stall_ms=20
+ro.lmk.thrashing_limit=30
+ro.lmk.swap_util_max=90
+ro.lmk.thrashing_limit_decay=2
+ro.lmk.kill_timeout_ms=100
+persist.miui.extm.dm_opt.enable=true
+persist.miui.extm.enable=0
+ro.build.shutdown_timeout=2
+persist.vendor.smartchg=18
+dalvik.vm.madvise.vdexfile.size=0
+dalvik.vm.madvise.odexfile.size=0
+dalvik.vm.madvise.artfile.size=0
+persist.sys.miui_animator_sched.bigcores=6-7
+persist.sys.miui_animator_sched.big_prime_cores=6-7
+persist.sys.testTrimMemActivityBg.wk.enable=true
+persist.sys.memory_standard.enable=true
+persist.sys.memory_standard.appheap.enable=true
+persist.sys.memory_standard.handle.time=300000
+ro.surface_flinger.supports_background_blur=1
+persist.sys.smartpower.display.enable=true
+persist.sys.prestart.proc=true
+persist.sys.prestart.feedback.enable=true
 # Removed by post_process_props.py because overridden by ro.miui.ui.version.code=816
-#ro.miui.ui.version.code?=15
+#ro.miui.ui.version.code?=14
 # Removed by post_process_props.py because overridden by ro.miui.ui.version.name=V816
-#ro.miui.ui.version.name?=V150
-ro.com.agoda.consumer.preload=/cust/etc/agoda.aid
-ro.zalo.tracking=/cust/etc/zalo_appchannel.in
-ro.zalo.tracking=/cust/etc/zalo_appchannel.in
-ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
-ro.netflix.signup=1
-ro.wps.prop.channel.path=/cust/etc/wps.prop
-ro.microsoft.onedrive_partner_code=/cust/etc/onedrive_token.txt
-ro.trackingId.com.lzd.appid=/cust/etc/lazadaconfiginfo
-ro.trilo.channel.com.einnovation.temu=/cust/etc/trilo_temu_channel.txt
-ro.zalo.tracking=/cust/etc/zalo_appchannel.in
-ro.csc.spotify.music.referrerid=xiaomi_mobile
-ro.csc.spotify.music.partnerid=xiaomi_mobile
-ro.booking.channel.path=/cust/etc/.booking.data.aid
-ro.com.agoda.consumer.preload=/cust/etc/agoda.aid
-ro.zalo.tracking=/cust/etc/zalo_appchannel.in
-ro.zalo.tracking=/cust/etc/zalo_appchannel.in
-ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
-ro.netflix.signup=1
-ro.wps.prop.channel.path=/cust/etc/wps.prop
-ro.microsoft.onedrive_partner_code=/cust/etc/onedrive_token.txt
-ro.trackingId.com.lzd.appid=/cust/etc/lazadaconfiginfo
-ro.trilo.channel.com.einnovation.temu=/cust/etc/trilo_temu_channel.txt
-ro.zalo.tracking=/cust/etc/zalo_appchannel.in
-ro.csc.spotify.music.referrerid=xiaomi_mobile
-ro.csc.spotify.music.partnerid=xiaomi_mobile
-ro.booking.channel.path=/cust/etc/.booking.data.aid
+#ro.miui.ui.version.name?=V140
 ro.com.agoda.consumer.preload=/cust/etc/agoda.aid
 ro.zalo.tracking=/cust/etc/zalo_appchannel.in
 ro.zalo.tracking=/cust/etc/zalo_appchannel.in
@@ -175,7 +206,9 @@ ro.miui.ui.version.name=V816
 ro.setupwizard.rotation_locked=true
 setupwizard.theme=glif_v3_light
 ro.opa.eligible_device=true
-ro.com.google.gmsversion=15_202507
+ro.com.google.gmsversion=14_202408
+ro.appsflyer.preinstall.path=/data/miui/pai/pre_install.appsflyer
+ro.miui.pai.preinstall.path=/data/miui/pai/
 setupwizard.feature.baseline_setupwizard_enabled=true
 bluetooth.profile.asha.central.enabled=true
 bluetooth.profile.a2dp.source.enabled=true
@@ -183,8 +216,7 @@ bluetooth.profile.avrcp.target.enabled=true
 bluetooth.profile.bap.broadcast.assist.enabled=false
 bluetooth.profile.bap.unicast.client.enabled=false
 bluetooth.profile.bap.broadcast.source.enabled=false
-# Removed by post_process_props.py because overridden by bluetooth.profile.bas.client.enabled=true
-#bluetooth.profile.bas.client.enabled?=true
+bluetooth.profile.bas.client.enabled=true
 bluetooth.profile.ccp.server.enabled=false
 bluetooth.profile.csip.set_coordinator.enabled=false
 bluetooth.profile.gatt.enabled=true
@@ -203,16 +235,9 @@ ro.vendor.radio.features_common=3
 persist.vendor.radio.enable_temp_dds=true
 ro.vendor.radio.fastdormancy=true
 ro.vendor.audio.ring.filter=false
-persist.sys.sf_charge_anim_supported=true
 dalvik.vm.ps-min-first-save-ms=8000
-persist.sys.hyper_transition=true
-persist.sys.hyper_transition_v=2
-persist.sys.element_transition_supported=true
-screen.time.manage.multi.app=true
-persist.sys.keyguard_state_ready=true
 remote_provisioning.enable_rkpd=true
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
-persist.wm.extensions.enabled=true
 vendor.audio_hal.period_size=192
 vendor.audio.tunnel.encode=false
 vendor.audio.offload.buffer.size.kb=32
@@ -240,6 +265,7 @@ bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.avrcp.target.enabled=true
 bluetooth.profile.avrcp.controller.enabled=false
 bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.asha.central.enabled=true
 bluetooth.profile.gatt.enabled=true
 bluetooth.profile.hid.host.enabled=true
 bluetooth.profile.hid.device.enabled=true
@@ -248,157 +274,44 @@ bluetooth.profile.opp.enabled=true
 bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
-bluetooth.profile.bas.client.enabled=true
-bluetooth.device_id.vendor_id=0x001D
-ro.miui.cust_erofs=1
-ro.config.safe_media_volume_index=10
-ro.miui.preinstall_to_data=1
-ro.miui.cust_img_path=/data/preinstall/cust.img
-ro.miui.notch=1
-ro.hardware.fp.sideCap=true
-persist.sys.powmillet.enable=true
-persist.sys.brightmillet.enable=true
-persist.sys.millet.handshake=true
-persist.sys.millet.newversion=true
-ro.millet.netlink=31
-persist.vendor.ims.no_stapa=1
-ro.config.low_ram.threshold_gb=99
-ro.config.low_ram.version=2
-dalvik.vm.heapsize=512m
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapminfree=2m
-dalvik.vm.heaptargetutilization=0.5
-ro.hw_timeout_multiplier=2
-persist.recenttasks.limit_maximum_number=true
-persist.sys.mmms.switch=true
-persist.sys.mms.compact_enable=true
-persist.sys.mmms.throttled.thread=17920
-persist.sys.mmms.lower.previous.memavailable.thread=204800
-persist.sys.mmms.anr.white.list=true
-persist.sys.spc.enabled=true
-persist.sys.use_mi_new_strategy=true
-persist.sys.spc.protect.critical.count=2
-persist.sys.mmms.lower.pre.previous.memavailable.thread=314572
-persist.sys.mmms.lowmem.reclaim.memavailable.thread=393216
-persist.sys.mmms.mediummem.reclaim.memavailable.thread=393216
-ro.mmms.lowmem.swap.free.low.percentage=30
-persist.sys.reduce_died_count_delay=360000
-persist.sys.disable_restart_threshold=1
-persist.sys.full_scene_intercept_restart=true
-persist.sys.spc.proc_restart_enable=true
-persist.sys.usap_pool_enabled=false
-persist.device_config.mglru_native.lru_gen_config=none
-ro.lmk.psi_complete_stall_ms=70
-ro.lmk.psi_super_complete_stall_ms=200
-ro.lmk.swap_free_low_percentage=10
-ro.lmk.psi_partial_stall_ms=70
-ro.lmk.thrashing_limit=10
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit_decay=2
-ro.lmk.kill_timeout_ms=100
-ro.lmk.medium=700
-persist.sys.periodic.u.enable=true
-persist.sys.periodic.u.fgtrim=false
-persist.sys.periodic.u.startprocess.enable=true
-persist.sys.periodic.lru_active_length=3:3:3:5:7:9:10
-persist.miui.extm.dm_opt.enable=true
-persist.miui.extm.enable=0
-ro.build.shutdown_timeout=2
-persist.vendor.smartchg=18
-persist.vendor.charge.oneTrack=true
-dalvik.vm.madvise.vdexfile.size=0
-dalvik.vm.madvise.odexfile.size=0
-dalvik.vm.madvise.artfile.size=0
-persist.sys.miui_animator_sched.bigcores=6-7
-persist.sys.miui_animator_sched.big_prime_cores=6-7
-persist.wm.extensions.activity_embedding_guard_with_android_15=true
-persist.sys.testTrimMemActivityBg.wk.enable=true
-persist.sys.memory_standard.enable=true
-persist.sys.memory_standard.appheap.enable=true
-persist.sys.memory_standard.handle.time=300000
-ro.surface_flinger.supports_background_blur=1
-persist.sys.smartpower.display.enable=true
-persist.sys.smartpower.display_camera_fps_enable=true
-persist.sys.prestart.proc=true
-persist.sys.prestart.feedback.enable=true
-persist.sys.mms.lowermem.cache_limit=16
-persist.sys.protect_cache.time=60000
-persist.sys.cam_4glowmem_restart=true
-bluetooth.hfp.codec_aptx_voice.enabled=false
-bluetooth.hfp.swb.aptx.power_management.enabled=false
-persist.sys.computility.cpulevel=1
-persist.sys.computility.gpulevel=1
-persist.sys.computility.version=2025
-persist.sys.raise_region_sampling_prio=true
-persist.sys.resource_cache_limit.multiple=3
-persist.sys.precache.enable=true
-persist.sys.precache.number=1
-persist.sys.precache.appstrs1=com.miui.weather2
-persist.sys.hwui.enable_texture_optimize=true
-persist.sys.stability.job_timeout_multiplier=2
+bluetooth.profile.sap.server.enabled=false
 import /product/etc/${ro.boot.product.hardware.sku}_build.prop
 # end of file
 
-SYSTEM_EXTPROP
+SYSTEMEXTPROP
+
 
 ####################################
 # from generate-common-build-props
 # These properties identify this partition image.
 ####################################
-ro.product.system_ext.brand=qti
+ro.product.system_ext.brand=Android
 ro.product.system_ext.device=missi
 ro.product.system_ext.manufacturer=QUALCOMM
-ro.product.system_ext.model=qssi system image for arm64
+ro.product.system_ext.model=AOSP on ARM64
+ro.product.system_ext.name=missi_phone_global_only64
 ro.product.system_ext.cert=
 ro.product.system_ext.marketname=
-ro.product.system_ext.name=missi
-ro.system_ext.build.date=Tue Oct 21 21:42:09 CST 2025
-ro.system_ext.build.date.utc=1761054129
-ro.system_ext.build.fingerprint=qti/missi/missi:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys
-ro.system_ext.build.id=AQ3A.241213.002
+ro.system_ext.build.date=Tue Jul 15 02:26:36 UTC 2025
+ro.system_ext.build.date.utc=1752546396
+ro.system_ext.build.fingerprint=Android/missi_phone_global_only64/missi:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys
+ro.system_ext.build.id=UKQ1.240624.001
 ro.system_ext.build.tags=release-keys
 ro.system_ext.build.type=user
-ro.system_ext.build.version.incremental=OS2.0.203.0.VGVINXM
-ro.system_ext.build.version.release=15
-ro.system_ext.build.version.release_or_codename=15
-ro.system_ext.build.version.sdk=35
-####################################
-# from build/make/target/board/gsi_system_ext_user.prop
-####################################
-# GSI always generate dex pre-opt in system image
-ro.cp_system_other_odex=0
-# GSI disables non-AOSP nnapi extensions on product partition
-ro.nnapi.extensions.deny_on_product=true
-# TODO(b/120679683): disable RescueParty before all problem apps solved
-# MIUI DEL: Stability_StabilityEnhance
-# persist.sys.disable_rescue=true
-# END Stability_StabilityEnhance
-# TODO(b/78105955): disable privapp_permissions checking before the bug solved
-ro.control_privapp_permissions=disable
+ro.system_ext.build.version.incremental=V816.0.10.0.UGVINXM
+ro.system_ext.build.version.release=14
+ro.system_ext.build.version.release_or_codename=14
+ro.system_ext.build.version.sdk=34
 ####################################
 # from variable PRODUCT_SYSTEM_EXT_PROPERTIES
 ####################################
-persist.wm.extensions.enabled=true
-persist.wm.extensions.activity_embedding_guard_with_android_15=false
 persist.sys.mcd_config_file=/system_ext/etc/mcd_default.conf
 persist.sys.gps.fence=true
 persist.sys.oom_crash_on_watchdog=true
 persist.sys.sysrqOnAnr_D_state=true
+persist.sys.miui_scout_enable=true
 persist.sys.miui_scout_binder_full_kill_process=true
-persist.sys.stability.enable_sentinel_resource_monitor=true
-persist.sys.stability.enable_rss_monitor=true
-persist.sys.stability.enable_process_exit_monitor=true
-persist.sys.stability.enable_thread_monitor=true
-persist.sys.stability.enable_dmabuf_monitor=true
-persist.sys.stability.enable_fd_monitor=true
-persist.sys.stability.enable_slab_monitor=true
-persist.sys.stability.monitor_third_party_app=true
-persist.sys.stability.window_monitor.enabled=true
-persist.sys.stability.window_monitor.kill_when_leak=true
-persist.sys.stability.window_monitor.kill_threshold=500
 persist.sys.stability.nativehang.enable=true
-persist.sys.stability.nativehangII.enable=true
-persist.sys.whole_machine_d_status_enable=true
 persist.sys.stability.report_app_launch.enable=true
 persist.sys.stability.reboot_days=7
 persist.sys.stability.maintain_factory_reboot_days=60
@@ -406,11 +319,12 @@ persist.sys.stability.miui_fbo_enable=true
 ro.secureboot.devicelock=1
 ro.miui.block_device_path=/dev/block/bootdevice/by-name
 ro.miui.has_cust_partition=true
+persist.sys.debug.fdtrack_abort_threshold=4096
+persist.sys.debug.fdtrack_enable_threshold=2048
 persist.miui.extm.enable=1
-persist.miui.extm.version=4.0
+persist.miui.extm.version=3.0
 ro.miui.pm.install.speedinstall=/data/apk-tmp
 ro.miui.ui.font.global_theme_apply=true
-ro.miui.ui.font.mi_font_path=/system/fonts/MiSansVF.ttf
 ro.malloc.impl=jemalloc
 ro.miui.remove_uri_80_flag=1
 ro.surface_flinger.supports_background_blur=1
@@ -422,27 +336,17 @@ persist.sys.support_window_smoothcorner=true
 persist.sys.mi_shadow_supported=true
 ro.miui.support_force_enable=1
 ro.miui.enable_cloud_verify=true
-ro.config.isolated_compilation_enabled=true
-ro.mi.development=
-ro.audio.ihaladaptervendorextension_enabled=true
-bluetooth.profile.sap.server.enabled=false
-bluetooth.profile.pbap.sim.enabled=true
-bluetooth.hfp.codec_aptx_voice.enabled=true
-ro.bluetooth.leaudio_offload.supported=true
-bluetooth.device.class_of_device=90,2,12
-persist.bluetooth.leaudio_offload.disabled=false
-persist.bluetooth.leaudio.allow.multiple.context=false
-persist.bluetooth.leaudio.bypass_allow_list=true
-bluetooth.leaudio.dual_bidirection_swb.supported=true
-persist.bluetooth.leaudio.notify.idle.during.call=true
-persist.vendor.bluetooth.haltest=true
-persist.vendor.dpm.feature=11
-ro.telephony.sim_slots.count=2
-telephony.active_modems.max_count=2
 persist.sys.qseelogd=true
+bluetooth.profile.sap.server.enabled=true
+persist.vendor.dpm.feature=11
+ro.telephony.sim_slots.count=1
+telephony.active_modems.max_count=2
 # end of file
 
 SYSTEMPROP
+
+
+
 ####################################
 # from generate-common-build-props
 # These properties identify this partition image.
@@ -451,57 +355,54 @@ ro.product.system.brand=Android
 ro.product.system.device=generic
 ro.product.system.manufacturer=Xiaomi
 ro.product.system.model=mainline
-ro.product.system.name=mainline
 ro.product.system.cert=
+ro.product.system.name=mainline
 ro.product.system.marketname=
 ro.system.product.cpu.abilist=arm64-v8a
 ro.system.product.cpu.abilist32=
 ro.system.product.cpu.abilist64=arm64-v8a
-ro.system.build.date=Tue Oct 21 21:42:09 CST 2025
-ro.system.build.date.utc=1761054129
-ro.system.build.fingerprint=qti/missi/missi:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys
-ro.system.build.id=AQ3A.241213.002
+ro.system.build.date=Tue Jul 15 02:26:36 UTC 2025
+ro.system.build.date.utc=1752546396
+ro.system.build.fingerprint=Android/missi_phone_global_only64/missi:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys
+ro.system.build.id=UKQ1.240624.001
 ro.system.build.tags=release-keys
 ro.system.build.type=user
-ro.system.build.version.incremental=OS2.0.203.0.VGVINXM
-ro.system.build.version.release=15
-ro.system.build.version.release_or_codename=15
-ro.system.build.version.sdk=35
+ro.system.build.version.incremental=V816.0.10.0.UGVINXM
+ro.system.build.version.release=14
+ro.system.build.version.release_or_codename=14
+ro.system.build.version.sdk=34
 ####################################
-# from out/target/product/missi/obj/ETC/buildinfo.prop_intermediates/buildinfo.prop
+# from out/target/product/missi/obj/PACKAGING/system_build_prop_intermediates/buildinfo.prop
 ####################################
 # begin build properties
-# autogenerated by buildinfo.py
-ro.build.id=AQ3A.241213.002
-ro.build.display.id=AQ3A.241213.002
-ro.build.version.incremental=OS2.0.203.0.VGVINXM
-ro.build.version.sdk=35
+# autogenerated by buildinfo.sh
+ro.build.id=UKQ1.240624.001
+ro.build.keys=release-keys
+ro.build.version.incremental=V816.0.10.0.UGVINXM
+ro.build.version.sdk=34
 ro.build.version.preview_sdk=0
 ro.build.version.preview_sdk_fingerprint=REL
 ro.build.version.codename=REL
 ro.build.version.all_codenames=REL
-ro.build.version.known_codenames=Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream
-ro.build.version.release=15
-ro.build.version.release_or_codename=15
-ro.build.version.release_or_preview_display=15
-ro.build.version.security_patch=2025-11-01
+ro.build.version.known_codenames=Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake
+ro.build.version.release=14
+ro.build.version.release_or_codename=14
+ro.build.version.release_or_preview_display=14
+ro.build.version.security_patch=2025-07-01
 ro.build.version.min_supported_target_sdk=28
-ro.build.date=Tue Oct 21 21:42:09 CST 2025
-ro.build.date.utc=1761054129
+ro.build.date=Tue Jul 15 02:26:36 UTC 2025
+ro.build.date.utc=1752546396
 ro.build.type=user
 ro.build.user=builder
-ro.build.host=pangu-build-component-system-406726-kgm13-k9mrz-7l3g4
+ro.build.host=pangu-build-component-system-499469-8hjl2-5pbk2-2q1jc
 ro.build.tags=release-keys
-ro.build.flavor=missi-user
+ro.build.flavor=missi_phone_global_only64-user
 # ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
 # use ro.product.cpu.abilist instead.
 ro.product.cpu.abi=arm64-v8a
 ro.product.locale=en-GB
 ro.wifi.channels=
-# ro.build.product is obsolete; use ro.product.device
-ro.build.product=missi
-# Do not try to parse description or thumbprint
-ro.build.description=missi-user 15 AQ3A.241213.002 OS2.0.203.0.VGVINXM release-keys
+# Do not try to parse thumbprint
 # end build properties
 ####################################
 # from device/xiaomi/missi/system.prop
@@ -571,8 +472,9 @@ telephony.lteOnCdmaDevice=1
 #
 persist.fuse_sdcard=true
 #System props for BT
-ro.bluetooth.library_name=libbluetooth.so
+ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.sys.btsatck.absvolfeature=true
 # MIUI ADD: BT_MIUIBluetoothFrame
 persist.vendor.service.bdroid.soc.alwayson=true
 #system prop for wipower support
@@ -628,13 +530,15 @@ ro.kernel.qemu.gles=0
 qemu.hw.mainkeys=0
 #Expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.xiaomi.runin,com.xiaomi.cameratest,com.xiaomi.factory.mmi
-vendor.camera.aux.packagelistext=com.xiaomi.factory.CameraTestItem,com.firefightcam1
+vendor.camera.aux.packagelistext=com.xiaomi.factory.CameraTestItem
 #Add snapcam in privapp list
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam
 #enable IZat OptInApp overlay
 persist.vendor.overlay.izat.optin=rro
 # Property for backup NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
+#Property to enable Mag filter
+persist.vendor.sensors.enable.mag_filter=true
 #Partition source order for Product/Build properties pickup.
 ro.product.property_source_order=odm,vendor,product,system_ext,system
 #Property to enable Codec2 for audio and OMX for Video
@@ -651,14 +555,20 @@ ro.launcher.blur.appLaunch=0
 persist.audio.button_jack.profile=volume
 persist.audio.button_jack.switch=0
 # MIUI ADD: Performance_AppInstallEnhance
-ro.miui.enable_cloud_verify=true
 #enable speed install
 ro.miui.pm.install.speedinstall=/data/apk-tmp
 # END Performance_AppInstallEnhance
 # xiaomi ugd
 ro.gfx.driver.0=com.xiaomi.ugd
-# enable modem dump
+# MIUI ADD: Performance_AppInstallEnhance
+ro.miui.enable_cloud_verify=true
+# END Performance_AppInstallEnhance
+#enable modem dump
 persist.vendor.ssr.enable_ramdumps=1
+# support night charge property
+persist.vendor.night.charge=true
+# support fuse passthrough
+persist.sys.fuse.passthrough.enable=true
 ####################################
 # from device/xiaomi/missi/system_fraction_only64.prop
 ####################################
@@ -668,7 +578,6 @@ persist.vendor.ssr.enable_ramdumps=1
 # from variable ADDITIONAL_SYSTEM_PROPERTIES
 ####################################
 ro.treble.enabled=true
-ro.llndk.api_level=202404
 ro.actionable_compatible_property.enabled=true
 ro.postinstall.fstab.prefix=/system
 ro.secure=1
@@ -682,15 +591,14 @@ ro.force.debuggable=0
 ####################################
 # from variable PRODUCT_SYSTEM_PROPERTIES
 ####################################
-persist.sys.gps.selfRecovery=3
 ro.com.google.lens.oem_camera_package=com.android.camera
 ro.com.google.lens.oem_image_package=com.miui.gallery
 ro.com.android.mobiledata=false
 sys.dfcservice.ctrl=false
-sys.dfcservice.compress.prog=0
+sys.dfcservice.compress.prog
 sys.dfcservice.enablelog.ctrl=false
 ro.miui.shell_anim_enable_fcb=true
-persist.hyper.barfollow_anim=true
+persist.miui.disable_quick_snap=true
 debug.atrace.tags.enableflags=0
 persist.traced.enable=1
 dalvik.vm.image-dex2oat-Xms=64m
@@ -702,17 +610,17 @@ dalvik.vm.dexopt.secondary=true
 dalvik.vm.dexopt.thermal-cutoff=2
 dalvik.vm.appimageformat=lz4
 ro.dalvik.vm.native.bridge=0
-pm.dexopt.boot-after-ota.concurrency=4
-pm.dexopt.post-boot=verify
 pm.dexopt.first-boot=verify
 pm.dexopt.boot-after-ota=verify
+pm.dexopt.boot-after-ota.concurrency=4
+pm.dexopt.post-boot=extract
 pm.dexopt.boot-after-mainline-update=verify
 pm.dexopt.install=speed-profile
 pm.dexopt.install-fast=skip
 pm.dexopt.install-bulk=speed-profile
 pm.dexopt.install-bulk-secondary=verify
 pm.dexopt.install-bulk-downgraded=verify
-pm.dexopt.install-bulk-secondary-downgraded=verify
+pm.dexopt.install-bulk-secondary-downgraded=extract
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.ab-ota=speed-profile
 pm.dexopt.inactive=verify
@@ -735,24 +643,20 @@ dalvik.vm.usap_pool_size_max=3
 dalvik.vm.usap_pool_size_min=1
 dalvik.vm.usap_pool_refill_delay_ms=3000
 dalvik.vm.useartservice=true
-dalvik.vm.enable_pr_dexopt=true
 ro.apex.updatable=true
 ro.hwui.max_texture_allocation_size=209715200
 persist.vendor.connsysfw.enable=true
 ro.radio.device_type=1
-ro.miui.support_audiorecord_compress=true
-ro.miui.allow_app_playbackcapture=true
 persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 ro.vendor.audio.notification.single=true
 ####################################
 # from variable PRODUCT_SYSTEM_DEFAULT_PROPERTIES
 ####################################
-# The following backported fixes have been applied
-# https://issuetracker.google.com/issues/350037023 with alias 1
-ro.build.backported_fixes.alias_bitset.long_list=2
 # end of file
 
+
 VENDORPROP
+
 ####################################
 # from generate-common-build-props
 # These properties identify this partition image.
@@ -767,13 +671,13 @@ ro.product.vendor.marketname=
 ro.vendor.product.cpu.abilist=arm64-v8a
 ro.vendor.product.cpu.abilist32=
 ro.vendor.product.cpu.abilist64=arm64-v8a
-ro.vendor.build.date=Tue Oct 21 21:41:45 CST 2025
-ro.vendor.build.date.utc=1761054105
-ro.vendor.build.fingerprint=Xiaomi/mivendor_sm4635_global/mivendor:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys
+ro.vendor.build.date=Tue Jul 15 10:19:29 CST 2025
+ro.vendor.build.date.utc=1752545969
+ro.vendor.build.fingerprint=Xiaomi/mivendor_sm4635_global/mivendor:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys
 ro.vendor.build.id=UKQ1.240624.001
 ro.vendor.build.tags=release-keys
 ro.vendor.build.type=user
-ro.vendor.build.version.incremental=OS2.0.203.0.VGVINXM
+ro.vendor.build.version.incremental=V816.0.10.0.UGVINXM
 ro.vendor.build.version.release=14
 ro.vendor.build.version.release_or_codename=14
 ro.vendor.build.version.sdk=34
@@ -795,7 +699,7 @@ ro.minui.pixel_format=RGBX_8888
 ro.boot.dynamic_partitions=true
 ro.board.first_api_level=34
 ro.board.api_level=34
-ro.vendor.build.security_patch=2025-11-01
+ro.vendor.build.security_patch=2025-07-01
 ro.board.platform=pitti
 ro.hwui.use_vulkan=
 ro.build.ab_update=true
@@ -1027,8 +931,8 @@ vendor.audio.c2.preferred=true
 debug.c2.use_dmabufheaps=1
 vendor.qc2audio.suspend.enabled=true
 vendor.qc2audio.per_frame.flac.dec.enabled=true
-vendor.audio.compress_capture.enabled=false
-vendor.audio.compress_capture.aac=false
+vendor.audio.compress_capture.enabled=true
+vendor.audio.compress_capture.aac=true
 vendor.audio.compress_capture.aac.cut_off_freq=-1
 debug.stagefright.omx_default_rank=0
 vendor.audio.hal.output.suspend.supported=true
@@ -1118,7 +1022,6 @@ vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.comp_mask=2
 vendor.display.enable_optimize_refresh=0
-vendor.display.enable_brightness_drm_prop=1
 vendor.display.use_smooth_motion=1
 vendor.display.disable_stc_dimming=1
 vendor.display.enable_dpps_dynamic_fps=1
@@ -1187,9 +1090,8 @@ persist.sys.cam_lowmem_restart=true
 ro.logd.size=2M
 # end of file
 
+LOGGGGGGGCATTTTTTTPROP
 
-
-PHONEPROP
 [DEVICE_PROVISIONED]: [1]
 [aaudio.hw_burst_min_usec]: [2000]
 [aaudio.mmap_exclusive_policy]: [2]
@@ -1200,7 +1102,6 @@ PHONEPROP
 [audio.sys.noisy.broadcast.delay]: [500]
 [audio.sys.offload.pstimeout.secs]: [3]
 [audio.sys.routing.latency]: [0]
-[bluetooth.device.class_of_device]: [90,2,12]
 [bluetooth.profile.a2dp.source.enabled]: [true]
 [bluetooth.profile.asha.central.enabled]: [true]
 [bluetooth.profile.avrcp.controller.enabled]: [false]
@@ -1222,47 +1123,42 @@ PHONEPROP
 [bluetooth.profile.pan.nap.enabled]: [true]
 [bluetooth.profile.pan.panu.enabled]: [true]
 [bluetooth.profile.pbap.server.enabled]: [true]
-[bluetooth.profile.pbap.sim.enabled]: [true]
 [bluetooth.profile.sap.server.enabled]: [false]
 [bluetooth.profile.vcp.controller.enabled]: [false]
 [bootreceiver.enable]: [0]
-[build.version.extensions.ad_services]: [18]
-[build.version.extensions.r]: [18]
-[build.version.extensions.s]: [18]
-[build.version.extensions.t]: [18]
-[build.version.extensions.u]: [18]
-[build.version.extensions.v]: [18]
+[build.version.extensions.ad_services]: [12]
+[build.version.extensions.r]: [12]
+[build.version.extensions.s]: [12]
+[build.version.extensions.t]: [12]
+[build.version.extensions.u]: [12]
 [cache.trigger]: [1]
-[cache_key.bluetooth.bluetooth_adapter_get_connection_state]: [5867306688613954548]
-[cache_key.bluetooth.bluetooth_adapter_get_profile_connection_state]: [5867306688613954546]
-[cache_key.bluetooth.bluetooth_adapter_get_state]: [5867306688613954553]
-[cache_key.bluetooth.bluetooth_adapter_is_offloaded_filtering_supported]: [5867306688613954552]
-[cache_key.bluetooth.bluetooth_device_get_bond_state]: [5867306688613954549]
-[cache_key.bluetooth.bluetooth_map_get_connection_state]: [5867306688613954550]
-[cache_key.bluetooth.bluetooth_sap_get_connection_state]: [5867306688613954551]
-[cache_key.display_info]: [-6471148303598925780]
-[cache_key.get_packages_for_uid]: [-6471148303598925790]
-[cache_key.has_system_feature]: [-6471148303598940485]
-[cache_key.is_compat_change_enabled]: [-6471148303598925785]
-[cache_key.is_interactive]: [-6471148303598925843]
-[cache_key.is_power_save_mode]: [-6471148303598929457]
-[cache_key.is_user_unlocked]: [-6471148303598938772]
-[cache_key.location_enabled]: [-6471148303598928659]
-[cache_key.package_info]: [-6471148303598925784]
-[cache_key.system_server.account_user_data]: [-6471148303598925788]
-[cache_key.system_server.accounts_data]: [-6471148303598926561]
-[cache_key.system_server.connectionless_stylus_handwriting]: [-6471148303598938610]
-[cache_key.system_server.device_policy_manager_caches]: [-6471148303598926179]
-[cache_key.system_server.get_credential_type]: [-6471148303598938073]
-[cache_key.system_server.get_night_mode]: [-6471148303598937578]
-[cache_key.system_server.handwriting_enable_state]: [-6471148303598939585]
-[cache_key.system_server.stylus_handwriting]: [-6471148303598938611]
-[cache_key.telephony.phone_account_to_subid]: [4627645397393852271]
-[cache_key.telephony.subscription_manager_service]: [4627645397393852029]
+[cache_key.bluetooth.bluetooth_adapter_get_connection_state]: [4095116107468084945]
+[cache_key.bluetooth.bluetooth_adapter_get_profile_connection_state]: [4095116107468084943]
+[cache_key.bluetooth.bluetooth_adapter_get_state]: [4095116107468084951]
+[cache_key.bluetooth.bluetooth_adapter_is_offloaded_filtering_supported]: [4095116107468084950]
+[cache_key.bluetooth.bluetooth_device_get_bond_state]: [4095116107468084946]
+[cache_key.bluetooth.bluetooth_map_get_connection_state]: [4095116107468084947]
+[cache_key.bluetooth.bluetooth_sap_get_connection_state]: [4095116107468084948]
+[cache_key.display_info]: [-2587849778743753736]
+[cache_key.get_packages_for_uid]: [-2587849778743753734]
+[cache_key.has_system_feature]: [-2587849778743762168]
+[cache_key.is_compat_change_enabled]: [-2587849778743753821]
+[cache_key.is_interactive]: [-2587849778743753735]
+[cache_key.is_power_save_mode]: [-2587849778743758444]
+[cache_key.is_user_unlocked]: [-2587849778743760534]
+[cache_key.location_enabled]: [-2587849778743755547]
+[cache_key.package_info]: [-2587849778743753783]
+[cache_key.system_server.account_user_data]: [-2587849778743753740]
+[cache_key.system_server.accounts_data]: [-2587849778743755470]
+[cache_key.system_server.device_policy_manager_caches]: [-2587849778743759413]
+[cache_key.system_server.get_credential_type]: [-2587849778743759641]
+[cache_key.system_server.stylus_handwriting]: [-2587849778743753753]
+[cache_key.telephony.phone_account_to_subid]: [-7144907832334245687]
+[cache_key.telephony.subscription_manager_service]: [-7144907832334245796]
 [camera.disable_zsl_mode]: [true]
 [config.disable_rtt]: [true]
 [dalvik.vm.appimageformat]: [lz4]
-[dalvik.vm.background-dex2oat-threads]: [8]
+[dalvik.vm.bg-dex2oat-threads]: [8]
 [dalvik.vm.boot-dex2oat-threads]: [6]
 [dalvik.vm.dex2oat-Xms]: [64m]
 [dalvik.vm.dex2oat-Xmx]: [512m]
@@ -1273,13 +1169,12 @@ PHONEPROP
 [dalvik.vm.dex2oat64.enabled]: [true]
 [dalvik.vm.dexopt.secondary]: [true]
 [dalvik.vm.dexopt.thermal-cutoff]: [2]
-[dalvik.vm.enable_pr_dexopt]: [true]
 [dalvik.vm.heapgrowthlimit]: [256m]
 [dalvik.vm.heapmaxfree]: [8m]
-[dalvik.vm.heapminfree]: [2m]
+[dalvik.vm.heapminfree]: [512k]
 [dalvik.vm.heapsize]: [512m]
 [dalvik.vm.heapstartsize]: [8m]
-[dalvik.vm.heaptargetutilization]: [0.5]
+[dalvik.vm.heaptargetutilization]: [0.75]
 [dalvik.vm.image-dex2oat-Xms]: [64m]
 [dalvik.vm.image-dex2oat-Xmx]: [64m]
 [dalvik.vm.isa.arm64.features]: [default]
@@ -1302,22 +1197,15 @@ PHONEPROP
 [debug.device.bluetooth_pan_state]: [0]
 [debug.device.bluetooth_state]: [0]
 [debug.device.modem_state]: [0]
-[debug.device.radiopower_state]: [1]
 [debug.device.simcard_state]: [0]
 [debug.device.usb_state]: [1]
 [debug.device.wifi_state]: [1]
 [debug.egl.hw]: [0]
 [debug.force_rtl]: [false]
 [debug.hwui.skia_atrace_enabled]: [false]
-[debug.hwui.skia_tracing_enabled]: [false]
-[debug.hwui.skia_use_perfetto_track_events]: [false]
 [debug.mdpcomp.logs]: [0]
-[debug.mi.filter.lut.open]: [0]
-[debug.modem.phone.init_count]: [1]
 [debug.modem.sar.judge_dsi]: [2]
-[debug.perfetto.sdk_sysprop_guard_generation]: [0]
-[debug.renderengine.skia_tracing_enabled]: [false]
-[debug.renderengine.skia_use_perfetto_track_events]: [false]
+[debug.power.monitor_tools]: [true]
 [debug.sf.auto_latch_unsignaled]: [0]
 [debug.sf.disable_backpressure]: [1]
 [debug.sf.disable_client_composition_cache]: [0]
@@ -1339,14 +1227,13 @@ PHONEPROP
 [debug.stagefright.c2inputsurface]: [-1]
 [debug.stagefright.ccodec]: [4]
 [debug.stagefright.omx_default_rank]: [0]
-[debug.tp.grip_enable]: [0]
 [debug.tracing.battery_status]: [2]
 [debug.tracing.device_state]: [0:DEFAULT]
 [debug.tracing.mcc]: [405]
 [debug.tracing.mnc]: [872]
 [debug.tracing.plug_type]: [2]
-[debug.tracing.screen_brightness]: [0.08396339]
-[debug.tracing.screen_state]: [2]
+[debug.tracing.screen_brightness]: [0.0]
+[debug.tracing.screen_state]: [1]
 [debug.video.fingercollection.play]: [false]
 [dev.bootcomplete]: [1]
 [dev.mnt.blk.cust]: [sda19]
@@ -1359,7 +1246,6 @@ PHONEPROP
 [dev.mnt.blk.data_mirror.misc_ce.null]: [sda19]
 [dev.mnt.blk.data_mirror.misc_de.null]: [sda19]
 [dev.mnt.blk.data_mirror.ref_profiles]: [sda19]
-[dev.mnt.blk.data_mirror.storage_area]: [sda19]
 [dev.mnt.blk.dev.logfs]: [sde54]
 [dev.mnt.blk.metadata]: [sda10]
 [dev.mnt.blk.mi_ext]: [sda18]
@@ -1376,17 +1262,16 @@ PHONEPROP
 [dev.mnt.blk.vendor.dsp]: [sde9]
 [dev.mnt.blk.vendor.firmware_mnt]: [sde4]
 [dev.mnt.blk.vendor_dlkm]: [sda18]
-[dev.mnt.dev.cust]: [dm-55]
-[dev.mnt.dev.data]: [dm-53]
-[dev.mnt.dev.data.user.0]: [dm-53]
-[dev.mnt.dev.data_mirror.cur_profiles]: [dm-53]
-[dev.mnt.dev.data_mirror.data_ce.null]: [dm-53]
-[dev.mnt.dev.data_mirror.data_ce.null.0]: [dm-53]
-[dev.mnt.dev.data_mirror.data_de.null]: [dm-53]
-[dev.mnt.dev.data_mirror.misc_ce.null]: [dm-53]
-[dev.mnt.dev.data_mirror.misc_de.null]: [dm-53]
-[dev.mnt.dev.data_mirror.ref_profiles]: [dm-53]
-[dev.mnt.dev.data_mirror.storage_area]: [dm-53]
+[dev.mnt.dev.cust]: [dm-51]
+[dev.mnt.dev.data]: [dm-49]
+[dev.mnt.dev.data.user.0]: [dm-49]
+[dev.mnt.dev.data_mirror.cur_profiles]: [dm-49]
+[dev.mnt.dev.data_mirror.data_ce.null]: [dm-49]
+[dev.mnt.dev.data_mirror.data_ce.null.0]: [dm-49]
+[dev.mnt.dev.data_mirror.data_de.null]: [dm-49]
+[dev.mnt.dev.data_mirror.misc_ce.null]: [dm-49]
+[dev.mnt.dev.data_mirror.misc_de.null]: [dm-49]
+[dev.mnt.dev.data_mirror.ref_profiles]: [dm-49]
 [dev.mnt.dev.dev.logfs]: [sde54]
 [dev.mnt.dev.metadata]: [sda10]
 [dev.mnt.dev.mi_ext]: [dm-11]
@@ -1413,7 +1298,6 @@ PHONEPROP
 [dev.mnt.rootdisk.data_mirror.misc_ce.null]: [sda]
 [dev.mnt.rootdisk.data_mirror.misc_de.null]: [sda]
 [dev.mnt.rootdisk.data_mirror.ref_profiles]: [sda]
-[dev.mnt.rootdisk.data_mirror.storage_area]: [sda]
 [dev.mnt.rootdisk.dev.logfs]: [sde]
 [dev.mnt.rootdisk.metadata]: [sda]
 [dev.mnt.rootdisk.mi_ext]: [sda]
@@ -1445,11 +1329,8 @@ PHONEPROP
 [gsm.sim.operator.numeric]: [405872]
 [gsm.sim.operator.orig.alpha]: [Jio]
 [gsm.sim.state]: [LOADED,ABSENT]
-[gsm.version.baseband]: [MPSS.CYS.1.0.c1-00028-2.101829.4.124790.2,MPSS.CYS.1.0.c1-00028-2.101829.4.124790.2]
+[gsm.version.baseband]: [MPSS.CYS.1.0.c1-00012-1.93794.2.94121.2,MPSS.CYS.1.0.c1-00012-1.93794.2.94121.2]
 [hwservicemanager.ready]: [true]
-[init.svc.aconfigd]: [stopped]
-[init.svc.aconfigd-mainline-init]: [stopped]
-[init.svc.aconfigd-platform-init]: [stopped]
 [init.svc.adbd]: [running]
 [init.svc.apexd]: [stopped]
 [init.svc.apexd-bootstrap]: [stopped]
@@ -1468,6 +1349,7 @@ PHONEPROP
 [init.svc.charge_logger]: [running]
 [init.svc.checknv]: [stopped]
 [init.svc.cnss-daemon]: [running]
+[init.svc.credstore]: [running]
 [init.svc.cust_data_keeper]: [stopped]
 [init.svc.derive_classpath]: [stopped]
 [init.svc.derive_sdk]: [stopped]
@@ -1486,7 +1368,6 @@ PHONEPROP
 [init.svc.heapprofd]: [stopped]
 [init.svc.hidl_memory]: [running]
 [init.svc.hwservicemanager]: [running]
-[init.svc.hyper_bpfloader]: [stopped]
 [init.svc.hypsys_system]: [running]
 [init.svc.idmap2d]: [stopped]
 [init.svc.incidentd]: [running]
@@ -1497,7 +1378,6 @@ PHONEPROP
 [init.svc.kernel-post-boot]: [stopped]
 [init.svc.keystore2]: [running]
 [init.svc.lct.ant_close]: [stopped]
-[init.svc.lct.ant_open]: [stopped]
 [init.svc.lmkd]: [running]
 [init.svc.loc_launcher]: [running]
 [init.svc.logcatkernel]: [stopped]
@@ -1513,8 +1393,6 @@ PHONEPROP
 [init.svc.mediaextractor]: [running]
 [init.svc.mediametrics]: [running]
 [init.svc.memory-boot]: [stopped]
-[init.svc.mi_ic]: [stopped]
-[init.svc.mi_ric_file]: [stopped]
 [init.svc.mi_ric_init]: [stopped]
 [init.svc.mi_ric_run]: [running]
 [init.svc.mi_thermald]: [running]
@@ -1523,23 +1401,18 @@ PHONEPROP
 [init.svc.millet_pkg]: [running]
 [init.svc.millet_sig]: [running]
 [init.svc.mimd-service]: [running]
-[init.svc.misctrl]: [stopped]
 [init.svc.misight]: [running]
 [init.svc.miuibooster]: [running]
 [init.svc.mlid]: [running]
-[init.svc.mtdoopslog]: [stopped]
-[init.svc.nativehang-dumpstate]: [stopped]
 [init.svc.netd]: [running]
 [init.svc.odsign]: [stopped]
 [init.svc.panel_color]: [stopped]
 [init.svc.pasr-hal]: [stopped]
 [init.svc.perf2-hal-1-0]: [running]
-[init.svc.perfetto_persistent_sysui_tracing_for_bugreport]: [stopped]
 [init.svc.poweropt-service]: [running]
 [init.svc.prng_seeder]: [running]
 [init.svc.psiclient]: [stopped]
 [init.svc.qccsyshal@1.2-service]: [running]
-[init.svc.qccsyshal_aidl-service]: [stopped]
 [init.svc.qcom-c_core-sh]: [stopped]
 [init.svc.qcom-c_main-sh]: [stopped]
 [init.svc.qcom-post-boot]: [stopped]
@@ -1553,7 +1426,6 @@ PHONEPROP
 [init.svc.servicemanager]: [running]
 [init.svc.shelld]: [running]
 [init.svc.ssgqmigd]: [running]
-[init.svc.stability_setup]: [stopped]
 [init.svc.statsd]: [running]
 [init.svc.storaged]: [running]
 [init.svc.surfaceflinger]: [running]
@@ -1568,24 +1440,22 @@ PHONEPROP
 [init.svc.traced_probes]: [running]
 [init.svc.ueventd]: [running]
 [init.svc.update_engine]: [running]
-[init.svc.update_verifier]: [stopped]
+[init.svc.update_verifier_nonencrypted]: [stopped]
 [init.svc.usbd]: [stopped]
 [init.svc.vendor-early_eth]: [stopped]
 [init.svc.vendor-qti-media-c2-hal-1-0]: [running]
 [init.svc.vendor-qti-media-c2audio-hal-1-0]: [running]
 [init.svc.vendor-sensor-sh]: [stopped]
-[init.svc.virtualizationservice]: [stopped]
 [init.svc.vndservicemanager]: [running]
 [init.svc.vold]: [running]
 [init.svc.wfdhdcphalservice]: [running]
 [init.svc.wfdvndservice]: [running]
+[init.svc.wifiSarTool_dsi0]: [stopped]
 [init.svc.wifiSarTool_dsi1]: [stopped]
 [init.svc.wificond]: [running]
 [init.svc.wifidisplayhalservice]: [running]
 [init.svc.wpa_supplicant]: [running]
 [init.svc.zygote]: [running]
-[kcmdline.binder]: [c]
-[kcmdline.loaded]: [1]
 [log.tag.AF::MmapTrack]: [D]
 [log.tag.AF::OutputTrack]: [D]
 [log.tag.AF::PatchRecord]: [D]
@@ -1639,6 +1509,7 @@ PHONEPROP
 [log.tag.FastMixerState]: [D]
 [log.tag.FastThread]: [D]
 [log.tag.IAudioFlinger]: [D]
+[log.tag.MDnsDS]: [D]
 [log.tag.ToneGenerator]: [D]
 [log.tag.stats_log]: [I]
 [logd.ready]: [true]
@@ -1658,7 +1529,7 @@ PHONEPROP
 [net.bt.name]: [Android]
 [net.tcp.2g_init_rwnd]: [10]
 [odm.security.rootpub.load]: [true]
-[odm.security.rotatekey.load]: [2026-04-04 10:02:08]
+[odm.security.rotatekey.load]: [2026-02-03 11:02:45]
 [odsign.key.done]: [1]
 [odsign.verification.done]: [1]
 [odsign.verification.success]: [1]
@@ -1666,35 +1537,35 @@ PHONEPROP
 [partition.mi_ext.verified]: [2]
 [partition.mi_ext.verified.check_at_most_once]: [0]
 [partition.mi_ext.verified.hash_alg]: [sha256]
-[partition.mi_ext.verified.root_digest]: [31a91454e77702a30533353a692aee9e526b4801b894c8079c61196ffb4f386f]
+[partition.mi_ext.verified.root_digest]: [c914b4beb8af1afff57a0e45d3632650aa60cddc2055d176a348d60b37ee4ccd]
 [partition.odm.verified]: [2]
 [partition.odm.verified.check_at_most_once]: [0]
 [partition.odm.verified.hash_alg]: [sha256]
-[partition.odm.verified.root_digest]: [73d971648f77cd6c0be953b18077173749304ce233630cea1ab61415274da2b1]
+[partition.odm.verified.root_digest]: [e840d748d9e8c40443c21b6b73850013f7b200a1361dec1eeb8e2656be58def3]
 [partition.product.verified]: [2]
 [partition.product.verified.check_at_most_once]: [0]
 [partition.product.verified.hash_alg]: [sha256]
-[partition.product.verified.root_digest]: [5b1847287e20eb5708840cb731f2310500296a58c6773a3bb4b4e36f73166aae]
+[partition.product.verified.root_digest]: [e23577a5772d98fddf47beed732781d6cb0aa402a452a5b54520ab8d95171c2c]
 [partition.system.verified]: [2]
 [partition.system.verified.check_at_most_once]: [0]
 [partition.system.verified.hash_alg]: [sha256]
-[partition.system.verified.root_digest]: [4d4a34aeb0540202db38c4347c53df1bb6c7294f78ba72df044e5117bc8bcb65]
+[partition.system.verified.root_digest]: [98719d1930d33f980cbcf2c7959aebeac6f34f6422fd893697191fb39de6c121]
 [partition.system_dlkm.verified]: [2]
 [partition.system_dlkm.verified.check_at_most_once]: [0]
 [partition.system_dlkm.verified.hash_alg]: [sha256]
-[partition.system_dlkm.verified.root_digest]: [7f52d39f72f9545bacd199709470c727930f616855b9056d0003fd63870f8c47]
+[partition.system_dlkm.verified.root_digest]: [b4b2c9be4a3305c58489bc25d666347a2d3f55373ad3042d59f06282906fa0ab]
 [partition.system_ext.verified]: [2]
 [partition.system_ext.verified.check_at_most_once]: [0]
 [partition.system_ext.verified.hash_alg]: [sha256]
-[partition.system_ext.verified.root_digest]: [bc8b7d3151b686b5dd5213095a81a5a64a7f1d5fe3034fdb65524b90de727846]
+[partition.system_ext.verified.root_digest]: [09261a2e32ff92bc41f56d776ec8050199e3a727f589939ef4d7f7555141b85b]
 [partition.vendor.verified]: [2]
 [partition.vendor.verified.check_at_most_once]: [0]
 [partition.vendor.verified.hash_alg]: [sha256]
-[partition.vendor.verified.root_digest]: [c71291442d5d8bf606ff0d71a8eced084aaad5f25592265bd2a551a7a30cdc3b]
+[partition.vendor.verified.root_digest]: [1ec474b119a756ae7e45618548981a5ef9bb1476c86306c87023b56720cb4621]
 [partition.vendor_dlkm.verified]: [2]
 [partition.vendor_dlkm.verified.check_at_most_once]: [0]
 [partition.vendor_dlkm.verified.hash_alg]: [sha256]
-[partition.vendor_dlkm.verified.root_digest]: [5799c702edacd160a0c946ef8b678fe8f6bb101f8b87782449a5e66b81b0a77a]
+[partition.vendor_dlkm.verified.root_digest]: [e410b2fe922388bd6336666a66f88b25490a118d4debcb100fd1d65904ecdba1]
 [persist.audio.button_jack.profile]: [volume]
 [persist.audio.button_jack.switch]: [0]
 [persist.audio.headset.plug.status]: [off]
@@ -1711,98 +1582,6 @@ PHONEPROP
 [persist.data.wda.enable]: [true]
 [persist.debug.coresight.config]: [stm-events]
 [persist.debug.wfd.enable]: [1]
-[persist.device_config.aconfig_flags.accessibility.enable_magnifier_thumbnail]: [false]
-[persist.device_config.aconfig_flags.activity_manager_native_boot.modern_queue_enabled]: [true]
-[persist.device_config.aconfig_flags.bluetooth.INIT_gd_hal_snoop_logger_filtering]: [true]
-[persist.device_config.aconfig_flags.bluetooth.INIT_gd_hal_snoop_logger_socket]: [true]
-[persist.device_config.aconfig_flags.bluetooth.audio_policy_ag_enabled]: [true]
-[persist.device_config.aconfig_flags.bluetooth.audio_policy_hf_enabled]: [true]
-[persist.device_config.aconfig_flags.bluetooth.le_audio_enabled_by_default]: [false]
-[persist.device_config.aconfig_flags.bluetooth.location_denylist_advertising_data]: [⊈0016AAFE40/00FFFFFFF0,⊆0016AAFE/00FFFFFF,⊆00FF4C0002/00FFFFFFFF]
-[persist.device_config.aconfig_flags.bluetooth.location_denylist_mac]: []
-[persist.device_config.aconfig_flags.bluetooth.location_denylist_name]: []
-[persist.device_config.aconfig_flags.bluetooth.scan_timeout_millis]: [300000]
-[persist.device_config.aconfig_flags.companion.enable_context_sync_telecom]: [false]
-[persist.device_config.aconfig_flags.configuration.beta_launch]: [false]
-[persist.device_config.aconfig_flags.configuration.beta_public_launch]: [false]
-[persist.device_config.aconfig_flags.configuration.demo_flag]: [false]
-[persist.device_config.aconfig_flags.configuration.droidfood_launch]: [false]
-[persist.device_config.aconfig_flags.configuration.flag]: [true]
-[persist.device_config.aconfig_flags.configuration.flag_five]: [false]
-[persist.device_config.aconfig_flags.configuration.flag_four]: [false]
-[persist.device_config.aconfig_flags.configuration.flag_six]: [false]
-[persist.device_config.aconfig_flags.configuration.flag_three]: [false]
-[persist.device_config.aconfig_flags.configuration.flag_two]: [false]
-[persist.device_config.aconfig_flags.configuration.public_launch]: [false]
-[persist.device_config.aconfig_flags.configuration.rescue_party_throttle_duration_min]: [10]
-[persist.device_config.aconfig_flags.connectivity.data_stall_consecutive_dns_timeout_threshold]: [5]
-[persist.device_config.aconfig_flags.connectivity.dhcp_init_reboot_enabled]: [false]
-[persist.device_config.aconfig_flags.connectivity.dhcp_init_reboot_version]: [0]
-[persist.device_config.aconfig_flags.connectivity.dhcp_ip_conflict_detect_version]: [0]
-[persist.device_config.aconfig_flags.connectivity.dhcp_rapid_commit_enabled]: [false]
-[persist.device_config.aconfig_flags.connectivity.dhcp_rapid_commit_version]: [1]
-[persist.device_config.aconfig_flags.connectivity.dhcp_restart_configuration_delay]: [1000]
-[persist.device_config.aconfig_flags.connectivity.dhcp_server_decline_version]: [0]
-[persist.device_config.aconfig_flags.connectivity.ipclient_accept_ipv6_link_local_dns_version]: [0]
-[persist.device_config.aconfig_flags.connectivity.ipclient_accept_ra_min_lft]: [0]
-[persist.device_config.aconfig_flags.connectivity.ipclient_multicast_ns_version]: [0]
-[persist.device_config.aconfig_flags.edgetpu_native.allowlist_app11]: []
-[persist.device_config.aconfig_flags.edgetpu_native.allowlist_app12]: []
-[persist.device_config.aconfig_flags.edgetpu_native.allowlist_app5]: []
-[persist.device_config.aconfig_flags.edgetpu_native.allowlist_app6]: []
-[persist.device_config.aconfig_flags.edgetpu_native.allowlist_app7]: []
-[persist.device_config.aconfig_flags.lmkd_native.thrashing_limit_critical]: [300]
-[persist.device_config.aconfig_flags.nearby.nearby_enable_presence_broadcast_legacy]: [false]
-[persist.device_config.aconfig_flags.nearby.nearby_nano_app_min_version]: [1]
-[persist.device_config.aconfig_flags.nearby.nearby_support_test_app]: [false]
-[persist.device_config.aconfig_flags.netd_native.dns_event_subsample_map]: [default:6 0:400 2:110 4:110 7:110]
-[persist.device_config.aconfig_flags.netd_native.doh]: [1]
-[persist.device_config.aconfig_flags.netd_native.dot_connect_timeout_ms]: [30000]
-[persist.device_config.aconfig_flags.netd_native.dot_query_timeout_ms]: [-1]
-[persist.device_config.aconfig_flags.netd_native.dot_revalidation_threshold]: [-1]
-[persist.device_config.aconfig_flags.netd_native.dot_validation_latency_factor]: [3]
-[persist.device_config.aconfig_flags.netd_native.dot_validation_latency_offset_ms]: [100]
-[persist.device_config.aconfig_flags.netd_native.dot_xport_unusable_threshold]: [-1]
-[persist.device_config.aconfig_flags.netd_native.keep_listening_udp]: [1]
-[persist.device_config.aconfig_flags.netd_native.max_cache_entries]: [640]
-[persist.device_config.aconfig_flags.netd_native.max_queries_global]: [2500]
-[persist.device_config.aconfig_flags.netd_native.no_retry_after_cancel]: [0]
-[persist.device_config.aconfig_flags.netd_native.parallel_lookup]: [0]
-[persist.device_config.aconfig_flags.netd_native.retransmission_time_interval]: [3000]
-[persist.device_config.aconfig_flags.netd_native.retry_count]: [2]
-[persist.device_config.aconfig_flags.netd_native.sort_nameservers]: [0]
-[persist.device_config.aconfig_flags.nnapi_native.current_feature_level]: [7]
-[persist.device_config.aconfig_flags.nnapi_native.telemetry_enable]: [false]
-[persist.device_config.aconfig_flags.remote_key_provisioning_native.enable_rkpd]: [false]
-[persist.device_config.aconfig_flags.runtime_native.metrics.reporting-mods]: [2]
-[persist.device_config.aconfig_flags.runtime_native.metrics.reporting-mods-server]: [2]
-[persist.device_config.aconfig_flags.runtime_native.metrics.reporting-num-mods]: [100]
-[persist.device_config.aconfig_flags.runtime_native.metrics.reporting-num-mods-server]: [100]
-[persist.device_config.aconfig_flags.runtime_native.metrics.reporting-spec]: [1,5,30,60,600]
-[persist.device_config.aconfig_flags.runtime_native.metrics.reporting-spec-server]: [1,10,60,3600,*]
-[persist.device_config.aconfig_flags.runtime_native.metrics.write-to-statsd]: [true]
-[persist.device_config.aconfig_flags.runtime_native.use_app_image_startup_cache]: [true]
-[persist.device_config.aconfig_flags.runtime_native_boot.disable_lock_profiling]: [false]
-[persist.device_config.aconfig_flags.runtime_native_boot.force_disable_uffd_gc]: [false]
-[persist.device_config.aconfig_flags.runtime_native_boot.iorap_blacklisted_packages]: []
-[persist.device_config.aconfig_flags.runtime_native_boot.iorap_perfetto_enable]: [false]
-[persist.device_config.aconfig_flags.runtime_native_boot.iorap_readahead_enable]: [false]
-[persist.device_config.aconfig_flags.runtime_native_boot.iorapd_options]: []
-[persist.device_config.aconfig_flags.runtime_native_boot.use_generational_gc]: [true]
-[persist.device_config.aconfig_flags.storage_native_boot.charging_required]: [false]
-[persist.device_config.aconfig_flags.storage_native_boot.dirty_reclaim_rate]: [0.5]
-[persist.device_config.aconfig_flags.storage_native_boot.fuse_enabled]: [1]
-[persist.device_config.aconfig_flags.storage_native_boot.lifetime_threshold]: [70]
-[persist.device_config.aconfig_flags.storage_native_boot.low_battery_level]: [20.0]
-[persist.device_config.aconfig_flags.storage_native_boot.min_gc_sleeptime]: [5000]
-[persist.device_config.aconfig_flags.storage_native_boot.min_segments_threshold]: [512]
-[persist.device_config.aconfig_flags.storage_native_boot.segment_reclaim_weight]: [2.0]
-[persist.device_config.aconfig_flags.storage_native_boot.smart_idle_maint_enabled]: [true]
-[persist.device_config.aconfig_flags.storage_native_boot.smart_idle_maint_period]: [60]
-[persist.device_config.aconfig_flags.storage_native_boot.take_over_get_content]: [false]
-[persist.device_config.aconfig_flags.storage_native_boot.target_dirty_ratio]: [80]
-[persist.device_config.aconfig_flags.storage_native_boot.transcode_compat_stale]: []
-[persist.device_config.aconfig_flags.surface_flinger_native_boot.SkiaTracingFeature__use_skia_tracing]: [false]
 [persist.device_config.nnapi_native.current_feature_level]: [7]
 [persist.device_config.nnapi_native.telemetry_enable]: [false]
 [persist.device_config.runtime_native.metrics.reporting-mods]: [2]
@@ -1814,6 +1593,7 @@ PHONEPROP
 [persist.device_config.runtime_native.metrics.write-to-statsd]: [true]
 [persist.device_config.runtime_native.use_app_image_startup_cache]: [true]
 [persist.device_config.runtime_native_boot.disable_lock_profiling]: [false]
+[persist.device_config.runtime_native_boot.enable_uffd_gc_2]: [false]
 [persist.device_config.runtime_native_boot.force_disable_uffd_gc]: [false]
 [persist.device_config.runtime_native_boot.iorap_blacklisted_packages]: []
 [persist.device_config.runtime_native_boot.iorap_perfetto_enable]: [false]
@@ -1821,8 +1601,7 @@ PHONEPROP
 [persist.device_config.runtime_native_boot.iorapd_options]: []
 [persist.device_config.runtime_native_boot.use_generational_gc]: [true]
 [persist.fuse_sdcard]: [true]
-[persist.hyper.barfollow_anim]: [true]
-[persist.miui.wifi.upf.enable]: []
+[persist.miui.disable_quick_snap]: [true]
 [persist.mm.enable.prefetch]: [true]
 [persist.radio.ap_hw_mbn_count]: [1]
 [persist.radio.ap_hw_mbn_txt_path]: [/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt]
@@ -1835,14 +1614,14 @@ PHONEPROP
 [persist.radio.factorybuild]: [0]
 [persist.radio.mbn_default]: [HW_DEFAULT(0x0AE10106);SW_DEFAULT(0x0AE00004)]
 [persist.radio.mbn_hw_sub0]: [DSDS-LA-Kalpeni(0x0A001901)]
-[persist.radio.mbn_sw_sub0]: [NV#71546=7;Commercial-Reliance(0x0A011B17)]
+[persist.radio.mbn_sw_sub0]: [NV#71546=7;Commercial-Reliance(0x0A011B16)]
 [persist.radio.mbn_sw_sub1]: [NV#71546=7;Inactive]
-[persist.radio.modem_build_datetime]: [Oct 21 2025 13:50:37]
+[persist.radio.modem_build_datetime]: [Jul 15 2025 02:27:50]
 [persist.radio.modem_hw_mbn_count]: [1]
 [persist.radio.modem_hw_mbn_flag]: [1]
 [persist.radio.modem_hw_mbn_txt_path]: [/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt]
 [persist.radio.modem_mbn_check]: [1]
-[persist.radio.modem_release_datetime]: [Aug 26 2025 15:00:00]
+[persist.radio.modem_release_datetime]: [Dec 19 2024 11:00:00]
 [persist.radio.modem_sw_mbn_count]: [381]
 [persist.radio.modem_sw_mbn_flag]: [1]
 [persist.radio.modem_sw_mbn_txt_path]: [/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt]
@@ -1863,41 +1642,34 @@ PHONEPROP
 [persist.rmnet.data.enable]: [true]
 [persist.sys.5g.indicator0]: [13]
 [persist.sys.5g.indicator1]: [13]
-[persist.sys.baseline.enable]: [true]
+[persist.sys.baseline.enable]: [false]
 [persist.sys.bluetooth_restricte_state]: [false]
-[persist.sys.bluetooth_restricte_state_Screen]: [true]
+[persist.sys.bluetooth_restricte_state_Screen]: [false]
 [persist.sys.boot.reason]: []
-[persist.sys.boot.reason.history]: [reboot,factory_reset,1770238378
-reboot,10579323]
-[persist.sys.boot_audio.enabled]: [1]
+[persist.sys.boot.reason.history]: [reboot,factory_reset,1752546489
+reboot,10045309]
+[persist.sys.boot_audio.enabled]: [0]
 [persist.sys.brightmillet.enable]: [true]
-[persist.sys.cam_4glowmem_restart]: [true]
+[persist.sys.btsatck.absvolfeature]: [true]
 [persist.sys.cam_lowmem_restart]: [true]
 [persist.sys.camera.cameraservice.uid_idle]: [1]
-[persist.sys.cloud.enable]: [true]
 [persist.sys.cloud_periodicCacheClear_enable]: []
 [persist.sys.cloud_periodicCacheClear_interval]: []
 [persist.sys.cloud_periodicCacheClear_threshold]: []
-[persist.sys.computility.cpulevel]: [1]
-[persist.sys.computility.gpulevel]: [1]
-[persist.sys.computility.version]: [2025]
 [persist.sys.cota.carrier]: [XM]
 [persist.sys.country]: [IN]
 [persist.sys.dalvik.vm.lib.2]: [libart.so]
-[persist.sys.debug.app.clipdata]: []
-[persist.sys.debug.app.mtbf_test]: [true]
-[persist.sys.device_config_gki]: [true]
+[persist.sys.debug.fdtrack_abort_threshold]: [4096]
+[persist.sys.debug.fdtrack_enable_threshold]: [2048]
 [persist.sys.disable_restart_threshold]: [1]
 [persist.sys.displayinset.top]: [0]
 [persist.sys.downgrade_after_inactive_days]: []
 [persist.sys.downgrade_low_storage]: []
-[persist.sys.element_transition_supported]: [true]
 [persist.sys.enable_inputopts]: [true]
 [persist.sys.enable_ioprefetch]: [false]
 [persist.sys.enable_miui_booster]: [1]
 [persist.sys.enable_pinfile]: [true]
 [persist.sys.fboservice.ctrl]: [false]
-[persist.sys.fix_app_mode]: [1]
 [persist.sys.force_sw_gles]: [1]
 [persist.sys.full_scene_intercept_restart]: [true]
 [persist.sys.fuse]: [true]
@@ -1906,13 +1678,8 @@ reboot,10579323]
 [persist.sys.gc_booster.enable]: [1]
 [persist.sys.gps.fence]: [true]
 [persist.sys.gps.lpp]: [15]
-[persist.sys.gps.selfRecovery]: [3]
-[persist.sys.grant_version]: [OS2.0.203.0.VGVINXM]
+[persist.sys.grant_version]: [V816.0.10.0.UGVINXM]
 [persist.sys.hardcoder.name]: [miui_booster]
-[persist.sys.hwui.enable_texture_optimize]: [true]
-[persist.sys.hyper_transition]: [true]
-[persist.sys.hyper_transition_v]: [2]
-[persist.sys.keyguard_state_ready]: [true]
 [persist.sys.language]: [en]
 [persist.sys.limit_max_acquired_buffer_count]: [-1]
 [persist.sys.lmk.reportkills]: [true]
@@ -1923,33 +1690,23 @@ reboot,10579323]
 [persist.sys.mem_cgated]: [1]
 [persist.sys.mem_fgated]: [1]
 [persist.sys.memctrl]: [on]
-[persist.sys.memory.totalsize]: [64]
-[persist.sys.memory.user_freesize]: [37]
 [persist.sys.memory_standard.appheap.enable]: [true]
 [persist.sys.memory_standard.enable]: [true]
 [persist.sys.memory_standard.handle.time]: [300000]
 [persist.sys.mi_shadow_supported]: [false]
-[persist.sys.mibridge_auth_uids]: [10149]
 [persist.sys.mibridge_auth_uids_debug]: []
 [persist.sys.millet.handshake]: [true]
 [persist.sys.millet.newversion]: [true]
-[persist.sys.misight.times]: [1]
 [persist.sys.mispeed.report]: []
-[persist.sys.miui.sno]: [itotZqwr8ZOjgVrr4QMY5w==]
-[persist.sys.miui.virtualpartition.cust.uncrypt]: [7f8eda727d120dc8b25b9e1b5c1eaa9e2fa26a86]
+[persist.sys.miui.virtualpartition.cust.uncrypt]: [5584978a453993b7cbc2e56363179fe493699919]
 [persist.sys.miui_animator_sched.big_prime_cores]: [6-7]
 [persist.sys.miui_animator_sched.bigcores]: [6-7]
 [persist.sys.miui_scout_binder_full_kill_process]: [true]
+[persist.sys.miui_scout_enable]: [true]
 [persist.sys.miuibooster.name]: [miui_booster]
-[persist.sys.mmms.anr.white.list]: [true]
-[persist.sys.mmms.lower.pre.previous.memavailable.thread]: [314572]
-[persist.sys.mmms.lower.previous.memavailable.thread]: [204800]
-[persist.sys.mmms.lowmem.reclaim.memavailable.thread]: [393216]
-[persist.sys.mmms.mediummem.reclaim.memavailable.thread]: [393216]
 [persist.sys.mmms.switch]: [true]
-[persist.sys.mmms.throttled.thread]: [17920]
+[persist.sys.mmms.throttled.thread]: [11520]
 [persist.sys.mms.compact_enable]: [true]
-[persist.sys.mms.lowermem.cache_limit]: [16]
 [persist.sys.mqs.gps]: [1]
 [persist.sys.mqs.gps.rtk]: [ON]
 [persist.sys.mqs.gps.supl.host]: [supl.qxwz.com]
@@ -1962,74 +1719,38 @@ reboot,10579323]
 [persist.sys.oom_crash_on_watchdog]: [true]
 [persist.sys.opt_accessibility]: [false]
 [persist.sys.partial.screenshot.support]: [false]
-[persist.sys.perf_scenario_recognition.behavior.disablecode]: []
-[persist.sys.perf_scenario_recognition.enable]: [true]
-[persist.sys.perf_scenario_recognition.plugin.cloud.codelist]: []
-[persist.sys.perf_scenario_recognition.state.disablecode]: [0]
-[persist.sys.periodic.lru_active_length]: [3:3:3:5:7:9:10]
-[persist.sys.periodic.u.enable]: [true]
-[persist.sys.periodic.u.fgtrim]: [false]
-[persist.sys.periodic.u.startprocess.enable]: [true]
 [persist.sys.powmillet.enable]: [true]
-[persist.sys.precache.appstrs1]: [com.miui.weather2]
-[persist.sys.precache.enable]: [true]
-[persist.sys.precache.number]: [1]
 [persist.sys.prestart.feedback.enable]: [true]
 [persist.sys.prestart.proc]: [true]
 [persist.sys.privacy_camera]: [false]
-[persist.sys.protect_cache.time]: [60000]
 [persist.sys.qseelogd]: [true]
-[persist.sys.raise_region_sampling_prio]: [true]
 [persist.sys.reduce_died_count_delay]: [360000]
 [persist.sys.released]: [true]
-[persist.sys.resource_cache_limit.multiple]: [3]
 [persist.sys.sc_allow_conn]: [true]
 [persist.sys.sf.color_mode]: [7]
 [persist.sys.sf.color_saturation]: [1.0]
 [persist.sys.sf.native_mode]: [258]
-[persist.sys.sf_charge_anim_supported]: [true]
 [persist.sys.smartpower.display.enable]: [true]
-[persist.sys.smartpower.display_camera_fps_enable]: [true]
 [persist.sys.spc.enabled]: [true]
 [persist.sys.spc.proc_restart_enable]: [true]
 [persist.sys.spc.protect.critical.count]: [2]
-[persist.sys.stability.enable_dmabuf_monitor]: [true]
-[persist.sys.stability.enable_fd_monitor]: [true]
-[persist.sys.stability.enable_process_exit_monitor]: [true]
-[persist.sys.stability.enable_rss_monitor]: [true]
-[persist.sys.stability.enable_sentinel_resource_monitor]: [false]
-[persist.sys.stability.enable_slab_monitor]: [true]
-[persist.sys.stability.enable_thread_monitor]: [true]
-[persist.sys.stability.fbo_hal_stop]: [true]
-[persist.sys.stability.job_timeout_multiplier]: [2]
-[persist.sys.stability.lightweightscout.check_frozen]: [true]
-[persist.sys.stability.lightweightscout.enable]: [true]
 [persist.sys.stability.maintain_factory_reboot_days]: [60]
 [persist.sys.stability.miui_fbo_enable]: [true]
 [persist.sys.stability.miui_fbo_start_count]: [2]
-[persist.sys.stability.monitor_third_party_app]: [true]
 [persist.sys.stability.nativehang.enable]: [true]
-[persist.sys.stability.nativehangII.enable]: [true]
 [persist.sys.stability.reboot_days]: [7]
-[persist.sys.stability.recordAnimationDoneTime]: [1770238377256]
 [persist.sys.stability.report_app_launch.enable]: [true]
-[persist.sys.stability.scout.enable]: [true]
-[persist.sys.stability.window_monitor.enabled]: [true]
-[persist.sys.stability.window_monitor.kill_threshold]: [500]
-[persist.sys.stability.window_monitor.kill_when_leak]: [true]
 [persist.sys.support_super_clipboard]: [1]
 [persist.sys.support_view_smoothcorner]: [false]
 [persist.sys.support_window_smoothcorner]: [true]
 [persist.sys.sysrqOnAnr_D_state]: [true]
 [persist.sys.task_isolation]: [true]
 [persist.sys.testTrimMemActivityBg.wk.enable]: [true]
-[persist.sys.time.offset]: [19800000]
 [persist.sys.timezone]: [Asia/Calcutta]
-[persist.sys.traceopt]: [1]
-[persist.sys.turbosched.coreApp.enable]: [false]
-[persist.sys.turbosched.coreAppTop20.enable]: [false]
 [persist.sys.turbosched.enable]: [false]
+[persist.sys.turbosched.enable.coreApp.optimizer]: [false]
 [persist.sys.turbosched.enable_v2]: [false]
+[persist.sys.turbosched.enabletop20app]: [false]
 [persist.sys.turbosched.gaea.enable]: [false]
 [persist.sys.turbosched.policy_list]: []
 [persist.sys.turbosched.thermal_break.enable]: [false]
@@ -2037,9 +1758,8 @@ reboot,10579323]
 [persist.sys.usb.config]: [adb]
 [persist.sys.use_mi_new_strategy]: [true]
 [persist.sys.wfd.virtual]: [0]
-[persist.sys.whole_machine_d_status_enable]: [true]
 [persist.sys.zygote.last_pid]: [-1]
-[persist.sys.zygote.start_pid]: [1482]
+[persist.sys.zygote.start_pid]: [1337]
 [persist.timed.enable]: [true]
 [persist.traced.enable]: [1]
 [persist.vendor.camera.3rdhighResolutionBlob.scenes]: [false]
@@ -2051,7 +1771,6 @@ reboot,10579323]
 [persist.vendor.camera.mi.module.info]: [wide=shine_imx852_ii;front=truly_sc520cs_i;]
 [persist.vendor.camera.mi.module.infoext]: [qvga=cxtccm_sc080cs_i;]
 [persist.vendor.camera.wide]: [shine_imx852_main_global]
-[persist.vendor.charge.oneTrack]: [true]
 [persist.vendor.dpm.feature]: [0]
 [persist.vendor.dpm.vndr.feature]: [11]
 [persist.vendor.dpm.vndr.halservice.enable]: [1]
@@ -2059,6 +1778,7 @@ reboot,10579323]
 [persist.vendor.freeform.3appcam]: [0]
 [persist.vendor.freeform.cam.orientation]: [-1]
 [persist.vendor.miface.registration.scenes]: [false]
+[persist.vendor.night.charge]: [true]
 [persist.vendor.rcs.singlereg.feature]: [0]
 [persist.vendor.region.charger]: [IN]
 [persist.vendor.smartchg]: [18]
@@ -2073,11 +1793,9 @@ reboot,10579323]
 [persist.vendor.sys.provision.status]: [true]
 [persist.vendor.sys.rkp.status]: [1]
 [persist.vendor.sys.wv_rkp.status]: [1]
-[persist.vendor.vcb.activity]: [org.telegram.ui.LaunchActivity]
+[persist.vendor.vcb.activity]: [default]
 [persist.vendor.vcb.snapshot]: [false]
 [persist.vendor.vcb.video]: [false]
-[persist.wm.extensions.activity_embedding_guard_with_android_15]: [true]
-[persist.wm.extensions.enabled]: [true]
 [pm.dexopt.ab-ota]: [speed-profile]
 [pm.dexopt.baseline]: [speed-profile]
 [pm.dexopt.bg-dexopt]: [speed-profile]
@@ -2092,10 +1810,10 @@ reboot,10579323]
 [pm.dexopt.install-bulk]: [speed-profile]
 [pm.dexopt.install-bulk-downgraded]: [verify]
 [pm.dexopt.install-bulk-secondary]: [verify]
-[pm.dexopt.install-bulk-secondary-downgraded]: [verify]
+[pm.dexopt.install-bulk-secondary-downgraded]: [extract]
 [pm.dexopt.install-create-dm]: [speed-profile]
 [pm.dexopt.install-fast]: [skip]
-[pm.dexopt.post-boot]: [verify]
+[pm.dexopt.post-boot]: [extract]
 [pm.dexopt.secondary]: [verify]
 [pm.dexopt.shared]: [speed]
 [qcom.hw.aac.encoder]: [true]
@@ -2108,7 +1826,6 @@ reboot,10579323]
 [ril.mcc.mnc1]: []
 [ril.multisim.dsds_transition_supported]: [false]
 [ril.multisim.voice_capability]: [1]
-[ril.smap.badcell]: []
 [ril.subscription.types]: [NV,RUIM]
 [ril.temp.dds.state]: [false]
 [rild.libpath]: [/vendor/lib64/libril-qc-hal-qmi.so]
@@ -2119,8 +1836,7 @@ reboot,10579323]
 [ro.appsflyer.preinstall.path]: [/data/miui/pai/pre_install.appsflyer]
 [ro.baseband]: [msm]
 [ro.bluetooth.emb_wp_mode]: [false]
-[ro.bluetooth.leaudio_offload.supported]: [true]
-[ro.bluetooth.library_name]: [libbluetooth.so]
+[ro.bluetooth.library_name]: [libbluetooth_qti.so]
 [ro.bluetooth.wipower]: [false]
 [ro.board.api_level]: [34]
 [ro.board.first_api_level]: [34]
@@ -2159,40 +1875,38 @@ reboot,10579323]
 [ro.boot.slot_suffix]: [_a]
 [ro.boot.usb.dwc3_msm]: [4e00000.ssusb]
 [ro.boot.usbcontroller]: [4e00000.dwc3]
-[ro.boot.uwbcountrycode]: [US]
 [ro.boot.vbmeta.avb_version]: [1.2]
-[ro.boot.vbmeta.device]: [PARTUUID=2b7ce973-27b9-d43d-9433-f36408a9c6ff]
 [ro.boot.vbmeta.device_state]: [unlocked]
-[ro.boot.vbmeta.digest]: [4a1ae27cf636417a73aec48546f7c0a0c6b27e6c6c9104a88f2e4f18b9e82154]
+[ro.boot.vbmeta.digest]: [93278f51047ad38dc25d3629e4bfe27a2aa37ceb52c7471d6aba62b0f7cd1aaa]
 [ro.boot.vbmeta.hash_alg]: [sha256]
-[ro.boot.vbmeta.size]: [13184]
+[ro.boot.vbmeta.size]: [13440]
 [ro.boot.verifiedbootstate]: [orange]
 [ro.boot.veritymode]: [enforcing]
 [ro.boot.veritymode.managed]: [yes]
-[ro.bootimage.build.date]: [Tue Oct 21 21:54:22 CST 2025]
-[ro.bootimage.build.date.utc]: [1761054862]
-[ro.bootimage.build.fingerprint]: [Xiaomi/warm_global/warm:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys]
+[ro.bootimage.build.date]: [Tue Jul 15 10:31:55 CST 2025]
+[ro.bootimage.build.date.utc]: [1752546715]
+[ro.bootimage.build.fingerprint]: [Xiaomi/warm_global/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
 [ro.bootimage.build.id]: [UKQ1.240624.001]
 [ro.bootimage.build.tags]: [release-keys]
 [ro.bootimage.build.type]: [user]
-[ro.bootimage.build.version.incremental]: [OS2.0.203.0.VGVINXM]
+[ro.bootimage.build.version.incremental]: [V816.0.10.0.UGVINXM]
 [ro.bootimage.build.version.release]: [14]
 [ro.bootimage.build.version.release_or_codename]: [14]
 [ro.bootimage.build.version.sdk]: [34]
 [ro.bootloader]: [unknown]
 [ro.bootmode]: [unknown]
 [ro.build.ab_update]: [true]
-[ro.build.backported_fixes.alias_bitset.long_list]: [2]
 [ro.build.characteristics]: [nosdcard]
-[ro.build.date]: [Tue Oct 21 21:42:09 CST 2025]
-[ro.build.date.utc]: [1761054129]
-[ro.build.description]: [missi-user 15 AQ3A.241213.002 OS2.0.203.0.VGVINXM release-keys]
-[ro.build.display.id]: [AQ3A.241213.002]
-[ro.build.fingerprint]: [POCO/warm_p_in/warm:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys]
-[ro.build.flavor]: [missi-user]
-[ro.build.host]: [pangu-build-component-system-406726-kgm13-k9mrz-7l3g4]
-[ro.build.id]: [AQ3A.241213.002]
-[ro.build.product]: [missi]
+[ro.build.date]: [Tue Jul 15 02:26:36 UTC 2025]
+[ro.build.date.utc]: [1752546396]
+[ro.build.description]: [warm_p_in-user 14 UKQ1.240624.001 V816.0.10.0.UGVINXM release-keys]
+[ro.build.display.id]: [UKQ1.240624.001 release-keys]
+[ro.build.fingerprint]: [POCO/warm_p_in/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
+[ro.build.flavor]: [missi_phone_global_only64-user]
+[ro.build.host]: [pangu-build-component-system-499469-8hjl2-5pbk2-2q1jc]
+[ro.build.id]: [UKQ1.240624.001]
+[ro.build.keys]: [release-keys]
+[ro.build.product]: [warm]
 [ro.build.shutdown_timeout]: [2]
 [ro.build.tags]: [release-keys]
 [ro.build.type]: [user]
@@ -2200,16 +1914,16 @@ reboot,10579323]
 [ro.build.version.all_codenames]: [REL]
 [ro.build.version.base_os]: []
 [ro.build.version.codename]: [REL]
-[ro.build.version.incremental]: [OS2.0.203.0.VGVINXM]
-[ro.build.version.known_codenames]: [Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream]
+[ro.build.version.incremental]: [V816.0.10.0.UGVINXM]
+[ro.build.version.known_codenames]: [Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake]
 [ro.build.version.min_supported_target_sdk]: [28]
 [ro.build.version.preview_sdk]: [0]
 [ro.build.version.preview_sdk_fingerprint]: [REL]
-[ro.build.version.release]: [15]
-[ro.build.version.release_or_codename]: [15]
-[ro.build.version.release_or_preview_display]: [15]
-[ro.build.version.sdk]: [35]
-[ro.build.version.security_patch]: [2025-11-01]
+[ro.build.version.release]: [14]
+[ro.build.version.release_or_codename]: [14]
+[ro.build.version.release_or_preview_display]: [14]
+[ro.build.version.sdk]: [34]
+[ro.build.version.security_patch]: [2025-07-01]
 [ro.carrier]: [unknown]
 [ro.channel.com.snapchat.android]: [/cust/etc/snap_tracker2023.txt]
 [ro.com.agoda.consumer.preload]: [/cust/etc/agoda.aid]
@@ -2220,13 +1934,12 @@ reboot,10579323]
 [ro.com.google.clientidbase.pg]: [android-xiaomi-deo2]
 [ro.com.google.clientidbase.tx]: [android-xiaomi-terr1-rso2]
 [ro.com.google.clientidbase.vs]: [android-xiaomi-terr1-rso2]
-[ro.com.google.gmsversion]: [15_202507]
+[ro.com.google.gmsversion]: [14_202408]
 [ro.com.google.lens.oem_camera_package]: [com.android.camera]
 [ro.com.google.lens.oem_image_package]: [com.miui.gallery]
 [ro.com.miui.rsa.feature]: [tier2]
 [ro.com.miui.rsa.search]: [tier2]
 [ro.config.alarm_alert]: [Alarm_Classic.ogg]
-[ro.config.isolated_compilation_enabled]: [true]
 [ro.config.low_ram.threshold_gb]: [99]
 [ro.config.low_ram.version]: [2]
 [ro.config.notification_sound]: [OnTheHunt.ogg]
@@ -2234,14 +1947,13 @@ reboot,10579323]
 [ro.config.safe_media_volume_index]: [10]
 [ro.config.vc_call_vol_steps]: [11]
 [ro.control_privapp_permissions]: [enforce]
-[ro.cp_system_other_odex]: [0]
 [ro.crypto.metadata.enabled]: [true]
 [ro.crypto.metadata_init_delete_all_keys.enabled]: [false]
 [ro.crypto.state]: [encrypted]
 [ro.crypto.type]: [file]
+[ro.crypto.uses_fs_ioc_add_encryption_key]: [true]
 [ro.csc.spotify.music.partnerid]: [xiaomi_mobile]
 [ro.csc.spotify.music.referrerid]: [xiaomi_mobile]
-[ro.cust.support_ime_config]: [true]
 [ro.dalvik.vm.enable_uffd_gc]: [true]
 [ro.dalvik.vm.native.bridge]: [0]
 [ro.debuggable]: [0]
@@ -2254,7 +1966,6 @@ reboot,10579323]
 [ro.hardware.egl]: [adreno]
 [ro.hardware.keystore_desede]: [true]
 [ro.hardware.vulkan]: [adreno]
-[ro.hw_timeout_multiplier]: [2]
 [ro.hwui.drop_shadow_cache_size]: [6]
 [ro.hwui.gradient_cache_size]: [1]
 [ro.hwui.layer_cache_size]: [48]
@@ -2271,15 +1982,12 @@ reboot,10579323]
 [ro.kernel.qemu.gles]: [0]
 [ro.kernel.version]: [6.1]
 [ro.launcher.blur.appLaunch]: [0]
-[ro.llndk.api_level]: [202404]
 [ro.lmk.kill_timeout_ms]: [100]
-[ro.lmk.medium]: [700]
-[ro.lmk.psi_complete_stall_ms]: [70]
-[ro.lmk.psi_partial_stall_ms]: [70]
-[ro.lmk.psi_super_complete_stall_ms]: [200]
-[ro.lmk.swap_free_low_percentage]: [10]
+[ro.lmk.psi_complete_stall_ms]: [20]
+[ro.lmk.psi_partial_stall_ms]: [20]
+[ro.lmk.swap_free_low_percentage]: [30]
 [ro.lmk.swap_util_max]: [90]
-[ro.lmk.thrashing_limit]: [10]
+[ro.lmk.thrashing_limit]: [30]
 [ro.lmk.thrashing_limit_decay]: [2]
 [ro.logd.size]: [2M]
 [ro.logd.size.stats]: [64K]
@@ -2288,20 +1996,17 @@ reboot,10579323]
 [ro.media.xml_variant.codecs]: [_pitti]
 [ro.media.xml_variant.codecs_performance]: [_pitti]
 [ro.mediaserver.64b.enable]: [true]
-[ro.mi.development]: []
-[ro.mi.os.flavor]: [phone]
-[ro.mi.os.version.code]: [2]
-[ro.mi.os.version.incremental]: [OS2.0.203.0.VGVINXM]
-[ro.mi.os.version.name]: [OS2.0]
+[ro.mi.os.version.code]: [1]
+[ro.mi.os.version.incremental]: [OS1.0.10.0.UGVINXM]
+[ro.mi.os.version.name]: [OS1.0]
 [ro.mi.os.version.publish]: [true]
 [ro.microsoft.onedrive_partner_code]: [/cust/etc/onedrive_token.txt]
 [ro.millet.netlink]: [31]
-[ro.miui.allow_app_playbackcapture]: [true]
 [ro.miui.audio.karaoke.suppot.lowlatency]: [true]
 [ro.miui.block_device_path]: [/dev/block/bootdevice/by-name]
 [ro.miui.build.region]: [in]
-[ro.miui.business.version]: [warm.in.1.1.0156]
-[ro.miui.cust_dm_path]: [/dev/block/dm-54]
+[ro.miui.business.version]: [warm.in.1.1.0132]
+[ro.miui.cust_dm_path]: [/dev/block/dm-50]
 [ro.miui.cust_erofs]: [1]
 [ro.miui.cust_img_path]: [/data/preinstall/cust.img]
 [ro.miui.cust_variant]: [in]
@@ -2317,24 +2022,21 @@ reboot,10579323]
 [ro.miui.region]: [IN]
 [ro.miui.remove_uri_80_flag]: [1]
 [ro.miui.shell_anim_enable_fcb]: [true]
-[ro.miui.support_audiorecord_compress]: [true]
 [ro.miui.support_force_enable]: [1]
 [ro.miui.ui.font.global_theme_apply]: [true]
-[ro.miui.ui.font.mi_font_path]: [/system/fonts/MiSansVF.ttf]
 [ro.miui.ui.version.code]: [816]
 [ro.miui.ui.version.name]: [V816]
-[ro.mmms.lowmem.swap.free.low.percentage]: [30]
 [ro.netflix.bsp_rev]: [Q4635-39508-1]
 [ro.netflix.channel]: [004ee050-1a17-11e9-bb61-6f1da27fb55b]
 [ro.netflix.signup]: [1]
 [ro.nfc.port]: [I2C]
-[ro.nnapi.extensions.deny_on_product]: [true]
-[ro.odm.build.date]: [Tue Oct 21 21:54:22 CST 2025]
-[ro.odm.build.date.utc]: [1761054862]
-[ro.odm.build.fingerprint]: [POCO/warm_p_in/warm:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys]
-[ro.odm.build.version.incremental]: [OS2.0.203.0.VGVINXM]
+[ro.odm.build.date]: [Tue Jul 15 10:31:55 CST 2025]
+[ro.odm.build.date.utc]: [1752546715]
+[ro.odm.build.fingerprint]: [POCO/warm_p_in/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
+[ro.odm.build.version.incremental]: [V816.0.10.0.UGVINXM]
 [ro.opa.eligible_device]: [true]
 [ro.opengles.version]: [196610]
+[ro.organization_owned]: [false]
 [ro.postinstall.fstab.prefix]: [/system]
 [ro.product.ab_ota_partitions]: [product]
 [ro.product.board]: [pitti]
@@ -2346,38 +2048,32 @@ reboot,10579323]
 [ro.product.bootimage.model]: [warm]
 [ro.product.bootimage.name]: [warm_global]
 [ro.product.brand]: [POCO]
-[ro.product.brand_for_attestation]: [POCO]
-[ro.product.build.date]: [Tue Oct 21 21:42:20 CST 2025]
-[ro.product.build.date.utc]: [1761054140]
-[ro.product.build.fingerprint]: [POCO/warm_p/warm:15/AQ3A.241213.002/:user/release-keys]
-[ro.product.build.id]: [AQ3A.241213.002]
-[ro.product.build.no_bionic_page_size_macro]: [true]
+[ro.product.build.date]: [Tue Jul 15 02:26:37 UTC 2025]
+[ro.product.build.date.utc]: [1752546397]
+[ro.product.build.fingerprint]: [POCO/warm_p_global/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
+[ro.product.build.id]: [UKQ1.240624.001]
 [ro.product.build.tags]: [release-keys]
 [ro.product.build.type]: [user]
-[ro.product.build.version.incremental]: [OS2.0.203.0.VGVINXM]
-[ro.product.build.version.release]: [15]
-[ro.product.build.version.release_or_codename]: [15]
-[ro.product.build.version.sdk]: [35]
+[ro.product.build.version.incremental]: [V816.0.10.0.UGVINXM]
+[ro.product.build.version.release]: [14]
+[ro.product.build.version.release_or_codename]: [14]
+[ro.product.build.version.sdk]: [34]
 [ro.product.cert]: [24116PCC1I]
 [ro.product.cpu.abi]: [arm64-v8a]
 [ro.product.cpu.abilist]: [arm64-v8a]
 [ro.product.cpu.abilist32]: []
 [ro.product.cpu.abilist64]: [arm64-v8a]
-[ro.product.cpu.pagesize.max]: [16384]
+[ro.product.cpu.pagesize.max]: [4096]
 [ro.product.device]: [warm]
-[ro.product.device_for_attestation]: [warm]
 [ro.product.first_api_level]: [34]
 [ro.product.locale]: [en-GB]
 [ro.product.locale.language]: [en]
 [ro.product.locale.region]: [US]
 [ro.product.manufacturer]: [Xiaomi]
-[ro.product.manufacturer_for_attestation]: [Xiaomi]
 [ro.product.marketname]: [POCO C75 5G]
 [ro.product.mod_device]: [warm_in_global]
 [ro.product.model]: [24116PCC1I]
-[ro.product.model_for_attestation]: [24116PCC1I]
 [ro.product.name]: [warm_p_in]
-[ro.product.name_for_attestation]: [warm_p_in]
 [ro.product.odm.brand]: [POCO]
 [ro.product.odm.cert]: [24116PCC1I]
 [ro.product.odm.device]: [warm]
@@ -2391,7 +2087,7 @@ reboot,10579323]
 [ro.product.product.manufacturer]: [Xiaomi]
 [ro.product.product.marketname]: [POCO]
 [ro.product.product.model]: [24116PCC1I]
-[ro.product.product.name]: [warm_p]
+[ro.product.product.name]: [warm_p_global]
 [ro.product.system.brand]: [Android]
 [ro.product.system.cert]: []
 [ro.product.system.device]: [generic]
@@ -2406,13 +2102,13 @@ reboot,10579323]
 [ro.product.system_dlkm.marketname]: [warm]
 [ro.product.system_dlkm.model]: [warm]
 [ro.product.system_dlkm.name]: [warm_global]
-[ro.product.system_ext.brand]: [qti]
+[ro.product.system_ext.brand]: [Android]
 [ro.product.system_ext.cert]: []
 [ro.product.system_ext.device]: [missi]
 [ro.product.system_ext.manufacturer]: [QUALCOMM]
 [ro.product.system_ext.marketname]: []
-[ro.product.system_ext.model]: [qssi system image for arm64]
-[ro.product.system_ext.name]: [missi]
+[ro.product.system_ext.model]: [AOSP on ARM64]
+[ro.product.system_ext.name]: [missi_phone_global_only64]
 [ro.product.vendor.brand]: [Xiaomi]
 [ro.product.vendor.cert]: []
 [ro.product.vendor.device]: [mivendor]
@@ -2425,6 +2121,7 @@ reboot,10579323]
 [ro.product.vendor_dlkm.manufacturer]: [Xiaomi]
 [ro.product.vendor_dlkm.model]: [warm]
 [ro.product.vendor_dlkm.name]: [warm_global]
+[ro.product.vndk.version]: [34]
 [ro.property_service.version]: [2]
 [ro.radio.device_type]: [1]
 [ro.revision]: [0]
@@ -2450,7 +2147,6 @@ reboot,10579323]
 [ro.support_one_handed_mode]: [true]
 [ro.surface_flinger.clear_slots_with_set_layer_buffer]: [false]
 [ro.surface_flinger.force_hwc_copy_for_virtual_displays]: [true]
-[ro.surface_flinger.game_default_frame_rate_override]: [60]
 [ro.surface_flinger.has_HDR_display]: [false]
 [ro.surface_flinger.has_wide_color_display]: [false]
 [ro.surface_flinger.max_frame_buffer_acquired_buffers]: [3]
@@ -2461,54 +2157,54 @@ reboot,10579323]
 [ro.surface_flinger.use_color_management]: [true]
 [ro.surface_flinger.use_content_detection_for_refresh_rate]: [true]
 [ro.surface_flinger.wcg_composition_dataspace]: [143261696]
-[ro.system.build.date]: [Tue Oct 21 21:42:09 CST 2025]
-[ro.system.build.date.utc]: [1761054129]
-[ro.system.build.fingerprint]: [qti/missi/missi:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys]
-[ro.system.build.id]: [AQ3A.241213.002]
+[ro.system.build.date]: [Tue Jul 15 02:26:36 UTC 2025]
+[ro.system.build.date.utc]: [1752546396]
+[ro.system.build.fingerprint]: [Android/missi_phone_global_only64/missi:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
+[ro.system.build.id]: [UKQ1.240624.001]
 [ro.system.build.tags]: [release-keys]
 [ro.system.build.type]: [user]
-[ro.system.build.version.incremental]: [OS2.0.203.0.VGVINXM]
-[ro.system.build.version.release]: [15]
-[ro.system.build.version.release_or_codename]: [15]
-[ro.system.build.version.sdk]: [35]
+[ro.system.build.version.incremental]: [V816.0.10.0.UGVINXM]
+[ro.system.build.version.release]: [14]
+[ro.system.build.version.release_or_codename]: [14]
+[ro.system.build.version.sdk]: [34]
 [ro.system.product.cpu.abilist]: [arm64-v8a]
 [ro.system.product.cpu.abilist32]: []
 [ro.system.product.cpu.abilist64]: [arm64-v8a]
-[ro.system_dlkm.build.date]: [Tue Oct 21 21:54:22 CST 2025]
-[ro.system_dlkm.build.date.utc]: [1761054862]
-[ro.system_dlkm.build.fingerprint]: [Xiaomi/warm_global/warm:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys]
+[ro.system_dlkm.build.date]: [Tue Jul 15 10:31:55 CST 2025]
+[ro.system_dlkm.build.date.utc]: [1752546715]
+[ro.system_dlkm.build.fingerprint]: [Xiaomi/warm_global/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
 [ro.system_dlkm.build.id]: [UKQ1.240624.001]
 [ro.system_dlkm.build.tags]: [release-keys]
 [ro.system_dlkm.build.type]: [user]
-[ro.system_dlkm.build.version.incremental]: [OS2.0.203.0.VGVINXM]
+[ro.system_dlkm.build.version.incremental]: [V816.0.10.0.UGVINXM]
 [ro.system_dlkm.build.version.release]: [14]
 [ro.system_dlkm.build.version.release_or_codename]: [14]
 [ro.system_dlkm.build.version.sdk]: [34]
-[ro.system_ext.build.date]: [Tue Oct 21 21:42:09 CST 2025]
-[ro.system_ext.build.date.utc]: [1761054129]
-[ro.system_ext.build.fingerprint]: [qti/missi/missi:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys]
-[ro.system_ext.build.id]: [AQ3A.241213.002]
+[ro.system_ext.build.date]: [Tue Jul 15 02:26:36 UTC 2025]
+[ro.system_ext.build.date.utc]: [1752546396]
+[ro.system_ext.build.fingerprint]: [Android/missi_phone_global_only64/missi:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
+[ro.system_ext.build.id]: [UKQ1.240624.001]
 [ro.system_ext.build.tags]: [release-keys]
 [ro.system_ext.build.type]: [user]
-[ro.system_ext.build.version.incremental]: [OS2.0.203.0.VGVINXM]
-[ro.system_ext.build.version.release]: [15]
-[ro.system_ext.build.version.release_or_codename]: [15]
-[ro.system_ext.build.version.sdk]: [35]
+[ro.system_ext.build.version.incremental]: [V816.0.10.0.UGVINXM]
+[ro.system_ext.build.version.release]: [14]
+[ro.system_ext.build.version.release_or_codename]: [14]
+[ro.system_ext.build.version.sdk]: [34]
 [ro.telephony.call_ring.multiple]: [false]
 [ro.telephony.default_network]: [33,33]
-[ro.telephony.sim_slots.count]: [2]
+[ro.telephony.sim_slots.count]: [1]
 [ro.trackingId.com.lzd.appid]: [/cust/etc/lazadaconfiginfo]
 [ro.treble.enabled]: [true]
 [ro.trilo.channel.com.einnovation.temu]: [/cust/etc/trilo_temu_channel.txt]
 [ro.vendor.api_level]: [34]
-[ro.vendor.build.date]: [Tue Oct 21 21:41:45 CST 2025]
-[ro.vendor.build.date.utc]: [1761054105]
-[ro.vendor.build.fingerprint]: [POCO/warm_p_in/warm:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys]
+[ro.vendor.build.date]: [Tue Jul 15 10:19:29 CST 2025]
+[ro.vendor.build.date.utc]: [1752545969]
+[ro.vendor.build.fingerprint]: [POCO/warm_p_in/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
 [ro.vendor.build.id]: [UKQ1.240624.001]
-[ro.vendor.build.security_patch]: [2025-11-01]
+[ro.vendor.build.security_patch]: [2025-07-01]
 [ro.vendor.build.tags]: [release-keys]
 [ro.vendor.build.type]: [user]
-[ro.vendor.build.version.incremental]: [OS2.0.203.0.VGVINXM]
+[ro.vendor.build.version.incremental]: [V816.0.10.0.UGVINXM]
 [ro.vendor.build.version.release]: [14]
 [ro.vendor.build.version.release_or_codename]: [14]
 [ro.vendor.build.version.sdk]: [34]
@@ -2524,13 +2220,13 @@ reboot,10579323]
 [ro.vendor.product.cpu.abilist64]: [arm64-v8a]
 [ro.vendor.qti.va_aosp.support]: [1]
 [ro.vendor.qti.va_odm.support]: [1]
-[ro.vendor_dlkm.build.date]: [Tue Oct 21 21:54:22 CST 2025]
-[ro.vendor_dlkm.build.date.utc]: [1761054862]
-[ro.vendor_dlkm.build.fingerprint]: [Xiaomi/warm_global/warm:14/UKQ1.240624.001/OS2.0.203.0.VGVINXM:user/release-keys]
+[ro.vendor_dlkm.build.date]: [Tue Jul 15 10:31:55 CST 2025]
+[ro.vendor_dlkm.build.date.utc]: [1752546715]
+[ro.vendor_dlkm.build.fingerprint]: [Xiaomi/warm_global/warm:14/UKQ1.240624.001/V816.0.10.0.UGVINXM:user/release-keys]
 [ro.vendor_dlkm.build.id]: [UKQ1.240624.001]
 [ro.vendor_dlkm.build.tags]: [release-keys]
 [ro.vendor_dlkm.build.type]: [user]
-[ro.vendor_dlkm.build.version.incremental]: [OS2.0.203.0.VGVINXM]
+[ro.vendor_dlkm.build.version.incremental]: [V816.0.10.0.UGVINXM]
 [ro.vendor_dlkm.build.version.release]: [14]
 [ro.vendor_dlkm.build.version.release_or_codename]: [14]
 [ro.vendor_dlkm.build.version.sdk]: [34]
@@ -2546,7 +2242,6 @@ reboot,10579323]
 [ro.wps.prop.channel.path]: [/cust/etc/wps.prop]
 [ro.zalo.tracking]: [/cust/etc/zalo_appchannel.in]
 [ro.zygote]: [zygote64]
-[screen.time.manage.multi.app]: [true]
 [security.perf_harden]: [1]
 [selinux.restorecon_recursive]: [/data/misc_ce/0]
 [service.offlinelog.bootloader]: [true]
@@ -2556,33 +2251,27 @@ reboot,10579323]
 [setupwizard.feature.enable_quick_enhanced_biometrics_flow]: [true]
 [setupwizard.feature.enable_quick_start_flow]: [true]
 [setupwizard.theme]: [glif_v3_light]
-[sys.audio.allow.capture]: [false]
 [sys.audio.ceregion]: [false]
-[sys.audio.nativeDebugLevel]: [2]
 [sys.boot.reason]: [reboot,factory_reset]
 [sys.boot.reason.last]: [reboot]
 [sys.boot_completed]: [1]
 [sys.boot_monitor_completed]: [1]
 [sys.bootstat.first_boot_completed]: [1]
 [sys.debug.graphic_buffer_maxsize]: [7084800]
-[sys.dfcservice.compress.prog]: [0]
 [sys.dfcservice.ctrl]: [false]
 [sys.dfcservice.enablelog.ctrl]: [false]
 [sys.displayfeature.entry.enable]: [true]
 [sys.displayfeature_hidl]: [false]
 [sys.fuse.transcode_enabled]: [true]
 [sys.init.perf_lsm_hooks]: [1]
-[sys.locksettings.protectorid]: [5a25881f086a039d]
 [sys.locksettings.remoteauth.enable]: [true]
 [sys.mem.reclaim_on_launcher]: [0]
 [sys.mem.reclaim_on_start]: [0]
 [sys.mem.swappiness_on_launcher]: [100]
 [sys.mem.swappiness_on_start]: [100]
 [sys.millet.monitor]: [2]
-[sys.miui.gki_ndcd]: [off]
 [sys.miui_bpf_ready]: [1]
 [sys.mqs.record_count]: [1]
-[sys.mqs.recorder.bootmonitor.finish]: [true]
 [sys.mqs.recorder.recovery.finish]: [true]
 [sys.mqs.recorder.rescueparty.finish]: [true]
 [sys.net.support.netprio]: [true]
@@ -2590,10 +2279,11 @@ reboot,10579323]
 [sys.ota.type]: [update_engine]
 [sys.power.starttimes]: [1]
 [sys.qca1530]: [detect]
+[sys.rescue_boot_count]: [1]
 [sys.sysctl.extra_free_kbytes]: [13837]
 [sys.system_server.start_count]: [1]
-[sys.system_server.start_elapsed]: [29456]
-[sys.system_server.start_uptime]: [29456]
+[sys.system_server.start_elapsed]: [25445]
+[sys.system_server.start_uptime]: [25445]
 [sys.tp.grip_enable]: [0]
 [sys.usb.adb.disabled]: [0]
 [sys.usb.config]: [none]
@@ -2610,6 +2300,7 @@ reboot,10579323]
 [tunnel.audio.encode]: [true]
 [use.voice.path.for.pcm.voip]: [true]
 [vendor.camera.sensor.logsystem.unrelease]: [0]
+[vendor.debug.camera.userZoomRatio]: [1]
 [vendor.display.allow_tonemap_native]: [1]
 [vendor.display.comp_mask]: [2]
 [vendor.display.disable_3d_adaptive_tm]: [1]
@@ -2629,7 +2320,6 @@ reboot,10579323]
 [vendor.display.enable_allow_idle_fallback]: [1]
 [vendor.display.enable_async_powermode]: [0]
 [vendor.display.enable_async_vds_creation]: [1]
-[vendor.display.enable_brightness_drm_prop]: [1]
 [vendor.display.enable_display_extensions]: [1]
 [vendor.display.enable_dpps_dynamic_fps]: [1]
 [vendor.display.enable_early_wakeup]: [1]
@@ -2665,7 +2355,7 @@ reboot,10579323]
 [vendor.sys.feature_state]: [191]
 [vendor.sys.rpmb_state]: [23]
 [vold.checkpoint_committed]: [1]
-[vold.has_adoptable]: [0]
+[vold.has_adoptable]: [1]
 [vold.has_compress]: [0]
 [vold.has_quota]: [1]
 [vold.has_reserved]: [1]
