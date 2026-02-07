@@ -1,156 +1,365 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright (c) 2018-2023 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.
 
-* Redistribution and use in source and binary forms, with or without
-* modification, are permitted provided that the following conditions are
-* met:
-*     * Redistributions of source code must retain the above copyright
-*       notice, this list of conditions and the following disclaimer.
-*     * Redistributions in binary form must reproduce the above
-*       copyright notice, this list of conditions and the following
-*       disclaimer in the documentation and/or other materials provided
-*       with the distribution.
-*     * Neither the name of The Linux Foundation nor the names of its
-*       contributors may be used to endorse or promote products derived
-*       from this software without specific prior written permission.
+    Not a Contribution.
 
-* THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
-* WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
-* ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
-* BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-* CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-* SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
-* BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-* WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
-* OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
-* IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    Copyright (C) 2012-2018 The Linux Foundation. All rights reserved.
+    Copyright (C) 2012-2013 The Android Open Source Project
 
-* Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
-*
-* Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
-*
-* Redistribution and use in source and binary forms, with or without
-* modification, are permitted (subject to the limitations in the
-* disclaimer below) provided that the following conditions are met:
-*
-* * Redistributions of source code must retain the above copyright
-* notice, this list of conditions and the following disclaimer.
-*
-* * Redistributions in binary form must reproduce the above
-* copyright notice, this list of conditions and the following
-* disclaimer in the documentation and/or other materials provided
-* with the distribution.
-*
-* * Neither the name of Qualcomm Innovation Center, Inc. nor the names of its
-* contributors may be used to endorse or promote products derived
-* from this software without specific prior written permission.
-*
-* NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
-* GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
-* HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
-* WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-* MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-* IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
-* ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-* DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
-* GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-* INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
-* IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
-* OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
-* IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. -->
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-<audio_effects_conf version="2.0" xmlns="http://schemas.android.com/audio/audio_effects_conf/v2_0">
-    <libraries>
-        <library name="bundle" path="libbundlewrapper.so"/>
-        <library name="reverb" path="libreverbwrapper.so"/>
-        <library name="visualizer_sw" path="libvisualizer.so"/>
-        <library name="visualizer_hw" path="libqcomvisualizer.so"/>
-        <library name="downmix" path="libdownmix.so"/>
-        <library name="loudness_enhancer" path="libldnhncr.so"/>
-        <library name="dynamics_processing" path="libdynproc.so"/>
-        <library name="proxy" path="libeffectproxy.so"/>
-        <library name="offload_bundle" path="libqcompostprocbundle.so"/>
-        <library name="audio_pre_processing" path="libqcomvoiceprocessing.so"/>
-        <library name="volume_listener" path="libvolumelistener.so"/>
-        <library name="audiosphere" path="libasphere.so"/>
-        <library name="quasar" path="libquasar.so"/>
-        <!--MISOUND START-->
-        <library name="misoundfx" path="libmisoundfx.so"/>
-        <!--MISOUND END-->
-    </libraries>
-    <effects>
-        <effectProxy name="bassboost" library="proxy" uuid="14804144-a5ee-4d24-aa88-0002a5d5c51b">
-            <libsw library="bundle" uuid="8631f300-72e2-11df-b57e-0002a5d5c51b"/>
-            <libhw library="offload_bundle" uuid="2c4a8c24-1581-487f-94f6-0002a5d5c51b"/>
-        </effectProxy>
-        <effectProxy name="virtualizer" library="proxy" uuid="d3467faa-acc7-4d34-acaf-0002a5d5c51b">
-            <libsw library="bundle" uuid="1d4033c0-8557-11df-9f2d-0002a5d5c51b"/>
-            <libhw library="offload_bundle" uuid="509a4498-561a-4bea-b3b1-0002a5d5c51b"/>
-        </effectProxy>
-        <effectProxy name="equalizer" library="proxy" uuid="c8e70ecd-48ca-456e-8a4f-0002a5d5c51b">
-            <libsw library="bundle" uuid="ce772f20-847d-11df-bb17-0002a5d5c51b"/>
-            <libhw library="offload_bundle" uuid="a0dac280-401c-11e3-9379-0002a5d5c51b"/>
-        </effectProxy>
-        <effect name="volume" library="bundle" uuid="119341a0-8469-11df-81f9-0002a5d5c51b"/>
-        <effectProxy name="reverb_env_aux" library="proxy" uuid="48404ac9-d202-4ccc-bf84-0002a5d5c51b">
-            <libsw library="reverb" uuid="4a387fc0-8ab3-11df-8bad-0002a5d5c51b"/>
-            <libhw library="offload_bundle" uuid="79a18026-18fd-4185-8233-0002a5d5c51b"/>
-        </effectProxy>
-        <effectProxy name="reverb_env_ins" library="proxy" uuid="b707403a-a1c1-4291-9573-0002a5d5c51b">
-            <libsw library="reverb" uuid="c7a511a0-a3bb-11df-860e-0002a5d5c51b"/>
-            <libhw library="offload_bundle" uuid="eb64ea04-973b-43d2-8f5e-0002a5d5c51b"/>
-        </effectProxy>
-        <effectProxy name="reverb_pre_aux" library="proxy" uuid="1b78f587-6d1c-422e-8b84-0002a5d5c51b">
-            <libsw library="reverb" uuid="f29a1400-a3bb-11df-8ddc-0002a5d5c51b"/>
-            <libhw library="offload_bundle" uuid="6987be09-b142-4b41-9056-0002a5d5c51b"/>
-        </effectProxy>
-        <effectProxy name="reverb_pre_ins" library="proxy" uuid="f3e178d2-ebcb-408e-8357-0002a5d5c51b">
-            <libsw library="reverb" uuid="172cdf00-a3bc-11df-a72f-0002a5d5c51b"/>
-            <libhw library="offload_bundle" uuid="aa2bebf6-47cf-4613-9bca-0002a5d5c51b"/>
-        </effectProxy>
-        <effectProxy name="visualizer" library="proxy" uuid="1d0a1a53-7d5d-48f2-8e71-27fbd10d842c">
-            <libsw library="visualizer_sw" uuid="d069d9e0-8329-11df-9168-0002a5d5c51b"/>
-            <libhw library="visualizer_hw" uuid="7a8044a0-1a71-11e3-a184-0002a5d5c51b"/>
-        </effectProxy>
-        <effect name="downmix" library="downmix" uuid="93f04452-e4fe-41cc-91f9-e475b6d1d69f"/>
-        <effect name="hw_acc" library="offload_bundle" uuid="7d1580bd-297f-4683-9239-e475b6d1d69f"/>
-        <effect name="loudness_enhancer" library="loudness_enhancer" uuid="fa415329-2034-4bea-b5dc-5b381c8d1e2c"/>
-        <effect name="dynamics_processing" library="dynamics_processing" uuid="e0e6539b-1781-7261-676f-6d7573696340"/>
-        <effect name="aec" library="audio_pre_processing" uuid="0f8d0d2a-59e5-45fe-b6e4-248c8a799109"/>
-        <effect name="ns" library="audio_pre_processing" uuid="1d97bb0b-9e2f-4403-9ae3-58c2554306f8"/>
-        <effect name="music_helper" library="volume_listener" uuid="08b8b058-0590-11e5-ac71-0025b32654a0"/>
-        <effect name="ring_helper" library="volume_listener" uuid="0956df94-0590-11e5-bdbe-0025b32654a0"/>
-        <effect name="alarm_helper" library="volume_listener" uuid="09f303e2-0590-11e5-8fdb-0025b32654a0"/>
-        <effect name="voice_helper" library="volume_listener" uuid="0ace5c08-0590-11e5-ae9e-0025b32654a0"/>
-        <effect name="notification_helper" library="volume_listener" uuid="0b776dde-0590-11e5-81ba-0025b32654a0"/>
-        <effect name="audiosphere" library="audiosphere" uuid="184e62ab-2d19-4364-9d1b-c0a40733866c"/>
-        <effect name="quasar" library="quasar" uuid="71d0e2ee-e44d-483d-a809-09e75ee55ecd"/>
-        <!--MISOUND START-->
-        <effect name="misoundfx" library="misoundfx" uuid="5b8e36a5-144a-4c38-b1d7-0002a5d5c51b"/>
-        <!--MISOUND END-->
-    </effects>
-    <postprocess>
-        <stream type="music">
-            <apply effect="music_helper"/>
-        </stream>
-        <stream type="ring">
-            <apply effect="ring_helper"/>
-        </stream>
-        <stream type="alarm">
-            <apply effect="alarm_helper"/>
-        </stream>
-        <stream type="voice_call">
-            <apply effect="voice_helper"/>
-        </stream>
-        <stream type="notification">
-            <apply effect="notification_helper"/>
-        </stream>
-    </postprocess>
-    <preprocess>
-        <stream type="voice_communication">
-            <apply effect="aec"/>
-            <apply effect="ns"/>
-        </stream>
-    </preprocess>
-</audio_effects_conf>
+     http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<!--
+"performance-point"
+    Vendor-guaranteed performance advertised to the applications
+        <Limit name="performance-point-widthxheight" value="fps" />
+
+    -For each of the resolutions, the advertised fps is the max supported,
+    with HW-friendly color format and considering video-only.
+    -Performance for any intermediate resolution will be that of the
+    next-higher-advertised-resolution.
+
+    standard sizes: 480p/576p (SD), 720p (HD), 1080p (FHD)
+    standard frame rates: 24, 25, 30, 48+, 50, 60 fps
+        * HD+ only
+        + SD only
+    - All supported standard performance points are listed (unless they are
+    covered by another listed standard performance point)
+    - Non-standard performance points are listed along with all the standard
+    performance points covered by them.
+-->
+
+<!--
+ pitti Non-Secure decoder capabilities
+ (MB is defined as 16x16)
+ _____________________________________________________________________
+ | Codec       | W       H       fps     Mbps    MB/s        Max MB/s|
+ |_____________|_____________________________________________________|
+ | h264        | 1280     720    120     120     432000      489600  |
+ |             | 1920    1088    60      120     489600              |
+ | hevc        | 1280     720    120     120     432000      489600  |
+ |             | 1920    1088    60      120     489600              |
+ | vp9         | 1280     720    120     60     432000      489600   |
+ |             | 1920    1088    60      60     489600               |
+ |_____________|_____________________________________________________|
+
+ pitti Secure decoder capabilities
+ (MB is defined as 16x16)
+ _________________________________________________________________
+ | Codec    | W        H       fps     Mbps    MB/s       Max MB/s|
+ |__________|_____________________________________________________|
+ | h264     | 1280     720     60      35      216000      489600 |
+ |          | 1920    1088     60      35      489600             |
+ | hevc     | 1280     720     60      35      216000      489600 |
+ |          | 1920    1088     60      35      489600             |
+ | vp9      | 1280     720     60      35      216000      489600 |
+ |          | 1920    1088     60      35      489600             |
+ |__________|_____________________________________________________|
+
+ pitti Non-Secure encoder capabilities (Secure not supported)
+ (MB is defined as 16x16)
+ __________________________________________________________________
+ | Codec    | W       H       fps     Mbps    MB/s        Max MB/s|
+ |__________|_____________________________________________________|
+ | h264     | 1920    1088    60      100     489600       489600 |
+ | hevc     | 1920    1088    60      100     489600       489600 |
+ |__________|_____________________________________________________|
+-->
+
+<MediaCodecs>
+    <Include href="media_codecs_google_audio.xml" />
+    <Include href="media_codecs_vendor_audio.xml" />
+    <Include href="media_codecs_google_telephony.xml" />
+    <Include href="media_codecs_c2_audio.xml" />
+    <Settings>
+        <Setting name="max-video-encoder-input-buffers" value="11" />
+    </Settings>
+    <Settings>
+        <Variant name="slow-cpu" enabled="true" />
+    </Settings>
+    <Decoders>
+        <!-- C2 decoders -->
+        <MediaCodec name="c2.qti.avc.decoder" type="video/avc" >
+            <Alias name="OMX.qcom.video.decoder.avc"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="36-489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.avc.decoder.low_latency" type="video/avc">
+            <Alias name="OMX.qcom.video.decoder.avc.low_latency"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="36-489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.avc.decoder.secure" type="video/avc" >
+            <Alias name="OMX.qcom.video.decoder.avc.secure"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-35000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Feature name="secure-playback" required="true" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="performance-point-1920x1080" value="30" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.hevc.decoder" type="video/hevc" >
+            <Alias name="OMX.qcom.video.decoder.hevc"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.hevc.decoder.low_latency" type="video/hevc" >
+            <Alias name="OMX.qcom.video.decoder.hevc.low_latency"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.hevc.decoder.secure" type="video/hevc" >
+            <Alias name="OMX.qcom.video.decoder.hevc.secure"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-35000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Feature name="secure-playback" required="true" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="performance-point-1920x1080" value="30" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.vp9.decoder" type="video/x-vnd.on2.vp9" >
+            <Alias name="OMX.qcom.video.decoder.vp9"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-60000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Limit name="concurrent-instances" max="6" />
+            <Limit name="performance-point-1920x1080" value="60" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.vp9.decoder.low_latency" type="video/x-vnd.on2.vp9" >
+            <Alias name="OMX.qcom.video.decoder.vp9.low_latency"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-60000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="6" />
+            <Limit name="performance-point-1920x1080" value="60" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >
+            <Alias name="OMX.qcom.video.decoder.vp9.secure"/>
+            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="36" max="489600" />
+            <Limit name="bitrate" range="1-35000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="secure-playback" required="true" />
+            <Feature name="low-latency" />
+            <Limit name="concurrent-instances" max="3" />
+            <Limit name="performance-point-1920x1080" value="30" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true" variant="slow-cpu">
+            <Limit name="size" min="96x96" max="1920x1080" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="24" max="2073600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-196608" />
+            <Limit name="blocks-per-second" range="1-2000000" />
+            <Limit name="bitrate" range="1-10000000" />
+       </MediaCodec>
+       <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
+            <!-- profiles and levels:  ProfileHigh : Level51 -->
+            <Limit name="size" min="2x2" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-3600" />
+            <Limit name="blocks-per-second" range="1-108000" />
+            <Limit name="bitrate" range="1-20000000" />
+            <Feature name="adaptive-playback" />
+       </MediaCodec>
+       <MediaCodec name="c2.android.vp9.decoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-16384" />
+            <Limit name="blocks-per-second" range="1-500000" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="adaptive-playback" />
+       </MediaCodec>
+    </Decoders>
+    <Encoders>
+        <!-- C2 Encoders -->
+        <MediaCodec name="c2.qti.avc.encoder" type="video/avc">
+            <Alias name="OMX.qcom.video.encoder.avc"/>
+            <Limit name="size" min="128x128" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="489600" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Feature name="intra-refresh" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Feature name="bitrate-modes" value="VBR,CBR" />
+            <Tuning name="vq-target-bpp-1920x1080" value="3.80" />
+            <Tuning name="vq-target-bpp-1280x720" value="4.50" />
+            <Tuning name="vq-target-bpp-960x540" value="4.63" />
+            <Tuning name="vq-target-bpp-640x480" value="5.25" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc">
+            <Alias name="OMX.qcom.video.encoder.hevc"/>
+            <Limit name="size" min="128x128" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="489600" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Feature name="bitrate-modes" value="VBR,CBR" />
+            <Feature name="intra-refresh" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Tuning name="vq-target-bpp-1920x1080" value="3" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc">
+            <Alias name="OMX.qcom.video.encoder.hevc.cq"/>
+            <Limit name="size" min="128x128" max="512x512" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="786432" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-120" />
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="quality" range="0-100" default="80" />
+            <Feature name="bitrate-modes" value="CQ" />
+            <Limit name="performance-point-512x512" value="2025" />
+        </MediaCodec>
+        <MediaCodec name="c2.qti.heic.encoder" type="image/vnd.android.heic">
+            <Alias name="OMX.qcom.video.encoder.heic"/>
+            <Limit name="size" min="512x512" max="8192x8192" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="64" max="786432" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="frame-rate" range="1-20" />
+            <Limit name="concurrent-instances" max="6" />
+            <Limit name="quality" range="0-100" default="80" />
+            <Feature name="bitrate-modes" value="CQ" />
+            <Limit name="performance-point-8192x4320" value="3" />
+            <Limit name="performance-point-1920x1080" value="6" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="512x512" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-4096" /> <!-- max 512x512 -->
+            <Limit name="blocks-per-second" range="1-259200" />
+            <Limit name="frame-rate" range="1-300" />
+            <Limit name="bitrate" range="1-10000000" />
+            <Limit name="complexity" range="0-10"  default="0" />
+            <Limit name="quality" range="0-100"  default="80" />
+            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.avc.encoder" type="video/avc" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="16x16" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-8192" /> <!-- max 2048x1024 -->
+            <Limit name="blocks-per-second" range="1-245760" />
+            <Limit name="bitrate" range="1-12000000" />
+            <Feature name="intra-refresh" />
+         </MediaCodec>
+        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : Level_Version0-3 -->
+            <Limit name="size" min="2x2" max="2048x2048" />
+            <Limit name="alignment" value="1x1" />
+            <Limit name="block-size" value="16x16" />
+            <!-- 2016 devices can encode at about 8fps at this block count -->
+            <Limit name="block-count" range="1-3600" /> <!-- max 1280x720 -->
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="bitrate-modes" value="VBR,CBR" />
+        </MediaCodec>
+    </Encoders>
+    <Include href="media_codecs_google_c2.xml" />
+</MediaCodecs>
