@@ -18,8 +18,4 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 h
 
 source build/envsetup.sh
 lunch lineage_warm-bp4a-eng
-mka bacon
-
-# IF FAILED THEN THIS IS THE FIX
-export SKIP_ABI_CHECKS
-mka bacon
+mka bacon | export SKIP_ABI_CHECKS && mka bacon
