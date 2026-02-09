@@ -1,11242 +1,1619 @@
-boot.img
-boot/info.txt
-boot/kernel
-dtbo.img
-init_boot.img
-init_boot/ramdisk/system/bin/snapuserd
-init_boot/ramdisk/system/bin/snapuserd_ramdisk
-init_boot/ramdisk/system/etc/init/snapuserd.rc
-init_boot/ramdisk/system/etc/ramdisk/build.prop
-init_boot/ramdisk/init
-init_boot/info.txt
-mi_ext/etc/init/init.miui.google_revenue_share_v4_tier2.rc
-mi_ext/etc/init/init.miui.mi_ext.rc
-mi_ext/etc/NOTICE.xml.gz
-mi_ext/etc/build.prop
-mi_ext/product/app/Calendar/Calendar.apk
-mi_ext/product/app/GameCenterGlobal/GameCenterGlobal.apk
-mi_ext/product/app/GoogleOne_arm64/GoogleOne_arm64.apk
-mi_ext/product/app/IFAAService/IFAAService.apk
-mi_ext/product/app/MIUIGalleryPlayerService/MIUIGalleryPlayerService.apk
-mi_ext/product/app/MIUIMiPicks/MIUIMiPicks.apk
-mi_ext/product/app/PaymentService_Global/PaymentService_Global.apk
-mi_ext/product/app/messaging/messaging.apk
-mi_ext/product/data-app/GlobalWPSLITE/GlobalWPSLITE.apk
-mi_ext/product/data-app/MIDrop/MIDrop.apk
-mi_ext/product/data-app/MISTORE_OVERSEA/MISTORE_OVERSEA.apk
-mi_ext/product/data-app/MiCare/MiCare.apk
-mi_ext/product/data-app/MiuiCalendarGlobal/MiuiCalendarGlobal.apk
-mi_ext/product/data-app/MiuiScanner/MiuiScanner.apk
-mi_ext/product/data-app/SmartHome/SmartHome.apk
-mi_ext/product/etc/permissions/Messages-privapp-permissions-gms-international-product.xml.xml
-mi_ext/product/etc/permissions/privapp-permissions-gms-searchselector.xml
-mi_ext/product/etc/permissions/privapp-permissions-miext.xml
-mi_ext/product/etc/permissions/privapp-permissions-product-miext.xml
-mi_ext/product/etc/sysconfig/asi_infrastructure.xml
-mi_ext/product/etc/sysconfig/cross_device_services.xml
-mi_ext/product/etc/sysconfig/dse_choice_screen.xml
-mi_ext/product/etc/miext_removable_apk_info.xml
-mi_ext/product/overlay/GmsConfigOverlayASI_Infrastructure.apk
-mi_ext/product/overlay/GmsConfigOverlayOnlyForMessage.apk
-mi_ext/product/overlay/GmsConfigOverlaySearchSelector.apk
-mi_ext/product/overlay/GmsMiCSPTelecommOverlay.apk
-mi_ext/product/overlay/GmsMiCSPTelephonyOverlay.apk
-mi_ext/product/overlay/MiuiStkResOverlay.apk
-mi_ext/product/overlay/ProvisionResourceOverlay.apk
-mi_ext/product/overlay/SettingsResourceOverlay.apk
-mi_ext/product/priv-app/AndroidSystemIntelligence_Infrastructure_arm64/AndroidSystemIntelligence_Infrastructure_arm64.apk
-mi_ext/product/priv-app/Contacts/Contacts.apk
-mi_ext/product/priv-app/CrossDeviceServices/CrossDeviceServices.apk
-mi_ext/product/priv-app/InCallUI/InCallUI.apk
-mi_ext/product/priv-app/MIUIContactsTGlobal/MIUIContactsTGlobal.apk
-mi_ext/product/priv-app/MIUIGlobalMinusScreenWidget/MIUIGlobalMinusScreenWidget.apk
-mi_ext/product/priv-app/MIUIYellowPageGlobal/MIUIYellowPageGlobal.apk
-mi_ext/product/priv-app/Messages_arm64_hdpi/Messages_arm64_hdpi.apk
-mi_ext/product/priv-app/MiuiMmsGlobal/MiuiMmsGlobal.apk
-mi_ext/product/priv-app/PrivateComputeServices_arm64/PrivateComputeServices_arm64.apk
-mi_ext/product/priv-app/SearchSelector/SearchSelector.apk
-mi_ext/system/etc/permissions/privapp-permissions-system-miext.xml
-mi_ext/system/etc/permissions/signature-permission-miext.xml
-mi_ext/system_ext/app/MtkCalendar/MtkCalendar.apk
-modem/image/adrastea/bdwlan.102
-modem/image/adrastea/bdwlan.102.txt
-modem/image/adrastea/bdwlan.104
-modem/image/adrastea/bdwlan.104.txt
-modem/image/adrastea/bdwlan.105
-modem/image/adrastea/bdwlan.105.txt
-modem/image/adrastea/bdwlan.106
-modem/image/adrastea/bdwlan.106.txt
-modem/image/adrastea/bdwlan.107
-modem/image/adrastea/bdwlan.107.txt
-modem/image/adrastea/bdwlan.108
-modem/image/adrastea/bdwlan.108.txt
-modem/image/adrastea/bdwlan.109
-modem/image/adrastea/bdwlan.109.txt
-modem/image/adrastea/bdwlan.10b
-modem/image/adrastea/bdwlan.10b.txt
-modem/image/adrastea/bdwlan.10c
-modem/image/adrastea/bdwlan.10c.txt
-modem/image/adrastea/bdwlan.10e
-modem/image/adrastea/bdwlan.10e.txt
-modem/image/adrastea/bdwlan.10f
-modem/image/adrastea/bdwlan.10f.txt
-modem/image/adrastea/bdwlan.111
-modem/image/adrastea/bdwlan.111.txt
-modem/image/adrastea/bdwlan.115
-modem/image/adrastea/bdwlan.115.txt
-modem/image/adrastea/bdwlan.116
-modem/image/adrastea/bdwlan.116.txt
-modem/image/adrastea/bdwlan.117
-modem/image/adrastea/bdwlan.117.txt
-modem/image/adrastea/bdwlan.118
-modem/image/adrastea/bdwlan.118.txt
-modem/image/adrastea/bdwlan.201
-modem/image/adrastea/bdwlan.201.txt
-modem/image/adrastea/bdwlan.202
-modem/image/adrastea/bdwlan.202.txt
-modem/image/adrastea/bdwlan.203
-modem/image/adrastea/bdwlan.203.txt
-modem/image/adrastea/bdwlan.204
-modem/image/adrastea/bdwlan.204.txt
-modem/image/adrastea/bdwlan.205
-modem/image/adrastea/bdwlan.206
-modem/image/adrastea/bdwlan.206.txt
-modem/image/adrastea/bdwlan.207
-modem/image/adrastea/bdwlan.207.txt
-modem/image/adrastea/bdwlan.208
-modem/image/adrastea/bdwlan.208.txt
-modem/image/adrastea/bdwlan.b04
-modem/image/adrastea/bdwlan.b04.txt
-modem/image/adrastea/bdwlan.b07
-modem/image/adrastea/bdwlan.b07.txt
-modem/image/adrastea/bdwlan.b09
-modem/image/adrastea/bdwlan.b09.txt
-modem/image/adrastea/bdwlan.b0a
-modem/image/adrastea/bdwlan.b0a.txt
-modem/image/adrastea/bdwlan.b0b
-modem/image/adrastea/bdwlan.b0b.txt
-modem/image/adrastea/bdwlan.b0d
-modem/image/adrastea/bdwlan.b0d.txt
-modem/image/adrastea/bdwlan.b0e
-modem/image/adrastea/bdwlan.b0e.txt
-modem/image/adrastea/bdwlan.b0f
-modem/image/adrastea/bdwlan.b0f.txt
-modem/image/adrastea/bdwlan.b14
-modem/image/adrastea/bdwlan.b14.txt
-modem/image/adrastea/bdwlan.b15
-modem/image/adrastea/bdwlan.b15.txt
-modem/image/adrastea/bdwlan.b205.txt
-modem/image/adrastea/bdwlan.b30
-modem/image/adrastea/bdwlan.b30.txt
-modem/image/adrastea/bdwlan.b31
-modem/image/adrastea/bdwlan.b31.txt
-modem/image/adrastea/bdwlan.b32
-modem/image/adrastea/bdwlan.b32.txt
-modem/image/adrastea/bdwlan.b33
-modem/image/adrastea/bdwlan.b33.txt
-modem/image/adrastea/bdwlan.b34
-modem/image/adrastea/bdwlan.b34.txt
-modem/image/adrastea/bdwlan.b35
-modem/image/adrastea/bdwlan.b35.txt
-modem/image/adrastea/bdwlan.b36
-modem/image/adrastea/bdwlan.b36.txt
-modem/image/adrastea/bdwlan.b37
-modem/image/adrastea/bdwlan.b37.txt
-modem/image/adrastea/bdwlan.b38
-modem/image/adrastea/bdwlan.b38.txt
-modem/image/adrastea/bdwlan.b39
-modem/image/adrastea/bdwlan.b39.txt
-modem/image/adrastea/bdwlan.b3a
-modem/image/adrastea/bdwlan.b3a.txt
-modem/image/adrastea/bdwlan.b3c
-modem/image/adrastea/bdwlan.b3c.txt
-modem/image/adrastea/bdwlan.b3d
-modem/image/adrastea/bdwlan.b3d.txt
-modem/image/adrastea/bdwlan.b3e
-modem/image/adrastea/bdwlan.b3e.txt
-modem/image/adrastea/bdwlan.b3f
-modem/image/adrastea/bdwlan.b3f.txt
-modem/image/adrastea/bdwlan.b41
-modem/image/adrastea/bdwlan.b41.txt
-modem/image/adrastea/bdwlan.b42
-modem/image/adrastea/bdwlan.b42.txt
-modem/image/adrastea/bdwlan.b44
-modem/image/adrastea/bdwlan.b44.txt
-modem/image/adrastea/bdwlan.b45
-modem/image/adrastea/bdwlan.b45.txt
-modem/image/adrastea/bdwlan.b46
-modem/image/adrastea/bdwlan.b46.txt
-modem/image/adrastea/bdwlan.b47
-modem/image/adrastea/bdwlan.b47.txt
-modem/image/adrastea/bdwlan.b48
-modem/image/adrastea/bdwlan.b48.txt
-modem/image/adrastea/bdwlan.b49
-modem/image/adrastea/bdwlan.b49.txt
-modem/image/adrastea/bdwlan.b4a
-modem/image/adrastea/bdwlan.b4a.txt
-modem/image/adrastea/bdwlan.b4b
-modem/image/adrastea/bdwlan.b4b.txt
-modem/image/adrastea/bdwlan.b4c
-modem/image/adrastea/bdwlan.b4c.txt
-modem/image/adrastea/bdwlan.b4d
-modem/image/adrastea/bdwlan.b4d.txt
-modem/image/adrastea/bdwlan.b4e
-modem/image/adrastea/bdwlan.b4e.txt
-modem/image/adrastea/bdwlan.b4f
-modem/image/adrastea/bdwlan.b4f.txt
-modem/image/adrastea/bdwlan.b52
-modem/image/adrastea/bdwlan.b52.txt
-modem/image/adrastea/bdwlan.b53
-modem/image/adrastea/bdwlan.b53.txt
-modem/image/adrastea/bdwlan.b55
-modem/image/adrastea/bdwlan.b55.txt
-modem/image/adrastea/bdwlan.b57
-modem/image/adrastea/bdwlan.b57.txt
-modem/image/adrastea/bdwlan.b58
-modem/image/adrastea/bdwlan.b58.txt
-modem/image/adrastea/bdwlan.b59
-modem/image/adrastea/bdwlan.b59.txt
-modem/image/adrastea/bdwlan.b5a
-modem/image/adrastea/bdwlan.b5a.txt
-modem/image/adrastea/bdwlan.b5b
-modem/image/adrastea/bdwlan.b5b.txt
-modem/image/adrastea/bdwlan.b5c
-modem/image/adrastea/bdwlan.b5c.txt
-modem/image/adrastea/bdwlan.b5d
-modem/image/adrastea/bdwlan.b5d.txt
-modem/image/adrastea/bdwlan.b5f
-modem/image/adrastea/bdwlan.b5f.txt
-modem/image/adrastea/bdwlan.b61
-modem/image/adrastea/bdwlan.b61.txt
-modem/image/adrastea/bdwlan.b63
-modem/image/adrastea/bdwlan.b63.txt
-modem/image/adrastea/bdwlan.b64
-modem/image/adrastea/bdwlan.b64.txt
-modem/image/adrastea/bdwlan.b65
-modem/image/adrastea/bdwlan.b65.txt
-modem/image/adrastea/bdwlan.b66
-modem/image/adrastea/bdwlan.b66.txt
-modem/image/adrastea/bdwlan.b67
-modem/image/adrastea/bdwlan.b67.txt
-modem/image/adrastea/bdwlan.b68
-modem/image/adrastea/bdwlan.b68.txt
-modem/image/adrastea/bdwlan.b69
-modem/image/adrastea/bdwlan.b69.txt
-modem/image/adrastea/bdwlan.b6a
-modem/image/adrastea/bdwlan.b6a.txt
-modem/image/adrastea/bdwlan.b70
-modem/image/adrastea/bdwlan.b70.txt
-modem/image/adrastea/bdwlan.b71
-modem/image/adrastea/bdwlan.b71.txt
-modem/image/adrastea/bdwlan.bin
-modem/image/adrastea/bdwlan.txt
-modem/image/adrastea/bdwlans.202
-modem/image/adrastea/bdwlans.202.txt
-modem/image/adrastea/bdwlans.208
-modem/image/adrastea/bdwlans.208.txt
-modem/image/adrastea/bdwlans.bin
-modem/image/adrastea/bdwlans.txt
-modem/image/adrastea/bdwlant.202
-modem/image/adrastea/bdwlant.202.txt
-modem/image/adrastea/bdwlant.207
-modem/image/adrastea/bdwlant.207.txt
-modem/image/adrastea/bdwlant.208
-modem/image/adrastea/bdwlant.208.txt
-modem/image/adrastea/bdwlant.b6a
-modem/image/adrastea/bdwlant.b6a.txt
-modem/image/adrastea/bdwlant.bin
-modem/image/adrastea/bdwlant.txt
-modem/image/adrastea/bdwlanu.202
-modem/image/adrastea/bdwlanu.202.txt
-modem/image/adrastea/bdwlanu.206
-modem/image/adrastea/bdwlanu.206.txt
-modem/image/adrastea/bdwlanu.207
-modem/image/adrastea/bdwlanu.207.txt
-modem/image/adrastea/bdwlanu.208
-modem/image/adrastea/bdwlanu.208.txt
-modem/image/adrastea/bdwlanu.b58
-modem/image/adrastea/bdwlanu.b58.txt
-modem/image/adrastea/bdwlanu.b59
-modem/image/adrastea/bdwlanu.b59.txt
-modem/image/adrastea/bdwlanu.b5b
-modem/image/adrastea/bdwlanu.b5b.txt
-modem/image/adrastea/bdwlanu.b5f
-modem/image/adrastea/bdwlanu.b5f.txt
-modem/image/adrastea/bdwlanu.b65
-modem/image/adrastea/bdwlanu.b65.txt
-modem/image/adrastea/bdwlanu.b66
-modem/image/adrastea/bdwlanu.b66.txt
-modem/image/adrastea/bdwlanu.b67
-modem/image/adrastea/bdwlanu.b67.txt
-modem/image/adrastea/bdwlanu.b68
-modem/image/adrastea/bdwlanu.b68.txt
-modem/image/adrastea/bdwlanu.b69
-modem/image/adrastea/bdwlanu.b69.txt
-modem/image/adrastea/bdwlanu.b6a
-modem/image/adrastea/bdwlanu.b6a.txt
-modem/image/adrastea/bdwlanu.bin
-modem/image/adrastea/bdwlanu.txt
-modem/image/adrastea/regdb.bin
-modem/image/adrastea/wpss.b00
-modem/image/adrastea/wpss.b01
-modem/image/adrastea/wpss.b02
-modem/image/adrastea/wpss.b03
-modem/image/adrastea/wpss.b04
-modem/image/adrastea/wpss.b05
-modem/image/adrastea/wpss.b06
-modem/image/adrastea/wpss.b07
-modem/image/adrastea/wpss.b08
-modem/image/adrastea/wpss.b09
-modem/image/adrastea/wpss.mdt
-modem/image/adrastea/wpssr.jsn
-modem/image/kalpeni/qdsp6m.qdb
-modem/image/modem_pr/efsupdate/C3F2_IND/nv/item_files/rfnv/00029619
-modem/image/modem_pr/efsupdate/C3F2_IND/nv/item_files/rfnv/00030007
-modem/image/modem_pr/efsupdate/C3F2_IND/cfg
-modem/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/Kalpeni/STANDALONE/LA/DSDS/mcfg_hw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/Kalpeni/STANDALONE/LA/SS/mcfg_hw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/Kalpeni/STANDALONE/LE/DSDS/mcfg_hw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/Kalpeni/STANDALONE/LE/SS/mcfg_hw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/Kalpeni/STANDALONE/WD/DSSA/mcfg_hw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/Kalpeni/STANDALONE/WD/SS/mcfg_hw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig
-modem/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw_cert.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw_dsda.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw_glb.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw_ind.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw_jpn.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw_null.txt
-modem/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw_ss.txt
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Airtel/Commercial/KE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/CellC/Commercial/SAfrica/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Etisalat/Commercial/EG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Faiba/Commercial/KE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/MOD/Commercial/EG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/MTN/Commercial/GH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/MTN/Commercial/Nigeria/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/MTN/Commercial/ZA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/MoroccoTel/Commercial/MA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Ntel/Commercial/NG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Ooredoo/Commercial/Tunisia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Orange/Commercial/CI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Orange/Commercial/EG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Rain/Commercial/ZA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Safaricom/Commercial/KE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Smile/Commercial/NG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Telkom/Commercial/ZA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Vodacom/Commercial/ZA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/Vodafone/Commercial/EG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AF/WE/Commercial/EG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Airtel/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/BEST/Commercial/Laos/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/BSNL/Commercial/IN/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Beeline/Commercial/KZ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/DCM/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Dialog/Commercial/LK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Grameen/Commercial/BD/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Hutch/Commercial/LK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Idea/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/KDDI/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Mobitel/Commercial/Srilanka/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/NTC/Commercial/NP/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Rakuten/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Robi/Commercial/BD/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/SBM/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Ufone/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Vodafone/Commercial/India/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Vodafone/Commercial/Oman/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/APAC/Vodafone/Commercial/Qatar/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AUNZ/2degrees/Commercial/NZ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AUNZ/Optus/Commercial/AU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AUNZ/Spark/Commercial/NZ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AUNZ/Telstra/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/AUNZ/Vodafone/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CBN/Commercial/Volte_OpenMkt/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CBN/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Commercial/Volte_OpenMkt/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/AGNSS_LocTech/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/Conf_VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/EPS_Only/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/LPP_LocTech/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/Nsiot_4RX_VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/Nsiot_VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/RRLP_LocTech/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/TGL_Comb_Attach/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMCC/Lab/W_IRAT_Comb_Attach/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CMHK/Commercial/Volte_OpenMkt/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Commercial/OpenMkt/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Commercial/VoLTE_OpenMkt/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Commercial/hVoLTE_OpenMkt/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Lab/CTA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Lab/EPS_Only_VoLTE_Conf/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Lab/NoAPN_Vo_Conf/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Lab/TEST/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Lab/TEST_EPS_ONLY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Lab/TEST_NO_APN/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CT/Lab/VoLTE_Conf/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CU/Commercial/OpenMkt/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CU/Commercial/VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/China/CU/Lab/Test/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/4ka/Commercial/SK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/A1/Commercial/Austria/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/A1/Commercial/BG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/A1/Commercial/Belarus/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/A1/Commercial/Croatia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/A1/Commercial/MK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/A1/Commercial/Serbia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/A1/Commercial/Slovenia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/BHTelecom/Commercial/BA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/BITE/Commercial/LT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/BITE/Commercial/LV/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/BTBD/Commercial/France/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Base/Commercial/BE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Bob/Commercial/Austria/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Bouygues/Commercial/France/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/CYTA/Commercial/CY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Coop/Commercial/IT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Coriolis/Commercial/France/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DIGI/Commercial/Romania/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DIGI/Commercial/Spain/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/AL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/Austria/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/CZ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/Croatia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/Greece/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/Hungary/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/ME/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/MK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/NL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/PL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/Romania/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/Commercial/Slovakia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/DT/VoLTE/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/EE/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Elisa/Commercial/EE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Elisa/Commercial/FI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Epic/Commercial/CY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Fastweb/Commercial/Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Free/Commercial/France/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Goldentel/Commercial/UA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/Austria/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/Denmark/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/Ireland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/Italy/Spusu/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/SE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/UK/Spusu/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/H3G/Commercial/UK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/ICE/Commercial/Norway/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/KPN/Commercial/NL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Kyivstar/Commercial/UA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/LMT/Commercial/LV/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Lifecell/Commercial/UA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Lync/VoLTE/Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/MASS/Commercial/AT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/MEO/Commercial/PT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/METEOR/Commercial/IE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/MTEL/Commercial/BA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/MTS/Commercial/AM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/MTS/Commercial/RS/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Mobitel/Commercial/SI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Moldcell/Commercial/MD/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/MonacoT/Commercial/MC/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/NOS/Commercial/PT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/NOVA/Commercial/Iceland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/ONEONE/Commercial/Germany/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Onephone/Commercial/UK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/BE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/CA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/France/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/France_World/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/Jordan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/LU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/Moldova/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/Morocco/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/Poland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/RM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/Romania/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/Slovakia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Orange/Commercial/Spain/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Play/Commercial/Poland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Plintron/VoLTE/Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Plus/Commercial/Poland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Post/Commercial/LU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Postemobile/Commercial/IT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Primete/Commercial/Cyprus/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Proximus/Commercial/BE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Proximus/Commercial/LU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Rebtel/Commercial/Poland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/SFR/Commercial/FR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Salt/Commercial/CH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Sky/Commercial/UK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Sunrise/VoLTE/Sunrise/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Swisscom/Commercial/Swiss/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/TDC/Commercial/Denmark/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/TIM/Commercial/Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/TIM/Commercial/kena_Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Tele2/Commercial/Croatia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Tele2/Commercial/Estonia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Tele2/Commercial/LT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Tele2/Commercial/LV/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Tele2/Commercial/NL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Tele2/Commercial/Sweden/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telefonica/Commercial/CZ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telefonica/Commercial/DE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telefonica/Commercial/SK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telefonica/Commercial/Spain/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telefonica/Commercial/UK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telemach/Commercial/SI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/Bulgaria/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/Denmark/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/Finland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/HU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/ME/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/MM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/Norway/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/SE/Vimla/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/SE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telenor/Commercial/Serbia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telia/Commercial/Denmark/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telia/Commercial/EE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telia/Commercial/FI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telia/Commercial/Lithuania/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telia/Commercial/Norway/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Telia/Commercial/Sweden/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Tigo/Commercial/BO/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Trimob/Commercial/UA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Truphone/Commercial/PL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/TurkTelekom/Commercial/TR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Turkcell/Commercial/TR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/UPC/Commercial/CH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/VITI/Commercial/FR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Virgin/Commercial/GB/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vivacom/Commercial/BG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Commercial/AL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Commercial/Hungary/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Commercial/Ireland/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Commercial/MT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Commercial/Ukraine/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Dataonly/MPN/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Lab/CTC/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/M2M/Commercial/Global/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/Non_VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/CZ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Germany/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Greece/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Netherlands/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Portugal/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Romania/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/SAfrica/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Spain/VEE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Spain/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/Turkey/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Vodafone/VoLTE/UK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Welcome/Commercial/Italy/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Wind/Commercial/Greece/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Yoigo/Commercial/ES/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/EU/Zeop/Commercial/France/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Korea/KT/Commercial_KT_LTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Korea/LGU/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Korea/SKT/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/AMX/Commercial/MX/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/AMX/Non_VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/ATT/Commercial/Mexico/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Algar/Commercial/BR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Altan/Commercial/Mexico/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Altice/Commercial/DO/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Antel/Commercial/UY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/CNT/Commercial/EC/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Cable/Commercial/PA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/Argentina/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/BR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/CR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/Chile/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/Colombia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/DM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/EC/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/GT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/HN/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/NI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/PA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/PR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/PY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/Peru/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/SV/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Claro/Commercial/UY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Digicel/Commercial/PA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/ENetworks/Commercial/Guyana/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Entel/Commercial/BO/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Entel/Commercial/CL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Entel/Commercial/PE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/ICE/Commercial/CR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/MOVISTAR/Commercial/CR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/MOVISTAR/Commercial/NI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/MOVISTAR/Commercial/PA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/MOVISTAR/Commercial/SV/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/MOVISTAR/Commercial/VE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Nextel/Commercial/BR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/OI/Commercial/BR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Personal/Commercial/AR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Personal/Commercial/PY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/PortoConecta/Commercial/BR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/TIM/Commercial/Brazil/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Telefonica/Commercial/AR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Telefonica/Commercial/CL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Telefonica/Commercial/Colombia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Telefonica/Commercial/EC/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Telefonica/Commercial/MX/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Telefonica/Commercial/Peru/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Telefonica/Commercial/UY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Tigo/Commercial/Colombia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Tigo/Commercial/GT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Tigo/Commercial/HN/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Tigo/Commercial/PY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Tigo/Commercial/SV/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/Vivo/Commercial/BR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/WOM/Commercial/CL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/LATAM/WOM/Commercial/Colombia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Alfa/Commercial/LB/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Asiacell/Commercial/IQ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Azercell/Commercial/Azerbaijan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Bakcell/Commercial/Azerbaijan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Batelco/Commercial/Bahrain/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Beeline/Commercial/Uzbekistan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Cellcom/Commercial/IS/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Du/Commercial/AE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Etisalat/Commercial/AE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Fastlink/Commercial/Iraq/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/HIWEB/Commercial/IR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Hot-mobile/Commercial/IL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Jazz/Commercial/Pakistan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/MCI/Commercial/IR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/MTN/Commercial/IR/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Mobily/Commercial/SA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Omantel/Commercial/OM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Ooredoo/Commercial/KW/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Ooredoo/Commercial/MV/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Ooredoo/Commercial/OM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Ooredoo/Commercial/QA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Partner/Commercial/IL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Pelephone/Commercial/IL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Redbull/Commercial/SA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/STC/Commercial/BH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/STC/Commercial/KUW/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/STC/Commercial/SA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Salam/Commercial/SA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Telenor/Commercial/Pakistan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Ucell/Commercial/UZB/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Uminah/Commercial/Jordan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/We4G/Commercial/IL/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/YMPC/Commercial/YE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Zain/Commercial/BA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Zain/Commercial/Iraq/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Zain/Commercial/JO/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Zain/Commercial/Kuwait/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Zain/Commercial/SA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/MEA/Zong/Commercial/Pakistan/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/ATT/FirstNet/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/ATT/FirstNet_American_Samoa/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/ATT/FirstNet_Guam_CNMI/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/ATT/Non_VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/ATT/VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Bell/Commercial/CA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/CBRS/Commercial/US/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Dish/Commercial/US/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/GCI/Commercial/US/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Rogers/Commercial/CA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Sprint/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Sprint/VoWiFi/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Sprint/VoWiFi_A/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Sprint/VoWiFi_B/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/TMO/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Telus/Commercial/CA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/USCC/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Verizon/CDMAless/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Verizon/IMSless/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Verizon/Private_NW/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/NA/Verizon/hVoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Beeline/Gen_3GPP/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/KODOTEL/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/LETAI/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/LIFE/Commercial/BY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/MTS/Commercial/BY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/MTS/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/MegaFon/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Motiv/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/NTC/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Rost/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/RusIndigo/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Russmarts/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Sberbank-Telecom/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/TATT/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Tele2/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Tinkoff_Mobile/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Voice/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Wifire/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Russia/Yota/Commercial/RU/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SA/Brazil/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/3HK/Commercial/HK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/AIS/Commercial/Thailand/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/APT/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Axiata/Commercial/IDN/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/CTM/Commercial/MO/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/CUHK/Commercial/HK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Celcom/Commercial/MY/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Cellcard/Commercial/KH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/ChunghwaTel/Commercial/TW/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/DIGI/Commercial/Malaysia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/DITO/Commercial/PH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/DTAC/Commercial/VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/FarEastOne/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Globe/Commercial/PH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/H3G/Commercial/MO/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/HKT/Commercial/HK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Indosat/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/LTC/Commercial/LA/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/M1/Commercial/SG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/MPT/Commercial/MM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Maxis/Commercial/Maxis/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Metfone/Commercial/KH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Mobifone/Commercial/Vietnam/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/MyTel/Commercial/MM/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/NT/Commercial/Thailand/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Ncell/Commercial/NP/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/P1/Commercial/Malaysia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Seatel/Commercial/Cambodia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Singtel/Commercial/Singapore/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/SmarTone/Commercial/HK/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Smart/Commercial/Cambodia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Smart/Commercial/PH/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Smartfren/Commercial/VoWiFi/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Smartfren/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/StarHub/Commercial/SG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/TM/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/TPG/Commercial/SG/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/TRI/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/TStar/Commercial/TW/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/TashiCell/Commercial/BT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Tele2/Commercial/KZ/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Telkomsel/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Truemove/Commercial/VoLTE/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/UMobile/Commercial/Malaysia/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Vietnamobile/Commercial/VN/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Viettel/Commercial/Vietnam/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/Vinaphone/Commercial/Vietnam/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/XL/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/YTL/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/SEA/banglalink/Commercial/BD/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Test/ER_IOT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/Test/NK_IOT/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/ROW/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/TEST/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/W_One/Commercial/mcfg_sw.mbn
-modem/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig
-modem/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.txt
-modem/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt
-modem/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw_ct_volte.txt
-modem/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw_factory.txt
-modem/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw_null.txt
-modem/image/modem_pr/sarnv/C3F2_IND/00029619
-modem/image/modem_pr/sarnv/C3F2_IND/00029624
-modem/image/modem_pr/sarnv/C3F2_IND/00030007
-modem/image/modem_pr/so/1110_0_0.mbn
-modem/image/modem_pr/so/1120_0_0.mbn
-modem/image/modem_pr/so/1120_0_1.mbn
-modem/image/modem_pr/so/1120_0_2.mbn
-modem/image/modem_pr/so/1148_0_0.mbn
-modem/image/modem_pr/so/1148_0_1.mbn
-modem/image/modem_pr/so/1148_0_2.mbn
-modem/image/modem_pr/so/1148_1_0.mbn
-modem/image/modem_pr/so/1148_1_1.mbn
-modem/image/modem_pr/so/1148_1_2.mbn
-modem/image/modem_pr/so/955_2_0.mbn
-modem/image/modem_pr/so/955_3_0.mbn
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b00
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b01
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b02
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b03
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b04
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b05
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b06
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b07
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.b08
-modem/image/05B04A44-BF30-42DF-9E2F-B366B980ED19.mdt
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b00
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b01
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b02
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b03
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b04
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b05
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b06
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b07
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.b08
-modem/image/32552B22-89FE-42B4-8A45-A0C4E2DB0326.mdt
-modem/image/Data.msc
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b00
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b01
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b02
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b03
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b04
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b05
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b06
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b07
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.b08
-modem/image/FD719D50-FFFB-11EB-9A03-0242AC130003.mdt
-modem/image/adsp.b00
-modem/image/adsp.b01
-modem/image/adsp.b02
-modem/image/adsp.b03
-modem/image/adsp.b04
-modem/image/adsp.b05
-modem/image/adsp.b06
-modem/image/adsp.b07
-modem/image/adsp.b08
-modem/image/adsp.b09
-modem/image/adsp.b10
-modem/image/adsp.b11
-modem/image/adsp.b12
-modem/image/adsp.b13
-modem/image/adsp.b14
-modem/image/adsp.b15
-modem/image/adsp.b16
-modem/image/adsp.b17
-modem/image/adsp.b18
-modem/image/adsp.b19
-modem/image/adsp.b20
-modem/image/adsp.b21
-modem/image/adsp.b22
-modem/image/adsp.b23
-modem/image/adsp.b24
-modem/image/adsp.b25
-modem/image/adsp.b26
-modem/image/adsp.b27
-modem/image/adsp.b28
-modem/image/adsp.b29
-modem/image/adsp.b30
-modem/image/adsp.b31
-modem/image/adsp.b32
-modem/image/adsp.b33
-modem/image/adsp.b34
-modem/image/adsp.b35
-modem/image/adsp.b36
-modem/image/adsp.b37
-modem/image/adsp.b38
-modem/image/adsp.b39
-modem/image/adsp.b40
-modem/image/adsp.b41
-modem/image/adsp.b42
-modem/image/adsp.mdt
-modem/image/adspr.jsn
-modem/image/adsps.jsn
-modem/image/adspua.jsn
-modem/image/battmgr.jsn
-modem/image/cardapp.b00
-modem/image/cardapp.b01
-modem/image/cardapp.b02
-modem/image/cardapp.b03
-modem/image/cardapp.b04
-modem/image/cardapp.b05
-modem/image/cardapp.b06
-modem/image/cardapp.b07
-modem/image/cardapp.b08
-modem/image/cardapp.mdt
-modem/image/featenabler.b00
-modem/image/featenabler.b01
-modem/image/featenabler.b02
-modem/image/featenabler.b03
-modem/image/featenabler.b04
-modem/image/featenabler.b05
-modem/image/featenabler.b06
-modem/image/featenabler.b07
-modem/image/featenabler.b08
-modem/image/featenabler.mdt
-modem/image/fw_ipa_gsi_5.2_k.elf
-modem/image/goodixfp64.b00
-modem/image/goodixfp64.b01
-modem/image/goodixfp64.b02
-modem/image/goodixfp64.b03
-modem/image/goodixfp64.b04
-modem/image/goodixfp64.b05
-modem/image/goodixfp64.b06
-modem/image/goodixfp64.b07
-modem/image/goodixfp64.b08
-modem/image/goodixfp64.mdt
-modem/image/gptauuid.xml
-modem/image/hdcpsrm.b00
-modem/image/hdcpsrm.b01
-modem/image/hdcpsrm.b02
-modem/image/hdcpsrm.b03
-modem/image/hdcpsrm.b04
-modem/image/hdcpsrm.b05
-modem/image/hdcpsrm.b06
-modem/image/hdcpsrm.b07
-modem/image/hdcpsrm.b08
-modem/image/hdcpsrm.mdt
-modem/image/ic5.b00
-modem/image/ic5.b01
-modem/image/ic5.b02
-modem/image/ic5.b03
-modem/image/ic5.b04
-modem/image/ic5.b05
-modem/image/ic5.b06
-modem/image/ic5.b07
-modem/image/ic5.b08
-modem/image/ic5.mdt
-modem/image/ipa_fws.b00
-modem/image/ipa_fws.b01
-modem/image/ipa_fws.b02
-modem/image/ipa_fws.b03
-modem/image/ipa_fws.b04
-modem/image/ipa_fws.mdt
-modem/image/loadalgota64.b00
-modem/image/loadalgota64.b01
-modem/image/loadalgota64.b02
-modem/image/loadalgota64.b03
-modem/image/loadalgota64.b04
-modem/image/loadalgota64.b05
-modem/image/loadalgota64.b06
-modem/image/loadalgota64.b07
-modem/image/loadalgota64.b08
-modem/image/loadalgota64.mdt
-modem/image/mfido.b00
-modem/image/mfido.b01
-modem/image/mfido.b02
-modem/image/mfido.b03
-modem/image/mfido.b04
-modem/image/mfido.b05
-modem/image/mfido.b06
-modem/image/mfido.b07
-modem/image/mfido.b08
-modem/image/mfido.mdt
-modem/image/miriskm.b00
-modem/image/miriskm.b01
-modem/image/miriskm.b02
-modem/image/miriskm.b03
-modem/image/miriskm.b04
-modem/image/miriskm.b05
-modem/image/miriskm.b06
-modem/image/miriskm.b07
-modem/image/miriskm.b08
-modem/image/miriskm.mdt
-modem/image/mlipay.b00
-modem/image/mlipay.b01
-modem/image/mlipay.b02
-modem/image/mlipay.b03
-modem/image/mlipay.b04
-modem/image/mlipay.b05
-modem/image/mlipay.b06
-modem/image/mlipay.b07
-modem/image/mlipay.b08
-modem/image/mlipay.mdt
-modem/image/modem.b00
-modem/image/modem.b01
-modem/image/modem.b02
-modem/image/modem.b03
-modem/image/modem.b04
-modem/image/modem.b05
-modem/image/modem.b06
-modem/image/modem.b07
-modem/image/modem.b08
-modem/image/modem.b09
-modem/image/modem.b10
-modem/image/modem.b11
-modem/image/modem.b12
-modem/image/modem.b13
-modem/image/modem.b14
-modem/image/modem.b16
-modem/image/modem.b17
-modem/image/modem.b18
-modem/image/modem.b19
-modem/image/modem.b20
-modem/image/modem.b22
-modem/image/modem.b23
-modem/image/modem.b24
-modem/image/modem.b25
-modem/image/modem.b26
-modem/image/modem.b27
-modem/image/modem.b28
-modem/image/modem.mdt
-modem/image/modemr.jsn
-modem/image/sileadta64.b00
-modem/image/sileadta64.b01
-modem/image/sileadta64.b02
-modem/image/sileadta64.b03
-modem/image/sileadta64.b04
-modem/image/sileadta64.b05
-modem/image/sileadta64.b06
-modem/image/sileadta64.b07
-modem/image/sileadta64.b08
-modem/image/sileadta64.mdt
-modem/image/smplap64.b00
-modem/image/smplap64.b01
-modem/image/smplap64.b02
-modem/image/smplap64.b03
-modem/image/smplap64.b04
-modem/image/smplap64.b05
-modem/image/smplap64.b06
-modem/image/smplap64.b07
-modem/image/smplap64.b08
-modem/image/smplap64.mdt
-modem/image/soter64.b00
-modem/image/soter64.b01
-modem/image/soter64.b02
-modem/image/soter64.b03
-modem/image/soter64.b04
-modem/image/soter64.b05
-modem/image/soter64.b06
-modem/image/soter64.b07
-modem/image/soter64.b08
-modem/image/soter64.mdt
-modem/image/widevine.mbn
-odm/bin/fidoca
-odm/bin/mlipayd
-odm/bin/mrmd
-odm/bin/mtd
-odm/etc/camera/cameraopt.json
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/mi_gc_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_37_02_0b_hd_video/mi_gc_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_43_02_0a_hd_video/mi_gc_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLut7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/ClstcLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/PicHDRLchIn.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/clstc_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/clstc/clstc_igc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/cct_pcc.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLutInfo.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_10.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_11.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_12.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_13.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_14.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_15.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_16.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_17.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_18.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_19.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_20.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_3.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_4.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_5.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_6.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_7.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_8.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/miLut_9.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_0.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_1.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_2.txt
-odm/etc/disp0/mdss_dsi_panel_c3f2_46_03_0c_hd_video/mi_gc_3.txt
-odm/etc/display/qdcm_calib_data_c3f2_35_02_0d_video_mode_hd_dsi_panel.json
-odm/etc/display/qdcm_calib_data_c3f2_37_02_0b_video_mode_hd_dsi_panel.json
-odm/etc/display/qdcm_calib_data_c3f2_43_02_0a_video_mode_hd_dsi_panel.json
-odm/etc/display/qdcm_calib_data_c3f2_46_03_0c_video_mode_hd_dsi_panel.json
-odm/etc/init/mrm.rc
-odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc
-odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc
-odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc
-odm/etc/selinux/odm_file_contexts
-odm/etc/selinux/odm_hwservice_contexts
-odm/etc/selinux/odm_mac_permissions.xml
-odm/etc/selinux/odm_property_contexts
-odm/etc/selinux/odm_seapp_contexts
-odm/etc/selinux/odm_sepolicy.cil
-odm/etc/selinux/odm_service_contexts
-odm/etc/selinux/precompiled_sepolicy
-odm/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256
-odm/etc/selinux/precompiled_sepolicy.product_sepolicy_and_mapping.sha256
-odm/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
-odm/etc/vintf/manifest/mrm.xml
-odm/etc/vintf/manifest_cf2in.xml
-odm/etc/vintf/manifest_cf2inp.xml
-odm/etc/NOTICE.xml.gz
-odm/etc/NOTICE_GPL.html.gz
-odm/etc/SVIConfig.xml
-odm/etc/audio_policy_engine_configuration_mi.xml
-odm/etc/audio_policy_engine_default_stream_volumes.xml
-odm/etc/audio_policy_engine_product_strategies.xml
-odm/etc/audio_policy_engine_stream_volumes.xml
-odm/etc/build.prop
-odm/etc/cf2in_build.prop
-odm/etc/cf2in_in_build.prop
-odm/etc/cf2inp_build.prop
-odm/etc/cf2inp_in_build.prop
-odm/etc/device_info_qr_config.yml
-odm/etc/device_sar_config.xml
-odm/etc/df_default.xml
-odm/etc/fs_config_dirs
-odm/etc/fs_config_files
-odm/etc/group
-odm/etc/mdss_dsi_panel_c3f2_35_02_0d_hd_video_mi.xml
-odm/etc/mdss_dsi_panel_c3f2_37_02_0b_hd_video_mi.xml
-odm/etc/mdss_dsi_panel_c3f2_43_02_0a_hd_video_mi.xml
-odm/etc/mdss_dsi_panel_c3f2_46_03_0c_hd_video_mi.xml
-odm/etc/me_config.xml
-odm/etc/mimdconfig
-odm/etc/passwd
-odm/etc/setting.xml
-odm/firmware/Conf_MultipleTest.ini
-odm/firmware/focaltech_ts_fw_hkc.bin
-odm/firmware/novatek_ts_fw_boe.bin
-odm/firmware/novatek_ts_fw_txd.bin
-odm/firmware/novatek_ts_fw_xinli.bin
-odm/firmware/novatek_ts_mp_boe.bin
-odm/firmware/novatek_ts_mp_txd.bin
-odm/firmware/novatek_ts_mp_xinli.bin
-odm/lib64/hw/displayfeature.default.so
-odm/lib64/libMiDispDevManager.so
-odm/lib64/libadaptivehdr.so
-odm/lib64/libcolortempmode.so
-odm/lib64/libdisplaycount.so
-odm/lib64/libdisplaylog.so
-odm/lib64/libdither.so
-odm/lib64/libeyecare.so
-odm/lib64/libflatmode.so
-odm/lib64/libfpsmonitor.so
-odm/lib64/libhistprocess.so
-odm/lib64/libmfido.so
-odm/lib64/libmi-stc-HW-modulate.so
-odm/lib64/libmiBrightness.so
-odm/lib64/libmiClstc.so
-odm/lib64/libmiSensorCtrl.so
-odm/lib64/libmiXmlParser.so
-odm/lib64/libmi_dspp.so
-odm/lib64/libmieventnodewatch.so
-odm/lib64/libmiriskmanager.so
-odm/lib64/libmlipay.so
-odm/lib64/libmt.so
-odm/lib64/libpaperMode.so
-odm/lib64/librhytheyecare.so
-odm/lib64/libsdr2hdr.so
-odm/lib64/libsre.so
-odm/lib64/libteeclientjni.so
-odm/lib64/libtruetone.so
-odm/lib64/libvideomode.so
-odm/lib64/libwvkeybox.so
-odm/lib64/vendor.xiaomi.hardware.mrm-V1-ndk_platform.so
-product/app/AnalyticsCore/oat/arm64/AnalyticsCore.odex
-product/app/AnalyticsCore/oat/arm64/AnalyticsCore.vdex
-product/app/AnalyticsCore/AnalyticsCore.apk
-product/app/AutoTest/oat/arm64/AutoTest.odex
-product/app/AutoTest/oat/arm64/AutoTest.vdex
-product/app/AutoTest/AutoTest.apk
-product/app/Calendar/oat/arm64/Calendar.odex
-product/app/Calendar/oat/arm64/Calendar.vdex
-product/app/Calendar/Calendar.apk
-product/app/CatchLog_Lc/oat/arm64/CatchLog_Lc.odex
-product/app/CatchLog_Lc/oat/arm64/CatchLog_Lc.vdex
-product/app/CatchLog_Lc/CatchLog_Lc.apk
-product/app/Chrome64/oat/arm64/Chrome64.odex
-product/app/Chrome64/oat/arm64/Chrome64.vdex
-product/app/Chrome64/Chrome64.apk
-product/app/ConferenceDialer/oat/arm64/ConferenceDialer.odex
-product/app/ConferenceDialer/oat/arm64/ConferenceDialer.vdex
-product/app/ConferenceDialer/ConferenceDialer.apk
-product/app/DeviceInfoQR/oat/arm64/DeviceInfoQR.odex
-product/app/DeviceInfoQR/oat/arm64/DeviceInfoQR.vdex
-product/app/DeviceInfoQR/DeviceInfoQR.apk
-product/app/Drive/Drive.apk
-product/app/FidoAuthen/FidoAuthen.apk
-product/app/FmServiceQcom/FmServiceQcom.apk
-product/app/GlobalPackageInstaller/oat/arm64/GlobalPackageInstaller.odex
-product/app/GlobalPackageInstaller/oat/arm64/GlobalPackageInstaller.vdex
-product/app/GlobalPackageInstaller/GlobalPackageInstaller.apk
-product/app/Gmail2/Gmail2.apk
-product/app/GoogleCalendarSyncAdapter/oat/arm64/GoogleCalendarSyncAdapter.odex
-product/app/GoogleCalendarSyncAdapter/oat/arm64/GoogleCalendarSyncAdapter.vdex
-product/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk
-product/app/GoogleLocationHistory/oat/arm64/GoogleLocationHistory.odex
-product/app/GoogleLocationHistory/oat/arm64/GoogleLocationHistory.vdex
-product/app/GoogleLocationHistory/GoogleLocationHistory.apk
-product/app/LatinImeGoogle/LatinImeGoogle.apk
-product/app/Longcheer_GFTest_C3F2/oat/arm64/Longcheer_GFTest_C3F2.odex
-product/app/Longcheer_GFTest_C3F2/oat/arm64/Longcheer_GFTest_C3F2.vdex
-product/app/Longcheer_GFTest_C3F2/Longcheer_GFTest_C3F2.apk
-product/app/Longcheer_SensorTestTool/oat/arm64/Longcheer_SensorTestTool.odex
-product/app/Longcheer_SensorTestTool/oat/arm64/Longcheer_SensorTestTool.vdex
-product/app/Longcheer_SensorTestTool/Longcheer_SensorTestTool.apk
-product/app/Longcheer_factoryTest_C3F2/oat/arm64/Longcheer_factoryTest_C3F2.odex
-product/app/Longcheer_factoryTest_C3F2/oat/arm64/Longcheer_factoryTest_C3F2.vdex
-product/app/Longcheer_factoryTest_C3F2/Longcheer_factoryTest_C3F2.apk
-product/app/MIRadioGlobal/oat/arm64/MIRadioGlobal.odex
-product/app/MIRadioGlobal/oat/arm64/MIRadioGlobal.vdex
-product/app/MIRadioGlobal/MIRadioGlobal.apk
-product/app/MIUICloudServiceGlobal/oat/arm64/MIUICloudServiceGlobal.odex
-product/app/MIUICloudServiceGlobal/oat/arm64/MIUICloudServiceGlobal.vdex
-product/app/MIUICloudServiceGlobal/MIUICloudServiceGlobal.apk
-product/app/MIUIFileExplorerGlobal/MIUIFileExplorerGlobal.apk
-product/app/MIUIFrequentPhrase/oat/arm64/MIUIFrequentPhrase.odex
-product/app/MIUIFrequentPhrase/oat/arm64/MIUIFrequentPhrase.vdex
-product/app/MIUIFrequentPhrase/MIUIFrequentPhrase.apk
-product/app/MIUIGlobalLayout/oat/arm64/MIUIGlobalLayout.odex
-product/app/MIUIGlobalLayout/oat/arm64/MIUIGlobalLayout.vdex
-product/app/MIUIGlobalLayout/MIUIGlobalLayout.apk
-product/app/MIUIGuardProviderGlobal/oat/arm64/MIUIGuardProviderGlobal.odex
-product/app/MIUIGuardProviderGlobal/oat/arm64/MIUIGuardProviderGlobal.vdex
-product/app/MIUIGuardProviderGlobal/MIUIGuardProviderGlobal.apk
-product/app/MIUIMiCloudSync/oat/arm64/MIUIMiCloudSync.odex
-product/app/MIUIMiCloudSync/oat/arm64/MIUIMiCloudSync.vdex
-product/app/MIUIMiCloudSync/MIUIMiCloudSync.apk
-product/app/MIUINotificationCenterT/oat/arm64/MIUINotificationCenterT.odex
-product/app/MIUINotificationCenterT/oat/arm64/MIUINotificationCenterT.vdex
-product/app/MIUINotificationCenterT/MIUINotificationCenterT.apk
-product/app/MIUIScreenshot/MIUIScreenshot.apk
-product/app/MIUISecurityAddGlobal/MIUISecurityAddGlobal.apk
-product/app/MIUISystemAppUpdater/oat/arm64/MIUISystemAppUpdater.odex
-product/app/MIUISystemAppUpdater/oat/arm64/MIUISystemAppUpdater.vdex
-product/app/MIUISystemAppUpdater/MIUISystemAppUpdater.apk
-product/app/MIUISystemUIPlugin/oat/arm64/MIUISystemUIPlugin.odex
-product/app/MIUISystemUIPlugin/oat/arm64/MIUISystemUIPlugin.vdex
-product/app/MIUISystemUIPlugin/MIUISystemUIPlugin.apk
-product/app/MIUIThemeManagerGlobal/MIUIThemeManagerGlobal.apk
-product/app/MIUIXiaomiAccountGlobal/oat/arm64/MIUIXiaomiAccountGlobal.odex
-product/app/MIUIXiaomiAccountGlobal/oat/arm64/MIUIXiaomiAccountGlobal.vdex
-product/app/MIUIXiaomiAccountGlobal/MIUIXiaomiAccountGlobal.apk
-product/app/MSA-Global/oat/arm64/MSA-Global.odex
-product/app/MSA-Global/oat/arm64/MSA-Global.vdex
-product/app/MSA-Global/MSA-Global.apk
-product/app/Maps/Maps.apk
-product/app/MediaViewerGlobal/oat/arm64/MediaViewerGlobal.odex
-product/app/MediaViewerGlobal/oat/arm64/MediaViewerGlobal.vdex
-product/app/MediaViewerGlobal/MediaViewerGlobal.apk
-product/app/Meet/Meet.apk
-product/app/MiLinkGlobal/oat/arm64/MiLinkGlobal.odex
-product/app/MiLinkGlobal/oat/arm64/MiLinkGlobal.vdex
-product/app/MiLinkGlobal/MiLinkGlobal.apk
-product/app/MiSound/oat/arm64/MiSound.odex
-product/app/MiSound/oat/arm64/MiSound.vdex
-product/app/MiSound/MiSound.apk
-product/app/MiTrustService/MiTrustService.apk
-product/app/MiuiBugReportGlobal/oat/arm64/MiuiBugReportGlobal.odex
-product/app/MiuiBugReportGlobal/oat/arm64/MiuiBugReportGlobal.vdex
-product/app/MiuiBugReportGlobal/MiuiBugReportGlobal.apk
-product/app/PhotoTable/oat/arm64/PhotoTable.odex
-product/app/PhotoTable/oat/arm64/PhotoTable.vdex
-product/app/PhotoTable/PhotoTable.apk
-product/app/Photos/Photos.apk
-product/app/PlayAutoInstallStubApp/oat/arm64/PlayAutoInstallStubApp.odex
-product/app/PlayAutoInstallStubApp/oat/arm64/PlayAutoInstallStubApp.vdex
-product/app/PlayAutoInstallStubApp/PlayAutoInstallStubApp.apk
-product/app/RideModeAudio/oat/arm64/RideModeAudio.odex
-product/app/RideModeAudio/oat/arm64/RideModeAudio.vdex
-product/app/RideModeAudio/RideModeAudio.apk
-product/app/SecurityCoreAdd/oat/arm64/SecurityCoreAdd.odex
-product/app/SecurityCoreAdd/oat/arm64/SecurityCoreAdd.vdex
-product/app/SecurityCoreAdd/SecurityCoreAdd.apk
-product/app/SimActivateServiceGlobal/oat/arm64/SimActivateServiceGlobal.odex
-product/app/SimActivateServiceGlobal/oat/arm64/SimActivateServiceGlobal.vdex
-product/app/SimActivateServiceGlobal/SimActivateServiceGlobal.apk
-product/app/SpeechRecognitionAndSynthesisFromGoogle/oat/arm64/SpeechRecognitionAndSynthesisFromGoogle.odex
-product/app/SpeechRecognitionAndSynthesisFromGoogle/oat/arm64/SpeechRecognitionAndSynthesisFromGoogle.vdex
-product/app/SpeechRecognitionAndSynthesisFromGoogle/SpeechRecognitionAndSynthesisFromGoogle.apk
-product/app/SwitchAccess/oat/arm64/SwitchAccess.odex
-product/app/SwitchAccess/oat/arm64/SwitchAccess.vdex
-product/app/SwitchAccess/SwitchAccess.apk
-product/app/TrichromeLibrary64/TrichromeLibrary64.apk
-product/app/Updater/oat/arm64/Updater.odex
-product/app/Updater/oat/arm64/Updater.vdex
-product/app/Updater/Updater.apk
-product/app/Videos/Videos.apk
-product/app/WallpaperT/oat/arm64/WallpaperT.odex
-product/app/WallpaperT/oat/arm64/WallpaperT.vdex
-product/app/WallpaperT/WallpaperT.apk
-product/app/WebViewGoogle64/WebViewGoogle64.apk
-product/app/XMSFKeeperAll/oat/arm64/XMSFKeeperAll.odex
-product/app/XMSFKeeperAll/oat/arm64/XMSFKeeperAll.vdex
-product/app/XMSFKeeperAll/XMSFKeeperAll.apk
-product/app/XiaomiServiceFrameworkGlobal/oat/arm64/XiaomiServiceFrameworkGlobal.odex
-product/app/XiaomiServiceFrameworkGlobal/oat/arm64/XiaomiServiceFrameworkGlobal.vdex
-product/app/XiaomiServiceFrameworkGlobal/XiaomiServiceFrameworkGlobal.apk
-product/app/XmsCore/oat/arm64/XmsCore.odex
-product/app/XmsCore/oat/arm64/XmsCore.vdex
-product/app/XmsCore/XmsCore.apk
-product/app/YTMusic/YTMusic.apk
-product/app/YouTube/YouTube.apk
-product/app/cit/lib/arm64/libarc2Dcalibration_jni.so
-product/app/cit/lib/arm64/libarc2Dverification_jni.so
-product/app/cit/lib/arm64/libarccalibration_jni.so
-product/app/cit/lib/arm64/libarcverification_jni.so
-product/app/cit/lib/arm64/libcalibration_postsale_jni.so
-product/app/cit/lib/arm64/libjni_calibration.so
-product/app/cit/lib/arm64/libwa_calibrationtool.so
-product/app/cit/oat/arm64/cit.odex
-product/app/cit/oat/arm64/cit.vdex
-product/app/cit/cit.apk
-product/app/com.google.android.modulemetadata/com.google.android.modulemetadata.apk
-product/app/com.google.mainline.adservices/com.google.mainline.adservices.apk
-product/app/com.google.mainline.telemetry/com.google.mainline.telemetry.apk
-product/app/com.xiaomi.ugd/com.xiaomi.ugd.apk
-product/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk
-product/app/remotesimlockservice/oat/arm64/remotesimlockservice.odex
-product/app/remotesimlockservice/oat/arm64/remotesimlockservice.vdex
-product/app/remotesimlockservice/remotesimlockservice.apk
-product/app/talkback/talkback.apk
-product/app/uimgbaservice/oat/arm64/uimgbaservice.odex
-product/app/uimgbaservice/oat/arm64/uimgbaservice.vdex
-product/app/uimgbaservice/uimgbaservice.apk
-product/app/uimlpaservice/oat/arm64/uimlpaservice.odex
-product/app/uimlpaservice/oat/arm64/uimlpaservice.vdex
-product/app/uimlpaservice/uimlpaservice.apk
-product/app/uimremoteclient/oat/arm64/uimremoteclient.odex
-product/app/uimremoteclient/oat/arm64/uimremoteclient.vdex
-product/app/uimremoteclient/uimremoteclient.apk
-product/app/uimremoteserver/oat/arm64/uimremoteserver.odex
-product/app/uimremoteserver/oat/arm64/uimremoteserver.vdex
-product/app/uimremoteserver/uimremoteserver.apk
-product/app/xdivert/oat/arm64/xdivert.odex
-product/app/xdivert/oat/arm64/xdivert.vdex
-product/app/xdivert/xdivert.apk
-product/bin/init.qti.display.sh
-product/bin/sdlog
-product/bin/vendor.qti.qvirt-service_rs
-product/data-app/MIMediaEditorGlobal/MIMediaEditorGlobal.apk
-product/data-app/MIUICalculatorGlobal/MIUICalculatorGlobal.apk
-product/data-app/MIUICompassGlobal/MIUICompassGlobal.apk
-product/data-app/MIUIDeskClockGlobal/MIUIDeskClockGlobal.apk
-product/data-app/MIUINotes/MIUINotes.apk
-product/data-app/MIUIScreenRecorderLiteGlobal/MIUIScreenRecorderLiteGlobal.apk
-product/data-app/MIUISoundRecorderTargetSdk30Global/MIUISoundRecorderTargetSdk30Global.apk
-product/data-app/MIUIWeatherGlobal/MIUIWeatherGlobal.apk
-product/data-app/MiGalleryLockScreenGlobal/MiGalleryLockScreenGlobal.apk
-product/etc/default-permissions/default-permissions-google.xml
-product/etc/device_features/warm.xml
-product/etc/displayconfig/display_id_4630946383195604353.xml
-product/etc/displayconfig/display_id_4630946949772992129.xml
-product/etc/displayconfig/display_id_4630947205983955585.xml
-product/etc/displayconfig/display_id_4630947217459655297.xml
-product/etc/displayconfig/resolution_switch_process_list_backup.xml
-product/etc/displayconfig/rhythmic_app_category_list_backup.xml
-product/etc/displayconfig/thermal_brightness_control.xml
-product/etc/init/init.miui.atomic.rc
-product/etc/init/init.qti.display.rc
-product/etc/init/sdlog.rc
-product/etc/init/vendor.qti.qvirt-service_rs.rc
-product/etc/permissions/RemoteSimlock.xml
-product/etc/permissions/RemoteSimlockManager.xml
-product/etc/permissions/UimGba.xml
-product/etc/permissions/UimGbaManager.xml
-product/etc/permissions/UimService.xml
-product/etc/permissions/com.android.settings.intelligence.xml
-product/etc/permissions/com.qti.snapdragon.sdk.display.xml
-product/etc/permissions/extphonelib_product.xml
-product/etc/permissions/ims_ext_common.xml
-product/etc/permissions/privapp-permissions-gms-international-product.xml
-product/etc/permissions/privapp-permissions-google-audio-system.xml
-product/etc/permissions/privapp-permissions-miui-product.xml
-product/etc/permissions/privapp-permissions-product.xml
-product/etc/permissions/qti_telephony_hidl_wrapper_prd.xml
-product/etc/permissions/qti_telephony_utils_prd.xml
-product/etc/permissions/split-permissions-google.xml
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
-product/etc/permissions/vendor.qti.hardware.data.connectionaidl-V1-java.xml
-product/etc/precust_theme/theme/.data/content/com.miui.gallery/3219def8-51e2-425d-9ac8-6d5a025f158b.mrc
-product/etc/precust_theme/theme/.data/content/com.miui.touchassistant/70f8c2fa-476f-4c9e-b80a-c3e4aa1c508a.mrc
-product/etc/precust_theme/theme/.data/content/fonts/45f50cbd-57af-45c3-baef-9ce73d23cad5.mrc
-product/etc/precust_theme/theme/.data/content/framework-miui-res/3538bf5e-1ccf-4922-8f85-b948bdf4b92f.mrc
-product/etc/precust_theme/theme/.data/content/icons/9cc696a5-7b40-44ec-a0d8-91873875686c.mrc
-product/etc/precust_theme/theme/.data/content/icons/c421f294-6a41-4489-a592-2c87340c4757.mrc
-product/etc/precust_theme/theme/.data/content/launcher/f8901352-3ebe-4040-a5e1-cc1027fb0833.mrc
-product/etc/precust_theme/theme/.data/content/lockscreen/c7efdfd4-b99f-4324-af8a-6be2cb8552aa.mrc
-product/etc/precust_theme/theme/.data/content/lockscreen/db8198f9-c937-44cc-bcd3-aa69665446c4.mrc
-product/etc/precust_theme/theme/.data/content/theme/1982bf62-2137-47e0-9baa-0878665895b3.mrc
-product/etc/precust_theme/theme/.data/content/theme/81e06055-80ee-43be-abe2-443ec0f6a71b.mrc
-product/etc/precust_theme/theme/.data/content/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362.mrc
-product/etc/precust_theme/theme/.data/content/wallpaper/925a5558-cb08-4b5c-bcd5-09dbcb6e6a2a.mrc
-product/etc/precust_theme/theme/.data/content/wallpaper/b4f20b38-7ad0-4452-923a-93d608d60b96.mrc
-product/etc/precust_theme/theme/.data/meta/com.miui.gallery/3219def8-51e2-425d-9ac8-6d5a025f158b.mrm
-product/etc/precust_theme/theme/.data/meta/com.miui.touchassistant/70f8c2fa-476f-4c9e-b80a-c3e4aa1c508a.mrm
-product/etc/precust_theme/theme/.data/meta/fonts/45f50cbd-57af-45c3-baef-9ce73d23cad5.mrm
-product/etc/precust_theme/theme/.data/meta/framework-miui-res/3538bf5e-1ccf-4922-8f85-b948bdf4b92f.mrm
-product/etc/precust_theme/theme/.data/meta/icons/9cc696a5-7b40-44ec-a0d8-91873875686c.mrm
-product/etc/precust_theme/theme/.data/meta/icons/c421f294-6a41-4489-a592-2c87340c4757.mrm
-product/etc/precust_theme/theme/.data/meta/launcher/f8901352-3ebe-4040-a5e1-cc1027fb0833.mrm
-product/etc/precust_theme/theme/.data/meta/lockscreen/c7efdfd4-b99f-4324-af8a-6be2cb8552aa.mrm
-product/etc/precust_theme/theme/.data/meta/lockscreen/db8198f9-c937-44cc-bcd3-aa69665446c4.mrm
-product/etc/precust_theme/theme/.data/meta/theme/1982bf62-2137-47e0-9baa-0878665895b3.mrm
-product/etc/precust_theme/theme/.data/meta/theme/81e06055-80ee-43be-abe2-443ec0f6a71b.mrm
-product/etc/precust_theme/theme/.data/meta/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362.mrm
-product/etc/precust_theme/theme/.data/meta/wallpaper/925a5558-cb08-4b5c-bcd5-09dbcb6e6a2a.mrm
-product/etc/precust_theme/theme/.data/meta/wallpaper/b4f20b38-7ad0-4452-923a-93d608d60b96.mrm
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/en_US_fonts_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/en_US_fonts_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/en_US_fonts_2.jpg
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/en_US_fonts_small_0.png
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/preview_fonts_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/preview_fonts_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/preview_fonts_2.jpg
-product/etc/precust_theme/theme/.data/preview/theme/1982bf62-2137-47e0-9baa-0878665895b3/preview_fonts_small_0.png
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_contact_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_fonts_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_fonts_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_fonts_2.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_fonts_mask_3.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_fonts_small_0.png
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_launcher_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_launcher_mask_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_lockscreen_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_mms_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_mms_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_statusbar_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_statusbar_mask_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/en_US_statusbar_mask_2.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_contact_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_fonts_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_fonts_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_fonts_2.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_fonts_mask_3.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_fonts_small_0.png
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_icons_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_icons_mask_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_icons_small_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_launcher_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_launcher_mask_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_lockscreen_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_mms_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_mms_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_statusbar_mask_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_statusbar_mask_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/81e06055-80ee-43be-abe2-443ec0f6a71b/preview_statusbar_mask_2.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_contact_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_fonts_3.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_icons_small_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_launcher_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_launcher_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_lockscreen_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_mms_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_mms_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_statusbar_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/en_US_statusbar_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_contact_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_icons_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_icons_small_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_launcher_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_launcher_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_lockscreen_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_mms_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_mms_1.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_statusbar_0.jpg
-product/etc/precust_theme/theme/.data/preview/theme/8e575d7d-1b66-4d46-94d4-f9f881a01362/preview_statusbar_1.jpg
-product/etc/precust_theme/theme/.data/rights/theme/0c0aa84105af3262be7c1c1186a3fa26a155ab32.mra
-product/etc/precust_theme/theme/.data/rights/theme/2b940c8b1a349f347d79ec58283a285bff0b4a05.mra
-product/etc/precust_theme/theme/.data/rights/theme/ef7a9c216a63cd90a82d9f7324807298de36445b.mra
-product/etc/preferred-apps/google.xml
-product/etc/security/fsverity/gms_fsverity_cert.der
-product/etc/security/fsverity/play_store_fsi_cert.der
-product/etc/selinux/mapping/29.0.cil
-product/etc/selinux/mapping/30.0.cil
-product/etc/selinux/mapping/31.0.cil
-product/etc/selinux/mapping/32.0.cil
-product/etc/selinux/mapping/33.0.cil
-product/etc/selinux/mapping/34.0.cil
-product/etc/selinux/product_file_contexts
-product/etc/selinux/product_hwservice_contexts
-product/etc/selinux/product_mac_permissions.xml
-product/etc/selinux/product_property_contexts
-product/etc/selinux/product_seapp_contexts
-product/etc/selinux/product_sepolicy.cil
-product/etc/selinux/product_sepolicy_and_mapping.sha256
-product/etc/selinux/product_service_contexts
-product/etc/sysconfig/GoogleCellBroadcast_config.xml
-product/etc/sysconfig/d2d_cable_migration_feature.xml
-product/etc/sysconfig/google-initial-package-stopped-states.xml
-product/etc/sysconfig/google-staged-installer-whitelist.xml
-product/etc/sysconfig/google.xml
-product/etc/sysconfig/initial-package-stopped-states-aosp.xml
-product/etc/sysconfig/personal_safety.xml
-product/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml
-product/etc/sysconfig/preinstalled-packages-platform-overlays.xml
-product/etc/sysconfig/preinstalled-packages-platform-telephony-product.xml
-product/etc/sysconfig/remove_aer_feature_devices.xml
-product/etc/sysconfig/turbo.xml
-product/etc/sysconfig/wellbeing.xml
-product/etc/sysconfig/xmscore.config.xml
-product/etc/vintf/manifest/vendor.qti.qvirt-service.xml
-product/etc/vintf/compatibility_matrix.xml
-product/etc/NOTICE.xml.gz
-product/etc/NOTICE_GPL.html.gz
-product/etc/apns-conf.xml
-product/etc/auto-install.json
-product/etc/build.prop
-product/etc/cf2in_build.prop
-product/etc/cf2inp_build.prop
-product/etc/data_741236.bin
-product/etc/data_741237.bin
-product/etc/data_741240.bin
-product/etc/eccdata
-product/etc/fiveG-apns-conf.xml
-product/etc/fonts_customization.xml
-product/etc/fs_config_dirs
-product/etc/fs_config_files
-product/etc/group
-product/etc/miui-spn-conf.xml
-product/etc/mspc.default.json
-product/etc/passwd
-product/etc/public.libraries-qti.txt
-product/etc/removable_apk_info.xml
-product/etc/smart-modem-schedule-config.xml
-product/etc/smart-network-recovery-policy-config.xml
-product/etc/smart-network-schedule-config.xml
-product/etc/spn-conf.xml
-product/fonts/BeihaibeiSC-Regular.ttf
-product/fonts/BeihaibeiTC-Regular.ttf
-product/fonts/ChamberiDisplay-Italic.otf
-product/fonts/ChamberiDisplay-Semibold.ttf
-product/fonts/DelaGothicOne.otf
-product/fonts/GulfsDisplay-ExtraExpandedItalic.otf
-product/fonts/Interscaled-Medium.otf
-product/fonts/Interscaled-Regular.otf
-product/fonts/MiClock.otf
-product/fonts/MiClockMono.otf
-product/fonts/MiClockThin.otf
-product/fonts/MiClockTibetan-Thin.ttf
-product/fonts/MiClockUyghur-Thin.ttf
-product/fonts/MiSansArabicVF.ttf
-product/fonts/MiSansBengaliVF.ttf
-product/fonts/MiSansC_3.005.ttf
-product/fonts/MiSansDevanagariVF.ttf
-product/fonts/MiSansGujaratiVF.ttf
-product/fonts/MiSansGurmukhiVF.ttf
-product/fonts/MiSansKannadaVF.ttf
-product/fonts/MiSansKhmerVF.ttf
-product/fonts/MiSansLaoVF.ttf
-product/fonts/MiSansLatinVF.ttf
-product/fonts/MiSansMalayalamVF.ttf
-product/fonts/MiSansMyanmarVF.ttf
-product/fonts/MiSansOdiaVF.ttf
-product/fonts/MiSansRound-Medium.otf
-product/fonts/MiSansRoundedSC.ttf
-product/fonts/MiSansRoundedTC.ttf
-product/fonts/MiSansTCVF.ttf
-product/fonts/MiSansTamilVF.ttf
-product/fonts/MiSansTeluguVF.ttf
-product/fonts/MiSansThaiVF.ttf
-product/fonts/MiSansWeb.ttf
-product/fonts/MiSerifSC-Regular-01.ttf
-product/fonts/MiSerifTC-Regular-01.ttf
-product/fonts/NeumaticCompressed.otf
-product/fonts/Qinghe-75W.otf
-product/framework/oat/arm64/com.qti.snapdragon.sdk.display.odex
-product/framework/oat/arm64/com.qti.snapdragon.sdk.display.vdex
-product/framework/oat/arm64/extphonelib-product.odex
-product/framework/oat/arm64/extphonelib-product.vdex
-product/framework/oat/arm64/ims-ext-common.odex
-product/framework/oat/arm64/ims-ext-common.vdex
-product/framework/oat/arm64/qti-telephony-hidl-wrapper-prd.odex
-product/framework/oat/arm64/qti-telephony-hidl-wrapper-prd.vdex
-product/framework/oat/arm64/qti-telephony-utils-prd.odex
-product/framework/oat/arm64/qti-telephony-utils-prd.vdex
-product/framework/oat/arm64/remotesimlockmanagerlibrary.odex
-product/framework/oat/arm64/remotesimlockmanagerlibrary.vdex
-product/framework/oat/arm64/uimgbalibrary.odex
-product/framework/oat/arm64/uimgbalibrary.vdex
-product/framework/oat/arm64/uimgbamanagerlibrary.odex
-product/framework/oat/arm64/uimgbamanagerlibrary.vdex
-product/framework/oat/arm64/uimremoteclientlibrary.odex
-product/framework/oat/arm64/uimremoteclientlibrary.vdex
-product/framework/oat/arm64/uimremoteserverlibrary.odex
-product/framework/oat/arm64/uimremoteserverlibrary.vdex
-product/framework/oat/arm64/uimremotesimlocklibrary.odex
-product/framework/oat/arm64/uimremotesimlocklibrary.vdex
-product/framework/com.qti.snapdragon.sdk.display.jar
-product/framework/extphonelib-product.jar
-product/framework/ims-ext-common.jar
-product/framework/qti-telephony-hidl-wrapper-prd.jar
-product/framework/qti-telephony-utils-prd.jar
-product/framework/remotesimlockmanagerlibrary.jar
-product/framework/uimgbalibrary.jar
-product/framework/uimgbamanagerlibrary.jar
-product/framework/uimremoteclientlibrary.jar
-product/framework/uimremoteserverlibrary.jar
-product/framework/uimremotesimlocklibrary.jar
-product/framework/uimservicelibrary.jar
-product/lib64/libandroid_log_sys.dylib.so
-product/lib64/libandroid_logger.dylib.so
-product/lib64/libanyhow.dylib.so
-product/lib64/libarc2Dcalibration_jni.so
-product/lib64/libarc2Dverification_jni.so
-product/lib64/libarccalibration_jni.so
-product/lib64/libarcsoft_calibverify_TriCamera.so
-product/lib64/libarcsoft_single_chart_calibration.so
-product/lib64/libarcsoft_tricam_calibration.so
-product/lib64/libarcsoft_tricam_calibration2D.so
-product/lib64/libarcsoft_tricam_verification.so
-product/lib64/libarcverification_jni.so
-product/lib64/libbinder_ndk_sys.dylib.so
-product/lib64/libbinder_rs.dylib.so
-product/lib64/libbitflags.dylib.so
-product/lib64/libcalibration_postsale_jni.so
-product/lib64/libcfg_if.dylib.so
-product/lib64/libdowncast_rs.dylib.so
-product/lib64/libenv_logger.dylib.so
-product/lib64/libitoa.dylib.so
-product/lib64/libjni_aidl_service.so
-product/lib64/libjni_calibration.so
-product/lib64/liblazy_static.dylib.so
-product/lib64/liblibc.dylib.so
-product/lib64/liblog_rust.dylib.so
-product/lib64/liblogger.dylib.so
-product/lib64/libmemoffset.dylib.so
-product/lib64/libnix.dylib.so
-product/lib64/libonce_cell.dylib.so
-product/lib64/libpin_utils.dylib.so
-product/lib64/librustutils.dylib.so
-product/lib64/libryu.dylib.so
-product/lib64/libserde.dylib.so
-product/lib64/libserde_json.dylib.so
-product/lib64/libstatic_assertions.dylib.so
-product/lib64/libstd.dylib.so
-product/lib64/libsystem_properties_bindgen_sys.dylib.so
-product/lib64/libthiserror.dylib.so
-product/lib64/libvendor_qti_qvirt_V1.dylib.so
-product/lib64/libwa_calibrationtool.so
-product/media/audio/alarms/AlarmClock.ogg
-product/media/audio/alarms/Beep.ogg
-product/media/audio/alarms/Breeze.ogg
-product/media/audio/alarms/Chimes.ogg
-product/media/audio/alarms/Daydream.ogg
-product/media/audio/alarms/Dewdrops.ogg
-product/media/audio/alarms/Fireflies.ogg
-product/media/audio/alarms/Morning.ogg
-product/media/audio/alarms/Sunrise.ogg
-product/media/audio/notifications/Bottle.ogg
-product/media/audio/notifications/Bubble.ogg
-product/media/audio/notifications/Bullfrog.ogg
-product/media/audio/notifications/Burst.ogg
-product/media/audio/notifications/Chirp.ogg
-product/media/audio/notifications/Clank.ogg
-product/media/audio/notifications/Crystal.ogg
-product/media/audio/notifications/FadeIn.ogg
-product/media/audio/notifications/FadeOut.ogg
-product/media/audio/notifications/Flute.ogg
-product/media/audio/notifications/Fresh.ogg
-product/media/audio/notifications/Frog.ogg
-product/media/audio/notifications/Guitar.ogg
-product/media/audio/notifications/Harp.ogg
-product/media/audio/notifications/Moment.ogg
-product/media/audio/notifications/NotificationXylophone.ogg
-product/media/audio/notifications/Potion.ogg
-product/media/audio/notifications/Radar.ogg
-product/media/audio/notifications/Spring.ogg
-product/media/audio/notifications/Swoosh.ogg
-product/media/audio/notifications/WindChime.ogg
-product/media/audio/ringtones/AcousticGuitar.ogg
-product/media/audio/ringtones/Atlantis.ogg
-product/media/audio/ringtones/Candy.ogg
-product/media/audio/ringtones/Carousel.ogg
-product/media/audio/ringtones/Celesta.ogg
-product/media/audio/ringtones/Childhood.ogg
-product/media/audio/ringtones/Country.ogg
-product/media/audio/ringtones/Cowboy.ogg
-product/media/audio/ringtones/DigitalUniverse.ogg
-product/media/audio/ringtones/Fairyland.ogg
-product/media/audio/ringtones/Fantasy.ogg
-product/media/audio/ringtones/FieldTrip.ogg
-product/media/audio/ringtones/Glee.ogg
-product/media/audio/ringtones/IceLatte.ogg
-product/media/audio/ringtones/Kungfu.ogg
-product/media/audio/ringtones/Lollipop.ogg
-product/media/audio/ringtones/Mi.ogg
-product/media/audio/ringtones/MiHouse.ogg
-product/media/audio/ringtones/MiJazz.ogg
-product/media/audio/ringtones/MiMix2.ogg
-product/media/audio/ringtones/MiRemix.ogg
-product/media/audio/ringtones/MountainSpring.ogg
-product/media/audio/ringtones/Orange.ogg
-product/media/audio/ringtones/POCO.ogg
-product/media/audio/ringtones/Reveries.ogg
-product/media/audio/ringtones/SpaceAge.ogg
-product/media/audio/ringtones/ToyRobot.ogg
-product/media/audio/ringtones/Vigor.ogg
-product/media/audio/ui/Africa/AfricanBushElephant.ogg
-product/media/audio/ui/Africa/AfricanWhite-backedVulture.ogg
-product/media/audio/ui/Africa/Black-BackedJackal.ogg
-product/media/audio/ui/Africa/Black-HeadedBulbul.ogg
-product/media/audio/ui/Africa/ChacmaBaboon.ogg
-product/media/audio/ui/Africa/Cheetah.ogg
-product/media/audio/ui/Africa/CommonOstrich.ogg
-product/media/audio/ui/Africa/CrownedHornbill.ogg
-product/media/audio/ui/Africa/EgyptianGoose.ogg
-product/media/audio/ui/Africa/Golden-rumpedTinkerbird.ogg
-product/media/audio/ui/Africa/HelmetedGuineafowl.ogg
-product/media/audio/ui/Africa/Hippopotamus.ogg
-product/media/audio/ui/Africa/Leopard.ogg
-product/media/audio/ui/Africa/Lion.ogg
-product/media/audio/ui/Africa/MarabouStork.ogg
-product/media/audio/ui/Africa/NorthWhiteRhinoceros.ogg
-product/media/audio/ui/Africa/OliveBaboon.ogg
-product/media/audio/ui/Africa/PiedCrow.ogg
-product/media/audio/ui/Africa/PlainsZebra.ogg
-product/media/audio/ui/Africa/Red-billedHornbill.ogg
-product/media/audio/ui/Africa/SacredIbis.ogg
-product/media/audio/ui/Africa/SouthernGroundHornbill.ogg
-product/media/audio/ui/Africa/SpottedHyaena.ogg
-product/media/audio/ui/Africa/Spur-wingedPlover.ogg
-product/media/audio/ui/Africa/SuperbStarling.ogg
-product/media/audio/ui/Africa/TreeHyrax.ogg
-product/media/audio/ui/Africa/VervetMonkey.ogg
-product/media/audio/ui/Africa/Yellow-neckedSpurfowl.ogg
-product/media/audio/ui/Amazon/BlackHowlerMonkey.ogg
-product/media/audio/ui/Amazon/BluePoisonDartFrog.ogg
-product/media/audio/ui/Amazon/Capybara.ogg
-product/media/audio/ui/Amazon/GiantOtter.ogg
-product/media/audio/ui/Amazon/Golden-HeadedLionTamarin.ogg
-product/media/audio/ui/Amazon/HarpyEagle.ogg
-product/media/audio/ui/Amazon/Jaguar.ogg
-product/media/audio/ui/Amazon/Kinkajou.ogg
-product/media/audio/ui/Amazon/Nine-BandedArmadillo.ogg
-product/media/audio/ui/Amazon/Ocelot.ogg
-product/media/audio/ui/Amazon/Orange-WingedAmazon.ogg
-product/media/audio/ui/Amazon/ScarletMacaw.ogg
-product/media/audio/ui/Amazon/TocoToucan.ogg
-product/media/audio/ui/Amazon/Two-ToedSloths.ogg
-product/media/audio/ui/Australia/BlackSwan.ogg
-product/media/audio/ui/Australia/Butcher.ogg
-product/media/audio/ui/Australia/CommonBrushtail.ogg
-product/media/audio/ui/Australia/EasternGreyKangaroo.ogg
-product/media/audio/ui/Australia/Emu.ogg
-product/media/audio/ui/Australia/FlyingFox.ogg
-product/media/audio/ui/Australia/Koala.ogg
-product/media/audio/ui/Australia/LaughingKookaburra.ogg
-product/media/audio/ui/Australia/Magpie.ogg
-product/media/audio/ui/Australia/PetaurusBreviceps.ogg
-product/media/audio/ui/Australia/Platypus.ogg
-product/media/audio/ui/Australia/TasmanianDevil.ogg
-product/media/audio/ui/Australia/TasmanianNativeHen.ogg
-product/media/audio/ui/Australia/Whipbird.ogg
-product/media/audio/ui/Australia/White-BelliedSeaEagle.ogg
-product/media/audio/ui/Australia/Wombat.ogg
-product/media/audio/ui/Galapagos/BrownPelican.ogg
-product/media/audio/ui/Galapagos/GalapagosCormorant.ogg
-product/media/audio/ui/Galapagos/GalapagosHawk.ogg
-product/media/audio/ui/Galapagos/GalapagosMockingbird.ogg
-product/media/audio/ui/Galapagos/GalapagosPenguin.ogg
-product/media/audio/ui/Galapagos/GeospizaConirostris.ogg
-product/media/audio/ui/Galapagos/GreatFrigatebird.ogg
-product/media/audio/ui/Galapagos/GreenWarbler-Finch.ogg
-product/media/audio/ui/Galapagos/LargeGround-Finch.ogg
-product/media/audio/ui/Galapagos/MagnificentFrigatebird.ogg
-product/media/audio/ui/Galapagos/MediumTree-Finch.ogg
-product/media/audio/ui/Galapagos/NazcaBooby.ogg
-product/media/audio/ui/Galapagos/Red-BilledTropicbird.ogg
-product/media/audio/ui/Galapagos/Short-EaredOwl.ogg
-product/media/audio/ui/Galapagos/SmallGround-Finch.ogg
-product/media/audio/ui/Galapagos/VampireFinch.ogg
-product/media/audio/ui/Galapagos/WavedAlbatross.ogg
-product/media/audio/ui/PolarRegion/AntarcticShag.ogg
-product/media/audio/ui/PolarRegion/ArcticFox.ogg
-product/media/audio/ui/PolarRegion/ArcticWolf.ogg
-product/media/audio/ui/PolarRegion/CanadaGoose.ogg
-product/media/audio/ui/PolarRegion/ChinstrapPenguin.ogg
-product/media/audio/ui/PolarRegion/DallSheep.ogg
-product/media/audio/ui/PolarRegion/ElephantSeal.ogg
-product/media/audio/ui/PolarRegion/Elk.ogg
-product/media/audio/ui/PolarRegion/EmperorPenguin.ogg
-product/media/audio/ui/PolarRegion/Ermine.ogg
-product/media/audio/ui/PolarRegion/HarpSeal.ogg
-product/media/audio/ui/PolarRegion/Long-TailedJaeger.ogg
-product/media/audio/ui/PolarRegion/Moose.ogg
-product/media/audio/ui/PolarRegion/MusOx.ogg
-product/media/audio/ui/PolarRegion/Narwhal.ogg
-product/media/audio/ui/PolarRegion/NorwayLemmings.ogg
-product/media/audio/ui/PolarRegion/Orca.ogg
-product/media/audio/ui/PolarRegion/ParasiticJaeger.ogg
-product/media/audio/ui/PolarRegion/PolarBear.ogg
-product/media/audio/ui/PolarRegion/PomarineJaeger.ogg
-product/media/audio/ui/PolarRegion/Puffin.ogg
-product/media/audio/ui/PolarRegion/Sanderling.ogg
-product/media/audio/ui/PolarRegion/SeaOtter.ogg
-product/media/audio/ui/PolarRegion/SnowyOwl.ogg
-product/media/audio/ui/PolarRegion/Walrus.ogg
-product/media/audio/ui/PolarRegion/WeddellSeal.ogg
-product/media/audio/ui/PolarRegion/WillowGrouse.ogg
-product/media/audio/ui/SouthWestMountain/AsianBadger.ogg
-product/media/audio/ui/SouthWestMountain/AsianBlackBear.ogg
-product/media/audio/ui/SouthWestMountain/Black-NeckedCrane.ogg
-product/media/audio/ui/SouthWestMountain/GoldenEagle.ogg
-product/media/audio/ui/SouthWestMountain/GreenPeacock.ogg
-product/media/audio/ui/SouthWestMountain/Lynx.ogg
-product/media/audio/ui/SouthWestMountain/MaskedPalmCivet.ogg
-product/media/audio/ui/SouthWestMountain/OtocolobusManul.ogg
-product/media/audio/ui/SouthWestMountain/Panda.ogg
-product/media/audio/ui/SouthWestMountain/RedFox.ogg
-product/media/audio/ui/SouthWestMountain/RedPanda.ogg
-product/media/audio/ui/SouthWestMountain/SilverPheasant.ogg
-product/media/audio/ui/SouthWestMountain/SkywalkerHoolockGibbon.ogg
-product/media/audio/ui/SouthWestMountain/SnowLeopard.ogg
-product/media/audio/ui/SouthWestMountain/WildBoar.ogg
-product/media/audio/ui/SouthWestMountain/Wolf.ogg
-product/media/audio/ui/SouthWestMountain/Yellow-throatedMarten.ogg
-product/media/audio/ui/SouthWestMountain/YunnanSnub-NosedMonkey.ogg
-product/media/audio/ui/AfricaAnimals_preview.ogg
-product/media/audio/ui/AmazonAnimals_preview.ogg
-product/media/audio/ui/ArcticAnimals_preview.ogg
-product/media/audio/ui/AustraliaAnimals_preview.ogg
-product/media/audio/ui/BirdCicadaNotificationDay1.ogg
-product/media/audio/ui/BirdCicadaNotificationDay2.ogg
-product/media/audio/ui/BirdCicadaNotificationDay3.ogg
-product/media/audio/ui/BirdCicadaNotificationDay4.ogg
-product/media/audio/ui/BirdCicadaNotificationDay5.ogg
-product/media/audio/ui/BirdCicadaNotificationDay6.ogg
-product/media/audio/ui/BirdCicadaNotificationDay7.ogg
-product/media/audio/ui/BirdCicadaNotificationDay8.ogg
-product/media/audio/ui/BirdCicadaNotificationEvening1.ogg
-product/media/audio/ui/BirdCicadaNotificationEvening2.ogg
-product/media/audio/ui/BirdCicadaNotificationEvening3.ogg
-product/media/audio/ui/BirdCicadaNotificationEvening4.ogg
-product/media/audio/ui/BirdCicadaNotificationEvening5.ogg
-product/media/audio/ui/BirdCicadaNotificationMidday1.ogg
-product/media/audio/ui/BirdCicadaNotificationMidday2.ogg
-product/media/audio/ui/BirdCicadaNotificationMidday3.ogg
-product/media/audio/ui/BirdCicadaNotificationNight1.ogg
-product/media/audio/ui/BirdCicadaNotificationNight2.ogg
-product/media/audio/ui/BirdCicadaNotificationSeqDayNight1.ogg
-product/media/audio/ui/BirdCicadaNotificationSeqDayNight2.ogg
-product/media/audio/ui/BirdCicada_preview.ogg
-product/media/audio/ui/Bird_Notification_1.ogg
-product/media/audio/ui/Bird_Notification_2.ogg
-product/media/audio/ui/Cicada_Notification_1.ogg
-product/media/audio/ui/Cicada_Notification_2.ogg
-product/media/audio/ui/Delete.ogg
-product/media/audio/ui/Effect_Tick.ogg
-product/media/audio/ui/HeiHei.mp3
-product/media/audio/ui/InCallNotification.ogg
-product/media/audio/ui/IncomingMessage.ogg
-product/media/audio/ui/KeypressDelete.ogg
-product/media/audio/ui/KeypressReturn.ogg
-product/media/audio/ui/KeypressSpacebar.ogg
-product/media/audio/ui/KeypressStandard.ogg
-product/media/audio/ui/Lock.ogg
-product/media/audio/ui/LowBattery.ogg
-product/media/audio/ui/MIUI_Ringtone_Special_Service.ogg
-product/media/audio/ui/MessageSendOut.ogg
-product/media/audio/ui/MessageSending.ogg
-product/media/audio/ui/MessageSent.ogg
-product/media/audio/ui/MusicShake.ogg
-product/media/audio/ui/NumberPickerValueChange.ogg
-product/media/audio/ui/StoneSkimmingDay1.ogg
-product/media/audio/ui/StoneSkimmingDay2.ogg
-product/media/audio/ui/StoneSkimmingDay3.ogg
-product/media/audio/ui/StoneSkimmingDay4.ogg
-product/media/audio/ui/StoneSkimming_preview.ogg
-product/media/audio/ui/SystemDelete.ogg
-product/media/audio/ui/SystemError.ogg
-product/media/audio/ui/SystemTurnOff.ogg
-product/media/audio/ui/Unlock.ogg
-product/media/audio/ui/VideoRecord.ogg
-product/media/audio/ui/VideoStop.ogg
-product/media/audio/ui/WaterDropNotificationDay1.ogg
-product/media/audio/ui/WaterDropNotificationDay2.ogg
-product/media/audio/ui/WaterDropNotificationDay3.ogg
-product/media/audio/ui/WaterDropNotificationEvening1.ogg
-product/media/audio/ui/WaterDropNotificationEvening2.ogg
-product/media/audio/ui/WaterDropNotificationEvening3.ogg
-product/media/audio/ui/WaterDropNotificationMidday1.ogg
-product/media/audio/ui/WaterDropNotificationMidday2.ogg
-product/media/audio/ui/WaterDropNotificationMidday3.ogg
-product/media/audio/ui/WaterDropNotificationNight1.ogg
-product/media/audio/ui/WaterDropNotificationNight2.ogg
-product/media/audio/ui/WaterDropNotificationNight3.ogg
-product/media/audio/ui/WaterDropNotificationSeqAllDay1.ogg
-product/media/audio/ui/WaterDrop_preview.ogg
-product/media/audio/ui/Water_Notification_Day.ogg
-product/media/audio/ui/Water_Notification_Evening.ogg
-product/media/audio/ui/Water_Notification_Midday.ogg
-product/media/audio/ui/Water_Notification_Night.ogg
-product/media/audio/ui/camera_click.ogg
-product/media/audio/ui/camera_focus.ogg
-product/media/audio/ui/charge_wireless.ogg
-product/media/audio/ui/charging.ogg
-product/media/audio/ui/disconnect.ogg
-product/media/audio/ui/dynamic_alarm_speech.ogg
-product/media/audio/ui/flashlight.ogg
-product/media/audio/ui/miui_week_ringtone.ogg
-product/media/audio/ui/relieve.ogg
-product/media/audio/ui/screenshot.ogg
-product/media/audio/ui/screenshot_kr.ogg
-product/media/theme/.data/content/clock_1x2/clock.mrc
-product/media/theme/.data/content/clock_1x4/clock.mrc
-product/media/theme/.data/content/clock_2x2/clock.mrc
-product/media/theme/.data/content/clock_2x2/simple_clock.mrc
-product/media/theme/.data/content/clock_2x4/classical_clock.mrc
-product/media/theme/.data/content/clock_2x4/clock.mrc
-product/media/theme/.data/content/clock_2x4/clock_2x4.mrc
-product/media/theme/.data/content/clock_3x4/clock.mrc
-product/media/theme/.data/content/dual_clock_2x4/dual_clock.mrc
-product/media/theme/.data/content/dual_clock_3x4/dual_clock.mrc
-product/media/theme/.data/content/photoframe_2x2/photoframe.mrc
-product/media/theme/.data/content/photoframe_2x4/photoframe.mrc
-product/media/theme/.data/content/photoframe_4x4/photoframe.mrc
-product/media/theme/.data/meta/alarm/default.mrm
-product/media/theme/.data/meta/bootanimation/default.mrm
-product/media/theme/.data/meta/bootaudio/default.mrm
-product/media/theme/.data/meta/clock_1x2/clock.mrm
-product/media/theme/.data/meta/clock_2x2/clock.mrm
-product/media/theme/.data/meta/clock_2x2/simple_clock.mrm
-product/media/theme/.data/meta/clock_2x4/classical_clock.mrm
-product/media/theme/.data/meta/clock_2x4/clock.mrm
-product/media/theme/.data/meta/clock_2x4/clock_2x4.mrm
-product/media/theme/.data/meta/contact/default.mrm
-product/media/theme/.data/meta/fonts/default.mrm
-product/media/theme/.data/meta/fonts_fallback/default.mrm
-product/media/theme/.data/meta/icons/default.mrm
-product/media/theme/.data/meta/launcher/default.mrm
-product/media/theme/.data/meta/lockscreen/default.mrm
-product/media/theme/.data/meta/lockstyle/default.mrm
-product/media/theme/.data/meta/mms/default.mrm
-product/media/theme/.data/meta/notification/default.mrm
-product/media/theme/.data/meta/photoframe_2x2/photoframe.mrm
-product/media/theme/.data/meta/photoframe_2x4/photoframe.mrm
-product/media/theme/.data/meta/photoframe_4x4/photoframe.mrm
-product/media/theme/.data/meta/ringtone/default.mrm
-product/media/theme/.data/meta/statusbar/default.mrm
-product/media/theme/.data/meta/theme/default.mrm
-product/media/theme/.data/meta/wallpaper/default.mrm
-product/media/theme/.data/preview/clock_1x2/clock/preview_clock_0.png
-product/media/theme/.data/preview/clock_2x2/clock/preview_clock_0.png
-product/media/theme/.data/preview/clock_2x2/simple_clock/preview_clock_0.png
-product/media/theme/.data/preview/clock_2x4/classical_clock/en_US_preview_clock_0.png
-product/media/theme/.data/preview/clock_2x4/classical_clock/preview_clock_0.png
-product/media/theme/.data/preview/clock_2x4/clock/en_US_preview_clock_0.png
-product/media/theme/.data/preview/clock_2x4/clock/preview_clock_0.png
-product/media/theme/.data/preview/clock_2x4/clock_2x4/preview_clock_0.png
-product/media/theme/.data/preview/default/en_US_contact_0.png
-product/media/theme/.data/preview/default/en_US_fonts_0.png
-product/media/theme/.data/preview/default/en_US_fonts_1.png
-product/media/theme/.data/preview/default/en_US_fonts_2.png
-product/media/theme/.data/preview/default/en_US_fonts_mask_3.png
-product/media/theme/.data/preview/default/en_US_fonts_small_0.png
-product/media/theme/.data/preview/default/en_US_launcher_mask_0.png
-product/media/theme/.data/preview/default/en_US_launcher_mask_1.png
-product/media/theme/.data/preview/default/en_US_lockscreen_mask_0.png
-product/media/theme/.data/preview/default/en_US_mms_0.png
-product/media/theme/.data/preview/default/en_US_mms_1.png
-product/media/theme/.data/preview/default/en_US_statusbar_mask_0.png
-product/media/theme/.data/preview/default/en_US_statusbar_mask_1.png
-product/media/theme/.data/preview/default/en_US_statusbar_mask_2.png
-product/media/theme/.data/preview/default/preview_contact_0.png
-product/media/theme/.data/preview/default/preview_fonts_0.png
-product/media/theme/.data/preview/default/preview_fonts_1.png
-product/media/theme/.data/preview/default/preview_fonts_2.png
-product/media/theme/.data/preview/default/preview_fonts_mask_3.png
-product/media/theme/.data/preview/default/preview_fonts_small_0.png
-product/media/theme/.data/preview/default/preview_icons_mask_0.png
-product/media/theme/.data/preview/default/preview_icons_mask_1.png
-product/media/theme/.data/preview/default/preview_icons_small_mask_0.png
-product/media/theme/.data/preview/default/preview_launcher_mask_0.png
-product/media/theme/.data/preview/default/preview_launcher_mask_1.png
-product/media/theme/.data/preview/default/preview_lockscreen_mask_0.png
-product/media/theme/.data/preview/default/preview_mms_0.png
-product/media/theme/.data/preview/default/preview_mms_1.png
-product/media/theme/.data/preview/default/preview_statusbar_mask_0.png
-product/media/theme/.data/preview/default/preview_statusbar_mask_1.png
-product/media/theme/.data/preview/default/preview_statusbar_mask_2.png
-product/media/theme/.data/preview/miwallpaper/preview_miwallpaper_0.jpg
-product/media/theme/.data/preview/photoframe_2x2/photoframe/preview_photoframe_0.png
-product/media/theme/.data/preview/photoframe_2x4/photoframe/preview_photoframe_0.png
-product/media/theme/.data/preview/photoframe_4x4/photoframe/preview_photoframe_0.png
-product/media/theme/.data/rights/default.mra
-product/media/theme/default/gadgets/calculator.mtz
-product/media/theme/default/gadgets/clock_classical.mrc
-product/media/theme/default/gadgets/clock_classical.mtz
-product/media/theme/default/gadgets/notes.mtz
-product/media/theme/default/gadgets/weather_4x1.mtz
-product/media/theme/default/gadgets/weather_4x4.mtz
-product/media/theme/default/maml/maml_cleanmaster_2x1_new.mtz
-product/media/theme/default/maml/maml_clock_4x2_new.mtz
-product/media/theme/default/maml/maml_clock_4x2_v3.mtz
-product/media/theme/default/maml/maml_weather_2x2_new.mtz
-product/media/theme/default/dynamicicons
-product/media/theme/default/icons
-product/media/theme/default/keyguardmusicview
-product/media/theme/default/lock_wallpaper
-product/media/theme/default/powermenu
-product/media/theme/default/recentspanelmusiccontrol
-product/media/theme/default/virtuallockscreen
-product/media/theme/miui_mod_icons/dynamic/com.android.browser/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.browser/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.calendar/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.calendar/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.camera/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.camera/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.contacts/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.contacts/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.deskclock/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.deskclock/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.email/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.email/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.fileexplorer/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.fileexplorer/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.mms/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.mms/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.phone/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.phone/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.providers.contacts/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.providers.contacts/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.providers.downloads.ui/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.providers.downloads.ui/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.settings/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.settings/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.soundrecorder/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.soundrecorder/1.png
-product/media/theme/miui_mod_icons/dynamic/com.android.thememanager/0.png
-product/media/theme/miui_mod_icons/dynamic/com.android.thememanager/1.png
-product/media/theme/miui_mod_icons/dynamic/com.duokan.phone.remotecontroller/0.png
-product/media/theme/miui_mod_icons/dynamic/com.duokan.phone.remotecontroller/1.png
-product/media/theme/miui_mod_icons/dynamic/com.mi.android.globalFileexplorer/0.png
-product/media/theme/miui_mod_icons/dynamic/com.mi.android.globalFileexplorer/1.png
-product/media/theme/miui_mod_icons/dynamic/com.mi.globalbrowser/0.png
-product/media/theme/miui_mod_icons/dynamic/com.mi.globalbrowser/1.png
-product/media/theme/miui_mod_icons/dynamic/com.mipay.wallet/0.png
-product/media/theme/miui_mod_icons/dynamic/com.mipay.wallet/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.barcodescanner/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.barcodescanner/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.calculator/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.calculator/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.compass/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.compass/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.gallery/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.gallery/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.miservice/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.miservice/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.notes/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.notes/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.player/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.player/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.securitycenter/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.securitycenter/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.supermarket/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.supermarket/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.video/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.video/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.virtualsim/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.virtualsim/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.voiceassist/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.voiceassist/1.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.weather2/0.png
-product/media/theme/miui_mod_icons/dynamic/com.miui.weather2/1.png
-product/media/theme/miui_mod_icons/dynamic/com.xiaomi.calendar/0.png
-product/media/theme/miui_mod_icons/dynamic/com.xiaomi.calendar/1.png
-product/media/theme/miui_mod_icons/dynamic/com.xiaomi.gamecenter/0.png
-product/media/theme/miui_mod_icons/dynamic/com.xiaomi.gamecenter/1.png
-product/media/theme/miui_mod_icons/dynamic/com.xiaomi.smarthome/0.png
-product/media/theme/miui_mod_icons/dynamic/com.xiaomi.smarthome/1.png
-product/media/theme/miui_mod_icons/.nomedia
-product/media/theme/miui_mod_icons/android.png
-product/media/theme/miui_mod_icons/com.android.bluetooth.png
-product/media/theme/miui_mod_icons/com.android.browser.png
-product/media/theme/miui_mod_icons/com.android.calendar.png
-product/media/theme/miui_mod_icons/com.android.camera.png
-product/media/theme/miui_mod_icons/com.android.contacts.activities.TwelveKeyDialer.png
-product/media/theme/miui_mod_icons/com.android.contacts.png
-product/media/theme/miui_mod_icons/com.android.deskclock.png
-product/media/theme/miui_mod_icons/com.android.documentsui.png
-product/media/theme/miui_mod_icons/com.android.email.png
-product/media/theme/miui_mod_icons/com.android.fileexplorer.png
-product/media/theme/miui_mod_icons/com.android.mms.png
-product/media/theme/miui_mod_icons/com.android.music.png
-product/media/theme/miui_mod_icons/com.android.phone.png
-product/media/theme/miui_mod_icons/com.android.providers.calendar.png
-product/media/theme/miui_mod_icons/com.android.providers.contacts.CallLogProvider.png
-product/media/theme/miui_mod_icons/com.android.providers.contacts.png
-product/media/theme/miui_mod_icons/com.android.providers.downloads.png
-product/media/theme/miui_mod_icons/com.android.providers.downloads.ui.png
-product/media/theme/miui_mod_icons/com.android.quicksearchbox.png
-product/media/theme/miui_mod_icons/com.android.settings.png
-product/media/theme/miui_mod_icons/com.android.settings.wifi.WifiProvider.png
-product/media/theme/miui_mod_icons/com.android.soundrecorder.png
-product/media/theme/miui_mod_icons/com.android.systemui.png
-product/media/theme/miui_mod_icons/com.android.thememanager.png
-product/media/theme/miui_mod_icons/com.android.updater.png
-product/media/theme/miui_mod_icons/com.android.voicedialer.png
-product/media/theme/miui_mod_icons/com.duokan.phone.remotecontroller.png
-product/media/theme/miui_mod_icons/com.mi.android.globalFileexplorer.png
-product/media/theme/miui_mod_icons/com.mi.globalbrowser.png
-product/media/theme/miui_mod_icons/com.mipay.wallet.png
-product/media/theme/miui_mod_icons/com.miui.barcodescanner.png
-product/media/theme/miui_mod_icons/com.miui.bugreport.png
-product/media/theme/miui_mod_icons/com.miui.calculator.png
-product/media/theme/miui_mod_icons/com.miui.cloudservice.png
-product/media/theme/miui_mod_icons/com.miui.compass.png
-product/media/theme/miui_mod_icons/com.miui.fmradio.png
-product/media/theme/miui_mod_icons/com.miui.gallery.png
-product/media/theme/miui_mod_icons/com.miui.home.toggle_bg.png
-product/media/theme/miui_mod_icons/com.miui.hybrid.png
-product/media/theme/miui_mod_icons/com.miui.miservice.png
-product/media/theme/miui_mod_icons/com.miui.notes.png
-product/media/theme/miui_mod_icons/com.miui.player.png
-product/media/theme/miui_mod_icons/com.miui.screenrecorder.png
-product/media/theme/miui_mod_icons/com.miui.securitycenter.png
-product/media/theme/miui_mod_icons/com.miui.supermarket.png
-product/media/theme/miui_mod_icons/com.miui.video.png
-product/media/theme/miui_mod_icons/com.miui.virtualsim.png
-product/media/theme/miui_mod_icons/com.miui.voiceassist.png
-product/media/theme/miui_mod_icons/com.miui.weather2.png
-product/media/theme/miui_mod_icons/com.xiaomi.calendar.png
-product/media/theme/miui_mod_icons/com.xiaomi.gamecenter.png
-product/media/theme/miui_mod_icons/com.xiaomi.smarthome.png
-product/media/theme/miui_mod_icons/com.xiaomi.tag.png
-product/media/theme/miui_mod_icons/com.xiaomi.xmsf.FindDevice.png
-product/media/theme/miui_mod_icons/com.xiaomi.xmsf.account.ui.MiCloudSettingsActivity.png
-product/media/theme/miui_mod_icons/com.yidian.xiaomi.png
-product/media/theme/miui_mod_icons/icon_background.png
-product/media/theme/miui_mod_icons/icon_border.png
-product/media/theme/miui_mod_icons/icon_folder.png
-product/media/theme/miui_mod_icons/icon_folder_light.png
-product/media/theme/miui_mod_icons/icon_mask.png
-product/media/theme/miui_mod_icons/icon_pattern.png
-product/media/theme/miui_mod_icons/status_bar_toggle_bluetooth_off.png
-product/media/theme/miui_mod_icons/status_bar_toggle_bluetooth_on.png
-product/media/theme/miui_mod_icons/status_bar_toggle_data_off.png
-product/media/theme/miui_mod_icons/status_bar_toggle_data_on.png
-product/media/theme/miui_mod_icons/status_bar_toggle_flight_mode_off.png
-product/media/theme/miui_mod_icons/status_bar_toggle_flight_mode_on.png
-product/media/theme/miui_mod_icons/status_bar_toggle_lock.png
-product/media/theme/miui_mod_icons/status_bar_toggle_lock_on.png
-product/media/theme/miui_mod_icons/status_bar_toggle_torch_off.png
-product/media/theme/miui_mod_icons/status_bar_toggle_torch_on.png
-product/media/theme/miui_mod_icons/status_bar_toggle_wifi_ap_off.png
-product/media/theme/miui_mod_icons/status_bar_toggle_wifi_ap_on.png
-product/media/theme/miui_mod_icons/status_bar_toggle_wifi_off.png
-product/media/theme/miui_mod_icons/status_bar_toggle_wifi_on.png
-product/media/theme/miui_mod_icons/sym_def_app_icon.png
-product/media/theme/custom_online_ids.mrm
-product/media/theme/default.mtz
-product/media/theme/icons_version_1
-product/media/theme/theme_compatibility.xml
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus01.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus02.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus03.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus03_with_magic.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus04.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus05.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus06.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/rhombus07.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/00_rhombus/wallpaper_config.json
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine01.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine01_mask.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine02.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine02_mask.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine03.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine03_mask.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine04.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine04_mask.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine05.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine05_mask.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine06.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine06_mask.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine07.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine07_mask.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/magazine08.jpg
-product/media/wallpaper/sysui_editor_wallpaper_group/01_magazine/wallpaper_config.json
-product/media/wallpaper/wallpaper_group/00_Space/Space01.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space02.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space03.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space04.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space05.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space06.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space07.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space08.jpg
-product/media/wallpaper/wallpaper_group/00_Space/Space09.jpg
-product/media/wallpaper/wallpaper_group/00_Space/wallpaper_config.json
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture001.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture001_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture002.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture002_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture003.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture003_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture004.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture004_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture005.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture005_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture006.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture006_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture007.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture007_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture008.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture008_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture009.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/FlowerTexture009_MASK.jpg
-product/media/wallpaper/wallpaper_group/01_FlowerTexture/wallpaper_config.json
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture001.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture001_MASK.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture002.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture002_MASK.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture003.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture003_MASK.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture004.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture004_MASK.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture005.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture005_MASK.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture006.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture006_MASK.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture007.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/NaturalTexture007_MASK.jpg
-product/media/wallpaper/wallpaper_group/02_NaturalTexture/wallpaper_config.json
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/TsubasaTexture001.jpg
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/TsubasaTexture002.jpg
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/TsubasaTexture003.jpg
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/TsubasaTexture004.jpg
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/TsubasaTexture005.jpg
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/TsubasaTexture006.jpg
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/TsubasaTexture007.jpg
-product/media/wallpaper/wallpaper_group/03_TsubasaTexture/wallpaper_config.json
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization01.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization02.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization03.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization04.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization05.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization06.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization07.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization08.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/Crystallization09.webp
-product/media/wallpaper/wallpaper_group/04_Crystallization/wallpaper_config.json
-product/media/wallpaper/wallpaper00.jpg
-product/media/wallpaper/wallpaper01.jpg
-product/media/bootanimation.zip
-product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk
-product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk
-product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk
-product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk
-product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk
-product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk
-product/overlay/MiuiServiceOverlay/MiuiServiceOverlay.apk
-product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
-product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
-product/overlay/NavigationBarModeGesturalExtraWideBack/NavigationBarModeGesturalOverlayExtraWideBack.apk
-product/overlay/NavigationBarModeGesturalNarrowBack/NavigationBarModeGesturalOverlayNarrowBack.apk
-product/overlay/NavigationBarModeGesturalWideBack/NavigationBarModeGesturalOverlayWideBack.apk
-product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk
-product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk
-product/overlay/AospBluetoothResOverlay.apk
-product/overlay/AospFrameworkResOverlay.apk
-product/overlay/AospFrameworkTelephonyResOverlay.apk
-product/overlay/AospWifiResOverlay.apk
-product/overlay/AospWifiResOverlay_mainline.apk
-product/overlay/CaptivePortalLoginFrameworkOverlay.apk
-product/overlay/CarrierConfigResCommon_Sys.apk
-product/overlay/CellBroadcastReceiverResCommon_Sys.apk
-product/overlay/DevicesAndroidOverlay.apk
-product/overlay/DevicesOverlay.apk
-product/overlay/ElderlyNavigationBarOverlay.apk
-product/overlay/FrameworksResCommonQva_Sys.apk
-product/overlay/FrameworksResCommon_Sys.apk
-product/overlay/GestureLineOverlay.apk
-product/overlay/GmsConfigOverlayCommon.apk
-product/overlay/GmsConfigOverlayGSA.apk
-product/overlay/GmsConfigOverlayGeotz.apk
-product/overlay/GmsConfigOverlayPersonalSafety.apk
-product/overlay/GmsContactProviderOverlay.apk
-product/overlay/GmsSettingProviderOverlay.apk
-product/overlay/GmsSettingsOverlay.apk
-product/overlay/GmsSystemUIOverlay.apk
-product/overlay/GoogleDeviceLockControllerOverlay.apk
-product/overlay/GoogleDocumentsUIOverlay.apk
-product/overlay/GoogleExtServicesConfigOverlay.apk
-product/overlay/GooglePermissionControllerFrameworkOverlay.apk
-product/overlay/GooglePermissionControllerOverlay.apk
-product/overlay/H3gCotaResOverlay.apk
-product/overlay/MIWallpaperOverlay.apk
-product/overlay/ManagedProvisioningResOverlay.apk
-product/overlay/MccMncOverlay.apk
-product/overlay/MiTelephonyExtResOverlay.apk
-product/overlay/MiuiBtRRODeviceConfigOverlay.apk
-product/overlay/MiuiCarrierConfigOverlay.apk
-product/overlay/MiuiCellBroadcastReceiverOverlay.apk
-product/overlay/MiuiCellBroadcastServiceOverlay.apk
-product/overlay/MiuiCustomizeLockscreenOverlay.apk
-product/overlay/MiuiCustomizeWallpaperOverlay.apk
-product/overlay/MiuiDefaultLockscreenOverlay.apk
-product/overlay/MiuiDefaultWallpaperOverlay.apk
-product/overlay/MiuiFrameworkResOverlay.apk
-product/overlay/MiuiFrameworkTelephonyResOverlay.apk
-product/overlay/MiuiGlobalLockscreenOverlay.apk
-product/overlay/MiuiGlobalWallpaperOverlay.apk
-product/overlay/MiuiHomeLauncherResOverlay.apk
-product/overlay/MiuiLundunLockscreenOverlay.apk
-product/overlay/MiuiLundunWallpaperOverlay.apk
-product/overlay/MiuiPOCOLockscreenOverlay.apk
-product/overlay/MiuiPOCOWallpaperOverlay.apk
-product/overlay/MiuiPermissionControllerOverlay.apk
-product/overlay/MiuiPocoLauncherResOverlay.apk
-product/overlay/MiuiQRLockscreenOverlay.apk
-product/overlay/MiuiQRWallpaperOverlay.apk
-product/overlay/MiuiSecurityCoreOverlay.apk
-product/overlay/MiuiSettingsResOverlay.apk
-product/overlay/MiuiSystemSdkResOverlay.apk
-product/overlay/MiuiSystemUIResOverlay.apk
-product/overlay/MiuiTelecomResOverlay.apk
-product/overlay/MiuiTelephonyProviderResOverlay.apk
-product/overlay/MiuiTelephonyResOverlay.apk
-product/overlay/MiuiThemeManagerGlobalOverlayTest.apk
-product/overlay/ModuleMetadataGoogleOverlay.apk
-product/overlay/NetworkStackOverlay.apk
-product/overlay/SettingsProviderCustResOverlay.apk
-product/overlay/SettingsResCommon_Sys.apk
-product/overlay/SettingsRroDeviceConfigOverlay.apk
-product/overlay/SettingsRroDeviceHideStatusBarOverlay.apk
-product/overlay/SettingsRroDeviceTypeOverlay.apk
-product/overlay/SystemUIResCommon_Sys.apk
-product/overlay/TelecommResCommon_Sys.apk
-product/overlay/TelephonyResCommon_Sys.apk
-product/overlay/VodafoneCotaResOverlay.apk
-product/overlay/WifiResCommonMainline_Sys.apk
-product/overlay/WifiResCommon_Sys.apk
-product/pangu/system/app/facebook-appmanager/oat/arm64/facebook-appmanager.odex
-product/pangu/system/app/facebook-appmanager/oat/arm64/facebook-appmanager.vdex
-product/pangu/system/app/facebook-appmanager/facebook-appmanager.apk
-product/pangu/system/etc/permissions/security/verity_key
-product/pangu/system/etc/permissions/facebook-hiddenapi-package-whitelist.xml
-product/pangu/system/etc/permissions/facebook-miui.xml
-product/pangu/system/etc/permissions/privapp-permissions-pangu.xml
-product/pangu/system/etc/ota_skip_apps
-product/pangu/system/priv-app/facebook-installer/oat/arm64/facebook-installer.odex
-product/pangu/system/priv-app/facebook-installer/oat/arm64/facebook-installer.vdex
-product/pangu/system/priv-app/facebook-installer/facebook-installer.apk
-product/pangu/system/priv-app/facebook-services/oat/arm64/facebook-services.odex
-product/pangu/system/priv-app/facebook-services/oat/arm64/facebook-services.vdex
-product/pangu/system/priv-app/facebook-services/facebook-services.apk
-product/prebuilts/com.android.deskclocklib.res20190812/com.android.deskclocklib.res20190812.apk
-product/priv-app/AndroidAutoStub/oat/arm64/AndroidAutoStub.odex
-product/priv-app/AndroidAutoStub/oat/arm64/AndroidAutoStub.vdex
-product/priv-app/AndroidAutoStub/AndroidAutoStub.apk
-product/priv-app/Backup/oat/arm64/Backup.odex
-product/priv-app/Backup/oat/arm64/Backup.vdex
-product/priv-app/Backup/Backup.apk
-product/priv-app/ConfigUpdater/ConfigUpdater.apk
-product/priv-app/DownloadProviderUi/DownloadProviderUi.apk
-product/priv-app/ExtraPhotoGlobal/oat/arm64/ExtraPhotoGlobal.odex
-product/priv-app/ExtraPhotoGlobal/oat/arm64/ExtraPhotoGlobal.vdex
-product/priv-app/ExtraPhotoGlobal/ExtraPhotoGlobal.apk
-product/priv-app/FamilyLinkParentalControls/oat/arm64/FamilyLinkParentalControls.odex
-product/priv-app/FamilyLinkParentalControls/oat/arm64/FamilyLinkParentalControls.vdex
-product/priv-app/FamilyLinkParentalControls/FamilyLinkParentalControls.apk
-product/priv-app/GmsCore/GmsCore.apk
-product/priv-app/GoogleOneTimeInitializer/oat/arm64/GoogleOneTimeInitializer.odex
-product/priv-app/GoogleOneTimeInitializer/oat/arm64/GoogleOneTimeInitializer.vdex
-product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
-product/priv-app/GooglePartnerSetup/oat/arm64/GooglePartnerSetup.odex
-product/priv-app/GooglePartnerSetup/oat/arm64/GooglePartnerSetup.vdex
-product/priv-app/GooglePartnerSetup/GooglePartnerSetup.apk
-product/priv-app/GoogleRestore/oat/arm64/GoogleRestore.odex
-product/priv-app/GoogleRestore/oat/arm64/GoogleRestore.vdex
-product/priv-app/GoogleRestore/GoogleRestore.apk
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/oat/arm64/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.odex
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/oat/arm64/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.vdex
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/oat/arm64/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.odex
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/oat/arm64/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.vdex
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-product/priv-app/MIServiceGlobal/MIServiceGlobal.apk
-product/priv-app/MISettings/oat/arm64/MISettings.odex
-product/priv-app/MISettings/oat/arm64/MISettings.vdex
-product/priv-app/MISettings/MISettings.apk
-product/priv-app/MIUIAICR/oat/arm64/MIUIAICR.odex
-product/priv-app/MIUIAICR/oat/arm64/MIUIAICR.vdex
-product/priv-app/MIUIAICR/MIUIAICR.apk
-product/priv-app/MIUIAod/oat/arm64/MIUIAod.odex
-product/priv-app/MIUIAod/oat/arm64/MIUIAod.vdex
-product/priv-app/MIUIAod/MIUIAod.apk
-product/priv-app/MIUIBarrage/oat/arm64/MIUIBarrage.odex
-product/priv-app/MIUIBarrage/oat/arm64/MIUIBarrage.vdex
-product/priv-app/MIUIBarrage/MIUIBarrage.apk
-product/priv-app/MIUICleanMasterGlobal-cleaner/MIUICleanMasterGlobal-cleaner.apk
-product/priv-app/MIUICloudBackupGlobal/oat/arm64/MIUICloudBackupGlobal.odex
-product/priv-app/MIUICloudBackupGlobal/oat/arm64/MIUICloudBackupGlobal.vdex
-product/priv-app/MIUICloudBackupGlobal/MIUICloudBackupGlobal.apk
-product/priv-app/MIUIGalleryGlobal/MIUIGalleryGlobal.apk
-product/priv-app/MIUIMusicGlobal/MIUIMusicGlobal.apk
-product/priv-app/MIUISecurityCenterGlobal/MIUISecurityCenterGlobal.apk
-product/priv-app/MiLauncherGlobal/oat/arm64/MiLauncherGlobal.odex
-product/priv-app/MiLauncherGlobal/oat/arm64/MiLauncherGlobal.vdex
-product/priv-app/MiLauncherGlobal/MiLauncherGlobal.apk
-product/priv-app/MiuiCamera/oat/arm64/MiuiCamera.odex
-product/priv-app/MiuiCamera/oat/arm64/MiuiCamera.vdex
-product/priv-app/MiuiCamera/MiuiCamera.apk
-product/priv-app/MiuiHome/oat/arm64/MiuiHome.odex
-product/priv-app/MiuiHome/oat/arm64/MiuiHome.vdex
-product/priv-app/MiuiHome/MiuiHome.apk
-product/priv-app/PersonalSafety/oat/arm64/PersonalSafety.odex
-product/priv-app/PersonalSafety/oat/arm64/PersonalSafety.vdex
-product/priv-app/PersonalSafety/PersonalSafety.apk
-product/priv-app/Phonesky/Phonesky.apk
-product/priv-app/SettingsIntelligence/oat/arm64/SettingsIntelligence.odex
-product/priv-app/SettingsIntelligence/oat/arm64/SettingsIntelligence.vdex
-product/priv-app/SettingsIntelligence/SettingsIntelligence.apk
-product/priv-app/Turbo/oat/arm64/Turbo.odex
-product/priv-app/Turbo/oat/arm64/Turbo.vdex
-product/priv-app/Turbo/Turbo.apk
-product/priv-app/Velvet/Velvet.apk
-product/priv-app/Wellbeing/Wellbeing.apk
-product/usr/srec/en-US/APP_NAME.fst
-product/usr/srec/en-US/APP_NAME.syms
-product/usr/srec/en-US/CLG.prewalk.fst
-product/usr/srec/en-US/CONTACT.transform.mfar
-product/usr/srec/en-US/CONTACT_NAME.fst
-product/usr/srec/en-US/CONTACT_NAME.syms
-product/usr/srec/en-US/SONG_NAME.fst
-product/usr/srec/en-US/SONG_NAME.syms
-product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.main_model.uint8.data
-product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.self_normalized_model.uint8.data
-product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.syms
-product/usr/srec/en-US/am_phonemes.syms
-product/usr/srec/en-US/c_fst
-product/usr/srec/en-US/commands.abnf
-product/usr/srec/en-US/compile_grammar.config
-product/usr/srec/en-US/config.pumpkin
-product/usr/srec/en-US/contacts.abnf
-product/usr/srec/en-US/dict
-product/usr/srec/en-US/dictation.config
-product/usr/srec/en-US/dnn
-product/usr/srec/en-US/embedded_class_denorm.mfar
-product/usr/srec/en-US/embedded_normalizer.mfar
-product/usr/srec/en-US/en-US_app-actions_prompted-app-name_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_calendar-actions_AddCalendarEvent-Prompted-FieldToChange_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_confirmation_confirmation-cancellation_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_gmm-actions_gmm-nav-actions_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_media-actions_music-service-controllable_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_monastery_GenericAction-Prompted-ContactName_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_monastery_contact-disambig-static_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Read_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Skip_TWIDDLER_FST.fst
-product/usr/srec/en-US/en-US_time-actions_time-context_TWIDDLER_FST.fst
-product/usr/srec/en-US/endpointer_dictation.config
-product/usr/srec/en-US/endpointer_model
-product/usr/srec/en-US/endpointer_model.mmap
-product/usr/srec/en-US/endpointer_voicesearch.config
-product/usr/srec/en-US/ep_portable_mean_stddev
-product/usr/srec/en-US/ep_portable_model.uint8.mmap
-product/usr/srec/en-US/g2p.data
-product/usr/srec/en-US/g2p_fst
-product/usr/srec/en-US/g2p_graphemes.syms
-product/usr/srec/en-US/g2p_phonemes.syms
-product/usr/srec/en-US/grammar.config
-product/usr/srec/en-US/hmm_symbols
-product/usr/srec/en-US/hmmlist
-product/usr/srec/en-US/input_mean_std_dev
-product/usr/srec/en-US/lexicon.U.fst
-product/usr/srec/en-US/lstm_model.uint8.data
-product/usr/srec/en-US/magic_mic.config
-product/usr/srec/en-US/metadata
-product/usr/srec/en-US/monastery_config.pumpkin
-product/usr/srec/en-US/norm_fst
-product/usr/srec/en-US/offensive_word_normalizer.mfar
-product/usr/srec/en-US/offline_action_data.pb
-product/usr/srec/en-US/phonelist
-product/usr/srec/en-US/portable_lstm
-product/usr/srec/en-US/portable_meanstddev
-product/usr/srec/en-US/prons_exception_dictionary_file.txt
-product/usr/srec/en-US/pumpkin.mmap
-product/usr/srec/en-US/rescoring.fst.compact
-product/usr/srec/en-US/semantics.pumpkin
-product/usr/srec/en-US/verbalizer_terse.mfar
-product/usr/srec/en-US/voice_actions.config
-product/usr/srec/en-US/voice_actions_compiler.config
-product/usr/srec/en-US/word_confidence_classifier
-product/usr/srec/en-US/wordlist.syms
-recovery.img
-recovery/ramdisk/odm/app
-recovery/ramdisk/odm/bin
-recovery/ramdisk/odm/etc
-recovery/ramdisk/odm/firmware
-recovery/ramdisk/odm/framework
-recovery/ramdisk/odm/lib
-recovery/ramdisk/odm/lib64
-recovery/ramdisk/odm/overlay
-recovery/ramdisk/odm/priv-app
-recovery/ramdisk/odm/usr
-recovery/ramdisk/odm_dlkm/etc
-recovery/ramdisk/res/images/ch/NVdata_corrupted.png
-recovery/ramdisk/res/images/ch/back_main_normal.png
-recovery/ramdisk/res/images/ch/back_main_selected.png
-recovery/ramdisk/res/images/ch/back_normal.png
-recovery/ramdisk/res/images/ch/back_selected.png
-recovery/ramdisk/res/images/ch/choice_no_normal.png
-recovery/ramdisk/res/images/ch/choice_no_selected.png
-recovery/ramdisk/res/images/ch/choice_yes_normal.png
-recovery/ramdisk/res/images/ch/choice_yes_selected.png
-recovery/ramdisk/res/images/ch/flash_rom_fail.png
-recovery/ramdisk/res/images/ch/format_data_confirm.png
-recovery/ramdisk/res/images/ch/format_data_normal.png
-recovery/ramdisk/res/images/ch/format_data_selected.png
-recovery/ramdisk/res/images/ch/format_sdcard_confirm.png
-recovery/ramdisk/res/images/ch/format_sdcard_fail.png
-recovery/ramdisk/res/images/ch/format_sdcard_normal.png
-recovery/ramdisk/res/images/ch/format_sdcard_ok.png
-recovery/ramdisk/res/images/ch/format_sdcard_processing.png
-recovery/ramdisk/res/images/ch/format_sdcard_selected.png
-recovery/ramdisk/res/images/ch/install_update_confirm.png
-recovery/ramdisk/res/images/ch/install_update_fail.png
-recovery/ramdisk/res/images/ch/install_update_file_corrupt.png
-recovery/ramdisk/res/images/ch/install_update_low_battery.png
-recovery/ramdisk/res/images/ch/install_update_no_file.png
-recovery/ramdisk/res/images/ch/install_update_normal.png
-recovery/ramdisk/res/images/ch/install_update_ok.png
-recovery/ramdisk/res/images/ch/install_update_processing.png
-recovery/ramdisk/res/images/ch/install_update_selected.png
-recovery/ramdisk/res/images/ch/install_update_verify_fail.png
-recovery/ramdisk/res/images/ch/key_usage.png
-recovery/ramdisk/res/images/ch/key_usage_power.png
-recovery/ramdisk/res/images/ch/key_usage_volume.png
-recovery/ramdisk/res/images/ch/main_menu.png
-recovery/ramdisk/res/images/ch/maintenance_normal.png
-recovery/ramdisk/res/images/ch/maintenance_selected.png
-recovery/ramdisk/res/images/ch/miassistant_normal.png
-recovery/ramdisk/res/images/ch/miassistant_selected.png
-recovery/ramdisk/res/images/ch/mount_usb_normal.png
-recovery/ramdisk/res/images/ch/mount_usb_selected.png
-recovery/ramdisk/res/images/ch/power_off_normal.png
-recovery/ramdisk/res/images/ch/power_off_selected.png
-recovery/ramdisk/res/images/ch/ramdump_presented.png
-recovery/ramdisk/res/images/ch/reboot_menu.png
-recovery/ramdisk/res/images/ch/reboot_normal.png
-recovery/ramdisk/res/images/ch/reboot_selected.png
-recovery/ramdisk/res/images/ch/reboot_system1_latest_normal.png
-recovery/ramdisk/res/images/ch/reboot_system1_latest_selected.png
-recovery/ramdisk/res/images/ch/reboot_system1_normal.png
-recovery/ramdisk/res/images/ch/reboot_system1_selected.png
-recovery/ramdisk/res/images/ch/reboot_system2_latest_normal.png
-recovery/ramdisk/res/images/ch/reboot_system2_latest_selected.png
-recovery/ramdisk/res/images/ch/reboot_system2_normal.png
-recovery/ramdisk/res/images/ch/reboot_system2_selected.png
-recovery/ramdisk/res/images/ch/reboot_system_normal.png
-recovery/ramdisk/res/images/ch/reboot_system_selected.png
-recovery/ramdisk/res/images/ch/repart_sys_confirm.png
-recovery/ramdisk/res/images/ch/repart_sys_fail.png
-recovery/ramdisk/res/images/ch/repart_sys_noneed.png
-recovery/ramdisk/res/images/ch/repart_sys_normal.png
-recovery/ramdisk/res/images/ch/repart_sys_ok.png
-recovery/ramdisk/res/images/ch/repart_sys_selected.png
-recovery/ramdisk/res/images/ch/safemode_normal.png
-recovery/ramdisk/res/images/ch/safemode_selected.png
-recovery/ramdisk/res/images/ch/usb_connected.png
-recovery/ramdisk/res/images/ch/usb_no_connection.png
-recovery/ramdisk/res/images/ch/usb_umount_normal.png
-recovery/ramdisk/res/images/ch/usb_umount_selected.png
-recovery/ramdisk/res/images/ch/version_mismatch.png
-recovery/ramdisk/res/images/ch/wipe_cache_confirm.png
-recovery/ramdisk/res/images/ch/wipe_cache_fail.png
-recovery/ramdisk/res/images/ch/wipe_cache_normal.png
-recovery/ramdisk/res/images/ch/wipe_cache_ok.png
-recovery/ramdisk/res/images/ch/wipe_cache_processing.png
-recovery/ramdisk/res/images/ch/wipe_cache_selected.png
-recovery/ramdisk/res/images/ch/wipe_data_confirm.png
-recovery/ramdisk/res/images/ch/wipe_data_fail.png
-recovery/ramdisk/res/images/ch/wipe_data_normal.png
-recovery/ramdisk/res/images/ch/wipe_data_ok.png
-recovery/ramdisk/res/images/ch/wipe_data_processing.png
-recovery/ramdisk/res/images/ch/wipe_data_selected.png
-recovery/ramdisk/res/images/ch/wipe_menu.png
-recovery/ramdisk/res/images/ch/wipe_normal.png
-recovery/ramdisk/res/images/ch/wipe_selected.png
-recovery/ramdisk/res/images/en/NVdata_corrupted.png
-recovery/ramdisk/res/images/en/back_main_normal.png
-recovery/ramdisk/res/images/en/back_main_selected.png
-recovery/ramdisk/res/images/en/back_normal.png
-recovery/ramdisk/res/images/en/back_selected.png
-recovery/ramdisk/res/images/en/choice_no_normal.png
-recovery/ramdisk/res/images/en/choice_no_selected.png
-recovery/ramdisk/res/images/en/choice_yes_normal.png
-recovery/ramdisk/res/images/en/choice_yes_selected.png
-recovery/ramdisk/res/images/en/flash_rom_fail.png
-recovery/ramdisk/res/images/en/format_data_confirm.png
-recovery/ramdisk/res/images/en/format_data_normal.png
-recovery/ramdisk/res/images/en/format_data_selected.png
-recovery/ramdisk/res/images/en/format_sdcard_confirm.png
-recovery/ramdisk/res/images/en/format_sdcard_fail.png
-recovery/ramdisk/res/images/en/format_sdcard_normal.png
-recovery/ramdisk/res/images/en/format_sdcard_ok.png
-recovery/ramdisk/res/images/en/format_sdcard_processing.png
-recovery/ramdisk/res/images/en/format_sdcard_selected.png
-recovery/ramdisk/res/images/en/install_update_confirm.png
-recovery/ramdisk/res/images/en/install_update_fail.png
-recovery/ramdisk/res/images/en/install_update_file_corrupt.png
-recovery/ramdisk/res/images/en/install_update_low_battery.png
-recovery/ramdisk/res/images/en/install_update_no_file.png
-recovery/ramdisk/res/images/en/install_update_normal.png
-recovery/ramdisk/res/images/en/install_update_ok.png
-recovery/ramdisk/res/images/en/install_update_processing.png
-recovery/ramdisk/res/images/en/install_update_selected.png
-recovery/ramdisk/res/images/en/install_update_verify_fail.png
-recovery/ramdisk/res/images/en/key_usage.png
-recovery/ramdisk/res/images/en/key_usage_power.png
-recovery/ramdisk/res/images/en/key_usage_volume.png
-recovery/ramdisk/res/images/en/main_menu.png
-recovery/ramdisk/res/images/en/maintenance_normal.png
-recovery/ramdisk/res/images/en/maintenance_selected.png
-recovery/ramdisk/res/images/en/miassistant_normal.png
-recovery/ramdisk/res/images/en/miassistant_selected.png
-recovery/ramdisk/res/images/en/mount_usb_normal.png
-recovery/ramdisk/res/images/en/mount_usb_selected.png
-recovery/ramdisk/res/images/en/power_off_normal.png
-recovery/ramdisk/res/images/en/power_off_selected.png
-recovery/ramdisk/res/images/en/ramdump_presented.png
-recovery/ramdisk/res/images/en/reboot_menu.png
-recovery/ramdisk/res/images/en/reboot_normal.png
-recovery/ramdisk/res/images/en/reboot_selected.png
-recovery/ramdisk/res/images/en/reboot_system1_latest_normal.png
-recovery/ramdisk/res/images/en/reboot_system1_latest_selected.png
-recovery/ramdisk/res/images/en/reboot_system1_normal.png
-recovery/ramdisk/res/images/en/reboot_system1_selected.png
-recovery/ramdisk/res/images/en/reboot_system2_latest_normal.png
-recovery/ramdisk/res/images/en/reboot_system2_latest_selected.png
-recovery/ramdisk/res/images/en/reboot_system2_normal.png
-recovery/ramdisk/res/images/en/reboot_system2_selected.png
-recovery/ramdisk/res/images/en/reboot_system_normal.png
-recovery/ramdisk/res/images/en/reboot_system_selected.png
-recovery/ramdisk/res/images/en/repart_sys_confirm.png
-recovery/ramdisk/res/images/en/repart_sys_fail.png
-recovery/ramdisk/res/images/en/repart_sys_noneed.png
-recovery/ramdisk/res/images/en/repart_sys_normal.png
-recovery/ramdisk/res/images/en/repart_sys_ok.png
-recovery/ramdisk/res/images/en/repart_sys_selected.png
-recovery/ramdisk/res/images/en/safemode_normal.png
-recovery/ramdisk/res/images/en/safemode_selected.png
-recovery/ramdisk/res/images/en/usb_connected.png
-recovery/ramdisk/res/images/en/usb_no_connection.png
-recovery/ramdisk/res/images/en/usb_umount_normal.png
-recovery/ramdisk/res/images/en/usb_umount_selected.png
-recovery/ramdisk/res/images/en/version_mismatch.png
-recovery/ramdisk/res/images/en/wipe_cache_confirm.png
-recovery/ramdisk/res/images/en/wipe_cache_fail.png
-recovery/ramdisk/res/images/en/wipe_cache_normal.png
-recovery/ramdisk/res/images/en/wipe_cache_ok.png
-recovery/ramdisk/res/images/en/wipe_cache_processing.png
-recovery/ramdisk/res/images/en/wipe_cache_selected.png
-recovery/ramdisk/res/images/en/wipe_data_confirm.png
-recovery/ramdisk/res/images/en/wipe_data_fail.png
-recovery/ramdisk/res/images/en/wipe_data_normal.png
-recovery/ramdisk/res/images/en/wipe_data_ok.png
-recovery/ramdisk/res/images/en/wipe_data_processing.png
-recovery/ramdisk/res/images/en/wipe_data_selected.png
-recovery/ramdisk/res/images/en/wipe_menu.png
-recovery/ramdisk/res/images/en/wipe_normal.png
-recovery/ramdisk/res/images/en/wipe_selected.png
-recovery/ramdisk/res/images/jp/NVdata_corrupted.png
-recovery/ramdisk/res/images/jp/back_main_normal.png
-recovery/ramdisk/res/images/jp/back_main_selected.png
-recovery/ramdisk/res/images/jp/back_normal.png
-recovery/ramdisk/res/images/jp/back_selected.png
-recovery/ramdisk/res/images/jp/choice_no_normal.png
-recovery/ramdisk/res/images/jp/choice_no_selected.png
-recovery/ramdisk/res/images/jp/choice_yes_normal.png
-recovery/ramdisk/res/images/jp/choice_yes_selected.png
-recovery/ramdisk/res/images/jp/flash_rom_fail.png
-recovery/ramdisk/res/images/jp/format_data_confirm.png
-recovery/ramdisk/res/images/jp/format_data_normal.png
-recovery/ramdisk/res/images/jp/format_data_selected.png
-recovery/ramdisk/res/images/jp/format_sdcard_confirm.png
-recovery/ramdisk/res/images/jp/format_sdcard_fail.png
-recovery/ramdisk/res/images/jp/format_sdcard_normal.png
-recovery/ramdisk/res/images/jp/format_sdcard_ok.png
-recovery/ramdisk/res/images/jp/format_sdcard_processing.png
-recovery/ramdisk/res/images/jp/format_sdcard_selected.png
-recovery/ramdisk/res/images/jp/install_update_confirm.png
-recovery/ramdisk/res/images/jp/install_update_fail.png
-recovery/ramdisk/res/images/jp/install_update_file_corrupt.png
-recovery/ramdisk/res/images/jp/install_update_low_battery.png
-recovery/ramdisk/res/images/jp/install_update_no_file.png
-recovery/ramdisk/res/images/jp/install_update_normal.png
-recovery/ramdisk/res/images/jp/install_update_ok.png
-recovery/ramdisk/res/images/jp/install_update_processing.png
-recovery/ramdisk/res/images/jp/install_update_selected.png
-recovery/ramdisk/res/images/jp/install_update_verify_fail.png
-recovery/ramdisk/res/images/jp/key_usage.png
-recovery/ramdisk/res/images/jp/key_usage_power.png
-recovery/ramdisk/res/images/jp/key_usage_volume.png
-recovery/ramdisk/res/images/jp/main_menu.png
-recovery/ramdisk/res/images/jp/maintenance_normal.png
-recovery/ramdisk/res/images/jp/maintenance_selected.png
-recovery/ramdisk/res/images/jp/miassistant_normal.png
-recovery/ramdisk/res/images/jp/miassistant_selected.png
-recovery/ramdisk/res/images/jp/mount_usb_normal.png
-recovery/ramdisk/res/images/jp/mount_usb_selected.png
-recovery/ramdisk/res/images/jp/power_off_normal.png
-recovery/ramdisk/res/images/jp/power_off_selected.png
-recovery/ramdisk/res/images/jp/ramdump_presented.png
-recovery/ramdisk/res/images/jp/reboot_menu.png
-recovery/ramdisk/res/images/jp/reboot_normal.png
-recovery/ramdisk/res/images/jp/reboot_selected.png
-recovery/ramdisk/res/images/jp/reboot_system1_latest_normal.png
-recovery/ramdisk/res/images/jp/reboot_system1_latest_selected.png
-recovery/ramdisk/res/images/jp/reboot_system1_normal.png
-recovery/ramdisk/res/images/jp/reboot_system1_selected.png
-recovery/ramdisk/res/images/jp/reboot_system2_latest_normal.png
-recovery/ramdisk/res/images/jp/reboot_system2_latest_selected.png
-recovery/ramdisk/res/images/jp/reboot_system2_normal.png
-recovery/ramdisk/res/images/jp/reboot_system2_selected.png
-recovery/ramdisk/res/images/jp/reboot_system_normal.png
-recovery/ramdisk/res/images/jp/reboot_system_selected.png
-recovery/ramdisk/res/images/jp/repart_sys_confirm.png
-recovery/ramdisk/res/images/jp/repart_sys_fail.png
-recovery/ramdisk/res/images/jp/repart_sys_noneed.png
-recovery/ramdisk/res/images/jp/repart_sys_normal.png
-recovery/ramdisk/res/images/jp/repart_sys_ok.png
-recovery/ramdisk/res/images/jp/repart_sys_selected.png
-recovery/ramdisk/res/images/jp/safemode_normal.png
-recovery/ramdisk/res/images/jp/safemode_selected.png
-recovery/ramdisk/res/images/jp/usb_connected.png
-recovery/ramdisk/res/images/jp/usb_no_connection.png
-recovery/ramdisk/res/images/jp/usb_umount_normal.png
-recovery/ramdisk/res/images/jp/usb_umount_selected.png
-recovery/ramdisk/res/images/jp/version_mismatch.png
-recovery/ramdisk/res/images/jp/wipe_cache_confirm.png
-recovery/ramdisk/res/images/jp/wipe_cache_fail.png
-recovery/ramdisk/res/images/jp/wipe_cache_normal.png
-recovery/ramdisk/res/images/jp/wipe_cache_ok.png
-recovery/ramdisk/res/images/jp/wipe_cache_processing.png
-recovery/ramdisk/res/images/jp/wipe_cache_selected.png
-recovery/ramdisk/res/images/jp/wipe_data_confirm.png
-recovery/ramdisk/res/images/jp/wipe_data_fail.png
-recovery/ramdisk/res/images/jp/wipe_data_normal.png
-recovery/ramdisk/res/images/jp/wipe_data_ok.png
-recovery/ramdisk/res/images/jp/wipe_data_processing.png
-recovery/ramdisk/res/images/jp/wipe_data_selected.png
-recovery/ramdisk/res/images/jp/wipe_menu.png
-recovery/ramdisk/res/images/jp/wipe_normal.png
-recovery/ramdisk/res/images/jp/wipe_selected.png
-recovery/ramdisk/res/images/tc/back_main_normal.png
-recovery/ramdisk/res/images/tc/back_main_selected.png
-recovery/ramdisk/res/images/tc/back_normal.png
-recovery/ramdisk/res/images/tc/back_selected.png
-recovery/ramdisk/res/images/tc/choice_no_normal.png
-recovery/ramdisk/res/images/tc/choice_no_selected.png
-recovery/ramdisk/res/images/tc/choice_yes_normal.png
-recovery/ramdisk/res/images/tc/choice_yes_selected.png
-recovery/ramdisk/res/images/tc/flash_rom_fail.png
-recovery/ramdisk/res/images/tc/format_data_confirm.png
-recovery/ramdisk/res/images/tc/format_data_normal.png
-recovery/ramdisk/res/images/tc/format_data_selected.png
-recovery/ramdisk/res/images/tc/format_sdcard_confirm.png
-recovery/ramdisk/res/images/tc/format_sdcard_fail.png
-recovery/ramdisk/res/images/tc/format_sdcard_normal.png
-recovery/ramdisk/res/images/tc/format_sdcard_ok.png
-recovery/ramdisk/res/images/tc/format_sdcard_processing.png
-recovery/ramdisk/res/images/tc/format_sdcard_selected.png
-recovery/ramdisk/res/images/tc/install_update_confirm.png
-recovery/ramdisk/res/images/tc/install_update_fail.png
-recovery/ramdisk/res/images/tc/install_update_file_corrupt.png
-recovery/ramdisk/res/images/tc/install_update_low_battery.png
-recovery/ramdisk/res/images/tc/install_update_no_file.png
-recovery/ramdisk/res/images/tc/install_update_normal.png
-recovery/ramdisk/res/images/tc/install_update_ok.png
-recovery/ramdisk/res/images/tc/install_update_processing.png
-recovery/ramdisk/res/images/tc/install_update_selected.png
-recovery/ramdisk/res/images/tc/install_update_verify_fail.png
-recovery/ramdisk/res/images/tc/key_usage.png
-recovery/ramdisk/res/images/tc/key_usage_power.png
-recovery/ramdisk/res/images/tc/key_usage_volume.png
-recovery/ramdisk/res/images/tc/main_menu.png
-recovery/ramdisk/res/images/tc/mount_usb_normal.png
-recovery/ramdisk/res/images/tc/mount_usb_selected.png
-recovery/ramdisk/res/images/tc/power_off_normal.png
-recovery/ramdisk/res/images/tc/power_off_selected.png
-recovery/ramdisk/res/images/tc/reboot_menu.png
-recovery/ramdisk/res/images/tc/reboot_normal.png
-recovery/ramdisk/res/images/tc/reboot_selected.png
-recovery/ramdisk/res/images/tc/reboot_system1_latest_normal.png
-recovery/ramdisk/res/images/tc/reboot_system1_latest_selected.png
-recovery/ramdisk/res/images/tc/reboot_system1_normal.png
-recovery/ramdisk/res/images/tc/reboot_system1_selected.png
-recovery/ramdisk/res/images/tc/reboot_system2_latest_normal.png
-recovery/ramdisk/res/images/tc/reboot_system2_latest_selected.png
-recovery/ramdisk/res/images/tc/reboot_system2_normal.png
-recovery/ramdisk/res/images/tc/reboot_system2_selected.png
-recovery/ramdisk/res/images/tc/reboot_system_normal.png
-recovery/ramdisk/res/images/tc/reboot_system_selected.png
-recovery/ramdisk/res/images/tc/repart_sys_confirm.png
-recovery/ramdisk/res/images/tc/repart_sys_fail.png
-recovery/ramdisk/res/images/tc/repart_sys_noneed.png
-recovery/ramdisk/res/images/tc/repart_sys_normal.png
-recovery/ramdisk/res/images/tc/repart_sys_ok.png
-recovery/ramdisk/res/images/tc/repart_sys_selected.png
-recovery/ramdisk/res/images/tc/usb_connected.png
-recovery/ramdisk/res/images/tc/usb_no_connection.png
-recovery/ramdisk/res/images/tc/usb_umount_normal.png
-recovery/ramdisk/res/images/tc/usb_umount_selected.png
-recovery/ramdisk/res/images/tc/wipe_cache_confirm.png
-recovery/ramdisk/res/images/tc/wipe_cache_fail.png
-recovery/ramdisk/res/images/tc/wipe_cache_normal.png
-recovery/ramdisk/res/images/tc/wipe_cache_ok.png
-recovery/ramdisk/res/images/tc/wipe_cache_processing.png
-recovery/ramdisk/res/images/tc/wipe_cache_selected.png
-recovery/ramdisk/res/images/tc/wipe_data_confirm.png
-recovery/ramdisk/res/images/tc/wipe_data_fail.png
-recovery/ramdisk/res/images/tc/wipe_data_normal.png
-recovery/ramdisk/res/images/tc/wipe_data_ok.png
-recovery/ramdisk/res/images/tc/wipe_data_processing.png
-recovery/ramdisk/res/images/tc/wipe_data_selected.png
-recovery/ramdisk/res/images/tc/wipe_menu.png
-recovery/ramdisk/res/images/tc/wipe_normal.png
-recovery/ramdisk/res/images/tc/wipe_selected.png
-recovery/ramdisk/res/images/airflash_tip.png
-recovery/ramdisk/res/images/background.png
-recovery/ramdisk/res/images/battery_charging.png
-recovery/ramdisk/res/images/battery_drained.png
-recovery/ramdisk/res/images/battery_full.png
-recovery/ramdisk/res/images/battery_low.png
-recovery/ramdisk/res/images/battery_normal.png
-recovery/ramdisk/res/images/battery_prompt.png
-recovery/ramdisk/res/images/boot_monitor.png
-recovery/ramdisk/res/images/choose_language.png
-recovery/ramdisk/res/images/digit_0.png
-recovery/ramdisk/res/images/digit_1.png
-recovery/ramdisk/res/images/digit_2.png
-recovery/ramdisk/res/images/digit_3.png
-recovery/ramdisk/res/images/digit_4.png
-recovery/ramdisk/res/images/digit_5.png
-recovery/ramdisk/res/images/digit_6.png
-recovery/ramdisk/res/images/digit_7.png
-recovery/ramdisk/res/images/digit_8.png
-recovery/ramdisk/res/images/digit_9.png
-recovery/ramdisk/res/images/digit_percent.png
-recovery/ramdisk/res/images/digit_point.png
-recovery/ramdisk/res/images/enablefilecrypto_failed.png
-recovery/ramdisk/res/images/erasing_text.png
-recovery/ramdisk/res/images/error_text.png
-recovery/ramdisk/res/images/fastbootd.png
-recovery/ramdisk/res/images/font.png
-recovery/ramdisk/res/images/fs_mgr_mount_all.png
-recovery/ramdisk/res/images/icon_error.png
-recovery/ramdisk/res/images/icon_fail.png
-recovery/ramdisk/res/images/icon_installing.png
-recovery/ramdisk/res/images/icon_ok.png
-recovery/ramdisk/res/images/icon_smile.png
-recovery/ramdisk/res/images/icon_usb_connected.png
-recovery/ramdisk/res/images/icon_usb_no_connection.png
-recovery/ramdisk/res/images/init_user0_failed.png
-recovery/ramdisk/res/images/installing_security_text.png
-recovery/ramdisk/res/images/installing_text.png
-recovery/ramdisk/res/images/installing_tip1.png
-recovery/ramdisk/res/images/installing_tip2.png
-recovery/ramdisk/res/images/key_usage_all.png
-recovery/ramdisk/res/images/lang_ch_normal.png
-recovery/ramdisk/res/images/lang_ch_selected.png
-recovery/ramdisk/res/images/lang_en_normal.png
-recovery/ramdisk/res/images/lang_en_selected.png
-recovery/ramdisk/res/images/lang_tw_normal.png
-recovery/ramdisk/res/images/lang_tw_selected.png
-recovery/ramdisk/res/images/logo.png
-recovery/ramdisk/res/images/loop00000.png
-recovery/ramdisk/res/images/loop00001.png
-recovery/ramdisk/res/images/loop00002.png
-recovery/ramdisk/res/images/loop00003.png
-recovery/ramdisk/res/images/loop00004.png
-recovery/ramdisk/res/images/loop00005.png
-recovery/ramdisk/res/images/loop00006.png
-recovery/ramdisk/res/images/loop00007.png
-recovery/ramdisk/res/images/loop00008.png
-recovery/ramdisk/res/images/loop00009.png
-recovery/ramdisk/res/images/loop00010.png
-recovery/ramdisk/res/images/loop00011.png
-recovery/ramdisk/res/images/loop00012.png
-recovery/ramdisk/res/images/loop00013.png
-recovery/ramdisk/res/images/loop00014.png
-recovery/ramdisk/res/images/loop00015.png
-recovery/ramdisk/res/images/loop00016.png
-recovery/ramdisk/res/images/loop00017.png
-recovery/ramdisk/res/images/loop00018.png
-recovery/ramdisk/res/images/loop00019.png
-recovery/ramdisk/res/images/loop00020.png
-recovery/ramdisk/res/images/loop00021.png
-recovery/ramdisk/res/images/loop00022.png
-recovery/ramdisk/res/images/loop00023.png
-recovery/ramdisk/res/images/loop00024.png
-recovery/ramdisk/res/images/loop00025.png
-recovery/ramdisk/res/images/loop00026.png
-recovery/ramdisk/res/images/loop00027.png
-recovery/ramdisk/res/images/loop00028.png
-recovery/ramdisk/res/images/loop00029.png
-recovery/ramdisk/res/images/loop00030.png
-recovery/ramdisk/res/images/loop00031.png
-recovery/ramdisk/res/images/loop00032.png
-recovery/ramdisk/res/images/loop00033.png
-recovery/ramdisk/res/images/loop00034.png
-recovery/ramdisk/res/images/loop00035.png
-recovery/ramdisk/res/images/loop00036.png
-recovery/ramdisk/res/images/loop00037.png
-recovery/ramdisk/res/images/loop00038.png
-recovery/ramdisk/res/images/loop00039.png
-recovery/ramdisk/res/images/loop00040.png
-recovery/ramdisk/res/images/loop00041.png
-recovery/ramdisk/res/images/loop00042.png
-recovery/ramdisk/res/images/loop00043.png
-recovery/ramdisk/res/images/loop00044.png
-recovery/ramdisk/res/images/loop00045.png
-recovery/ramdisk/res/images/loop00046.png
-recovery/ramdisk/res/images/loop00047.png
-recovery/ramdisk/res/images/loop00048.png
-recovery/ramdisk/res/images/loop00049.png
-recovery/ramdisk/res/images/loop00050.png
-recovery/ramdisk/res/images/loop00051.png
-recovery/ramdisk/res/images/loop00052.png
-recovery/ramdisk/res/images/loop00053.png
-recovery/ramdisk/res/images/loop00054.png
-recovery/ramdisk/res/images/loop00055.png
-recovery/ramdisk/res/images/loop00056.png
-recovery/ramdisk/res/images/loop00057.png
-recovery/ramdisk/res/images/loop00058.png
-recovery/ramdisk/res/images/loop00059.png
-recovery/ramdisk/res/images/loop00060.png
-recovery/ramdisk/res/images/loop00061.png
-recovery/ramdisk/res/images/loop00062.png
-recovery/ramdisk/res/images/loop00063.png
-recovery/ramdisk/res/images/loop00064.png
-recovery/ramdisk/res/images/loop00065.png
-recovery/ramdisk/res/images/loop00066.png
-recovery/ramdisk/res/images/loop00067.png
-recovery/ramdisk/res/images/loop00068.png
-recovery/ramdisk/res/images/loop00069.png
-recovery/ramdisk/res/images/loop00070.png
-recovery/ramdisk/res/images/loop00071.png
-recovery/ramdisk/res/images/loop00072.png
-recovery/ramdisk/res/images/loop00073.png
-recovery/ramdisk/res/images/loop00074.png
-recovery/ramdisk/res/images/loop00075.png
-recovery/ramdisk/res/images/loop00076.png
-recovery/ramdisk/res/images/loop00077.png
-recovery/ramdisk/res/images/loop00078.png
-recovery/ramdisk/res/images/loop00079.png
-recovery/ramdisk/res/images/loop00080.png
-recovery/ramdisk/res/images/loop00081.png
-recovery/ramdisk/res/images/loop00082.png
-recovery/ramdisk/res/images/loop00083.png
-recovery/ramdisk/res/images/loop00084.png
-recovery/ramdisk/res/images/loop00085.png
-recovery/ramdisk/res/images/loop00086.png
-recovery/ramdisk/res/images/loop00087.png
-recovery/ramdisk/res/images/loop00088.png
-recovery/ramdisk/res/images/loop00089.png
-recovery/ramdisk/res/images/loop00090.png
-recovery/ramdisk/res/images/mi_logo.png
-recovery/ramdisk/res/images/mi_progress_empty.png
-recovery/ramdisk/res/images/mi_progress_fill.png
-recovery/ramdisk/res/images/no_command_text.png
-recovery/ramdisk/res/images/percent_symbol.png
-recovery/ramdisk/res/images/poco.png
-recovery/ramdisk/res/images/poco_textlogo.png
-recovery/ramdisk/res/images/pocophone.png
-recovery/ramdisk/res/images/progress_empty.png
-recovery/ramdisk/res/images/progress_fill.png
-recovery/ramdisk/res/images/redmi_logo.png
-recovery/ramdisk/res/images/redmi_textlogo.png
-recovery/ramdisk/res/images/rescue_party.png
-recovery/ramdisk/res/images/set_policy_failed.png
-recovery/ramdisk/res/images/stage_empty.png
-recovery/ramdisk/res/images/stage_fill.png
-recovery/ramdisk/res/images/state_connect_cn.png
-recovery/ramdisk/res/images/state_connect_i18n.png
-recovery/ramdisk/res/images/state_fastbootd.png
-recovery/ramdisk/res/images/state_unconnect_cn.png
-recovery/ramdisk/res/images/state_unconnect_i18n.png
-recovery/ramdisk/res/images/textlogo.png
-recovery/ramdisk/system/bin/hw/android.hardware.boot-service.qti.recovery
-recovery/ramdisk/system/bin/hw/android.hardware.fastboot-service.example_recovery
-recovery/ramdisk/system/bin/hw/android.hardware.health-service.qti_recovery
-recovery/ramdisk/system/bin/[
-recovery/ramdisk/system/bin/acpi
-recovery/ramdisk/system/bin/adbd
-recovery/ramdisk/system/bin/base64
-recovery/ramdisk/system/bin/basename
-recovery/ramdisk/system/bin/blockdev
-recovery/ramdisk/system/bin/brctl
-recovery/ramdisk/system/bin/cal
-recovery/ramdisk/system/bin/cat
-recovery/ramdisk/system/bin/chattr
-recovery/ramdisk/system/bin/chcon
-recovery/ramdisk/system/bin/chgrp
-recovery/ramdisk/system/bin/chmod
-recovery/ramdisk/system/bin/chown
-recovery/ramdisk/system/bin/chroot
-recovery/ramdisk/system/bin/chrt
-recovery/ramdisk/system/bin/cksum
-recovery/ramdisk/system/bin/clear
-recovery/ramdisk/system/bin/cmp
-recovery/ramdisk/system/bin/comm
-recovery/ramdisk/system/bin/cp
-recovery/ramdisk/system/bin/cpio
-recovery/ramdisk/system/bin/cut
-recovery/ramdisk/system/bin/date
-recovery/ramdisk/system/bin/dd
-recovery/ramdisk/system/bin/defrag.f2fs
-recovery/ramdisk/system/bin/devmem
-recovery/ramdisk/system/bin/df
-recovery/ramdisk/system/bin/diff
-recovery/ramdisk/system/bin/dirname
-recovery/ramdisk/system/bin/dmesg
-recovery/ramdisk/system/bin/dos2unix
-recovery/ramdisk/system/bin/du
-recovery/ramdisk/system/bin/dump.erofs
-recovery/ramdisk/system/bin/dump.f2fs
-recovery/ramdisk/system/bin/e2fsdroid
-recovery/ramdisk/system/bin/echo
-recovery/ramdisk/system/bin/egrep
-recovery/ramdisk/system/bin/env
-recovery/ramdisk/system/bin/expand
-recovery/ramdisk/system/bin/expr
-recovery/ramdisk/system/bin/fallocate
-recovery/ramdisk/system/bin/false
-recovery/ramdisk/system/bin/fastbootd
-recovery/ramdisk/system/bin/fgrep
-recovery/ramdisk/system/bin/file
-recovery/ramdisk/system/bin/find
-recovery/ramdisk/system/bin/flock
-recovery/ramdisk/system/bin/fmt
-recovery/ramdisk/system/bin/free
-recovery/ramdisk/system/bin/fsck.erofs
-recovery/ramdisk/system/bin/fsck.f2fs
-recovery/ramdisk/system/bin/fsync
-recovery/ramdisk/system/bin/getconf
-recovery/ramdisk/system/bin/getenforce
-recovery/ramdisk/system/bin/getevent
-recovery/ramdisk/system/bin/getprop
-recovery/ramdisk/system/bin/grep
-recovery/ramdisk/system/bin/groups
-recovery/ramdisk/system/bin/gunzip
-recovery/ramdisk/system/bin/gzip
-recovery/ramdisk/system/bin/head
-recovery/ramdisk/system/bin/hostname
-recovery/ramdisk/system/bin/hwclock
-recovery/ramdisk/system/bin/i2cdetect
-recovery/ramdisk/system/bin/i2cdump
-recovery/ramdisk/system/bin/i2cget
-recovery/ramdisk/system/bin/i2cset
-recovery/ramdisk/system/bin/iconv
-recovery/ramdisk/system/bin/id
-recovery/ramdisk/system/bin/ifconfig
-recovery/ramdisk/system/bin/init
-recovery/ramdisk/system/bin/inotifyd
-recovery/ramdisk/system/bin/insmod
-recovery/ramdisk/system/bin/install
-recovery/ramdisk/system/bin/ionice
-recovery/ramdisk/system/bin/iorenice
-recovery/ramdisk/system/bin/kill
-recovery/ramdisk/system/bin/killall
-recovery/ramdisk/system/bin/linker64
-recovery/ramdisk/system/bin/linker_asan64
-recovery/ramdisk/system/bin/linker_hwasan64
-recovery/ramdisk/system/bin/ln
-recovery/ramdisk/system/bin/load_policy
-recovery/ramdisk/system/bin/log
-recovery/ramdisk/system/bin/logcat
-recovery/ramdisk/system/bin/logd
-recovery/ramdisk/system/bin/logger
-recovery/ramdisk/system/bin/logname
-recovery/ramdisk/system/bin/losetup
-recovery/ramdisk/system/bin/ls
-recovery/ramdisk/system/bin/lsattr
-recovery/ramdisk/system/bin/lsmod
-recovery/ramdisk/system/bin/lsof
-recovery/ramdisk/system/bin/lspci
-recovery/ramdisk/system/bin/lsusb
-recovery/ramdisk/system/bin/make_f2fs
-recovery/ramdisk/system/bin/md5sum
-recovery/ramdisk/system/bin/microcom
-recovery/ramdisk/system/bin/mkdir
-recovery/ramdisk/system/bin/mke2fs
-recovery/ramdisk/system/bin/mkfifo
-recovery/ramdisk/system/bin/mkfs.erofs
-recovery/ramdisk/system/bin/mkfs.ext2
-recovery/ramdisk/system/bin/mkfs.ext3
-recovery/ramdisk/system/bin/mkfs.ext4
-recovery/ramdisk/system/bin/mknod
-recovery/ramdisk/system/bin/mkswap
-recovery/ramdisk/system/bin/mktemp
-recovery/ramdisk/system/bin/modinfo
-recovery/ramdisk/system/bin/modprobe
-recovery/ramdisk/system/bin/more
-recovery/ramdisk/system/bin/mount
-recovery/ramdisk/system/bin/mountpoint
-recovery/ramdisk/system/bin/mv
-recovery/ramdisk/system/bin/nc
-recovery/ramdisk/system/bin/netcat
-recovery/ramdisk/system/bin/netstat
-recovery/ramdisk/system/bin/nice
-recovery/ramdisk/system/bin/nl
-recovery/ramdisk/system/bin/nohup
-recovery/ramdisk/system/bin/nproc
-recovery/ramdisk/system/bin/nsenter
-recovery/ramdisk/system/bin/od
-recovery/ramdisk/system/bin/paste
-recovery/ramdisk/system/bin/patch
-recovery/ramdisk/system/bin/pgrep
-recovery/ramdisk/system/bin/pidof
-recovery/ramdisk/system/bin/pkill
-recovery/ramdisk/system/bin/pmap
-recovery/ramdisk/system/bin/printenv
-recovery/ramdisk/system/bin/printf
-recovery/ramdisk/system/bin/ps
-recovery/ramdisk/system/bin/pwd
-recovery/ramdisk/system/bin/readelf
-recovery/ramdisk/system/bin/readlink
-recovery/ramdisk/system/bin/realpath
-recovery/ramdisk/system/bin/reboot
-recovery/ramdisk/system/bin/recovery
-recovery/ramdisk/system/bin/renice
-recovery/ramdisk/system/bin/resize.f2fs
-recovery/ramdisk/system/bin/restorecon
-recovery/ramdisk/system/bin/rm
-recovery/ramdisk/system/bin/rmdir
-recovery/ramdisk/system/bin/rmmod
-recovery/ramdisk/system/bin/rtcwake
-recovery/ramdisk/system/bin/runcon
-recovery/ramdisk/system/bin/sed
-recovery/ramdisk/system/bin/sendevent
-recovery/ramdisk/system/bin/seq
-recovery/ramdisk/system/bin/servicemanager
-recovery/ramdisk/system/bin/setenforce
-recovery/ramdisk/system/bin/setprop
-recovery/ramdisk/system/bin/setsid
-recovery/ramdisk/system/bin/sh
-recovery/ramdisk/system/bin/sha1sum
-recovery/ramdisk/system/bin/sha224sum
-recovery/ramdisk/system/bin/sha256sum
-recovery/ramdisk/system/bin/sha384sum
-recovery/ramdisk/system/bin/sha512sum
-recovery/ramdisk/system/bin/sleep
-recovery/ramdisk/system/bin/sload_f2fs
-recovery/ramdisk/system/bin/sort
-recovery/ramdisk/system/bin/split
-recovery/ramdisk/system/bin/start
-recovery/ramdisk/system/bin/stat
-recovery/ramdisk/system/bin/stop
-recovery/ramdisk/system/bin/strings
-recovery/ramdisk/system/bin/stty
-recovery/ramdisk/system/bin/swapoff
-recovery/ramdisk/system/bin/swapon
-recovery/ramdisk/system/bin/sync
-recovery/ramdisk/system/bin/sysctl
-recovery/ramdisk/system/bin/tac
-recovery/ramdisk/system/bin/tail
-recovery/ramdisk/system/bin/tar
-recovery/ramdisk/system/bin/taskset
-recovery/ramdisk/system/bin/tee
-recovery/ramdisk/system/bin/test
-recovery/ramdisk/system/bin/time
-recovery/ramdisk/system/bin/timeout
-recovery/ramdisk/system/bin/toolbox
-recovery/ramdisk/system/bin/top
-recovery/ramdisk/system/bin/touch
-recovery/ramdisk/system/bin/toybox
-recovery/ramdisk/system/bin/tr
-recovery/ramdisk/system/bin/true
-recovery/ramdisk/system/bin/truncate
-recovery/ramdisk/system/bin/tty
-recovery/ramdisk/system/bin/uclampset
-recovery/ramdisk/system/bin/ueventd
-recovery/ramdisk/system/bin/ulimit
-recovery/ramdisk/system/bin/umount
-recovery/ramdisk/system/bin/uname
-recovery/ramdisk/system/bin/uniq
-recovery/ramdisk/system/bin/unix2dos
-recovery/ramdisk/system/bin/unlink
-recovery/ramdisk/system/bin/unshare
-recovery/ramdisk/system/bin/unzip
-recovery/ramdisk/system/bin/update_engine_sideload
-recovery/ramdisk/system/bin/uptime
-recovery/ramdisk/system/bin/usleep
-recovery/ramdisk/system/bin/uudecode
-recovery/ramdisk/system/bin/uuencode
-recovery/ramdisk/system/bin/uuidgen
-recovery/ramdisk/system/bin/vi
-recovery/ramdisk/system/bin/vmstat
-recovery/ramdisk/system/bin/watch
-recovery/ramdisk/system/bin/watchdogd
-recovery/ramdisk/system/bin/wc
-recovery/ramdisk/system/bin/which
-recovery/ramdisk/system/bin/whoami
-recovery/ramdisk/system/bin/xargs
-recovery/ramdisk/system/bin/xxd
-recovery/ramdisk/system/bin/yes
-recovery/ramdisk/system/bin/zcat
-recovery/ramdisk/system/bin/zipinfo
-recovery/ramdisk/system/bin/ziptool
-recovery/ramdisk/system/etc/init/hw/init.rc
-recovery/ramdisk/system/etc/init/android.hardware.boot-service.qti.recovery.rc
-recovery/ramdisk/system/etc/init/android.hardware.fastboot-service.example_recovery.rc
-recovery/ramdisk/system/etc/init/android.hardware.health-service.qti_recovery.rc
-recovery/ramdisk/system/etc/init/logd.rc
-recovery/ramdisk/system/etc/init/recovery-persist.rc
-recovery/ramdisk/system/etc/init/recovery-refresh.rc
-recovery/ramdisk/system/etc/init/servicemanager.recovery.rc
-recovery/ramdisk/system/etc/security/otacerts.zip
-recovery/ramdisk/system/etc/vintf/manifest/android.hardware.fastboot-service.example.xml
-recovery/ramdisk/system/etc/vintf/manifest/android.hardware.health-service.qti.xml
-recovery/ramdisk/system/etc/vintf/manifest/boot-service.qti.xml
-recovery/ramdisk/system/etc/cgroups.json
-recovery/ramdisk/system/etc/copylib.txt
-recovery/ramdisk/system/etc/ld.config.txt
-recovery/ramdisk/system/etc/mke2fs.conf
-recovery/ramdisk/system/etc/recovery.fstab
-recovery/ramdisk/system/etc/ueventd.rc
-recovery/ramdisk/system/lib64/hw/android.hardware.health@2.0-impl-default.so
-recovery/ramdisk/system/lib64/android.hardware.boot-V1-ndk.so
-recovery/ramdisk/system/lib64/android.hardware.boot@1.0.so
-recovery/ramdisk/system/lib64/android.hardware.boot@1.1.so
-recovery/ramdisk/system/lib64/android.hardware.boot@1.2.so
-recovery/ramdisk/system/lib64/android.hardware.fastboot-V1-ndk.so
-recovery/ramdisk/system/lib64/android.hardware.fastboot@1.0.so
-recovery/ramdisk/system/lib64/android.hardware.fastboot@1.1.so
-recovery/ramdisk/system/lib64/android.hardware.health-V2-ndk.so
-recovery/ramdisk/system/lib64/android.hardware.health@1.0.so
-recovery/ramdisk/system/lib64/android.hardware.health@2.0.so
-recovery/ramdisk/system/lib64/ld-android.so
-recovery/ramdisk/system/lib64/libadbd_auth.so
-recovery/ramdisk/system/lib64/libadbd_fs.so
-recovery/ramdisk/system/lib64/libasyncio.so
-recovery/ramdisk/system/lib64/libbase.so
-recovery/ramdisk/system/lib64/libbinder.so
-recovery/ramdisk/system/lib64/libbinder_ndk.so
-recovery/ramdisk/system/lib64/libboot_control_client.so
-recovery/ramdisk/system/lib64/libboot_control_qti.so
-recovery/ramdisk/system/lib64/libbootloader_message.so
-recovery/ramdisk/system/lib64/libc++.so
-recovery/ramdisk/system/lib64/libc.so
-recovery/ramdisk/system/lib64/libcap.so
-recovery/ramdisk/system/lib64/libcgrouprc.so
-recovery/ramdisk/system/lib64/libcrypto.so
-recovery/ramdisk/system/lib64/libcrypto_utils.so
-recovery/ramdisk/system/lib64/libcutils.so
-recovery/ramdisk/system/lib64/libdl.so
-recovery/ramdisk/system/lib64/libext2_blkid.so
-recovery/ramdisk/system/lib64/libext2_com_err.so
-recovery/ramdisk/system/lib64/libext2_e2p.so
-recovery/ramdisk/system/lib64/libext2_misc.so
-recovery/ramdisk/system/lib64/libext2_quota.so
-recovery/ramdisk/system/lib64/libext2_uuid.so
-recovery/ramdisk/system/lib64/libext2fs.so
-recovery/ramdisk/system/lib64/libext4_utils.so
-recovery/ramdisk/system/lib64/libfec.so
-recovery/ramdisk/system/lib64/libfs_mgr.so
-recovery/ramdisk/system/lib64/libgsi.so
-recovery/ramdisk/system/lib64/libhidl-gen-utils.so
-recovery/ramdisk/system/lib64/libhidlbase.so
-recovery/ramdisk/system/lib64/libion.so
-recovery/ramdisk/system/lib64/libjsoncpp.so
-recovery/ramdisk/system/lib64/libkeyutils.so
-recovery/ramdisk/system/lib64/liblog.so
-recovery/ramdisk/system/lib64/liblogwrap.so
-recovery/ramdisk/system/lib64/liblp.so
-recovery/ramdisk/system/lib64/liblz4.so
-recovery/ramdisk/system/lib64/liblzma.so
-recovery/ramdisk/system/lib64/libm.so
-recovery/ramdisk/system/lib64/libmdnssd.so
-recovery/ramdisk/system/lib64/libpackagelistparser.so
-recovery/ramdisk/system/lib64/libpcre2.so
-recovery/ramdisk/system/lib64/libpng.so
-recovery/ramdisk/system/lib64/libprocessgroup.so
-recovery/ramdisk/system/lib64/libprocessgroup_setup.so
-recovery/ramdisk/system/lib64/libprotobuf-cpp-lite.so
-recovery/ramdisk/system/lib64/librecovery_ui.so
-recovery/ramdisk/system/lib64/librecovery_ui_ext.so
-recovery/ramdisk/system/lib64/librecovery_updater.so
-recovery/ramdisk/system/lib64/libselinux.so
-recovery/ramdisk/system/lib64/libsparse.so
-recovery/ramdisk/system/lib64/libsquashfs_utils.so
-recovery/ramdisk/system/lib64/libssl.so
-recovery/ramdisk/system/lib64/libsysutils.so
-recovery/ramdisk/system/lib64/libtinyxml2.so
-recovery/ramdisk/system/lib64/libunwindstack.so
-recovery/ramdisk/system/lib64/libutils.so
-recovery/ramdisk/system/lib64/libvintf.so
-recovery/ramdisk/system/lib64/libz.so
-recovery/ramdisk/system/lib64/libziparchive.so
-recovery/ramdisk/vendor/etc/charger_fstab.qti
-recovery/ramdisk/vendor/lib/modules/adsp_loader_dlkm.ko
-recovery/ramdisk/vendor/lib/modules/gpr_dlkm.ko
-recovery/ramdisk/vendor/lib/modules/q6_notifier_dlkm.ko
-recovery/ramdisk/vendor/lib/modules/q6_pdr_dlkm.ko
-recovery/ramdisk/vendor/lib/modules/snd_event_dlkm.ko
-recovery/ramdisk/vendor/lib/modules/spf_core_dlkm.ko
-recovery/ramdisk/vendor_dlkm/etc
-recovery/ramdisk/bin
-recovery/ramdisk/bugreports
-recovery/ramdisk/default.prop
-recovery/ramdisk/etc
-recovery/ramdisk/init
-recovery/ramdisk/init.recovery.hardware.rc
-recovery/ramdisk/init.recovery.qcom.rc
-recovery/ramdisk/miui.factoryreset.fstab
-recovery/ramdisk/miui.factoryreset.rc
-recovery/ramdisk/odm_file_contexts
-recovery/ramdisk/odm_property_contexts
-recovery/ramdisk/plat_file_contexts
-recovery/ramdisk/plat_property_contexts
-recovery/ramdisk/plat_service_contexts
-recovery/ramdisk/product
-recovery/ramdisk/product_file_contexts
-recovery/ramdisk/product_property_contexts
-recovery/ramdisk/product_service_contexts
-recovery/ramdisk/prop.default
-recovery/ramdisk/sepolicy
-recovery/ramdisk/system_ext
-recovery/ramdisk/system_ext_file_contexts
-recovery/ramdisk/system_ext_property_contexts
-recovery/ramdisk/system_ext_service_contexts
-recovery/ramdisk/vendor_file_contexts
-recovery/ramdisk/vendor_property_contexts
-recovery/ramdisk/vendor_service_contexts
-recovery/info.txt
-rescue.img
-system/odm/app
-system/odm/bin
-system/odm/etc
-system/odm/firmware
-system/odm/framework
-system/odm/lib
-system/odm/lib64
-system/odm/overlay
-system/odm/priv-app
-system/odm/usr
-system/odm_dlkm/etc
-system/system/apex/com.android.apex.cts.shim.apex
-system/system/apex/com.android.i18n.apex
-system/system/apex/com.android.rkpd.apex
-system/system/apex/com.android.runtime.apex
-system/system/apex/com.android.uwb.capex
-system/system/apex/com.android.virt.apex
-system/system/apex/com.android.vndk.current.apex
-system/system/apex/com.google.android.adbd.apex
-system/system/apex/com.google.android.adservices.apex
-system/system/apex/com.google.android.appsearch.apex
-system/system/apex/com.google.android.art.apex
-system/system/apex/com.google.android.cellbroadcast.apex
-system/system/apex/com.google.android.configinfrastructure.apex
-system/system/apex/com.google.android.conscrypt.apex
-system/system/apex/com.google.android.devicelock.apex
-system/system/apex/com.google.android.extservices.apex
-system/system/apex/com.google.android.healthfitness.apex
-system/system/apex/com.google.android.ipsec.apex
-system/system/apex/com.google.android.media.apex
-system/system/apex/com.google.android.media.swcodec.apex
-system/system/apex/com.google.android.mediaprovider.apex
-system/system/apex/com.google.android.neuralnetworks.apex
-system/system/apex/com.google.android.ondevicepersonalization.apex
-system/system/apex/com.google.android.os.statsd.apex
-system/system/apex/com.google.android.permission.apex
-system/system/apex/com.google.android.resolv.apex
-system/system/apex/com.google.android.scheduling.apex
-system/system/apex/com.google.android.sdkext.apex
-system/system/apex/com.google.android.tethering.apex
-system/system/apex/com.google.android.tzdata5.apex
-system/system/apex/com.google.android.wifi.apex
-system/system/apex/com.google.mainline.primary.libs.apex
-system/system/app/BasicDreams/oat/arm64/BasicDreams.odex
-system/system/app/BasicDreams/oat/arm64/BasicDreams.vdex
-system/system/app/BasicDreams/BasicDreams.apk
-system/system/app/Bluetooth/lib/arm64/libbluetooth_qti_jni.so
-system/system/app/Bluetooth/lib/arm64/libspeex_jni.so
-system/system/app/Bluetooth/oat/arm64/Bluetooth.odex
-system/system/app/Bluetooth/oat/arm64/Bluetooth.vdex
-system/system/app/Bluetooth/Bluetooth.apk
-system/system/app/BluetoothMidiService/oat/arm64/BluetoothMidiService.odex
-system/system/app/BluetoothMidiService/oat/arm64/BluetoothMidiService.vdex
-system/system/app/BluetoothMidiService/BluetoothMidiService.apk
-system/system/app/BookmarkProvider/oat/arm64/BookmarkProvider.odex
-system/system/app/BookmarkProvider/oat/arm64/BookmarkProvider.vdex
-system/system/app/BookmarkProvider/BookmarkProvider.apk
-system/system/app/CameraExtensionsProxy/oat/arm64/CameraExtensionsProxy.odex
-system/system/app/CameraExtensionsProxy/oat/arm64/CameraExtensionsProxy.vdex
-system/system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-hdpi.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-ldpi.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-mdpi.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-tvdpi.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-xhdpi.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-xxhdpi.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-xxxhdpi.apk
-system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk
-system/system/app/CarrierDefaultApp/oat/arm64/CarrierDefaultApp.odex
-system/system/app/CarrierDefaultApp/oat/arm64/CarrierDefaultApp.vdex
-system/system/app/CarrierDefaultApp/CarrierDefaultApp.apk
-system/system/app/CertInstaller/oat/arm64/CertInstaller.odex
-system/system/app/CertInstaller/oat/arm64/CertInstaller.vdex
-system/system/app/CertInstaller/CertInstaller.apk
-system/system/app/CompanionDeviceManager/oat/arm64/CompanionDeviceManager.odex
-system/system/app/CompanionDeviceManager/oat/arm64/CompanionDeviceManager.vdex
-system/system/app/CompanionDeviceManager/CompanionDeviceManager.apk
-system/system/app/EasterEgg/oat/arm64/EasterEgg.odex
-system/system/app/EasterEgg/oat/arm64/EasterEgg.vdex
-system/system/app/EasterEgg/EasterEgg.apk
-system/system/app/GoogleExtShared/oat/arm64/GoogleExtShared.odex
-system/system/app/GoogleExtShared/oat/arm64/GoogleExtShared.vdex
-system/system/app/GoogleExtShared/GoogleExtShared.apk
-system/system/app/GooglePrintRecommendationService/oat/arm64/GooglePrintRecommendationService.odex
-system/system/app/GooglePrintRecommendationService/oat/arm64/GooglePrintRecommendationService.vdex
-system/system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk
-system/system/app/KeyChain/oat/arm64/KeyChain.odex
-system/system/app/KeyChain/oat/arm64/KeyChain.vdex
-system/system/app/KeyChain/KeyChain.apk
-system/system/app/PacProcessor/oat/arm64/PacProcessor.odex
-system/system/app/PacProcessor/oat/arm64/PacProcessor.vdex
-system/system/app/PacProcessor/PacProcessor.apk
-system/system/app/PartnerBookmarksProvider/oat/arm64/PartnerBookmarksProvider.odex
-system/system/app/PartnerBookmarksProvider/oat/arm64/PartnerBookmarksProvider.vdex
-system/system/app/PartnerBookmarksProvider/PartnerBookmarksProvider.apk
-system/system/app/PowerKeeper/oat/arm64/PowerKeeper.odex
-system/system/app/PowerKeeper/oat/arm64/PowerKeeper.vdex
-system/system/app/PowerKeeper/PowerKeeper.apk
-system/system/app/SecureElement/oat/arm64/SecureElement.odex
-system/system/app/SecureElement/oat/arm64/SecureElement.vdex
-system/system/app/SecureElement/SecureElement.apk
-system/system/app/SimAppDialog/oat/arm64/SimAppDialog.odex
-system/system/app/SimAppDialog/oat/arm64/SimAppDialog.vdex
-system/system/app/SimAppDialog/SimAppDialog.apk
-system/system/app/Stk/oat/arm64/Stk.odex
-system/system/app/Stk/oat/arm64/Stk.vdex
-system/system/app/Stk/Stk.apk
-system/system/app/Traceur/oat/arm64/Traceur.odex
-system/system/app/Traceur/oat/arm64/Traceur.vdex
-system/system/app/Traceur/Traceur.apk
-system/system/app/WallpaperBackup/oat/arm64/WallpaperBackup.odex
-system/system/app/WallpaperBackup/oat/arm64/WallpaperBackup.vdex
-system/system/app/WallpaperBackup/WallpaperBackup.apk
-system/system/bin/bootstrap/linker64
-system/system/bin/bootstrap/linker_asan64
-system/system/bin/bootstrap/linker_hwasan64
-system/system/bin/hw/android.hidl.allocator@1.0-service
-system/system/bin/hw/android.system.suspend-service
-system/system/bin/[
-system/system/bin/abb
-system/system/bin/abx
-system/system/bin/abx2xml
-system/system/bin/acpi
-system/system/bin/am
-system/system/bin/apexd
-system/system/bin/app_process
-system/system/bin/app_process64
-system/system/bin/appops
-system/system/bin/appwidget
-system/system/bin/atrace
-system/system/bin/audioserver
-system/system/bin/auditctl
-system/system/bin/awk
-system/system/bin/badblocks
-system/system/bin/base64
-system/system/bin/basename
-system/system/bin/bc
-system/system/bin/bcc
-system/system/bin/blank_screen
-system/system/bin/blkid
-system/system/bin/blockdev
-system/system/bin/bmgr
-system/system/bin/bootanimation
-system/system/bin/bootlog.sh
-system/system/bin/bootstat
-system/system/bin/boringssl_self_test64
-system/system/bin/bpfloader
-system/system/bin/brctl
-system/system/bin/btfloader
-system/system/bin/bu
-system/system/bin/bugreport
-system/system/bin/bugreport_procdump
-system/system/bin/bugreportz
-system/system/bin/bunzip2
-system/system/bin/bzcat
-system/system/bin/bzip2
-system/system/bin/cal
-system/system/bin/cameraserver
-system/system/bin/cat
-system/system/bin/charger
-system/system/bin/chattr
-system/system/bin/chcon
-system/system/bin/chgrp
-system/system/bin/chmod
-system/system/bin/chown
-system/system/bin/chroot
-system/system/bin/chrt
-system/system/bin/cksum
-system/system/bin/clean_scratch_files
-system/system/bin/clear
-system/system/bin/cmd
-system/system/bin/cmp
-system/system/bin/comm
-system/system/bin/content
-system/system/bin/cp
-system/system/bin/cpio
-system/system/bin/cppreopts.sh
-system/system/bin/credstore
-system/system/bin/curl
-system/system/bin/cut
-system/system/bin/date
-system/system/bin/dd
-system/system/bin/debuggerd
-system/system/bin/defrag.f2fs
-system/system/bin/device_config
-system/system/bin/devmem
-system/system/bin/df
-system/system/bin/diff
-system/system/bin/dirname
-system/system/bin/disable-verity
-system/system/bin/dmabuf_dump
-system/system/bin/dmctl
-system/system/bin/dmesg
-system/system/bin/dmesgd
-system/system/bin/dnsmasq
-system/system/bin/dos2unix
-system/system/bin/dpm
-system/system/bin/drmserver64
-system/system/bin/du
-system/system/bin/dump.erofs
-system/system/bin/dump.f2fs
-system/system/bin/dumpstate
-system/system/bin/dumpsys
-system/system/bin/e2freefrag
-system/system/bin/e2fsck
-system/system/bin/e2fsdroid
-system/system/bin/echo
-system/system/bin/egrep
-system/system/bin/enable-verity
-system/system/bin/env
-system/system/bin/expand
-system/system/bin/expr
-system/system/bin/extra_free_kbytes.sh
-system/system/bin/fallocate
-system/system/bin/false
-system/system/bin/fgrep
-system/system/bin/file
-system/system/bin/find
-system/system/bin/flags_health_check
-system/system/bin/flock
-system/system/bin/fmt
-system/system/bin/free
-system/system/bin/fsck.erofs
-system/system/bin/fsck.exfat
-system/system/bin/fsck.f2fs
-system/system/bin/fsck_msdos
-system/system/bin/fsverity_init
-system/system/bin/fsync
-system/system/bin/gatekeeperd
-system/system/bin/getconf
-system/system/bin/getenforce
-system/system/bin/getevent
-system/system/bin/getprop
-system/system/bin/gpuservice
-system/system/bin/grep
-system/system/bin/groups
-system/system/bin/gsi_tool
-system/system/bin/gsid
-system/system/bin/gunzip
-system/system/bin/gzip
-system/system/bin/head
-system/system/bin/heapprofd
-system/system/bin/hid
-system/system/bin/hostname
-system/system/bin/hwclock
-system/system/bin/hwservicemanager
-system/system/bin/i2cdetect
-system/system/bin/i2cdump
-system/system/bin/i2cget
-system/system/bin/i2cset
-system/system/bin/iconv
-system/system/bin/id
-system/system/bin/idmap2
-system/system/bin/idmap2d
-system/system/bin/ifconfig
-system/system/bin/ime
-system/system/bin/incident
-system/system/bin/incident-helper-cmd
-system/system/bin/incident_helper
-system/system/bin/incidentd
-system/system/bin/init
-system/system/bin/inotifyd
-system/system/bin/input
-system/system/bin/insmod
-system/system/bin/install
-system/system/bin/installd
-system/system/bin/ionice
-system/system/bin/iorenice
-system/system/bin/ip
-system/system/bin/ip-up-vpn
-system/system/bin/ip-wrapper-1.0
-system/system/bin/ip6tables
-system/system/bin/ip6tables-restore
-system/system/bin/ip6tables-save
-system/system/bin/ip6tables-wrapper-1.0
-system/system/bin/iperf3
-system/system/bin/iptables
-system/system/bin/iptables-restore
-system/system/bin/iptables-save
-system/system/bin/iptables-wrapper-1.0
-system/system/bin/iw
-system/system/bin/keystore2
-system/system/bin/keystore_cli_v2
-system/system/bin/kill
-system/system/bin/killall
-system/system/bin/ld.mc
-system/system/bin/ldd
-system/system/bin/librank
-system/system/bin/linker64
-system/system/bin/linker_asan64
-system/system/bin/linker_hwasan64
-system/system/bin/llkd
-system/system/bin/lmkd
-system/system/bin/ln
-system/system/bin/load_policy
-system/system/bin/locksettings
-system/system/bin/log
-system/system/bin/logcat
-system/system/bin/logcatkernel.sh
-system/system/bin/logcatlog.sh
-system/system/bin/logd
-system/system/bin/logger
-system/system/bin/logname
-system/system/bin/logwrapper
-system/system/bin/losetup
-system/system/bin/lpdump
-system/system/bin/lpdumpd
-system/system/bin/ls
-system/system/bin/lsattr
-system/system/bin/lshal
-system/system/bin/lsmod
-system/system/bin/lsof
-system/system/bin/lspci
-system/system/bin/lsusb
-system/system/bin/make_f2fs
-system/system/bin/md5sum
-system/system/bin/mdnsd
-system/system/bin/mediaextractor
-system/system/bin/mediametrics
-system/system/bin/mediaserver64
-system/system/bin/mediaserverwrapper
-system/system/bin/micd
-system/system/bin/microcom
-system/system/bin/migrate_legacy_obb_data
-system/system/bin/mini-keyctl
-system/system/bin/mixerops_objdump
-system/system/bin/mkdir
-system/system/bin/mke2fs
-system/system/bin/mkfifo
-system/system/bin/mkfs.erofs
-system/system/bin/mkfs.exfat
-system/system/bin/mkfs.ext2
-system/system/bin/mkfs.ext3
-system/system/bin/mkfs.ext4
-system/system/bin/mknod
-system/system/bin/mkswap
-system/system/bin/mktemp
-system/system/bin/mm_events
-system/system/bin/modinfo
-system/system/bin/modprobe
-system/system/bin/monkey
-system/system/bin/more
-system/system/bin/mount
-system/system/bin/mountpoint
-system/system/bin/mtdoopslog.sh
-system/system/bin/mtectrl
-system/system/bin/mtpd
-system/system/bin/mv
-system/system/bin/mv_files.sh
-system/system/bin/nc
-system/system/bin/ndc
-system/system/bin/ndc-wrapper-1.0
-system/system/bin/netcat
-system/system/bin/netd
-system/system/bin/netstat
-system/system/bin/netutils-wrapper-1.0
-system/system/bin/newfs_msdos
-system/system/bin/nice
-system/system/bin/nl
-system/system/bin/nohup
-system/system/bin/nproc
-system/system/bin/nsenter
-system/system/bin/od
-system/system/bin/odsign
-system/system/bin/otapreopt
-system/system/bin/otapreopt_chroot
-system/system/bin/otapreopt_script
-system/system/bin/otapreopt_slot
-system/system/bin/paste
-system/system/bin/patch
-system/system/bin/perfetto
-system/system/bin/pgrep
-system/system/bin/pidof
-system/system/bin/ping
-system/system/bin/ping6
-system/system/bin/pkill
-system/system/bin/pm
-system/system/bin/pmap
-system/system/bin/poweroff_charger_log.sh
-system/system/bin/pppd
-system/system/bin/preloads_copy.sh
-system/system/bin/preopt2cachename
-system/system/bin/printenv
-system/system/bin/printf
-system/system/bin/prng_seeder
-system/system/bin/procmem
-system/system/bin/procrank
-system/system/bin/ps
-system/system/bin/pwd
-system/system/bin/racoon
-system/system/bin/readelf
-system/system/bin/readlink
-system/system/bin/realpath
-system/system/bin/reboot
-system/system/bin/recovery-persist
-system/system/bin/recovery-refresh
-system/system/bin/remount
-system/system/bin/renice
-system/system/bin/requestsync
-system/system/bin/resize.f2fs
-system/system/bin/resize2fs
-system/system/bin/restorecon
-system/system/bin/rm
-system/system/bin/rmdir
-system/system/bin/rmmod
-system/system/bin/rss_hwm_reset
-system/system/bin/rtcwake
-system/system/bin/run-as
-system/system/bin/runcon
-system/system/bin/schedtest
-system/system/bin/screencap
-system/system/bin/screenrecord
-system/system/bin/sdcard
-system/system/bin/secdiscard
-system/system/bin/secilc
-system/system/bin/sed
-system/system/bin/sendevent
-system/system/bin/sensorservice
-system/system/bin/seq
-system/system/bin/service
-system/system/bin/servicemanager
-system/system/bin/set-verity-state
-system/system/bin/setenforce
-system/system/bin/setprop
-system/system/bin/setsid
-system/system/bin/settaskprofile
-system/system/bin/settings
-system/system/bin/sgdisk
-system/system/bin/sh
-system/system/bin/sha1sum
-system/system/bin/sha224sum
-system/system/bin/sha256sum
-system/system/bin/sha384sum
-system/system/bin/sha512sum
-system/system/bin/showmap
-system/system/bin/simpleperf
-system/system/bin/simpleperf_app_runner
-system/system/bin/sleep
-system/system/bin/sload_f2fs
-system/system/bin/sm
-system/system/bin/snapshotctl
-system/system/bin/snapuserd
-system/system/bin/sort
-system/system/bin/spkcal
-system/system/bin/split
-system/system/bin/ss
-system/system/bin/start
-system/system/bin/stat
-system/system/bin/stop
-system/system/bin/storaged
-system/system/bin/strace
-system/system/bin/strings
-system/system/bin/stty
-system/system/bin/surfaceflinger
-system/system/bin/svc
-system/system/bin/swapoff
-system/system/bin/swapon
-system/system/bin/sync
-system/system/bin/sysctl
-system/system/bin/tac
-system/system/bin/tail
-system/system/bin/tar
-system/system/bin/taskset
-system/system/bin/tc
-system/system/bin/tc-wrapper-1.0
-system/system/bin/tcpdump
-system/system/bin/tee
-system/system/bin/telecom
-system/system/bin/test
-system/system/bin/test-mixer
-system/system/bin/test-resampler
-system/system/bin/time
-system/system/bin/timeout
-system/system/bin/tinycap
-system/system/bin/tinymix
-system/system/bin/tinypcminfo
-system/system/bin/tinyplay
-system/system/bin/tombstoned
-system/system/bin/toolbox
-system/system/bin/top
-system/system/bin/touch
-system/system/bin/toybox
-system/system/bin/tr
-system/system/bin/traced
-system/system/bin/traced_perf
-system/system/bin/traced_probes
-system/system/bin/trigger_perfetto
-system/system/bin/true
-system/system/bin/truncate
-system/system/bin/tty
-system/system/bin/tune2fs
-system/system/bin/uclampset
-system/system/bin/ueventd
-system/system/bin/uiautomator
-system/system/bin/uinput
-system/system/bin/ulimit
-system/system/bin/umount
-system/system/bin/uname
-system/system/bin/uncrypt
-system/system/bin/uniq
-system/system/bin/unix2dos
-system/system/bin/unlink
-system/system/bin/unshare
-system/system/bin/unzip
-system/system/bin/update_engine
-system/system/bin/update_engine_client
-system/system/bin/update_verifier
-system/system/bin/uptime
-system/system/bin/usbd
-system/system/bin/usleep
-system/system/bin/uudecode
-system/system/bin/uuencode
-system/system/bin/uuidgen
-system/system/bin/vdc
-system/system/bin/vi
-system/system/bin/viewcompiler
-system/system/bin/vmstat
-system/system/bin/vold
-system/system/bin/vold_prepare_subdirs
-system/system/bin/vr
-system/system/bin/watch
-system/system/bin/watchdogd
-system/system/bin/wc
-system/system/bin/which
-system/system/bin/whoami
-system/system/bin/wificond
-system/system/bin/wm
-system/system/bin/xargs
-system/system/bin/xml2abx
-system/system/bin/xxd
-system/system/bin/yes
-system/system/bin/zcat
-system/system/bin/zipinfo
-system/system/bin/ziptool
-system/system/etc/bluetooth/bt_did.conf
-system/system/etc/bluetooth/bt_stack.conf
-system/system/etc/bpf/miui/MiuiBpfDefineset.o
-system/system/etc/bpf/miui/MiuiBpfGplDefineset.o
-system/system/etc/bpf/miui/tclimiter.o
-system/system/etc/bpf/fuseMedia.o
-system/system/etc/bpf/gpuMem.o
-system/system/etc/bpf/gpuWork.o
-system/system/etc/bpf/timeInState.o
-system/system/etc/classpaths/bootclasspath.pb
-system/system/etc/classpaths/systemserverclasspath.pb
-system/system/etc/compatconfig/TeleService-platform-compat-config.xml
-system/system/etc/compatconfig/bluetoothapk_qti-platform-compat-config.xml
-system/system/etc/compatconfig/calendar-provider-compat-config.xml
-system/system/etc/compatconfig/documents-ui-compat-config.xml
-system/system/etc/compatconfig/framework-platform-compat-config.xml
-system/system/etc/compatconfig/icu4j-platform-compat-config.xml
-system/system/etc/compatconfig/services-platform-compat-config.xml
-system/system/etc/default-permissions/default-permissions-meta.xml
-system/system/etc/displayconfig/default_television.xml
-system/system/etc/init/hw/drmserver.zygote64.rc
-system/system/etc/init/hw/drmserver.zygote64_32.rc
-system/system/etc/init/hw/init.boringssl.no_zygote.rc
-system/system/etc/init/hw/init.boringssl.zygote32.rc
-system/system/etc/init/hw/init.boringssl.zygote64.rc
-system/system/etc/init/hw/init.boringssl.zygote64_32.rc
-system/system/etc/init/hw/init.rc
-system/system/etc/init/hw/init.usb.configfs.rc
-system/system/etc/init/hw/init.usb.rc
-system/system/etc/init/hw/init.zygote32.rc
-system/system/etc/init/hw/init.zygote64.rc
-system/system/etc/init/hw/init.zygote64_32.rc
-system/system/etc/init/android.hidl.allocator@1.0-service.rc
-system/system/etc/init/android.system.suspend-service.rc
-system/system/etc/init/apexd.rc
-system/system/etc/init/atrace.rc
-system/system/etc/init/audioserver.rc
-system/system/etc/init/blank_screen.rc
-system/system/etc/init/bootanim.rc
-system/system/etc/init/bootstat.rc
-system/system/etc/init/bpfloader.rc
-system/system/etc/init/cameraserver.rc
-system/system/etc/init/cppreopts.rc
-system/system/etc/init/credstore.rc
-system/system/etc/init/dmesgd.rc
-system/system/etc/init/drmserver_dynamic.rc
-system/system/etc/init/dumpstate.rc
-system/system/etc/init/flags_health_check.rc
-system/system/etc/init/gatekeeperd.rc
-system/system/etc/init/gpuservice.rc
-system/system/etc/init/gsid.rc
-system/system/etc/init/heapprofd.rc
-system/system/etc/init/hwservicemanager.rc
-system/system/etc/init/idmap2d.rc
-system/system/etc/init/incidentd.rc
-system/system/etc/init/init.offline.log.rc
-system/system/etc/init/installd.rc
-system/system/etc/init/keystore2.rc
-system/system/etc/init/llkd.rc
-system/system/etc/init/lmkd.rc
-system/system/etc/init/logd.rc
-system/system/etc/init/lpdumpd.rc
-system/system/etc/init/mdnsd.rc
-system/system/etc/init/mediaextractor.rc
-system/system/etc/init/mediametrics.rc
-system/system/etc/init/mediaserver.rc
-system/system/etc/init/mediaserverwrapper.rc
-system/system/etc/init/mtectrl.rc
-system/system/etc/init/mtpd.rc
-system/system/etc/init/netd.rc
-system/system/etc/init/odsign.rc
-system/system/etc/init/otapreopt.rc
-system/system/etc/init/perfetto.rc
-system/system/etc/init/prng_seeder.rc
-system/system/etc/init/racoon.rc
-system/system/etc/init/recovery-persist.rc
-system/system/etc/init/recovery-refresh.rc
-system/system/etc/init/rss_hwm_reset.rc
-system/system/etc/init/servicemanager.rc
-system/system/etc/init/simpleperf.rc
-system/system/etc/init/snapuserd.rc
-system/system/etc/init/storaged.rc
-system/system/etc/init/surfaceflinger.rc
-system/system/etc/init/tombstoned.rc
-system/system/etc/init/traced_perf.rc
-system/system/etc/init/uncrypt.rc
-system/system/etc/init/update_engine.rc
-system/system/etc/init/update_verifier.rc
-system/system/etc/init/usbd.rc
-system/system/etc/init/vdc.rc
-system/system/etc/init/vold.rc
-system/system/etc/init/wifi.rc
-system/system/etc/init/wificond.rc
-system/system/etc/permissions/GoogleDocumentsUI_permissions.xml
-system/system/etc/permissions/GoogleNetworkStack_permissions.xml
-system/system/etc/permissions/android.software.live_wallpaper.xml
-system/system/etc/permissions/android.software.webview.xml
-system/system/etc/permissions/android.software.window_magnification.xml
-system/system/etc/permissions/android.test.base.xml
-system/system/etc/permissions/android.test.mock.xml
-system/system/etc/permissions/android.test.runner.xml
-system/system/etc/permissions/com.android.future.usb.accessory.xml
-system/system/etc/permissions/com.android.intentresolver.xml
-system/system/etc/permissions/com.android.location.provider.xml
-system/system/etc/permissions/com.android.media.remotedisplay.xml
-system/system/etc/permissions/com.android.mediadrm.signer.xml
-system/system/etc/permissions/com.android.nfc_extras.xml
-system/system/etc/permissions/com.wapi.wapicertstore.xml
-system/system/etc/permissions/javax.obex.xml
-system/system/etc/permissions/org.apache.http.legacy.xml
-system/system/etc/permissions/platform.xml
-system/system/etc/permissions/privapp-permissions-gms-international-system.xml
-system/system/etc/permissions/privapp-permissions-miui-system.xml
-system/system/etc/permissions/privapp-permissions-platform.xml
-system/system/etc/permissions/privapp-permissions-qti.xml
-system/system/etc/permissions/uimremoteclient.xml
-system/system/etc/permissions/uimremoteserver.xml
-system/system/etc/permissions/vendor.xiaomi.hardware.aidlbgservice-V1.0-java-permission.xml
-system/system/etc/permissions/vendor.xiaomi.hardware.bgservice-V1.0-java-permission.xml
-system/system/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
-system/system/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
-system/system/etc/permissions/vendor.xiaomi.hardware.misys-V4.0-java-permission.xml
-system/system/etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml
-system/system/etc/res/images/charger/battery_fail.png
-system/system/etc/res/images/charger/battery_scale.png
-system/system/etc/seccomp_policy/code_coverage.arm.policy
-system/system/etc/seccomp_policy/code_coverage.arm64.policy
-system/system/etc/seccomp_policy/crash_dump.arm.policy
-system/system/etc/seccomp_policy/crash_dump.arm64.policy
-system/system/etc/seccomp_policy/mediacodec.policy
-system/system/etc/seccomp_policy/mediaextractor.policy
-system/system/etc/security/cacerts/01419da9.0
-system/system/etc/security/cacerts/04f60c28.0
-system/system/etc/security/cacerts/0d69c7e1.0
-system/system/etc/security/cacerts/10531352.0
-system/system/etc/security/cacerts/1ae85e5e.0
-system/system/etc/security/cacerts/1b0f7e5c.0
-system/system/etc/security/cacerts/1df5a75f.0
-system/system/etc/security/cacerts/1e1eab7c.0
-system/system/etc/security/cacerts/1e8e7201.0
-system/system/etc/security/cacerts/1ec40989.0
-system/system/etc/security/cacerts/1f58a078.0
-system/system/etc/security/cacerts/219d9499.0
-system/system/etc/security/cacerts/23f4c490.0
-system/system/etc/security/cacerts/252252d2.0
-system/system/etc/security/cacerts/2add47b6.0
-system/system/etc/security/cacerts/2d9dafe4.0
-system/system/etc/security/cacerts/302904dd.0
-system/system/etc/security/cacerts/304d27c3.0
-system/system/etc/security/cacerts/31188b5e.0
-system/system/etc/security/cacerts/33ee480d.0
-system/system/etc/security/cacerts/35105088.0
-system/system/etc/security/cacerts/399e7759.0
-system/system/etc/security/cacerts/3ad48a91.0
-system/system/etc/security/cacerts/3c860d51.0
-system/system/etc/security/cacerts/3c899c73.0
-system/system/etc/security/cacerts/3c9a4d3b.0
-system/system/etc/security/cacerts/3e7271e8.0
-system/system/etc/security/cacerts/41a3f684.0
-system/system/etc/security/cacerts/455f1b52.0
-system/system/etc/security/cacerts/48a195d8.0
-system/system/etc/security/cacerts/4be590e0.0
-system/system/etc/security/cacerts/4c3982f2.0
-system/system/etc/security/cacerts/5046c355.0
-system/system/etc/security/cacerts/52b525c7.0
-system/system/etc/security/cacerts/53a1b57a.0
-system/system/etc/security/cacerts/583d0756.0
-system/system/etc/security/cacerts/5a3f0ff8.0
-system/system/etc/security/cacerts/5acf816d.0
-system/system/etc/security/cacerts/5f47b495.0
-system/system/etc/security/cacerts/5f9a69fa.0
-system/system/etc/security/cacerts/5fdd185d.0
-system/system/etc/security/cacerts/60afe812.0
-system/system/etc/security/cacerts/6187b673.0
-system/system/etc/security/cacerts/63a2c897.0
-system/system/etc/security/cacerts/69105f4f.0
-system/system/etc/security/cacerts/6b03dec0.0
-system/system/etc/security/cacerts/6f7454b3.0
-system/system/etc/security/cacerts/75680d2e.0
-system/system/etc/security/cacerts/76579174.0
-system/system/etc/security/cacerts/7892ad52.0
-system/system/etc/security/cacerts/7a7c655d.0
-system/system/etc/security/cacerts/7a819ef2.0
-system/system/etc/security/cacerts/81b9768f.0
-system/system/etc/security/cacerts/82223c44.0
-system/system/etc/security/cacerts/83e9984f.0
-system/system/etc/security/cacerts/85cde254.0
-system/system/etc/security/cacerts/86212b19.0
-system/system/etc/security/cacerts/869fbf79.0
-system/system/etc/security/cacerts/8794b4e3.0
-system/system/etc/security/cacerts/882de061.0
-system/system/etc/security/cacerts/88950faa.0
-system/system/etc/security/cacerts/89c02a45.0
-system/system/etc/security/cacerts/8d6437c3.0
-system/system/etc/security/cacerts/9282e51c.0
-system/system/etc/security/cacerts/9339512a.0
-system/system/etc/security/cacerts/93851c9e.0
-system/system/etc/security/cacerts/9479c8c3.0
-system/system/etc/security/cacerts/9576d26b.0
-system/system/etc/security/cacerts/9591a472.0
-system/system/etc/security/cacerts/95aff9e3.0
-system/system/etc/security/cacerts/9685a493.0
-system/system/etc/security/cacerts/985c1f52.0
-system/system/etc/security/cacerts/99e1b953.0
-system/system/etc/security/cacerts/9aef356c.0
-system/system/etc/security/cacerts/9d6523ce.0
-system/system/etc/security/cacerts/a2c66da8.0
-system/system/etc/security/cacerts/a3896b44.0
-system/system/etc/security/cacerts/a716d4ed.0
-system/system/etc/security/cacerts/a81e292b.0
-system/system/etc/security/cacerts/a9d40e02.0
-system/system/etc/security/cacerts/ab5346f4.0
-system/system/etc/security/cacerts/ab59055e.0
-system/system/etc/security/cacerts/b0ed035a.0
-system/system/etc/security/cacerts/b0f3e76e.0
-system/system/etc/security/cacerts/b30d5fda.0
-system/system/etc/security/cacerts/b3fb433b.0
-system/system/etc/security/cacerts/b74d2bd5.0
-system/system/etc/security/cacerts/b7db1890.0
-system/system/etc/security/cacerts/b872f2b4.0
-system/system/etc/security/cacerts/b92fd57f.0
-system/system/etc/security/cacerts/b936d1c6.0
-system/system/etc/security/cacerts/bc3f2570.0
-system/system/etc/security/cacerts/bd43e1dd.0
-system/system/etc/security/cacerts/bdacca6f.0
-system/system/etc/security/cacerts/bf64f35b.0
-system/system/etc/security/cacerts/c44cc0c0.0
-system/system/etc/security/cacerts/c491639e.0
-system/system/etc/security/cacerts/c559d742.0
-system/system/etc/security/cacerts/c7f1359b.0
-system/system/etc/security/cacerts/c90bc37d.0
-system/system/etc/security/cacerts/cb1c3204.0
-system/system/etc/security/cacerts/ccc52f49.0
-system/system/etc/security/cacerts/cf701eeb.0
-system/system/etc/security/cacerts/d06393bb.0
-system/system/etc/security/cacerts/d16a5865.0
-system/system/etc/security/cacerts/d16a5865.1
-system/system/etc/security/cacerts/d18e9066.0
-system/system/etc/security/cacerts/d39b0a2c.0
-system/system/etc/security/cacerts/d41b5e2a.0
-system/system/etc/security/cacerts/d4c339cb.0
-system/system/etc/security/cacerts/d59297b8.0
-system/system/etc/security/cacerts/d7746a63.0
-system/system/etc/security/cacerts/d96b65e2.0
-system/system/etc/security/cacerts/da7377f6.0
-system/system/etc/security/cacerts/dbc54cab.0
-system/system/etc/security/cacerts/dbff3a01.0
-system/system/etc/security/cacerts/dc99f41e.0
-system/system/etc/security/cacerts/dfc0fe80.0
-system/system/etc/security/cacerts/e13665f9.0
-system/system/etc/security/cacerts/e442e424.0
-system/system/etc/security/cacerts/e48193cf.0
-system/system/etc/security/cacerts/e7c037b4.0
-system/system/etc/security/cacerts/e8651083.0
-system/system/etc/security/cacerts/ed39abd0.0
-system/system/etc/security/cacerts/edcbddb5.0
-system/system/etc/security/cacerts/ee532fd5.0
-system/system/etc/security/cacerts/f013ecaf.0
-system/system/etc/security/cacerts/f058632f.0
-system/system/etc/security/cacerts/f0cd152c.0
-system/system/etc/security/cacerts/f459871d.0
-system/system/etc/security/cacerts/f8fc53da.0
-system/system/etc/security/cacerts/fb5fa911.0
-system/system/etc/security/cacerts/fd08c599.0
-system/system/etc/security/cacerts/fde84897.0
-system/system/etc/security/cacerts_google/00673b5b.0
-system/system/etc/security/cacerts_google/02b73561.0
-system/system/etc/security/cacerts_google/04f60c28.0
-system/system/etc/security/cacerts_google/052e396b.0
-system/system/etc/security/cacerts_google/0d69c7e1.0
-system/system/etc/security/cacerts_google/111e6273.0
-system/system/etc/security/cacerts_google/124bbd54.0
-system/system/etc/security/cacerts_google/1e8e7201.0
-system/system/etc/security/cacerts_google/219d9499.0
-system/system/etc/security/cacerts_google/23f4c490.0
-system/system/etc/security/cacerts_google/27af790d.0
-system/system/etc/security/cacerts_google/2add47b6.0
-system/system/etc/security/cacerts_google/2afc57aa.0
-system/system/etc/security/cacerts_google/343eb6cb.0
-system/system/etc/security/cacerts_google/35105088.0
-system/system/etc/security/cacerts_google/399e7759.0
-system/system/etc/security/cacerts_google/3ad48a91.0
-system/system/etc/security/cacerts_google/3c58f906.0
-system/system/etc/security/cacerts_google/3e7271e8.0
-system/system/etc/security/cacerts_google/455f1b52.0
-system/system/etc/security/cacerts_google/4fbd6bfa.0
-system/system/etc/security/cacerts_google/5021a0a2.0
-system/system/etc/security/cacerts_google/524d9b43.0
-system/system/etc/security/cacerts_google/57692373.0
-system/system/etc/security/cacerts_google/594f1775.0
-system/system/etc/security/cacerts_google/5a3f0ff8.0
-system/system/etc/security/cacerts_google/5e4e69e7.0
-system/system/etc/security/cacerts_google/67495436.0
-system/system/etc/security/cacerts_google/69105f4f.0
-system/system/etc/security/cacerts_google/75680d2e.0
-system/system/etc/security/cacerts_google/7999be0d.0
-system/system/etc/security/cacerts_google/7d453d8f.0
-system/system/etc/security/cacerts_google/81b9768f.0
-system/system/etc/security/cacerts_google/85cde254.0
-system/system/etc/security/cacerts_google/86212b19.0
-system/system/etc/security/cacerts_google/87753b0d.0
-system/system/etc/security/cacerts_google/89c02a45.0
-system/system/etc/security/cacerts_google/8d6437c3.0
-system/system/etc/security/cacerts_google/9772ca32.0
-system/system/etc/security/cacerts_google/a2c66da8.0
-system/system/etc/security/cacerts_google/a2df7ad7.0
-system/system/etc/security/cacerts_google/a7d2cf64.0
-system/system/etc/security/cacerts_google/b0f3e76e.0
-system/system/etc/security/cacerts_google/b3fb433b.0
-system/system/etc/security/cacerts_google/bc3f2570.0
-system/system/etc/security/cacerts_google/bf64f35b.0
-system/system/etc/security/cacerts_google/c491639e.0
-system/system/etc/security/cacerts_google/c527e4ab.0
-system/system/etc/security/cacerts_google/c7e2a638.0
-system/system/etc/security/cacerts_google/c90bc37d.0
-system/system/etc/security/cacerts_google/ccc52f49.0
-system/system/etc/security/cacerts_google/d4c339cb.0
-system/system/etc/security/cacerts_google/dbc54cab.0
-system/system/etc/security/cacerts_google/e268a4c5.0
-system/system/etc/security/cacerts_google/e48193cf.0
-system/system/etc/security/cacerts_google/e775ed2d.0
-system/system/etc/security/cacerts_google/ed39abd0.0
-system/system/etc/security/cacerts_google/facacbc6.0
-system/system/etc/security/cacerts_google/ff783690.0
-system/system/etc/security/fsverity/fsverity-release.x509.der
-system/system/etc/security/otacerts.zip
-system/system/etc/selinux/mapping/29.0.cil
-system/system/etc/selinux/mapping/29.0.compat.cil
-system/system/etc/selinux/mapping/30.0.cil
-system/system/etc/selinux/mapping/30.0.compat.cil
-system/system/etc/selinux/mapping/31.0.cil
-system/system/etc/selinux/mapping/31.0.compat.cil
-system/system/etc/selinux/mapping/32.0.cil
-system/system/etc/selinux/mapping/32.0.compat.cil
-system/system/etc/selinux/mapping/33.0.cil
-system/system/etc/selinux/mapping/33.0.compat.cil
-system/system/etc/selinux/mapping/34.0.cil
-system/system/etc/selinux/bug_map
-system/system/etc/selinux/plat_file_contexts
-system/system/etc/selinux/plat_hwservice_contexts
-system/system/etc/selinux/plat_keystore2_key_contexts
-system/system/etc/selinux/plat_mac_permissions.xml
-system/system/etc/selinux/plat_property_contexts
-system/system/etc/selinux/plat_seapp_contexts
-system/system/etc/selinux/plat_sepolicy.cil
-system/system/etc/selinux/plat_sepolicy_and_mapping.sha256
-system/system/etc/selinux/plat_service_contexts
-system/system/etc/spn/spn-conf.xml
-system/system/etc/sysconfig/framework-sysconfig.xml
-system/system/etc/sysconfig/google-hiddenapi-package-allowlist.xml
-system/system/etc/sysconfig/hiddenapi-package-whitelist.xml
-system/system/etc/sysconfig/initial-package-stopped-states.xml
-system/system/etc/sysconfig/preinstalled-packages-asl-files.xml
-system/system/etc/sysconfig/preinstalled-packages-com.google.android.providers.media.module.xml
-system/system/etc/sysconfig/preinstalled-packages-platform-full-base.xml
-system/system/etc/sysconfig/preinstalled-packages-platform-generic-system.xml
-system/system/etc/sysconfig/preinstalled-packages-platform-handheld-system.xml
-system/system/etc/sysconfig/preinstalled-packages-platform.xml
-system/system/etc/sysconfig/qti_whitelist.xml
-system/system/etc/task_profiles/cgroups_28.json
-system/system/etc/task_profiles/cgroups_29.json
-system/system/etc/task_profiles/cgroups_30.json
-system/system/etc/task_profiles/task_profiles_28.json
-system/system/etc/task_profiles/task_profiles_29.json
-system/system/etc/task_profiles/task_profiles_30.json
-system/system/etc/vintf/manifest/android.frameworks.stats-service.xml
-system/system/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml
-system/system/etc/vintf/manifest/android.system.keystore2-service.xml
-system/system/etc/vintf/manifest/android.system.net.netd-service.xml
-system/system/etc/vintf/manifest/android.system.suspend-service.xml
-system/system/etc/vintf/manifest/hwservicemanager.xml
-system/system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service.xml
-system/system/etc/vintf/manifest/manifest_media_c2_software.xml
-system/system/etc/vintf/manifest/manifest_services.xml
-system/system/etc/vintf/compatibility_matrix.4.xml
-system/system/etc/vintf/compatibility_matrix.5.xml
-system/system/etc/vintf/compatibility_matrix.6.xml
-system/system/etc/vintf/compatibility_matrix.7.xml
-system/system/etc/vintf/compatibility_matrix.8.xml
-system/system/etc/vintf/compatibility_matrix.device.xml
-system/system/etc/vintf/manifest.xml
-system/system/etc/NOTICE.xml.gz
-system/system/etc/NOTICE_GPL.html.gz
-system/system/etc/apns-conf.xml
-system/system/etc/appmanager.conf
-system/system/etc/audio_effects.xml
-system/system/etc/boot-image.bprof
-system/system/etc/boot-image.prof
-system/system/etc/cgroups.json
-system/system/etc/cgroups_8250_u_stune.json
-system/system/etc/cgroups_v1.json
-system/system/etc/dirty-image-objects
-system/system/etc/event-log-tags
-system/system/etc/fonts.xml
-system/system/etc/fs_config_dirs
-system/system/etc/fs_config_files
-system/system/etc/fstab.postinstall
-system/system/etc/ftrace_synthetic_events.conf
-system/system/etc/gps_debug.conf
-system/system/etc/group
-system/system/etc/hosts
-system/system/etc/linker.config.pb
-system/system/etc/media_profiles_V1_0.dtd
-system/system/etc/mke2fs.conf
-system/system/etc/mkshrc
-system/system/etc/motion_predictor_model.fb
-system/system/etc/passwd
-system/system/etc/preloaded-classes
-system/system/etc/protolog.conf.json.gz
-system/system/etc/public.libraries-qti.txt
-system/system/etc/public.libraries-xiaomi.txt
-system/system/etc/public.libraries.txt
-system/system/etc/sanitizer.libraries.txt
-system/system/etc/task_profiles.json
-system/system/etc/task_profiles_8250_u_stune.json
-system/system/etc/task_profiles_v1.json
-system/system/etc/ueventd.rc
-system/system/etc/vndkcorevariant.libraries.txt
-system/system/etc/xtables.lock
-system/system/fonts/AndroidClock.ttf
-system/system/fonts/CarroisGothicSC-Regular.ttf
-system/system/fonts/ComingSoon.ttf
-system/system/fonts/CutiveMono.ttf
-system/system/fonts/DancingScript-Regular.ttf
-system/system/fonts/DroidSans-Bold.ttf
-system/system/fonts/DroidSans.ttf
-system/system/fonts/DroidSansMono.ttf
-system/system/fonts/MiSansArabicVF.ttf
-system/system/fonts/MiSansBengaliVF.ttf
-system/system/fonts/MiSansDevanagariVF.ttf
-system/system/fonts/MiSansGujaratiVF.ttf
-system/system/fonts/MiSansGurmukhiVF.ttf
-system/system/fonts/MiSansKannadaVF.ttf
-system/system/fonts/MiSansKhmerVF.ttf
-system/system/fonts/MiSansLaoVF.ttf
-system/system/fonts/MiSansLatinVF.ttf
-system/system/fonts/MiSansMalayalamVF.ttf
-system/system/fonts/MiSansMyanmarVF.ttf
-system/system/fonts/MiSansOdiaVF.ttf
-system/system/fonts/MiSansTCVF.ttf
-system/system/fonts/MiSansTamilVF.ttf
-system/system/fonts/MiSansTeluguVF.ttf
-system/system/fonts/MiSansThaiVF.ttf
-system/system/fonts/MiSansVF.ttf
-system/system/fonts/MiSansVF_Overlay.ttf
-system/system/fonts/NotoColorEmoji.ttf
-system/system/fonts/NotoColorEmojiFlags.ttf
-system/system/fonts/NotoColorEmojiLegacy.ttf
-system/system/fonts/NotoNaskhArabic-Bold.ttf
-system/system/fonts/NotoNaskhArabic-Regular.ttf
-system/system/fonts/NotoNaskhArabicUI-Bold.ttf
-system/system/fonts/NotoNaskhArabicUI-Regular.ttf
-system/system/fonts/NotoSansAdlam-VF.ttf
-system/system/fonts/NotoSansAhom-Regular.otf
-system/system/fonts/NotoSansAnatolianHieroglyphs-Regular.otf
-system/system/fonts/NotoSansArmenian-VF.ttf
-system/system/fonts/NotoSansAvestan-Regular.ttf
-system/system/fonts/NotoSansBalinese-Regular.ttf
-system/system/fonts/NotoSansBamum-Regular.ttf
-system/system/fonts/NotoSansBassaVah-Regular.otf
-system/system/fonts/NotoSansBatak-Regular.ttf
-system/system/fonts/NotoSansBengali-VF.ttf
-system/system/fonts/NotoSansBengaliUI-VF.ttf
-system/system/fonts/NotoSansBhaiksuki-Regular.otf
-system/system/fonts/NotoSansBrahmi-Regular.ttf
-system/system/fonts/NotoSansBuginese-Regular.ttf
-system/system/fonts/NotoSansBuhid-Regular.ttf
-system/system/fonts/NotoSansCJK-Regular.ttc
-system/system/fonts/NotoSansCanadianAboriginal-Regular.ttf
-system/system/fonts/NotoSansCarian-Regular.ttf
-system/system/fonts/NotoSansChakma-Regular.otf
-system/system/fonts/NotoSansCham-Bold.ttf
-system/system/fonts/NotoSansCham-Regular.ttf
-system/system/fonts/NotoSansCherokee-Regular.ttf
-system/system/fonts/NotoSansCoptic-Regular.ttf
-system/system/fonts/NotoSansCuneiform-Regular.ttf
-system/system/fonts/NotoSansCypriot-Regular.ttf
-system/system/fonts/NotoSansDeseret-Regular.ttf
-system/system/fonts/NotoSansDevanagari-VF.ttf
-system/system/fonts/NotoSansDevanagariUI-VF.ttf
-system/system/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf
-system/system/fonts/NotoSansElbasan-Regular.otf
-system/system/fonts/NotoSansEthiopic-VF.ttf
-system/system/fonts/NotoSansGeorgian-VF.ttf
-system/system/fonts/NotoSansGlagolitic-Regular.ttf
-system/system/fonts/NotoSansGothic-Regular.ttf
-system/system/fonts/NotoSansGrantha-Regular.ttf
-system/system/fonts/NotoSansGujarati-Bold.ttf
-system/system/fonts/NotoSansGujarati-Regular.ttf
-system/system/fonts/NotoSansGujaratiUI-Bold.ttf
-system/system/fonts/NotoSansGujaratiUI-Regular.ttf
-system/system/fonts/NotoSansGunjalaGondi-Regular.otf
-system/system/fonts/NotoSansGurmukhi-VF.ttf
-system/system/fonts/NotoSansGurmukhiUI-VF.ttf
-system/system/fonts/NotoSansHanifiRohingya-Regular.otf
-system/system/fonts/NotoSansHanunoo-Regular.ttf
-system/system/fonts/NotoSansHatran-Regular.otf
-system/system/fonts/NotoSansHebrew-Bold.ttf
-system/system/fonts/NotoSansHebrew-Regular.ttf
-system/system/fonts/NotoSansImperialAramaic-Regular.ttf
-system/system/fonts/NotoSansInscriptionalPahlavi-Regular.ttf
-system/system/fonts/NotoSansInscriptionalParthian-Regular.ttf
-system/system/fonts/NotoSansJavanese-Regular.otf
-system/system/fonts/NotoSansKaithi-Regular.ttf
-system/system/fonts/NotoSansKannada-VF.ttf
-system/system/fonts/NotoSansKannadaUI-VF.ttf
-system/system/fonts/NotoSansKayahLi-Regular.ttf
-system/system/fonts/NotoSansKharoshthi-Regular.ttf
-system/system/fonts/NotoSansKhmer-VF.ttf
-system/system/fonts/NotoSansKhmerUI-Bold.ttf
-system/system/fonts/NotoSansKhmerUI-Regular.ttf
-system/system/fonts/NotoSansKhojki-Regular.otf
-system/system/fonts/NotoSansLao-Bold.ttf
-system/system/fonts/NotoSansLao-Regular.ttf
-system/system/fonts/NotoSansLaoUI-Bold.ttf
-system/system/fonts/NotoSansLaoUI-Regular.ttf
-system/system/fonts/NotoSansLepcha-Regular.ttf
-system/system/fonts/NotoSansLimbu-Regular.ttf
-system/system/fonts/NotoSansLinearA-Regular.otf
-system/system/fonts/NotoSansLinearB-Regular.ttf
-system/system/fonts/NotoSansLisu-Regular.ttf
-system/system/fonts/NotoSansLycian-Regular.ttf
-system/system/fonts/NotoSansLydian-Regular.ttf
-system/system/fonts/NotoSansMalayalam-VF.ttf
-system/system/fonts/NotoSansMalayalamUI-VF.ttf
-system/system/fonts/NotoSansMandaic-Regular.ttf
-system/system/fonts/NotoSansManichaean-Regular.otf
-system/system/fonts/NotoSansMarchen-Regular.otf
-system/system/fonts/NotoSansMasaramGondi-Regular.otf
-system/system/fonts/NotoSansMedefaidrin-VF.ttf
-system/system/fonts/NotoSansMeeteiMayek-Regular.ttf
-system/system/fonts/NotoSansMeroitic-Regular.otf
-system/system/fonts/NotoSansMiao-Regular.otf
-system/system/fonts/NotoSansModi-Regular.ttf
-system/system/fonts/NotoSansMongolian-Regular.ttf
-system/system/fonts/NotoSansMro-Regular.otf
-system/system/fonts/NotoSansMultani-Regular.otf
-system/system/fonts/NotoSansMyanmar-Bold.otf
-system/system/fonts/NotoSansMyanmar-Medium.otf
-system/system/fonts/NotoSansMyanmar-Regular.otf
-system/system/fonts/NotoSansMyanmarUI-Bold.otf
-system/system/fonts/NotoSansMyanmarUI-Medium.otf
-system/system/fonts/NotoSansMyanmarUI-Regular.otf
-system/system/fonts/NotoSansNKo-Regular.ttf
-system/system/fonts/NotoSansNabataean-Regular.otf
-system/system/fonts/NotoSansNewTaiLue-Regular.ttf
-system/system/fonts/NotoSansNewa-Regular.otf
-system/system/fonts/NotoSansOgham-Regular.ttf
-system/system/fonts/NotoSansOlChiki-Regular.ttf
-system/system/fonts/NotoSansOldItalic-Regular.ttf
-system/system/fonts/NotoSansOldNorthArabian-Regular.otf
-system/system/fonts/NotoSansOldPermic-Regular.otf
-system/system/fonts/NotoSansOldPersian-Regular.ttf
-system/system/fonts/NotoSansOldSouthArabian-Regular.ttf
-system/system/fonts/NotoSansOldTurkic-Regular.ttf
-system/system/fonts/NotoSansOriya-Bold.ttf
-system/system/fonts/NotoSansOriya-Regular.ttf
-system/system/fonts/NotoSansOriyaUI-Bold.ttf
-system/system/fonts/NotoSansOriyaUI-Regular.ttf
-system/system/fonts/NotoSansOsage-Regular.ttf
-system/system/fonts/NotoSansOsmanya-Regular.ttf
-system/system/fonts/NotoSansPahawhHmong-Regular.otf
-system/system/fonts/NotoSansPalmyrene-Regular.otf
-system/system/fonts/NotoSansPauCinHau-Regular.otf
-system/system/fonts/NotoSansPhagsPa-Regular.ttf
-system/system/fonts/NotoSansPhoenician-Regular.ttf
-system/system/fonts/NotoSansRejang-Regular.ttf
-system/system/fonts/NotoSansRunic-Regular.ttf
-system/system/fonts/NotoSansSamaritan-Regular.ttf
-system/system/fonts/NotoSansSaurashtra-Regular.ttf
-system/system/fonts/NotoSansSharada-Regular.otf
-system/system/fonts/NotoSansShavian-Regular.ttf
-system/system/fonts/NotoSansSinhala-VF.ttf
-system/system/fonts/NotoSansSinhalaUI-VF.ttf
-system/system/fonts/NotoSansSoraSompeng-Regular.otf
-system/system/fonts/NotoSansSoyombo-VF.ttf
-system/system/fonts/NotoSansSundanese-Regular.ttf
-system/system/fonts/NotoSansSylotiNagri-Regular.ttf
-system/system/fonts/NotoSansSymbols-Regular-Subsetted.ttf
-system/system/fonts/NotoSansSymbols-Regular-Subsetted2.ttf
-system/system/fonts/NotoSansSyriacEastern-Regular.ttf
-system/system/fonts/NotoSansSyriacEstrangela-Regular.ttf
-system/system/fonts/NotoSansSyriacWestern-Regular.ttf
-system/system/fonts/NotoSansTagalog-Regular.ttf
-system/system/fonts/NotoSansTagbanwa-Regular.ttf
-system/system/fonts/NotoSansTaiLe-Regular.ttf
-system/system/fonts/NotoSansTaiTham-Regular.ttf
-system/system/fonts/NotoSansTaiViet-Regular.ttf
-system/system/fonts/NotoSansTakri-VF.ttf
-system/system/fonts/NotoSansTamil-VF.ttf
-system/system/fonts/NotoSansTamilUI-VF.ttf
-system/system/fonts/NotoSansTelugu-VF.ttf
-system/system/fonts/NotoSansTeluguUI-VF.ttf
-system/system/fonts/NotoSansThaana-Bold.ttf
-system/system/fonts/NotoSansThaana-Regular.ttf
-system/system/fonts/NotoSansThai-Bold.ttf
-system/system/fonts/NotoSansThai-Regular.ttf
-system/system/fonts/NotoSansThaiUI-Bold.ttf
-system/system/fonts/NotoSansThaiUI-Regular.ttf
-system/system/fonts/NotoSansTifinagh-Regular.otf
-system/system/fonts/NotoSansUgaritic-Regular.ttf
-system/system/fonts/NotoSansVai-Regular.ttf
-system/system/fonts/NotoSansWancho-Regular.otf
-system/system/fonts/NotoSansWarangCiti-Regular.otf
-system/system/fonts/NotoSansYi-Regular.ttf
-system/system/fonts/NotoSerif-Bold.ttf
-system/system/fonts/NotoSerif-BoldItalic.ttf
-system/system/fonts/NotoSerif-Italic.ttf
-system/system/fonts/NotoSerif-Regular.ttf
-system/system/fonts/NotoSerifArmenian-VF.ttf
-system/system/fonts/NotoSerifBengali-VF.ttf
-system/system/fonts/NotoSerifCJK-Regular.ttc
-system/system/fonts/NotoSerifDevanagari-VF.ttf
-system/system/fonts/NotoSerifDogra-Regular.ttf
-system/system/fonts/NotoSerifEthiopic-VF.ttf
-system/system/fonts/NotoSerifGeorgian-VF.ttf
-system/system/fonts/NotoSerifGujarati-VF.ttf
-system/system/fonts/NotoSerifGurmukhi-VF.ttf
-system/system/fonts/NotoSerifHebrew-Bold.ttf
-system/system/fonts/NotoSerifHebrew-Regular.ttf
-system/system/fonts/NotoSerifKannada-VF.ttf
-system/system/fonts/NotoSerifKhmer-Bold.otf
-system/system/fonts/NotoSerifKhmer-Regular.otf
-system/system/fonts/NotoSerifLao-Bold.ttf
-system/system/fonts/NotoSerifLao-Regular.ttf
-system/system/fonts/NotoSerifMalayalam-VF.ttf
-system/system/fonts/NotoSerifMyanmar-Bold.otf
-system/system/fonts/NotoSerifMyanmar-Regular.otf
-system/system/fonts/NotoSerifNyiakengPuachueHmong-VF.ttf
-system/system/fonts/NotoSerifSinhala-VF.ttf
-system/system/fonts/NotoSerifTamil-VF.ttf
-system/system/fonts/NotoSerifTelugu-VF.ttf
-system/system/fonts/NotoSerifThai-Bold.ttf
-system/system/fonts/NotoSerifThai-Regular.ttf
-system/system/fonts/NotoSerifTibetan-VF.ttf
-system/system/fonts/NotoSerifYezidi-VF.ttf
-system/system/fonts/Roboto-Regular.ttf
-system/system/fonts/RobotoStatic-Regular.ttf
-system/system/fonts/SourceSansPro-Bold.ttf
-system/system/fonts/SourceSansPro-BoldItalic.ttf
-system/system/fonts/SourceSansPro-Italic.ttf
-system/system/fonts/SourceSansPro-Regular.ttf
-system/system/fonts/SourceSansPro-SemiBold.ttf
-system/system/fonts/SourceSansPro-SemiBoldItalic.ttf
-system/system/framework/arm64/boot-QPerformance.art
-system/system/framework/arm64/boot-QPerformance.oat
-system/system/framework/arm64/boot-QPerformance.vdex
-system/system/framework/arm64/boot-UxPerformance.art
-system/system/framework/arm64/boot-UxPerformance.oat
-system/system/framework/arm64/boot-UxPerformance.vdex
-system/system/framework/arm64/boot-WfdCommon.art
-system/system/framework/arm64/boot-WfdCommon.oat
-system/system/framework/arm64/boot-WfdCommon.vdex
-system/system/framework/arm64/boot-apache-xml.art
-system/system/framework/arm64/boot-apache-xml.oat
-system/system/framework/arm64/boot-apache-xml.vdex
-system/system/framework/arm64/boot-bouncycastle.art
-system/system/framework/arm64/boot-bouncycastle.oat
-system/system/framework/arm64/boot-bouncycastle.vdex
-system/system/framework/arm64/boot-core-icu4j.art
-system/system/framework/arm64/boot-core-icu4j.oat
-system/system/framework/arm64/boot-core-icu4j.vdex
-system/system/framework/arm64/boot-core-libart.art
-system/system/framework/arm64/boot-core-libart.oat
-system/system/framework/arm64/boot-core-libart.vdex
-system/system/framework/arm64/boot-ext.art
-system/system/framework/arm64/boot-ext.oat
-system/system/framework/arm64/boot-ext.vdex
-system/system/framework/arm64/boot-framework-adservices.art
-system/system/framework/arm64/boot-framework-adservices.oat
-system/system/framework/arm64/boot-framework-adservices.vdex
-system/system/framework/arm64/boot-framework-graphics.art
-system/system/framework/arm64/boot-framework-graphics.oat
-system/system/framework/arm64/boot-framework-graphics.vdex
-system/system/framework/arm64/boot-framework.art
-system/system/framework/arm64/boot-framework.oat
-system/system/framework/arm64/boot-framework.vdex
-system/system/framework/arm64/boot-ims-common.art
-system/system/framework/arm64/boot-ims-common.oat
-system/system/framework/arm64/boot-ims-common.vdex
-system/system/framework/arm64/boot-miui-enterprise-sdk.art
-system/system/framework/arm64/boot-miui-enterprise-sdk.oat
-system/system/framework/arm64/boot-miui-enterprise-sdk.vdex
-system/system/framework/arm64/boot-miui-framework.art
-system/system/framework/arm64/boot-miui-framework.oat
-system/system/framework/arm64/boot-miui-framework.vdex
-system/system/framework/arm64/boot-miui-telephony-common.art
-system/system/framework/arm64/boot-miui-telephony-common.oat
-system/system/framework/arm64/boot-miui-telephony-common.vdex
-system/system/framework/arm64/boot-okhttp.art
-system/system/framework/arm64/boot-okhttp.oat
-system/system/framework/arm64/boot-okhttp.vdex
-system/system/framework/arm64/boot-tcmiface.art
-system/system/framework/arm64/boot-tcmiface.oat
-system/system/framework/arm64/boot-tcmiface.vdex
-system/system/framework/arm64/boot-telephony-common.art
-system/system/framework/arm64/boot-telephony-common.oat
-system/system/framework/arm64/boot-telephony-common.vdex
-system/system/framework/arm64/boot-telephony-ext.art
-system/system/framework/arm64/boot-telephony-ext.oat
-system/system/framework/arm64/boot-telephony-ext.vdex
-system/system/framework/arm64/boot-vendor.qti.hardware.qconfig-V5-java.art
-system/system/framework/arm64/boot-vendor.qti.hardware.qconfig-V5-java.oat
-system/system/framework/arm64/boot-vendor.qti.hardware.qconfig-V5-java.vdex
-system/system/framework/arm64/boot-voip-common.art
-system/system/framework/arm64/boot-voip-common.oat
-system/system/framework/arm64/boot-voip-common.vdex
-system/system/framework/arm64/boot.art
-system/system/framework/arm64/boot.oat
-system/system/framework/arm64/boot.vdex
-system/system/framework/oat/arm64/abx.odex
-system/system/framework/oat/arm64/abx.vdex
-system/system/framework/oat/arm64/am.odex
-system/system/framework/oat/arm64/am.vdex
-system/system/framework/oat/arm64/android.hidl.base-V1.0-java.odex
-system/system/framework/oat/arm64/android.hidl.base-V1.0-java.vdex
-system/system/framework/oat/arm64/android.hidl.manager-V1.0-java.odex
-system/system/framework/oat/arm64/android.hidl.manager-V1.0-java.vdex
-system/system/framework/oat/arm64/android.test.base.odex
-system/system/framework/oat/arm64/android.test.base.vdex
-system/system/framework/oat/arm64/android.test.mock.odex
-system/system/framework/oat/arm64/android.test.mock.vdex
-system/system/framework/oat/arm64/android.test.runner.odex
-system/system/framework/oat/arm64/android.test.runner.vdex
-system/system/framework/oat/arm64/apex@com.android.adservices@javalib@service-adservices.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.adservices@javalib@service-adservices.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.adservices@javalib@service-sdksandbox.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.adservices@javalib@service-sdksandbox.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.appsearch@javalib@service-appsearch.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.appsearch@javalib@service-appsearch.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.art@javalib@service-art.jar@classes.art
-system/system/framework/oat/arm64/apex@com.android.art@javalib@service-art.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.art@javalib@service-art.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.configinfrastructure@javalib@service-configinfrastructure.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.configinfrastructure@javalib@service-configinfrastructure.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.devicelock@javalib@service-devicelock.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.devicelock@javalib@service-devicelock.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.healthfitness@javalib@service-healthfitness.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.healthfitness@javalib@service-healthfitness.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.media@javalib@service-media-s.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.media@javalib@service-media-s.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.ondevicepersonalization@javalib@service-ondevicepersonalization.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.ondevicepersonalization@javalib@service-ondevicepersonalization.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.os.statsd@javalib@service-statsd.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.os.statsd@javalib@service-statsd.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.permission@javalib@service-permission.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.permission@javalib@service-permission.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.rkpd@javalib@service-rkp.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.rkpd@javalib@service-rkp.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.scheduling@javalib@service-scheduling.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.scheduling@javalib@service-scheduling.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.tethering@javalib@service-connectivity.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.tethering@javalib@service-connectivity.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.uwb@javalib@service-uwb.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.uwb@javalib@service-uwb.jar@classes.vdex
-system/system/framework/oat/arm64/apex@com.android.wifi@javalib@service-wifi.jar@classes.odex
-system/system/framework/oat/arm64/apex@com.android.wifi@javalib@service-wifi.jar@classes.vdex
-system/system/framework/oat/arm64/appwidget.odex
-system/system/framework/oat/arm64/appwidget.vdex
-system/system/framework/oat/arm64/bmgr.odex
-system/system/framework/oat/arm64/bmgr.vdex
-system/system/framework/oat/arm64/bu.odex
-system/system/framework/oat/arm64/bu.vdex
-system/system/framework/oat/arm64/com.android.future.usb.accessory.odex
-system/system/framework/oat/arm64/com.android.future.usb.accessory.vdex
-system/system/framework/oat/arm64/com.android.location.provider.odex
-system/system/framework/oat/arm64/com.android.location.provider.vdex
-system/system/framework/oat/arm64/com.android.media.remotedisplay.odex
-system/system/framework/oat/arm64/com.android.media.remotedisplay.vdex
-system/system/framework/oat/arm64/com.android.mediadrm.signer.odex
-system/system/framework/oat/arm64/com.android.mediadrm.signer.vdex
-system/system/framework/oat/arm64/com.android.nfc_extras.odex
-system/system/framework/oat/arm64/com.android.nfc_extras.vdex
-system/system/framework/oat/arm64/content.odex
-system/system/framework/oat/arm64/content.vdex
-system/system/framework/oat/arm64/hid.odex
-system/system/framework/oat/arm64/hid.vdex
-system/system/framework/oat/arm64/incident-helper-cmd.odex
-system/system/framework/oat/arm64/incident-helper-cmd.vdex
-system/system/framework/oat/arm64/javax.obex.odex
-system/system/framework/oat/arm64/javax.obex.vdex
-system/system/framework/oat/arm64/locksettings.odex
-system/system/framework/oat/arm64/locksettings.vdex
-system/system/framework/oat/arm64/monkey.odex
-system/system/framework/oat/arm64/monkey.vdex
-system/system/framework/oat/arm64/org.apache.http.legacy.odex
-system/system/framework/oat/arm64/org.apache.http.legacy.vdex
-system/system/framework/oat/arm64/requestsync.odex
-system/system/framework/oat/arm64/requestsync.vdex
-system/system/framework/oat/arm64/services.art
-system/system/framework/oat/arm64/services.odex
-system/system/framework/oat/arm64/services.vdex
-system/system/framework/oat/arm64/sm.odex
-system/system/framework/oat/arm64/sm.vdex
-system/system/framework/oat/arm64/svc.odex
-system/system/framework/oat/arm64/svc.vdex
-system/system/framework/oat/arm64/telecom.odex
-system/system/framework/oat/arm64/telecom.vdex
-system/system/framework/oat/arm64/uiautomator.odex
-system/system/framework/oat/arm64/uiautomator.vdex
-system/system/framework/oat/arm64/uinput.odex
-system/system/framework/oat/arm64/uinput.vdex
-system/system/framework/oat/arm64/vendor.qti.hardware.data.connectionaidl-V1-java.odex
-system/system/framework/oat/arm64/vendor.qti.hardware.data.connectionaidl-V1-java.vdex
-system/system/framework/oat/arm64/vendor.qti.hardware.radio.qtiradio-V1-java.odex
-system/system/framework/oat/arm64/vendor.qti.hardware.radio.qtiradio-V1-java.vdex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.bgservice-V1.0-java.odex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.bgservice-V1.0-java.vdex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys-V1.0-java.odex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys-V1.0-java.vdex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys-V2.0-java.odex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys-V2.0-java.vdex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys-V4.0-java.odex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys-V4.0-java.vdex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys.V3_0.odex
-system/system/framework/oat/arm64/vendor.xiaomi.hardware.misys.V3_0.vdex
-system/system/framework/oat/arm64/vr.odex
-system/system/framework/oat/arm64/vr.vdex
-system/system/framework/oat/arm64/wapicertstore.odex
-system/system/framework/oat/arm64/wapicertstore.vdex
-system/system/framework/MiuiBooster.jar
-system/system/framework/QPerformance.jar
-system/system/framework/QXPerformance.jar
-system/system/framework/UxPerformance.jar
-system/system/framework/WfdCommon.jar
-system/system/framework/abx.jar
-system/system/framework/am.jar
-system/system/framework/android.hidl.base-V1.0-java.jar
-system/system/framework/android.hidl.manager-V1.0-java.jar
-system/system/framework/android.test.base.jar
-system/system/framework/android.test.mock.jar
-system/system/framework/android.test.runner.jar
-system/system/framework/appwidget.jar
-system/system/framework/bmgr.jar
-system/system/framework/boot-QPerformance.vdex
-system/system/framework/boot-UxPerformance.vdex
-system/system/framework/boot-WfdCommon.vdex
-system/system/framework/boot-apache-xml.vdex
-system/system/framework/boot-bouncycastle.vdex
-system/system/framework/boot-core-icu4j.vdex
-system/system/framework/boot-core-libart.vdex
-system/system/framework/boot-ext.vdex
-system/system/framework/boot-framework-adservices.vdex
-system/system/framework/boot-framework-graphics.vdex
-system/system/framework/boot-framework.vdex
-system/system/framework/boot-ims-common.vdex
-system/system/framework/boot-miui-enterprise-sdk.vdex
-system/system/framework/boot-miui-framework.vdex
-system/system/framework/boot-miui-telephony-common.vdex
-system/system/framework/boot-okhttp.vdex
-system/system/framework/boot-tcmiface.vdex
-system/system/framework/boot-telephony-common.vdex
-system/system/framework/boot-telephony-ext.vdex
-system/system/framework/boot-vendor.qti.hardware.qconfig-V5-java.vdex
-system/system/framework/boot-voip-common.vdex
-system/system/framework/boot.vdex
-system/system/framework/bu.jar
-system/system/framework/com.android.future.usb.accessory.jar
-system/system/framework/com.android.location.provider.jar
-system/system/framework/com.android.media.remotedisplay.jar
-system/system/framework/com.android.mediadrm.signer.jar
-system/system/framework/com.android.nfc_extras.jar
-system/system/framework/content.jar
-system/system/framework/ext.jar
-system/system/framework/framework-graphics.jar
-system/system/framework/framework-res.apk
-system/system/framework/framework.jar
-system/system/framework/hid.jar
-system/system/framework/ims-common.jar
-system/system/framework/incident-helper-cmd.jar
-system/system/framework/javax.obex.jar
-system/system/framework/locksettings.jar
-system/system/framework/monkey.jar
-system/system/framework/org.apache.http.legacy.jar
-system/system/framework/org.apache.http.legacy.jar.prof
-system/system/framework/requestsync.jar
-system/system/framework/services.jar
-system/system/framework/services.jar.bprof
-system/system/framework/services.jar.prof
-system/system/framework/sm.jar
-system/system/framework/svc.jar
-system/system/framework/tcmclient.jar
-system/system/framework/tcmiface.jar
-system/system/framework/telecom.jar
-system/system/framework/telephony-common.jar
-system/system/framework/telephony-ext.jar
-system/system/framework/uiautomator.jar
-system/system/framework/uinput.jar
-system/system/framework/vendor.qti.hardware.data.connectionaidl-V1-java.jar
-system/system/framework/vendor.qti.hardware.radio.qtiradio-V1-java.jar
-system/system/framework/vendor.xiaomi.hardware.aidlbgservice-V1-java.jar
-system/system/framework/vendor.xiaomi.hardware.bgservice-V1.0-java.jar
-system/system/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
-system/system/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
-system/system/framework/vendor.xiaomi.hardware.misys-V4.0-java.jar
-system/system/framework/vendor.xiaomi.hardware.misys.V3_0.jar
-system/system/framework/voip-common.jar
-system/system/framework/vr.jar
-system/system/framework/wapicertstore.jar
-system/system/lib64/bootstrap/hwasan/libc.so
-system/system/lib64/bootstrap/libc.so
-system/system/lib64/bootstrap/libclang_rt.hwasan-aarch64-android.so
-system/system/lib64/bootstrap/libdl.so
-system/system/lib64/bootstrap/libdl_android.so
-system/system/lib64/bootstrap/libm.so
-system/system/lib64/drm/libfwdlockengine.so
-system/system/lib64/hw/android.hidl.memory@1.0-impl.so
-system/system/lib64/hwasan/libc.so
-system/system/lib64/aaudio-aidl-cpp.so
-system/system/lib64/android.frameworks.cameraservice.common-V1-ndk.so
-system/system/lib64/android.frameworks.cameraservice.common@2.0.so
-system/system/lib64/android.frameworks.cameraservice.device-V1-ndk.so
-system/system/lib64/android.frameworks.cameraservice.device@2.0.so
-system/system/lib64/android.frameworks.cameraservice.device@2.1.so
-system/system/lib64/android.frameworks.cameraservice.service-V1-ndk.so
-system/system/lib64/android.frameworks.cameraservice.service@2.0.so
-system/system/lib64/android.frameworks.cameraservice.service@2.1.so
-system/system/lib64/android.frameworks.cameraservice.service@2.2.so
-system/system/lib64/android.frameworks.displayservice@1.0.so
-system/system/lib64/android.frameworks.schedulerservice@1.0.so
-system/system/lib64/android.frameworks.sensorservice-V1-ndk.so
-system/system/lib64/android.frameworks.sensorservice@1.0.so
-system/system/lib64/android.frameworks.stats-V2-ndk.so
-system/system/lib64/android.frameworks.stats@1.0.so
-system/system/lib64/android.hardware.atrace@1.0.so
-system/system/lib64/android.hardware.audio.common-V1-ndk.so
-system/system/lib64/android.hardware.audio.common-V2-ndk.so
-system/system/lib64/android.hardware.audio.common-util.so
-system/system/lib64/android.hardware.audio.common@2.0.so
-system/system/lib64/android.hardware.audio.common@4.0-util.so
-system/system/lib64/android.hardware.audio.common@4.0.so
-system/system/lib64/android.hardware.audio.common@5.0-util.so
-system/system/lib64/android.hardware.audio.common@5.0.so
-system/system/lib64/android.hardware.audio.common@6.0-util.so
-system/system/lib64/android.hardware.audio.common@6.0.so
-system/system/lib64/android.hardware.audio.core-V1-ndk.so
-system/system/lib64/android.hardware.audio.core.sounddose-V1-ndk.so
-system/system/lib64/android.hardware.audio.effect-V1-ndk.so
-system/system/lib64/android.hardware.audio.effect@4.0-util.so
-system/system/lib64/android.hardware.audio.effect@4.0.so
-system/system/lib64/android.hardware.audio.effect@5.0-util.so
-system/system/lib64/android.hardware.audio.effect@5.0.so
-system/system/lib64/android.hardware.audio.effect@6.0-util.so
-system/system/lib64/android.hardware.audio.effect@6.0.so
-system/system/lib64/android.hardware.audio.sounddose-V1-ndk.so
-system/system/lib64/android.hardware.audio@4.0-util.so
-system/system/lib64/android.hardware.audio@4.0.so
-system/system/lib64/android.hardware.audio@5.0-util.so
-system/system/lib64/android.hardware.audio@5.0.so
-system/system/lib64/android.hardware.audio@6.0-util.so
-system/system/lib64/android.hardware.audio@6.0.so
-system/system/lib64/android.hardware.biometrics.fingerprint@2.1.so
-system/system/lib64/android.hardware.bluetooth.audio-V3-ndk.so
-system/system/lib64/android.hardware.bluetooth.audio@2.0.so
-system/system/lib64/android.hardware.bluetooth.audio@2.1.so
-system/system/lib64/android.hardware.bluetooth@1.0.so
-system/system/lib64/android.hardware.bluetooth@1.1.so
-system/system/lib64/android.hardware.boot-V1-ndk.so
-system/system/lib64/android.hardware.boot@1.0.so
-system/system/lib64/android.hardware.boot@1.1.so
-system/system/lib64/android.hardware.boot@1.2.so
-system/system/lib64/android.hardware.broadcastradio@1.0.so
-system/system/lib64/android.hardware.broadcastradio@1.1.so
-system/system/lib64/android.hardware.camera.common-V1-ndk.so
-system/system/lib64/android.hardware.camera.common@1.0.so
-system/system/lib64/android.hardware.camera.device-V2-ndk.so
-system/system/lib64/android.hardware.camera.device@1.0.so
-system/system/lib64/android.hardware.camera.device@3.2.so
-system/system/lib64/android.hardware.camera.device@3.3.so
-system/system/lib64/android.hardware.camera.device@3.4.so
-system/system/lib64/android.hardware.camera.device@3.5.so
-system/system/lib64/android.hardware.camera.device@3.6.so
-system/system/lib64/android.hardware.camera.device@3.7.so
-system/system/lib64/android.hardware.camera.metadata-V2-ndk.so
-system/system/lib64/android.hardware.camera.metadata@3.2.so
-system/system/lib64/android.hardware.camera.metadata@3.3.so
-system/system/lib64/android.hardware.camera.metadata@3.4.so
-system/system/lib64/android.hardware.camera.metadata@3.5.so
-system/system/lib64/android.hardware.camera.metadata@3.6.so
-system/system/lib64/android.hardware.camera.provider-V2-ndk.so
-system/system/lib64/android.hardware.camera.provider@2.4.so
-system/system/lib64/android.hardware.camera.provider@2.5.so
-system/system/lib64/android.hardware.camera.provider@2.6.so
-system/system/lib64/android.hardware.camera.provider@2.7.so
-system/system/lib64/android.hardware.cas.native@1.0.so
-system/system/lib64/android.hardware.cas@1.0.so
-system/system/lib64/android.hardware.common-V2-ndk.so
-system/system/lib64/android.hardware.common-V2-ndk_platform.so
-system/system/lib64/android.hardware.common.fmq-V1-ndk.so
-system/system/lib64/android.hardware.configstore-utils.so
-system/system/lib64/android.hardware.configstore@1.0.so
-system/system/lib64/android.hardware.configstore@1.1.so
-system/system/lib64/android.hardware.confirmationui-V1-ndk.so
-system/system/lib64/android.hardware.confirmationui@1.0.so
-system/system/lib64/android.hardware.contexthub@1.0.so
-system/system/lib64/android.hardware.drm-V1-ndk.so
-system/system/lib64/android.hardware.drm@1.0.so
-system/system/lib64/android.hardware.drm@1.1.so
-system/system/lib64/android.hardware.drm@1.2.so
-system/system/lib64/android.hardware.drm@1.3.so
-system/system/lib64/android.hardware.drm@1.4.so
-system/system/lib64/android.hardware.dumpstate-V1-ndk.so
-system/system/lib64/android.hardware.dumpstate@1.0.so
-system/system/lib64/android.hardware.dumpstate@1.1.so
-system/system/lib64/android.hardware.gatekeeper-V1-ndk.so
-system/system/lib64/android.hardware.gatekeeper@1.0.so
-system/system/lib64/android.hardware.gnss-V3-cpp.so
-system/system/lib64/android.hardware.gnss.measurement_corrections@1.0.so
-system/system/lib64/android.hardware.gnss.measurement_corrections@1.1.so
-system/system/lib64/android.hardware.gnss.visibility_control@1.0.so
-system/system/lib64/android.hardware.gnss@1.0.so
-system/system/lib64/android.hardware.gnss@1.1.so
-system/system/lib64/android.hardware.gnss@2.0.so
-system/system/lib64/android.hardware.gnss@2.1.so
-system/system/lib64/android.hardware.graphics.allocator-V2-ndk.so
-system/system/lib64/android.hardware.graphics.allocator@2.0.so
-system/system/lib64/android.hardware.graphics.allocator@3.0.so
-system/system/lib64/android.hardware.graphics.allocator@4.0.so
-system/system/lib64/android.hardware.graphics.bufferqueue@1.0.so
-system/system/lib64/android.hardware.graphics.bufferqueue@2.0.so
-system/system/lib64/android.hardware.graphics.common-V4-ndk.so
-system/system/lib64/android.hardware.graphics.common@1.0.so
-system/system/lib64/android.hardware.graphics.common@1.1.so
-system/system/lib64/android.hardware.graphics.common@1.2.so
-system/system/lib64/android.hardware.graphics.composer3-V2-ndk.so
-system/system/lib64/android.hardware.graphics.composer@2.1.so
-system/system/lib64/android.hardware.graphics.composer@2.2.so
-system/system/lib64/android.hardware.graphics.composer@2.3.so
-system/system/lib64/android.hardware.graphics.composer@2.4.so
-system/system/lib64/android.hardware.graphics.mapper@2.0.so
-system/system/lib64/android.hardware.graphics.mapper@2.1.so
-system/system/lib64/android.hardware.graphics.mapper@3.0.so
-system/system/lib64/android.hardware.graphics.mapper@4.0.so
-system/system/lib64/android.hardware.health-V2-ndk.so
-system/system/lib64/android.hardware.health.storage-V1-ndk.so
-system/system/lib64/android.hardware.health.storage@1.0.so
-system/system/lib64/android.hardware.health@1.0.so
-system/system/lib64/android.hardware.health@2.0.so
-system/system/lib64/android.hardware.health@2.1.so
-system/system/lib64/android.hardware.identity-support-lib.so
-system/system/lib64/android.hardware.input.common-V1-ndk.so
-system/system/lib64/android.hardware.input.processor-V1-ndk.so
-system/system/lib64/android.hardware.ir@1.0.so
-system/system/lib64/android.hardware.keymaster@3.0.so
-system/system/lib64/android.hardware.keymaster@4.0.so
-system/system/lib64/android.hardware.keymaster@4.1.so
-system/system/lib64/android.hardware.light@2.0.so
-system/system/lib64/android.hardware.media.bufferpool2-V1-ndk.so
-system/system/lib64/android.hardware.media.bufferpool@2.0.so
-system/system/lib64/android.hardware.media.c2@1.0.so
-system/system/lib64/android.hardware.media.c2@1.1.so
-system/system/lib64/android.hardware.media.c2@1.2.so
-system/system/lib64/android.hardware.media.omx@1.0.so
-system/system/lib64/android.hardware.media@1.0.so
-system/system/lib64/android.hardware.memtrack-V1-ndk.so
-system/system/lib64/android.hardware.memtrack@1.0.so
-system/system/lib64/android.hardware.net.nlinterceptor-V1-ndk.so
-system/system/lib64/android.hardware.power-V4-cpp.so
-system/system/lib64/android.hardware.power-V4-ndk.so
-system/system/lib64/android.hardware.power.stats-V1-cpp.so
-system/system/lib64/android.hardware.power.stats-V1-ndk.so
-system/system/lib64/android.hardware.power.stats@1.0.so
-system/system/lib64/android.hardware.power@1.0.so
-system/system/lib64/android.hardware.power@1.1.so
-system/system/lib64/android.hardware.power@1.2.so
-system/system/lib64/android.hardware.power@1.3.so
-system/system/lib64/android.hardware.radio-V2-ndk.so
-system/system/lib64/android.hardware.radio.config@1.0.so
-system/system/lib64/android.hardware.radio.data-V2-ndk.so
-system/system/lib64/android.hardware.radio.deprecated@1.0.so
-system/system/lib64/android.hardware.radio.network-V2-ndk.so
-system/system/lib64/android.hardware.radio@1.0.so
-system/system/lib64/android.hardware.radio@1.1.so
-system/system/lib64/android.hardware.radio@1.2.so
-system/system/lib64/android.hardware.radio@1.3.so
-system/system/lib64/android.hardware.radio@1.4.so
-system/system/lib64/android.hardware.renderscript@1.0.so
-system/system/lib64/android.hardware.secure_element@1.0.so
-system/system/lib64/android.hardware.security.keymint-V1-cpp.so
-system/system/lib64/android.hardware.security.keymint-V1-ndk.so
-system/system/lib64/android.hardware.security.keymint-V3-ndk.so
-system/system/lib64/android.hardware.security.rkp-V3-ndk.so
-system/system/lib64/android.hardware.security.secureclock-V1-cpp.so
-system/system/lib64/android.hardware.security.secureclock-V1-ndk.so
-system/system/lib64/android.hardware.security.sharedsecret-V1-ndk.so
-system/system/lib64/android.hardware.sensors-V2-ndk.so
-system/system/lib64/android.hardware.sensors@1.0.so
-system/system/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
-system/system/lib64/android.hardware.sensors@2.0.so
-system/system/lib64/android.hardware.sensors@2.1.so
-system/system/lib64/android.hardware.thermal-V1-ndk.so
-system/system/lib64/android.hardware.thermal@1.0.so
-system/system/lib64/android.hardware.thermal@2.0.so
-system/system/lib64/android.hardware.tv.input-V1-ndk.so
-system/system/lib64/android.hardware.tv.input@1.0.so
-system/system/lib64/android.hardware.tv.tuner-V2-ndk.so
-system/system/lib64/android.hardware.usb.gadget-V1-ndk.so
-system/system/lib64/android.hardware.usb.gadget@1.0.so
-system/system/lib64/android.hardware.vibrator-V2-cpp.so
-system/system/lib64/android.hardware.vibrator@1.0.so
-system/system/lib64/android.hardware.vibrator@1.1.so
-system/system/lib64/android.hardware.vibrator@1.2.so
-system/system/lib64/android.hardware.vibrator@1.3.so
-system/system/lib64/android.hardware.vr@1.0.so
-system/system/lib64/android.hidl.allocator@1.0.so
-system/system/lib64/android.hidl.memory.block@1.0.so
-system/system/lib64/android.hidl.memory.token@1.0.so
-system/system/lib64/android.hidl.memory@1.0.so
-system/system/lib64/android.hidl.safe_union@1.0.so
-system/system/lib64/android.hidl.token@1.0-utils.so
-system/system/lib64/android.hidl.token@1.0.so
-system/system/lib64/android.media.audio.common.types-V1-ndk.so
-system/system/lib64/android.media.audio.common.types-V2-cpp.so
-system/system/lib64/android.media.audio.common.types-V2-ndk.so
-system/system/lib64/android.security.apc-ndk.so
-system/system/lib64/android.security.authorization-ndk.so
-system/system/lib64/android.security.compat-ndk.so
-system/system/lib64/android.security.legacykeystore-ndk.so
-system/system/lib64/android.security.maintenance-ndk.so
-system/system/lib64/android.system.keystore2-V1-cpp.so
-system/system/lib64/android.system.keystore2-V1-ndk.so
-system/system/lib64/android.system.keystore2-V3-ndk.so
-system/system/lib64/android.system.net.netd-V1-ndk.so
-system/system/lib64/android.system.net.netd@1.0.so
-system/system/lib64/android.system.net.netd@1.1.so
-system/system/lib64/android.system.suspend-V1-ndk.so
-system/system/lib64/android.system.suspend.control-V1-cpp.so
-system/system/lib64/android.system.suspend.control.internal-cpp.so
-system/system/lib64/android.system.suspend@1.0.so
-system/system/lib64/android.system.wifi.keystore@1.0.so
-system/system/lib64/apex_aidl_interface-cpp.so
-system/system/lib64/audioclient-types-aidl-cpp.so
-system/system/lib64/audioflinger-aidl-cpp.so
-system/system/lib64/audiopolicy-aidl-cpp.so
-system/system/lib64/audiopolicy-types-aidl-cpp.so
-system/system/lib64/av-types-aidl-cpp.so
-system/system/lib64/capture_state_listener-aidl-cpp.so
-system/system/lib64/com.dsi.ant@1.0.so
-system/system/lib64/dnsresolver_aidl_interface-V7-cpp.so
-system/system/lib64/effect-aidl-cpp.so
-system/system/lib64/framework-permission-aidl-cpp.so
-system/system/lib64/gsi_aidl_interface-cpp.so
-system/system/lib64/heapprofd_client.so
-system/system/lib64/heapprofd_client_api.so
-system/system/lib64/ld-android.so
-system/system/lib64/lib-platform-compat-native-api.so
-system/system/lib64/libEGL.so
-system/system/lib64/libETC1.so
-system/system/lib64/libFFTEm.so
-system/system/lib64/libGLESv1_CM.so
-system/system/lib64/libGLESv2.so
-system/system/lib64/libGLESv3.so
-system/system/lib64/libLLVM_android.so
-system/system/lib64/libOpenMAXAL.so
-system/system/lib64/libOpenSLES.so
-system/system/lib64/libPlatformProperties.so
-system/system/lib64/libRS.so
-system/system/lib64/libRSCacheDir.so
-system/system/lib64/libRSCpuRef.so
-system/system/lib64/libRSDriver.so
-system/system/lib64/libRS_internal.so
-system/system/lib64/libSurfaceFlingerProp.so
-system/system/lib64/libSuspendProperties.so
-system/system/lib64/lib_android_keymaster_keymint_utils.so
-system/system/lib64/lib_cust_mount_helper.so
-system/system/lib64/libaaudio.so
-system/system/lib64/libaaudio_internal.so
-system/system/lib64/libaaudioservice.so
-system/system/lib64/libacpi_tables.dylib.so
-system/system/lib64/libactivitymanager_aidl.so
-system/system/lib64/libadbd_auth.so
-system/system/lib64/libadbd_fs.so
-system/system/lib64/libalarm_jni.so
-system/system/lib64/libamidi.so
-system/system/lib64/libandroid.so
-system/system/lib64/libandroid_log_sys.dylib.so
-system/system/lib64/libandroid_logger.dylib.so
-system/system/lib64/libandroid_net.so
-system/system/lib64/libandroid_runtime.so
-system/system/lib64/libandroid_runtime_lazy.so
-system/system/lib64/libandroid_servers.so
-system/system/lib64/libandroidfw.so
-system/system/lib64/libanyhow.dylib.so
-system/system/lib64/libappfuse.so
-system/system/lib64/libargh.dylib.so
-system/system/lib64/libargh_shared.dylib.so
-system/system/lib64/libartpalette-system.so
-system/system/lib64/libasync_task.dylib.so
-system/system/lib64/libasyncio.so
-system/system/lib64/libatomic.dylib.so
-system/system/lib64/libaudio-resampler.so
-system/system/lib64/libaudio_aidl_conversion_common_cpp.so
-system/system/lib64/libaudio_aidl_conversion_common_ndk.so
-system/system/lib64/libaudio_aidl_conversion_common_ndk_cpp.so
-system/system/lib64/libaudio_aidl_conversion_core_ndk.so
-system/system/lib64/libaudio_aidl_conversion_effect_ndk.so
-system/system/lib64/libaudio_streams.dylib.so
-system/system/lib64/libaudio_util.dylib.so
-system/system/lib64/libaudioaidlcommon.so
-system/system/lib64/libaudioclient.so
-system/system/lib64/libaudioclient_aidl_conversion.so
-system/system/lib64/libaudioeffect_jni.so
-system/system/lib64/libaudioflinger.so
-system/system/lib64/libaudioflinger_timing.so
-system/system/lib64/libaudiofoundation.so
-system/system/lib64/libaudiohal.so
-system/system/lib64/libaudiohal@4.0.so
-system/system/lib64/libaudiohal@5.0.so
-system/system/lib64/libaudiohal@6.0.so
-system/system/lib64/libaudiohal@7.0.so
-system/system/lib64/libaudiohal@7.1.so
-system/system/lib64/libaudiohal@aidl.so
-system/system/lib64/libaudiohal_deathhandler.so
-system/system/lib64/libaudiomanager.so
-system/system/lib64/libaudiopolicy.so
-system/system/lib64/libaudiopolicyengineconfigurable.so
-system/system/lib64/libaudiopolicyenginedefault.so
-system/system/lib64/libaudiopolicymanagerdefault.so
-system/system/lib64/libaudiopolicyservice.so
-system/system/lib64/libaudioprocessing.so
-system/system/lib64/libaudiospdif.so
-system/system/lib64/libaudiousecasevalidation.so
-system/system/lib64/libaudioutils.so
-system/system/lib64/libavservices_minijail.so
-system/system/lib64/libballoon_control.dylib.so
-system/system/lib64/libbase.dylib.so
-system/system/lib64/libbase.so
-system/system/lib64/libbattery.so
-system/system/lib64/libbatterystats_aidl.so
-system/system/lib64/libbcc.so
-system/system/lib64/libbcinfo.so
-system/system/lib64/libbinder.so
-system/system/lib64/libbinder_ndk.so
-system/system/lib64/libbinder_rpc_unstable.so
-system/system/lib64/libbinderdebug.so
-system/system/lib64/libbinderwrapper.so
-system/system/lib64/libbit_field.dylib.so
-system/system/lib64/libbitflags.dylib.so
-system/system/lib64/libblas.so
-system/system/lib64/libbluetooth.so
-system/system/lib64/libbluetooth_qti_jni.so
-system/system/lib64/libboot_control_client.so
-system/system/lib64/libbootanimation.so
-system/system/lib64/libbootloader_message.so
-system/system/lib64/libbpf_android.so
-system/system/lib64/libbpf_bcc.so
-system/system/lib64/libbpf_minimal.so
-system/system/lib64/libbrillo-binder.so
-system/system/lib64/libbrillo-stream.so
-system/system/lib64/libbrillo.so
-system/system/lib64/libbssl_ffi.dylib.so
-system/system/lib64/libbyteorder.dylib.so
-system/system/lib64/libbytes.dylib.so
-system/system/lib64/libc++.so
-system/system/lib64/libc.so
-system/system/lib64/libcamera2ndk.so
-system/system/lib64/libcamera_client.so
-system/system/lib64/libcamera_metadata.so
-system/system/lib64/libcameraservice.so
-system/system/lib64/libcap.so
-system/system/lib64/libcdisk_spec_proto.dylib.so
-system/system/lib64/libcert_parse.so
-system/system/lib64/libcfg_if.dylib.so
-system/system/lib64/libcgrouprc.so
-system/system/lib64/libchrome.so
-system/system/lib64/libchrono.dylib.so
-system/system/lib64/libclang_rt.asan-aarch64-android.so
-system/system/lib64/libclang_rt.hwasan-aarch64-android.so
-system/system/lib64/libclang_rt.ubsan_standalone-aarch64-android.so
-system/system/lib64/libclap.dylib.so
-system/system/lib64/libclap_lex.dylib.so
-system/system/lib64/libclcore.bc
-system/system/lib64/libclcore_debug.bc
-system/system/lib64/libclcore_debug_g.bc
-system/system/lib64/libclcore_g.bc
-system/system/lib64/libcodec2.so
-system/system/lib64/libcodec2_client.so
-system/system/lib64/libcodec2_hidl_client@1.0.so
-system/system/lib64/libcodec2_hidl_client@1.1.so
-system/system/lib64/libcodec2_hidl_client@1.2.so
-system/system/lib64/libcodec2_vndk.so
-system/system/lib64/libcompiler_rt.so
-system/system/lib64/libcppbor_external.so
-system/system/lib64/libcppcose_rkp.so
-system/system/lib64/libcrc32fast.dylib.so
-system/system/lib64/libcredstore_aidl.so
-system/system/lib64/libcros_async.dylib.so
-system/system/lib64/libcros_fdt.dylib.so
-system/system/lib64/libcros_tracing.dylib.so
-system/system/lib64/libcrossbeam_utils.dylib.so
-system/system/lib64/libcrosvm_cli.dylib.so
-system/system/lib64/libcrypto.so
-system/system/lib64/libcrypto_utils.so
-system/system/lib64/libcups.so
-system/system/lib64/libcurl.so
-system/system/lib64/libcutils.so
-system/system/lib64/libcutils_sockets.so
-system/system/lib64/libdata_model.dylib.so
-system/system/lib64/libdataloader.so
-system/system/lib64/libdatasource.so
-system/system/lib64/libdebuggerd_client.so
-system/system/lib64/libdevices.dylib.so
-system/system/lib64/libdisk.dylib.so
-system/system/lib64/libdiskconfig.so
-system/system/lib64/libdisplayservicehidl.so
-system/system/lib64/libdl.so
-system/system/lib64/libdl_android.so
-system/system/lib64/libdmabufheap.so
-system/system/lib64/libdng_sdk.so
-system/system/lib64/libdowncast_rs.dylib.so
-system/system/lib64/libdrm.so
-system/system/lib64/libdrmframework.so
-system/system/lib64/libdrmframework_jni.so
-system/system/lib64/libdrmframeworkcommon.so
-system/system/lib64/libdumpstateaidl.so
-system/system/lib64/libdumpstateutil.so
-system/system/lib64/libdumputils.so
-system/system/lib64/libdynamic_depth.so
-system/system/lib64/libeffectsconfig.so
-system/system/lib64/libenv_logger.dylib.so
-system/system/lib64/libevent.so
-system/system/lib64/libexif.so
-system/system/lib64/libexpat.so
-system/system/lib64/libexpresslog.so
-system/system/lib64/libext2_blkid.so
-system/system/lib64/libext2_com_err.so
-system/system/lib64/libext2_e2p.so
-system/system/lib64/libext2_misc.so
-system/system/lib64/libext2_quota.so
-system/system/lib64/libext2_uuid.so
-system/system/lib64/libext2fs.so
-system/system/lib64/libext4_utils.so
-system/system/lib64/libf2fs_sparseblock.so
-system/system/lib64/libfastrand.dylib.so
-system/system/lib64/libfdtrack.so
-system/system/lib64/libfec.so
-system/system/lib64/libfilterfw.so
-system/system/lib64/libfilterpack_imageproc.so
-system/system/lib64/libflatbuffers-cpp.so
-system/system/lib64/libfmq.so
-system/system/lib64/libfnv.dylib.so
-system/system/lib64/libfs_mgr.so
-system/system/lib64/libfs_mgr_binder.so
-system/system/lib64/libfsverity.so
-system/system/lib64/libft2.so
-system/system/lib64/libfuse.dylib.so
-system/system/lib64/libfutures.dylib.so
-system/system/lib64/libfutures_channel.dylib.so
-system/system/lib64/libfutures_core.dylib.so
-system/system/lib64/libfutures_executor.dylib.so
-system/system/lib64/libfutures_io.dylib.so
-system/system/lib64/libfutures_sink.dylib.so
-system/system/lib64/libfutures_task.dylib.so
-system/system/lib64/libfutures_util.dylib.so
-system/system/lib64/libgatekeeper.so
-system/system/lib64/libgatekeeper_aidl.so
-system/system/lib64/libgdbstub.dylib.so
-system/system/lib64/libgdbstub_arch.dylib.so
-system/system/lib64/libgetrandom.dylib.so
-system/system/lib64/libgfxstats.so
-system/system/lib64/libgpumem.so
-system/system/lib64/libgpumemtracer.so
-system/system/lib64/libgpuservice.so
-system/system/lib64/libgpuwork.so
-system/system/lib64/libgralloctypes.so
-system/system/lib64/libgraphicsenv.so
-system/system/lib64/libgsi.so
-system/system/lib64/libgui.so
-system/system/lib64/libhardware.so
-system/system/lib64/libhardware_legacy.so
-system/system/lib64/libharfbuzz_ng.so
-system/system/lib64/libheadtracking-binding.so
-system/system/lib64/libheadtracking.so
-system/system/lib64/libheif.so
-system/system/lib64/libhidcommand_jni.so
-system/system/lib64/libhidl-gen-hash.so
-system/system/lib64/libhidl-gen-utils.so
-system/system/lib64/libhidlallocatorutils.so
-system/system/lib64/libhidlbase.so
-system/system/lib64/libhidlmemory.so
-system/system/lib64/libhidltransport.so
-system/system/lib64/libhwbinder.so
-system/system/lib64/libhwui.so
-system/system/lib64/libhypervisor.dylib.so
-system/system/lib64/libidmap2.so
-system/system/lib64/libidmap2_policies.so
-system/system/lib64/libimage_io.so
-system/system/lib64/libimg_utils.so
-system/system/lib64/libincfs.so
-system/system/lib64/libincident.so
-system/system/lib64/libincidentpriv.so
-system/system/lib64/libinput.so
-system/system/lib64/libinputflinger.so
-system/system/lib64/libinputflinger_base.so
-system/system/lib64/libinputreader.so
-system/system/lib64/libinputreporter.so
-system/system/lib64/libinputservice.so
-system/system/lib64/libintrusive_collections.dylib.so
-system/system/lib64/libio_uring.dylib.so
-system/system/lib64/libion.so
-system/system/lib64/libiprouteutil.so
-system/system/lib64/libitoa.dylib.so
-system/system/lib64/libjnigraphics.so
-system/system/lib64/libjpeg.so
-system/system/lib64/libjpegdecoder.so
-system/system/lib64/libjpegencoder.so
-system/system/lib64/libjsoncpp.so
-system/system/lib64/libkeymaster4_1support.so
-system/system/lib64/libkeymaster4support.so
-system/system/lib64/libkeymaster_messages.so
-system/system/lib64/libkeymaster_portable.so
-system/system/lib64/libkeymint.so
-system/system/lib64/libkeymint_support.so
-system/system/lib64/libkeystore-attestation-application-id.so
-system/system/lib64/libkeystore-engine.so
-system/system/lib64/libkeystore2_aaid.so
-system/system/lib64/libkeystore2_apc_compat.so
-system/system/lib64/libkeystore2_crypto.so
-system/system/lib64/libkeyutils.so
-system/system/lib64/libkll.so
-system/system/lib64/libkm_compat.so
-system/system/lib64/libkm_compat_service.so
-system/system/lib64/libkvm.dylib.so
-system/system/lib64/libkvm_sys.dylib.so
-system/system/lib64/liblayers_proto.so
-system/system/lib64/libldacBT_abr.so
-system/system/lib64/libldacBT_enc.so
-system/system/lib64/liblibc.dylib.so
-system/system/lib64/liblinux_input_sys.dylib.so
-system/system/lib64/liblog.so
-system/system/lib64/liblog_rust.dylib.so
-system/system/lib64/liblogger.dylib.so
-system/system/lib64/liblogwrap.so
-system/system/lib64/liblp.so
-system/system/lib64/liblpdump.so
-system/system/lib64/liblpdump_interface-cpp.so
-system/system/lib64/liblz4.so
-system/system/lib64/liblzma.so
-system/system/lib64/libm.so
-system/system/lib64/libmanaged.dylib.so
-system/system/lib64/libmdnssd.so
-system/system/lib64/libmedia.so
-system/system/lib64/libmedia_codeclist.so
-system/system/lib64/libmedia_helper.so
-system/system/lib64/libmedia_jni.so
-system/system/lib64/libmedia_jni_utils.so
-system/system/lib64/libmedia_omx.so
-system/system/lib64/libmedia_omx_client.so
-system/system/lib64/libmediadrm.so
-system/system/lib64/libmediadrmmetrics_consumer.so
-system/system/lib64/libmediadrmmetrics_full.so
-system/system/lib64/libmediadrmmetrics_lite.so
-system/system/lib64/libmediaextractorservice.so
-system/system/lib64/libmedialogservice.so
-system/system/lib64/libmediametrics.so
-system/system/lib64/libmediametricsservice.so
-system/system/lib64/libmediandk.so
-system/system/lib64/libmediandk_utils.so
-system/system/lib64/libmediaplayerservice.so
-system/system/lib64/libmediautils.so
-system/system/lib64/libmediautils_delayed.so
-system/system/lib64/libmemchr.dylib.so
-system/system/lib64/libmeminfo.so
-system/system/lib64/libmemoffset.dylib.so
-system/system/lib64/libmemtrack.so
-system/system/lib64/libmemtrackproxy.so
-system/system/lib64/libmemunreachable.so
-system/system/lib64/libmiaudiopolicymanager.so
-system/system/lib64/libmicontinuity_sdk.so
-system/system/lib64/libminijail.dylib.so
-system/system/lib64/libminijail.so
-system/system/lib64/libminijail_sys.dylib.so
-system/system/lib64/libminikin.so
-system/system/lib64/libminimal_lexical.dylib.so
-system/system/lib64/libminui.so
-system/system/lib64/libmio.dylib.so
-system/system/lib64/libmisys_jni.xiaomi.so
-system/system/lib64/libmqsas.so
-system/system/lib64/libmtp.so
-system/system/lib64/libnativebridge_lazy.so
-system/system/lib64/libnativedisplay.so
-system/system/lib64/libnativeloader_lazy.so
-system/system/lib64/libnativewindow.so
-system/system/lib64/libnbaio.so
-system/system/lib64/libnblog.so
-system/system/lib64/libnet_sys.dylib.so
-system/system/lib64/libnet_util.dylib.so
-system/system/lib64/libnetd_client.so
-system/system/lib64/libnetdutils.so
-system/system/lib64/libnetlink.so
-system/system/lib64/libnetutils.so
-system/system/lib64/libneuralnetworks_packageinfo.so
-system/system/lib64/libnix.dylib.so
-system/system/lib64/libnl.so
-system/system/lib64/libnom.dylib.so
-system/system/lib64/libnum_cpus.dylib.so
-system/system/lib64/libnum_integer.dylib.so
-system/system/lib64/libnum_traits.dylib.so
-system/system/lib64/libonce_cell.dylib.so
-system/system/lib64/libos_str_bytes.dylib.so
-system/system/lib64/libp9.dylib.so
-system/system/lib64/libpackagelistparser.so
-system/system/lib64/libparameter.so
-system/system/lib64/libpcap.so
-system/system/lib64/libpcre2.so
-system/system/lib64/libpdfium.so
-system/system/lib64/libpdx_default_transport.so
-system/system/lib64/libperfetto.so
-system/system/lib64/libperfetto_android_internal.so
-system/system/lib64/libpermission.so
-system/system/lib64/libpiex.so
-system/system/lib64/libpin_project_lite.dylib.so
-system/system/lib64/libpin_utils.dylib.so
-system/system/lib64/libpng.so
-system/system/lib64/libpolicy-subsystem.so
-system/system/lib64/libpower.so
-system/system/lib64/libpower_monitor.dylib.so
-system/system/lib64/libpowerkeeper_jni.so
-system/system/lib64/libpowermanager.so
-system/system/lib64/libppv_lite86.dylib.so
-system/system/lib64/libprintspooler_jni.so
-system/system/lib64/libprocessgroup.so
-system/system/lib64/libprocessgroup_setup.so
-system/system/lib64/libprocinfo.so
-system/system/lib64/libprotobuf-cpp-full.so
-system/system/lib64/libprotobuf-cpp-lite.so
-system/system/lib64/libprotobuf_deprecated.dylib.so
-system/system/lib64/libprotos.dylib.so
-system/system/lib64/libprotoutil.so
-system/system/lib64/libpsi.so
-system/system/lib64/libpuresoftkeymasterdevice.so
-system/system/lib64/libradio_metadata.so
-system/system/lib64/librand.dylib.so
-system/system/lib64/librand_chacha.dylib.so
-system/system/lib64/librand_core.dylib.so
-system/system/lib64/libremote-processor.so
-system/system/lib64/libremove_dir_all.dylib.so
-system/system/lib64/libresourcemanagerservice.so
-system/system/lib64/libresources.dylib.so
-system/system/lib64/librkp_support.so
-system/system/lib64/librs_jni.so
-system/system/lib64/librtp_jni.so
-system/system/lib64/librutabaga_gfx.dylib.so
-system/system/lib64/libruy.so
-system/system/lib64/libryu.dylib.so
-system/system/lib64/libschedulerservicehidl.so
-system/system/lib64/libselinux.so
-system/system/lib64/libsensor.so
-system/system/lib64/libsensorprivacy.so
-system/system/lib64/libsensorservice.so
-system/system/lib64/libsensorserviceaidl.so
-system/system/lib64/libsensorservicehidl.so
-system/system/lib64/libserde.dylib.so
-system/system/lib64/libserde_json.dylib.so
-system/system/lib64/libserde_keyvalue.dylib.so
-system/system/lib64/libservices.core-gnss.so
-system/system/lib64/libservices.so
-system/system/lib64/libsfplugin_ccodec.so
-system/system/lib64/libsfplugin_ccodec_utils.so
-system/system/lib64/libshmemcompat.so
-system/system/lib64/libshmemutil.so
-system/system/lib64/libsimplelog.dylib.so
-system/system/lib64/libslab.dylib.so
-system/system/lib64/libsmallvec.dylib.so
-system/system/lib64/libsmapinfo.so
-system/system/lib64/libsocket2.dylib.so
-system/system/lib64/libsoft_attestation_cert.so
-system/system/lib64/libsonic.so
-system/system/lib64/libsonivox.so
-system/system/lib64/libsounddose.so
-system/system/lib64/libsoundpool.so
-system/system/lib64/libsparse.so
-system/system/lib64/libspeex_jni.so
-system/system/lib64/libspeexresampler.so
-system/system/lib64/libsqlite.so
-system/system/lib64/libsquashfs_utils.so
-system/system/lib64/libssl.so
-system/system/lib64/libstagefright.so
-system/system/lib64/libstagefright_aidl_bufferpool2.so
-system/system/lib64/libstagefright_amrnb_common.so
-system/system/lib64/libstagefright_bufferpool@2.0.1.so
-system/system/lib64/libstagefright_bufferqueue_helper.so
-system/system/lib64/libstagefright_codecbase.so
-system/system/lib64/libstagefright_foundation.so
-system/system/lib64/libstagefright_framecapture_utils.so
-system/system/lib64/libstagefright_http_support.so
-system/system/lib64/libstagefright_httplive.so
-system/system/lib64/libstagefright_omx.so
-system/system/lib64/libstagefright_omx_utils.so
-system/system/lib64/libstagefright_surface_utils.so
-system/system/lib64/libstagefright_xmlparser.so
-system/system/lib64/libstatic_assertions.dylib.so
-system/system/lib64/libstats_media_metrics.so
-system/system/lib64/libstatshidl.so
-system/system/lib64/libstatslog.so
-system/system/lib64/libstd.dylib.so
-system/system/lib64/libstdc++.so
-system/system/lib64/libsurfaceflinger.so
-system/system/lib64/libsync.dylib.so
-system/system/lib64/libsync.so
-system/system/lib64/libsystemwapi_cert.so
-system/system/lib64/libsysutils.so
-system/system/lib64/libtempfile.dylib.so
-system/system/lib64/libtensorflowlite_jni.so
-system/system/lib64/libtermcolor.dylib.so
-system/system/lib64/libtextclassifier.so
-system/system/lib64/libtextclassifier_hash.so
-system/system/lib64/libtflite.so
-system/system/lib64/libthiserror.dylib.so
-system/system/lib64/libtimeinstate.so
-system/system/lib64/libtimestats.so
-system/system/lib64/libtimestats_atoms_proto.so
-system/system/lib64/libtimestats_proto.so
-system/system/lib64/libtinyalsa.so
-system/system/lib64/libtinyxml2.so
-system/system/lib64/libtokio.dylib.so
-system/system/lib64/libtombstoned_client.so
-system/system/lib64/libtracingproxy.so
-system/system/lib64/libui.so
-system/system/lib64/libuinputcommand_jni.so
-system/system/lib64/libukey2_jni.so
-system/system/lib64/libultrahdr.so
-system/system/lib64/libunwindstack.so
-system/system/lib64/libupdate_engine_stable-V1-cpp.so
-system/system/lib64/libusb_sys.dylib.so
-system/system/lib64/libusb_util.dylib.so
-system/system/lib64/libusbhost.so
-system/system/lib64/libutils.so
-system/system/lib64/libutilscallstack.so
-system/system/lib64/libuuid.dylib.so
-system/system/lib64/libvfio_sys.dylib.so
-system/system/lib64/libvhost.dylib.so
-system/system/lib64/libvibrator.so
-system/system/lib64/libvibratorservice.so
-system/system/lib64/libvintf.so
-system/system/lib64/libvirtio_sys.dylib.so
-system/system/lib64/libvkjson.so
-system/system/lib64/libvm_control.dylib.so
-system/system/lib64/libvm_memory.dylib.so
-system/system/lib64/libvmm_vhost.dylib.so
-system/system/lib64/libvndksupport.so
-system/system/lib64/libvulkan.so
-system/system/lib64/libwebviewchromium_loader.so
-system/system/lib64/libwebviewchromium_plat_support.so
-system/system/lib64/libwfds.so
-system/system/lib64/libwifi-system-iface.so
-system/system/lib64/libwilhelm.so
-system/system/lib64/libxml2.so
-system/system/lib64/libyuv.so
-system/system/lib64/libz.so
-system/system/lib64/libzerocopy.dylib.so
-system/system/lib64/libziparchive.so
-system/system/lib64/mdns_aidl_interface-V1-cpp.so
-system/system/lib64/media_permission-aidl-cpp.so
-system/system/lib64/mediametricsservice-aidl-cpp.so
-system/system/lib64/netd_aidl_interface-V13-cpp.so
-system/system/lib64/netd_event_listener_interface-V1-cpp.so
-system/system/lib64/oemnetd_aidl_interface-cpp.so
-system/system/lib64/packagemanager_aidl-cpp.so
-system/system/lib64/pppol2tp-android.so
-system/system/lib64/pppopptp-android.so
-system/system/lib64/server_configurable_flags.so
-system/system/lib64/service.incremental.so
-system/system/lib64/shared-file-region-aidl-cpp.so
-system/system/lib64/slicer.so
-system/system/lib64/spatializer-aidl-cpp.so
-system/system/lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.display.composer3-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V10-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V2-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V3-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V4-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V5-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V6-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V7-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V8-ndk.so
-system/system/lib64/vendor.qti.hardware.display.config-V9-ndk.so
-system/system/lib64/vendor.qti.hardware.perf2-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.qspa-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.secureprocessor.common-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.secureprocessor.common-helper.so
-system/system/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
-system/system/lib64/vendor.qti.hardware.secureprocessor.config-V1-ndk.so
-system/system/lib64/vendor.qti.hardware.secureprocessor.device-V1-ndk.so
-system/system/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
-system/system/lib64/vendor.xiaomi.hardware.misight-V1-ndk_platform.so
-system/system/lib64/vendor.xiaomi.hardware.misys@1.0.so
-system/system/lib64/vendor.xiaomi.hardware.misys@2.0.so
-system/system/lib64/vendor.xiaomi.hardware.misys@3.0.so
-system/system/lib64/vendor.xiaomi.hardware.misys@4.0.so
-system/system/lib64/xiaomi.knock.algorithm-V1-ndk_platform.so
-system/system/priv-app/BackupRestoreConfirmation/oat/arm64/BackupRestoreConfirmation.odex
-system/system/priv-app/BackupRestoreConfirmation/oat/arm64/BackupRestoreConfirmation.vdex
-system/system/priv-app/BackupRestoreConfirmation/BackupRestoreConfirmation.apk
-system/system/priv-app/BlockedNumberProvider/oat/arm64/BlockedNumberProvider.odex
-system/system/priv-app/BlockedNumberProvider/oat/arm64/BlockedNumberProvider.vdex
-system/system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk
-system/system/priv-app/BuiltInPrintService/lib/arm64/libcups.so
-system/system/priv-app/BuiltInPrintService/lib/arm64/libwfds.so
-system/system/priv-app/BuiltInPrintService/oat/arm64/BuiltInPrintService.odex
-system/system/priv-app/BuiltInPrintService/oat/arm64/BuiltInPrintService.vdex
-system/system/priv-app/BuiltInPrintService/BuiltInPrintService.apk
-system/system/priv-app/CalendarProvider/oat/arm64/CalendarProvider.odex
-system/system/priv-app/CalendarProvider/oat/arm64/CalendarProvider.vdex
-system/system/priv-app/CalendarProvider/CalendarProvider.apk
-system/system/priv-app/CallLogBackup/oat/arm64/CallLogBackup.odex
-system/system/priv-app/CallLogBackup/oat/arm64/CallLogBackup.vdex
-system/system/priv-app/CallLogBackup/CallLogBackup.apk
-system/system/priv-app/CellBroadcastLegacyApp/oat/arm64/CellBroadcastLegacyApp.odex
-system/system/priv-app/CellBroadcastLegacyApp/oat/arm64/CellBroadcastLegacyApp.vdex
-system/system/priv-app/CellBroadcastLegacyApp/CellBroadcastLegacyApp.apk
-system/system/priv-app/ContactsProvider/oat/arm64/ContactsProvider.odex
-system/system/priv-app/ContactsProvider/oat/arm64/ContactsProvider.vdex
-system/system/priv-app/ContactsProvider/ContactsProvider.apk
-system/system/priv-app/CredentialManager/oat/arm64/CredentialManager.art
-system/system/priv-app/CredentialManager/oat/arm64/CredentialManager.odex
-system/system/priv-app/CredentialManager/oat/arm64/CredentialManager.vdex
-system/system/priv-app/CredentialManager/CredentialManager.apk
-system/system/priv-app/CredentialManager/CredentialManager.apk.prof
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-hdpi.apk
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-ldpi.apk
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-mdpi.apk
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-tvdpi.apk
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-xhdpi.apk
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-xxhdpi.apk
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-xxxhdpi.apk
-system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk
-system/system/priv-app/DownloadProvider/oat/arm64/DownloadProvider.odex
-system/system/priv-app/DownloadProvider/oat/arm64/DownloadProvider.vdex
-system/system/priv-app/DownloadProvider/DownloadProvider.apk
-system/system/priv-app/DynamicSystemInstallationService/oat/arm64/DynamicSystemInstallationService.odex
-system/system/priv-app/DynamicSystemInstallationService/oat/arm64/DynamicSystemInstallationService.vdex
-system/system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk
-system/system/priv-app/ExternalStorageProvider/oat/arm64/ExternalStorageProvider.odex
-system/system/priv-app/ExternalStorageProvider/oat/arm64/ExternalStorageProvider.vdex
-system/system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk
-system/system/priv-app/FusedLocation/oat/arm64/FusedLocation.odex
-system/system/priv-app/FusedLocation/oat/arm64/FusedLocation.vdex
-system/system/priv-app/FusedLocation/FusedLocation.apk
-system/system/priv-app/GooglePackageInstaller/oat/arm64/GooglePackageInstaller.odex
-system/system/priv-app/GooglePackageInstaller/oat/arm64/GooglePackageInstaller.vdex
-system/system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk
-system/system/priv-app/HTMLViewer/oat/arm64/HTMLViewer.odex
-system/system/priv-app/HTMLViewer/oat/arm64/HTMLViewer.vdex
-system/system/priv-app/HTMLViewer/HTMLViewer.apk
-system/system/priv-app/InputDevices/oat/arm64/InputDevices.odex
-system/system/priv-app/InputDevices/oat/arm64/InputDevices.vdex
-system/system/priv-app/InputDevices/InputDevices.apk
-system/system/priv-app/IntentResolver/oat/arm64/IntentResolver.odex
-system/system/priv-app/IntentResolver/oat/arm64/IntentResolver.vdex
-system/system/priv-app/IntentResolver/IntentResolver.apk
-system/system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex
-system/system/priv-app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex
-system/system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
-system/system/priv-app/LocalTransport/oat/arm64/LocalTransport.odex
-system/system/priv-app/LocalTransport/oat/arm64/LocalTransport.vdex
-system/system/priv-app/LocalTransport/LocalTransport.apk
-system/system/priv-app/ManagedProvisioning/oat/arm64/ManagedProvisioning.odex
-system/system/priv-app/ManagedProvisioning/oat/arm64/ManagedProvisioning.vdex
-system/system/priv-app/ManagedProvisioning/ManagedProvisioning.apk
-system/system/priv-app/MediaProviderLegacy/oat/arm64/MediaProviderLegacy.odex
-system/system/priv-app/MediaProviderLegacy/oat/arm64/MediaProviderLegacy.vdex
-system/system/priv-app/MediaProviderLegacy/MediaProviderLegacy.apk
-system/system/priv-app/MmsService/oat/arm64/MmsService.odex
-system/system/priv-app/MmsService/oat/arm64/MmsService.vdex
-system/system/priv-app/MmsService/MmsService.apk
-system/system/priv-app/MtpService/oat/arm64/MtpService.odex
-system/system/priv-app/MtpService/oat/arm64/MtpService.vdex
-system/system/priv-app/MtpService/MtpService.apk
-system/system/priv-app/MusicFX/oat/arm64/MusicFX.odex
-system/system/priv-app/MusicFX/oat/arm64/MusicFX.vdex
-system/system/priv-app/MusicFX/MusicFX.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-arm64_v8a.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-hdpi.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-ldpi.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-mdpi.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-tvdpi.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-xhdpi.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-xxhdpi.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-xxxhdpi.apk
-system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
-system/system/priv-app/ONS/oat/arm64/ONS.odex
-system/system/priv-app/ONS/oat/arm64/ONS.vdex
-system/system/priv-app/ONS/ONS.apk
-system/system/priv-app/ProxyHandler/oat/arm64/ProxyHandler.odex
-system/system/priv-app/ProxyHandler/oat/arm64/ProxyHandler.vdex
-system/system/priv-app/ProxyHandler/ProxyHandler.apk
-system/system/priv-app/SettingsProvider/oat/arm64/SettingsProvider.odex
-system/system/priv-app/SettingsProvider/oat/arm64/SettingsProvider.vdex
-system/system/priv-app/SettingsProvider/SettingsProvider.apk
-system/system/priv-app/SharedStorageBackup/oat/arm64/SharedStorageBackup.odex
-system/system/priv-app/SharedStorageBackup/oat/arm64/SharedStorageBackup.vdex
-system/system/priv-app/SharedStorageBackup/SharedStorageBackup.apk
-system/system/priv-app/Shell/oat/arm64/Shell.odex
-system/system/priv-app/Shell/oat/arm64/Shell.vdex
-system/system/priv-app/Shell/Shell.apk
-system/system/priv-app/SoundPicker/oat/arm64/SoundPicker.odex
-system/system/priv-app/SoundPicker/oat/arm64/SoundPicker.vdex
-system/system/priv-app/SoundPicker/SoundPicker.apk
-system/system/priv-app/StatementService/oat/arm64/StatementService.odex
-system/system/priv-app/StatementService/oat/arm64/StatementService.vdex
-system/system/priv-app/StatementService/StatementService.apk
-system/system/priv-app/Tag/oat/arm64/Tag.odex
-system/system/priv-app/Tag/oat/arm64/Tag.vdex
-system/system/priv-app/Tag/Tag.apk
-system/system/priv-app/TeleService/lib/arm64/libmicontinuity_sdk.so
-system/system/priv-app/TeleService/TeleService.apk
-system/system/priv-app/Telecom/Telecom.apk
-system/system/priv-app/TelephonyProvider/oat/arm64/TelephonyProvider.odex
-system/system/priv-app/TelephonyProvider/oat/arm64/TelephonyProvider.vdex
-system/system/priv-app/TelephonyProvider/TelephonyProvider.apk
-system/system/priv-app/UserDictionaryProvider/oat/arm64/UserDictionaryProvider.odex
-system/system/priv-app/UserDictionaryProvider/oat/arm64/UserDictionaryProvider.vdex
-system/system/priv-app/UserDictionaryProvider/UserDictionaryProvider.apk
-system/system/system_dlkm/etc/build.prop
-system/system/usr/hyphen-data/hyph-af.hyb
-system/system/usr/hyphen-data/hyph-af.lic.txt
-system/system/usr/hyphen-data/hyph-as.hyb
-system/system/usr/hyphen-data/hyph-as.lic.txt
-system/system/usr/hyphen-data/hyph-be.hyb
-system/system/usr/hyphen-data/hyph-be.lic.txt
-system/system/usr/hyphen-data/hyph-bg.hyb
-system/system/usr/hyphen-data/hyph-bg.lic.txt
-system/system/usr/hyphen-data/hyph-bn.hyb
-system/system/usr/hyphen-data/hyph-bn.lic.txt
-system/system/usr/hyphen-data/hyph-cs.hyb
-system/system/usr/hyphen-data/hyph-cs.lic.txt
-system/system/usr/hyphen-data/hyph-cu.hyb
-system/system/usr/hyphen-data/hyph-cu.lic.txt
-system/system/usr/hyphen-data/hyph-cy.hyb
-system/system/usr/hyphen-data/hyph-cy.lic.txt
-system/system/usr/hyphen-data/hyph-da.hyb
-system/system/usr/hyphen-data/hyph-da.lic.txt
-system/system/usr/hyphen-data/hyph-de-1901.hyb
-system/system/usr/hyphen-data/hyph-de-1901.lic.txt
-system/system/usr/hyphen-data/hyph-de-1996.hyb
-system/system/usr/hyphen-data/hyph-de-1996.lic.txt
-system/system/usr/hyphen-data/hyph-de-ch-1901.hyb
-system/system/usr/hyphen-data/hyph-de-ch-1901.lic.txt
-system/system/usr/hyphen-data/hyph-el.hyb
-system/system/usr/hyphen-data/hyph-el.lic.txt
-system/system/usr/hyphen-data/hyph-en-gb.hyb
-system/system/usr/hyphen-data/hyph-en-gb.lic.txt
-system/system/usr/hyphen-data/hyph-en-us.hyb
-system/system/usr/hyphen-data/hyph-en-us.lic.txt
-system/system/usr/hyphen-data/hyph-es.hyb
-system/system/usr/hyphen-data/hyph-es.lic.txt
-system/system/usr/hyphen-data/hyph-et.hyb
-system/system/usr/hyphen-data/hyph-et.lic.txt
-system/system/usr/hyphen-data/hyph-eu.hyb
-system/system/usr/hyphen-data/hyph-eu.lic.txt
-system/system/usr/hyphen-data/hyph-fr.hyb
-system/system/usr/hyphen-data/hyph-fr.lic.txt
-system/system/usr/hyphen-data/hyph-ga.hyb
-system/system/usr/hyphen-data/hyph-ga.lic.txt
-system/system/usr/hyphen-data/hyph-gl.hyb
-system/system/usr/hyphen-data/hyph-gl.lic.txt
-system/system/usr/hyphen-data/hyph-gu.hyb
-system/system/usr/hyphen-data/hyph-gu.lic.txt
-system/system/usr/hyphen-data/hyph-hi.hyb
-system/system/usr/hyphen-data/hyph-hi.lic.txt
-system/system/usr/hyphen-data/hyph-hr.hyb
-system/system/usr/hyphen-data/hyph-hr.lic.txt
-system/system/usr/hyphen-data/hyph-hu.hyb
-system/system/usr/hyphen-data/hyph-hu.lic.txt
-system/system/usr/hyphen-data/hyph-hy.hyb
-system/system/usr/hyphen-data/hyph-hy.lic.txt
-system/system/usr/hyphen-data/hyph-it.hyb
-system/system/usr/hyphen-data/hyph-it.lic.txt
-system/system/usr/hyphen-data/hyph-ka.hyb
-system/system/usr/hyphen-data/hyph-ka.lic.txt
-system/system/usr/hyphen-data/hyph-kn.hyb
-system/system/usr/hyphen-data/hyph-kn.lic.txt
-system/system/usr/hyphen-data/hyph-la.hyb
-system/system/usr/hyphen-data/hyph-la.lic.txt
-system/system/usr/hyphen-data/hyph-lt.hyb
-system/system/usr/hyphen-data/hyph-lt.lic.txt
-system/system/usr/hyphen-data/hyph-lv.hyb
-system/system/usr/hyphen-data/hyph-lv.lic.txt
-system/system/usr/hyphen-data/hyph-ml.hyb
-system/system/usr/hyphen-data/hyph-ml.lic.txt
-system/system/usr/hyphen-data/hyph-mn-cyrl.hyb
-system/system/usr/hyphen-data/hyph-mn-cyrl.lic.txt
-system/system/usr/hyphen-data/hyph-mr.hyb
-system/system/usr/hyphen-data/hyph-mr.lic.txt
-system/system/usr/hyphen-data/hyph-mul-ethi.hyb
-system/system/usr/hyphen-data/hyph-mul-ethi.lic.txt
-system/system/usr/hyphen-data/hyph-nb.hyb
-system/system/usr/hyphen-data/hyph-nb.lic.txt
-system/system/usr/hyphen-data/hyph-nl.hyb
-system/system/usr/hyphen-data/hyph-nl.lic.txt
-system/system/usr/hyphen-data/hyph-nn.hyb
-system/system/usr/hyphen-data/hyph-nn.lic.txt
-system/system/usr/hyphen-data/hyph-or.hyb
-system/system/usr/hyphen-data/hyph-or.lic.txt
-system/system/usr/hyphen-data/hyph-pa.hyb
-system/system/usr/hyphen-data/hyph-pa.lic.txt
-system/system/usr/hyphen-data/hyph-pl.hyb
-system/system/usr/hyphen-data/hyph-pl.lic.txt
-system/system/usr/hyphen-data/hyph-pt.hyb
-system/system/usr/hyphen-data/hyph-pt.lic.txt
-system/system/usr/hyphen-data/hyph-ru.hyb
-system/system/usr/hyphen-data/hyph-ru.lic.txt
-system/system/usr/hyphen-data/hyph-sk.hyb
-system/system/usr/hyphen-data/hyph-sk.lic.txt
-system/system/usr/hyphen-data/hyph-sl.hyb
-system/system/usr/hyphen-data/hyph-sl.lic.txt
-system/system/usr/hyphen-data/hyph-sq.hyb
-system/system/usr/hyphen-data/hyph-sq.lic.txt
-system/system/usr/hyphen-data/hyph-sv.hyb
-system/system/usr/hyphen-data/hyph-sv.lic.txt
-system/system/usr/hyphen-data/hyph-ta.hyb
-system/system/usr/hyphen-data/hyph-ta.lic.txt
-system/system/usr/hyphen-data/hyph-te.hyb
-system/system/usr/hyphen-data/hyph-te.lic.txt
-system/system/usr/hyphen-data/hyph-tk.hyb
-system/system/usr/hyphen-data/hyph-tk.lic.txt
-system/system/usr/hyphen-data/hyph-uk.hyb
-system/system/usr/hyphen-data/hyph-uk.lic.txt
-system/system/usr/hyphen-data/hyph-und-ethi.hyb
-system/system/usr/hyphen-data/hyph-und-ethi.lic.txt
-system/system/usr/idc/AVRCP.idc
-system/system/usr/idc/GoogleTV-Remote.idc
-system/system/usr/idc/Vendor_0022_Product_4d80.idc
-system/system/usr/idc/Vendor_004c_Product_0265.idc
-system/system/usr/idc/Vendor_03f6_Product_a001.idc
-system/system/usr/idc/Vendor_046d_Product_4011.idc
-system/system/usr/idc/Vendor_046d_Product_4101.idc
-system/system/usr/idc/Vendor_046d_Product_4102.idc
-system/system/usr/idc/Vendor_046d_Product_b00c.idc
-system/system/usr/idc/Vendor_054c_Product_05c4.idc
-system/system/usr/idc/Vendor_054c_Product_09cc.idc
-system/system/usr/idc/Vendor_05ac_Product_0265.idc
-system/system/usr/idc/Vendor_05ac_Product_030e.idc
-system/system/usr/idc/Vendor_0957_Product_0001.idc
-system/system/usr/idc/Vendor_0957_Product_0006.idc
-system/system/usr/idc/Vendor_18d1_Product_9451.idc
-system/system/usr/idc/Vendor_1915_Product_4d81.idc
-system/system/usr/idc/Vendor_1915_Product_eaea.idc
-system/system/usr/idc/Vendor_2717_Product_3802.idc
-system/system/usr/idc/qwerty.idc
-system/system/usr/idc/qwerty2.idc
-system/system/usr/idc/uinput-fortsense.idc
-system/system/usr/idc/uinput-fpc.idc
-system/system/usr/idc/uinput-goodix.idc
-system/system/usr/keychars/Generic.kcm
-system/system/usr/keychars/Vendor_18d1_Product_0200.kcm
-system/system/usr/keychars/Vendor_18d1_Product_5018.kcm
-system/system/usr/keychars/Virtual.kcm
-system/system/usr/keychars/qwerty.kcm
-system/system/usr/keychars/qwerty2.kcm
-system/system/usr/keylayout/AVRCP.kl
-system/system/usr/keylayout/Generic.kl
-system/system/usr/keylayout/Vendor_0079_Product_0011.kl
-system/system/usr/keylayout/Vendor_0079_Product_18d4.kl
-system/system/usr/keylayout/Vendor_0171_Product_0419.kl
-system/system/usr/keylayout/Vendor_044f_Product_b326.kl
-system/system/usr/keylayout/Vendor_045e_Product_028e.kl
-system/system/usr/keylayout/Vendor_045e_Product_028f.kl
-system/system/usr/keylayout/Vendor_045e_Product_02a1.kl
-system/system/usr/keylayout/Vendor_045e_Product_02d1.kl
-system/system/usr/keylayout/Vendor_045e_Product_02dd.kl
-system/system/usr/keylayout/Vendor_045e_Product_02e0.kl
-system/system/usr/keylayout/Vendor_045e_Product_02e3.kl
-system/system/usr/keylayout/Vendor_045e_Product_02ea.kl
-system/system/usr/keylayout/Vendor_045e_Product_02fd.kl
-system/system/usr/keylayout/Vendor_045e_Product_0b12.kl
-system/system/usr/keylayout/Vendor_046d_Product_b501.kl
-system/system/usr/keylayout/Vendor_046d_Product_c216.kl
-system/system/usr/keylayout/Vendor_046d_Product_c219.kl
-system/system/usr/keylayout/Vendor_046d_Product_c21d.kl
-system/system/usr/keylayout/Vendor_046d_Product_c21e.kl
-system/system/usr/keylayout/Vendor_046d_Product_c21f.kl
-system/system/usr/keylayout/Vendor_046d_Product_c242.kl
-system/system/usr/keylayout/Vendor_046d_Product_c294.kl
-system/system/usr/keylayout/Vendor_046d_Product_c299.kl
-system/system/usr/keylayout/Vendor_046d_Product_c532.kl
-system/system/usr/keylayout/Vendor_054c_Product_0268.kl
-system/system/usr/keylayout/Vendor_054c_Product_0268_Version_8000.kl
-system/system/usr/keylayout/Vendor_054c_Product_0268_Version_8100.kl
-system/system/usr/keylayout/Vendor_054c_Product_0268_Version_8111.kl
-system/system/usr/keylayout/Vendor_054c_Product_05c4.kl
-system/system/usr/keylayout/Vendor_054c_Product_05c4_Version_8000.kl
-system/system/usr/keylayout/Vendor_054c_Product_05c4_Version_8100.kl
-system/system/usr/keylayout/Vendor_054c_Product_05c4_Version_8111.kl
-system/system/usr/keylayout/Vendor_054c_Product_09cc.kl
-system/system/usr/keylayout/Vendor_054c_Product_09cc_Version_8000.kl
-system/system/usr/keylayout/Vendor_054c_Product_09cc_Version_8100.kl
-system/system/usr/keylayout/Vendor_054c_Product_09cc_Version_8111.kl
-system/system/usr/keylayout/Vendor_054c_Product_0ba0.kl
-system/system/usr/keylayout/Vendor_054c_Product_0ba0_Version_8111.kl
-system/system/usr/keylayout/Vendor_054c_Product_0ce6.kl
-system/system/usr/keylayout/Vendor_054c_Product_0ce6_fallback.kl
-system/system/usr/keylayout/Vendor_054c_Product_0df2.kl
-system/system/usr/keylayout/Vendor_054c_Product_0df2_fallback.kl
-system/system/usr/keylayout/Vendor_056e_Product_2004.kl
-system/system/usr/keylayout/Vendor_056e_Product_2010.kl
-system/system/usr/keylayout/Vendor_056e_Product_2013.kl
-system/system/usr/keylayout/Vendor_057e_Product_2009.kl
-system/system/usr/keylayout/Vendor_0583_Product_2060.kl
-system/system/usr/keylayout/Vendor_05ac_Product_0239.kl
-system/system/usr/keylayout/Vendor_05f8_Product_0179.kl
-system/system/usr/keylayout/Vendor_06a3_Product_f51a.kl
-system/system/usr/keylayout/Vendor_0738_Product_4716.kl
-system/system/usr/keylayout/Vendor_0738_Product_4718.kl
-system/system/usr/keylayout/Vendor_0738_Product_4726.kl
-system/system/usr/keylayout/Vendor_0738_Product_4736.kl
-system/system/usr/keylayout/Vendor_0738_Product_4740.kl
-system/system/usr/keylayout/Vendor_0738_Product_9871.kl
-system/system/usr/keylayout/Vendor_0738_Product_b726.kl
-system/system/usr/keylayout/Vendor_0738_Product_beef.kl
-system/system/usr/keylayout/Vendor_0738_Product_cb02.kl
-system/system/usr/keylayout/Vendor_0738_Product_cb03.kl
-system/system/usr/keylayout/Vendor_0738_Product_cb29.kl
-system/system/usr/keylayout/Vendor_0738_Product_f738.kl
-system/system/usr/keylayout/Vendor_07ff_Product_ffff.kl
-system/system/usr/keylayout/Vendor_0957_Product_0001.kl
-system/system/usr/keylayout/Vendor_0b05_Product_4500.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0113.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_011f.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0131.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0133.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0139.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_013a.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0146.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0147.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0161.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0162.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0163.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0164.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0165.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0201.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0213.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_021f.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0246.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_02a4.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_02a6.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_02ab.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0301.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0346.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0401.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0413.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_0501.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_f501.kl
-system/system/usr/keylayout/Vendor_0e6f_Product_f900.kl
-system/system/usr/keylayout/Vendor_0f0d_Product_000a.kl
-system/system/usr/keylayout/Vendor_0f0d_Product_000c.kl
-system/system/usr/keylayout/Vendor_0f0d_Product_0067.kl
-system/system/usr/keylayout/Vendor_0f0d_Product_00c1.kl
-system/system/usr/keylayout/Vendor_1038_Product_1412.kl
-system/system/usr/keylayout/Vendor_1038_Product_1430.kl
-system/system/usr/keylayout/Vendor_1038_Product_1431.kl
-system/system/usr/keylayout/Vendor_1038_Product_1434.kl
-system/system/usr/keylayout/Vendor_11c9_Product_55f0.kl
-system/system/usr/keylayout/Vendor_12ab_Product_0301.kl
-system/system/usr/keylayout/Vendor_12bd_Product_d015.kl
-system/system/usr/keylayout/Vendor_1430_Product_4748.kl
-system/system/usr/keylayout/Vendor_1430_Product_f801.kl
-system/system/usr/keylayout/Vendor_146b_Product_0601.kl
-system/system/usr/keylayout/Vendor_1532_Product_0037.kl
-system/system/usr/keylayout/Vendor_1532_Product_0705.kl
-system/system/usr/keylayout/Vendor_1532_Product_0707.kl
-system/system/usr/keylayout/Vendor_1532_Product_0709.kl
-system/system/usr/keylayout/Vendor_1532_Product_0900.kl
-system/system/usr/keylayout/Vendor_1532_Product_0a03.kl
-system/system/usr/keylayout/Vendor_1532_Product_1004.kl
-system/system/usr/keylayout/Vendor_1532_Product_1007.kl
-system/system/usr/keylayout/Vendor_1532_Product_1009.kl
-system/system/usr/keylayout/Vendor_1532_Product_100a.kl
-system/system/usr/keylayout/Vendor_15e4_Product_3f00.kl
-system/system/usr/keylayout/Vendor_15e4_Product_3f0a.kl
-system/system/usr/keylayout/Vendor_15e4_Product_3f10.kl
-system/system/usr/keylayout/Vendor_162e_Product_beef.kl
-system/system/usr/keylayout/Vendor_1689_Product_fd00.kl
-system/system/usr/keylayout/Vendor_1689_Product_fd01.kl
-system/system/usr/keylayout/Vendor_1689_Product_fe00.kl
-system/system/usr/keylayout/Vendor_18d1_Product_0200.kl
-system/system/usr/keylayout/Vendor_18d1_Product_2c40.kl
-system/system/usr/keylayout/Vendor_18d1_Product_4f80.kl
-system/system/usr/keylayout/Vendor_18d1_Product_5018.kl
-system/system/usr/keylayout/Vendor_1949_Product_0401.kl
-system/system/usr/keylayout/Vendor_1bad_Product_0002.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f016.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f021.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f023.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f025.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f027.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f028.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f036.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f038.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f501.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f506.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f900.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f901.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f903.kl
-system/system/usr/keylayout/Vendor_1bad_Product_f904.kl
-system/system/usr/keylayout/Vendor_1bad_Product_fa01.kl
-system/system/usr/keylayout/Vendor_1bad_Product_fd00.kl
-system/system/usr/keylayout/Vendor_1bad_Product_fd01.kl
-system/system/usr/keylayout/Vendor_1d79_Product_0009.kl
-system/system/usr/keylayout/Vendor_22b8_Product_093d.kl
-system/system/usr/keylayout/Vendor_2378_Product_1008.kl
-system/system/usr/keylayout/Vendor_2378_Product_100a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5300.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5303.kl
-system/system/usr/keylayout/Vendor_24c6_Product_530a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_531a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5397.kl
-system/system/usr/keylayout/Vendor_24c6_Product_541a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_542a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_543a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5500.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5501.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5506.kl
-system/system/usr/keylayout/Vendor_24c6_Product_550d.kl
-system/system/usr/keylayout/Vendor_24c6_Product_551a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_561a.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5b02.kl
-system/system/usr/keylayout/Vendor_24c6_Product_5d04.kl
-system/system/usr/keylayout/Vendor_24c6_Product_fafe.kl
-system/system/usr/keylayout/Vendor_2717_Product_5074.kl
-system/system/usr/keylayout/Vendor_27f8_Product_0bbe.kl
-system/system/usr/keylayout/Vendor_27f8_Product_0bbf.kl
-system/system/usr/keylayout/Vendor_28de_Product_1102.kl
-system/system/usr/keylayout/Vendor_2dc8_Product_6101.kl
-system/system/usr/keylayout/Vendor_2e95_Product_7725.kl
-system/system/usr/keylayout/gpio-keys.kl
-system/system/usr/keylayout/idroid_con.kl
-system/system/usr/keylayout/qwerty.kl
-system/system/usr/keylayout/uinput-fortsense.kl
-system/system/usr/keylayout/uinput-fpc.kl
-system/system/usr/keylayout/uinput-goodix.kl
-system/system/usr/share/bmd/RFFspeed_501.bmd
-system/system/usr/share/bmd/RFFstd_501.bmd
-system/system/usr/share/zoneinfo/tz_version
-system/system/usr/share/zoneinfo/tzdata
-system/system/usr/icu
-system/system/build.prop
-system/system/media
-system/system/product
-system/system/system_ext
-system/system/vendor
-system/vendor_dlkm/etc
-system/bin
-system/bugreports
-system/cache
-system/etc
-system/init
-system/init.environ.rc
-system/init.recovery.hardware.rc
-system/sdcard
-system_dlkm/etc/NOTICE.xml.gz
-system_dlkm/etc/build.prop
-system_dlkm/etc/fs_config_dirs
-system_dlkm/etc/fs_config_files
-system_dlkm/flatten/lib/modules/6lowpan.ko
-system_dlkm/flatten/lib/modules/8021q.ko
-system_dlkm/flatten/lib/modules/aqc111.ko
-system_dlkm/flatten/lib/modules/asix.ko
-system_dlkm/flatten/lib/modules/ax88179_178a.ko
-system_dlkm/flatten/lib/modules/bluetooth.ko
-system_dlkm/flatten/lib/modules/bsd_comp.ko
-system_dlkm/flatten/lib/modules/btbcm.ko
-system_dlkm/flatten/lib/modules/btqca.ko
-system_dlkm/flatten/lib/modules/btsdio.ko
-system_dlkm/flatten/lib/modules/can-bcm.ko
-system_dlkm/flatten/lib/modules/can-dev.ko
-system_dlkm/flatten/lib/modules/can-gw.ko
-system_dlkm/flatten/lib/modules/can-raw.ko
-system_dlkm/flatten/lib/modules/can.ko
-system_dlkm/flatten/lib/modules/cdc-acm.ko
-system_dlkm/flatten/lib/modules/cdc_eem.ko
-system_dlkm/flatten/lib/modules/cdc_ether.ko
-system_dlkm/flatten/lib/modules/cdc_ncm.ko
-system_dlkm/flatten/lib/modules/diag.ko
-system_dlkm/flatten/lib/modules/ftdi_sio.ko
-system_dlkm/flatten/lib/modules/gzvm.ko
-system_dlkm/flatten/lib/modules/hci_uart.ko
-system_dlkm/flatten/lib/modules/hidp.ko
-system_dlkm/flatten/lib/modules/ieee802154.ko
-system_dlkm/flatten/lib/modules/ieee802154_6lowpan.ko
-system_dlkm/flatten/lib/modules/ieee802154_socket.ko
-system_dlkm/flatten/lib/modules/kheaders.ko
-system_dlkm/flatten/lib/modules/l2tp_core.ko
-system_dlkm/flatten/lib/modules/l2tp_ppp.ko
-system_dlkm/flatten/lib/modules/libarc4.ko
-system_dlkm/flatten/lib/modules/mac802154.ko
-system_dlkm/flatten/lib/modules/mii.ko
-system_dlkm/flatten/lib/modules/modules.alias
-system_dlkm/flatten/lib/modules/modules.dep
-system_dlkm/flatten/lib/modules/modules.load
-system_dlkm/flatten/lib/modules/nfc.ko
-system_dlkm/flatten/lib/modules/nhc_dest.ko
-system_dlkm/flatten/lib/modules/nhc_fragment.ko
-system_dlkm/flatten/lib/modules/nhc_hop.ko
-system_dlkm/flatten/lib/modules/nhc_ipv6.ko
-system_dlkm/flatten/lib/modules/nhc_mobility.ko
-system_dlkm/flatten/lib/modules/nhc_routing.ko
-system_dlkm/flatten/lib/modules/nhc_udp.ko
-system_dlkm/flatten/lib/modules/ppp_deflate.ko
-system_dlkm/flatten/lib/modules/ppp_generic.ko
-system_dlkm/flatten/lib/modules/ppp_mppe.ko
-system_dlkm/flatten/lib/modules/pppox.ko
-system_dlkm/flatten/lib/modules/pptp.ko
-system_dlkm/flatten/lib/modules/r8152.ko
-system_dlkm/flatten/lib/modules/r8153_ecm.ko
-system_dlkm/flatten/lib/modules/rfcomm.ko
-system_dlkm/flatten/lib/modules/rfkill.ko
-system_dlkm/flatten/lib/modules/rtl8150.ko
-system_dlkm/flatten/lib/modules/slcan.ko
-system_dlkm/flatten/lib/modules/slhc.ko
-system_dlkm/flatten/lib/modules/tipc.ko
-system_dlkm/flatten/lib/modules/usbnet.ko
-system_dlkm/flatten/lib/modules/usbserial.ko
-system_dlkm/flatten/lib/modules/vcan.ko
-system_dlkm/flatten/lib/modules/wwan.ko
-system_dlkm/flatten/lib/modules/zram.ko
-system_dlkm/flatten/lib/modules/zsmalloc.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/arch/arm64/geniezone/gzvm.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/block/zram/zram.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/bluetooth/btbcm.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/bluetooth/btqca.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/bluetooth/btsdio.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/bluetooth/hci_uart.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/can/dev/can-dev.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/can/slcan/slcan.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/can/vcan.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/ppp/bsd_comp.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/ppp/ppp_deflate.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/ppp/ppp_generic.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/ppp/ppp_mppe.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/ppp/pppox.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/ppp/pptp.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/slip/slhc.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/aqc111.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/asix.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/ax88179_178a.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/cdc_eem.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/cdc_ether.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/cdc_ncm.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/r8152.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/r8153_ecm.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/rtl8150.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/usb/usbnet.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/wwan/wwan.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/net/mii.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/usb/class/cdc-acm.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/usb/serial/ftdi_sio.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/drivers/usb/serial/usbserial.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/kernel/kheaders.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/lib/crypto/libarc4.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/mm/zsmalloc.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/6lowpan.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/nhc_dest.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/nhc_fragment.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/nhc_hop.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/nhc_ipv6.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/nhc_mobility.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/nhc_routing.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/6lowpan/nhc_udp.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/8021q/8021q.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/bluetooth/hidp/hidp.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/bluetooth/rfcomm/rfcomm.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/bluetooth/bluetooth.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/can/can-bcm.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/can/can-gw.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/can/can-raw.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/can/can.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/ieee802154/6lowpan/ieee802154_6lowpan.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/ieee802154/ieee802154.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/ieee802154/ieee802154_socket.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/l2tp/l2tp_core.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/l2tp/l2tp_ppp.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/mac802154/mac802154.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/nfc/nfc.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/rfkill/rfkill.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/tipc/diag.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/kernel/net/tipc/tipc.ko
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.alias
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.alias.bin
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.builtin
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.builtin.alias.bin
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.builtin.bin
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.builtin.modinfo
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.dep
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.dep.bin
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.devname
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.load
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.order
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.softdep
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.symbols
-system_dlkm/lib/modules/6.1.112-android14-11-ge7598ed5bc4f-ab13636347/modules.symbols.bin
-system_ext/app/AtFwd2/oat/arm64/AtFwd2.odex
-system_ext/app/AtFwd2/oat/arm64/AtFwd2.vdex
-system_ext/app/AtFwd2/AtFwd2.apk
-system_ext/app/BluetoothDsDaService/oat/arm64/BluetoothDsDaService.odex
-system_ext/app/BluetoothDsDaService/oat/arm64/BluetoothDsDaService.vdex
-system_ext/app/BluetoothDsDaService/BluetoothDsDaService.apk
-system_ext/app/BluetoothExtension/lib/arm64/libaivsopus.so
-system_ext/app/BluetoothExtension/lib/arm64/libjlspeex.so
-system_ext/app/BluetoothExtension/lib/arm64/libxm_bluetooth.so
-system_ext/app/BluetoothExtension/oat/arm64/BluetoothExtension.odex
-system_ext/app/BluetoothExtension/oat/arm64/BluetoothExtension.vdex
-system_ext/app/BluetoothExtension/BluetoothExtension.apk
-system_ext/app/CameraMind/lib/arm64/libcameramind.so
-system_ext/app/CameraMind/oat/arm64/CameraMind.odex
-system_ext/app/CameraMind/oat/arm64/CameraMind.vdex
-system_ext/app/CameraMind/CameraMind.apk
-system_ext/app/DeviceInfo/oat/arm64/DeviceInfo.odex
-system_ext/app/DeviceInfo/oat/arm64/DeviceInfo.vdex
-system_ext/app/DeviceInfo/DeviceInfo.apk
-system_ext/app/DeviceStatisticsService/oat/arm64/DeviceStatisticsService.odex
-system_ext/app/DeviceStatisticsService/oat/arm64/DeviceStatisticsService.vdex
-system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk
-system_ext/app/DynamicDDSService/oat/arm64/DynamicDDSService.odex
-system_ext/app/DynamicDDSService/oat/arm64/DynamicDDSService.vdex
-system_ext/app/DynamicDDSService/DynamicDDSService.apk
-system_ext/app/ImsDataChannelService/oat/arm64/ImsDataChannelService.odex
-system_ext/app/ImsDataChannelService/oat/arm64/ImsDataChannelService.vdex
-system_ext/app/ImsDataChannelService/ImsDataChannelService.apk
-system_ext/app/MiuiAudioMonitor/lib/arm64/libCastSdk-jni.so
-system_ext/app/MiuiAudioMonitor/lib/arm64/libmivc_rx.so
-system_ext/app/MiuiAudioMonitor/MiuiAudioMonitor.apk
-system_ext/app/MiuiDaemon/MiuiDaemon.apk
-system_ext/app/MiuiPrintSpooler/lib/arm64/libprintspooler_jni.so
-system_ext/app/MiuiPrintSpooler/oat/arm64/MiuiPrintSpooler.odex
-system_ext/app/MiuiPrintSpooler/oat/arm64/MiuiPrintSpooler.vdex
-system_ext/app/MiuiPrintSpooler/MiuiPrintSpooler.apk
-system_ext/app/MiuixEditor_global/oat/arm64/MiuixEditor_global.odex
-system_ext/app/MiuixEditor_global/oat/arm64/MiuixEditor_global.vdex
-system_ext/app/MiuixEditor_global/MiuixEditor_global.apk
-system_ext/app/ModemTestBox/oat/arm64/ModemTestBox.odex
-system_ext/app/ModemTestBox/oat/arm64/ModemTestBox.vdex
-system_ext/app/ModemTestBox/ModemTestBox.apk
-system_ext/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.odex
-system_ext/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.vdex
-system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
-system_ext/app/PowerSaveMode/oat/arm64/PowerSaveMode.odex
-system_ext/app/PowerSaveMode/oat/arm64/PowerSaveMode.vdex
-system_ext/app/PowerSaveMode/PowerSaveMode.apk
-system_ext/app/QCC/oat/arm64/QCC.odex
-system_ext/app/QCC/oat/arm64/QCC.vdex
-system_ext/app/QCC/QCC.apk
-system_ext/app/QColor/oat/arm64/QColor.odex
-system_ext/app/QColor/oat/arm64/QColor.vdex
-system_ext/app/QColor/QColor.apk
-system_ext/app/QesdkSysService/oat/arm64/QesdkSysService.odex
-system_ext/app/QesdkSysService/oat/arm64/QesdkSysService.vdex
-system_ext/app/QesdkSysService/QesdkSysService.apk
-system_ext/app/QtiTelephony/oat/arm64/QtiTelephony.odex
-system_ext/app/QtiTelephony/oat/arm64/QtiTelephony.vdex
-system_ext/app/QtiTelephony/QtiTelephony.apk
-system_ext/app/QtiTelephonyService/oat/arm64/QtiTelephonyService.odex
-system_ext/app/QtiTelephonyService/oat/arm64/QtiTelephonyService.vdex
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
-system_ext/app/SimContact/oat/arm64/SimContact.odex
-system_ext/app/SimContact/oat/arm64/SimContact.vdex
-system_ext/app/SimContact/SimContact.apk
-system_ext/app/WAPPushManager/oat/arm64/WAPPushManager.odex
-system_ext/app/WAPPushManager/oat/arm64/WAPPushManager.vdex
-system_ext/app/WAPPushManager/WAPPushManager.apk
-system_ext/app/atfwd/oat/arm64/atfwd.odex
-system_ext/app/atfwd/oat/arm64/atfwd.vdex
-system_ext/app/atfwd/atfwd.apk
-system_ext/app/colorservice/colorservice.apk
-system_ext/app/datastatusnotification/oat/arm64/datastatusnotification.odex
-system_ext/app/datastatusnotification/oat/arm64/datastatusnotification.vdex
-system_ext/app/datastatusnotification/datastatusnotification.apk
-system_ext/app/miuisystem/oat/arm64/miuisystem.odex
-system_ext/app/miuisystem/oat/arm64/miuisystem.vdex
-system_ext/app/miuisystem/miuisystem.apk
-system_ext/app/miuix/miuix.apk
-system_ext/app/workloadclassifier/oat/arm64/workloadclassifier.odex
-system_ext/app/workloadclassifier/oat/arm64/workloadclassifier.vdex
-system_ext/app/workloadclassifier/workloadclassifier.apk
-system_ext/bin/DfcNativeService
-system_ext/bin/FboNativeService
-system_ext/bin/SwapNativeService
-system_ext/bin/audioshell_system
-system_ext/bin/bt_logger
-system_ext/bin/check_lightweight_trace.sh
-system_ext/bin/checknv
-system_ext/bin/climax_tfa
-system_ext/bin/climax_tfa9873
-system_ext/bin/copy_bugreport_file.sh
-system_ext/bin/coverVibrationTest
-system_ext/bin/diag_callback_sample_system
-system_ext/bin/diag_dci_sample_system
-system_ext/bin/diag_mdlog_system
-system_ext/bin/dpmd
-system_ext/bin/dump_lightweight_trace.sh
-system_ext/bin/dun-server
-system_ext/bin/fdpp
-system_ext/bin/fsck.ntfs
-system_ext/bin/fslog
-system_ext/bin/hypsys_system
-system_ext/bin/init.rootpub.sh
-system_ext/bin/init.rotatekey.sh
-system_ext/bin/init.socid.sh
-system_ext/bin/inject_mgr
-system_ext/bin/mcd
-system_ext/bin/millet_monitor
-system_ext/bin/misight
-system_ext/bin/miupdater
-system_ext/bin/miuserfsd
-system_ext/bin/mkfs.ntfs
-system_ext/bin/mount.ntfs
-system_ext/bin/native_mem_monitor.sh
-system_ext/bin/perfservice
-system_ext/bin/qccsyshal@1.2-service
-system_ext/bin/qcrosvm
-system_ext/bin/qseelogd
-system_ext/bin/qsguard
-system_ext/bin/qspmsvc
-system_ext/bin/qxrsplitauxservice
-system_ext/bin/set_satellitecall
-system_ext/bin/shelld
-system_ext/bin/sigma_miracasthalservice64
-system_ext/bin/spkcal_88263s
-system_ext/bin/spkcal_dagu
-system_ext/bin/spkcal_taoyao
-system_ext/bin/spkcal_tfa
-system_ext/bin/spkcal_tfa_munch
-system_ext/bin/spkcal_venus
-system_ext/bin/tcmd
-system_ext/bin/test_diag_system
-system_ext/bin/traceconfig.pbtx
-system_ext/bin/wfdservice64
-system_ext/cust/ab/cust.prop
-system_ext/cust/ad/cust.prop
-system_ext/cust/ae/cust.prop
-system_ext/cust/af/cust.prop
-system_ext/cust/ag/cust.prop
-system_ext/cust/ai/cust.prop
-system_ext/cust/al/cust.prop
-system_ext/cust/am/cust.prop
-system_ext/cust/ao/cust.prop
-system_ext/cust/ar/cust.prop
-system_ext/cust/as/cust.prop
-system_ext/cust/at/cust.prop
-system_ext/cust/au/cust.prop
-system_ext/cust/aw/cust.prop
-system_ext/cust/az/cust.prop
-system_ext/cust/ba/cust.prop
-system_ext/cust/bb/cust.prop
-system_ext/cust/bd/cust.prop
-system_ext/cust/be/cust.prop
-system_ext/cust/bf/cust.prop
-system_ext/cust/bg/cust.prop
-system_ext/cust/bh/cust.prop
-system_ext/cust/bi/cust.prop
-system_ext/cust/bj/cust.prop
-system_ext/cust/bn/cust.prop
-system_ext/cust/bo/cust.prop
-system_ext/cust/bq/cust.prop
-system_ext/cust/br/cust.prop
-system_ext/cust/bs/cust.prop
-system_ext/cust/bt/cust.prop
-system_ext/cust/bw/cust.prop
-system_ext/cust/by/cust.prop
-system_ext/cust/bz/cust.prop
-system_ext/cust/ca/cust.prop
-system_ext/cust/cd/cust.prop
-system_ext/cust/ch/cust.prop
-system_ext/cust/ci/cust.prop
-system_ext/cust/ck/cust.prop
-system_ext/cust/cl/cust.prop
-system_ext/cust/cm/cust.prop
-system_ext/cust/co/cust.prop
-system_ext/cust/cr/cust.prop
-system_ext/cust/cu/cust.prop
-system_ext/cust/cv/cust.prop
-system_ext/cust/cy/cust.prop
-system_ext/cust/cz/cust.prop
-system_ext/cust/de/cust.prop
-system_ext/cust/dj/cust.prop
-system_ext/cust/dk/cust.prop
-system_ext/cust/dm/cust.prop
-system_ext/cust/do/cust.prop
-system_ext/cust/dz/cust.prop
-system_ext/cust/ec/cust.prop
-system_ext/cust/ee/cust.prop
-system_ext/cust/eg/cust.prop
-system_ext/cust/er/cust.prop
-system_ext/cust/es/cust.prop
-system_ext/cust/et/cust.prop
-system_ext/cust/fi/cust.prop
-system_ext/cust/fj/cust.prop
-system_ext/cust/fk/cust.prop
-system_ext/cust/fm/cust.prop
-system_ext/cust/fo/cust.prop
-system_ext/cust/fr/cust.prop
-system_ext/cust/ga/cust.prop
-system_ext/cust/gb/cust.prop
-system_ext/cust/gd/cust.prop
-system_ext/cust/ge/cust.prop
-system_ext/cust/gf/cust.prop
-system_ext/cust/gg/cust.prop
-system_ext/cust/gh/cust.prop
-system_ext/cust/gi/cust.prop
-system_ext/cust/gl/cust.prop
-system_ext/cust/gm/cust.prop
-system_ext/cust/gn/cust.prop
-system_ext/cust/gp/cust.prop
-system_ext/cust/gq/cust.prop
-system_ext/cust/gr/cust.prop
-system_ext/cust/gs/cust.prop
-system_ext/cust/gt/cust.prop
-system_ext/cust/gu/cust.prop
-system_ext/cust/gw/cust.prop
-system_ext/cust/gy/cust.prop
-system_ext/cust/hk/cust.prop
-system_ext/cust/hn/cust.prop
-system_ext/cust/hr/cust.prop
-system_ext/cust/ht/cust.prop
-system_ext/cust/hu/cust.prop
-system_ext/cust/id/cust.prop
-system_ext/cust/ie/cust.prop
-system_ext/cust/il/cust.prop
-system_ext/cust/im/cust.prop
-system_ext/cust/in/cust.prop
-system_ext/cust/iq/cust.prop
-system_ext/cust/ir/cust.prop
-system_ext/cust/is/cust.prop
-system_ext/cust/it/cust.prop
-system_ext/cust/je/cust.prop
-system_ext/cust/jm/cust.prop
-system_ext/cust/jo/cust.prop
-system_ext/cust/jp/cust.prop
-system_ext/cust/ke/cust.prop
-system_ext/cust/kg/cust.prop
-system_ext/cust/kh/cust.prop
-system_ext/cust/ki/cust.prop
-system_ext/cust/km/cust.prop
-system_ext/cust/kn/cust.prop
-system_ext/cust/kp/cust.prop
-system_ext/cust/kr/cust.prop
-system_ext/cust/kw/cust.prop
-system_ext/cust/ky/cust.prop
-system_ext/cust/kz/cust.prop
-system_ext/cust/la/cust.prop
-system_ext/cust/lb/cust.prop
-system_ext/cust/lc/cust.prop
-system_ext/cust/li/cust.prop
-system_ext/cust/lk/cust.prop
-system_ext/cust/lr/cust.prop
-system_ext/cust/ls/cust.prop
-system_ext/cust/lt/cust.prop
-system_ext/cust/lu/cust.prop
-system_ext/cust/lv/cust.prop
-system_ext/cust/ly/cust.prop
-system_ext/cust/ma/cust.prop
-system_ext/cust/mc/cust.prop
-system_ext/cust/md/cust.prop
-system_ext/cust/me/cust.prop
-system_ext/cust/mg/cust.prop
-system_ext/cust/mh/cust.prop
-system_ext/cust/mk/cust.prop
-system_ext/cust/ml/cust.prop
-system_ext/cust/mm/cust.prop
-system_ext/cust/mn/cust.prop
-system_ext/cust/mo/cust.prop
-system_ext/cust/mp/cust.prop
-system_ext/cust/mq/cust.prop
-system_ext/cust/mr/cust.prop
-system_ext/cust/ms/cust.prop
-system_ext/cust/mt/cust.prop
-system_ext/cust/mu/cust.prop
-system_ext/cust/mv/cust.prop
-system_ext/cust/mw/cust.prop
-system_ext/cust/mx/cust.prop
-system_ext/cust/my/cust.prop
-system_ext/cust/mz/cust.prop
-system_ext/cust/na/cust.prop
-system_ext/cust/nc/cust.prop
-system_ext/cust/nf/cust.prop
-system_ext/cust/ng/cust.prop
-system_ext/cust/ni/cust.prop
-system_ext/cust/nl/cust.prop
-system_ext/cust/no/cust.prop
-system_ext/cust/np/cust.prop
-system_ext/cust/nr/cust.prop
-system_ext/cust/nu/cust.prop
-system_ext/cust/nz/cust.prop
-system_ext/cust/om/cust.prop
-system_ext/cust/pa/cust.prop
-system_ext/cust/pe/cust.prop
-system_ext/cust/pf/cust.prop
-system_ext/cust/pg/cust.prop
-system_ext/cust/ph/cust.prop
-system_ext/cust/pk/cust.prop
-system_ext/cust/pl/cust.prop
-system_ext/cust/pm/cust.prop
-system_ext/cust/pr/cust.prop
-system_ext/cust/ps/cust.prop
-system_ext/cust/pt/cust.prop
-system_ext/cust/pw/cust.prop
-system_ext/cust/py/cust.prop
-system_ext/cust/qa/cust.prop
-system_ext/cust/re/cust.prop
-system_ext/cust/ro/cust.prop
-system_ext/cust/rs/cust.prop
-system_ext/cust/ru/cust.prop
-system_ext/cust/rw/cust.prop
-system_ext/cust/sa/cust.prop
-system_ext/cust/sb/cust.prop
-system_ext/cust/sc/cust.prop
-system_ext/cust/sd/cust.prop
-system_ext/cust/se/cust.prop
-system_ext/cust/sg/cust.prop
-system_ext/cust/sh/cust.prop
-system_ext/cust/si/cust.prop
-system_ext/cust/sk/cust.prop
-system_ext/cust/sl/cust.prop
-system_ext/cust/sm/cust.prop
-system_ext/cust/sn/cust.prop
-system_ext/cust/so/cust.prop
-system_ext/cust/sr/cust.prop
-system_ext/cust/ss/cust.prop
-system_ext/cust/st/cust.prop
-system_ext/cust/sv/cust.prop
-system_ext/cust/sy/cust.prop
-system_ext/cust/sz/cust.prop
-system_ext/cust/td/cust.prop
-system_ext/cust/tg/cust.prop
-system_ext/cust/th/cust.prop
-system_ext/cust/tj/cust.prop
-system_ext/cust/tk/cust.prop
-system_ext/cust/tl/cust.prop
-system_ext/cust/tm/cust.prop
-system_ext/cust/tn/cust.prop
-system_ext/cust/to/cust.prop
-system_ext/cust/tr/cust.prop
-system_ext/cust/tt/cust.prop
-system_ext/cust/tv/cust.prop
-system_ext/cust/tw/cust.prop
-system_ext/cust/tz/cust.prop
-system_ext/cust/ua/cust.prop
-system_ext/cust/ug/cust.prop
-system_ext/cust/us/cust.prop
-system_ext/cust/uy/cust.prop
-system_ext/cust/uz/cust.prop
-system_ext/cust/vc/cust.prop
-system_ext/cust/ve/cust.prop
-system_ext/cust/vg/cust.prop
-system_ext/cust/vn/cust.prop
-system_ext/cust/vu/cust.prop
-system_ext/cust/ws/cust.prop
-system_ext/cust/xk/cust.prop
-system_ext/cust/ye/cust.prop
-system_ext/cust/yt/cust.prop
-system_ext/cust/za/cust.prop
-system_ext/cust/zm/cust.prop
-system_ext/cust/zw/cust.prop
-system_ext/etc/bluetooth/bt_configstore.conf
-system_ext/etc/bluetooth/bt_profile.conf
-system_ext/etc/bluetooth/interop_database.conf
-system_ext/etc/bluetooth/leaudio_configs.xml
-system_ext/etc/compatconfig/settings-platform-compat-config.xml
-system_ext/etc/default-permissions/com.qualcomm.qtil.btdsda.xml
-system_ext/etc/default-permissions/default-permissions-com.quicinc.voice.activation.xml
-system_ext/etc/dpm/dpm.conf
-system_ext/etc/forcedarkconfig/ForceDarkAppConfigVersion.json
-system_ext/etc/forcedarkconfig/ForceDarkAppSettings.json
-system_ext/etc/forcedarkconfig/OWNERS
-system_ext/etc/forcedarkconfig/air.tv.douyu.android.json
-system_ext/etc/forcedarkconfig/android.json
-system_ext/etc/forcedarkconfig/cmb.pb.json
-system_ext/etc/forcedarkconfig/cn.TuHu.android.json
-system_ext/etc/forcedarkconfig/cn.etouch.ecalendar.json
-system_ext/etc/forcedarkconfig/cn.wps.moffice_eng.json
-system_ext/etc/forcedarkconfig/cn.xiaochuankeji.tieba.json
-system_ext/etc/forcedarkconfig/cn.xuexi.android.json
-system_ext/etc/forcedarkconfig/com.UCMobile.json
-system_ext/etc/forcedarkconfig/com.alibaba.android.rimet.json
-system_ext/etc/forcedarkconfig/com.alibaba.wireless.json
-system_ext/etc/forcedarkconfig/com.android.vending.json
-system_ext/etc/forcedarkconfig/com.anjuke.android.app.json
-system_ext/etc/forcedarkconfig/com.autonavi.minimap.json
-system_ext/etc/forcedarkconfig/com.baidu.homework.json
-system_ext/etc/forcedarkconfig/com.baidu.netdisk.json
-system_ext/etc/forcedarkconfig/com.baidu.searchbox.json
-system_ext/etc/forcedarkconfig/com.baidu.tieba.json
-system_ext/etc/forcedarkconfig/com.bankcomm.Bankcomm.json
-system_ext/etc/forcedarkconfig/com.bankcomm.maidanba.json
-system_ext/etc/forcedarkconfig/com.cainiao.wireless.json
-system_ext/etc/forcedarkconfig/com.campmobile.snowcamera.json
-system_ext/etc/forcedarkconfig/com.chaoxing.mobile.json
-system_ext/etc/forcedarkconfig/com.chinamworld.bocmbci.json
-system_ext/etc/forcedarkconfig/com.chinamworld.main.json
-system_ext/etc/forcedarkconfig/com.citiccard.mobilebank.json
-system_ext/etc/forcedarkconfig/com.cleanmaster.mguard_cn.json
-system_ext/etc/forcedarkconfig/com.cmbchina.ccd.pluto.cmbActivity.json
-system_ext/etc/forcedarkconfig/com.ct.client.json
-system_ext/etc/forcedarkconfig/com.cubic.autohome.json
-system_ext/etc/forcedarkconfig/com.dianping.v1.json
-system_ext/etc/forcedarkconfig/com.didapinche.booking.json
-system_ext/etc/forcedarkconfig/com.fenbi.android.solar.json
-system_ext/etc/forcedarkconfig/com.glodon.drawingexplorer.json
-system_ext/etc/forcedarkconfig/com.gorgeous.lite.json
-system_ext/etc/forcedarkconfig/com.gotokeep.keep.json
-system_ext/etc/forcedarkconfig/com.handsgo.jiakao.android.json
-system_ext/etc/forcedarkconfig/com.homelink.android.json
-system_ext/etc/forcedarkconfig/com.hpbr.bosszhipin.json
-system_ext/etc/forcedarkconfig/com.hunantv.imgo.activity.json
-system_ext/etc/forcedarkconfig/com.jd.jdlite.json
-system_ext/etc/forcedarkconfig/com.jifen.qukan.json
-system_ext/etc/forcedarkconfig/com.jingdong.app.mall.json
-system_ext/etc/forcedarkconfig/com.jingyao.easybike.json
-system_ext/etc/forcedarkconfig/com.jiongji.andriod.card.json
-system_ext/etc/forcedarkconfig/com.job.android.json
-system_ext/etc/forcedarkconfig/com.jsmcc.json
-system_ext/etc/forcedarkconfig/com.jzzs.ParentsHelper.json
-system_ext/etc/forcedarkconfig/com.kuaiduizuoye.scan.json
-system_ext/etc/forcedarkconfig/com.kugou.android.json
-system_ext/etc/forcedarkconfig/com.le123.ysdq.json
-system_ext/etc/forcedarkconfig/com.lechuan.mdwz.json
-system_ext/etc/forcedarkconfig/com.lemon.faceu.json
-system_ext/etc/forcedarkconfig/com.lianjia.beike.json
-system_ext/etc/forcedarkconfig/com.lingan.seeyou.json
-system_ext/etc/forcedarkconfig/com.meitu.meiyancamera.json
-system_ext/etc/forcedarkconfig/com.microsoft.office.word.json
-system_ext/etc/forcedarkconfig/com.moji.mjweather.json
-system_ext/etc/forcedarkconfig/com.mt.mtxx.mtxx.json
-system_ext/etc/forcedarkconfig/com.mxtech.videoplayer.ad.json
-system_ext/etc/forcedarkconfig/com.netease.cloudmusic.json
-system_ext/etc/forcedarkconfig/com.p1.mobile.putong.json
-system_ext/etc/forcedarkconfig/com.pingan.carowner.json
-system_ext/etc/forcedarkconfig/com.pingan.lifeinsurance.json
-system_ext/etc/forcedarkconfig/com.qiyi.video.json
-system_ext/etc/forcedarkconfig/com.qiyi.video.lite.json
-system_ext/etc/forcedarkconfig/com.quark.browser.json
-system_ext/etc/forcedarkconfig/com.sankuai.meituan.json
-system_ext/etc/forcedarkconfig/com.sankuai.meituan.takeoutnew.json
-system_ext/etc/forcedarkconfig/com.sgcc.wsgw.cn.json
-system_ext/etc/forcedarkconfig/com.sina.weibo.json
-system_ext/etc/forcedarkconfig/com.snda.wifilocating.json
-system_ext/etc/forcedarkconfig/com.ss.android.article.video.json
-system_ext/etc/forcedarkconfig/com.ss.android.ugc.live.json
-system_ext/etc/forcedarkconfig/com.suning.mobile.ebuy.json
-system_ext/etc/forcedarkconfig/com.sup.android.superb.json
-system_ext/etc/forcedarkconfig/com.taobao.etao.json
-system_ext/etc/forcedarkconfig/com.taobao.live.json
-system_ext/etc/forcedarkconfig/com.taobao.taobao.json
-system_ext/etc/forcedarkconfig/com.taou.maimai.json
-system_ext/etc/forcedarkconfig/com.tencent.androidqqmail.json
-system_ext/etc/forcedarkconfig/com.tencent.gamehelper.smoba.json
-system_ext/etc/forcedarkconfig/com.tencent.karaoke.json
-system_ext/etc/forcedarkconfig/com.tencent.mm.json
-system_ext/etc/forcedarkconfig/com.tencent.mobileqq.json
-system_ext/etc/forcedarkconfig/com.tencent.mtt.json
-system_ext/etc/forcedarkconfig/com.tencent.qqlive.json
-system_ext/etc/forcedarkconfig/com.tencent.qqmusic.json
-system_ext/etc/forcedarkconfig/com.tencent.qqpim.json
-system_ext/etc/forcedarkconfig/com.tencent.qqpimsecure.json
-system_ext/etc/forcedarkconfig/com.tencent.qt.qtl.json
-system_ext/etc/forcedarkconfig/com.tencent.token.json
-system_ext/etc/forcedarkconfig/com.tencent.weishi.json
-system_ext/etc/forcedarkconfig/com.tencent.wemeet.app.json
-system_ext/etc/forcedarkconfig/com.tencent.wework.json
-system_ext/etc/forcedarkconfig/com.tencent.zebra.json
-system_ext/etc/forcedarkconfig/com.tianyancha.skyeye.json
-system_ext/etc/forcedarkconfig/com.tmri.app.main.json
-system_ext/etc/forcedarkconfig/com.unionpay.json
-system_ext/etc/forcedarkconfig/com.wuba.json
-system_ext/etc/forcedarkconfig/com.wuba.zhuanzhuan.json
-system_ext/etc/forcedarkconfig/com.wudaokou.hippo.json
-system_ext/etc/forcedarkconfig/com.xiaomi.market.json
-system_ext/etc/forcedarkconfig/com.xiaomi.vipaccount.json
-system_ext/etc/forcedarkconfig/com.xingin.xhs.json
-system_ext/etc/forcedarkconfig/com.xt.retouch.json
-system_ext/etc/forcedarkconfig/com.xuexiaoyi.xxy.json
-system_ext/etc/forcedarkconfig/com.xunmeng.pinduoduo.json
-system_ext/etc/forcedarkconfig/com.ygkj.chelaile.standard.json
-system_ext/etc/forcedarkconfig/com.yipiao.json
-system_ext/etc/forcedarkconfig/com.zhaopin.social.json
-system_ext/etc/forcedarkconfig/com.zhihu.android.json
-system_ext/etc/forcedarkconfig/me.ele.json
-system_ext/etc/forcedarkconfig/tv.pps.mobile.json
-system_ext/etc/hdr_config/ans_off/ans_config.txt
-system_ext/etc/hdr_config/ans_on/ans_config.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_HDR.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_HDR.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/main_ls/RPP_HDR.txt
-system_ext/etc/hdr_config/main_ls/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/main_ls/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/main_pt/RPP_HDR.txt
-system_ext/etc/hdr_config/main_pt/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/main_pt/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_HDR.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_HDR.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/none_ls/RPP_HDR.txt
-system_ext/etc/hdr_config/none_ls/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/none_ls/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/none_pt/RPP_HDR.txt
-system_ext/etc/hdr_config/none_pt/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/none_pt/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_HDR.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_HDR.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt
-system_ext/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt
-system_ext/etc/hdr_config/wnr_off/wnr_config.txt
-system_ext/etc/hdr_config/wnr_off/wnr_params.txt
-system_ext/etc/hdr_config/wnr_on/wnr_config.txt
-system_ext/etc/hdr_config/wnr_on/wnr_params.txt
-system_ext/etc/hypersys/log_config.json
-system_ext/etc/init/bpf_service.rc
-system_ext/etc/init/checknv.rc
-system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc
-system_ext/etc/init/dpmd.rc
-system_ext/etc/init/f2fs.dfc.native@1.0-service.rc
-system_ext/etc/init/hypsys_system.rc
-system_ext/etc/init/init.fslog.rc
-system_ext/etc/init/init.milletmonitor.rc
-system_ext/etc/init/init.misight.rc
-system_ext/etc/init/init.miui.cameraopt.rc
-system_ext/etc/init/init.miui.cust.rc
-system_ext/etc/init/init.miui.ext.rc
-system_ext/etc/init/init.nativedebug.rc
-system_ext/etc/init/init.qseelogd.rc
-system_ext/etc/init/init.qti.bt.logger.rc
-system_ext/etc/init/init.secureboot.rc
-system_ext/etc/init/init.xiaomi.cammsger.rc
-system_ext/etc/init/memory.fbo.native@1.0-service.rc
-system_ext/etc/init/memory.swap.native@1.0-service.rc
-system_ext/etc/init/miuibooster.rc
-system_ext/etc/init/miupdater.rc
-system_ext/etc/init/miuserfs.rc
-system_ext/etc/init/perfservice.rc
-system_ext/etc/init/qsguard.rc
-system_ext/etc/init/qspa_system.rc
-system_ext/etc/init/qspmsvc.rc
-system_ext/etc/init/tcmd.rc
-system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
-system_ext/etc/init/wfdservice.rc
-system_ext/etc/input/MIUIInput.kl
-system_ext/etc/input/OWNERS
-system_ext/etc/input/miui_shortcut_config.json
-system_ext/etc/input/stylus_page_key_bw_config.json
-system_ext/etc/input/stylus_palm_reject_config.json
-system_ext/etc/misight/bsp_log_config.json
-system_ext/etc/misight/plugin_config
-system_ext/etc/modem/game.tflite
-system_ext/etc/modem/signal.tflite
-system_ext/etc/overscrolleroptimization/OWNERS
-system_ext/etc/overscrolleroptimization/config.json
-system_ext/etc/perf/wlc_model.tflite
-system_ext/etc/permissions/android.software.credentials.xml
-system_ext/etc/permissions/android.software.verified_boot.xml
-system_ext/etc/permissions/audiosphere.xml
-system_ext/etc/permissions/com.android.carrierconfig.xml
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/etc/permissions/com.android.provision.xml
-system_ext/etc/permissions/com.android.settings.xml
-system_ext/etc/permissions/com.android.settingslib.search.xml
-system_ext/etc/permissions/com.android.storagemanager.xml
-system_ext/etc/permissions/com.android.systemui.xml
-system_ext/etc/permissions/com.google.lens.feature.CAMERA_INTEGRATION.xml
-system_ext/etc/permissions/com.google.lens.feature.GALLERY_INTEGRATION.xml
-system_ext/etc/permissions/com.nxp.nfc.nq.xml
-system_ext/etc/permissions/com.qti.dpmframework.xml
-system_ext/etc/permissions/com.qti.location.sdk.xml
-system_ext/etc/permissions/com.qti.media.secureprocessor.xml
-system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
-system_ext/etc/permissions/com.qualcomm.location.xml
-system_ext/etc/permissions/com.qualcomm.qmapbridge.xml
-system_ext/etc/permissions/com.qualcomm.qti.VENDORSSGTZD.xml
-system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
-system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
-system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
-system_ext/etc/permissions/com.qualcomm.qti.izattools.xml
-system_ext/etc/permissions/com.st.android.nfc_extensions.xml
-system_ext/etc/permissions/com.xiaomi.NetworkBoost.xml
-system_ext/etc/permissions/com.xiaomi.nfc.xml
-system_ext/etc/permissions/com.xiaomi.slalib.xml
-system_ext/etc/permissions/datachannellib.xml
-system_ext/etc/permissions/dpmapi.xml
-system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml
-system_ext/etc/permissions/extphonelib.xml
-system_ext/etc/permissions/miui-cameraopt.xml
-system_ext/etc/permissions/platform-miui.xml
-system_ext/etc/permissions/privapp-permissions-aptxals.xml
-system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml
-system_ext/etc/permissions/privapp-permissions-com.qualcomm.qti.performancemode.xml
-system_ext/etc/permissions/privapp-permissions-com.quicinc.voice.activation.xml
-system_ext/etc/permissions/privapp-permissions-gms-international-system-ext.xml
-system_ext/etc/permissions/privapp-permissions-miui-system-ext.xml
-system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml
-system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/qti_libpermissions.xml
-system_ext/etc/permissions/qti_permissions.xml
-system_ext/etc/permissions/qti_telephony_hidl_wrapper.xml
-system_ext/etc/permissions/qti_telephony_utils.xml
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/vendor.qti.imsdcservice.xml
-system_ext/etc/permissions/vendor.xiaomi.hardware.aidl.intentaware-V1-java-permission.xml
-system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
-system_ext/etc/qspa/qspa_default.rc
-system_ext/etc/seccomp_policy/perfservice.policy
-system_ext/etc/seccomp_policy/sxraux-arm.policy
-system_ext/etc/seccomp_policy/tcmd.policy
-system_ext/etc/seccomp_policy/wfdservice64.policy
-system_ext/etc/selinux/mapping/29.0.cil
-system_ext/etc/selinux/mapping/29.0.compat.cil
-system_ext/etc/selinux/mapping/30.0.cil
-system_ext/etc/selinux/mapping/30.0.compat.cil
-system_ext/etc/selinux/mapping/31.0.cil
-system_ext/etc/selinux/mapping/31.0.compat.cil
-system_ext/etc/selinux/mapping/32.0.cil
-system_ext/etc/selinux/mapping/32.0.compat.cil
-system_ext/etc/selinux/mapping/33.0.cil
-system_ext/etc/selinux/mapping/33.0.compat.cil
-system_ext/etc/selinux/mapping/34.0.cil
-system_ext/etc/selinux/bug_map
-system_ext/etc/selinux/system_ext_file_contexts
-system_ext/etc/selinux/system_ext_hwservice_contexts
-system_ext/etc/selinux/system_ext_mac_permissions.xml
-system_ext/etc/selinux/system_ext_property_contexts
-system_ext/etc/selinux/system_ext_seapp_contexts
-system_ext/etc/selinux/system_ext_sepolicy.cil
-system_ext/etc/selinux/system_ext_sepolicy_and_mapping.sha256
-system_ext/etc/selinux/system_ext_service_contexts
-system_ext/etc/sysconfig/miui_whitelist.xml
-system_ext/etc/sysconfig/power-save-conf.xml
-system_ext/etc/sysconfig/qti-initial-package-stopped-states.xml
-system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
-system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
-system_ext/etc/sysconfig/xiaomi_app_link_whitelist.xml
-system_ext/etc/vintf/manifest/atcmdfwd-saidl.xml
-system_ext/etc/vintf/manifest/manifest_hypsys_system.xml
-system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast.xml
-system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml
-system_ext/etc/vintf/manifest.xml
-system_ext/etc/DownscaleAppSettings.json
-system_ext/etc/NOTICE.xml.gz
-system_ext/etc/NOTICE_GPL.html.gz
-system_ext/etc/barrage_v3.tflite
-system_ext/etc/build.prop
-system_ext/etc/camera_perfetto.cfg
-system_ext/etc/cameracustomize.json
-system_ext/etc/cameraopt.json
-system_ext/etc/camerascene.json
-system_ext/etc/cdma_call_conf.xml
-system_ext/etc/ce-regions-old.xml
-system_ext/etc/ce-regions.xml
-system_ext/etc/cust_prop_white_keys_list
-system_ext/etc/framepredict_config.xml
-system_ext/etc/fs_config_dirs
-system_ext/etc/fs_config_files
-system_ext/etc/fstab.other
-system_ext/etc/group
-system_ext/etc/hyper_fonts.xml
-system_ext/etc/init.secureboot.rc
-system_ext/etc/mcd_default.conf
-system_ext/etc/miui_dynamic_log_configs.xml
-system_ext/etc/miui_fonts.xml
-system_ext/etc/model_0828.onnx
-system_ext/etc/multisence_common.xml
-system_ext/etc/passwd
-system_ext/etc/perfinit.conf
-system_ext/etc/perfinit_bdsize_zram.conf
-system_ext/etc/perfinit_bdsize_zram_4_0.conf
-system_ext/etc/public.libraries-modem.txt
-system_ext/etc/public.libraries-qti.txt
-system_ext/etc/spn-conf.xml
-system_ext/etc/task_profiles_cameraopt.json
-system_ext/etc/wfdconfigsink.xml
-system_ext/etc/wmshell.protolog.json.gz
-system_ext/framework/framework-ext-res/framework-ext-res.apk
-system_ext/framework/oat/arm64/MiuiBooster.odex
-system_ext/framework/oat/arm64/MiuiBooster.vdex
-system_ext/framework/oat/arm64/MiuiSettingsSearchLib.odex
-system_ext/framework/oat/arm64/MiuiSettingsSearchLib.vdex
-system_ext/framework/oat/arm64/NetworkBoost.odex
-system_ext/framework/oat/arm64/NetworkBoost.vdex
-system_ext/framework/oat/arm64/apprecovery.proinstaller.odex
-system_ext/framework/oat/arm64/apprecovery.proinstaller.vdex
-system_ext/framework/oat/arm64/camerax-vendor-extensions.odex
-system_ext/framework/oat/arm64/camerax-vendor-extensions.vdex
-system_ext/framework/oat/arm64/com.android.hotwordenrollment.common.util.odex
-system_ext/framework/oat/arm64/com.android.hotwordenrollment.common.util.vdex
-system_ext/framework/oat/arm64/com.nxp.nfc.nq.odex
-system_ext/framework/oat/arm64/com.nxp.nfc.nq.vdex
-system_ext/framework/oat/arm64/com.qti.location.sdk.art
-system_ext/framework/oat/arm64/com.qti.location.sdk.odex
-system_ext/framework/oat/arm64/com.qti.location.sdk.vdex
-system_ext/framework/oat/arm64/com.qti.media.secureprocessor.odex
-system_ext/framework/oat/arm64/com.qti.media.secureprocessor.vdex
-system_ext/framework/oat/arm64/com.qualcomm.qti.imscmservice-V2.0-java.odex
-system_ext/framework/oat/arm64/com.qualcomm.qti.imscmservice-V2.0-java.vdex
-system_ext/framework/oat/arm64/com.qualcomm.qti.imscmservice-V2.1-java.odex
-system_ext/framework/oat/arm64/com.qualcomm.qti.imscmservice-V2.1-java.vdex
-system_ext/framework/oat/arm64/com.qualcomm.qti.imscmservice-V2.2-java.odex
-system_ext/framework/oat/arm64/com.qualcomm.qti.imscmservice-V2.2-java.vdex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.0-java.odex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.0-java.vdex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.1-java.odex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.1-java.vdex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.2-java.odex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.2-java.vdex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.3-java.odex
-system_ext/framework/oat/arm64/com.qualcomm.qti.uceservice-V2.3-java.vdex
-system_ext/framework/oat/arm64/com.st.android.nfc_extensions.odex
-system_ext/framework/oat/arm64/com.st.android.nfc_extensions.vdex
-system_ext/framework/oat/arm64/com.xiaomi.nfc.odex
-system_ext/framework/oat/arm64/com.xiaomi.nfc.vdex
-system_ext/framework/oat/arm64/com.xiaomi.slalib.odex
-system_ext/framework/oat/arm64/com.xiaomi.slalib.vdex
-system_ext/framework/oat/arm64/datachannellib.odex
-system_ext/framework/oat/arm64/datachannellib.vdex
-system_ext/framework/oat/arm64/extphonelib.odex
-system_ext/framework/oat/arm64/extphonelib.vdex
-system_ext/framework/oat/arm64/global-cleaner-empty.odex
-system_ext/framework/oat/arm64/global-cleaner-empty.vdex
-system_ext/framework/oat/arm64/gson.odex
-system_ext/framework/oat/arm64/gson.vdex
-system_ext/framework/oat/arm64/mirilhook.odex
-system_ext/framework/oat/arm64/mirilhook.vdex
-system_ext/framework/oat/arm64/mirilmsgtunnel.odex
-system_ext/framework/oat/arm64/mirilmsgtunnel.vdex
-system_ext/framework/oat/arm64/miui-cameraopt.odex
-system_ext/framework/oat/arm64/miui-cameraopt.vdex
-system_ext/framework/oat/arm64/miui-connectivity-service.odex
-system_ext/framework/oat/arm64/miui-connectivity-service.vdex
-system_ext/framework/oat/arm64/miui-services.odex
-system_ext/framework/oat/arm64/miui-services.vdex
-system_ext/framework/oat/arm64/miui-wifi-service.odex
-system_ext/framework/oat/arm64/miui-wifi-service.vdex
-system_ext/framework/oat/arm64/miuix.odex
-system_ext/framework/oat/arm64/miuix.vdex
-system_ext/framework/oat/arm64/qcrilhook.odex
-system_ext/framework/oat/arm64/qcrilhook.vdex
-system_ext/framework/oat/arm64/qti-telephony-common.odex
-system_ext/framework/oat/arm64/qti-telephony-common.vdex
-system_ext/framework/oat/arm64/qti-telephony-hidl-wrapper.odex
-system_ext/framework/oat/arm64/qti-telephony-hidl-wrapper.vdex
-system_ext/framework/oat/arm64/qti-telephony-utils.odex
-system_ext/framework/oat/arm64/qti-telephony-utils.vdex
-system_ext/framework/oat/arm64/security-device-credential-sdk.odex
-system_ext/framework/oat/arm64/security-device-credential-sdk.vdex
-system_ext/framework/oat/arm64/vendor.qti.data.mwqem-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.data.mwqem-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.data.mwqemaidlservice-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.data.mwqemaidlservice-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.data.slm-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.data.slm-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.capabilityconfigstore-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.capabilityconfigstore-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.connection-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.connection-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.connection-V1.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.connection-V1.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.dynamicdds-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.dynamicdds-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.dynamicdds-V1.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.dynamicdds-V1.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.dynamicddsaidlservice-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.dynamicddsaidlservice-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.flow-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.flow-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.flow-V1.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.flow-V1.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.flowaidlservice-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.flowaidlservice-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.iwlan-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.iwlan-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.iwlan-V1.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.iwlan-V1.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.iwlandata-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.iwlandata-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.latency-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.latency-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.lce-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.lce-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.lceaidlservice-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.data.lceaidlservice-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.sensorscalibrate-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.sensorscalibrate-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.wigig.netperftuner-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.wigig.netperftuner-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.hardware.wigig.supptunnel-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.hardware.wigig.supptunnel-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.callcapability-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.callcapability-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.callcapabilityaidlservice-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.callcapabilityaidlservice-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.callinfo-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.callinfo-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.configaidlservice-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.configaidlservice-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.configservice-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.configservice-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.configservice-V1.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.configservice-V1.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V2.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V2.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V2.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V2.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.latency-V2.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.latency-V2.0-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.latency-V2.1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.latency-V2.1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.latency-V2.2-java.odex
-system_ext/framework/oat/arm64/vendor.qti.latency-V2.2-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.latencyaidlservice-V1-java.odex
-system_ext/framework/oat/arm64/vendor.qti.latencyaidlservice-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.qti.voiceprint-V1.0-java.odex
-system_ext/framework/oat/arm64/vendor.qti.voiceprint-V1.0-java.vdex
-system_ext/framework/oat/arm64/vendor.xiaomi.hardware.aidl.intentaware-V1-java.odex
-system_ext/framework/oat/arm64/vendor.xiaomi.hardware.aidl.intentaware-V1-java.vdex
-system_ext/framework/oat/arm64/vendor.xiaomi.hardware.misys.common-V2-java.odex
-system_ext/framework/oat/arm64/vendor.xiaomi.hardware.misys.common-V2-java.vdex
-system_ext/framework/oat/arm64/vendor.xiaomi.hardware.satellite-V1-java.odex
-system_ext/framework/oat/arm64/vendor.xiaomi.hardware.satellite-V1-java.vdex
-system_ext/framework/oat/arm64/version-seperation.odex
-system_ext/framework/oat/arm64/version-seperation.vdex
-system_ext/framework/oat/arm64/xiaomi-telephony-common.odex
-system_ext/framework/oat/arm64/xiaomi-telephony-common.vdex
-system_ext/framework/ActivityExt.jar
-system_ext/framework/MiuiBooster.jar
-system_ext/framework/MiuiSettingsSearchLib.jar
-system_ext/framework/NetworkBoost.jar
-system_ext/framework/apprecovery.proinstaller.jar
-system_ext/framework/audiosphere.jar
-system_ext/framework/camerax-vendor-extensions.jar
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-system_ext/framework/com.nxp.nfc.nq.jar
-system_ext/framework/com.qti.dpmframework.jar
-system_ext/framework/com.qti.location.sdk.jar
-system_ext/framework/com.qti.media.secureprocessor.jar
-system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
-system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
-system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
-system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
-system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
-system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar
-system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar
-system_ext/framework/com.quicinc.cne.api-V1.0-java.jar
-system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
-system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar
-system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar
-system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar
-system_ext/framework/com.st.android.nfc_extensions.jar
-system_ext/framework/com.xiaomi.NetworkBoost.jar
-system_ext/framework/com.xiaomi.nfc.jar
-system_ext/framework/com.xiaomi.slalib.jar
-system_ext/framework/datachannellib.jar
-system_ext/framework/dpmapi.jar
-system_ext/framework/extphonelib.jar
-system_ext/framework/global-cleaner-empty.jar
-system_ext/framework/gson.jar
-system_ext/framework/mirilhook.jar
-system_ext/framework/mirilmsgtunnel.jar
-system_ext/framework/miui-cameraopt.jar
-system_ext/framework/miui-connectivity-service.jar
-system_ext/framework/miui-enterprise-sdk.jar
-system_ext/framework/miui-framework.jar
-system_ext/framework/miui-services.jar
-system_ext/framework/miui-telephony-common.jar
-system_ext/framework/miui-wifi-service.jar
-system_ext/framework/miuix.jar
-system_ext/framework/qcrilhook.jar
-system_ext/framework/qmapbridge.jar
-system_ext/framework/qti-telephony-common.jar
-system_ext/framework/qti-telephony-hidl-wrapper.jar
-system_ext/framework/qti-telephony-utils.jar
-system_ext/framework/security-device-credential-sdk.jar
-system_ext/framework/vendor.qti.data.factory-V1.0-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.0-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.1-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.2-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.3-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.4-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.5-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.6-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.7-java.jar
-system_ext/framework/vendor.qti.data.factory-V2.8-java.jar
-system_ext/framework/vendor.qti.data.factoryservice-V1-java.jar
-system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar
-system_ext/framework/vendor.qti.data.mwqemaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.data.slm-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.cacertaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.1-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.2-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.3-java.jar
-system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.api-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.server-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
-system_ext/framework/vendor.qti.hardware.data.connectionfactory-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.dataactivity-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.1-java.jar
-system_ext/framework/vendor.qti.hardware.data.dynamicddsaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.flow-V1.1-java.jar
-system_ext/framework/vendor.qti.hardware.data.flowaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.iwlan-V1.1-java.jar
-system_ext/framework/vendor.qti.hardware.data.iwlandata-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.ka-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.lce-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.lceaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.qmiaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.hardware.dpmaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.hardware.dpmservice-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.dpmservice-V1.1-java.jar
-system_ext/framework/vendor.qti.hardware.mwqemadapter-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.mwqemadapteraidlservice-V1-java.jar
-system_ext/framework/vendor.qti.hardware.qconfig-V5-java.jar
-system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.callcapabilityaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.configaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.datachannelservice-V2-java.jar
-system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
-system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar
-system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar
-system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
-system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
-system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.latency-V2.0-java.jar
-system_ext/framework/vendor.qti.latency-V2.1-java.jar
-system_ext/framework/vendor.qti.latency-V2.2-java.jar
-system_ext/framework/vendor.qti.latencyaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar
-system_ext/framework/vendor.xiaomi.hardware.aidl.intentaware-V1-java.jar
-system_ext/framework/vendor.xiaomi.hardware.misys.common-V2-java.jar
-system_ext/framework/vendor.xiaomi.hardware.satellite-V1-java.jar
-system_ext/framework/version-seperation.jar
-system_ext/framework/xiaomi-telephony-common.jar
-system_ext/lib64/extractors/libmmparserextractor.so
-system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
-system_ext/lib64/android.hardware.radio@1.5.so
-system_ext/lib64/android.hardware.radio@1.6.so
-system_ext/lib64/android.hidl.base@1.0.so
-system_ext/lib64/com.android.ozoaudio.notify-V1-cpp.so
-system_ext/lib64/com.android.ozoaudio.notify-V1-ndk.so
-system_ext/lib64/com.android.ozoaudio.notify-V2-cpp.so
-system_ext/lib64/com.android.ozoaudio.notify-V2-ndk.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.3.so
-system_ext/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so
-system_ext/lib64/com.quicinc.cne.api@1.0.so
-system_ext/lib64/com.quicinc.cne.api@1.1.so
-system_ext/lib64/com.quicinc.cne.constants@1.0.so
-system_ext/lib64/com.quicinc.cne.constants@2.0.so
-system_ext/lib64/com.quicinc.cne.constants@2.1.so
-system_ext/lib64/com.quicinc.cne.server@1.0.so
-system_ext/lib64/com.quicinc.cne.server@2.0.so
-system_ext/lib64/com.quicinc.cne.server@2.1.so
-system_ext/lib64/com.quicinc.cne.server@2.2.so
-system_ext/lib64/fm_helium.so
-system_ext/lib64/lib-imsvideocodec.so
-system_ext/lib64/lib-imsvt.so
-system_ext/lib64/lib-imsvtextutils.so
-system_ext/lib64/lib-imsvtutils.so
-system_ext/lib64/libAGC_recpp.so
-system_ext/lib64/libANS_recpp.so
-system_ext/lib64/libAdaptiveEQ_recpp.so
-system_ext/lib64/libCastSdk-jni.so
-system_ext/lib64/libCompressor_recpp.so
-system_ext/lib64/libDiagService.so
-system_ext/lib64/libGPMTEEC_system.qti.so
-system_ext/lib64/libGPQTEEC_system.qti.so
-system_ext/lib64/libGPTEE_system.qti.so
-system_ext/lib64/libHDR_recpp.so
-system_ext/lib64/libHPFilter_recpp.so
-system_ext/lib64/libLimiter_recpp.so
-system_ext/lib64/libMiVideoFilter.so
-system_ext/lib64/libMiuiBluetooth.so
-system_ext/lib64/libOpenCL_system.so
-system_ext/lib64/libQOC.qti.so
-system_ext/lib64/libQSEEComAPI_system.so
-system_ext/lib64/libQTEEConnector_system.so
-system_ext/lib64/libWNR.so
-system_ext/lib64/libWNR_intf.so
-system_ext/lib64/libXiaoMiMagicVoice.so
-system_ext/lib64/libadvanced_crypto.so
-system_ext/lib64/libadvanced_crypto_jni.so
-system_ext/lib64/libaivsopus.so
-system_ext/lib64/libaudioclientimpl.so
-system_ext/lib64/libaudiocloudctrl.so
-system_ext/lib64/libaudioflingerimpl.so
-system_ext/lib64/libaudiopolicymanagerimpl.so
-system_ext/lib64/libaudiopolicymanagerstub.so
-system_ext/lib64/libaudiopolicyserviceimpl.so
-system_ext/lib64/libavenhancements.so
-system_ext/lib64/libbacktrace.so
-system_ext/lib64/libbarrage_utils.so
-system_ext/lib64/libbeluga.so
-system_ext/lib64/libbinauralrenderer_wrapper.qti.so
-system_ext/lib64/libbluetooth_qti.so
-system_ext/lib64/libboost.so
-system_ext/lib64/libbt-logClient.so
-system_ext/lib64/libbtconfigstore.so
-system_ext/lib64/libcallstack.so
-system_ext/lib64/libcamera_algoup_jni.xiaomi.so
-system_ext/lib64/libcamera_mianode_jni.xiaomi.so
-system_ext/lib64/libcameradngimpl.so
-system_ext/lib64/libcameraimpl.so
-system_ext/lib64/libcameramind.so
-system_ext/lib64/libcameraopt.so
-system_ext/lib64/libcameraopt_jni.so
-system_ext/lib64/libcammsger.so
-system_ext/lib64/libclientinfoimpl.so
-system_ext/lib64/libcom_android_net_module_util_jni.so
-system_ext/lib64/libcomposerextn.qti.so
-system_ext/lib64/libcrop.so
-system_ext/lib64/libcryptfs_hw.so
-system_ext/lib64/libcustbootanimationimpl.so
-system_ext/lib64/libdashdatasource.so
-system_ext/lib64/libdashsamplesource.so
-system_ext/lib64/libdehijack.so
-system_ext/lib64/libdfintf.so
-system_ext/lib64/libdiag_system.qti.so
-system_ext/lib64/libdiag_system.so
-system_ext/lib64/libdisplayconfig.system.qti.so
-system_ext/lib64/libdolbyeffect.so
-system_ext/lib64/libdolbyottcontrol.so
-system_ext/lib64/libdolphin.so
-system_ext/lib64/libdovi_omx.so
-system_ext/lib64/libdpmctmgr.so
-system_ext/lib64/libdpmfdmgr.so
-system_ext/lib64/libdpmframework.so
-system_ext/lib64/libdpmtcm.so
-system_ext/lib64/libembmsmmosal.so
-system_ext/lib64/libembmsmmparser_lite.so
-system_ext/lib64/libembmstinyxml.so
-system_ext/lib64/libfd_jni_include.so
-system_ext/lib64/libfd_openssl_include.so
-system_ext/lib64/libfdpp.so
-system_ext/lib64/libfdpp_jni.so
-system_ext/lib64/libfik_fd.so
-system_ext/lib64/libfik_nheap.so
-system_ext/lib64/libfik_proc.so
-system_ext/lib64/libfik_signal.so
-system_ext/lib64/libfik_thread.so
-system_ext/lib64/libfik_utils.so
-system_ext/lib64/libfik_vmem.so
-system_ext/lib64/libfm-hci.so
-system_ext/lib64/libfolme.so
-system_ext/lib64/libforcedarkimpl.so
-system_ext/lib64/libfsmgrimpl.so
-system_ext/lib64/libfsutils.so
-system_ext/lib64/libfuse-lite.so
-system_ext/lib64/libgralloc.system.qti.so
-system_ext/lib64/libhidconverter.so
-system_ext/lib64/libhoaeffects.qti.so
-system_ext/lib64/libhoaeffects_csim.so
-system_ext/lib64/libhook.so
-system_ext/lib64/libhwuiinsptrdl.so
-system_ext/lib64/libimscamera_jni.so
-system_ext/lib64/libimsmedia_jni.so
-system_ext/lib64/libinstalldimpl.so
-system_ext/lib64/libjlspeex.so
-system_ext/lib64/libjnihelpers.so
-system_ext/lib64/libknockservice.so
-system_ext/lib64/liblayerext.qti.so
-system_ext/lib64/liblhdc.so
-system_ext/lib64/liblhdcBT_enc.so
-system_ext/lib64/liblhdcv5.so
-system_ext/lib64/liblhdcv5BT_enc.so
-system_ext/lib64/liblistenjni.qti.so
-system_ext/lib64/liblistensoundmodel2.qti.so
-system_ext/lib64/liblmkdimpl.so
-system_ext/lib64/libloc2jnibridge.so
-system_ext/lib64/liblocsdk_diag_jni.so
-system_ext/lib64/liblogdimpl.so
-system_ext/lib64/liblsmclient.so
-system_ext/lib64/libmalldisp.so
-system_ext/lib64/libmediaimpl.so
-system_ext/lib64/libmediasp_jni.so
-system_ext/lib64/libmediastub.so
-system_ext/lib64/libmibpfutils.so
-system_ext/lib64/libmicampostproc_client.so
-system_ext/lib64/libmidebuggerdimpl_system.so
-system_ext/lib64/libmienterpriseimpl.so
-system_ext/lib64/libmigl.so
-system_ext/lib64/libmigui.so
-system_ext/lib64/libmiinput.so
-system_ext/lib64/libmiinputflinger.so
-system_ext/lib64/libmillet_comm.so
-system_ext/lib64/libmimediacodec.so
-system_ext/lib64/libmink-sock-native-api.so
-system_ext/lib64/libminksocket_system.so
-system_ext/lib64/libmiperf_jni.so
-system_ext/lib64/libmiracastsystem.so
-system_ext/lib64/libmisensorserviceimpl.so
-system_ext/lib64/libmisight.so
-system_ext/lib64/libmisight_jni.so
-system_ext/lib64/libmisurfaceflinger.so
-system_ext/lib64/libmiturbo_jni.so
-system_ext/lib64/libmiui_runtime.so
-system_ext/lib64/libmiui_security.so
-system_ext/lib64/libmiui_service.so
-system_ext/lib64/libmiuibpf.so
-system_ext/lib64/libmiuibpfservice.so
-system_ext/lib64/libmiuidumpstate.so
-system_ext/lib64/libmiuindbg.so
-system_ext/lib64/libmiuiprocessmanager.so
-system_ext/lib64/libmiuisentinel.so
-system_ext/lib64/libmiuixlog.so
-system_ext/lib64/libmivc_rx.so
-system_ext/lib64/libmmQSM.so
-system_ext/lib64/libmmhttpstack.so
-system_ext/lib64/libmmiipstreammmihttp.so
-system_ext/lib64/libmmipstreamnetwork.so
-system_ext/lib64/libmmipstreamsourcehttp.so
-system_ext/lib64/libmmipstreamutils.so
-system_ext/lib64/libmmosal.so
-system_ext/lib64/libmmparser_lite.so
-system_ext/lib64/libmmrtpdecoder.so
-system_ext/lib64/libmmrtpencoder.so
-system_ext/lib64/libmodemenhance_aidl_client.so
-system_ext/lib64/libmodemsmartengine_jni.modem.so
-system_ext/lib64/libmonitortrack.so
-system_ext/lib64/libmpeg4pro.so
-system_ext/lib64/libmsp.so
-system_ext/lib64/libmwqemiptablemgr.so
-system_ext/lib64/libnative-jni.so
-system_ext/lib64/libnetworkboostjni.so
-system_ext/lib64/libntfs-3g.so
-system_ext/lib64/liboctvm.so
-system_ext/lib64/liboctvm_drv.so
-system_ext/lib64/liboctvm_runtime.so
-system_ext/lib64/liboctvm_utils.so
-system_ext/lib64/liboemaids_system.so
-system_ext/lib64/liboemnetdimpl.so
-system_ext/lib64/libopencl-camera.so
-system_ext/lib64/libpenguin.so
-system_ext/lib64/libpenguin_impl.so
-system_ext/lib64/libperf_ctl.so
-system_ext/lib64/libprocdaemon.so
-system_ext/lib64/libprochunter.so
-system_ext/lib64/libprocreporter.so
-system_ext/lib64/libqape.qti.so
-system_ext/lib64/libqcc.so
-system_ext/lib64/libqcc_file_agent_sys.so
-system_ext/lib64/libqcc_netstats.so
-system_ext/lib64/libqccdme.so
-system_ext/lib64/libqccfileservice.so
-system_ext/lib64/libqcomfm_jni.so
-system_ext/lib64/libqesdk_ndk_platform.qti.so
-system_ext/lib64/libqmi_cci_system.so
-system_ext/lib64/libqmi_encdec_system.so
-system_ext/lib64/libqspm-mem-utils.so
-system_ext/lib64/libqspmsvc.so
-system_ext/lib64/libqti-at.so
-system_ext/lib64/libqti-iopd-client_system.so
-system_ext/lib64/libqti-perfd-client_system.so
-system_ext/lib64/libqti_performance.so
-system_ext/lib64/libqti_vndfwk_detect.so
-system_ext/lib64/libqti_vndfwk_detect_system.so
-system_ext/lib64/libqti_workloadclassifiermodel.so
-system_ext/lib64/libqxrsplitauxservice.qti.so
-system_ext/lib64/librecpp_intf.so
-system_ext/lib64/libsavior.so
-system_ext/lib64/libscout.so
-system_ext/lib64/libsd_sdk_display.qti.so
-system_ext/lib64/libsdm-disp-apis.qti.so
-system_ext/lib64/libsecurity_device_credential_sdk.so
-system_ext/lib64/libshell.so
-system_ext/lib64/libshell_jni.so
-system_ext/lib64/libshellservice.so
-system_ext/lib64/libsigmautils.so
-system_ext/lib64/libskewknob_system.so
-system_ext/lib64/libsmomoconfig.qti.so
-system_ext/lib64/libsobridge.so
-system_ext/lib64/libsoload.so
-system_ext/lib64/libspatial.so
-system_ext/lib64/libsurfaceflingerinsptr.so
-system_ext/lib64/libsystemhelper_jni.so
-system_ext/lib64/libtfa98xx_cal.so
-system_ext/lib64/libtfa98xx_cal_tfa9873.so
-system_ext/lib64/libthermalclient.qti.so
-system_ext/lib64/libtouchfeatureutils.so
-system_ext/lib64/libtouchflinger.so
-system_ext/lib64/libtouchscheduler.so
-system_ext/lib64/libtrack-heap.so
-system_ext/lib64/libtrack-uaf.so
-system_ext/lib64/libtrigger-handler.so
-system_ext/lib64/libturboschedmanager_ssi.so
-system_ext/lib64/libugrab.so
-system_ext/lib64/libupdateprof.qti.so
-system_ext/lib64/libvideocodeccapability.so
-system_ext/lib64/libvideocodecinfo.so
-system_ext/lib64/libvideoconfigimpl.so
-system_ext/lib64/libvideodiedobserver.so
-system_ext/lib64/libvideorecovery.so
-system_ext/lib64/libvideoserviceclientimpl.so
-system_ext/lib64/libvirtualcamera_imageutils_jni.so
-system_ext/lib64/libvirtualcamera_surfaceutils_jni.so
-system_ext/lib64/libvndfwk_detect_jni.qti.so
-system_ext/lib64/libvndfwk_detect_jni.qti_system.so
-system_ext/lib64/libvoicechange.so
-system_ext/lib64/libvoldimpl.so
-system_ext/lib64/libvppvideobox.so
-system_ext/lib64/libvr_amb_engine.so
-system_ext/lib64/libvr_object_engine.so
-system_ext/lib64/libwalkstack.so
-system_ext/lib64/libwfdavenhancements.so
-system_ext/lib64/libwfdclient.so
-system_ext/lib64/libwfdcommonutils.so
-system_ext/lib64/libwfdconfigutils.so
-system_ext/lib64/libwfddisplayconfig.so
-system_ext/lib64/libwfdmminterface.so
-system_ext/lib64/libwfdmmsink.so
-system_ext/lib64/libwfdmmsrc_system.so
-system_ext/lib64/libwfdnative.so
-system_ext/lib64/libwfdrtsp.so
-system_ext/lib64/libwfdservice.so
-system_ext/lib64/libwfdsinksm.so
-system_ext/lib64/libwfduibcinterface.so
-system_ext/lib64/libwfduibcsink.so
-system_ext/lib64/libwfduibcsinkinterface.so
-system_ext/lib64/libwfduibcsrc.so
-system_ext/lib64/libwfduibcsrcinterface.so
-system_ext/lib64/libwificondimpl.so
-system_ext/lib64/libxiaomi_modemdump_jni.modem.so
-system_ext/lib64/libxiaomi_modemdumpsdx55_jni.modem.so
-system_ext/lib64/libxlog.so
-system_ext/lib64/libxm_bluetooth.so
-system_ext/lib64/libzkmalloc.so
-system_ext/lib64/miui.mqsas.native-cpp.so
-system_ext/lib64/miui_f2fs_io.so
-system_ext/lib64/vendor.display.color@1.0.so
-system_ext/lib64/vendor.display.color@1.1.so
-system_ext/lib64/vendor.display.color@1.2.so
-system_ext/lib64/vendor.display.color@1.3.so
-system_ext/lib64/vendor.display.config@1.0.so
-system_ext/lib64/vendor.display.config@1.1.so
-system_ext/lib64/vendor.display.config@1.2.so
-system_ext/lib64/vendor.display.config@1.3.so
-system_ext/lib64/vendor.display.config@1.4.so
-system_ext/lib64/vendor.display.config@1.5.so
-system_ext/lib64/vendor.display.config@2.0.so
-system_ext/lib64/vendor.display.postproc@1.0.so
-system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
-system_ext/lib64/vendor.qti.data.factory@1.0.so
-system_ext/lib64/vendor.qti.data.factory@2.0.so
-system_ext/lib64/vendor.qti.data.factory@2.1.so
-system_ext/lib64/vendor.qti.data.factory@2.2.so
-system_ext/lib64/vendor.qti.data.factory@2.3.so
-system_ext/lib64/vendor.qti.data.factory@2.4.so
-system_ext/lib64/vendor.qti.data.factory@2.5.so
-system_ext/lib64/vendor.qti.data.factory@2.6.so
-system_ext/lib64/vendor.qti.data.factory@2.7.so
-system_ext/lib64/vendor.qti.data.factory@2.8.so
-system_ext/lib64/vendor.qti.data.factoryservice-V1-ndk.so
-system_ext/lib64/vendor.qti.data.mwqem@1.0.so
-system_ext/lib64/vendor.qti.data.mwqemaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.data.slm@1.0.so
-system_ext/lib64/vendor.qti.diaghal@1.0.so
-system_ext/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
-system_ext/lib64/vendor.qti.hardware.alarm@1.0.so
-system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
-system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
-system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so
-system_ext/lib64/vendor.qti.hardware.btconfigstore@1.0.so
-system_ext/lib64/vendor.qti.hardware.btconfigstore@2.0.so
-system_ext/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
-system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so
-system_ext/lib64/vendor.qti.hardware.cvp@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.1.so
-system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.2.so
-system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.3.so
-system_ext/lib64/vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.connection@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.connection@1.1.so
-system_ext/lib64/vendor.qti.hardware.data.connectionfactory-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.dataactivity-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so
-system_ext/lib64/vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.flow@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.flow@1.1.so
-system_ext/lib64/vendor.qti.hardware.data.flowaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.iwlan@1.1.so
-system_ext/lib64/vendor.qti.hardware.data.iwlandata-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.ka-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.lce@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.lceaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.qmiaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.display.composer@3.0.so
-system_ext/lib64/vendor.qti.hardware.display.composer@3.1.so
-system_ext/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so
-system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so
-system_ext/lib64/vendor.qti.hardware.embmssl@1.0.so
-system_ext/lib64/vendor.qti.hardware.embmssl@1.1.so
-system_ext/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.fm@1.0.so
-system_ext/lib64/vendor.qti.hardware.iop@2.0.so
-system_ext/lib64/vendor.qti.hardware.limits@1.0.so
-system_ext/lib64/vendor.qti.hardware.limits@1.1.so
-system_ext/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
-system_ext/lib64/vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.perf@2.0.so
-system_ext/lib64/vendor.qti.hardware.perf@2.1.so
-system_ext/lib64/vendor.qti.hardware.perf@2.2.so
-system_ext/lib64/vendor.qti.hardware.perf@2.3.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
-system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
-system_ext/lib64/vendor.qti.hardware.qconfig-V3-ndk.so
-system_ext/lib64/vendor.qti.hardware.qconfig-V4-ndk.so
-system_ext/lib64/vendor.qti.hardware.qconfig@1.0.so
-system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-system_ext/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so
-system_ext/lib64/vendor.qti.hardware.qteeconnector-V1-ndk.so
-system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-system_ext/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so
-system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.5.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.6.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.7.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.8.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.9.so
-system_ext/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.lpa@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.lpa@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.lpa@1.2.so
-system_ext/lib64/vendor.qti.hardware.radio.lpa@1.3.so
-system_ext/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so
-system_ext/lib64/vendor.qti.hardware.radio.uim@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.uim@1.2.so
-system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
-system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-system_ext/lib64/vendor.qti.hardware.seccam@1.0.so
-system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
-system_ext/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
-system_ext/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
-system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
-system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
-system_ext/lib64/vendor.qti.hardware.slmadapter@1.0.so
-system_ext/lib64/vendor.qti.hardware.systemhelper@1.0.so
-system_ext/lib64/vendor.qti.hardware.trustedui@1.0.so
-system_ext/lib64/vendor.qti.hardware.vpp@1.1.so
-system_ext/lib64/vendor.qti.hardware.vpp@2.0.so
-system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-system_ext/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
-system_ext/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
-system_ext/lib64/vendor.qti.ims.callcapability@1.0.so
-system_ext/lib64/vendor.qti.ims.callcapabilityaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
-system_ext/lib64/vendor.qti.ims.configaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.ims.configservice@1.0.so
-system_ext/lib64/vendor.qti.ims.configservice@1.1.so
-system_ext/lib64/vendor.qti.ims.connection@1.0.so
-system_ext/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
-system_ext/lib64/vendor.qti.ims.datachannelservice-V2-ndk.so
-system_ext/lib64/vendor.qti.ims.factory@1.0.so
-system_ext/lib64/vendor.qti.ims.factory@1.1.so
-system_ext/lib64/vendor.qti.ims.factory@2.0.so
-system_ext/lib64/vendor.qti.ims.factory@2.1.so
-system_ext/lib64/vendor.qti.ims.factory@2.2.so
-system_ext/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so
-system_ext/lib64/vendor.qti.ims.rcssip@1.0.so
-system_ext/lib64/vendor.qti.ims.rcssip@1.1.so
-system_ext/lib64/vendor.qti.ims.rcssip@1.2.so
-system_ext/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.ims.rcsuce@1.0.so
-system_ext/lib64/vendor.qti.ims.rcsuce@1.1.so
-system_ext/lib64/vendor.qti.ims.rcsuce@1.2.so
-system_ext/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/lib64/vendor.qti.latency@2.0.so
-system_ext/lib64/vendor.qti.latency@2.1.so
-system_ext/lib64/vendor.qti.latency@2.2.so
-system_ext/lib64/vendor.qti.latency@2.3.so
-system_ext/lib64/vendor.qti.latencyaidlservice-V1-ndk.so
-system_ext/lib64/vendor.qti.mstatservice@1.0.so
-system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
-system_ext/lib64/vendor.qti.qesdhal@1.0.so
-system_ext/lib64/vendor.qti.qesdhal@1.1.so
-system_ext/lib64/vendor.qti.qesdhal@1.2.so
-system_ext/lib64/vendor.qti.qesdhalaidl-V2-ndk.so
-system_ext/lib64/vendor.qti.qspmhal-V1-ndk.so
-system_ext/lib64/vendor.qti.qspmhal@1.0.so
-system_ext/lib64/vendor.qti.voiceprint@1.0.so
-system_ext/lib64/vendor.xiaomi.hardware.aidl.intentaware-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-system_ext/lib64/vendor.xiaomi.hardware.cstransfer-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-system_ext/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
-system_ext/lib64/vendor.xiaomi.hardware.miperf@1.0.so
-system_ext/lib64/vendor.xiaomi.hardware.misys.common-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.misys.common-V3-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hardware.videoservice-V2-ndk.so
-system_ext/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so
-system_ext/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
-system_ext/lib64/xiaomi.system.hypsys.common-V1-ndk.so
-system_ext/permissions/version-seperation-ext.xml
-system_ext/priv-app/AccessibilityMenu/oat/arm64/AccessibilityMenu.odex
-system_ext/priv-app/AccessibilityMenu/oat/arm64/AccessibilityMenu.vdex
-system_ext/priv-app/AccessibilityMenu/AccessibilityMenu.apk
-system_ext/priv-app/AuthManager/oat/arm64/AuthManager.odex
-system_ext/priv-app/AuthManager/oat/arm64/AuthManager.vdex
-system_ext/priv-app/AuthManager/AuthManager.apk
-system_ext/priv-app/CarrierConfig/oat/arm64/CarrierConfig.odex
-system_ext/priv-app/CarrierConfig/oat/arm64/CarrierConfig.vdex
-system_ext/priv-app/CarrierConfig/CarrierConfig.apk
-system_ext/priv-app/ConfigurationClient/oat/arm64/ConfigurationClient.odex
-system_ext/priv-app/ConfigurationClient/oat/arm64/ConfigurationClient.vdex
-system_ext/priv-app/ConfigurationClient/ConfigurationClient.apk
-system_ext/priv-app/EmergencyInfoGms/oat/arm64/EmergencyInfoGms.odex
-system_ext/priv-app/EmergencyInfoGms/oat/arm64/EmergencyInfoGms.vdex
-system_ext/priv-app/EmergencyInfoGms/EmergencyInfoGms.apk
-system_ext/priv-app/FindDevice/oat/arm64/FindDevice.odex
-system_ext/priv-app/FindDevice/oat/arm64/FindDevice.vdex
-system_ext/priv-app/FindDevice/FindDevice.apk
-system_ext/priv-app/GoogleFeedback/oat/arm64/GoogleFeedback.odex
-system_ext/priv-app/GoogleFeedback/oat/arm64/GoogleFeedback.vdex
-system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
-system_ext/priv-app/GoogleServicesFramework/oat/arm64/GoogleServicesFramework.odex
-system_ext/priv-app/GoogleServicesFramework/oat/arm64/GoogleServicesFramework.vdex
-system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk
-system_ext/priv-app/MiuiFreeformService/oat/arm64/MiuiFreeformService.odex
-system_ext/priv-app/MiuiFreeformService/oat/arm64/MiuiFreeformService.vdex
-system_ext/priv-app/MiuiFreeformService/MiuiFreeformService.apk
-system_ext/priv-app/MiuiSystemUI/oat/arm64/MiuiSystemUI.odex
-system_ext/priv-app/MiuiSystemUI/oat/arm64/MiuiSystemUI.vdex
-system_ext/priv-app/MiuiSystemUI/MiuiSystemUI.apk
-system_ext/priv-app/MiuiVpnDialogs/oat/arm64/MiuiVpnDialogs.odex
-system_ext/priv-app/MiuiVpnDialogs/oat/arm64/MiuiVpnDialogs.vdex
-system_ext/priv-app/MiuiVpnDialogs/MiuiVpnDialogs.apk
-system_ext/priv-app/MiuiWifiDialog/oat/arm64/MiuiWifiDialog.odex
-system_ext/priv-app/MiuiWifiDialog/oat/arm64/MiuiWifiDialog.vdex
-system_ext/priv-app/MiuiWifiDialog/MiuiWifiDialog.apk
-system_ext/priv-app/PerformanceMode/oat/arm64/PerformanceMode.odex
-system_ext/priv-app/PerformanceMode/oat/arm64/PerformanceMode.vdex
-system_ext/priv-app/PerformanceMode/PerformanceMode.apk
-system_ext/priv-app/Provision/lib/arm64/libnative-jni.so
-system_ext/priv-app/Provision/oat/arm64/Provision.odex
-system_ext/priv-app/Provision/oat/arm64/Provision.vdex
-system_ext/priv-app/Provision/Provision.apk
-system_ext/priv-app/QtiWifiService/oat/arm64/QtiWifiService.odex
-system_ext/priv-app/QtiWifiService/oat/arm64/QtiWifiService.vdex
-system_ext/priv-app/QtiWifiService/QtiWifiService.apk
-system_ext/priv-app/QualcommVoiceActivation/oat/arm64/QualcommVoiceActivation.odex
-system_ext/priv-app/QualcommVoiceActivation/oat/arm64/QualcommVoiceActivation.vdex
-system_ext/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk
-system_ext/priv-app/RtMiCloudSDK/oat/arm64/RtMiCloudSDK.odex
-system_ext/priv-app/RtMiCloudSDK/oat/arm64/RtMiCloudSDK.vdex
-system_ext/priv-app/RtMiCloudSDK/RtMiCloudSDK.apk
-system_ext/priv-app/Settings/oat/arm64/Settings.odex
-system_ext/priv-app/Settings/oat/arm64/Settings.vdex
-system_ext/priv-app/Settings/Settings.apk
-system_ext/priv-app/SetupWizard/SetupWizard.apk
-system_ext/priv-app/StorageManager/oat/arm64/StorageManager.odex
-system_ext/priv-app/StorageManager/oat/arm64/StorageManager.vdex
-system_ext/priv-app/StorageManager/StorageManager.apk
-system_ext/priv-app/TouchService/oat/arm64/TouchService.odex
-system_ext/priv-app/TouchService/oat/arm64/TouchService.vdex
-system_ext/priv-app/TouchService/TouchService.apk
-system_ext/priv-app/WallpaperCropper/oat/arm64/WallpaperCropper.odex
-system_ext/priv-app/WallpaperCropper/oat/arm64/WallpaperCropper.vdex
-system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk
-system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so
-system_ext/priv-app/WfdService/oat/arm64/WfdService.odex
-system_ext/priv-app/WfdService/oat/arm64/WfdService.vdex
-system_ext/priv-app/WfdService/WfdService.apk
-system_ext/priv-app/com.qualcomm.location/oat/arm64/com.qualcomm.location.odex
-system_ext/priv-app/com.qualcomm.location/oat/arm64/com.qualcomm.location.vdex
-system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk
-system_ext/priv-app/com.qualcomm.qti.services.systemhelper/lib/arm64/libsystemhelper_jni.so
-system_ext/priv-app/com.qualcomm.qti.services.systemhelper/oat/arm64/com.qualcomm.qti.services.systemhelper.odex
-system_ext/priv-app/com.qualcomm.qti.services.systemhelper/oat/arm64/com.qualcomm.qti.services.systemhelper.vdex
-system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk
-system_ext/priv-app/dcf/dcf.apk
-system_ext/priv-app/dpmserviceapp/oat/arm64/dpmserviceapp.odex
-system_ext/priv-app/dpmserviceapp/oat/arm64/dpmserviceapp.vdex
-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
-system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
-system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
-system_ext/priv-app/ims/oat/arm64/ims.odex
-system_ext/priv-app/ims/oat/arm64/ims.vdex
-system_ext/priv-app/ims/ims.apk
-system_ext/priv-app/qcrilmsgtunnel/oat/arm64/qcrilmsgtunnel.odex
-system_ext/priv-app/qcrilmsgtunnel/oat/arm64/qcrilmsgtunnel.vdex
-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-system_ext/priv-app/xrcbservice/oat/arm64/xrcbservice.odex
-system_ext/priv-app/xrcbservice/oat/arm64/xrcbservice.vdex
-system_ext/priv-app/xrcbservice/xrcbservice.apk
-system_ext/priv-app/xrvdservice/oat/arm64/xrvdservice.odex
-system_ext/priv-app/xrvdservice/oat/arm64/xrvdservice.vdex
-system_ext/priv-app/xrvdservice/xrvdservice.apk
-system_ext/priv-app/xrwifiservice/oat/arm64/xrwifiservice.odex
-system_ext/priv-app/xrwifiservice/oat/arm64/xrwifiservice.vdex
-system_ext/priv-app/xrwifiservice/xrwifiservice.apk
-system_ext/usr/idc/Vendor_0022_Product_3183.idc
-system_ext/usr/idc/Vendor_0022_Product_3283.idc
-system_ext/usr/idc/Vendor_0022_Product_4e83.idc
-system_ext/usr/keylayout/Vendor_2717_Product_5083.kl
-system_ext/xbin/miuibooster
-system_ext/xbin/system_perf_init
-temp_extracted_archive/AdbWinApi.dll
-temp_extracted_archive/AdbWinUsbApi.dll
-temp_extracted_archive/BTFM.bin
-temp_extracted_archive/NON-HLOS.bin
-temp_extracted_archive/abl.elf
-temp_extracted_archive/about.html
-temp_extracted_archive/adb.exe
-temp_extracted_archive/anti_version.txt
-temp_extracted_archive/apdp.mbn
-temp_extracted_archive/boot.img
-temp_extracted_archive/checksparse.py
-temp_extracted_archive/countrycode.img
-temp_extracted_archive/crclist.txt
-temp_extracted_archive/devcfg.mbn
-temp_extracted_archive/dspso.bin
-temp_extracted_archive/dtbo.img
-temp_extracted_archive/dummy.img
-temp_extracted_archive/fastboot.exe
-temp_extracted_archive/featenabler.mbn
-temp_extracted_archive/flash_all.bat
-temp_extracted_archive/flash_all.sh
-temp_extracted_archive/flash_all_except_storage.bat
-temp_extracted_archive/flash_all_except_storage.sh
-temp_extracted_archive/flash_all_lock.bat
-temp_extracted_archive/flash_all_lock.sh
-temp_extracted_archive/flash_gen_crc_list.py
-temp_extracted_archive/flash_gen_md5_list.py
-temp_extracted_archive/flash_gen_resparsecount
-temp_extracted_archive/gpt_backup0.bin
-temp_extracted_archive/gpt_backup1.bin
-temp_extracted_archive/gpt_backup2.bin
-temp_extracted_archive/gpt_backup3.bin
-temp_extracted_archive/gpt_backup4.bin
-temp_extracted_archive/gpt_backup5.bin
-temp_extracted_archive/gpt_both0.bin
-temp_extracted_archive/gpt_both1.bin
-temp_extracted_archive/gpt_both2.bin
-temp_extracted_archive/gpt_both3.bin
-temp_extracted_archive/gpt_both4.bin
-temp_extracted_archive/gpt_both5.bin
-temp_extracted_archive/gpt_empty0.bin
-temp_extracted_archive/gpt_empty1.bin
-temp_extracted_archive/gpt_empty2.bin
-temp_extracted_archive/gpt_empty3.bin
-temp_extracted_archive/gpt_empty4.bin
-temp_extracted_archive/gpt_empty5.bin
-temp_extracted_archive/gpt_main0.bin
-temp_extracted_archive/gpt_main1.bin
-temp_extracted_archive/gpt_main2.bin
-temp_extracted_archive/gpt_main3.bin
-temp_extracted_archive/gpt_main4.bin
-temp_extracted_archive/gpt_main5.bin
-temp_extracted_archive/hypvm.mbn
-temp_extracted_archive/hypvmperformance.mbn
-temp_extracted_archive/imagefv.elf
-temp_extracted_archive/init_boot.img
-temp_extracted_archive/keymint.mbn
-temp_extracted_archive/logfs_ufs_8mb.bin
-temp_extracted_archive/mdcompress.mbn
-temp_extracted_archive/metadata.img
-temp_extracted_archive/misc.img
-temp_extracted_archive/misc.txt
-temp_extracted_archive/multi_image.mbn
-temp_extracted_archive/partition_ext.xml
-temp_extracted_archive/partition_extMTP.xml
-temp_extracted_archive/partition_goext.xml
-temp_extracted_archive/partition_goextMTP.xml
-temp_extracted_archive/patch0.xml
-temp_extracted_archive/patch1.xml
-temp_extracted_archive/patch2.xml
-temp_extracted_archive/patch3.xml
-temp_extracted_archive/patch4.xml
-temp_extracted_archive/patch5.xml
-temp_extracted_archive/persist.img
-temp_extracted_archive/prog_firehose_ddr.elf
-temp_extracted_archive/prog_firehose_lite.elf
-temp_extracted_archive/ptool.py
-temp_extracted_archive/qupv3fw.elf
-temp_extracted_archive/rawprogram0.xml
-temp_extracted_archive/rawprogram1.xml
-temp_extracted_archive/rawprogram2.xml
-temp_extracted_archive/rawprogram3.xml
-temp_extracted_archive/rawprogram4.xml
-temp_extracted_archive/rawprogram5.xml
-temp_extracted_archive/recovery.img
-temp_extracted_archive/rescue.img
-temp_extracted_archive/rpm.mbn
-temp_extracted_archive/rtice.mbn
-temp_extracted_archive/sparsecrclist.txt
-temp_extracted_archive/storsec.mbn
-temp_extracted_archive/super.img
-temp_extracted_archive/tools.fv
-temp_extracted_archive/tz.mbn
-temp_extracted_archive/uefi_sec.mbn
-temp_extracted_archive/userdata.img
-temp_extracted_archive/vbmeta.img
-temp_extracted_archive/vbmeta_system.img
-temp_extracted_archive/vendor_boot.img
-temp_extracted_archive/wipe_rawprogram_PHY0.xml
-temp_extracted_archive/wipe_rawprogram_PHY1.xml
-temp_extracted_archive/wipe_rawprogram_PHY2.xml
-temp_extracted_archive/wipe_rawprogram_PHY4.xml
-temp_extracted_archive/wipe_rawprogram_PHY5.xml
-temp_extracted_archive/wipe_rawprogram_PHY6.xml
-temp_extracted_archive/wipe_rawprogram_PHY7.xml
-temp_extracted_archive/xbl.elf
-temp_extracted_archive/xbl_config.elf
-temp_extracted_archive/zeros_1sector.bin
-temp_extracted_archive/zeros_5sectors.bin
-temp_raw_images/boot.img
-temp_raw_images/dtbo.img
-temp_raw_images/init_boot.img
-temp_raw_images/mi_ext.img
-temp_raw_images/modem.img
-temp_raw_images/odm.img
-temp_raw_images/product.img
-temp_raw_images/product_b.img
-temp_raw_images/recovery.img
-temp_raw_images/rescue.img
-temp_raw_images/super.img
-temp_raw_images/system.img
-temp_raw_images/system_dlkm.img
-temp_raw_images/system_dlkm_b.img
-temp_raw_images/system_ext.img
-temp_raw_images/system_ext_b.img
-temp_raw_images/tz.img
-temp_raw_images/vendor.img
-temp_raw_images/vendor_boot.img
-temp_raw_images/vendor_dlkm.img
-tz.img
-vendor/apex/com.google.android.widevine.nonupdatable.apex
-vendor/app/CACertService/oat/arm64/CACertService.odex
-vendor/app/CACertService/oat/arm64/CACertService.vdex
-vendor/app/CACertService/CACertService.apk
-vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti_vendor.so
-vendor/app/CneApp/oat/arm64/CneApp.odex
-vendor/app/CneApp/oat/arm64/CneApp.vdex
-vendor/app/CneApp/CneApp.apk
-vendor/app/ConnectionSecurityService/oat/arm64/ConnectionSecurityService.odex
-vendor/app/ConnectionSecurityService/oat/arm64/ConnectionSecurityService.vdex
-vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
-vendor/app/IWlanService/oat/arm64/IWlanService.odex
-vendor/app/IWlanService/oat/arm64/IWlanService.vdex
-vendor/app/IWlanService/IWlanService.apk
-vendor/app/TimeService/oat/arm64/TimeService.odex
-vendor/app/TimeService/oat/arm64/TimeService.vdex
-vendor/app/TimeService/TimeService.apk
-vendor/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.odex
-vendor/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.vdex
-vendor/app/TxPwrAdmin/TxPwrAdmin.apk
-vendor/bin/hw/android.hardware.audio.service_64
-vendor/bin/hw/android.hardware.biometrics.fingerprint-service.odm
-vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
-vendor/bin/hw/android.hardware.boot-service.qti
-vendor/bin/hw/android.hardware.cas-service.example
-vendor/bin/hw/android.hardware.drm-service.clearkey
-vendor/bin/hw/android.hardware.dumpstate-service.xiaomi
-vendor/bin/hw/android.hardware.gatekeeper-service-qti
-vendor/bin/hw/android.hardware.gnss-aidl-service-qti
-vendor/bin/hw/android.hardware.health-service.qti
-vendor/bin/hw/android.hardware.identity-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/bin/hw/android.hardware.power-service
-vendor/bin/hw/android.hardware.security.keymint-service-qti
-vendor/bin/hw/android.hardware.sensors-service.multihal
-vendor/bin/hw/android.hardware.thermal-service.qti
-vendor/bin/hw/android.hardware.usb-service.qti
-vendor/bin/hw/android.hardware.usb.gadget-service.qti
-vendor/bin/hw/android.hardware.wifi-service
-vendor/bin/hw/capabilityconfigstoretest
-vendor/bin/hw/hostapd
-vendor/bin/hw/longcheer_antenna_cmd
-vendor/bin/hw/mifaced
-vendor/bin/hw/pasrknob
-vendor/bin/hw/qconfigservice
-vendor/bin/hw/qcrilNrd
-vendor/bin/hw/vendor.qti.camera.provider-service_64
-vendor/bin/hw/vendor.qti.hardware.alarm-service
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/bin/hw/vendor.qti.hardware.display.allocator-service
-vendor/bin/hw/vendor.qti.hardware.display.color-service
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/bin/hw/vendor.qti.hardware.display.demura-service
-vendor/bin/hw/vendor.qti.hardware.factory-service
-vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/bin/hw/vendor.qti.hardware.lights.service
-vendor/bin/hw/vendor.qti.hardware.limits@1.2-service
-vendor/bin/hw/vendor.qti.hardware.memtrack-service
-vendor/bin/hw/vendor.qti.hardware.perf2-hal-service
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/hw/vendor.qti.hardware.secureprocessor
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
-vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service
-vendor/bin/hw/vendor.qti.hardware.soter-service
-vendor/bin/hw/vendor.qti.hardware.trustedui-aidl-service-qti
-vendor/bin/hw/vendor.qti.hardware.vibrator.service
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
-vendor/bin/hw/vendor.qti.memory.pasrmanager-service
-vendor/bin/hw/vendor.qti.psiclient@1.0-service
-vendor/bin/hw/vendor.silead.hardware.fingerprintext-service
-vendor/bin/hw/vendor.xiaomi.hardware.cld@1.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature_aidl-service
-vendor/bin/hw/vendor.xiaomi.hardware.micharge-service
-vendor/bin/hw/vendor.xiaomi.hardware.mimd@1.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.misys.core-service
-vendor/bin/hw/wpa_supplicant
-vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
-vendor/bin/ATFWD-daemon
-vendor/bin/DFtool
-vendor/bin/GPTEE_Sample_client
-vendor/bin/KmInstallKeybox
-vendor/bin/LctReadWriteNV
-vendor/bin/MI_IC
-vendor/bin/MI_RIC
-vendor/bin/PalTest
-vendor/bin/PktRspTest
-vendor/bin/StoreKeybox
-vendor/bin/TrustedUISampleTestAIDL
-vendor/bin/[
-vendor/bin/acpi
-vendor/bin/adpl
-vendor/bin/adsprpcd
-vendor/bin/agmcap
-vendor/bin/agmcompresscap
-vendor/bin/agmcompressplay
-vendor/bin/agmhostless
-vendor/bin/agmplay
-vendor/bin/agmvoiceui
-vendor/bin/ar_util_in_test_example
-vendor/bin/athdiag
-vendor/bin/audioadsprpcd
-vendor/bin/audiodsd2pcmtest
-vendor/bin/audiofactorytestmain
-vendor/bin/audioflacapp
-vendor/bin/awk
-vendor/bin/base64
-vendor/bin/basename
-vendor/bin/blockdev
-vendor/bin/bluedut.sh
-vendor/bin/blueduttest
-vendor/bin/boringssl_self_test64
-vendor/bin/brctl
-vendor/bin/bt_close
-vendor/bin/bt_close.sh
-vendor/bin/cal
-vendor/bin/cat
-vendor/bin/charge_logger
-vendor/bin/chattr
-vendor/bin/chcon
-vendor/bin/checkpoint_gc
-vendor/bin/chgrp
-vendor/bin/chifeature2test
-vendor/bin/chiofflinepostproctest
-vendor/bin/chmod
-vendor/bin/chown
-vendor/bin/chroot
-vendor/bin/chrt
-vendor/bin/cksum
-vendor/bin/clear
-vendor/bin/closewifi_L
-vendor/bin/cmp
-vendor/bin/cnd
-vendor/bin/cnss-daemon
-vendor/bin/cnss_cli
-vendor/bin/cnss_diag
-vendor/bin/color_sampling_test
-vendor/bin/color_sampling_tool
-vendor/bin/comm
-vendor/bin/cp
-vendor/bin/cpio
-vendor/bin/cplay
-vendor/bin/ctrlapp_dut
-vendor/bin/cut
-vendor/bin/date
-vendor/bin/dcc_extension.sh
-vendor/bin/dd
-vendor/bin/debug-diag
-vendor/bin/devmem
-vendor/bin/df
-vendor/bin/diag-router
-vendor/bin/diag_callback_sample
-vendor/bin/diag_dci_sample
-vendor/bin/diag_klog
-vendor/bin/diag_mdlog
-vendor/bin/diag_socket_log
-vendor/bin/diag_uart_log
-vendor/bin/diagcommd
-vendor/bin/diff
-vendor/bin/dirname
-vendor/bin/displayfeature
-vendor/bin/dlsc
-vendor/bin/dmesg
-vendor/bin/dos2unix
-vendor/bin/dpmQmiMgr
-vendor/bin/dppdaemon
-vendor/bin/dspservice
-vendor/bin/du
-vendor/bin/dumpsys
-vendor/bin/e_loop
-vendor/bin/early_eth.sh
-vendor/bin/echo
-vendor/bin/edgnss-daemon
-vendor/bin/egrep
-vendor/bin/embmsslServer
-vendor/bin/engine-service
-vendor/bin/env
-vendor/bin/expand
-vendor/bin/expr
-vendor/bin/f2player
-vendor/bin/fallocate
-vendor/bin/false
-vendor/bin/ffu
-vendor/bin/fgrep
-vendor/bin/file
-vendor/bin/find
-vendor/bin/flock
-vendor/bin/fm_qsoc_patches
-vendor/bin/fmconfig
-vendor/bin/fmfactorytest
-vendor/bin/fmfactorytestserver
-vendor/bin/fmt
-vendor/bin/free
-vendor/bin/fsync
-vendor/bin/ftmdaemon
-vendor/bin/getconf
-vendor/bin/getenforce
-vendor/bin/getevent
-vendor/bin/getprop
-vendor/bin/gpu_counter_producer
-vendor/bin/grep
-vendor/bin/groups
-vendor/bin/gunzip
-vendor/bin/gzip
-vendor/bin/hal_proxy_daemon
-vendor/bin/head
-vendor/bin/hostapd_cli
-vendor/bin/hostname
-vendor/bin/hwclock
-vendor/bin/hypsys_vendor
-vendor/bin/i2cdetect
-vendor/bin/i2cdump
-vendor/bin/i2cget
-vendor/bin/i2cset
-vendor/bin/iconv
-vendor/bin/id
-vendor/bin/ifconfig
-vendor/bin/ims-dataservice-daemon
-vendor/bin/ims_rtp_daemon
-vendor/bin/imsdaemon
-vendor/bin/init.class_main.sh
-vendor/bin/init.crda.sh
-vendor/bin/init.kernel.post_boot-memory.sh
-vendor/bin/init.kernel.post_boot-pitti.sh
-vendor/bin/init.kernel.post_boot-pitti_4_0.sh
-vendor/bin/init.kernel.post_boot-pitti_4_1.sh
-vendor/bin/init.kernel.post_boot-pitti_default_6_2.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.mdm.sh
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.coex.sh
-vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.efs.sync.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qcom.sdio.sh
-vendor/bin/init.qcom.sensors.sh
-vendor/bin/init.qcom.sh
-vendor/bin/init.qcom.usb.sh
-vendor/bin/init.qti.cplicense.sh
-vendor/bin/init.qti.display_boot.sh
-vendor/bin/init.qti.kernel.debug-pitti.sh
-vendor/bin/init.qti.kernel.debug.sh
-vendor/bin/init.qti.kernel.early_debug-pitti.sh
-vendor/bin/init.qti.kernel.early_debug.sh
-vendor/bin/init.qti.kernel.sh
-vendor/bin/init.qti.media.sh
-vendor/bin/init.qti.qcv.sh
-vendor/bin/init.qti.write.sh
-vendor/bin/inotifyd
-vendor/bin/insmod
-vendor/bin/install
-vendor/bin/ionice
-vendor/bin/ioprofiler
-vendor/bin/iorenice
-vendor/bin/ipacm
-vendor/bin/ipacm-diag
-vendor/bin/iperf
-vendor/bin/irsc_util
-vendor/bin/iw
-vendor/bin/iwlist
-vendor/bin/iwpriv
-vendor/bin/kill
-vendor/bin/killall
-vendor/bin/ks
-vendor/bin/ln
-vendor/bin/load_policy
-vendor/bin/loc_launcher
-vendor/bin/log
-vendor/bin/logger
-vendor/bin/logname
-vendor/bin/logwrapper
-vendor/bin/losetup
-vendor/bin/lowi-server
-vendor/bin/ls
-vendor/bin/lsattr
-vendor/bin/lsmod
-vendor/bin/lsof
-vendor/bin/lspci
-vendor/bin/lsusb
-vendor/bin/mcs_test
-vendor/bin/md5sum
-vendor/bin/mi_thermald
-vendor/bin/microcom
-vendor/bin/mkdir
-vendor/bin/mkfifo
-vendor/bin/mknod
-vendor/bin/mkswap
-vendor/bin/mktemp
-vendor/bin/mlid
-vendor/bin/mm-audio-ftm
-vendor/bin/mmid
-vendor/bin/modinfo
-vendor/bin/modprobe
-vendor/bin/more
-vendor/bin/mount
-vendor/bin/mountpoint
-vendor/bin/mtb
-vendor/bin/mv
-vendor/bin/myftm
-vendor/bin/myftm.agent.sh
-vendor/bin/myftmftm
-vendor/bin/nc
-vendor/bin/netcat
-vendor/bin/netstat
-vendor/bin/nice
-vendor/bin/nicmd
-vendor/bin/nl
-vendor/bin/nohup
-vendor/bin/nproc
-vendor/bin/nsenter
-vendor/bin/od
-vendor/bin/openwifi_L
-vendor/bin/panelcolor_bin
-vendor/bin/paste
-vendor/bin/patch
-vendor/bin/pd-mapper
-vendor/bin/pgrep
-vendor/bin/pidof
-vendor/bin/pkill
-vendor/bin/pktlogconf
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/bin/pmap
-vendor/bin/pmic_key_reset
-vendor/bin/port-bridge
-vendor/bin/power_off_alarm
-vendor/bin/poweropt-service
-vendor/bin/ppd
-vendor/bin/printenv
-vendor/bin/printf
-vendor/bin/ps
-vendor/bin/pwd
-vendor/bin/qca6234-service.sh
-vendor/bin/qcc-vendor
-vendor/bin/qcom-system-daemon
-vendor/bin/qconfigfunctest
-vendor/bin/qdcmss
-vendor/bin/qguard
-vendor/bin/qlm-service
-vendor/bin/qmipriod
-vendor/bin/qms
-vendor/bin/qrtr-cfg
-vendor/bin/qrtr-lookup
-vendor/bin/qrtr-ns
-vendor/bin/qsap_qapeservice
-vendor/bin/qseecom_sample_client
-vendor/bin/qseecomd
-vendor/bin/qti
-vendor/bin/qtigetprop
-vendor/bin/qtisetprop
-vendor/bin/qttestclient
-vendor/bin/qttestservice
-vendor/bin/qwesd
-vendor/bin/readelf
-vendor/bin/readlink
-vendor/bin/realpath
-vendor/bin/renice
-vendor/bin/restorecon
-vendor/bin/rm
-vendor/bin/rmdir
-vendor/bin/rmmod
-vendor/bin/rmt_storage
-vendor/bin/rpmbClient
-vendor/bin/rtcwake
-vendor/bin/runcon
-vendor/bin/sed
-vendor/bin/sendevent
-vendor/bin/sensors.qti
-vendor/bin/sensors_test
-vendor/bin/seq
-vendor/bin/setenforce
-vendor/bin/setprop
-vendor/bin/setsid
-vendor/bin/sg_write_buffer
-vendor/bin/sh
-vendor/bin/sha1sum
-vendor/bin/sha224sum
-vendor/bin/sha256sum
-vendor/bin/sha384sum
-vendor/bin/sha512sum
-vendor/bin/shsusrd
-vendor/bin/sigma_dut
-vendor/bin/sleep
-vendor/bin/slim_daemon
-vendor/bin/smcinvoke_example
-vendor/bin/smcinvoke_skeleton
-vendor/bin/smcinvoke_skeleton_cpp
-vendor/bin/sort
-vendor/bin/spectraltool
-vendor/bin/split
-vendor/bin/sscrpcd
-vendor/bin/ssgqmigd
-vendor/bin/ssgqmigd64
-vendor/bin/ssgtzd
-vendor/bin/ssr_diag
-vendor/bin/ssr_setup
-vendor/bin/start
-vendor/bin/stat
-vendor/bin/stop
-vendor/bin/strings
-vendor/bin/stty
-vendor/bin/subsystem_ramdump
-vendor/bin/swapoff
-vendor/bin/swapon
-vendor/bin/sync
-vendor/bin/sysctl
-vendor/bin/system_dlkm_modprobe.sh
-vendor/bin/tac
-vendor/bin/tail
-vendor/bin/tar
-vendor/bin/taskset
-vendor/bin/tee
-vendor/bin/test
-vendor/bin/test-nusensors
-vendor/bin/test_diag
-vendor/bin/tftp_server
-vendor/bin/thermal-engine-v2
-vendor/bin/time
-vendor/bin/time_daemon
-vendor/bin/timeout
-vendor/bin/tlpd
-vendor/bin/toolbox
-vendor/bin/top
-vendor/bin/touch
-vendor/bin/toybox_vendor
-vendor/bin/tr
-vendor/bin/true
-vendor/bin/truncate
-vendor/bin/tty
-vendor/bin/ubwcconvert
-vendor/bin/uclampset
-vendor/bin/uet
-vendor/bin/ulimit
-vendor/bin/umount
-vendor/bin/uname
-vendor/bin/uniq
-vendor/bin/unix2dos
-vendor/bin/unlink
-vendor/bin/unshare
-vendor/bin/uptime
-vendor/bin/usleep
-vendor/bin/uudecode
-vendor/bin/uuencode
-vendor/bin/uuidgen
-vendor/bin/vendor.dpmd
-vendor/bin/vendor.qti.hardware.soter-provision
-vendor/bin/vendor.qti.qspa-service
-vendor/bin/vendor.qti.qspmhal-service
-vendor/bin/vendor_cmd_tool
-vendor/bin/vendor_modprobe.sh
-vendor/bin/vendor_tcpdump
-vendor/bin/vi
-vendor/bin/vmstat
-vendor/bin/vndservice
-vendor/bin/vndservicemanager
-vendor/bin/watch
-vendor/bin/wc
-vendor/bin/wdsdaemon
-vendor/bin/wfdhdcphalservice
-vendor/bin/wfdvndservice
-vendor/bin/which
-vendor/bin/whoami
-vendor/bin/wifiSarTool
-vendor/bin/wifidisplayhalservice
-vendor/bin/wifilearner
-vendor/bin/wifitest.sh
-vendor/bin/wifitest_close.sh
-vendor/bin/wpa_cli
-vendor/bin/xargs
-vendor/bin/xiaomi_cellinfo_test
-vendor/bin/xiaomi_extend_cmd
-vendor/bin/xtra-daemon
-vendor/bin/xtwifi-client
-vendor/bin/xxd
-vendor/bin/yes
-vendor/bin/zcat
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
-vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
-vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd
-vendor/etc/acdbdata/ffv_models/ffv__5.0.2_0.1__3.0.0_0.0__eai_3.5_adsp.pmd
-vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd
-vendor/etc/acdbdata/ffv_models/ffv__7.0.1_0.1__eai_3.4_enpu_v4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.6_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.7_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.6.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.6.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_adsp.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.12_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.12_0.0__3.0.0_0.0__eai_1.43_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_1.43_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd
-vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/pitti_idp/IDP_acdb_cal.acdb
-vendor/etc/acdbdata/pitti_idp/IDP_workspaceFileXml.qwsp
-vendor/etc/acdbdata/pitti_qrd/QRD_acdb_cal.acdb
-vendor/etc/acdbdata/pitti_qrd/QRD_workspaceFileXml.qwsp
-vendor/etc/audio/sku_pitti/audio_effects.conf
-vendor/etc/audio/sku_pitti/audio_effects.xml
-vendor/etc/audio/sku_pitti/audio_policy_configuration.xml
-vendor/etc/audio/sku_pitti/mixer_paths_pitti_idp.xml
-vendor/etc/audio/sku_pitti/mixer_paths_pitti_qrd.xml
-vendor/etc/audio/sku_pitti/resourcemanager_pitti_idp.xml
-vendor/etc/audio/sku_pitti/resourcemanager_pitti_qrd.xml
-vendor/etc/audio/sku_pitti_qssi/audio_policy_configuration.xml
-vendor/etc/camera/model/preview/back/sg_pre_model
-vendor/etc/camera/model/preview/front/model_m/sg_pre_model
-vendor/etc/camera/model/snapshot/back/capture_cache
-vendor/etc/camera/model/snapshot/back/capture_model
-vendor/etc/camera/model/snapshot/back/capture_policy
-vendor/etc/camera/model/snapshot/front/sg_cap_cache
-vendor/etc/camera/model/snapshot/front/sg_cap_model
-vendor/etc/camera/model/snapshot/front/sg_cap_policy
-vendor/etc/camera/resources/model/2722133617
-vendor/etc/camera/resources/render/BuildIn/Material/1166466556_252005700
-vendor/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293
-vendor/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BASE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BRIGHT_EYE_PROCESS.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_FUSE_OFFSET.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_BILATERAL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_FIX_KERNEL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_LUMA_TO_ALPHA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BLUR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BOX_2x2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MERGE_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_VARIANCE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_GUIDE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SINGLE_LABEL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_AFFINE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_P010ToRGB10A2Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToP010Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToRGB10A2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUVP010ToYUVP010.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_BILATERAL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_LUMA_TO_ALPHA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BLUR.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BOX_2x2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_ADRENO.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MERGE_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SINGLE_LABEL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_AFFINE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_P010ToRGB10A2Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToP010Orientation.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToRGB10A2.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin
-vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin
-vendor/etc/camera/resources/render/Config/config_mode_all.json
-vendor/etc/camera/resources/render/Config/config_mode_front.json
-vendor/etc/camera/resources/render/Config/config_mode_front_video.json
-vendor/etc/camera/resources/render/Config/config_mode_rear.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/BeautyMap.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/FaceMask.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_capture.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_preview.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_capture.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_preview.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_front.json
-vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear.json
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/LeftEye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/RightEye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect.json
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/effect.json
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eye_pupil.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/left_eye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/right_eye.bin
-vendor/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base.json
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_capture.json
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_preview.json
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/xr.bin
-vendor/etc/camera/resources/render/Effect/40_FaceStereo/mode_front.json
-vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/effect.json
-vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/filter.bin
-vendor/etc/camera/resources/render/Effect/50_SkinTone/mode_front.json
-vendor/etc/camera/resources/render/Effect/5_DLRetouch/mode_front.json
-vendor/etc/camera/resources/render/Effect/5_DLRetouch/mode_rear.json
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/Eyebrow.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_capture.json
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_preview.json
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/sh.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyy.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyz.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/zc.bin
-vendor/etc/camera/resources/render/Effect/60_Makeup/mode_front.json
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_capture.json
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_preview.json
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/eye_refine.bin
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/facelift.bin
-vendor/etc/camera/resources/render/Effect/70_FacialRefine/mode_front.json
-vendor/etc/camera/resources/render/Effect/effect_list.json
-vendor/etc/camera/resources/render/Effect/effect_mode_clear.json
-vendor/etc/camera/resources/render/Effect/effect_mode_front.json
-vendor/etc/camera/resources/render/Effect/effect_mode_front_video.json
-vendor/etc/camera/resources/render/Effect/effect_mode_rear.json
-vendor/etc/camera/resources/render/GlobalConfig.json
-vendor/etc/camera/resources/TStools_default_param.json
-vendor/etc/camera/resources/Version.txt
-vendor/etc/camera/resources/default_param.json
-vendor/etc/camera/resources/truesight_config_front.json
-vendor/etc/camera/resources/truesight_config_front_video.json
-vendor/etc/camera/resources/truesight_config_rear.json
-vendor/etc/camera/resources/truesight_param.json
-vendor/etc/camera/resources/truesight_param_debug.json
-vendor/etc/camera/xiaomi/dualbokehsnapshot.json
-vendor/etc/camera/xiaomi/frontbokehsnapshot.json
-vendor/etc/camera/xiaomi/frontsinglesnapshot.json
-vendor/etc/camera/xiaomi/frontsupernightsnapshot.json
-vendor/etc/camera/xiaomi/manualsnapshot.json
-vendor/etc/camera/xiaomi/normalpreview.json
-vendor/etc/camera/xiaomi/normalsnapshot.json
-vendor/etc/camera/xiaomi/realsinglebokehsnapshot.json
-vendor/etc/camera/xiaomi/satsnapshot.json
-vendor/etc/camera/xiaomi/superhdsnapshot.json
-vendor/etc/camera/xiaomi/superlowlightsnapshot.json
-vendor/etc/camera/xiaomi/thirdpartysnapshot.json
-vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
-vendor/etc/camera/102_SummerDay.png
-vendor/etc/camera/103_Fantasy.png
-vendor/etc/camera/104_Meet.png
-vendor/etc/camera/105_WindSing.png
-vendor/etc/camera/106_Lost.png
-vendor/etc/camera/107_Central.png
-vendor/etc/camera/108_NorthernEurope.png
-vendor/etc/camera/109_Rome.png
-vendor/etc/camera/110_BlackGold.png
-vendor/etc/camera/111_GreenOrange.png
-vendor/etc/camera/112_CyberPunk.png
-vendor/etc/camera/113_BlackIce.png
-vendor/etc/camera/121_Bleach.png
-vendor/etc/camera/122_Thriller.png
-vendor/etc/camera/123_TealOrange.png
-vendor/etc/camera/124_JapaneseStyle.png
-vendor/etc/camera/125_Latin.png
-vendor/etc/camera/126_Fantasy2.png
-vendor/etc/camera/127_Creamy.png
-vendor/etc/camera/128_Sepia.png
-vendor/etc/camera/129_Vivid.png
-vendor/etc/camera/130_Natural.png
-vendor/etc/camera/131_Monochrome.png
-vendor/etc/camera/132_MonochromeHighContrast.png
-vendor/etc/camera/133_MonochromeBrown.png
-vendor/etc/camera/134_MonochromeBlue.png
-vendor/etc/camera/135_Classical.png
-vendor/etc/camera/136_Filene.png
-vendor/etc/camera/137_GreenNight.png
-vendor/etc/camera/138_LiteratureAndArt.png
-vendor/etc/camera/139_OrangeHoney.png
-vendor/etc/camera/140_Romance.png
-vendor/etc/camera/141_FR500.png
-vendor/etc/camera/142_FE250.png
-vendor/etc/camera/143_RedLantern.png
-vendor/etc/camera/144_RedHero.png
-vendor/etc/camera/145_TactileBlackWhite.png
-vendor/etc/camera/146_TactileGreen.png
-vendor/etc/camera/147_Neutral.png
-vendor/etc/camera/148_Mild.png
-vendor/etc/camera/149_LilyWhite.png
-vendor/etc/camera/150_Bright.png
-vendor/etc/camera/151_Fresh.png
-vendor/etc/camera/152_Limpid.png
-vendor/etc/camera/153_KC64.png
-vendor/etc/camera/154_V250.png
-vendor/etc/camera/155_H400.png
-vendor/etc/camera/156_ColdWhite.png
-vendor/etc/camera/157_Native.png
-vendor/etc/camera/158_BWClassical.png
-vendor/etc/camera/159_Flowers.png
-vendor/etc/camera/anc_night_algo_cache
-vendor/etc/camera/anc_night_binary_cache
-vendor/etc/camera/anc_night_model
-vendor/etc/camera/anc_night_params.json
-vendor/etc/camera/beauty_config_cn.json
-vendor/etc/camera/beauty_config_gl.json
-vendor/etc/camera/camxoverridesettings.txt
-vendor/etc/camera/model_ai_dxo.dlc
-vendor/etc/camera/model_back.dlc
-vendor/etc/camera/model_front.dlc
-vendor/etc/camera/model_glass.dlc
-vendor/etc/camera/model_indoor.dlc
-vendor/etc/camera/morpho_image_refiner_tuning_params_king_hi556w_front_global_llhdr.xml
-vendor/etc/camera/morpho_image_refiner_tuning_params_shine_imx852_main_global_llhdr.xml
-vendor/etc/camera/morpho_image_refiner_tuning_params_truly_s5kjns_main_global_llhdr.xml
-vendor/etc/camera/morpho_image_refiner_tuning_params_truly_sc520cs_front_global_llhdr.xml
-vendor/etc/camera/morpho_mfnr_king_hi556w_front_global.xml
-vendor/etc/camera/morpho_mfnr_king_hi556w_front_global_third.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_2X.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_4X.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_50M.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_6X.xml
-vendor/etc/camera/morpho_mfnr_shine_imx852_main_global_third.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_2X.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_4X.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_50M.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_6X.xml
-vendor/etc/camera/morpho_mfnr_truly_s5kjns_main_global_third.xml
-vendor/etc/camera/morpho_mfnr_truly_sc520cs_front_global.xml
-vendor/etc/camera/morpho_mfnr_truly_sc520cs_front_global_third.xml
-vendor/etc/camera/sceneDetection.xml
-vendor/etc/camera/singlebokeh_mecp.bin
-vendor/etc/camera/xiaomiSceneDetection.xml
-vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
-vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
-vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
-vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml
-vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml
-vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml
-vendor/etc/cne/wqeclient/ATT/ATT_profile7.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml
-vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml
-vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml
-vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
-vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
-vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
-vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml
-vendor/etc/cne/mwqem.conf
-vendor/etc/cne/profileMwqem.xml
-vendor/etc/data/dsi_config.xml
-vendor/etc/data/nicm_config.xml
-vendor/etc/data/tlpd_oem_config.xml
-vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
-vendor/etc/default-permissions/vendor.qti.data.txpwradmin.xml
-vendor/etc/display/DPU1010.xml
-vendor/etc/display/DPU1020.xml
-vendor/etc/display/DPU10__.xml
-vendor/etc/display/DPU870.xml
-vendor/etc/display/DPU9__.xml
-vendor/etc/display/advanced_sf_offsets.xml
-vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/perf_hint_threshold.xml
-vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/thermallevel_to_fps.xml
-vendor/etc/displayconfig/display_id_4630947039571902850.xml
-vendor/etc/displayconfig/display_id_4630947039571902851.xml
-vendor/etc/dpm_vndr/vendor.dpm.conf
-vendor/etc/hostapd/hostapd.accept
-vendor/etc/hostapd/hostapd.deny
-vendor/etc/hostapd/hostapd_default.conf
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.qcom.usb.rc
-vendor/etc/init/hw/init.qti.kernel.rc
-vendor/etc/init/hw/init.qti.ufs.rc
-vendor/etc/init/hw/init.target.rc
-vendor/etc/init/android.hardware.audio.service_64.rc
-vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc
-vendor/etc/init/android.hardware.boot-service.qti.rc
-vendor/etc/init/android.hardware.drm-service.clearkey.rc
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
-vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
-vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
-vendor/etc/init/android.hardware.health-service.qti.rc
-vendor/etc/init/android.hardware.identity-service-qti.rc
-vendor/etc/init/android.hardware.power-service.rc
-vendor/etc/init/android.hardware.security.keymint-service-qti.rc
-vendor/etc/init/android.hardware.sensors-service-multihal.rc
-vendor/etc/init/android.hardware.thermal-service.qti.rc
-vendor/etc/init/android.hardware.usb-service.qti.rc
-vendor/etc/init/android.hardware.usb.gadget-service.qti.rc
-vendor/etc/init/android.hardware.wifi-service.rc
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/boringssl_self_test.rc
-vendor/etc/init/cas-default.rc
-vendor/etc/init/cnd.rc
-vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/etc/init/dataadpl.rc
-vendor/etc/init/dataqti.rc
-vendor/etc/init/ddr_training.rc
-vendor/etc/init/diagcommd.rc
-vendor/etc/init/dlsc.rc
-vendor/etc/init/dpmQmiMgr.rc
-vendor/etc/init/dumpstate-xiaomi.rc
-vendor/etc/init/ffu.rc
-vendor/etc/init/fingerprint-odm.rc
-vendor/etc/init/hostapd.android.rc
-vendor/etc/init/hypsys_vendor.rc
-vendor/etc/init/ims-dataservice-daemon.rc
-vendor/etc/init/ims_rtp_daemon.rc
-vendor/etc/init/imsdaemon.rc
-vendor/etc/init/init.charge_logger.rc
-vendor/etc/init/init.embmssl_server.rc
-vendor/etc/init/init.mi_thermald.rc
-vendor/etc/init/init.qccvendor.rc
-vendor/etc/init/init.qlm-service.rc
-vendor/etc/init/init.qti.display_boot.rc
-vendor/etc/init/init.qti.fm.rc
-vendor/etc/init/init.qti.media.rc
-vendor/etc/init/init.qti.qcv.rc
-vendor/etc/init/init.time_daemon.rc
-vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/init.vendor.wlan.rc
-vendor/etc/init/init_thermal-engine-v2.rc
-vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
-vendor/etc/init/loc-launcher.rc
-vendor/etc/init/memtrack_qti.rc
-vendor/etc/init/mi_ic.rc
-vendor/etc/init/mi_ric.rc
-vendor/etc/init/miface.rc
-vendor/etc/init/nicmd.rc
-vendor/etc/init/port-bridge.rc
-vendor/etc/init/poweropt-service.rc
-vendor/etc/init/qconfig.rc
-vendor/etc/init/qcrilNrd.rc
-vendor/etc/init/qdcmss.rc
-vendor/etc/init/qguard.rc
-vendor/etc/init/qmipriod.debug.rc
-vendor/etc/init/qmipriod.rc
-vendor/etc/init/qms.rc
-vendor/etc/init/qseecomd.rc
-vendor/etc/init/qttestservice.rc
-vendor/etc/init/qwesd.rc
-vendor/etc/init/shsusrd.rc
-vendor/etc/init/ssgtzd.rc
-vendor/etc/init/tlpd.rc
-vendor/etc/init/vendor.dpmd.rc
-vendor/etc/init/vendor.longcheer.antenna.rc
-vendor/etc/init/vendor.qsap.qapeservice.rc
-vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
-vendor/etc/init/vendor.qti.camera.provider-service_64.rc
-vendor/etc/init/vendor.qti.diag.rc
-vendor/etc/init/vendor.qti.hardware.alarm-service.rc
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
-vendor/etc/init/vendor.qti.hardware.display.color-service.rc
-vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
-vendor/etc/init/vendor.qti.hardware.display.demura-service.rc
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.factory-service.rc
-vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/etc/init/vendor.qti.hardware.lights.service.rc
-vendor/etc/init/vendor.qti.hardware.limits-service.rc
-vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.secureprocessor.rc
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc
-vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc
-vendor/etc/init/vendor.qti.hardware.soter-service.rc
-vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc
-vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
-vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/init/vendor.qti.memory.pasrmanager-service.rc
-vendor/etc/init/vendor.qti.pasrknob@1.0-service.rc
-vendor/etc/init/vendor.qti.psiclient@1.0-service.rc
-vendor/etc/init/vendor.qti.qspa-service.rc
-vendor/etc/init/vendor.qti.qspmhal-service.rc
-vendor/etc/init/vendor.qti.rmt_storage.rc
-vendor/etc/init/vendor.qti.smp2p.rc
-vendor/etc/init/vendor.qti.tftp.rc
-vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.cld@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.micharge-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.mimd@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.misys.core-service.rc
-vendor/etc/init/vndservicemanager.rc
-vendor/etc/init/wfdvndservice.rc
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/LightningLaunchesFeature.xml
-vendor/etc/lm/PreKillFeature.xml
-vendor/etc/lm/PrefAppsFeature.xml
-vendor/etc/lm/ProCompFeature.xml
-vendor/etc/lm/QAPE.xml
-vendor/etc/lm/QGPE.xml
-vendor/etc/lm/QGPEActionMap.xml
-vendor/etc/lm/SilkyScrollsFeature.xml
-vendor/etc/media_pitti/video_system_specs.json
-vendor/etc/media_pitti_32go/video_system_specs.json
-vendor/etc/models/acd/environment.eai
-vendor/etc/models/acd/event.eai
-vendor/etc/models/acd/music.eai
-vendor/etc/models/acd/speech.eai
-vendor/etc/perf/avcsysnodesconfigs.xml
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetavcsysnodesconfigs.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/perf/targetsysnodesconfigs.xml
-vendor/etc/perf/testcommonresourceconfigs.xml
-vendor/etc/perf/testtargetresourceconfigs.xml
-vendor/etc/perf/thermalboost.conf
-vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml
-vendor/etc/permissions/sku_pitti/android.hardware.sensor.accelerometer.xml
-vendor/etc/permissions/sku_pitti/android.hardware.sensor.compass.xml
-vendor/etc/permissions/sku_pitti/android.hardware.sensor.dynamic.head_tracker.xml
-vendor/etc/permissions/sku_pitti/android.hardware.sensor.light.xml
-vendor/etc/permissions/sku_pitti/android.hardware.sensor.proximity.xml
-vendor/etc/permissions/sku_pitti/android.hardware.sensor.stepcounter.xml
-vendor/etc/permissions/sku_pitti/android.hardware.sensor.stepdetector.xml
-vendor/etc/permissions/android.hardware.audio.low_latency.xml
-vendor/etc/permissions/android.hardware.audio.pro.xml
-vendor/etc/permissions/android.hardware.biometrics.face.xml
-vendor/etc/permissions/android.hardware.bluetooth.xml
-vendor/etc/permissions/android.hardware.bluetooth_le.xml
-vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml
-vendor/etc/permissions/android.hardware.camera.front.xml
-vendor/etc/permissions/android.hardware.camera.full.xml
-vendor/etc/permissions/android.hardware.camera.raw.xml
-vendor/etc/permissions/android.hardware.fingerprint.xml
-vendor/etc/permissions/android.hardware.hardware_keystore.xml
-vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
-vendor/etc/permissions/android.hardware.light.xml
-vendor/etc/permissions/android.hardware.location.gps.xml
-vendor/etc/permissions/android.hardware.opengles.aep.xml
-vendor/etc/permissions/android.hardware.telephony.cdma.xml
-vendor/etc/permissions/android.hardware.telephony.gsm.xml
-vendor/etc/permissions/android.hardware.telephony.ims.xml
-vendor/etc/permissions/android.hardware.telephony.mbms.xml
-vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-vendor/etc/permissions/android.hardware.usb.accessory.xml
-vendor/etc/permissions/android.hardware.usb.host.xml
-vendor/etc/permissions/android.hardware.vulkan.compute-0.xml
-vendor/etc/permissions/android.hardware.vulkan.level-1.xml
-vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml
-vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml
-vendor/etc/permissions/android.hardware.wifi.direct.xml
-vendor/etc/permissions/android.hardware.wifi.passpoint.xml
-vendor/etc/permissions/android.hardware.wifi.xml
-vendor/etc/permissions/android.software.device_id_attestation.xml
-vendor/etc/permissions/android.software.ipsec_tunnels.xml
-vendor/etc/permissions/android.software.midi.xml
-vendor/etc/permissions/android.software.opengles.deqp.level.xml
-vendor/etc/permissions/android.software.sip.voip.xml
-vendor/etc/permissions/android.software.verified_boot.xml
-vendor/etc/permissions/android.software.vulkan.deqp.level.xml
-vendor/etc/permissions/handheld_core_hardware.xml
-vendor/etc/permissions/privapp-permissions-qti-vendor.xml
-vendor/etc/permissions/vendor.qti.hardware.factory.xml
-vendor/etc/pwr/GamePowerOptFeature.xml
-vendor/etc/pwr/OffScreenPowerOptFeature.xml
-vendor/etc/pwr/PSMPowerOptFeature.xml
-vendor/etc/pwr/PowerFeatureConfig.xml
-vendor/etc/pwr/VideoPowerOptFeature.xml
-vendor/etc/qcril_database/upgrade/config/0006.0_config.sql
-vendor/etc/qcril_database/upgrade/config/0007.0_config.sql
-vendor/etc/qcril_database/upgrade/config/0013.0_config.sql
-vendor/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/0007_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/0011_version_update_modules.sql
-vendor/etc/qcril_database/upgrade/other/0012_version_add_iccid_clir_pref_table.sql
-vendor/etc/qcril_database/qcrilNr.db
-vendor/etc/res/images/default/charger/battery_fail.png
-vendor/etc/res/images/default/charger/battery_scale.png
-vendor/etc/seccomp_policy/atfwd@2.0.policy
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
-vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
-vendor/etc/seccomp_policy/gnss@2.0-base.policy
-vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy
-vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
-vendor/etc/seccomp_policy/imsrtp.policy
-vendor/etc/seccomp_policy/qcrilnr@2.0.policy
-vendor/etc/seccomp_policy/qms.policy
-vendor/etc/seccomp_policy/qsap_qapeservice.policy
-vendor/etc/seccomp_policy/qspm.policy
-vendor/etc/seccomp_policy/qti-systemd.policy
-vendor/etc/seccomp_policy/qwesd@2.0.policy
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/etc/seccomp_policy/wfdhdcphalservice.policy
-vendor/etc/seccomp_policy/wfdvndservice.policy
-vendor/etc/seccomp_policy/wifidisplayhalservice.policy
-vendor/etc/selinux/plat_pub_versioned.cil
-vendor/etc/selinux/plat_sepolicy_vers.txt
-vendor/etc/selinux/selinux_denial_metadata
-vendor/etc/selinux/vendor_file_contexts
-vendor/etc/selinux/vendor_hwservice_contexts
-vendor/etc/selinux/vendor_mac_permissions.xml
-vendor/etc/selinux/vendor_property_contexts
-vendor/etc/selinux/vendor_seapp_contexts
-vendor/etc/selinux/vendor_sepolicy.cil
-vendor/etc/selinux/vendor_service_contexts
-vendor/etc/selinux/vndservice_contexts
-vendor/etc/sensors/config/json.lst
-vendor/etc/sensors/config/kalpeni_bu52053nvx_0.json
-vendor/etc/sensors/config/kalpeni_default_sensors.json
-vendor/etc/sensors/config/kalpeni_dynamic_sensors.json
-vendor/etc/sensors/config/kalpeni_dynamic_sensors_template.json
-vendor/etc/sensors/config/kalpeni_fcal_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_irq.json
-vendor/etc/sensors/config/kalpeni_lps22df_0.json
-vendor/etc/sensors/config/kalpeni_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_mtp_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_mtp_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_power_0.json
-vendor/etc/sensors/config/kalpeni_qrd_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_qrd_mmc56x3x_0.json
-vendor/etc/sensors/config/kalpeni_qrd_tmd2725_0.json
-vendor/etc/sensors/config/kalpeni_sx932x_0.json
-vendor/etc/sensors/config/kalpeni_tmd2725_0.json
-vendor/etc/sensors/config/kalpeni_vertigo_lsm6dso_0.json
-vendor/etc/sensors/config/kalpeni_vertigo_mmc56x3x_0.json
-vendor/etc/sensors/config/sc7a20_0.json
-vendor/etc/sensors/config/sns_amd.json
-vendor/etc/sensors/config/sns_amd_sw_enabled.json
-vendor/etc/sensors/config/sns_aont.json
-vendor/etc/sensors/config/sns_basic_gestures.json
-vendor/etc/sensors/config/sns_bring_to_ear.json
-vendor/etc/sensors/config/sns_ccd_v1_0_amd.json
-vendor/etc/sensors/config/sns_ccd_v1_0_ttw.json
-vendor/etc/sensors/config/sns_ccd_v2_0_walk.json
-vendor/etc/sensors/config/sns_ccd_v3_0_walk.json
-vendor/etc/sensors/config/sns_ccd_v3_1_walk.json
-vendor/etc/sensors/config/sns_ccd_v4_0_sensors.json
-vendor/etc/sensors/config/sns_ccd_v4_0_te_cd_regs.json
-vendor/etc/sensors/config/sns_ccd_v5.json
-vendor/etc/sensors/config/sns_ccd_v5_0_te_cd_regs.json
-vendor/etc/sensors/config/sns_ccd_v5_1_te_cd_regs.json
-vendor/etc/sensors/config/sns_cm.json
-vendor/etc/sensors/config/sns_dae.json
-vendor/etc/sensors/config/sns_device_orient.json
-vendor/etc/sensors/config/sns_diag_filter.json
-vendor/etc/sensors/config/sns_direct_channel.json
-vendor/etc/sensors/config/sns_distance_bound.json
-vendor/etc/sensors/config/sns_dpc.json
-vendor/etc/sensors/config/sns_facing.json
-vendor/etc/sensors/config/sns_flight_md.json
-vendor/etc/sensors/config/sns_fmv.json
-vendor/etc/sensors/config/sns_fmv_legacy.json
-vendor/etc/sensors/config/sns_gyro_cal.json
-vendor/etc/sensors/config/sns_heart_rate.json
-vendor/etc/sensors/config/sns_mag_cal.json
-vendor/etc/sensors/config/sns_mag_cal_legacy.json
-vendor/etc/sensors/config/sns_multishake.json
-vendor/etc/sensors/config/sns_offbody_detect_phone.json
-vendor/etc/sensors/config/sns_pedometer.json
-vendor/etc/sensors/config/sns_psd_disable.json
-vendor/etc/sensors/config/sns_psd_enable.json
-vendor/etc/sensors/config/sns_rmd.json
-vendor/etc/sensors/config/sns_rotv.json
-vendor/etc/sensors/config/sns_smd.json
-vendor/etc/sensors/config/sns_tilt.json
-vendor/etc/sensors/config/sns_tilt_sw_enabled.json
-vendor/etc/sensors/config/sns_tilt_to_wake.json
-vendor/etc/sensors/config/sns_transport_ppe.json
-vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/etc/sensors/config/warm_mir3da_0.json
-vendor/etc/sensors/config/warm_och191x_0.json
-vendor/etc/sensors/config/warm_qmc630x_0.json
-vendor/etc/sensors/config/warm_sc7a20_0.json
-vendor/etc/sensors/config/warm_stk3a8x_0.json
-vendor/etc/sensors/config/warm_stk83xx_0.json
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sns_reg_config
-vendor/etc/ssg/ta_config.json
-vendor/etc/ssg/tz_whitelist.json
-vendor/etc/vintf/manifest/ImsRtpService-aidl.xml
-vendor/etc/vintf/manifest/android.hardware.cas-service.xml
-vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
-vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
-vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
-vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml
-vendor/etc/vintf/manifest/android.hardware.radio.config.xml
-vendor/etc/vintf/manifest/android.hardware.radio.data.xml
-vendor/etc/vintf/manifest/android.hardware.radio.messaging.xml
-vendor/etc/vintf/manifest/android.hardware.radio.modem.xml
-vendor/etc/vintf/manifest/android.hardware.radio.network.xml
-vendor/etc/vintf/manifest/android.hardware.radio.sap.xml
-vendor/etc/vintf/manifest/android.hardware.radio.sim.xml
-vendor/etc/vintf/manifest/android.hardware.radio.voice.xml
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
-vendor/etc/vintf/manifest/android.hardware.sensors-multihal.xml
-vendor/etc/vintf/manifest/android.hardware.thermal-service.qti.xml
-vendor/etc/vintf/manifest/android.hardware.usb-service.qti.xml
-vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.qti.xml
-vendor/etc/vintf/manifest/android.hardware.wifi-service.xml
-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
-vendor/etc/vintf/manifest/atfwd-saidl.xml
-vendor/etc/vintf/manifest/bluetooth_audio.xml
-vendor/etc/vintf/manifest/boot-service.qti.xml
-vendor/etc/vintf/manifest/bttpi-saidl.xml
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
-vendor/etc/vintf/manifest/dataconnection-saidl.xml
-vendor/etc/vintf/manifest/datafactoryservice-saidl.xml
-vendor/etc/vintf/manifest/deviceinfo-saidl.xml
-vendor/etc/vintf/manifest/dpm-saidl.xml
-vendor/etc/vintf/manifest/dumpstate-xiaomi.xml
-vendor/etc/vintf/manifest/fingerprint-odm.xml
-vendor/etc/vintf/manifest/imsdcservice-saidl.xml
-vendor/etc/vintf/manifest/manifest_identity_credential.xml
-vendor/etc/vintf/manifest/manifest_non_qmaa.xml
-vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.cld.xml
-vendor/etc/vintf/manifest/memtrack_qti.xml
-vendor/etc/vintf/manifest/miface.xml
-vendor/etc/vintf/manifest/mwqem-saidl.xml
-vendor/etc/vintf/manifest/power.xml
-vendor/etc/vintf/manifest/qcrilhook-saidl.xml
-vendor/etc/vintf/manifest/qms-saidl.xml
-vendor/etc/vintf/manifest/qtiradio-saidl.xml
-vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
-vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml
-vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
-vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.alarm.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.data.connectionaidl.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.data.iwlandata.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.demura-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.embmssl.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.factory.ifactory.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.perf2.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.qseecom@1.0-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.radio.am.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.radio.ims.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.radio.lpa.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.radio.uim.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.radio.uim_remote_client.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.radio.uim_remote_server.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.secureprocessor.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.sensorscalibrate.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetrackeraidl-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.soter-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.tetheroffload.service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.trustedui-aidl-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
-vendor/etc/vintf/manifest/vendor.qti.ims.factoryaidlservice.xml
-vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager-service.xml
-vendor/etc/vintf/manifest/vendor.qti.qccvndhal_aidl-service.xml
-vendor/etc/vintf/manifest/vendor.qti.qspa-service.xml
-vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature_aidl-service.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.mimd@1.0-service.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys.common.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys.core.xml
-vendor/etc/vintf/compatibility_matrix.xml
-vendor/etc/vintf/manifest_pitti.xml
-vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/icm.conf
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
-vendor/etc/Diag.cfg
-vendor/etc/IPACM_Filter_cfg.xml
-vendor/etc/IPACM_cfg.xml
-vendor/etc/NOTICE.xml.gz
-vendor/etc/NOTICE_GPL.html.gz
-vendor/etc/a2dp_audio_policy_configuration.xml
-vendor/etc/apdr.conf
-vendor/etc/audio_diag.cfg
-vendor/etc/audio_policy_configuration.xml
-vendor/etc/audio_policy_engine_configuration_mi.xml
-vendor/etc/audio_policy_engine_default_stream_volumes.xml
-vendor/etc/audio_policy_engine_product_strategies.xml
-vendor/etc/audio_policy_engine_stream_volumes.xml
-vendor/etc/audio_policy_volumes.xml
-vendor/etc/backend_conf.xml
-vendor/etc/batching.conf
-vendor/etc/battery_info.xml
-vendor/etc/bluetooth_qti_audio_policy_configuration.xml
-vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
-vendor/etc/bt_diag.cfg
-vendor/etc/card-defs.xml
-vendor/etc/charger_diag.cfg
-vendor/etc/charger_fw_fstab.qti
-vendor/etc/cit_config.xml
-vendor/etc/clstc_config_library.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/excluded-input-devices.xml
-vendor/etc/fs_config_dirs
-vendor/etc/fs_config_files
-vendor/etc/fstab.default
-vendor/etc/fstab.emmc
-vendor/etc/ftm_test_config
-vendor/etc/ftm_test_config_pitti-qrd-snd-card
-vendor/etc/gnss_antenna_info.conf
-vendor/etc/gpfspath_oem_config.xml
-vendor/etc/gps.conf
-vendor/etc/gps_diag.cfg
-vendor/etc/group
-vendor/etc/init.qti.fm.sh
-vendor/etc/izat.conf
-vendor/etc/kvh2xml.xml
-vendor/etc/linker.config.pb
-vendor/etc/lowi.conf
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_c2_audio.xml
-vendor/etc/media_codecs_google_audio.xml
-vendor/etc/media_codecs_google_c2.xml
-vendor/etc/media_codecs_google_c2_audio.xml
-vendor/etc/media_codecs_google_c2_video.xml
-vendor/etc/media_codecs_google_telephony.xml
-vendor/etc/media_codecs_google_video.xml
-vendor/etc/media_codecs_google_video_le.xml
-vendor/etc/media_codecs_performance_pitti.xml
-vendor/etc/media_codecs_performance_pitti_32go.xml
-vendor/etc/media_codecs_pitti.xml
-vendor/etc/media_codecs_pitti_32go.xml
-vendor/etc/media_codecs_vendor_audio.xml
-vendor/etc/media_profiles.xml
-vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_pitti.xml
-vendor/etc/media_profiles_pitti_32go.xml
-vendor/etc/mem_logger_config.xml
-vendor/etc/microphone_characteristics.xml
-vendor/etc/mkshrc
-vendor/etc/oem_72_prj_XiaomiWidevine4635.pfm
-vendor/etc/passwd
-vendor/etc/powerhint.xml
-vendor/etc/public.libraries.txt
-vendor/etc/qc_India.xml
-vendor/etc/qguard.json
-vendor/etc/qvirtmgr-vndr.json
-vendor/etc/r_submix_audio_policy_configuration.xml
-vendor/etc/rcv_pb_AT.wav
-vendor/etc/sap.conf
-vendor/etc/sec_config
-vendor/etc/sensor_diag.cfg
-vendor/etc/smomo_setting.xml
-vendor/etc/snapdragon_color_libs_config.xml
-vendor/etc/spk_pb_bot.wav
-vendor/etc/spk_pb_top.wav
-vendor/etc/telephony_packages.xml
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-cclassvideo.conf
-vendor/etc/thermal-cgame.conf
-vendor/etc/thermal-chg-only.conf
-vendor/etc/thermal-class0.conf
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-hp-mgame.conf
-vendor/etc/thermal-hp-normal.conf
-vendor/etc/thermal-huanji.conf
-vendor/etc/thermal-livestream.conf
-vendor/etc/thermal-map.conf
-vendor/etc/thermal-mgame.conf
-vendor/etc/thermal-navigation.conf
-vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-phone.conf
-vendor/etc/thermal-tgame.conf
-vendor/etc/thermal-video.conf
-vendor/etc/thermal-videochat.conf
-vendor/etc/thermald-devices.conf
-vendor/etc/tzlog1.dict
-vendor/etc/ueventd.rc
-vendor/etc/ultrasound_AT.wav
-vendor/etc/us_spk_pb_bot.wav
-vendor/etc/us_spk_pb_top.wav
-vendor/etc/usb_audio_policy_configuration.xml
-vendor/etc/usb_compositions.conf
-vendor/etc/usecaseKvManager.xml
-vendor/etc/wfdconfig.xml
-vendor/etc/xtwifi.conf
-vendor/firmware/wlan/qca_cld/adrastea/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/adrastea/wlan_mac.bin
-vendor/firmware/a610_zap.b00
-vendor/firmware/a610_zap.b01
-vendor/firmware/a610_zap.b02
-vendor/firmware/a610_zap.mbn
-vendor/firmware/a610_zap.mdt
-vendor/firmware/a630_sqe.fw
-vendor/firmware/gen70900_aqe.fw
-vendor/firmware/gen70900_sqe.fw
-vendor/firmware/gen70900_zap.mbn
-vendor/firmware/gen71100_gmu.bin
-vendor/firmware/gen71100_sqe.fw
-vendor/firmware/gen71100_zap.mbn
-vendor/firmware/gmu_gen70900.bin
-vendor/firmware/sipa.bin
-vendor/firmware/venus.mbn
-vendor/firmware/venus_4mb.mbn
-vendor/firmware/venus_4mb_ecdsa.mbn
-vendor/firmware/venus_4mb_unsigned.mbn
-vendor/firmware/venus_4mb_v6.mbn
-vendor/firmware/venus_4mb_v6_rsa.mbn
-vendor/firmware/venus_4mb_v7.mbn
-vendor/firmware/venus_5mb.mbn
-vendor/firmware/venus_5mb_ecdsa.mbn
-vendor/firmware/venus_5mb_unsigned.mbn
-vendor/firmware/venus_5mb_v6.mbn
-vendor/firmware/venus_5mb_v6_rsa.mbn
-vendor/firmware/venus_5mb_v7.mbn
-vendor/firmware/venus_ecdsa.mbn
-vendor/firmware/venus_unsigned.mbn
-vendor/firmware/venus_v6.mbn
-vendor/firmware/venus_v6_rsa.mbn
-vendor/firmware/venus_v7.mbn
-vendor/firmware/vpu20_1v.mbn
-vendor/firmware/vpu20_1v_unsigned.mbn
-vendor/firmware/vpu20_4v.mbn
-vendor/firmware/vpu20_4v_unsigned.mbn
-vendor/firmware/wlanmdsp.otaupdate
-vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
-vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
-vendor/lib/rfsa/adsp/libcalculator_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
-vendor/lib/rfsa/adsp/misound_karaoke_res.bin
-vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
-vendor/lib/rfsa/adsp/misound_res_headphone.bin
-vendor/lib/rfsa/adsp/misound_res_spk.bin
-vendor/lib/modules
-vendor/lib64/camera/components/com.mi.node.tsskinbeautifier.so
-vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib64/camera/components/com.qti.eisv2.so
-vendor/lib64/camera/components/com.qti.eisv3.so
-vendor/lib64/camera/components/com.qti.hvx.addconstant.so
-vendor/lib64/camera/components/com.qti.hvx.binning.so
-vendor/lib64/camera/components/com.qti.node.MiFlip.so
-vendor/lib64/camera/components/com.qti.node.customhwnode.so
-vendor/lib64/camera/components/com.qti.node.depth.so
-vendor/lib64/camera/components/com.qti.node.dewarp.so
-vendor/lib64/camera/components/com.qti.node.dummyrtb.so
-vendor/lib64/camera/components/com.qti.node.dummysat.so
-vendor/lib64/camera/components/com.qti.node.eisv2.so
-vendor/lib64/camera/components/com.qti.node.eisv3.so
-vendor/lib64/camera/components/com.qti.node.fcv.so
-vendor/lib64/camera/components/com.qti.node.formatconversion.so
-vendor/lib64/camera/components/com.qti.node.gpu.so
-vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so
-vendor/lib64/camera/components/com.qti.node.mimovie.so
-vendor/lib64/camera/components/com.qti.node.ml.so
-vendor/lib64/camera/components/com.qti.node.photosolid.so
-vendor/lib64/camera/components/com.qti.node.remosaic.so
-vendor/lib64/camera/components/com.qti.node.stich.so
-vendor/lib64/camera/components/com.qti.node.swaidenoiser.so
-vendor/lib64/camera/components/com.qti.node.swbestats.so
-vendor/lib64/camera/components/com.qti.node.swcac.so
-vendor/lib64/camera/components/com.qti.node.swec.so
-vendor/lib64/camera/components/com.qti.node.swfusion.so
-vendor/lib64/camera/components/com.qti.node.swlsc.so
-vendor/lib64/camera/components/com.qti.node.swmctf.so
-vendor/lib64/camera/components/com.qti.node.swmfnr.so
-vendor/lib64/camera/components/com.qti.node.swpdpc.so
-vendor/lib64/camera/components/com.qti.node.swpreprocess.so
-vendor/lib64/camera/components/com.qti.node.swregistration.so
-vendor/lib64/camera/components/com.qti.stats.aec.so
-vendor/lib64/camera/components/com.qti.stats.aecwrapper.so
-vendor/lib64/camera/components/com.qti.stats.aecxcore.so
-vendor/lib64/camera/components/com.qti.stats.af.so
-vendor/lib64/camera/components/com.qti.stats.afd.so
-vendor/lib64/camera/components/com.qti.stats.afwrapper.so
-vendor/lib64/camera/components/com.qti.stats.asd.so
-vendor/lib64/camera/components/com.qti.stats.awb.so
-vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
-vendor/lib64/camera/components/com.qti.stats.cnndriver.so
-vendor/lib64/camera/components/com.qti.stats.haf.so
-vendor/lib64/camera/components/com.qti.stats.hafoverride.so
-vendor/lib64/camera/components/com.qti.stats.pdlib.so
-vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
-vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
-vendor/lib64/camera/components/com.qtistatic.stats.aec.so
-vendor/lib64/camera/components/com.qtistatic.stats.af.so
-vendor/lib64/camera/components/com.qtistatic.stats.awb.so
-vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib64/camera/components/libdepthmapwrapper_secure.so
-vendor/lib64/camera/camx_buildbins
-vendor/lib64/camera/com.qti.sensor.c3f2_king_hi556w_front_ii.so
-vendor/lib64/camera/com.qti.sensor.c3f2_shine_imx852_main_ii.so
-vendor/lib64/camera/com.qti.sensor.c3f2_truly_s5kjns_main_i.so
-vendor/lib64/camera/com.qti.sensor.c3f2_truly_sc520cs_front_i.so
-vendor/lib64/camera/com.qti.sensormodule.c3f2_king_hi556w_front_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.c3f2_shine_imx852_main_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.c3f2_truly_s5kjns_main_i.bin
-vendor/lib64/camera/com.qti.sensormodule.c3f2_truly_sc520cs_front_i.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_king_hi556w_front_ii.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_shine_imx852_main_ii.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_truly_s5kjns_main_i.bin
-vendor/lib64/camera/com.qti.tuned.c3f2_truly_sc520cs_front_i.bin
-vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@5.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so
-vendor/lib64/hw/android.hardware.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio@4.0-impl.so
-vendor/lib64/hw/android.hardware.audio@5.0-impl.so
-vendor/lib64/hw/android.hardware.audio@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio@7.0-impl.so
-vendor/lib64/hw/android.hardware.audio@7.1-impl.so
-vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so
-vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so
-vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib64/hw/audio.bluetooth.default.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.primary.pitti.so
-vendor/lib64/hw/audio.r_submix.default.so
-vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/hw/fingerprint.silead.default.so
-vendor/lib64/hw/gralloc.default.so
-vendor/lib64/hw/libEseUtils.so
-vendor/lib64/hw/libqtigatekeeper.so
-vendor/lib64/hw/local_time.default.so
-vendor/lib64/hw/power.default.so
-vendor/lib64/hw/sensors.dynamic_sensor_hal.so
-vendor/lib64/hw/sound_trigger.primary.pitti.so
-vendor/lib64/hw/vendor.qti.hardware.alarm-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.servicetrackeraidl-impl.so
-vendor/lib64/hw/vendor.qti.hardware.soter-impl.so
-vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so
-vendor/lib64/hw/vendor.qti.memory.pasrmanager-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.cld@1.0-impl.so
-vendor/lib64/hw/vibrator.default.so
-vendor/lib64/hw/vulkan.adreno.so
-vendor/lib64/mediacas/libclearkeycasplugin.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libbundlewrapper.so
-vendor/lib64/soundfx/libdownmix.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libeffectproxy.so
-vendor/lib64/soundfx/libhapticgenerator.so
-vendor/lib64/soundfx/libldnhncr.so
-vendor/lib64/soundfx/libmisoundfx.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
-vendor/lib64/soundfx/libquasar.so
-vendor/lib64/soundfx/libreverbwrapper.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libvisualizer.so
-vendor/lib64/soundfx/libvolumelistener.so
-vendor/lib64/android.automotive.watchdog-V2-ndk.so
-vendor/lib64/android.frameworks.sensorservice-V1-ndk.so
-vendor/lib64/android.frameworks.sensorservice@1.0.so
-vendor/lib64/android.hardware.audio.common-V1-ndk.so
-vendor/lib64/android.hardware.audio.common-util.so
-vendor/lib64/android.hardware.audio.common@2.0-util.so
-vendor/lib64/android.hardware.audio.common@4.0-util.so
-vendor/lib64/android.hardware.audio.common@4.0.so
-vendor/lib64/android.hardware.audio.common@5.0-util.so
-vendor/lib64/android.hardware.audio.common@5.0.so
-vendor/lib64/android.hardware.audio.common@6.0-util.so
-vendor/lib64/android.hardware.audio.common@6.0.so
-vendor/lib64/android.hardware.audio.common@7.0-enums.so
-vendor/lib64/android.hardware.audio.common@7.0-util.so
-vendor/lib64/android.hardware.audio.common@7.0.so
-vendor/lib64/android.hardware.audio.common@7.1-enums.so
-vendor/lib64/android.hardware.audio.common@7.1-util.so
-vendor/lib64/android.hardware.audio.effect@2.0-util.so
-vendor/lib64/android.hardware.audio.effect@2.0.so
-vendor/lib64/android.hardware.audio.effect@4.0-util.so
-vendor/lib64/android.hardware.audio.effect@4.0.so
-vendor/lib64/android.hardware.audio.effect@5.0-util.so
-vendor/lib64/android.hardware.audio.effect@5.0.so
-vendor/lib64/android.hardware.audio.effect@6.0-util.so
-vendor/lib64/android.hardware.audio.effect@6.0.so
-vendor/lib64/android.hardware.audio.effect@7.0-util.so
-vendor/lib64/android.hardware.audio.effect@7.0.so
-vendor/lib64/android.hardware.audio@2.0-util.so
-vendor/lib64/android.hardware.audio@2.0.so
-vendor/lib64/android.hardware.audio@4.0-util.so
-vendor/lib64/android.hardware.audio@4.0.so
-vendor/lib64/android.hardware.audio@5.0-util.so
-vendor/lib64/android.hardware.audio@5.0.so
-vendor/lib64/android.hardware.audio@6.0-util.so
-vendor/lib64/android.hardware.audio@6.0.so
-vendor/lib64/android.hardware.audio@7.0-util.so
-vendor/lib64/android.hardware.audio@7.0.so
-vendor/lib64/android.hardware.audio@7.1-util.so
-vendor/lib64/android.hardware.audio@7.1.so
-vendor/lib64/android.hardware.authsecret@1.0.so
-vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so
-vendor/lib64/android.hardware.automotive.vehicle@2.0.so
-vendor/lib64/android.hardware.biometrics.common-V2-ndk.so
-vendor/lib64/android.hardware.biometrics.common-V3-ndk.so
-vendor/lib64/android.hardware.biometrics.common.thread.so
-vendor/lib64/android.hardware.biometrics.common.util.so
-vendor/lib64/android.hardware.biometrics.face-V2-ndk.so
-vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so
-vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so
-vendor/lib64/android.hardware.bluetooth.audio@2.0.so
-vendor/lib64/android.hardware.bluetooth.audio@2.1.so
-vendor/lib64/android.hardware.bluetooth@1.0.so
-vendor/lib64/android.hardware.bluetooth@1.1.so
-vendor/lib64/android.hardware.boot-V1-ndk.so
-vendor/lib64/android.hardware.boot@1.0.so
-vendor/lib64/android.hardware.boot@1.1.so
-vendor/lib64/android.hardware.camera.common-V1-ndk.so
-vendor/lib64/android.hardware.camera.common@1.0.so
-vendor/lib64/android.hardware.camera.device-V1-ndk.so
-vendor/lib64/android.hardware.camera.metadata-V1-ndk.so
-vendor/lib64/android.hardware.camera.provider-V1-ndk.so
-vendor/lib64/android.hardware.cas-V1-ndk.so
-vendor/lib64/android.hardware.drm-V1-ndk.so
-vendor/lib64/android.hardware.dumpstate-V1-ndk.so
-vendor/lib64/android.hardware.gatekeeper-V1-ndk.so
-vendor/lib64/android.hardware.gatekeeper@1.0.so
-vendor/lib64/android.hardware.gnss-V3-ndk.so
-vendor/lib64/android.hardware.graphics.allocator-V1-ndk.so
-vendor/lib64/android.hardware.graphics.composer3-V2-ndk.so
-vendor/lib64/android.hardware.graphics.composer@2.1.so
-vendor/lib64/android.hardware.graphics.composer@2.2.so
-vendor/lib64/android.hardware.graphics.composer@2.3.so
-vendor/lib64/android.hardware.health-V1-ndk.so
-vendor/lib64/android.hardware.health-V2-ndk.so
-vendor/lib64/android.hardware.health@1.0.so
-vendor/lib64/android.hardware.health@2.0.so
-vendor/lib64/android.hardware.health@2.1.so
-vendor/lib64/android.hardware.identity-V5-ndk.so
-vendor/lib64/android.hardware.keymaster-V3-ndk.so
-vendor/lib64/android.hardware.keymaster-V4-ndk.so
-vendor/lib64/android.hardware.keymaster@3.0.so
-vendor/lib64/android.hardware.keymaster@4.0.so
-vendor/lib64/android.hardware.keymaster@4.1.so
-vendor/lib64/android.hardware.light-V2-ndk.so
-vendor/lib64/android.hardware.media.bufferpool2-V1-ndk.so
-vendor/lib64/android.hardware.media.c2@1.0.so
-vendor/lib64/android.hardware.power-V4-ndk.so
-vendor/lib64/android.hardware.power@1.0.so
-vendor/lib64/android.hardware.power@1.1.so
-vendor/lib64/android.hardware.power@1.2.so
-vendor/lib64/android.hardware.radio-V2-ndk.so
-vendor/lib64/android.hardware.radio.config-V2-ndk.so
-vendor/lib64/android.hardware.radio.data-V2-ndk.so
-vendor/lib64/android.hardware.radio.messaging-V2-ndk.so
-vendor/lib64/android.hardware.radio.modem-V2-ndk.so
-vendor/lib64/android.hardware.radio.network-V2-ndk.so
-vendor/lib64/android.hardware.radio.sap-V1-ndk.so
-vendor/lib64/android.hardware.radio.sim-V2-ndk.so
-vendor/lib64/android.hardware.radio.voice-V2-ndk.so
-vendor/lib64/android.hardware.radio@1.0.so
-vendor/lib64/android.hardware.radio@1.1.so
-vendor/lib64/android.hardware.radio@1.2.so
-vendor/lib64/android.hardware.radio@1.3.so
-vendor/lib64/android.hardware.radio@1.4.so
-vendor/lib64/android.hardware.radio@1.5.so
-vendor/lib64/android.hardware.radio@1.6.so
-vendor/lib64/android.hardware.secure_element-V1-ndk.so
-vendor/lib64/android.hardware.security.keymint-V1-ndk.so
-vendor/lib64/android.hardware.security.keymint-V2-ndk.so
-vendor/lib64/android.hardware.security.keymint-V3-ndk.so
-vendor/lib64/android.hardware.security.rkp-V3-ndk.so
-vendor/lib64/android.hardware.security.secureclock-V1-ndk.so
-vendor/lib64/android.hardware.security.sharedsecret-V1-ndk.so
-vendor/lib64/android.hardware.sensors-V2-ndk.so
-vendor/lib64/android.hardware.sensors@1.0.so
-vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
-vendor/lib64/android.hardware.sensors@2.0.so
-vendor/lib64/android.hardware.sensors@2.1.so
-vendor/lib64/android.hardware.soundtrigger@2.1.so
-vendor/lib64/android.hardware.soundtrigger@2.2.so
-vendor/lib64/android.hardware.soundtrigger@2.3.so
-vendor/lib64/android.hardware.tetheroffload-V1-ndk.so
-vendor/lib64/android.hardware.thermal-V1-ndk.so
-vendor/lib64/android.hardware.thermal@1.0.so
-vendor/lib64/android.hardware.thermal@2.0.so
-vendor/lib64/android.hardware.usb-V1-ndk.so
-vendor/lib64/android.hardware.usb.gadget-V1-ndk.so
-vendor/lib64/android.hardware.usb.gadget@1.0.so
-vendor/lib64/android.hardware.usb.gadget@1.1.so
-vendor/lib64/android.hardware.vibrator-V2-ndk.so
-vendor/lib64/android.hardware.wifi-V1-ndk.so
-vendor/lib64/android.hardware.wifi.hostapd-V1-ndk.so
-vendor/lib64/android.hardware.wifi.supplicant-V1-ndk.so
-vendor/lib64/android.hardware.wifi.supplicant-V2-ndk.so
-vendor/lib64/android.hidl.allocator@1.0.so
-vendor/lib64/android.media.audio.common.types-V2-ndk.so
-vendor/lib64/android.system.keystore2-V1-ndk.so
-vendor/lib64/android.system.net.netd-V1-ndk.so
-vendor/lib64/android.system.wifi.keystore@1.0.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/camx.device-impl.so
-vendor/lib64/camx.provider-impl.so
-vendor/lib64/com.dsi.ant@1.0.so
-vendor/lib64/com.qti.chiusecaseselector.so
-vendor/lib64/com.qti.feature2.anchorsync.so
-vendor/lib64/com.qti.feature2.demux.so
-vendor/lib64/com.qti.feature2.derivedoffline.so
-vendor/lib64/com.qti.feature2.frameselect.so
-vendor/lib64/com.qti.feature2.fusion.so
-vendor/lib64/com.qti.feature2.generic.so
-vendor/lib64/com.qti.feature2.gs.cedros.so
-vendor/lib64/com.qti.feature2.gs.kamorta.so
-vendor/lib64/com.qti.feature2.gs.kodiak.so
-vendor/lib64/com.qti.feature2.gs.mannar.so
-vendor/lib64/com.qti.feature2.gs.sdm865.so
-vendor/lib64/com.qti.feature2.gs.sm8350.so
-vendor/lib64/com.qti.feature2.hdr.so
-vendor/lib64/com.qti.feature2.mcreprocrt.so
-vendor/lib64/com.qti.feature2.memcpy.so
-vendor/lib64/com.qti.feature2.mfsr.so
-vendor/lib64/com.qti.feature2.ml.so
-vendor/lib64/com.qti.feature2.mux.so
-vendor/lib64/com.qti.feature2.photosolid.so
-vendor/lib64/com.qti.feature2.qcfa.so
-vendor/lib64/com.qti.feature2.rawhdr.so
-vendor/lib64/com.qti.feature2.realtimeserializer.so
-vendor/lib64/com.qti.feature2.rt.so
-vendor/lib64/com.qti.feature2.rtmcx.so
-vendor/lib64/com.qti.feature2.serializer.so
-vendor/lib64/com.qti.feature2.statsregeneration.so
-vendor/lib64/com.qti.feature2.stub.so
-vendor/lib64/com.qti.feature2.swmf.so
-vendor/lib64/com.qti.settings.kalpeni.so
-vendor/lib64/com.qti.settings.kamorta.so
-vendor/lib64/com.qti.settings.kodiak.so
-vendor/lib64/com.qti.settings.mannar.so
-vendor/lib64/com.qti.settings.sdm865.so
-vendor/lib64/com.qti.settings.sm8350.so
-vendor/lib64/com.qti.stats.common.so
-vendor/lib64/com.qualcomm.mcx.distortionmapper.so
-vendor/lib64/com.qualcomm.mcx.linearmapper.so
-vendor/lib64/com.qualcomm.mcx.policy.mfl.so
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
-vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
-vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
-vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
-vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so
-vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
-vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
-vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
-vendor/lib64/com.qualcomm.qti.uceservice@2.2.so
-vendor/lib64/com.qualcomm.qti.uceservice@2.3.so
-vendor/lib64/com.xiaomi.plugin.memcpy.so
-vendor/lib64/com.xiaomi.plugin.mfnr.so
-vendor/lib64/com.xiaomi.plugin.mibokeh.so
-vendor/lib64/com.xiaomi.plugin.morphohdr.so
-vendor/lib64/com.xiaomi.plugin.skinbeautifier.so
-vendor/lib64/com.xiaomi.plugin.superlowlight.so
-vendor/lib64/com.xiaomi.plugin.swflip.so
-vendor/lib64/cpufd_v1_0_0.bin
-vendor/lib64/deviceInfoServiceModuleNr.so
-vendor/lib64/ftm_fm_lib.so
-vendor/lib64/lib-imscommon.so
-vendor/lib64/lib-imsdcservice.so
-vendor/lib64/lib-imsdpl.so
-vendor/lib64/lib-imsqimf.so
-vendor/lib64/lib-imsrcsservice.so
-vendor/lib64/lib-imsservice.so
-vendor/lib64/lib-imsvtcore.so
-vendor/lib64/lib-imsxml.so
-vendor/lib64/lib-rtpcommon.so
-vendor/lib64/lib-rtpcore.so
-vendor/lib64/lib-rtpsl.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libCB.so
-vendor/lib64/libCneAppJni.so
-vendor/lib64/libEGL_adreno.so
-vendor/lib64/libEvrcSwCodec.so
-vendor/lib64/libFaceUnlock.so
-vendor/lib64/libFileMux_proprietary.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libGLESv2_adreno.so
-vendor/lib64/libGPMTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libMiVideoFilter.so
-vendor/lib64/libOmxCore.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libOpenCL_adreno.so
-vendor/lib64/libPlatformValidatorShared.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libQcelp13SwCodec.so
-vendor/lib64/libQtiRilLoadable.so
-vendor/lib64/libSEESalt.so
-vendor/lib64/libSNPE.so
-vendor/lib64/libSnpeHtpPrepare.so
-vendor/lib64/libSnpeHtpV68Stub.so
-vendor/lib64/libSnpeHtpV69Stub.so
-vendor/lib64/libTrueSight.so
-vendor/lib64/libTrustedInputAIDL.so
-vendor/lib64/libTrustedUIAIDL.so
-vendor/lib64/libTxPwrJni.so
-vendor/lib64/libUSTANative.so
-vendor/lib64/libVoiceSdk.so
-vendor/lib64/libWlanServiceJni.so
-vendor/lib64/lib_bt_aptx.so
-vendor/lib64/lib_bt_ble.so
-vendor/lib64/lib_bt_bundle.so
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libadm.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libagm.so
-vendor/lib64/libagm_compress_plugin.so
-vendor/lib64/libagm_mixer_plugin.so
-vendor/lib64/libagm_pcm_plugin.so
-vendor/lib64/libagmclient.so
-vendor/lib64/libagmmixer.so
-vendor/lib64/libaidenoiser.so
-vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libalsautils.so
-vendor/lib64/libanc_night.so
-vendor/lib64/libanc_single_bokeh.so
-vendor/lib64/libanc_single_bokeh_rear.so
-vendor/lib64/libanc_single_rt_bokeh.so
-vendor/lib64/libandroid_runtime_lazy.so
-vendor/lib64/libaodoptfeature.so
-vendor/lib64/libapengine.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libar-acdb.so
-vendor/lib64/libar-gpr.so
-vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so
-vendor/lib64/libarmemlog.so
-vendor/lib64/libats.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudiochargerlistener.so
-vendor/lib64/libaudiofactorytest.so
-vendor/lib64/libaudiofeaturestats.so
-vendor/lib64/libavservices_minijail.so
-vendor/lib64/libbacklight-calib.so
-vendor/lib64/libbase64.so
-vendor/lib64/libbatching.so
-vendor/lib64/libbatterylistener.so
-vendor/lib64/libbinderdebug.so
-vendor/lib64/libbitmlengine.so
-vendor/lib64/libbitmlenginev2.so
-vendor/lib64/libbluetooth_audio_session.so
-vendor/lib64/libbluetooth_audio_session_aidl.so
-vendor/lib64/libbluetooth_audio_session_aidl_qti.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/libboot_control_qti.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libc++_shared.so
-vendor/lib64/libcacertclient.so
-vendor/lib64/libcalculator.so
-vendor/lib64/libcalculator_htp.so
-vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libcamera_nn_stub.so
-vendor/lib64/libcamera_scene.so
-vendor/lib64/libcamerapostproc.so
-vendor/lib64/libcamxexternalformatutils.so
-vendor/lib64/libcamxfacialfeatures.so
-vendor/lib64/libcamxfdalgo.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
-vendor/lib64/libcamxqsatalgo.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswispiqmodule.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libcapiv2svacnnvendor.so
-vendor/lib64/libcapiv2svarnnvendor.so
-vendor/lib64/libcapiv2udk7vendor.so
-vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libchilog.so
-vendor/lib64/libcld80211.so
-vendor/lib64/libclstc_algorithm_adapter.so
-vendor/lib64/libclstc_gcp_adapter.so
-vendor/lib64/libclstc_tm.so
-vendor/lib64/libcne.so
-vendor/lib64/libcneapiclient.so
-vendor/lib64/libcneoplookup.so
-vendor/lib64/libcneqmiutils.so
-vendor/lib64/libcodec2_hidl@1.0.so
-vendor/lib64/libcodec2_hidl_plugin.so
-vendor/lib64/libcodec2_vndk.so
-vendor/lib64/libcolor-default.so
-vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcom.xiaomi.metadatautils.so
-vendor/lib64/libcom.xiaomi.pluginutils.so
-vendor/lib64/libconfigdb.so
-vendor/lib64/libcpion.so
-vendor/lib64/libcustomva_intf.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libdfintf.so
-vendor/lib64/libdiag.so
-vendor/lib64/libdiagjni.so
-vendor/lib64/libdigital-dimming.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libdisplaydebug.so
-vendor/lib64/libdisplayfeature.so
-vendor/lib64/libdisplayfeatureservice.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpmqmihal.so
-vendor/lib64/libdpp_manager.so
-vendor/lib64/libdpps.so
-vendor/lib64/libdrm.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libdrmutils.so
-vendor/lib64/libdsd2pcm.so
-vendor/lib64/libdsi_netctrl.so
-vendor/lib64/libdsutils.so
-vendor/lib64/libeai_fixed.so
-vendor/lib64/libeai_float.so
-vendor/lib64/libeffects.so
-vendor/lib64/libeffectsconfig.so
-vendor/lib64/libembmsservice.so
-vendor/lib64/libengineplugin.so
-vendor/lib64/libesesbprovision.so
-vendor/lib64/libfastcrc.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libfeutils.so
-vendor/lib64/libfilefinder.so
-vendor/lib64/libfmpal.so
-vendor/lib64/libgame_enhance.so
-vendor/lib64/libgamepoweroptfeature.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libgeofencing.so
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/libgnss.so
-vendor/lib64/libgnsspps.so
-vendor/lib64/libgoodixfingerprint.so
-vendor/lib64/libgps.utils.so
-vendor/lib64/libgpt.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgralloc.qti.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libgsl.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/libhdr_backlight_adapter.so
-vendor/lib64/libhdr_stub.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libhfp_pal.so
-vendor/lib64/libhidltransport.so
-vendor/lib64/libhidparser.so
-vendor/lib64/libhistogram.so
-vendor/lib64/libhotword_intf.so
-vendor/lib64/libhta.so
-vendor/lib64/libhwbinder.so
-vendor/lib64/libidl.so
-vendor/lib64/libintervmipc.so
-vendor/lib64/libipanat.so
-vendor/lib64/libipebpsstriping.so
-vendor/lib64/libipebpsstriping170.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/libjnihelper.so
-vendor/lib64/libjpege.so
-vendor/lib64/libjson.so
-vendor/lib64/libkaraokepal.so
-vendor/lib64/libkernelmanager.so
-vendor/lib64/libkeymaster_messages.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/liblightninglaunches.so
-vendor/lib64/liblistensoundmodel2vendor.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libllvm-qgl.so
-vendor/lib64/liblmthermallistner.so
-vendor/lib64/liblmutils-ns.so
-vendor/lib64/libloadtrusteduiapp.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_api_wds.so
-vendor/lib64/libloc_base_util.so
-vendor/lib64/libloc_core.so
-vendor/lib64/libloc_eng_hub.so
-vendor/lib64/libloc_mq_client.so
-vendor/lib64/libloc_qwes_iface.so
-vendor/lib64/libloc_ril_client.so
-vendor/lib64/libloc_socket.so
-vendor/lib64/libloc_util.so
-vendor/lib64/liblocation_api.so
-vendor/lib64/liblocation_api_msg.so
-vendor/lib64/liblocation_client_api.so
-vendor/lib64/liblocation_integration_api.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblocdiagiface.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_common.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/liblqe.so
-vendor/lib64/liblx-ar_util.so
-vendor/lib64/liblx-osal.so
-vendor/lib64/libmapdata_api.so
-vendor/lib64/libmasc.so
-vendor/lib64/libmcs.so
-vendor/lib64/libmctf_cl_program.bin
-vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libmdmdetect.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libmediautils_vendor.so
-vendor/lib64/libmemperfd.so
-vendor/lib64/libmemunreachable.so
-vendor/lib64/libmemutils.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libmfec.so
-vendor/lib64/libmialgo_ai_vision.so
-vendor/lib64/libmialgo_sd.so
-vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgoengine.so
-vendor/lib64/libmialgoengine2.so
-vendor/lib64/libmiface.so
-vendor/lib64/libmifpext.so
-vendor/lib64/libminkdescriptor.so
-vendor/lib64/libminksocket_vendor.so
-vendor/lib64/libmiracast.so
-vendor/lib64/libmisight.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libmm-omxcore.so
-vendor/lib64/libmmcamera_bestats.so
-vendor/lib64/libmmcamera_cac3.so
-vendor/lib64/libmmcamera_lscv35.so
-vendor/lib64/libmmcamera_mfnr.so
-vendor/lib64/libmmcamera_mfnr_t4.so
-vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libmmosal_vendor.so
-vendor/lib64/libmmrtpdecoder_vendor.so
-vendor/lib64/libmmrtpencoder_vendor.so
-vendor/lib64/libmorpho_HdrChecker.so
-vendor/lib64/libmorpho_ImageRefiner.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libnative-api.so
-vendor/lib64/libnbaio_mono.so
-vendor/lib64/libnetfilter_conntrack.so
-vendor/lib64/libnfnetlink.so
-vendor/lib64/libnicm.so
-vendor/lib64/libnicm_dsi.so
-vendor/lib64/libnicm_interface.so
-vendor/lib64/libnicm_internal.so
-vendor/lib64/libnicm_modemproxy.so
-vendor/lib64/libnicm_netlink.so
-vendor/lib64/libnicm_recovery.so
-vendor/lib64/libnicm_utils.so
-vendor/lib64/libnicm_vh.so
-vendor/lib64/liboemaids_vendor.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libofflinedump.so
-vendor/lib64/libofflinelog.so
-vendor/lib64/liboffloadhal.so
-vendor/lib64/liboffscreenpoweroptfeature.so
-vendor/lib64/libopencv.so
-vendor/lib64/libopestriping.so
-vendor/lib64/libops.so
-vendor/lib64/libos.so
-vendor/lib64/libpal_net_if.so
-vendor/lib64/libpalclient.so
-vendor/lib64/libpasn.so
-vendor/lib64/libpasrutils.so
-vendor/lib64/libpcap.so
-vendor/lib64/libpdmapper.so
-vendor/lib64/libpdnotifier.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libperipheral_client.so
-vendor/lib64/libplatformconfig.so
-vendor/lib64/libpolygon.so
-vendor/lib64/libpowercallback.so
-vendor/lib64/libpowercore.so
-vendor/lib64/libprefapps.so
-vendor/lib64/libprekill.so
-vendor/lib64/libprocomp.so
-vendor/lib64/libprotobuf-cpp-full-21.7.so
-vendor/lib64/libprotobuf-cpp-lite-21.7.so
-vendor/lib64/libpsi.so
-vendor/lib64/libpsmoptfeature.so
-vendor/lib64/libq-perflog.so
-vendor/lib64/libq3dtools_adreno.so
-vendor/lib64/libqape_oem_ext.so
-vendor/lib64/libqapesdk.so
-vendor/lib64/libqc2audio_base.so
-vendor/lib64/libqc2audio_basecodec.so
-vendor/lib64/libqc2audio_core.so
-vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
-vendor/lib64/libqc2audio_platform.so
-vendor/lib64/libqc2audio_swaudiocodec.so
-vendor/lib64/libqc2audio_utils.so
-vendor/lib64/libqc2colorconvertfilter.so
-vendor/lib64/libqc2filter.so
-vendor/lib64/libqcbor.so
-vendor/lib64/libqcc_file_agent.so
-vendor/lib64/libqcc_sdk.so
-vendor/lib64/libqcci_legacy.so
-vendor/lib64/libqcmaputils.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_filterbase.so
-vendor/lib64/libqcodec2_hooks.so
-vendor/lib64/libqcodec2_mockfilter.so
-vendor/lib64/libqcodec2_mockqc2filter.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_v4l2codec.so
-vendor/lib64/libqconfigclient.so
-vendor/lib64/libqcrilDataModule.so
-vendor/lib64/libqcrilNr.so
-vendor/lib64/libqcrilNrCellInfoModule.so
-vendor/lib64/libqcrilNrFramework.so
-vendor/lib64/libqcrilNrImsModule.so
-vendor/lib64/libqcrilNrLogger.so
-vendor/lib64/libqcrilNrPbmModule.so
-vendor/lib64/libqcrilNrQtiBus.so
-vendor/lib64/libqcrilNrQtiMutex.so
-vendor/lib64/libqcrilNrSmsModule.so
-vendor/lib64/libqcrilNrSocketModule.so
-vendor/lib64/libqcrilNrVoiceModule.so
-vendor/lib64/libqcrildataaidl.so
-vendor/lib64/libqcrildatactl.so
-vendor/lib64/libqcrildataqos.so
-vendor/lib64/libqdMetaData.so
-vendor/lib64/libqdcm-algo.so
-vendor/lib64/libqdcm-json-mode-parser.so
-vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libqdi.so
-vendor/lib64/libqdp.so
-vendor/lib64/libqdpr.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libqesdk2_0.so
-vendor/lib64/libqesdk_manager.so
-vendor/lib64/libqesdoem_query_sys.so
-vendor/lib64/libqisl.so
-vendor/lib64/libqll10.so
-vendor/lib64/libqllengine.so
-vendor/lib64/libqmi.so
-vendor/lib64/libqmi_cci.so
-vendor/lib64/libqmi_client_helper.so
-vendor/lib64/libqmi_client_qmux.so
-vendor/lib64/libqmi_common_so.so
-vendor/lib64/libqmi_csi.so
-vendor/lib64/libqmi_csvt_srvc.so
-vendor/lib64/libqmi_encdec.so
-vendor/lib64/libqmi_legacy.so
-vendor/lib64/libqmiextservices.so
-vendor/lib64/libqmiservices.so
-vendor/lib64/libqms.so
-vendor/lib64/libqms_client.so
-vendor/lib64/libqrtr.so
-vendor/lib64/libqrtrclient.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libqservice.so
-vendor/lib64/libqsh.so
-vendor/lib64/libqsocket.so
-vendor/lib64/libqspm-mem-utils-vendor.so
-vendor/lib64/libqtbase.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-qesdk-secure.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/libqti_vndfwk_detect.so
-vendor/lib64/libqti_vndfwk_detect_vendor.so
-vendor/lib64/libqtigefar.so
-vendor/lib64/libqtiidentitycredential.so
-vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libqtikeymint.so
-vendor/lib64/libqtivibratoreffect.so
-vendor/lib64/libqtivibratoreffectoffload.so
-vendor/lib64/libqtjsonhelper.so
-vendor/lib64/libqtnodes.so
-vendor/lib64/libqttestclient.so
-vendor/lib64/libqttestservice.so
-vendor/lib64/librcc.so
-vendor/lib64/librcmask.so
-vendor/lib64/librecovery_updater.so
-vendor/lib64/librecovery_updater_msm.so
-vendor/lib64/libreference-ril.so
-vendor/lib64/libreffeature.so
-vendor/lib64/libril-db.so
-vendor/lib64/libril-legacy.so
-vendor/lib64/libril-qc-ltedirectdisc.so
-vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril.so
-vendor/lib64/librilqmimiscservices.so
-vendor/lib64/librilutils.so
-vendor/lib64/librmnetctl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmdal.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
-vendor/lib64/libsdsprpc.so
-vendor/lib64/libseclog.so
-vendor/lib64/libsensorcal.so
-vendor/lib64/libsensorndkbridge.so
-vendor/lib64/libsensorslog.so
-vendor/lib64/libsgutils2.so
-vendor/lib64/libshsc.so
-vendor/lib64/libsi.so
-vendor/lib64/libsilkyscrolls.so
-vendor/lib64/libskewknob.so
-vendor/lib64/libsl_fp_impl.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libsmemlog.so
-vendor/lib64/libsnapdragoncolor-manager.so
-vendor/lib64/libsnapdragoncolor-qdcm.so
-vendor/lib64/libsndcardparser.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_direct_channel_stub.so
-vendor/lib64/libsns_dynamic_loader_stub.so
-vendor/lib64/libsns_registry_skel.so
-vendor/lib64/libsns_remote_proc_state_stub.so
-vendor/lib64/libsnsapi-full.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libsnsutils.so
-vendor/lib64/libsoc_helper.so
-vendor/lib64/libsoc_helper_jni.so
-vendor/lib64/libspl.so
-vendor/lib64/libsrc_jni_getPasrService.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/libssd.so
-vendor/lib64/libstagefright_aidl_bufferpool2.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
-vendor/lib64/libstagefrighthw.so
-vendor/lib64/libstandbyfeature.so
-vendor/lib64/libstreamparser.so
-vendor/lib64/libsubsystem_control.so
-vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libsynergy_loc_api.so
-vendor/lib64/libsynx.so
-vendor/lib64/libsys_info_cache.so
-vendor/lib64/libsystem_health_mon.so
-vendor/lib64/libtaautoload.so
-vendor/lib64/libtensorflowlite_c.so
-vendor/lib64/libtestutils.so
-vendor/lib64/libtfestriping.so
-vendor/lib64/libtflite_fd.so
-vendor/lib64/libthermalclient.so
-vendor/lib64/libthreadutils.so
-vendor/lib64/libtime_genoff.so
-vendor/lib64/libtinycompress.so
-vendor/lib64/libtinyxml2_1.so
-vendor/lib64/libtlpd.so
-vendor/lib64/libtlpd_configmgr.so
-vendor/lib64/libtlpd_crypto.so
-vendor/lib64/libtlpd_internal.so
-vendor/lib64/libtlpd_logger.so
-vendor/lib64/libtrustedapploader.so
-vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/libvibratorutils.so
-vendor/lib64/libvideooptfeature.so
-vendor/lib64/libvideotxr.so
-vendor/lib64/libvideoutils.so
-vendor/lib64/libvmfilexfer.so
-vendor/lib64/libvmmem.so
-vendor/lib64/libvndfwk_detect_jni.qti.so
-vendor/lib64/libvndfwk_detect_jni.qti_vendor.so
-vendor/lib64/libvui_intf.so
-vendor/lib64/libwfdaac_vendor.so
-vendor/lib64/libwfdcodecv4l2_proprietary.so
-vendor/lib64/libwfdcommonutils_proprietary.so
-vendor/lib64/libwfdconfigutils_proprietary.so
-vendor/lib64/libwfddisplayconfig_vendor.so
-vendor/lib64/libwfdhdcpcp.so
-vendor/lib64/libwfdhdcpservice_proprietary.so
-vendor/lib64/libwfdmminterface_proprietary.so
-vendor/lib64/libwfdmmservice_proprietary.so
-vendor/lib64/libwfdmmsrc_proprietary.so
-vendor/lib64/libwfdmodulehdcpsession.so
-vendor/lib64/libwfdrtsp_vendor.so
-vendor/lib64/libwfdsessionmodule.so
-vendor/lib64/libwfdsourcesession_proprietary.so
-vendor/lib64/libwfdsourcesm_proprietary.so
-vendor/lib64/libwfduibcinterface_vendor.so
-vendor/lib64/libwfduibcsink_vendor.so
-vendor/lib64/libwfduibcsinkinterface_vendor.so
-vendor/lib64/libwfduibcsrc_vendor.so
-vendor/lib64/libwfduibcsrcinterface_vendor.so
-vendor/lib64/libwfdutils_proprietary.so
-vendor/lib64/libwifi-hal-ctrl.so
-vendor/lib64/libwifi-hal-qcom.so
-vendor/lib64/libwifi-hal.so
-vendor/lib64/libwifiobserver.so
-vendor/lib64/libwms.so
-vendor/lib64/libwpa_client.so
-vendor/lib64/libwqe.so
-vendor/lib64/libxiaomi_qcril.so
-vendor/lib64/libxml.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/qcrilInterfaces.so
-vendor/lib64/qcrilIntermodulemsgs.so
-vendor/lib64/qcrilMarshal.so
-vendor/lib64/qcrilNrQmiModule.so
-vendor/lib64/qcrilNrSecureMode.so
-vendor/lib64/qcrilNr_aidl_IQtiRadioConfig.so
-vendor/lib64/qcrilNr_aidl_IRadioConfig.so
-vendor/lib64/qcrilNr_aidl_IRadioMessaging.so
-vendor/lib64/qcrilNr_aidl_IRadioModem.so
-vendor/lib64/qcrilNr_aidl_IRadioNetwork.so
-vendor/lib64/qcrilNr_aidl_IRadioSap.so
-vendor/lib64/qcrilNr_aidl_IRadioSim.so
-vendor/lib64/qcrilNr_aidl_IRadioVoice.so
-vendor/lib64/qcrilNr_aidl_SecureElementService.so
-vendor/lib64/qcrilNr_aidl_UimLpaService.so
-vendor/lib64/qcrilNr_aidl_UimRemoteClient.so
-vendor/lib64/qcrilNr_aidl_UimRemoteServer.so
-vendor/lib64/qcrilNr_aidl_UimService.so
-vendor/lib64/qcrilNr_aidl_common.so
-vendor/lib64/qcril_client.so
-vendor/lib64/qcrild_libqcrilnr.so
-vendor/lib64/qcrild_libqcrilnrutils.so
-vendor/lib64/qti.video.utils.videobufferlayout.so
-vendor/lib64/qtiPeripheralMgr.so
-vendor/lib64/qtiril-utils.so
-vendor/lib64/qtiwakelock.so
-vendor/lib64/sensors.qsh.so
-vendor/lib64/sensors.touch.detect.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.config@1.0.so
-vendor/lib64/vendor.display.config@1.1.so
-vendor/lib64/vendor.display.config@1.10.so
-vendor/lib64/vendor.display.config@1.11.so
-vendor/lib64/vendor.display.config@1.2.so
-vendor/lib64/vendor.display.config@1.3.so
-vendor/lib64/vendor.display.config@1.4.so
-vendor/lib64/vendor.display.config@1.5.so
-vendor/lib64/vendor.display.config@1.6.so
-vendor/lib64/vendor.display.config@1.7.so
-vendor/lib64/vendor.display.config@1.8.so
-vendor/lib64/vendor.display.config@1.9.so
-vendor/lib64/vendor.display.config@2.0.so
-vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.libdpmctmgr.so
-vendor/lib64/vendor.libdpmfdmgr.so
-vendor/lib64/vendor.libdpmframework.so
-vendor/lib64/vendor.libdpmtcm.so
-vendor/lib64/vendor.libmwqemiptablemgr.so
-vendor/lib64/vendor.qti.ImsRtpService-V1-ndk.so
-vendor/lib64/vendor.qti.ImsRtpService-aidl-Impl.so
-vendor/lib64/vendor.qti.data.factoryservice-V1-ndk.so
-vendor/lib64/vendor.qti.data.mwqem@1.0.so
-vendor/lib64/vendor.qti.data.mwqemaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.data.slm@1.0.so
-vendor/lib64/vendor.qti.diaghal@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.gnss-V6-ndk.so
-vendor/lib64/vendor.qti.gnss-service.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
-vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
-vendor/lib64/vendor.qti.hardware.alarm-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
-vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
-vendor/lib64/vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
-vendor/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.connectionfactory-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.dataactivity-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so
-vendor/lib64/vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.flow@1.0.so
-vendor/lib64/vendor.qti.hardware.data.flow@1.1.so
-vendor/lib64/vendor.qti.hardware.data.flowaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.iwlandata-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.ka-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib64/vendor.qti.hardware.data.lce@1.0.so
-vendor/lib64/vendor.qti.hardware.data.lceaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.data.qmiaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so
-vendor/lib64/vendor.qti.hardware.display.color-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.display.composer3-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.display.composer@1.0.so
-vendor/lib64/vendor.qti.hardware.display.composer@2.0.so
-vendor/lib64/vendor.qti.hardware.display.config-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V10-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V11-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V3-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V4-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V6-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V7-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V8-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V9-ndk.so
-vendor/lib64/vendor.qti.hardware.display.demura-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so
-vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so
-vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
-vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
-vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.2.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.3.so
-vendor/lib64/vendor.qti.hardware.display.postproc-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so
-vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
-vendor/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.factory-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.factory@1.0.so
-vendor/lib64/vendor.qti.hardware.factory@1.1.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/vendor.qti.hardware.limits@1.0.so
-vendor/lib64/vendor.qti.hardware.limits@1.1.so
-vendor/lib64/vendor.qti.hardware.limits@1.2.so
-vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
-vendor/lib64/vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.pal@1.0.so
-vendor/lib64/vendor.qti.hardware.perf2-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.1.so
-vendor/lib64/vendor.qti.hardware.perf@2.2.so
-vendor/lib64/vendor.qti.hardware.perf@2.3.so
-vendor/lib64/vendor.qti.hardware.power.powermodule-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so
-vendor/lib64/vendor.qti.hardware.qconfig-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib64/vendor.qti.hardware.qspa-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.am-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.atfwd-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.common-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.ims-V12-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.8.so
-vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.lpa-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so
-vendor/lib64/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio-V11-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradioconfig-V4-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.uim-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_server-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.common-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.common-helper.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.config-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.device-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so
-vendor/lib64/vendor.qti.hardware.servicetrackeraidl-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
-vendor/lib64/vendor.qti.hardware.soter-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.systemhelper@1.0.so
-vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.vibrator.impl.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
-vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/vendor.qti.ims.callcapability@1.0.so
-vendor/lib64/vendor.qti.ims.callcapabilityaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.ims.callinfo@1.0.so
-vendor/lib64/vendor.qti.ims.configaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.ims.factory@1.0.so
-vendor/lib64/vendor.qti.ims.factory@1.1.so
-vendor/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
-vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
-vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
-vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
-vendor/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so
-vendor/lib64/vendor.qti.imsrtpservice@3.1.so
-vendor/lib64/vendor.qti.latency@2.0.so
-vendor/lib64/vendor.qti.latency@2.1.so
-vendor/lib64/vendor.qti.latency@2.2.so
-vendor/lib64/vendor.qti.latencyaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
-vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
-vendor/lib64/vendor.qti.qesdhal@1.0.so
-vendor/lib64/vendor.qti.qesdhal@1.1.so
-vendor/lib64/vendor.qti.qesdhal@1.2.so
-vendor/lib64/vendor.qti.qesdhal@1.3.so
-vendor/lib64/vendor.qti.qesdsys-V3-ndk.so
-vendor/lib64/vendor.qti.qesdsys-V4-ndk.so
-vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
-vendor/lib64/vendor.qti.qspmhal-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
-vendor/lib64/vendor.qti.voiceprint@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform.so
-vendor/lib64/vendor.xiaomi.hardware.blackbox-V1-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.cld@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.mfidoca-V1-ndk_platform.so
-vendor/lib64/vendor.xiaomi.hardware.micharge-V2-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.mimd@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.misys.common-V2-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay-V1-ndk_platform.so
-vendor/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
-vendor/lib64/xiaomi.system.hypsys.common-V1-ndk.so
-vendor/odm_dlkm/etc/build.prop
-vendor/overlay/FrameworksResTarget_Vendor.apk
-vendor/overlay/SecureElementResTarget_Vendor.apk
-vendor/rfs/apq/gnss/readonly/vendor/firmware
-vendor/rfs/apq/gnss/readonly/firmware
-vendor/rfs/apq/gnss/hlos
-vendor/rfs/apq/gnss/ramdumps
-vendor/rfs/apq/gnss/readwrite
-vendor/rfs/apq/gnss/shared
-vendor/rfs/mdm/adsp/readonly/vendor/firmware
-vendor/rfs/mdm/adsp/readonly/firmware
-vendor/rfs/mdm/adsp/hlos
-vendor/rfs/mdm/adsp/ramdumps
-vendor/rfs/mdm/adsp/readwrite
-vendor/rfs/mdm/adsp/shared
-vendor/rfs/mdm/cdsp/readonly/vendor/firmware
-vendor/rfs/mdm/cdsp/readonly/firmware
-vendor/rfs/mdm/cdsp/hlos
-vendor/rfs/mdm/cdsp/ramdumps
-vendor/rfs/mdm/cdsp/readwrite
-vendor/rfs/mdm/cdsp/shared
-vendor/rfs/mdm/mpss/readonly/vendor/firmware
-vendor/rfs/mdm/mpss/readonly/firmware
-vendor/rfs/mdm/mpss/hlos
-vendor/rfs/mdm/mpss/ramdumps
-vendor/rfs/mdm/mpss/readwrite
-vendor/rfs/mdm/mpss/shared
-vendor/rfs/mdm/slpi/readonly/vendor/firmware
-vendor/rfs/mdm/slpi/readonly/firmware
-vendor/rfs/mdm/slpi/hlos
-vendor/rfs/mdm/slpi/ramdumps
-vendor/rfs/mdm/slpi/readwrite
-vendor/rfs/mdm/slpi/shared
-vendor/rfs/mdm/tn/readonly/vendor/firmware
-vendor/rfs/mdm/tn/readonly/firmware
-vendor/rfs/mdm/tn/hlos
-vendor/rfs/mdm/tn/ramdumps
-vendor/rfs/mdm/tn/readwrite
-vendor/rfs/mdm/tn/shared
-vendor/rfs/mdm/wpss/readonly/vendor/firmware
-vendor/rfs/mdm/wpss/readonly/firmware
-vendor/rfs/mdm/wpss/hlos
-vendor/rfs/mdm/wpss/ramdumps
-vendor/rfs/mdm/wpss/readwrite
-vendor/rfs/mdm/wpss/shared
-vendor/rfs/msm/adsp/readonly/vendor/firmware
-vendor/rfs/msm/adsp/readonly/firmware
-vendor/rfs/msm/adsp/hlos
-vendor/rfs/msm/adsp/ramdumps
-vendor/rfs/msm/adsp/readwrite
-vendor/rfs/msm/adsp/shared
-vendor/rfs/msm/cdsp/readonly/vendor/firmware
-vendor/rfs/msm/cdsp/readonly/firmware
-vendor/rfs/msm/cdsp/hlos
-vendor/rfs/msm/cdsp/ramdumps
-vendor/rfs/msm/cdsp/readwrite
-vendor/rfs/msm/cdsp/shared
-vendor/rfs/msm/mpss/readonly/vendor/firmware
-vendor/rfs/msm/mpss/readonly/firmware
-vendor/rfs/msm/mpss/hlos
-vendor/rfs/msm/mpss/ramdumps
-vendor/rfs/msm/mpss/readwrite
-vendor/rfs/msm/mpss/shared
-vendor/rfs/msm/slpi/readonly/vendor/firmware
-vendor/rfs/msm/slpi/readonly/firmware
-vendor/rfs/msm/slpi/hlos
-vendor/rfs/msm/slpi/ramdumps
-vendor/rfs/msm/slpi/readwrite
-vendor/rfs/msm/slpi/shared
-vendor/rfs/msm/wpss/readonly/vendor/firmware
-vendor/rfs/msm/wpss/readonly/firmware
-vendor/rfs/msm/wpss/hlos
-vendor/rfs/msm/wpss/ramdumps
-vendor/rfs/msm/wpss/readwrite
-vendor/rfs/msm/wpss/shared
-vendor/rfs/rfs_symlinks
-vendor/build.prop
-vendor/odm
-vendor_boot.img
-vendor_boot/ramdisk/first_stage_ramdisk/fstab.default
-vendor_boot/ramdisk/first_stage_ramdisk/fstab.emmc
-vendor_boot/ramdisk/lib/modules/adsp_sleepmon.ko
-vendor_boot/ramdisk/lib/modules/altmode-glink.ko
-vendor_boot/ramdisk/lib/modules/arm_smmu.ko
-vendor_boot/ramdisk/lib/modules/bam_dma.ko
-vendor_boot/ramdisk/lib/modules/bcl_pmic5.ko
-vendor_boot/ramdisk/lib/modules/bcl_soc.ko
-vendor_boot/ramdisk/lib/modules/block2mtd.ko
-vendor_boot/ramdisk/lib/modules/boot_stats.ko
-vendor_boot/ramdisk/lib/modules/bootinfo.ko
-vendor_boot/ramdisk/lib/modules/bwmon.ko
-vendor_boot/ramdisk/lib/modules/cfg80211.ko
-vendor_boot/ramdisk/lib/modules/charger-ulog-glink.ko
-vendor_boot/ramdisk/lib/modules/chipreg.ko
-vendor_boot/ramdisk/lib/modules/clk-dummy.ko
-vendor_boot/ramdisk/lib/modules/clk-qcom.ko
-vendor_boot/ramdisk/lib/modules/clk-smd-rpm.ko
-vendor_boot/ramdisk/lib/modules/core_hang_detect.ko
-vendor_boot/ramdisk/lib/modules/coresight-csr.ko
-vendor_boot/ramdisk/lib/modules/coresight-cti.ko
-vendor_boot/ramdisk/lib/modules/coresight-dummy.ko
-vendor_boot/ramdisk/lib/modules/coresight-funnel.ko
-vendor_boot/ramdisk/lib/modules/coresight-remote-etm.ko
-vendor_boot/ramdisk/lib/modules/coresight-replicator.ko
-vendor_boot/ramdisk/lib/modules/coresight-stm.ko
-vendor_boot/ramdisk/lib/modules/coresight-tgu.ko
-vendor_boot/ramdisk/lib/modules/coresight-tmc-sec.ko
-vendor_boot/ramdisk/lib/modules/coresight-tmc.ko
-vendor_boot/ramdisk/lib/modules/coresight-tpda.ko
-vendor_boot/ramdisk/lib/modules/coresight-tpdm.ko
-vendor_boot/ramdisk/lib/modules/coresight.ko
-vendor_boot/ramdisk/lib/modules/cpu_hotplug.ko
-vendor_boot/ramdisk/lib/modules/cpumaxfreq.ko
-vendor_boot/ramdisk/lib/modules/cqhci.ko
-vendor_boot/ramdisk/lib/modules/crypto-qti.ko
-vendor_boot/ramdisk/lib/modules/dcc_v2.ko
-vendor_boot/ramdisk/lib/modules/debug-regulator.ko
-vendor_boot/ramdisk/lib/modules/debug_symbol.ko
-vendor_boot/ramdisk/lib/modules/debugcc-pitti.ko
-vendor_boot/ramdisk/lib/modules/dispcc-pitti.ko
-vendor_boot/ramdisk/lib/modules/dwc3-msm.ko
-vendor_boot/ramdisk/lib/modules/eud.ko
-vendor_boot/ramdisk/lib/modules/f_fs_ipc_log.ko
-vendor_boot/ramdisk/lib/modules/ft8057m_spi.ko
-vendor_boot/ramdisk/lib/modules/gcc-pitti.ko
-vendor_boot/ramdisk/lib/modules/gdsc-regulator.ko
-vendor_boot/ramdisk/lib/modules/gh_virt_wdt.ko
-vendor_boot/ramdisk/lib/modules/gic_intr_routing.ko
-vendor_boot/ramdisk/lib/modules/glink_pkt.ko
-vendor_boot/ramdisk/lib/modules/glink_probe.ko
-vendor_boot/ramdisk/lib/modules/goodix_fp.ko
-vendor_boot/ramdisk/lib/modules/gpucc-pitti.ko
-vendor_boot/ramdisk/lib/modules/hdcp_qseecom_dlkm.ko
-vendor_boot/ramdisk/lib/modules/heap_mem_ext_v01.ko
-vendor_boot/ramdisk/lib/modules/hung_task_enh.ko
-vendor_boot/ramdisk/lib/modules/i2c-msm-geni.ko
-vendor_boot/ramdisk/lib/modules/icc-debug.ko
-vendor_boot/ramdisk/lib/modules/icc-rpm.ko
-vendor_boot/ramdisk/lib/modules/icc-test.ko
-vendor_boot/ramdisk/lib/modules/iommu-logger.ko
-vendor_boot/ramdisk/lib/modules/kryo_arm64_edac.ko
-vendor_boot/ramdisk/lib/modules/lct_tp.ko
-vendor_boot/ramdisk/lib/modules/leds-aw2016.ko
-vendor_boot/ramdisk/lib/modules/leds-qpnp-vibrator-ldo.ko
-vendor_boot/ramdisk/lib/modules/mdt_loader.ko
-vendor_boot/ramdisk/lib/modules/mem-hooks.ko
-vendor_boot/ramdisk/lib/modules/mem_buf.ko
-vendor_boot/ramdisk/lib/modules/mem_buf_dev.ko
-vendor_boot/ramdisk/lib/modules/memlat.ko
-vendor_boot/ramdisk/lib/modules/memory_dump_v2.ko
-vendor_boot/ramdisk/lib/modules/mi_memory.ko
-vendor_boot/ramdisk/lib/modules/minidump.ko
-vendor_boot/ramdisk/lib/modules/modules.alias
-vendor_boot/ramdisk/lib/modules/modules.blocklist
-vendor_boot/ramdisk/lib/modules/modules.dep
-vendor_boot/ramdisk/lib/modules/modules.load
-vendor_boot/ramdisk/lib/modules/modules.load.recovery
-vendor_boot/ramdisk/lib/modules/modules.softdep
-vendor_boot/ramdisk/lib/modules/msm-mmrm.ko
-vendor_boot/ramdisk/lib/modules/msm_dma_iommu_mapping.ko
-vendor_boot/ramdisk/lib/modules/msm_drm.ko
-vendor_boot/ramdisk/lib/modules/msm_ext_display.ko
-vendor_boot/ramdisk/lib/modules/msm_geni_serial.ko
-vendor_boot/ramdisk/lib/modules/msm_gpi.ko
-vendor_boot/ramdisk/lib/modules/msm_hw_fence.ko
-vendor_boot/ramdisk/lib/modules/msm_memshare.ko
-vendor_boot/ramdisk/lib/modules/msm_performance.ko
-vendor_boot/ramdisk/lib/modules/msm_qmp.ko
-vendor_boot/ramdisk/lib/modules/msm_sharedmem.ko
-vendor_boot/ramdisk/lib/modules/msm_show_resume_irq.ko
-vendor_boot/ramdisk/lib/modules/msm_sysstats.ko
-vendor_boot/ramdisk/lib/modules/mtd.ko
-vendor_boot/ramdisk/lib/modules/mtd_blkdevs.ko
-vendor_boot/ramdisk/lib/modules/mtdblock.ko
-vendor_boot/ramdisk/lib/modules/mtdoops.ko
-vendor_boot/ramdisk/lib/modules/nt_36528a_spi.ko
-vendor_boot/ramdisk/lib/modules/nvmem_qcom-spmi-sdam.ko
-vendor_boot/ramdisk/lib/modules/nvmem_qfprom.ko
-vendor_boot/ramdisk/lib/modules/ofpart.ko
-vendor_boot/ramdisk/lib/modules/panel_event_notifier.ko
-vendor_boot/ramdisk/lib/modules/pdr_interface.ko
-vendor_boot/ramdisk/lib/modules/perf_helper.ko
-vendor_boot/ramdisk/lib/modules/phy-generic.ko
-vendor_boot/ramdisk/lib/modules/phy-msm-snps-hs.ko
-vendor_boot/ramdisk/lib/modules/phy-msm-ssusb-qmp.ko
-vendor_boot/ramdisk/lib/modules/phy-qcom-emu.ko
-vendor_boot/ramdisk/lib/modules/phy-qcom-ufs-qmp-v4-waipio.ko
-vendor_boot/ramdisk/lib/modules/phy-qcom-ufs-qmp-v4.ko
-vendor_boot/ramdisk/lib/modules/phy-qcom-ufs-qrbtc-sdm845.ko
-vendor_boot/ramdisk/lib/modules/phy-qcom-ufs.ko
-vendor_boot/ramdisk/lib/modules/pinctrl-msm.ko
-vendor_boot/ramdisk/lib/modules/pinctrl-pitti.ko
-vendor_boot/ramdisk/lib/modules/pinctrl-spmi-gpio.ko
-vendor_boot/ramdisk/lib/modules/pinctrl-spmi-mpp.ko
-vendor_boot/ramdisk/lib/modules/pm8941-pwrkey.ko
-vendor_boot/ramdisk/lib/modules/pmic-glink-debug.ko
-vendor_boot/ramdisk/lib/modules/pmic_glink.ko
-vendor_boot/ramdisk/lib/modules/proxy-consumer.ko
-vendor_boot/ramdisk/lib/modules/pwm-qti-lpg.ko
-vendor_boot/ramdisk/lib/modules/qcom-cpufreq-hw-debug.ko
-vendor_boot/ramdisk/lib/modules/qcom-cpufreq-hw.ko
-vendor_boot/ramdisk/lib/modules/qcom-dcvs.ko
-vendor_boot/ramdisk/lib/modules/qcom-dload-mode.ko
-vendor_boot/ramdisk/lib/modules/qcom-i2c-pmic.ko
-vendor_boot/ramdisk/lib/modules/qcom-ipcc.ko
-vendor_boot/ramdisk/lib/modules/qcom-mpm.ko
-vendor_boot/ramdisk/lib/modules/qcom-pmu-lib.ko
-vendor_boot/ramdisk/lib/modules/qcom-pon.ko
-vendor_boot/ramdisk/lib/modules/qcom-reboot-reason.ko
-vendor_boot/ramdisk/lib/modules/qcom-scm.ko
-vendor_boot/ramdisk/lib/modules/qcom-spmi-adc-tm5.ko
-vendor_boot/ramdisk/lib/modules/qcom-spmi-adc5.ko
-vendor_boot/ramdisk/lib/modules/qcom-spmi-pmic.ko
-vendor_boot/ramdisk/lib/modules/qcom-spmi-temp-alarm.ko
-vendor_boot/ramdisk/lib/modules/qcom-spmi-wled.ko
-vendor_boot/ramdisk/lib/modules/qcom-vadc-common.ko
-vendor_boot/ramdisk/lib/modules/qcom_cpu_vendor_hooks.ko
-vendor_boot/ramdisk/lib/modules/qcom_dma_heaps.ko
-vendor_boot/ramdisk/lib/modules/qcom_glink.ko
-vendor_boot/ramdisk/lib/modules/qcom_glink_rpm.ko
-vendor_boot/ramdisk/lib/modules/qcom_glink_smem.ko
-vendor_boot/ramdisk/lib/modules/qcom_glink_spss.ko
-vendor_boot/ramdisk/lib/modules/qcom_hwspinlock.ko
-vendor_boot/ramdisk/lib/modules/qcom_iommu_debug.ko
-vendor_boot/ramdisk/lib/modules/qcom_iommu_util.ko
-vendor_boot/ramdisk/lib/modules/qcom_ipc_logging.ko
-vendor_boot/ramdisk/lib/modules/qcom_logbuf_boot_log.ko
-vendor_boot/ramdisk/lib/modules/qcom_logbuf_vendor_hooks.ko
-vendor_boot/ramdisk/lib/modules/qcom_lpm.ko
-vendor_boot/ramdisk/lib/modules/qcom_pil_info.ko
-vendor_boot/ramdisk/lib/modules/qcom_pm8008-regulator.ko
-vendor_boot/ramdisk/lib/modules/qcom_q6v5.ko
-vendor_boot/ramdisk/lib/modules/qcom_q6v5_pas.ko
-vendor_boot/ramdisk/lib/modules/qcom_ramdump.ko
-vendor_boot/ramdisk/lib/modules/qcom_stats.ko
-vendor_boot/ramdisk/lib/modules/qcom_sysmon.ko
-vendor_boot/ramdisk/lib/modules/qcom_tsens.ko
-vendor_boot/ramdisk/lib/modules/qcom_va_minidump.ko
-vendor_boot/ramdisk/lib/modules/qcom_wdt_core.ko
-vendor_boot/ramdisk/lib/modules/qfprom-sys.ko
-vendor_boot/ramdisk/lib/modules/qmi_helpers.ko
-vendor_boot/ramdisk/lib/modules/qnoc-pitti.ko
-vendor_boot/ramdisk/lib/modules/qnoc-qos-rpm.ko
-vendor_boot/ramdisk/lib/modules/qpnp-lcdb-regulator.ko
-vendor_boot/ramdisk/lib/modules/qrtr-smd.ko
-vendor_boot/ramdisk/lib/modules/qrtr.ko
-vendor_boot/ramdisk/lib/modules/qseecom_proxy.ko
-vendor_boot/ramdisk/lib/modules/qti-fixed-regulator.ko
-vendor_boot/ramdisk/lib/modules/qti-glink-adc.ko
-vendor_boot/ramdisk/lib/modules/qti-ocp-notifier.ko
-vendor_boot/ramdisk/lib/modules/qti-regmap-debugfs.ko
-vendor_boot/ramdisk/lib/modules/qti_battery_charger.ko
-vendor_boot/ramdisk/lib/modules/qti_battery_debug.ko
-vendor_boot/ramdisk/lib/modules/qti_cpufreq_cdev.ko
-vendor_boot/ramdisk/lib/modules/qti_devfreq_cdev.ko
-vendor_boot/ramdisk/lib/modules/qti_qmi_cdev.ko
-vendor_boot/ramdisk/lib/modules/qti_qmi_sensor_v2.ko
-vendor_boot/ramdisk/lib/modules/qti_userspace_cdev.ko
-vendor_boot/ramdisk/lib/modules/rdbg.ko
-vendor_boot/ramdisk/lib/modules/reboot-mode.ko
-vendor_boot/ramdisk/lib/modules/regulator_cdev.ko
-vendor_boot/ramdisk/lib/modules/rpm-smd-debug.ko
-vendor_boot/ramdisk/lib/modules/rpm-smd-regulator.ko
-vendor_boot/ramdisk/lib/modules/rpm-smd.ko
-vendor_boot/ramdisk/lib/modules/rpm_master_stat.ko
-vendor_boot/ramdisk/lib/modules/rproc_qcom_common.ko
-vendor_boot/ramdisk/lib/modules/rtc-pm8xxx.ko
-vendor_boot/ramdisk/lib/modules/sched-walt.ko
-vendor_boot/ramdisk/lib/modules/sdhci-msm-scaling.ko
-vendor_boot/ramdisk/lib/modules/sdhci-msm.ko
-vendor_boot/ramdisk/lib/modules/secure_buffer.ko
-vendor_boot/ramdisk/lib/modules/sg.ko
-vendor_boot/ramdisk/lib/modules/silead_fp.ko
-vendor_boot/ramdisk/lib/modules/simtray.ko
-vendor_boot/ramdisk/lib/modules/slim-qcom-ngd-ctrl.ko
-vendor_boot/ramdisk/lib/modules/slimbus.ko
-vendor_boot/ramdisk/lib/modules/smcinvoke_dlkm.ko
-vendor_boot/ramdisk/lib/modules/smem.ko
-vendor_boot/ramdisk/lib/modules/smp2p.ko
-vendor_boot/ramdisk/lib/modules/smp2p_sleepstate.ko
-vendor_boot/ramdisk/lib/modules/snd-usb-audio-qmi.ko
-vendor_boot/ramdisk/lib/modules/socinfo.ko
-vendor_boot/ramdisk/lib/modules/speed_ui.ko
-vendor_boot/ramdisk/lib/modules/spi-msm-geni.ko
-vendor_boot/ramdisk/lib/modules/spmi-pmic-arb-debug.ko
-vendor_boot/ramdisk/lib/modules/spmi-pmic-arb.ko
-vendor_boot/ramdisk/lib/modules/sps_drv.ko
-vendor_boot/ramdisk/lib/modules/stm_console.ko
-vendor_boot/ramdisk/lib/modules/stm_core.ko
-vendor_boot/ramdisk/lib/modules/stm_ftrace.ko
-vendor_boot/ramdisk/lib/modules/stm_heartbeat.ko
-vendor_boot/ramdisk/lib/modules/stm_p_ost.ko
-vendor_boot/ramdisk/lib/modules/stub-regulator.ko
-vendor_boot/ramdisk/lib/modules/swinfo.ko
-vendor_boot/ramdisk/lib/modules/sync_fence.ko
-vendor_boot/ramdisk/lib/modules/thermal_pause.ko
-vendor_boot/ramdisk/lib/modules/tz_log_dlkm.ko
-vendor_boot/ramdisk/lib/modules/ucsi_glink.ko
-vendor_boot/ramdisk/lib/modules/ufs_ffu.ko
-vendor_boot/ramdisk/lib/modules/ufs_qcom.ko
-vendor_boot/ramdisk/lib/modules/ufshcd-crypto-qti.ko
-vendor_boot/ramdisk/lib/modules/usb_f_ccid.ko
-vendor_boot/ramdisk/lib/modules/usb_f_cdev.ko
-vendor_boot/ramdisk/lib/modules/usb_f_gsi.ko
-vendor_boot/ramdisk/lib/modules/usb_f_qdss.ko
-vendor_boot/ramdisk/lib/modules/xiaomi_fingerprint.ko
-vendor_boot/ramdisk/lib/modules/xiaomi_tp.ko
-vendor_boot/ramdisk/lib/modules/zram.ko
-vendor_boot/ramdisk/lib/modules/zsmalloc.ko
-vendor_boot/dtb.img
-vendor_boot/info.txt
-vendor_dlkm/etc/NOTICE.xml.gz
-vendor_dlkm/etc/NOTICE_GPL.html.gz
-vendor_dlkm/etc/build.prop
-vendor_dlkm/etc/fs_config_dirs
-vendor_dlkm/etc/fs_config_files
-vendor_dlkm/lib/modules/adsp_loader_dlkm.ko
-vendor_dlkm/lib/modules/adsp_sleepmon.ko
-vendor_dlkm/lib/modules/altmode-glink.ko
-vendor_dlkm/lib/modules/audio_pkt_dlkm.ko
-vendor_dlkm/lib/modules/audio_prm_dlkm.ko
-vendor_dlkm/lib/modules/audpkt_ion_dlkm.ko
-vendor_dlkm/lib/modules/bam_dma.ko
-vendor_dlkm/lib/modules/bcl_pmic5.ko
-vendor_dlkm/lib/modules/bcl_soc.ko
-vendor_dlkm/lib/modules/binder_gki.ko
-vendor_dlkm/lib/modules/block2mtd.ko
-vendor_dlkm/lib/modules/boot_stats.ko
-vendor_dlkm/lib/modules/bt_fm_slim.ko
-vendor_dlkm/lib/modules/btpower.ko
-vendor_dlkm/lib/modules/bwmon.ko
-vendor_dlkm/lib/modules/camera.ko
-vendor_dlkm/lib/modules/cdsp-loader.ko
-vendor_dlkm/lib/modules/cfg80211.ko
-vendor_dlkm/lib/modules/charger-ulog-glink.ko
-vendor_dlkm/lib/modules/chipreg.ko
-vendor_dlkm/lib/modules/cnss_nl.ko
-vendor_dlkm/lib/modules/cnss_prealloc.ko
-vendor_dlkm/lib/modules/cnss_utils.ko
-vendor_dlkm/lib/modules/core_hang_detect.ko
-vendor_dlkm/lib/modules/coresight-csr.ko
-vendor_dlkm/lib/modules/coresight-cti.ko
-vendor_dlkm/lib/modules/coresight-dummy.ko
-vendor_dlkm/lib/modules/coresight-funnel.ko
-vendor_dlkm/lib/modules/coresight-remote-etm.ko
-vendor_dlkm/lib/modules/coresight-replicator.ko
-vendor_dlkm/lib/modules/coresight-stm.ko
-vendor_dlkm/lib/modules/coresight-tgu.ko
-vendor_dlkm/lib/modules/coresight-tmc-sec.ko
-vendor_dlkm/lib/modules/coresight-tmc.ko
-vendor_dlkm/lib/modules/coresight-tpda.ko
-vendor_dlkm/lib/modules/coresight-tpdm.ko
-vendor_dlkm/lib/modules/coresight.ko
-vendor_dlkm/lib/modules/cpu_hotplug.ko
-vendor_dlkm/lib/modules/debugcc-pitti.ko
-vendor_dlkm/lib/modules/dwc3-msm.ko
-vendor_dlkm/lib/modules/eud.ko
-vendor_dlkm/lib/modules/f_fs_ipc_log.ko
-vendor_dlkm/lib/modules/frpc-adsprpc.ko
-vendor_dlkm/lib/modules/fs1512_dlkm.ko
-vendor_dlkm/lib/modules/ft8057m_spi.ko
-vendor_dlkm/lib/modules/glink_probe.ko
-vendor_dlkm/lib/modules/gpr_dlkm.ko
-vendor_dlkm/lib/modules/gpucc-pitti.ko
-vendor_dlkm/lib/modules/gsim.ko
-vendor_dlkm/lib/modules/hardwareinfo.ko
-vendor_dlkm/lib/modules/hdcp_qseecom_dlkm.ko
-vendor_dlkm/lib/modules/hdmi_dlkm.ko
-vendor_dlkm/lib/modules/heap_mem_ext_v01.ko
-vendor_dlkm/lib/modules/hung_task_enh.ko
-vendor_dlkm/lib/modules/i2c-msm-geni.ko
-vendor_dlkm/lib/modules/icc-test.ko
-vendor_dlkm/lib/modules/icnss2.ko
-vendor_dlkm/lib/modules/ipam.ko
-vendor_dlkm/lib/modules/ipanetm.ko
-vendor_dlkm/lib/modules/lct_audio_info_dlkm.ko
-vendor_dlkm/lib/modules/lct_tp.ko
-vendor_dlkm/lib/modules/leds-aw2016.ko
-vendor_dlkm/lib/modules/leds-qpnp-vibrator-ldo.ko
-vendor_dlkm/lib/modules/lpass_cdc_dlkm.ko
-vendor_dlkm/lib/modules/lpass_cdc_rx_macro_dlkm.ko
-vendor_dlkm/lib/modules/lpass_cdc_tx_macro_dlkm.ko
-vendor_dlkm/lib/modules/lpass_cdc_va_macro_dlkm.ko
-vendor_dlkm/lib/modules/lpass_cdc_wsa2_macro_dlkm.ko
-vendor_dlkm/lib/modules/lpass_cdc_wsa_macro_dlkm.ko
-vendor_dlkm/lib/modules/machine_dlkm.ko
-vendor_dlkm/lib/modules/mbhc_dlkm.ko
-vendor_dlkm/lib/modules/mdt_loader.ko
-vendor_dlkm/lib/modules/memlat.ko
-vendor_dlkm/lib/modules/mi_thermal_interface.ko
-vendor_dlkm/lib/modules/millet_binder.ko
-vendor_dlkm/lib/modules/millet_core.ko
-vendor_dlkm/lib/modules/millet_hs.ko
-vendor_dlkm/lib/modules/millet_oem_cgroup.ko
-vendor_dlkm/lib/modules/millet_pkg.ko
-vendor_dlkm/lib/modules/millet_sig.ko
-vendor_dlkm/lib/modules/mmrm_test_module.ko
-vendor_dlkm/lib/modules/modules.alias
-vendor_dlkm/lib/modules/modules.blocklist
-vendor_dlkm/lib/modules/modules.dep
-vendor_dlkm/lib/modules/modules.load
-vendor_dlkm/lib/modules/modules.softdep
-vendor_dlkm/lib/modules/msm-mmrm.ko
-vendor_dlkm/lib/modules/msm_drm.ko
-vendor_dlkm/lib/modules/msm_ext_display.ko
-vendor_dlkm/lib/modules/msm_geni_serial.ko
-vendor_dlkm/lib/modules/msm_gpi.ko
-vendor_dlkm/lib/modules/msm_hw_fence.ko
-vendor_dlkm/lib/modules/msm_kgsl.ko
-vendor_dlkm/lib/modules/msm_memshare.ko
-vendor_dlkm/lib/modules/msm_performance.ko
-vendor_dlkm/lib/modules/msm_sharedmem.ko
-vendor_dlkm/lib/modules/msm_show_resume_irq.ko
-vendor_dlkm/lib/modules/msm_sysstats.ko
-vendor_dlkm/lib/modules/msm_video.ko
-vendor_dlkm/lib/modules/mtd.ko
-vendor_dlkm/lib/modules/mtd_blkdevs.ko
-vendor_dlkm/lib/modules/mtdblock.ko
-vendor_dlkm/lib/modules/mtdoops.ko
-vendor_dlkm/lib/modules/nt_36528a_spi.ko
-vendor_dlkm/lib/modules/ofpart.ko
-vendor_dlkm/lib/modules/pdr_interface.ko
-vendor_dlkm/lib/modules/perf_helper.ko
-vendor_dlkm/lib/modules/phy-generic.ko
-vendor_dlkm/lib/modules/phy-msm-snps-hs.ko
-vendor_dlkm/lib/modules/phy-msm-ssusb-qmp.ko
-vendor_dlkm/lib/modules/phy-qcom-emu.ko
-vendor_dlkm/lib/modules/phy-qcom-ufs-qmp-v4.ko
-vendor_dlkm/lib/modules/pinctrl-spmi-mpp.ko
-vendor_dlkm/lib/modules/pinctrl_lpi_dlkm.ko
-vendor_dlkm/lib/modules/pm8941-pwrkey.ko
-vendor_dlkm/lib/modules/pmic-glink-debug.ko
-vendor_dlkm/lib/modules/pmic_glink.ko
-vendor_dlkm/lib/modules/pwm-qti-lpg.ko
-vendor_dlkm/lib/modules/q6_dlkm.ko
-vendor_dlkm/lib/modules/q6_notifier_dlkm.ko
-vendor_dlkm/lib/modules/q6_pdr_dlkm.ko
-vendor_dlkm/lib/modules/qca_cld3_adrastea.ko
-vendor_dlkm/lib/modules/qce50_dlkm.ko
-vendor_dlkm/lib/modules/qcedev-mod_dlkm.ko
-vendor_dlkm/lib/modules/qcom-cpufreq-hw-debug.ko
-vendor_dlkm/lib/modules/qcom-dload-mode.ko
-vendor_dlkm/lib/modules/qcom-pon.ko
-vendor_dlkm/lib/modules/qcom-reboot-reason.ko
-vendor_dlkm/lib/modules/qcom-spmi-adc-tm5.ko
-vendor_dlkm/lib/modules/qcom-spmi-adc5.ko
-vendor_dlkm/lib/modules/qcom-spmi-temp-alarm.ko
-vendor_dlkm/lib/modules/qcom-spmi-wled.ko
-vendor_dlkm/lib/modules/qcom-vadc-common.ko
-vendor_dlkm/lib/modules/qcom_glink_spss.ko
-vendor_dlkm/lib/modules/qcom_iommu_debug.ko
-vendor_dlkm/lib/modules/qcom_lpm.ko
-vendor_dlkm/lib/modules/qcom_pil_info.ko
-vendor_dlkm/lib/modules/qcom_pm8008-regulator.ko
-vendor_dlkm/lib/modules/qcom_q6v5.ko
-vendor_dlkm/lib/modules/qcom_q6v5_pas.ko
-vendor_dlkm/lib/modules/qcom_ramdump.ko
-vendor_dlkm/lib/modules/qcom_stats.ko
-vendor_dlkm/lib/modules/qcom_sysmon.ko
-vendor_dlkm/lib/modules/qcom_tsens.ko
-vendor_dlkm/lib/modules/qcrypto-msm_dlkm.ko
-vendor_dlkm/lib/modules/qfprom-sys.ko
-vendor_dlkm/lib/modules/qmi_helpers.ko
-vendor_dlkm/lib/modules/qpnp-lcdb-regulator.ko
-vendor_dlkm/lib/modules/qrng_dlkm.ko
-vendor_dlkm/lib/modules/qrtr-smd.ko
-vendor_dlkm/lib/modules/qseecom_proxy.ko
-vendor_dlkm/lib/modules/qti-glink-adc.ko
-vendor_dlkm/lib/modules/qti-ocp-notifier.ko
-vendor_dlkm/lib/modules/qti_battery_charger.ko
-vendor_dlkm/lib/modules/qti_battery_debug.ko
-vendor_dlkm/lib/modules/qti_cpufreq_cdev.ko
-vendor_dlkm/lib/modules/qti_devfreq_cdev.ko
-vendor_dlkm/lib/modules/qti_qmi_cdev.ko
-vendor_dlkm/lib/modules/qti_qmi_sensor_v2.ko
-vendor_dlkm/lib/modules/qti_userspace_cdev.ko
-vendor_dlkm/lib/modules/radio-i2c-rtc6226-qca.ko
-vendor_dlkm/lib/modules/rdbg.ko
-vendor_dlkm/lib/modules/reboot-mode.ko
-vendor_dlkm/lib/modules/regulator_cdev.ko
-vendor_dlkm/lib/modules/rmnet_aps.ko
-vendor_dlkm/lib/modules/rmnet_core.ko
-vendor_dlkm/lib/modules/rmnet_ctl.ko
-vendor_dlkm/lib/modules/rmnet_mem.ko
-vendor_dlkm/lib/modules/rmnet_offload.ko
-vendor_dlkm/lib/modules/rmnet_perf.ko
-vendor_dlkm/lib/modules/rmnet_perf_tether.ko
-vendor_dlkm/lib/modules/rmnet_sch.ko
-vendor_dlkm/lib/modules/rmnet_shs.ko
-vendor_dlkm/lib/modules/rmnet_wlan.ko
-vendor_dlkm/lib/modules/rpm-smd-debug.ko
-vendor_dlkm/lib/modules/rpm_master_stat.ko
-vendor_dlkm/lib/modules/rproc_qcom_common.ko
-vendor_dlkm/lib/modules/sg.ko
-vendor_dlkm/lib/modules/sia8001_dlkm.ko
-vendor_dlkm/lib/modules/slim-qcom-ngd-ctrl.ko
-vendor_dlkm/lib/modules/slimbus.ko
-vendor_dlkm/lib/modules/smcinvoke_dlkm.ko
-vendor_dlkm/lib/modules/smmu_proxy_dlkm.ko
-vendor_dlkm/lib/modules/smp2p.ko
-vendor_dlkm/lib/modules/smp2p_sleepstate.ko
-vendor_dlkm/lib/modules/snd-usb-audio-qmi.ko
-vendor_dlkm/lib/modules/snd_event_dlkm.ko
-vendor_dlkm/lib/modules/speed_ui.ko
-vendor_dlkm/lib/modules/spf_core_dlkm.ko
-vendor_dlkm/lib/modules/spi-msm-geni.ko
-vendor_dlkm/lib/modules/spmi-pmic-arb-debug.ko
-vendor_dlkm/lib/modules/sps_drv.ko
-vendor_dlkm/lib/modules/stm_console.ko
-vendor_dlkm/lib/modules/stm_core.ko
-vendor_dlkm/lib/modules/stm_ftrace.ko
-vendor_dlkm/lib/modules/stm_heartbeat.ko
-vendor_dlkm/lib/modules/stm_p_ost.ko
-vendor_dlkm/lib/modules/stub_dlkm.ko
-vendor_dlkm/lib/modules/swr_ctrl_dlkm.ko
-vendor_dlkm/lib/modules/swr_dlkm.ko
-vendor_dlkm/lib/modules/swr_haptics_dlkm.ko
-vendor_dlkm/lib/modules/sync_fence.ko
-vendor_dlkm/lib/modules/thermal_pause.ko
-vendor_dlkm/lib/modules/tz_log_dlkm.ko
-vendor_dlkm/lib/modules/ucsi_glink.ko
-vendor_dlkm/lib/modules/ufs_ffu.ko
-vendor_dlkm/lib/modules/usb_f_ccid.ko
-vendor_dlkm/lib/modules/usb_f_cdev.ko
-vendor_dlkm/lib/modules/usb_f_gsi.ko
-vendor_dlkm/lib/modules/usb_f_qdss.ko
-vendor_dlkm/lib/modules/wcd9378_dlkm.ko
-vendor_dlkm/lib/modules/wcd9378_slave_dlkm.ko
-vendor_dlkm/lib/modules/wcd9xxx_dlkm.ko
-vendor_dlkm/lib/modules/wcd_core_dlkm.ko
-vendor_dlkm/lib/modules/wlan_firmware_service.ko
-vendor_dlkm/lib/modules/wsa881x_analog_dlkm.ko
-vendor_dlkm/lib/modules/xiaomi_tp.ko
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Copyright (c) 2021, The Linux Foundation. All rights reserved.
+
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are
+* met:
+*     * Redistributions of source code must retain the above copyright
+*       notice, this list of conditions and the following disclaimer.
+*     * Redistributions in binary form must reproduce the above
+*       copyright notice, this list of conditions and the following
+*       disclaimer in the documentation and/or other materials provided
+*       with the distribution.
+*     * Neither the name of The Linux Foundation nor the names of its
+*       contributors may be used to endorse or promote products derived
+*       from this software without specific prior written permission.
+
+* THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+* WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+* ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+* BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+* CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+* SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+* BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+* WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+* OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+* IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+* Changes from Qualcomm Innovation Center are provided under the following license:
+* Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
+* SPDX-License-Identifier: BSD-3-Clause-Clear
+* -->
+
+<graph_key_value_pair_info>
+    <streams>
+        <!-- Low-latency stream -->
+        <stream type="PAL_STREAM_LOW_LATENCY">
+            <keys_and_values Direction="TX" Instance="1">
+                <!-- STREAMTX - RAW_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB1000009"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX" Instance="1">
+                <!-- STREAMRX - PCM_LL_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA100000E"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX" Instance="2">
+                <!-- STREAMRX - PCM_LL_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA100000E"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+        </stream>
+        <!-- Deep Buffer stream -->
+        <stream type="PAL_STREAM_DEEP_BUFFER">
+            <keys_and_values Direction="RX" Instance="1">
+                <!-- STREAMRX - PCM_DEEP_BUFFER -->
+                <graph_kv key="0xA1000000" value="0xA1000001"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX" Instance="2">
+                <!-- STREAMRX - PCM_DEEP_BUFFER -->
+                <graph_kv key="0xA1000000" value="0xA1000001"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" Instance="1">
+                <!-- STREAMTX - PCM_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB1000001"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" Instance="2">
+                <!-- STREAMTX - PCM_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB1000001"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+        </stream>
+        <!-- Spatial audio stream -->
+        <stream type="PAL_STREAM_SPATIAL_AUDIO">
+            <keys_and_values Direction="RX" Instance="1">
+                <!-- STREAMRX - SPATIAL_AUDIO_PLAYBACK  -->
+                <graph_kv key="0xA1000000" value="0xA1000018"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+        </stream>
+        <stream type="PAL_STREAM_VOICE_RECOGNITION">
+            <keys_and_values Direction="TX" Instance="1">
+                <!-- STREAMTX - VOICE_RECOGNITION_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB1000011"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+        </stream>
+        <!-- Compress stream -->
+        <stream type="PAL_STREAM_COMPRESSED">
+            <keys_and_values Direction="RX" Instance="1">
+                <!-- STREAMRX - COMPRESSED_OFFLOAD_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA100000A"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" Instance="1">
+                <!-- STREAMTX - compress capture stream -->
+                <graph_kv key="0xB1000000" value="0xB1000012"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+        </stream>
+        <!-- VOIP RX stream -->
+        <stream type="PAL_STREAM_VOIP_RX">
+            <keys_and_values>
+                <!-- STREAMRX - VOIP_RX_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000005"/>
+            </keys_and_values>
+        </stream>
+        <!-- VOIP TX stream -->
+        <stream type="PAL_STREAM_VOIP_TX">
+            <keys_and_values>
+                <!-- STREAMTX - VOIP_TX_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB1000004"/>
+            </keys_and_values>
+        </stream>
+        <!-- Voice Call Music stream -->
+        <stream type="PAL_STREAM_VOICE_CALL_MUSIC">
+            <keys_and_values>
+                <!-- STREAMRX - INCALL_MUSIC-->
+                <graph_kv key="0xA1000000" value="0xA1000013"/>
+            </keys_and_values>
+            <keys_and_values CustomConfig="icmd_plus">
+                <!-- STREAMRX - INCALL_MUSIC PLUS-->
+                <graph_kv key="0xA1000000" value="0xA100001A"/>
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+        </stream>
+        <!-- Generic-playback stream -->
+        <stream type="PAL_STREAM_GENERIC">
+            <keys_and_values Direction="RX" Instance="1">
+                <!-- STREAMRX - GENERIC_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000014"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+           </keys_and_values>
+           <keys_and_values Direction="RX" Instance="2">
+                <!-- STREAMRX - GENERIC_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000014"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+           </keys_and_values>
+        </stream>
+        <!-- Voice Call Record stream -->
+        <stream type="PAL_STREAM_VOICE_CALL_RECORD">
+            <keys_and_values>
+                <!-- STREAMTX - INCALL_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB100000C"/>
+            </keys_and_values>
+        </stream>
+        <!-- Voice stream -->
+        <stream type="PAL_STREAM_VOICE_CALL">
+            <keys_and_values Direction="RX" VSID="VOICEMMODE1,VOICEMMODE2,VOICELBMMODE1,VOICELBMMODE2">
+                <!-- STREAMRX - VOICE_CALL_RX -->
+                <graph_kv key="0xA1000000" value="0xA1000010"/>
+                <!-- VSID - VSID_DEFAULT -->
+                <graph_kv key="0xB3000000" value="0xB3000001"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" VSID="VOICEMMODE1,VOICEMMODE2,VOICELBMMODE1,VOICELBMMODE2">
+                <!-- STREAMTX - VOICE_CALL_TX -->
+                <graph_kv key="0xB1000000" value="0xB1000007"/>
+                <!-- VSID - VSID_DEFAULT -->
+                <graph_kv key="0xB3000000" value="0xB3000001"/>
+            </keys_and_values>
+        </stream>
+        <!-- Loopback stream -->
+        <stream type="PAL_STREAM_LOOPBACK">
+            <keys_and_values Direction="RX" SubType="PAL_STREAM_LOOPBACK_HFP_RX">
+                <!-- STREAMRX - HFP_RX_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA100000C"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" SubType="PAL_STREAM_LOOPBACK_HFP_RX">
+                <!-- STREAMTX - HFP_RX_CAPTURE -->
+                <graph_kv key="0xB1000000" value="0xB1000005"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX_TX" SubType="PAL_STREAM_LOOPBACK_PCM,PAL_STREAM_LOOPBACK_FM,PAL_STREAM_LOOPBACK_KARAOKE">
+                <!-- STREAMRX - PCM_RX_LOOPBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000003"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX" SubType="PAL_STREAM_LOOPBACK_PLAYBACK_ONLY">
+                <!-- STREAMRX - PCM_RX_LOOPBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000003"/>
+            </keys_and_values>
+        </stream>
+        <!-- Voice UI stream -->
+        <stream type="PAL_STREAM_VOICE_UI">
+            <keys_and_values VUIModuleType="GMM" Instance="1">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_GMM -->
+                <graph_kv key="0xBC000000" value="0xBC000005"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="GMM" Instance="2">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_GMM -->
+                <graph_kv key="0xBC000000" value="0xBC000005"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="PDK" Instance="1">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_PDK -->
+                <graph_kv key="0xBC000000" value="0xBC000006"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="PDK" Instance="2">
+                 <!-- STREAM_CONFIG - STREAM_CFG_VUI_PDK -->
+                 <graph_kv key="0xBC000000" value="0xBC000006"/>
+                 <!-- STREAMTX - VOICE_UI -->
+                 <graph_kv key="0xB1000000" value="0xB1000003"/>
+                 <!-- INSTANCE - INSTANCE_2 -->
+                 <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="PDK" Instance="3">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_PDK -->
+                <graph_kv key="0xBC000000" value="0xBC000006"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_3 -->
+                <graph_kv key="0xAB000000" value="0x3"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="HOTWORD" Instance="1">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_HW -->
+                <graph_kv key="0xBC000000" value="0xBC000002"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="CUSTOM1" Instance="1">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_CUSTOM -->
+                <graph_kv key="0xBC000000" value="0xBC000004"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="CUSTOM1" Instance="2">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_CUSTOM -->
+                <graph_kv key="0xBC000000" value="0xBC000004"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+        </stream>
+        <!-- PCM-Offload stream -->
+        <stream type="PAL_STREAM_PCM_OFFLOAD">
+            <keys_and_values Direction="RX" Instance="1">
+                <!-- STREAMRX - PCM_OFFLOAD_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA100000F"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+        </stream>
+        <!-- Ultra-Low-latency stream -->
+        <stream type="PAL_STREAM_ULTRA_LOW_LATENCY">
+            <keys_and_values Direction="RX" Instance="1">
+                <!-- STREAMRX - PCM_ULL_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000011"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX" Instance="2">
+                <!-- STREAMRX - PCM_ULL_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000011"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" Instance="1">
+                <!-- STREAMTX - PCM_ULL_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB100000A"/>
+            </keys_and_values>
+        </stream>
+        <!-- Proxy stream -->
+        <stream type="PAL_STREAM_PROXY">
+            <keys_and_values Direction="TX">
+                <!-- STREAMTX - PCM_PROXY_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB100000B"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" SubType="PAL_STREAM_PROXY_TX_WFD">
+                <!-- STREAMTX - PCM_PROXY_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB100000B"/>
+                <!-- PROXY_TX_TYPE - PROXY_TX_WFD -->
+                <graph_kv key="0xD1000000" value="0xD1000002"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX" SubType="PAL_STREAM_PROXY_TX_TELEPHONY_RX">
+                <!-- STREAMTX - PCM_PROXY_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB100000B"/>
+                <!-- PROXY_TX_TYPE - PROXY_TX_VOICE_RX -->
+                <graph_kv key="0xD1000000" value="0xD1000003"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX">
+                <!-- STREAMRX - PCM_PROXY_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000012"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX" SubType="PAL_STREAM_PROXY_RX_WFD">
+                <!-- STREAMRX - PCM_PROXY_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000012"/>
+            </keys_and_values>
+        </stream>
+        <!-- Non-Tunnel stream -->
+        <stream type="PAL_STREAM_NON_TUNNEL">
+            <keys_and_values AudioFormat="PAL_AUDIO_FMT_PCM" Instance="1">
+                <!-- STREAM - NT_ENCODE -->
+                <graph_kv key="0xD3000000" value="0xD2000002"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values AudioFormat="PAL_AUDIO_FMT_NON_PCM" Instance="1">
+                <!-- STREAM - NT_DECODE -->
+                <graph_kv key="0xD3000000" value="0xD2000001"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values AudioFormat="PAL_AUDIO_FMT_PCM" Instance="2">
+                <!-- STREAM - NT_ENCODE -->
+                <graph_kv key="0xD3000000" value="0xD2000002"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+            <keys_and_values AudioFormat="PAL_AUDIO_FMT_NON_PCM" Instance="2">
+                <!-- STREAM - NT_DECODE -->
+                <graph_kv key="0xD3000000" value="0xD2000001"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+        </stream>
+        <!-- Haptics stream -->
+        <stream type="PAL_STREAM_HAPTICS">
+            <keys_and_values>
+                <!-- STREAMRX - HAPTICS_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000015"/>
+            </keys_and_values>
+        </stream>
+        <!-- Raw stream -->
+        <stream type="PAL_STREAM_RAW">
+            <keys_and_values Direction="RX">
+                <!-- STREAMRX - RAW_PLAYBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000019"/>
+            </keys_and_values>
+            <keys_and_values Direction="TX">
+                <!-- STREAMTX - RAW_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB1000009"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX_TX">
+                <!-- STREAMRX - PCM_RX_LOOPBACK -->
+                <graph_kv key="0xA1000000" value="0xA1000003"/>
+            </keys_and_values>
+        </stream>
+        <!-- ACD stream -->
+        <stream type="PAL_STREAM_ACD">
+            <keys_and_values ACDModuleType="QC_ACD">
+                <!-- STREAM_CONFIG - STREAM_CFG_ACD_QC -->
+                <graph_kv key="0xBC000000" value="0xBC000007"/>
+                <!-- STREAMTX - ACD -->
+                <graph_kv key="0xB1000000" value="0xB100000D"/>
+            </keys_and_values>
+        </stream>
+        <!-- Sensor PCM Data stream -->
+        <stream type="PAL_STREAM_SENSOR_PCM_DATA">
+            <keys_and_values ACDModuleType="QC_SENSOR_PCM_DATA" Instance="1">
+                <!-- STREAMTX - SENSOR_PCM_DATA -->
+                <graph_kv key="0xB1000000" value="0xB100000E"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values ACDModuleType="QC_SENSOR_PCM_DATA" Instance="2">
+                <!-- STREAMTX - SENSOR_PCM_DATA -->
+                <graph_kv key="0xB1000000" value="0xB100000E"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+        </stream>
+    </streams>
+    <streampps>
+        <!-- Voice Call stream PP -->
+        <streampp type="PAL_STREAM_VOICE_CALL">
+            <keys_and_values>
+                <!-- STREAMPP_RX - STREAMPP_RX_DEFAULT -->
+                <graph_kv key="0xAF000000" value="0xAF000001"/>
+            </keys_and_values>
+        </streampp>
+    </streampps>
+    <devices>
+        <!-- Speaker Device -->
+        <device id="PAL_DEVICE_OUT_SPEAKER">
+            <keys_and_values>
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+            </keys_and_values>
+        </device>
+        <!-- Handset Device -->
+        <device id="PAL_DEVICE_OUT_HANDSET">
+            <keys_and_values>
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+            </keys_and_values>
+        </device>
+        <!-- AUX Device -->
+        <device id="PAL_DEVICE_OUT_AUX_DIGITAL,PAL_DEVICE_OUT_AUX_DIGITAL_1,PAL_DEVICE_OUT_HDMI">
+            <keys_and_values>
+                <!-- DEVICERX - HDMI_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000006"/>
+            </keys_and_values>
+        </device>
+        <!-- wired USB Device-->
+        <device id="PAL_DEVICE_OUT_WIRED_HEADSET,PAL_DEVICE_OUT_WIRED_HEADPHONE">
+            <keys_and_values>
+                <!-- DEVICERX - HEADPHONES -->
+                <graph_kv key="0xA2000000" value="0xA2000002"/>
+            </keys_and_values>
+        </device>
+        <!-- USB Device-->
+        <device id="PAL_DEVICE_OUT_USB_HEADSET,PAL_DEVICE_OUT_USB_DEVICE">
+            <keys_and_values>
+                <!-- DEVICERX - USB_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000005"/>
+            </keys_and_values>
+        </device>
+        <!-- In Handset MIC Device -->
+        <device id="PAL_DEVICE_IN_HANDSET_MIC">
+            <keys_and_values>
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+            </keys_and_values>
+            <keys_and_values SidetoneMode="SW">
+                <!-- SW_SIDETONE - SW_SIDETONE_ON -->
+                <graph_kv key="0xBA000000" value="0xBA000001"/>
+            </keys_and_values>
+        </device>
+        <!-- In speaker MIC Device-->
+        <device id="PAL_DEVICE_IN_SPEAKER_MIC">
+            <keys_and_values>
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+            </keys_and_values>
+            <keys_and_values SidetoneMode="SW">
+                <!-- SW_SIDETONE - SW_SIDETONE_ON -->
+                <graph_kv key="0xBA000000" value="0xBA000001"/>
+            </keys_and_values>
+        </device>
+        <!-- In wired Headset Device -->
+        <device id="PAL_DEVICE_IN_WIRED_HEADSET">
+            <keys_and_values>
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+            </keys_and_values>
+            <keys_and_values SidetoneMode="SW">
+                <!-- SW_SIDETONE - SW_SIDETONE_ON -->
+                <graph_kv key="0xBA000000" value="0xBA000001"/>
+            </keys_and_values>
+        </device>
+        <!-- In USB Headset Device -->
+        <device id="PAL_DEVICE_IN_USB_DEVICE,PAL_DEVICE_IN_USB_HEADSET">
+            <keys_and_values>
+                <!-- DEVICETX - USB_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000005"/>
+            </keys_and_values>
+            <keys_and_values SidetoneMode="SW">
+                <!-- SW_SIDETONE - SW_SIDETONE_ON -->
+                <graph_kv key="0xBA000000" value="0xBA000001"/>
+            </keys_and_values>
+        </device>
+        <!-- In Handset VA MIC Device -->
+        <device id="PAL_DEVICE_IN_HANDSET_VA_MIC">
+            <keys_and_values>
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+            </keys_and_values>
+        </device>
+        <!-- In Headset VA MIC Device -->
+        <device id="PAL_DEVICE_IN_HEADSET_VA_MIC">
+            <keys_and_values>
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+            </keys_and_values>
+        </device>
+        <!-- Proxy IN Device -->
+        <device id="PAL_DEVICE_IN_PROXY">
+            <keys_and_values>
+                <!-- DEVICETX - PROXY_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000008"/>
+            </keys_and_values>
+            <keys_and_values SubType="PAL_STREAM_PROXY_TX_WFD">
+                <!-- DEVICETX - PROXY_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000008"/>
+                <!-- PROXY_TX_TYPE - PROXY_TX_WFD -->
+                <graph_kv key="0xD1000000" value="0xD1000002"/>
+            </keys_and_values>
+        </device>
+        <!-- Proxy Record IN Device -->
+        <device id="PAL_DEVICE_IN_RECORD_PROXY">
+            <keys_and_values>
+                <!-- DEVICETX - PROXY_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000008"/>
+            </keys_and_values>
+            <keys_and_values SubType="PAL_STREAM_PROXY_TX_WFD">
+                <!-- DEVICETX - PROXY_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000008"/>
+                <!-- PROXY_TX_TYPE - PROXY_TX_WFD -->
+                <graph_kv key="0xD1000000" value="0xD1000002"/>
+            </keys_and_values>
+        </device>
+        <!-- Proxy Out Device -->
+        <device id="PAL_DEVICE_OUT_PROXY">
+            <keys_and_values>
+                <!-- DEVICERX - PROXY_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000007"/>
+            </keys_and_values>
+            <keys_and_values SubType="PAL_STREAM_PROXY_RX_WFD">
+                <!-- DEVICERX - PROXY_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000007"/>
+                <!-- PROXY_RX_TYPE - PROXY_RX_WFD -->
+                <graph_kv key="0xE7010000" value="0xE7010002"/>
+            </keys_and_values>
+        </device>
+        <!-- Proxy Out Record Device -->
+        <device id="PAL_DEVICE_OUT_RECORD_PROXY">
+            <keys_and_values>
+                <!-- DEVICERX - PROXY_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000007"/>
+            </keys_and_values>
+            <keys_and_values SubType="PAL_STREAM_PROXY_RX_WFD">
+                <!-- DEVICERX - PROXY_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000007"/>
+                <!-- PROXY_RX_TYPE - PROXY_RX_WFD -->
+                <graph_kv key="0xE7010000" value="0xE7010002"/>
+            </keys_and_values>
+
+        </device>
+        <!-- In Telephony RX Device -->
+        <device id="PAL_DEVICE_IN_TELEPHONY_RX">
+            <keys_and_values>
+                <!-- DEVICETX - PROXY_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000008"/>
+            </keys_and_values>
+            <keys_and_values SubType="PAL_STREAM_PROXY_TX_TELEPHONY_RX">
+                <!-- DEVICETX - PROXY_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000008"/>
+                <!-- PROXY_TX_TYPE - PROXY_TX_VOICE_RX -->
+                <graph_kv key="0xD1000000" value="0xD1000003"/>
+            </keys_and_values>
+        </device>
+        <!-- In VI feedback Device -->
+        <device id="PAL_DEVICE_IN_VI_FEEDBACK">
+            <keys_and_values>
+                <!-- DEVICETX - VI_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000009"/>
+            </keys_and_values>
+        </device>
+        <!-- In CPS feedback Device -->
+        <device id="PAL_DEVICE_IN_CPS_FEEDBACK">
+            <keys_and_values>
+                <!-- DEVICETX - CPS_TX -->
+                <graph_kv key="0xA3000000" value="0xA300000E"/>
+            </keys_and_values>
+        </device>
+        <!-- In Haptics VI feedback Device -->
+        <device id="PAL_DEVICE_IN_HAPTICS_VI_FEEDBACK">
+            <keys_and_values>
+                <!-- DEVICETX - HAPTICS_VI_TX -->
+                <graph_kv key="0xA3000000" value="0xA300000C"/>
+            </keys_and_values>
+        </device>
+        <!-- Out hearing AID Device -->
+        <device id="PAL_DEVICE_OUT_HEARING_AID">
+            <keys_and_values>
+                <!-- DEVICERX - PROXY_RX_VOICE -->
+                <graph_kv key="0xA2000000" value="0xA2000008"/>
+            </keys_and_values>
+        </device>
+        <!-- Out Haptics Device -->
+        <device id="PAL_DEVICE_OUT_HAPTICS_DEVICE">
+            <keys_and_values>
+                <!-- DEVICERX - HAPTICS_DEVICE -->
+                <graph_kv key="0xA2000000" value="0xA2000009"/>
+            </keys_and_values>
+        </device>
+        <!-- In FM Tuner Device -->
+        <device id="PAL_DEVICE_IN_FM_TUNER">
+            <keys_and_values>
+                <!-- DEVICETX - FM_TX -->
+                <graph_kv key="0xA3000000" value="0xA300000A"/>
+            </keys_and_values>
+        </device>
+        <!-- Out Ultrasound Device -->
+        <device id="PAL_DEVICE_OUT_ULTRASOUND">
+            <keys_and_values>
+                <!-- DEVICERX - ULTRASOUND_RX -->
+                <graph_kv key="0xA2000000" value="0xA200000A"/>
+            </keys_and_values>
+        </device>
+        <!-- Out Ultrasound Device -->
+        <device id="PAL_DEVICE_OUT_ULTRASOUND_DEDICATED">
+            <keys_and_values>
+                <!-- DEVICERX - ULTRASOUND_RX -->
+                <graph_kv key="0xA2000000" value="0xA200000B"/>
+            </keys_and_values>
+        </device>
+        <!-- In Ultrasound Device -->
+        <device id="PAL_DEVICE_IN_ULTRASOUND_MIC">
+            <keys_and_values>
+                <!-- DEVICETX - ULTRASOUND_TX -->
+                <graph_kv key="0xA3000000" value="0xA300000B"/>
+            </keys_and_values>
+        </device>
+        <!-- In External EC Reference Device -->
+        <device id="PAL_DEVICE_IN_EXT_EC_REF">
+            <keys_and_values>
+                <!-- DEVICETX_EXT - EXT_EC_TX -->
+                <graph_kv key="0xD7000000" value="0xD7000001"/>
+            </keys_and_values>
+        </device>
+        <!-- BT A2DP OUT Device -->
+        <device id="PAL_DEVICE_OUT_BLUETOOTH_A2DP">
+            <keys_and_values CodecFormat="CODEC_TYPE_LDAC" AbrEnabled="TRUE,FALSE" Hostless="TRUE,FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - LDAC -->
+                <graph_kv key="0xB5000000" value="0xB5000002"/>
+            </keys_and_values>
+            <!-- In APTX_AD ABR is always enabled -->
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD" AbrEnabled="TRUE,FALSE" Hostless="TRUE,FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - APTX_ADAPTIVE -->
+                <graph_kv key="0xB5000000" value="0xB5000003"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" AbrEnabled="TRUE,FALSE" Hostless="TRUE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" AbrEnabled="TRUE,FALSE" Hostless="FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_AAC" AbrEnabled="TRUE" Hostless="TRUE,FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - AAC_ABR -->
+                <graph_kv key="0xB5000000" value="0xB5000006"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_AAC,CODEC_TYPE_SBC,CODEC_TYPE_APTX,CODEC_TYPE_APTX_HD,CODEC_TYPE_APTX_DUAL_MONO" AbrEnabled="FALSE" Hostless="TRUE,FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - GENERIC -->
+                <graph_kv key="0xB5000000" value="0xB5000001"/>
+            </keys_and_values>
+        </device>
+        <!-- BT BLE OUT Device -->
+        <device id="PAL_DEVICE_OUT_BLUETOOTH_BLE">
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" AbrEnabled="TRUE,FALSE" Hostless="TRUE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" AbrEnabled="TRUE,FALSE" Hostless="FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_QLEA" AbrEnabled="TRUE,FALSE" Hostless="FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_QLEA -->
+                <graph_kv key="0xB5000000" value="0xB5000007"/>
+            </keys_and_values>
+        </device>
+        <!-- BT BLE BROADCAST OUT Device -->
+        <device id="PAL_DEVICE_OUT_BLUETOOTH_BLE_BROADCAST">
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" AbrEnabled="TRUE,FALSE" Hostless="FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_QLEA" AbrEnabled="TRUE,FALSE" Hostless="FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_QLEA -->
+                <graph_kv key="0xB5000000" value="0xB5000007"/>
+            </keys_and_values>
+        </device>
+        <!-- BT A2DP IN Device -->
+        <device id="PAL_DEVICE_IN_BLUETOOTH_A2DP">
+            <keys_and_values CodecFormat="CODEC_TYPE_LDAC,CODEC_TYPE_APTX_AD,CODEC_TYPE_AAC" Hostless="TRUE,FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+               </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" Hostless="TRUE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" Hostless="FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+        </device>
+        <!-- BT BLE IN Device -->
+        <device id="PAL_DEVICE_IN_BLUETOOTH_BLE">
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" Hostless="TRUE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" Hostless="FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_QLEA" Hostless="TRUE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_QLEA -->
+                <graph_kv key="0xB5000000" value="0xB5000007"/>
+            </keys_and_values>
+        </device>
+        <!-- BT SCO OUT Device -->
+        <device id="PAL_DEVICE_OUT_BLUETOOTH_SCO">
+            <keys_and_values CodecFormat="CODEC_TYPE_INVALID">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - SCO -->
+                <graph_kv key="0xB4000000" value="0xB4000001"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_SPEECH">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - SCO -->
+                <graph_kv key="0xB4000000" value="0xB4000001"/>
+                <!-- BT_FORMAT - SWB -->
+                <graph_kv key="0xB5000000" value="0xB5000004"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - SCO -->
+                <graph_kv key="0xB4000000" value="0xB4000001"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+        </device>
+        <!-- BT SCO In Headset Device -->
+        <device id="PAL_DEVICE_IN_BLUETOOTH_SCO_HEADSET">
+             <keys_and_values CodecFormat="CODEC_TYPE_INVALID">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - SCO -->
+                <graph_kv key="0xB4000000" value="0xB4000001"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_SPEECH">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - SCO -->
+                <graph_kv key="0xB4000000" value="0xB4000001"/>
+                <!-- BT_FORMAT - SWB -->
+                <graph_kv key="0xB5000000" value="0xB5000004"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - SCO -->
+                <graph_kv key="0xB4000000" value="0xB4000001"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+        </device>
+        <!-- Echo Ref Device -->
+        <device id="PAL_DEVICE_IN_ECHO_REF">
+            <keys_and_values>
+                <!-- DEVICETX - ECHO_REF_TX -->
+                <graph_kv key="0xA3000000" value="0xA300000D"/>
+            </keys_and_values>
+        </device>
+        <device id="PAL_DEVICE_OUT_DUMMY">
+            <keys_and_values>
+                <!-- DEVICERX - DUMMY_RX -->
+                <graph_kv key="0xA2000000" value="0xA200000C"/>
+            </keys_and_values>
+        </device>
+        <device id="PAL_DEVICE_IN_DUMMY">
+            <keys_and_values>
+                <!-- DEVICETX - DUMMY_TX -->
+                <graph_kv key="0xA3000000" value="0xA300000F"/>
+            </keys_and_values>
+        </device>
+    </devices>
+    <devicepps>
+        <!-- OUT Speaker DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_SPEAKER">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC,PAL_STREAM_SPATIAL_AUDIO">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_GENERIC,PAL_STREAM_LOW_LATENCY,PAL_STREAM_SPATIAL_AUDIO" CustomConfig="mspp">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MSPP -->
+                <graph_kv key="0xAC000000" value="0xAC00000B"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_RAW">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000001"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOW_LATENCY" CustomConfig="speaker-safe">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_RX">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_HFP_RX">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_HFPSINK -->
+                <graph_kv key="0xAC000000" value="0xAC000004"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="rx-nn-ns,dual-mic-cascade,quad-mic-cascade">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT RX_NN_NS/CASCADE -->
+                <graph_kv key="0xAC000000" value="0xAC000009"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_ULTRASOUND">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
+                <graph_kv key="0xAC000000" value="0xAC000006"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOW_LATENCY,PAL_STREAM_PCM_OFFLOAD" CustomConfig="speaker-clean">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_CLEAN -->
+                <graph_kv key="0xAC000000" value="0xAC000082"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Handset DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_HANDSET">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC">
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_RAW">
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000001"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_RX">
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_ULTRASOUND">
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
+                <graph_kv key="0xAC000000" value="0xAC000006"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic-rve">
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_RVE -->
+                <graph_kv key="0xAC000000" value="0xAC000007"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="rx-nn-ns,dual-mic-cascade">
+                <!-- DEVICERX - HANDSET -->
+                <graph_kv key="0xA2000000" value="0xA2000004"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE RX_NN_NS/CASCADE -->
+                <graph_kv key="0xAC000000" value="0xAC000009"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Headset and Headphone Digital DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_WIRED_HEADSET,PAL_DEVICE_OUT_WIRED_HEADPHONE">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC,PAL_STREAM_SPATIAL_AUDIO">
+                <!-- DEVICERX - HEADPHONES -->
+                <graph_kv key="0xA2000000" value="0xA2000002"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_RAW">
+                <!-- DEVICERX - HEADPHONES -->
+                <graph_kv key="0xA2000000" value="0xA2000002"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000001"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_RX">
+                <!-- DEVICERX - HEADPHONES -->
+                <graph_kv key="0xA2000000" value="0xA2000002"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICERX - HEADPHONES -->
+                <graph_kv key="0xA2000000" value="0xA2000002"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
+                <!-- DEVICERX - HEADPHONES -->
+                <graph_kv key="0xA2000000" value="0xA2000002"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_KARAOKE -->
+                <graph_kv key="0xAC000000" value="0xAC000081"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="rx-nn-ns">
+                <!-- DEVICERX - HEADPHONES -->
+                <graph_kv key="0xA2000000" value="0xA2000002"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT RX_NN_NS -->
+                <graph_kv key="0xAC000000" value="0xAC000009"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Bluetooth A2DP DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_BLUETOOTH_A2DP">
+            <keys_and_values StreamType="PAL_STREAM_COMPRESSED,PAL_STREAM_DEEP_BUFFER,PAL_STREAM_LOW_LATENCY,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_GENERIC,PAL_STREAM_SPATIAL_AUDIO">
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_RX" >
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000003"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Bluetooth BLE DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_BLUETOOTH_BLE">
+            <keys_and_values StreamType="PAL_STREAM_COMPRESSED,PAL_STREAM_DEEP_BUFFER,PAL_STREAM_LOW_LATENCY,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_SPATIAL_AUDIO">
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_RX" >
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Bluetooth BLE BROADCAST DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_BLUETOOTH_BLE_BROADCAST">
+            <keys_and_values StreamType="PAL_STREAM_COMPRESSED,PAL_STREAM_DEEP_BUFFER,PAL_STREAM_LOW_LATENCY,PAL_STREAM_PCM_OFFLOAD">
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT BT SCO DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_BLUETOOTH_SCO">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC,PAL_STREAM_SPATIAL_AUDIO">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_RX">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT HDMI and AUX Digital DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_HDMI,PAL_DEVICE_OUT_AUX_DIGITAL,PAL_DEVICE_OUT_AUX_DIGITAL_1">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC">
+                <!-- DEVICERX - HDMI_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000006"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_RAW">
+                <!-- DEVICERX - HDMI_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000006"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000001"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT USB device and USB Headset DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_USB_DEVICE,PAL_DEVICE_OUT_USB_HEADSET">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC,PAL_STREAM_SPATIAL_AUDIO">
+                <!-- DEVICERX - USB_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000005"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_RAW">
+                <!-- DEVICERX - USB_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000005"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000001"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_RX">
+                <!-- DEVICERX - USB_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000005"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
+                <graph_kv key="0xAC000000" value="0xAC000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICERX - USB_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000005"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
+                <!-- DEVICERX - USB_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000005"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_KARAOKE -->
+                <graph_kv key="0xAC000000" value="0xAC000081"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Device Proxy DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_PROXY">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY">
+                <!-- DEVICERX - PROXY_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000007"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000001"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICERX - PROXY_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000007"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Hearing Aid DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_HEARING_AID">
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICERX - PROXY_RX_VOICE -->
+                <graph_kv key="0xA2000000" value="0xA2000008"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- OUT Haptics device DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_HAPTICS_DEVICE">
+            <keys_and_values CustomConfig="haptics-over-wsa">
+                <!-- DEVICERX - HAPTICS_DEVICE -->
+                <graph_kv key="0xA2000000" value="0xA2000009"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_HAPTICS_GEN -->
+                <graph_kv key="0xAC000000" value="0xAC00000D"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- IN Handset MIC DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_HANDSET_MIC">
+            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
+                <graph_kv key="0xAD000000" value="0xAD000017"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="unprocessed-hdr-mic-landscape,unprocessed-hdr-mic-portrait,unprocessed-hdr-mic-inverted-landscape,unprocessed-hdr-mic-inverted-portrait">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_RECORD_ENQORE -->
+                <graph_kv key="0xAD000000" value="0xAD000023"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="dual-mic">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="quad-mic">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_PRO -->
+                <graph_kv key="0xAD000000" value="0xAD000004"/>
+            </keys_and_values>
+             <!-- audio add for cit begin -->
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="main-mic,top-mic,back-mic,default-mic">
+                 <!-- DEVICETX - HANDSETMIC -->
+                 <graph_kv key="0xA3000000" value="0xA3000004"/>
+                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
+                 <graph_kv key="0xAD000000" value="0xAD000002"/>
+             </keys_and_values>
+             <!-- audio add for cit end -->
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD000009"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="quad-mic">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_PRO -->
+                <graph_kv key="0xAD000000" value="0xAD00000A"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm,dual-mic-nn-sm">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic-rve">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_ENDFIRE_RVE -->
+                <graph_kv key="0xAD000000" value="0xAD000013"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic-cascade">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_ENDFIRE_CASCADE -->
+                <graph_kv key="0xAD000000" value="0xAD00001F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD000010"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="dual-mic">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD00000D"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="quad-mic">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_PRO -->
+                <graph_kv key="0xAD000000" value="0xAD000005"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="nn-sm">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD000010"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- IN Speaker MIC DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_SPEAKER_MIC">
+            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
+                <graph_kv key="0xAD000000" value="0xAD000017"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER, PAL_STREAM_COMPRESSED">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="dual-mic">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="quad-mic">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_PRO -->
+                <graph_kv key="0xAD000000" value="0xAD000004"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="unprocessed-hdr-mic-landscape,unprocessed-hdr-mic-portrait,unprocessed-hdr-mic-inverted-landscape,unprocessed-hdr-mic-inverted-portrait">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_RECORD_ENQORE -->
+                <graph_kv key="0xAD000000" value="0xAD000023"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD000009"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="quad-mic">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_PRO -->
+                <graph_kv key="0xAD000000" value="0xAD00000A"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm,dual-mic-nn-sm">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic-cascade">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_ENDFIRE_CASCADE -->
+                <graph_kv key="0xAD000000" value="0xAD00001F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="quad-mic-cascade">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_PRO_CASCADE -->
+                <graph_kv key="0xAD000000" value="0xAD000020"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD000010"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="dual-mic">>
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD00000D"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="quad-mic">>
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_PRO -->
+                <graph_kv key="0xAD000000" value="0xAD000005"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="nn-sm">>
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD000010"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_HFP_TX">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_HFP_SINK_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000006"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- IN BT_SCO_Headset DevicePPs  -->
+        <devicepp id="PAL_DEVICE_IN_BLUETOOTH_SCO_HEADSET">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000008"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION  -->
+                <graph_kv key="0xAD000000" value="0xAD000017"/>
+            </keys_and_values>
+        </devicepp>
+        <!--IN Wired headset_IN DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_WIRED_HEADSET">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED">
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_KARAOKE -->
+                <graph_kv key="0xAD000000" value="0xAD000081"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm">
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN -->
+                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD000010"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
+                <graph_kv key="0xAD000000" value="0xAD000017"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- IN USB device and USB headset DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_USB_DEVICE,PAL_DEVICE_IN_USB_HEADSET">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED">
+                <!-- DEVICETX - USB_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000005"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
+                <!-- DEVICETX - USB_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000005"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_KARAOKE -->
+                <graph_kv key="0xAD000000" value="0xAD000081"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICETX - USB_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000005"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
+                <!-- DEVICETX - USB_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000005"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
+                <graph_kv key="0xAD000000" value="0xAD000010"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
+                <!-- DEVICETX - USB_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000005"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
+                <graph_kv key="0xAD000000" value="0xAD000017"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- IN Handset_VA_MIC DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_HANDSET_VA_MIC">
+            <keys_and_values StreamType="PAL_STREAM_ACD,PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_FFECNS,DUAL_MIC_48KHZ_16BIT_FFECNS,TRI_MIC_48KHZ_16BIT_FFECNS,QUAD_MIC_48KHZ_16BIT_FFECNS">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000001"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_FFEC">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFEC -->
+                <graph_kv key="0xAD000000" value="0xAD000012"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_FFNS,DUAL_MIC_16KHZ_16BIT_FFNS,TRI_MIC_16KHZ_16BIT_FFNS,QUAD_MIC_16KHZ_16BIT_FFNS">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFNS_AAD -->
+                <graph_kv key="0xAD000000" value="0xAD00001A"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_RAW_LPI,DUAL_MIC_16KHZ_16BIT_RAW_LPI">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_LPI -->
+                <graph_kv key="0xAD000000" value="0xAD00000C"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_RAW_LPI_AAD,DUAL_MIC_16KHZ_16BIT_RAW_LPI_AAD">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_LPI_AAD -->
+                <graph_kv key="0xAD000000" value="0xAD00001B"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_RAW_NLPI,DUAL_MIC_48KHZ_16BIT_RAW_NLPI">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_NLPI -->
+                <graph_kv key="0xAD000000" value="0xAD00000E"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_ACD"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_LPI">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AAD -->
+                <graph_kv key="0xAD000000" value="0xAD000019"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_CUSTOM_NS,DUAL_MIC_16KHZ_16BIT_CUSTOM_NS,TRI_MIC_16KHZ_16BIT_CUSTOM_NS,QUAD_MIC_16KHZ_16BIT_CUSTOM_NS">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_NS -->
+                <graph_kv key="0xAD000000" value="0xAD000026"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_CUSTOM_ECNS,DUAL_MIC_48KHZ_16BIT_CUSTOM_ECNS,TRI_MIC_48KHZ_16BIT_CUSTOM_ECNS,QUAD_MIC_48KHZ_16BIT_CUSTOM_ECNS">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_ECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000025"/>
+            </keys_and_values>
+        </devicepp>
+        <!-- IN Headset VA MIC  DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_HEADSET_VA_MIC">
+            <keys_and_values StreamType="PAL_STREAM_ACD,PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_HEADSET_FFECNS">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000001"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_FFEC">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFEC -->
+                <graph_kv key="0xAD000000" value="0xAD000012"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_FFNS">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFNS_AAD -->
+                <graph_kv key="0xAD000000" value="0xAD00001A"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_LPI -->
+                <graph_kv key="0xAD000000" value="0xAD00000C"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI_AAD">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_LPI_AAD -->
+                <graph_kv key="0xAD000000" value="0xAD00001B"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_HEADSET_RAW_NLPI">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_NLPI -->
+                <graph_kv key="0xAD000000" value="0xAD00000E"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_ACD"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_LPI">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AAD -->
+                <graph_kv key="0xAD000000" value="0xAD000019"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_HEADSET_CUSTOM_ECNS">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_ECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000025"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_CUSTOM_NS">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_NS -->
+                <graph_kv key="0xAD000000" value="0xAD000026"/>
+            </keys_and_values>
+        </devicepp>
+       <!-- IN BT A2DP DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_BLUETOOTH_A2DP">
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" >
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
+            </keys_and_values>
+        </devicepp>
+       <!-- IN BT BLE DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_BLUETOOTH_BLE">
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000008"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
+            </keys_and_values>
+        </devicepp>
+       <!-- IN Ultrasound DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_ULTRASOUND_MIC">
+            <keys_and_values>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_ULTRASOUND_DETECTOR -->
+                <graph_kv key="0xAD000000" value="0xAD000011"/>
+            </keys_and_values>
+        </devicepp>
+       <!-- OUT Ultrasound DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_ULTRASOUND">
+            <keys_and_values>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
+                <graph_kv key="0xAC000000" value="0xAC000006"/>
+            </keys_and_values>
+        </devicepp>
+       <!-- OUT Ultrasound DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_ULTRASOUND_DEDICATED">
+            <keys_and_values>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
+                <graph_kv key="0xAC000000" value="0xAC000006"/>
+            </keys_and_values>
+        </devicepp>
+       <!-- IN Proxy Record DevicePPs -->
+        <devicepp id="PAL_DEVICE_IN_RECORD_PROXY">
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
+            </keys_and_values>
+             <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED">
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000002"/>
+            </keys_and_values>
+        </devicepp>
+    </devicepps>
+</graph_key_value_pair_info>
