@@ -904,12 +904,6 @@
                 <!-- DEVICEPP_RX - DEVICEPP_RX_ULTRASOUND_GENERATOR -->
                 <graph_kv key="0xAC000000" value="0xAC000006"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_LOW_LATENCY,PAL_STREAM_PCM_OFFLOAD" CustomConfig="speaker-clean">
-                <!-- DEVICERX - SPEAKER -->
-                <graph_kv key="0xA2000000" value="0xA2000001"/>
-                <!-- DEVICEPP_RX - DEVICEPP_RX_CLEAN -->
-                <graph_kv key="0xAC000000" value="0xAC000082"/>
-            </keys_and_values>
         </devicepp>
         <!-- OUT Handset DevicePPs -->
         <devicepp id="PAL_DEVICE_OUT_HANDSET">
@@ -981,12 +975,6 @@
                 <graph_kv key="0xA2000000" value="0xA2000002"/>
                 <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
                 <graph_kv key="0xAC000000" value="0xAC000005"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
-                <!-- DEVICERX - HEADPHONES -->
-                <graph_kv key="0xA2000000" value="0xA2000002"/>
-                <!-- DEVICEPP_RX - DEVICEPP_RX_KARAOKE -->
-                <graph_kv key="0xAC000000" value="0xAC000081"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="rx-nn-ns">
                 <!-- DEVICERX - HEADPHONES -->
@@ -1090,12 +1078,6 @@
                 <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
                 <graph_kv key="0xAC000000" value="0xAC000005"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
-                <!-- DEVICERX - USB_RX -->
-                <graph_kv key="0xA2000000" value="0xA2000005"/>
-                <!-- DEVICEPP_RX - DEVICEPP_RX_KARAOKE -->
-                <graph_kv key="0xAC000000" value="0xAC000081"/>
-            </keys_and_values>
         </devicepp>
         <!-- OUT Device Proxy DevicePPs -->
         <devicepp id="PAL_DEVICE_OUT_PROXY">
@@ -1162,19 +1144,11 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_PRO -->
                 <graph_kv key="0xAD000000" value="0xAD000004"/>
             </keys_and_values>
-             <!-- audio add for cit begin -->
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="main-mic,top-mic,back-mic,default-mic">
-                 <!-- DEVICETX - HANDSETMIC -->
-                 <graph_kv key="0xA3000000" value="0xA3000004"/>
-                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
-                 <graph_kv key="0xAD000000" value="0xAD000002"/>
-             </keys_and_values>
-             <!-- audio add for cit end -->
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICETX - HANDSETMIC -->
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000008"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic">
                 <!-- DEVICETX - HANDSETMIC -->
@@ -1209,8 +1183,8 @@
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
                 <!-- DEVICETX - HANDSETMIC -->
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD000010"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="dual-mic">
                 <!-- DEVICETX - HANDSETMIC -->
@@ -1266,8 +1240,8 @@
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICETX - SPEAKER_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000008"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic">
                 <!-- DEVICETX - SPEAKER_MIC -->
@@ -1302,8 +1276,8 @@
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
                 <!-- DEVICETX - SPEAKER_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD000010"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="dual-mic">>
                 <!-- DEVICETX - SPEAKER_MIC -->
@@ -1365,17 +1339,11 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
                 <graph_kv key="0xAD000000" value="0xAD000002"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
-                <!-- DEVICETX - HEADPHONE_MIC -->
-                <graph_kv key="0xA3000000" value="0xA3000003"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_KARAOKE -->
-                <graph_kv key="0xAD000000" value="0xAD000081"/>
-            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICETX - HEADPHONE_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000003"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000008"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm">
                 <!-- DEVICETX - HEADPHONE_MIC -->
@@ -1386,8 +1354,8 @@
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
                 <!-- DEVICETX - HEADPHONE_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000003"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD000010"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - HEADPHONE_MIC -->
@@ -1404,23 +1372,17 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
                 <graph_kv key="0xAD000000" value="0xAD000002"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
-                <!-- DEVICETX - USB_TX -->
-                <graph_kv key="0xA3000000" value="0xA3000005"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_KARAOKE -->
-                <graph_kv key="0xAD000000" value="0xAD000081"/>
-            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICETX - USB_TX -->
                 <graph_kv key="0xA3000000" value="0xA3000005"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD00000F"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000008"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX">
                 <!-- DEVICETX - USB_TX -->
                 <graph_kv key="0xA3000000" value="0xA3000005"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
-                <graph_kv key="0xAD000000" value="0xAD000010"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000007"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - USB_TX -->
