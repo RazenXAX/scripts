@@ -7,8 +7,8 @@ repo sync
 rm -rf hardware/qcom-caf/common
 rm -rf hardware/xiaomi
 rm -rf device/xiaomi/warm-kernel
-rm -rf device/xiaomi/warm
 rm -rf vendor/xiaomi/warm
+rm -rf device/xiaomi/warm
 
 git clone https://github.com/zaraknyu/android_device_xiaomi_warm -b lineage-23.2 device/xiaomi/warm
 git clone https://github.com/zaraknyu/android_vendor_xiaomi_warm -b lineage-23.2 vendor/xiaomi/warm
