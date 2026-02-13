@@ -17,5 +17,5 @@ git clone https://github.com/zaraknyu/android_hardware_qcom-caf_common -b lineag
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 hardware/xiaomi
 
 source build/envsetup.sh
-lunch lineage_warm-bp4a-eng
-mka bacon | export SKIP_ABI_CHECKS && mka bacon
+lunch lineage_warm-bp4a-userdebug
+mka bacon
