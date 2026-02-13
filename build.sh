@@ -2,7 +2,7 @@
 
 # Repo Init
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
-/opt/crave/resync.sh
+repo sync
 
 rm -rf hardware/qcom-caf/common
 rm -rf hardware/xiaomi
