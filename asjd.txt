@@ -1,40 +1,40 @@
 # Audio
-$(call soong_config_set, android_hardware_audio, run_64bit, true)
+SOONG_CONFIG_NAMESPACES += android_hardware_audio
+SOONG_CONFIG_android_hardware_audio += \
+    run_64bit
+SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service
-
-PRODUCT_PACKAGES += \
-    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.1-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audioadsprpcd \
-    audio.bluetooth.default \
+    audio.primary.pineapple \
     audio.r_submix.default \
     audio.usb.default \
-    sound_trigger.primary.pitti
+    sound_trigger.primary.pineapple
 
 PRODUCT_PACKAGES += \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
+    audioadsprpcd \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
     libagmclient \
-    libaudiochargerlistener \
     libbatterylistener \
-    libcustomva_intf \
-    libhotword_intf \
-    libfmpal \
-    libhfp_pal \
+    libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndcardparser \
-    libvolumelistener
+    libvolumelistener \
+    libhfp_pal \
+    libhotword_intf \
+    libfmpal \
+    vendor.qti.hardware.AGMIPC@1.0-impl
+
+AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
