@@ -1,150 +1,65 @@
-// SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2019, 2021 The Linux Foundation. All rights reserved.
- * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
- */
-#define pr_fmt(fmt)     "qcom-reboot-reason: %s: " fmt, __func__
+# Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted (subject to the limitations in the
+# disclaimer below) provided that the following conditions are met:
+#
+#    * Redistributions of source code must retain the above copyright
+#      notice, this list of conditions and the following disclaimer.
+#
+#    * Redistributions in binary form must reproduce the above
+#      copyright notice, this list of conditions and the following
+#      disclaimer in the documentation and/or other materials provided
+#      with the distribution.
+#
+#    * Neither the name of The Linux Foundation nor the names of its
+#      contributors may be used to endorse or promote products derived
+#      from this software without specific prior written permission.
+#
+# NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
+# GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+# HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+# ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+# GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/pm.h>
-#include <linux/of_address.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/panic_notifier.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
-struct qcom_reboot_reason {
-	struct device *dev;
-	struct notifier_block reboot_nb;
-	struct notifier_block panic_nb;
-	struct nvmem_cell *nvmem_cell;
-	struct poweroff_reason *reasons;
-};
-
-struct poweroff_reason {
-	const char *cmd;
-	unsigned int pon_reason;
-	unsigned int size;
-};
-
-static struct poweroff_reason reasons[] = {
-	{ "recovery",			0x01 },
-	{ "bootloader",			0x02 },
-	{ "rtc",			0x03 },
-	{ "dm-verity device corrupted",	0x04 },
-	{ "dm-verity enforcing",	0x05 },
-	{ "keys clear",			0x06 },
-	{ "panic",			0x21 },
-	{ NULL,				0x20 },
-	{}
-};
-
-#define RESTART_REASON_PANIC  6
-#define RESTART_REASON_NORMAL 7
-
-static int qcom_reboot_reason_reboot(struct notifier_block *this,
-				     unsigned long event, void *ptr)
-{
-	int rc;
-	char *cmd = ptr;
-	struct qcom_reboot_reason *reboot = container_of(this,
-		struct qcom_reboot_reason, reboot_nb);
-	struct poweroff_reason *reason;
-
-	if (!cmd){
-		nvmem_cell_write(reboot->nvmem_cell,
-				 &reasons[RESTART_REASON_NORMAL].pon_reason,
-				 sizeof(reasons[RESTART_REASON_NORMAL].pon_reason));
-		return NOTIFY_OK;
-	}
-
-	for (reason = reasons; reason->cmd; reason++) {
-		if (!strcmp(cmd, reason->cmd)) {
-			rc = nvmem_cell_write(reboot->nvmem_cell,
-					 &reason->pon_reason,
-					 sizeof(reason->pon_reason));
-			return NOTIFY_OK;
-		}
-
-	}
-	nvmem_cell_write(reboot->nvmem_cell,
-			&reason->pon_reason,
-			sizeof(reason->pon_reason));
-
-	return NOTIFY_OK;
-}
-
-static int panic_prep_restart(struct notifier_block *this,
-			      unsigned long event, void *ptr)
-{
-	struct qcom_reboot_reason *reboot = container_of(this,
-		struct qcom_reboot_reason, panic_nb);
-	nvmem_cell_write(reboot->nvmem_cell,
-			&reasons[RESTART_REASON_PANIC].pon_reason,
-			sizeof(reasons[RESTART_REASON_PANIC].pon_reason));
-	return NOTIFY_DONE;
-}
-
-static int qcom_reboot_reason_probe(struct platform_device *pdev)
-{
-	struct qcom_reboot_reason *reboot;
-	const struct of_device_id *match;
-
-	reboot = devm_kzalloc(&pdev->dev, sizeof(*reboot), GFP_KERNEL);
-	if (!reboot)
-		return -ENOMEM;
-
-	reboot->dev = &pdev->dev;
-
-	/*
-	 * can't use of_device_get_match_data() because it returns
-	 * const data. nvmem_cell_write() doesn't have signature to accept const data.
-	 * Hence used of_match_device().
-	 */
-
-	reboot->nvmem_cell = devm_nvmem_cell_get(reboot->dev, "restart_reason");
-
-	if (IS_ERR(reboot->nvmem_cell))
-		return PTR_ERR(reboot->nvmem_cell);
-
-	reboot->reboot_nb.notifier_call = qcom_reboot_reason_reboot;
-	reboot->reboot_nb.priority = 255;
-	register_reboot_notifier(&reboot->reboot_nb);
-
-	platform_set_drvdata(pdev, reboot);
-
-  	reboot->panic_nb.notifier_call = panic_prep_restart;
-	reboot->panic_nb.priority = INT_MAX;
-	atomic_notifier_chain_register(&panic_notifier_list, &reboot->panic_nb);
-
-	return 0;
-}
-
-static int qcom_reboot_reason_remove(struct platform_device *pdev)
-{
-	struct qcom_reboot_reason *reboot = platform_get_drvdata(pdev);
-
-	atomic_notifier_chain_unregister(&panic_notifier_list, &reboot->panic_nb);
-	unregister_reboot_notifier(&reboot->reboot_nb);
-
-	return 0;
-}
-
-static struct platform_driver qcom_reboot_reason_driver = {
-	.probe = qcom_reboot_reason_probe,
-	.remove = qcom_reboot_reason_remove,
-	.driver = {
-		.name = "qcom-reboot-reason",
-	},
-};
-
-module_platform_driver(qcom_reboot_reason_driver);
-
-MODULE_DESCRIPTION("MSM Reboot Reason Driver");
-MODULE_LICENSE("GPL v2");
+#<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
+system                                                  /system                ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey:/avb/t-gsi.avbpubkey:/avb/u-gsi.avbpubkey
+system                                                  /system                erofs   ro                                                   wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey:/avb/t-gsi.avbpubkey:/avb/u-gsi.avbpubkey
+system_ext                                              /system_ext            ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+system_ext                                              /system_ext            erofs   ro                                                   wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+product                                                 /product               ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+product                                                 /product               erofs   ro                                                   wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+vendor                                                  /vendor                ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta,logical,first_stage_mount
+vendor                                                  /vendor                erofs   ro                                                   wait,slotselect,avb=vbmeta,logical,first_stage_mount
+vendor_dlkm                                             /vendor_dlkm           ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta,logical,first_stage_mount
+vendor_dlkm                                             /vendor_dlkm           erofs   ro                                                   wait,slotselect,avb=vbmeta,logical,first_stage_mount
+system_dlkm                                             /system_dlkm           ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta,logical,first_stage_mount
+system_dlkm                                             /system_dlkm           erofs   ro                                                   wait,slotselect,avb=vbmeta,logical,first_stage_mount
+odm                                                     /odm                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta,logical,first_stage_mount
+odm                                                     /odm                   erofs   ro                                                   wait,slotselect,avb=vbmeta,logical,first_stage_mount
+/dev/block/by-name/boot                                 /boot                  emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
+/dev/block/by-name/init_boot                            /init_boot             emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
+/dev/block/by-name/vendor_boot                          /vendor_boot           emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
+/dev/block/by-name/dtbo                                 /dtbo                  emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
+/dev/block/by-name/recovery                             /recovery              emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
+/dev/block/by-name/metadata                             /metadata              f2fs    noatime,nosuid,nodev,discard                         wait,check,formattable,first_stage_mount
+/dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist    ext4    noatime,nosuid,nodev,barrier=1                       wait,check
+/dev/block/bootdevice/by-name/userdata                  /data                  f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt,gc_merge,atgc,age_extent_cache   latemount,wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts:wrappedkey_v0,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs
+/dev/block/bootdevice/by-name/misc                      /misc                  emmc    defaults                                             defaults
+/devices/platform/soc/4784000.sdhci/mmc_host*           /storage/sdcard1       vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
+/devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   /storage/usbotg        vfat    nosuid,nodev                                         wait,voldmanaged=usbotg:auto
+/dev/block/bootdevice/by-name/modem                     /vendor/firmware_mnt   vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait,slotselect
+/dev/block/bootdevice/by-name/dsp                       /vendor/dsp            ext4    ro,nosuid,nodev,barrier=1                            wait,slotselect
+/dev/block/bootdevice/by-name/bluetooth                 /vendor/bt_firmware    vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait,slotselect
