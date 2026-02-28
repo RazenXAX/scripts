@@ -27,7 +27,9 @@ persist.vendor.audio.voicecall.speaker.stereo=true
 ro.audio.flinger_standbytime_ms=2000
 ro.audio.monitorRotation=false
 ro.qc.sdk.audio.fluencetype=none
+ro.vendor.audio.activity.monitor=true
 ro.vendor.audio.clean_speaker=true
+ro.vendor.audio.enable.cid=true
 ro.vendor.audio.feature.customizedsound=true
 ro.vendor.audio.feature.fade=true
 ro.vendor.audio.fweffect=true
@@ -273,6 +275,7 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 
 # Sensors
+persist.vendor.sensor.mischeck=true
 persist.vendor.sensors.enable.mag_filter=true
 persist.vendor.sensors.support_direct_channel=false
 
@@ -321,6 +324,7 @@ persist.vendor.disable_idle_fps.threshold=0
 persist.vendor.qcomsysd.enabled=1
 persist.vendor.rcs.singlereg.feature=0
 persist.vendor.tcpdump.enable=false
+persist.vendor.tracking.dfs=true
 ro.af.client_heap_size_kbyte=7168
 ro.boot.wificountrycode=CN
 ro.carrier=unknown
@@ -332,8 +336,10 @@ ro.config.vc_call_vol_steps=11
 ro.control_privapp_permissions=enforce
 ro.crypto.metadata_init_delete_all_keys.enabled=false
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+ro.hardware.fp.mievent=true
 ro.hardware.keystore_desede=true
 ro.incremental.enable=yes
+ro.lmk.kill_heaviest_task=true
 ro.logd.size=2M
 ro.logd.size.stats=64K
 ro.mediaserver.64b.enable=true
