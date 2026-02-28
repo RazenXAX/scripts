@@ -8,13 +8,14 @@ use.voice.path.for.pcm.voip=true
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 ro.bluetooth.emb_wp_mode=false
-ro.bluetooth.library_name=libbluetooth.so
+ro.bluetooth.library_name=libbluetooth_qti.so
 ro.bluetooth.wipower=false
 
 # Camera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.xiaomi.runin,com.xiaomi.cameratest,com.xiaomi.factory.mmi
-vendor.camera.aux.packagelistext=com.xiaomi.factory.CameraTestItem,com.firefightcam1
+vendor.camera.aux.packagelist=com.xiaomi.runin,com.xiaomi.cameratest,com.xiaomi.factory.mmi,org.codeaurora.snapcam
+vendor.camera.aux.packagelistext=com.xiaomi.factory.CameraTestItem,com.firefightcam1,com.phonetest.hwttss
+vendor.camera.support.mivi=true
 
 # CNE
 persist.vendor.cne.feature=1
@@ -22,7 +23,6 @@ persist.vendor.cne.feature=1
 # Display
 debug.sf.enable_hwc_vds=0
 debug.sf.latch_unsignaled=1
-ro.gfx.driver.0=com.xiaomi.ugd
 ro.hwui.drop_shadow_cache_size=6
 ro.hwui.gradient_cache_size=1
 ro.hwui.layer_cache_size=48
@@ -36,6 +36,7 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.texture_cache_size=72
 ro.opengles.version=196610
+ro.surface_flinger.game_default_frame_rate_override=60
 
 # GNSS
 persist.sys.gps.selfRecovery=3
@@ -84,7 +85,6 @@ persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
 # Miscellaneous
-DEVICE_PROVISIONED=1
 arm64.memtag.process.system_server=off
 config.disable_rtt=true
 dalvik.vm.appimageformat=lz4
@@ -100,7 +100,6 @@ dalvik.vm.enable_pr_dexopt=true
 dalvik.vm.heapsize=36m
 dalvik.vm.image-dex2oat-Xms=64m
 dalvik.vm.image-dex2oat-Xmx=64m
-dalvik.vm.madvise.artfile.size=4294967295
 dalvik.vm.madvise.odexfile.size=104857600
 dalvik.vm.madvise.vdexfile.size=104857600
 dalvik.vm.minidebuginfo=true
@@ -114,6 +113,7 @@ dalvik.vm.usejit=true
 debug.atrace.tags.enableflags=0
 debug.hwui.skia_atrace_enabled=false
 dev.pm.dyn_samplingrate=1
+hypercamera.disable_app_default_config=true
 mmp.enable.3g2=true
 net.bt.name=Android
 persist.backup.ntpServer="0.pool.ntp.org"
@@ -162,24 +162,25 @@ qcom.hw.aac.encoder=true
 qemu.hw.mainkeys=0
 ro.actionable_compatible_property.enabled=true
 ro.allow.mock.location=0
-ro.build.backported_fixes.alias_bitset.long_list=2
+ro.build.backported_fixes.alias_bitset.long_list=18
+ro.build.version.sdk_full=36.0
 ro.com.android.mobiledata=false
 ro.com.google.lens.oem_camera_package=com.android.camera
 ro.com.google.lens.oem_image_package=com.miui.gallery
+ro.cp_system_other_odex=1
 ro.dalvik.vm.native.bridge=0
 ro.kernel.qemu.gles=0
 ro.launcher.blur.appLaunch=0
-ro.llndk.api_level=202404
+ro.llndk.api_level=202504
 ro.media.recorder-max-base-layer-fps=60
 ro.miui.allow_app_playbackcapture=true
 ro.miui.enable_cloud_verify=true
-ro.miui.pm.install.speedinstall=/data/apk-tmp
 ro.miui.shell_anim_enable_fcb=true
 ro.miui.support_audiorecord_compress=true
+ro.miui.support_submix_multichannel=true
 ro.postinstall.fstab.prefix=/system
 ro.product.property_source_order=odm,vendor,product,system_ext,system
-ro.product.system.cert=
-ro.product.system.marketname=
+ro.system.build.version.sdk_full=36.0
 ro.vendor.qti.va_aosp.support=1
 ro.vendor.use_data_netmgrd=true
 security.perf_harden=1
