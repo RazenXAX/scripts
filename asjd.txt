@@ -1,55 +1,35 @@
-# Audio
-SOONG_CONFIG_NAMESPACES += android_hardware_audio
-SOONG_CONFIG_android_hardware_audio += \
-    run_64bit
-SOONG_CONFIG_android_hardware_audio_run_64bit := true
-
-PRODUCT_PACKAGES += \
-    android.hardware.audio@7.1-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl
-
-PRODUCT_PACKAGES += \
-    audio.primary.pineapple \
-    audio.r_submix.default \
-    audio.usb.default \
-    sound_trigger.primary.pineapple
-
-PRODUCT_PACKAGES += \
-    audioadsprpcd \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libbatterylistener \
-    libpalclient \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libsndcardparser \
-    libvolumelistener \
-    libhfp_pal \
-    libhotword_intf \
-    libfmpal \
-    vendor.qti.hardware.AGMIPC@1.0-impl
-
-AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
-
-PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_effects.xml \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_policy_configuration.xml
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
-    frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
-    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
-
-PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8650/audio/pal/configs/pitti/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
-    hardware/qcom-caf/sm8650/audio/primary-hal/configs/pitti/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
+# Bluetooth
+bluetooth.device_id.vendor_id=0x001D
+bluetooth.hfp.codec_aptx_voice.enabled=false
+bluetooth.hfp.swb.aptx.power_management.enabled=false
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.avrcp.controller.enabled=false
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.bap.broadcast.assist.enabled=false
+bluetooth.profile.bap.broadcast.source.enabled=false
+bluetooth.profile.bap.unicast.client.enabled=false
+bluetooth.profile.bas.client.enabled=true
+bluetooth.profile.ccp.server.enabled=false
+bluetooth.profile.csip.set_coordinator.enabled=false
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hap.client.enabled=false
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.mcp.server.enabled=false
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.profile.pbap.server.enabled=true
+bluetooth.profile.vcp.controller.enabled=false
+persist.vendor.bt.a2dp.samplerate=true
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.wipower=false
