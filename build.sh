@@ -10,12 +10,12 @@ rm -rf hardware/qcom-caf/common
 rm -rf vendor/xiaomi/warm
 rm -rf device/xiaomi/warm
 
-git clone https://github.com/xiaomi-sm4635-resources/android_device_xiaomi_warm -b luna device/xiaomi/warm
+git clone https://github.com/xiaomi-sm4635-resources/android_device_xiaomi_warm -b lunaris device/xiaomi/warm
 git clone https://github.com/xiaomi-sm4635-resources/android_vendor_xiaomi_warm -b lineage-23.2 vendor/xiaomi/warm
 git clone https://github.com/xiaomi-sm4635-resources/android_device_xiaomi_warm-kernel -b main device/xiaomi/warm-kernel
 git clone https://github.com/xiaomi-sm4635-resources/android_hardware_qcom-caf_common -b lineage-23.2 hardware/qcom-caf/common
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 hardware/xiaomi
 
-source build/envsetup.sh
+. b*/env*
 lunch lineage_warm-bp4a-user
 m bacon
