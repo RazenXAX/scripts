@@ -1,0 +1,22 @@
+BTFM.bin                                                                        super.img_sparsechunk.10
+MUMBA_G_W1WAA36.48-12-28_subsidy-DEFAULT_regulatory-DEFAULT_cid50_CFC.info.txt  super.img_sparsechunk.11
+NON-HLOS.bin                                                                    super.img_sparsechunk.12
+boot.img                                                                        super.img_sparsechunk.13
+bootloader.img                                                                  super.img_sparsechunk.14
+cid_template.dat                                                                super.img_sparsechunk.15
+cmf_color_range_full_list.txt                                                   super.img_sparsechunk.16
+dspso.bin                                                                       super.img_sparsechunk.17
+dtbo.img                                                                        super.img_sparsechunk.18
+flashfile.xml                                                                   super.img_sparsechunk.19
+fsg.mbn                                                                         super.img_sparsechunk.2
+gpt.bin                                                                         super.img_sparsechunk.3
+init_boot.img                                                                   super.img_sparsechunk.4
+logo.bin                                                                        super.img_sparsechunk.5
+pvmfw.img                                                                       super.img_sparsechunk.6
+recovery.img                                                                    super.img_sparsechunk.7
+regulatory_info_default.png                                                     super.img_sparsechunk.8
+servicefile.xml                                                                 super.img_sparsechunk.9
+signing-info.txt                                                                vbmeta.img
+slcf_rev_d_default_v1.0.nvm                                                     vbmeta_system.img
+super.img_sparsechunk.0                                                         vendor_boot.img
+super.img_sparsechunk.1
