@@ -1,21 +1,23 @@
 #!/bin/bash
 
 # Repo Init
-repo init -u https://github.com/Lunaris-AOSP/android -b 16.2 --git-lfs
+repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
 /opt/crave/resync.sh
 
-rm -rf hardware/xiaomi
-rm -rf device/xiaomi/warm-kernel
-rm -rf hardware/qcom-caf/common
-rm -rf vendor/xiaomi/warm
-rm -rf device/xiaomi/warm
+rm -rf device/motorola/sm6435-common
+rm -rf vendor/motorola/sm6435-common
+rm -rf device/motorola/mumba
+rm -rf vendor/motorola/mumba
+rm -rf device/motorola/mumba-kernel
+rm -rf hardware/motorola
 
-git clone https://github.com/xiaomi-sm4635-resources/android_device_xiaomi_warm -b lunaris device/xiaomi/warm
-git clone https://github.com/xiaomi-sm4635-resources/android_vendor_xiaomi_warm -b lineage-23.2 vendor/xiaomi/warm
-git clone https://github.com/xiaomi-sm4635-resources/android_device_xiaomi_warm-kernel -b main device/xiaomi/warm-kernel
-git clone https://github.com/xiaomi-sm4635-resources/android_hardware_qcom-caf_common -b lineage-23.2 hardware/qcom-caf/common
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 hardware/xiaomi
+git clone https://github.com/motorola-mumba-devs/android_device_motorola_sm6435-common device/motorola/sm6435-common
+git clone https://github.com/motorola-mumba-devs/android_vendor_motorola_sm6435-common vendor/motorola/sm6435-common
+git clone https://github.com/motorola-mumba-devs/android_device_motorola_mumba device/motorola/mumba
+git clone https://github.com/motorola-mumba-devs/android_vendor_motorola_mumba vendor/motorola/mumba
+git clone https://github.com/motorola-mumba-devs/android_device_motorola_mumba-kernel device/motorola/mumba-kernel
+git clone https://github.com/LineageOS/android_hardware_motorola -b lineage-23.2 hardware/motorola
 
-. b*/env*
-lunch lineage_warm-bp4a-user
-m bacon
+source build/envsetup.sh
+lunch lineage_mumba-bp4a-eng
+mka bacon
