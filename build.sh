@@ -2,7 +2,7 @@
 
 # Repo Init
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
-/opt/crave/resync.sh
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune --retry-fetches=5 -j$(nproc --all)
 
 rm -rf device/motorola/sm6435-common
 rm -rf vendor/motorola/sm6435-common
