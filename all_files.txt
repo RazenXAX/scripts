@@ -5,15 +5,15 @@
 ro.product.system_ext.brand=motorola
 ro.product.system_ext.device=msi
 ro.product.system_ext.manufacturer=motorola
-ro.product.system_ext.model=moto g75 5G
-ro.product.system_ext.name=paros_g
-ro.system_ext.build.date=Mon Feb  9 14:01:18 CST 2026
-ro.system_ext.build.date.utc=1770667278
-ro.system_ext.build.fingerprint=motorola/paros_g/msi:16/W1UQ36M-W1-ST28/2bdeb:user/release-keys
-ro.system_ext.build.id=W1UQ36M-W1-ST28
+ro.product.system_ext.model=moto g57
+ro.product.system_ext.name=mumba_g
+ro.system_ext.build.date=Fri Nov  7 02:46:39 UTC 2025
+ro.system_ext.build.date.utc=1762483599
+ro.system_ext.build.fingerprint=motorola/mumba_g/msi:16/W1WAA36M.48-12-ST12.1/b3ae0:user/release-keys
+ro.system_ext.build.id=W1WAA36M.48-12-ST12.1
 ro.system_ext.build.tags=release-keys
 ro.system_ext.build.type=user
-ro.system_ext.build.version.incremental=2bdeb
+ro.system_ext.build.version.incremental=b3ae0
 ro.system_ext.build.version.release=16
 ro.system_ext.build.version.release_or_codename=16
 ro.system_ext.build.version.sdk=36
@@ -27,6 +27,7 @@ audio.offload.video=false
 audio.offload.min.duration.secs=60
 audio.offload.gapless.enabled=false
 persist.sys.bootupvolume=5
+ro.config.isolated_compilation_enabled=true
 ro.audio.ihaladaptervendorextension_enabled=true
 bluetooth.profile.sap.server.enabled=true
 bluetooth.profile.pbap.sim.enabled=true
@@ -38,13 +39,12 @@ persist.bluetooth.leaudio.bypass_allow_list=false
 bluetooth.leaudio.dual_bidirection_swb.supported=true
 persist.bluetooth.leaudio.notify.idle.during.call=true
 persist.vendor.bluetooth.haltest=true
-bluetooth.hfp.codec_aptx_voice.enabled=true
+bluetooth.hfp.codec_aptx_voice.enabled=false
 bluetooth.hfp.swb.aptx.power_management.enabled=false
 persist.vendor.dpm.feature=11
 ####################################
 # from variable PRODUCT_SYSTEM_PROPERTY_OVERRIDES
 ####################################
-persist.mot_bt.max_thread_pool=8
 ro.mot.security.enable=true
 ro.virtual_ab.merge_delay_seconds=300
 ro.boot.wificountrycode=00
@@ -64,5 +64,5 @@ media.recorder.show_manufacturer_and_model=true
 vendor.audio.parser.ip.buffer.size=262144
 persist.vendor.audio_fx.current=mmi
 vendor.audio.snd_card.open.retries=50
-ro.mot.platform.build_id=MW-376
+ro.mot.platform.build_id=MW-274
 # end of file
