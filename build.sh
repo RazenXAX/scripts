@@ -2,18 +2,16 @@
 
 # Repo Init
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune --retry-fetches=5 -j$(nproc --all)
+/opt/crave/resync.sh
 
-rm -rf device/motorola/mumba
-rm -rf vendor/motorola/mumba
-rm -rf device/motorola/mumba-kernel
-rm -rf hardware/motorola
+rm -rf device/samsung/a34x
+rm -rf vendor/samsung/a34x
+rm -rf hardware/samsung
 
-git clone https://github.com/motorola-mumba-devs/android_device_motorola_mumba device/motorola/mumba
-git clone https://github.com/motorola-mumba-devs/android_vendor_motorola_mumba vendor/motorola/mumba
-git clone https://github.com/motorola-mumba-devs/android_device_motorola_mumba-kernel device/motorola/mumba-kernel
-git clone https://github.com/LineageOS/android_hardware_motorola -b lineage-23.2 hardware/motorola
+git clone https://github.com/zaraknyu/android_device_samsung_a34x -b lineage-23.2 device/samsung/a34x
+git clone https://github.com/zaraknyu/android_vendor_samsung_a34x -b lineage-23.2 vendor/samsung/a34x
+git clone https://github.com/LineageOS/android_hardware_samsung -b lineage-23.2 hardware/samsung
 
 source build/envsetup.sh
-lunch lineage_mumba-bp4a-eng
+lunch lineage_a34x-bp4a-eng
 mka bacon
